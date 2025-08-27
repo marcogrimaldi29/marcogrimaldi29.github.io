@@ -4,7 +4,7 @@ layout: single
 permalink: /cv/
 ---
 
-Hereunder you can find more granular details about my work experience, education, skills, certifications, and languages: 
+Hereunder you can find more granular details about my **work experience, education, skills, certifications, and languages**: 
 
 ---
 
