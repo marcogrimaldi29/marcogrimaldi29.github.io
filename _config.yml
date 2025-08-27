@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   I’m Marco Grimaldi — this is my personal web space dedicated to my professional journey 
   in Cloud Support, Cloud Administration, and Language Learning & Teaching, 
   and my passions beyond work, such as hiking trails and reading books that inspire curiosity and growth.
-twitter_username: username
+# twitter_username: username
 github_username: marcogrimaldi29
 minimal_mistakes_skin: sunrise
 search: true
