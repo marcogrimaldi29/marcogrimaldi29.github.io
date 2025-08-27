@@ -1,4 +1,8 @@
 main:
+# - title: "Categories"
+#   url: /contact/
+# - title: "Tags"
+#   url: /tags/
   - title: "About"
     url: /about/
   - title: "Contact"
