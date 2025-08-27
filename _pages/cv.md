@@ -8,6 +8,10 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
+👉 [Download PDF version](/assets/marco-cv-aug25.pdf){: .btn .btn--primary target="_blank" download="Marco_Grimaldi_CV.pdf"}
+
+---
+
 ## 💼 Work Experience
 
 ### L2 Managed Services Engineer & Technical Knowledge Manager — NTT DATA  
