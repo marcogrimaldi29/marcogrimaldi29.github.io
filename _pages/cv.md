@@ -9,8 +9,7 @@ toc_label: "Table of Contents"
 
 Hereunder you can find more granular details about my **work experience, education, skills, certifications, and languages**: 
 
-* TOC {:toc}
-{: #markdown-toc}
+{:toc}
 
 ---
 
