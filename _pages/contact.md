@@ -21,7 +21,7 @@ You can get in touch with me through any of the following channels:
 [duolingo.com/profile/MarcoGrimm](https://www.duolingo.com/profile/MarcoGrimm)
 
 📱 **Phone**  
-- [🇪🇸 [phone-removed]](tel:[phone-removed])
-- [🇮🇹 [phone-removed]](tel:[phone-removed])
+[🇪🇸 [phone-removed]](tel:[phone-removed])
+[🇮🇹 [phone-removed]](tel:[phone-removed])
 
 ---
