@@ -39,12 +39,12 @@ Hereunder you can find more granular details about my **work experience, educati
 - Specialized in learners with Special Educational Needs.  
 
 ### Front Desk Assistant, Erasmus+ Office — University of Rome "Tor Vergata"  
-*Rome* • *2016*  
+*Rome (On Site)* • *2016*  
 - Supported international students (incoming and outgoing).  
 - Managed applications and liaised with partner universities.  
 
 ### Audio Engineer & Musician — Freelance  
-*Rome* • *2010 – 2018*  
+*Rome (On Site)* • *2010 – 2018*  
 - Organized and technically managed musical events.  
 - Performed artistic and multi-instrumental shows at entertainment events.  
 
@@ -53,30 +53,23 @@ Hereunder you can find more granular details about my **work experience, educati
 ## 🎓 Education
 
 ### Master’s Degree in Italian Literature, Modern Philology & Linguistics — University of Rome "Tor Vergata"  
-*2018 – 2022*  
+*Rome & Mainz* • *2018 – 2022*  
 - Final grade: 110/110 Summa Cum Laude.  
 - 1-year Erasmus+ KA1 Exchange Program, University JGU Mainz (Germany).  
 
-### Master’s Degree in Teacher Training (MAES) — University Pablo de Olavide, Seville  
-*2020 – 2021*  
+### Master’s Degree in Teacher Training (MAES) — University Pablo de Olavide  
+*Seville* • *2020 – 2021*  
 - Internship at IES San Isidoro, Seville.  
 
 ### Bachelor’s Degree in Languages in the Information Society — University of Rome "Tor Vergata"  
-*2014 – 2018*  
+*Rome & Heidelberg* • *2014 – 2018*  
 - Final grade: 110/110.  
 - 1-year Erasmus+ KA1 Exchange Program, University Heidelberg (Germany).  
-- Student representative (2016/2017, 2017/2018).  
+- Student representative (academic year: 2016/2017, 2017/2018).  
 - Programming languages and foreign languages: HTML, CSS, Javascript, SQL, German, English, Spanish.  
 
 ### International Course of German Language and Culture — University of Heidelberg  
-*2018*  
-
----
-
-## 🛠 Skills
-
-- **Technical Skills**: Microsoft 365, Azure, Active Directory, Networking, Intune, MFA, Exchange, PowerShell, SCCM, SAP, Cloud (IaaS, PaaS, SaaS), ITSM, Troubleshooting.  
-- **Soft Skills**: Problem-solving, Team collaboration, Proactivity, Fast learning, Empathy, Organization.  
+*Heidelberg* • *2018*  
 
 ---
 
@@ -119,6 +112,13 @@ Hereunder you can find more granular details about my **work experience, educati
 - **Spanish** — Native (C2)
 - **English** — Proficient (C2)
 - **German** — Advanced (C1)
+
+---
+
+## 🛠 Skills
+
+- **Technical Skills**: Microsoft 365, Azure, Active Directory, Networking, Intune, MFA, Exchange, PowerShell, SCCM, SAP, Cloud (IaaS, PaaS, SaaS), ITSM, Troubleshooting.  
+- **Soft Skills**: Problem-solving, Team collaboration, Proactivity, Fast learning, Empathy, Organization.  
 
 ---
 
