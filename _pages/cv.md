@@ -5,10 +5,12 @@ permalink: /cv/
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
-toc_levels: 2
 ---
 
 Hereunder you can find more granular details about my **work experience, education, skills, certifications, and languages**: 
+
+* TOC {:toc}
+{: #markdown-toc}
 
 ---
 
@@ -16,8 +18,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 💼 Work Experience {#work-experience}
-
+## 💼 Work Experience 
 ### L2 Managed Services Engineer & Technical Knowledge Manager — NTT DATA  
 *Madrid (Remote)* • *2023 – Present*  
 - Provide Level 2 technical support for Microsoft Teams, M365 and Azure environment, along with Cloud Voice infrastructure.  
@@ -54,7 +55,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 🎓 Education {#education}
+## 🎓 Education
 
 ### Master’s Degree in Italian Literature, Modern Philology & Linguistics — University of Rome "Tor Vergata"  
 *Rome & Mainz* • *2018 – 2022*  
@@ -77,7 +78,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 📜 Certifications {#certifications}
+## 📜 Certifications
 
 ### Microsoft Certifications  
 - [MS-721 – Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/87F3712A1939D1EB?sharingId=910D3083CD18E3A4){:target="_blank"} 
@@ -110,7 +111,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 🌍 Languages {#languages}
+## 🌍 Languages
 
 - **Italian** — Native (C2)
 - **Spanish** — Native (C2)
@@ -119,7 +120,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 🛠 Skills {#skills}
+## 🛠 Skills
 
 - **Technical Skills**: Microsoft 365, Azure, Active Directory, Networking, Intune, MFA, Exchange, PowerShell, SCCM, SAP, Cloud (IaaS, PaaS, SaaS), ITSM, Troubleshooting.  
 - **Soft Skills**: Problem-solving, Team collaboration, Proactivity, Fast learning, Empathy, Organization.  
