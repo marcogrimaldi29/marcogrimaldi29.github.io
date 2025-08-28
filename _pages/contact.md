@@ -19,3 +19,11 @@ You can get in touch with me through any of the following channels:
 
 🦉🟢 **Duolingo**  
 [duolingo.com/profile/MarcoGrimm](https://www.duolingo.com/profile/MarcoGrimm)
+
+📱 **Phone**  
+<div align="center">
+
+[🇪🇸 [phone-removed]](tel:[phone-removed]){: .btn .btn--info }  
+[🇮🇹 [phone-removed]](tel:[phone-removed]){: .btn .btn--success }
+
+</div>
