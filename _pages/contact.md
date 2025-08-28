@@ -21,9 +21,7 @@ You can get in touch with me through any of the following channels:
 [duolingo.com/profile/MarcoGrimm](https://www.duolingo.com/profile/MarcoGrimm)
 
 📱 **Phone**  
-<div align="center">
+- [🇪🇸 +34 644 478 121](tel:+34644478121)
+- [🇮🇹 +39 393 334 7917](tel:+393933347917)
 
-[🇪🇸 +34 644 478 121](tel:+34644478121){: .btn .btn--info }  
-[🇮🇹 +39 393 334 7917](tel:+393933347917){: .btn .btn--success }
-
-</div>
+---
