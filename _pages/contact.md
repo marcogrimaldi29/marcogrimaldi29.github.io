@@ -17,6 +17,9 @@ You can get in touch with me through any of the following channels:
 🐙 **GitHub**  
 [github.com/marcogrimaldi29](https://github.com/marcogrimaldi29)  
 
+🪟 **Microsoft**  
+[learn.microsoft.com/en-us/users/marcogrimaldi-0029](https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/)
+
 🦉🟢 **Duolingo**  
 [duolingo.com/profile/MarcoGrimm](https://www.duolingo.com/profile/MarcoGrimm)
 
