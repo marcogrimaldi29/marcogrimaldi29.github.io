@@ -5,6 +5,7 @@ permalink: /cv/
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
+toc_levels: 2
 ---
 
 Hereunder you can find more granular details about my **work experience, education, skills, certifications, and languages**: 
