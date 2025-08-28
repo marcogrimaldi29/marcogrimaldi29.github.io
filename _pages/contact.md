@@ -20,7 +20,7 @@ You can get in touch with me through any of the following channels:
 🪟 **Microsoft**  
 [learn.microsoft.com/en-us/users/marcogrimaldi-0029](https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/)
 
-🦉🟢 **Duolingo**  
+🦉 **Duolingo**  
 [duolingo.com/profile/MarcoGrimm](https://www.duolingo.com/profile/MarcoGrimm)
 
 📱 **Phone**  
