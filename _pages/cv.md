@@ -2,6 +2,9 @@
 title: "Curriculum Vitae"
 layout: single
 permalink: /cv/
+toc: true
+toc_sticky: true
+toc_label: "Table of Contents"
 ---
 
 Hereunder you can find more granular details about my **work experience, education, skills, certifications, and languages**: 
@@ -12,7 +15,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 💼 Work Experience
+## 💼 Work Experience {#work-experience}
 
 ### L2 Managed Services Engineer & Technical Knowledge Manager — NTT DATA  
 *Madrid (Remote)* • *2023 – Present*  
@@ -50,7 +53,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 🎓 Education
+## 🎓 Education {#education}
 
 ### Master’s Degree in Italian Literature, Modern Philology & Linguistics — University of Rome "Tor Vergata"  
 *Rome & Mainz* • *2018 – 2022*  
@@ -73,7 +76,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 📜 Certifications
+## 📜 Certifications {#certifications}
 
 ### Microsoft Certifications  
 - [MS-721 – Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/87F3712A1939D1EB?sharingId=910D3083CD18E3A4){:target="_blank"} 
@@ -106,7 +109,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 🌍 Languages
+## 🌍 Languages {#languages}
 
 - **Italian** — Native (C2)
 - **Spanish** — Native (C2)
@@ -115,7 +118,7 @@ Hereunder you can find more granular details about my **work experience, educati
 
 ---
 
-## 🛠 Skills
+## 🛠 Skills {#skills}
 
 - **Technical Skills**: Microsoft 365, Azure, Active Directory, Networking, Intune, MFA, Exchange, PowerShell, SCCM, SAP, Cloud (IaaS, PaaS, SaaS), ITSM, Troubleshooting.  
 - **Soft Skills**: Problem-solving, Team collaboration, Proactivity, Fast learning, Empathy, Organization.  
