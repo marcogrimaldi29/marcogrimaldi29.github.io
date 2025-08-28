@@ -98,7 +98,7 @@ Hereunder you can find more granular details about my **work experience, educati
 - [Project Management (2021)](https://www.coursera.org/account/accomplishments/professional-cert/RJ856W9X3F9R){:target="_blank"} 
 - [IT Support (2021)](https://www.coursera.org/account/accomplishments/professional-cert/NCLR33CHTFKV){:target="_blank"} 
 
-### Voice & Network  
+### Voice & Network Certifications
 - [SSCA® "Elite" SIP Training — SIP School (2025)](www.thesipschool.com/certificatecheck){:target="_blank"} 
 
 ### Languages Certifications  
