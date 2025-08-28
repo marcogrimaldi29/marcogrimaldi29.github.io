@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Marco Grimaldi"
-  avatar : "/assets/images/marco-cv.png"
+  avatar : "/assets/images/marco-cv.jpg"
   bio    : "Powered by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end."
   links:
     - label: "Website"
