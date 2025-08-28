@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   in Cloud Support, Cloud Administration, and Language Learning & Teaching, 
   and my passions beyond work, such as hiking trails and reading books that inspire curiosity and growth.
 # twitter_username: username
-github_username: marcogrimaldi29
+# github_username: marcogrimaldi29
 minimal_mistakes_skin: sunrise
 search: true
 
@@ -62,9 +62,9 @@ author:
   avatar : "/assets/images/marco-cv.jpg"
   bio    : "Powered by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://marcogrimaldi29.github.io"
+    - label: "Duolingo"
+      icon: "fab fa-duolingo"
+      url: "https://www.duolingo.com/profile/MarcoGrimm"  
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/marcogrimaldi29"
@@ -74,9 +74,9 @@ author:
     - label: "Microsoft"
       icon: "fab fa-microsoft"
       url: "https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/"
-    - label: "Duolingo"
-      icon: "fab fa-duolingo"
-      url: "https://www.duolingo.com/profile/MarcoGrimm"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://marcogrimaldi29.github.io"
 #   - label: "Instagram"
 #     icon: "fab fa-fw fa-instagram"
 #     url: "https://instagram.com/"
@@ -86,9 +86,9 @@ author:
 
 footer:
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://marcogrimaldi29.github.io"
+    - label: "Duolingo"
+      icon: "fab fa-duolingo"
+      url: "https://www.duolingo.com/profile/MarcoGrimm"  
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/marcogrimaldi29"
@@ -98,9 +98,9 @@ footer:
     - label: "Microsoft"
       icon: "fab fa-microsoft"
       url: "https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/"
-    - label: "Duolingo"
-      icon: "fab fa-duolingo"
-      url: "https://www.duolingo.com/profile/MarcoGrimm"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://marcogrimaldi29.github.io"
 #   - label: "Instagram"
 #     icon: "fab fa-fw fa-instagram"
 #     url: "https://instagram.com/"
