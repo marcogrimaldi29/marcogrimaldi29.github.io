@@ -1,8 +1,13 @@
 ---
 layout: single
-title: "About Me"
+title: "About"
 permalink: /about/
+toc: true
+toc_sticky: true
+toc_label: "Table of Contents"
 ---
+
+## 👨‍🦲 About Me 
 
 ---
 
@@ -11,7 +16,7 @@ My career bridges both the IT and linguistic fields, where I thrive on embracing
 
 ---
 
-## 🌐 Professional Identity
+### 🌐 Professional Identity
 
 - **IT & Cloud**: Experienced in Microsoft 365 environments, Teams, Azure administration, and cloud (voice) infrastructures, among other things. I specialize in **technical support, troubleshooting, and knowledge management**, ensuring that complex systems run smoothly and efficiently.  
 - **Languages & Training**: Skilled in teaching and communication, I have worked as a **foreign language teacher & trainer** with individuals and in language projects, fostering learning in multilingual and multicultural contexts. Beyond language teaching, I have guided learners in preparing for **certification exams** and supported **high school students** in achieving their academic goals.  
@@ -21,7 +26,7 @@ This blend of technical expertise and linguistic competence allows me to operate
 
 ---
 
-## 💡 Personal Values
+### 💡 Personal Values
 
 - **Problem-solving** — I enjoy diving into technical or organizational challenges and finding clear, structured solutions.  
 - **Collaboration** — A strong believer in teamwork, I thrive when learning from others and contributing to shared goals.  
@@ -30,7 +35,7 @@ This blend of technical expertise and linguistic competence allows me to operate
 
 ---
 
-## 🎒 Beyond Work
+### 🎒 Beyond Work
 
 Outside of the office, I dedicate time to my **passions**:  
 - **Hiking** — exploring trails and connecting with nature.  
@@ -42,3 +47,23 @@ Outside of the office, I dedicate time to my **passions**:
 📍 Based in **Las Palmas de Gran Canaria, Spain**, I connect with both local and international communities.  
 
 If you’d like to collaborate, share ideas, or explore common projects, feel free to [get in touch](/contact/).
+
+---
+
+## 🚧 About this Website
+
+This website is my attempt to maintain an up-to-date digital footprint of my personal brand.  
+Its purpose is to connect with peers, share ideas, explore collaboration opportunities,  
+and hopefully give something back from what I’ve learned so far in this journey.  
+
+It’s an ongoing exercise to:
+- keep writing about the things I love — technology, languages, lifelong learning, and some of my passions too  
+- refresh and practice front-end, Markdown, and Git skills  
+- shape a personal, media-agnostic digital space  
+
+---
+
+### ©️ Credits
+
+This site is built with [GitHub Pages](https://docs.github.com/en/pages) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) Jekyll theme.  
+It provides a simple, ad-free design that lets me focus on content while learning along the way.
