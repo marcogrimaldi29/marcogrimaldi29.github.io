@@ -9,8 +9,6 @@ toc_label: "Table of Contents"
 
 ## 👨‍🦲 About Me 
 
----
-
 I’m **Marco Grimaldi**, a professional with a deep passion for **technology, languages, and learning processes**.  
 My career bridges both the IT and linguistic fields, where I thrive on embracing new challenges, adapting to diverse contexts, and continuously expanding my knowledge.  
 
