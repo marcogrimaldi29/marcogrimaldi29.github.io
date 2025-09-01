@@ -17,7 +17,7 @@ My career bridges both the IT and linguistic fields, where I thrive on embracing
 ### 🌐 Professional Identity
 
 - **IT & Cloud**: Experienced in Microsoft 365 environments, Teams, Azure administration, and cloud (voice) infrastructures, among other things. I specialize in **technical support, troubleshooting, and knowledge management**, ensuring that complex systems run smoothly and efficiently.  
-- **Languages & Training**: Skilled in teaching and communication, I have worked as a **foreign language teacher & trainer** with individuals and in language projects, fostering learning in multilingual and multicultural contexts. Beyond language teaching, I have guided learners in preparing for **certification exams** and supported **high school students** in achieving their academic goals.  
+- **Languages & Training**: Skilled in teaching and communication, I have worked as a **foreign language teacher & trainer** with individuals and in language projects, fostering learning in multilingual and multicultural contexts. Beyond language teaching, I have guided learners in preparing for certification exams and supported high school students in achieving their academic goals.  
 - **Inclusive Education**: I value accessibility and inclusion, having also worked with individuals with **functional diversity**, adapting methods and tools to empower every learner to succeed.  
 
 This blend of technical expertise and linguistic competence allows me to operate effectively in **international, cross-functional environments**.
@@ -57,12 +57,13 @@ and hopefully give something back from what I’ve learned so far in this journe
 It’s an ongoing exercise to:
 - keep writing about the things I love — technology, languages, lifelong learning, and some of my passions too  
 - refresh and practice front-end, Markdown, and Git skills  
-- shape a personal, platform-agnostic digital space 
+- shape a personal, platform-agnostic digital space  
 
 ---
 
 ### ©️ Credits
 
 This site is built with [GitHub Pages](https://docs.github.com/en/pages) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) Jekyll theme. 
+It offers a simple, ad-free design that allows me to focus on the content while learning along the way.
+
 The favicon and profile picture are generated through [ChatGPT](https://chatgpt.com/).
-It provides a simple, ad-free design that lets me focus on content while learning along the way.
