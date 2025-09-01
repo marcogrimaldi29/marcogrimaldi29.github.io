@@ -7,7 +7,7 @@ toc_sticky: true
 toc_label: "Table of Contents"
 ---
 
-Hereunder you can find more granular details about my **work experience, education, skills, certifications, and languages**: 
+Hereunder, you can find more comprehensive information about my **work experience, education, skills, certifications, and languages**: 
 
 {:toc}
 
@@ -135,6 +135,7 @@ Hereunder you can find more granular details about my **work experience, educati
 - HTML & CSS
 - IAM
 - Intune
+- ITIL standards and procedures
 - ITSM
 - MFA
 - Microsoft 365 environment
