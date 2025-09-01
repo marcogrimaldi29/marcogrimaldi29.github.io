@@ -51,8 +51,7 @@ If you’d like to collaborate, share ideas, or explore common projects, feel fr
 ## 🚧 About this Website
 
 This website is my attempt to maintain an up-to-date digital footprint of my personal brand.  
-Its purpose is to connect with peers, share ideas, explore collaboration opportunities,  
-and hopefully give something back from what I’ve learned so far in this journey.  
+Its purpose is to connect with peers, share ideas, explore collaboration opportunities, and hopefully give something back from what I’ve learned so far in this journey.  
 
 It’s an ongoing exercise to:
 - keep writing about the things I love — technology, languages, lifelong learning, and some of my passions too  
