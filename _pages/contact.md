@@ -4,6 +4,8 @@ layout: single
 permalink: /contact/
 ---
 
+## Contact Me
+
 You can get in touch with me through any of the following channels:
 
 ---
@@ -25,6 +27,5 @@ You can get in touch with me through any of the following channels:
 
 📱 **Phone**  
 [🇪🇸 +34 644 478 121](tel:+34644478121)
-[🇮🇹 +39 393 334 7917](tel:+393933347917)
 
 ---
