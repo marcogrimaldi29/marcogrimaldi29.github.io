@@ -57,11 +57,12 @@ and hopefully give something back from what I’ve learned so far in this journe
 It’s an ongoing exercise to:
 - keep writing about the things I love — technology, languages, lifelong learning, and some of my passions too  
 - refresh and practice front-end, Markdown, and Git skills  
-- shape a personal, media-agnostic digital space  
+- shape a personal, platform-agnostic digital space 
 
 ---
 
 ### ©️ Credits
 
-This site is built with [GitHub Pages](https://docs.github.com/en/pages) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) Jekyll theme.  
+This site is built with [GitHub Pages](https://docs.github.com/en/pages) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) Jekyll theme. 
+The favicon and profile picture are generated through [ChatGPT](https://chatgpt.com/).
 It provides a simple, ad-free design that lets me focus on content while learning along the way.
