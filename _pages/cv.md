@@ -7,7 +7,7 @@ toc_sticky: true
 toc_label: "Table of Contents"
 ---
 
-Hereunder, you can find more details about my **work experience, education, skills, certifications, and languages**: 
+Hereunder you can find more granular details about my **work experience, education, skills, certifications, and languages**: 
 
 {:toc}
 
@@ -121,8 +121,50 @@ Hereunder, you can find more details about my **work experience, education, skil
 
 ## 🛠 Skills
 
-- **Technical Skills**: Microsoft 365, Azure, Active Directory, Networking, Intune, MFA, Exchange, PowerShell, SCCM, SAP, Cloud (IaaS, PaaS, SaaS), ITSM, Troubleshooting.  
-- **Soft Skills**: Problem-solving, Team collaboration, Proactivity, Fast learning, Empathy, Organization.  
+### Technical Skills
+
+- AI
+- Azure infrastructure
+- ChatGPT
+- Cloud (IaaS, PaaS, SaaS)
+- Cloud Voice
+- Copilot
+- Entra ID (formerly known as Azure Active Directory or AAD)
+- Exchange
+- Google environment
+- HTML & CSS
+- IAM
+- Intune
+- ITSM
+- MFA
+- Microsoft 365 environment
+- Networking
+- Python
+- Power BI
+- Power Platform
+- PowerShell
+- SAP
+- Service Desk
+- Session Initation Protocol (SIP)
+- SCCM
+- ServiceNow
+- Teams
+- Telephony
+- Troubleshooting
+- Voice over IP (VoIP)
+- Wireshark
+
+### Soft Skills
+
+- Adaptable
+- Detail-oriented
+- Client-first mentality
+- Fast-paced learner
+- Multitasker
+- Organized
+- Proactive
+- Problem solver
+- Team player
 
 ---
 
