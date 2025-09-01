@@ -4,6 +4,8 @@ layout: single
 permalink: /contact/
 ---
 
+## Contact Me
+
 You can get in touch with me through any of the following channels:
 
 ---
@@ -25,6 +27,5 @@ You can get in touch with me through any of the following channels:
 
 📱 **Phone**  
 [🇪🇸 [phone-removed]](tel:[phone-removed])
-[🇮🇹 [phone-removed]](tel:[phone-removed])
 
 ---
