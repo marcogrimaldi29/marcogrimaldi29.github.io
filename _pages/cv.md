@@ -7,7 +7,7 @@ toc_sticky: true
 toc_label: "Table of Contents"
 ---
 
-Hereunder you can find more granular details about my **work experience, education, skills, certifications, and languages**: 
+Hereunder, you can find more details about my **work experience, education, skills, certifications, and languages**: 
 
 {:toc}
 
