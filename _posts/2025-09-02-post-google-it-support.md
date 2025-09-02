@@ -1,10 +1,9 @@
 ---
-title: "🏅 01. Cert Review: Google IT Support Professional Certificate"
+title: "🏅 Cert Review: Google IT Support Professional Certificate"
 date: 2025-09-02
 categories:
-  - Blog
-tags:
   - Certification
+tags:
   - Google
 toc: true
 toc_sticky: true
@@ -12,6 +11,8 @@ toc_label: "Table of Contents"
 ---
 
 ## 🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way 
+
+### ℹ️ Intro 
 
 Hello everyone! If you're anything like I was a few years ago — a professional considering a major career change, or just someone curious about the world of IT — then this post is for you. My career path took a significant turn from language teaching into the dynamic world of IT. It was a leap of faith, even though I had some prior IT training from high school and from my university days. This experience made me confident in the courses included in this certificate, but it is not required for a great learning experience.
 
