@@ -5,10 +5,7 @@ layout: archive
 author_profile: true
 ---
 
-{% include base_path %}
-
 {% assign sorted_tags = site.tags | sort %}
-
 {% for tag in sorted_tags %}
   <h2 id="{{ tag[0] | slugify }}">{{ tag[0] | capitalize }}</h2>
   <ul>
