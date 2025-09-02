@@ -1,12 +1,19 @@
 ---
-title: "🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way"
+title: "🏅 01. Cert Review: Google IT Support Professional Certificate"
 date: 2025-09-02
-tags: [Certification]
+categories:
+  - Blog
+tags:
+  - Certification
+  - Google
+toc: true
+toc_sticky: true
+toc_label: "Table of Contents"
 ---
 
 ## 🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way 
 
-Hello everyone! If you're anything like I was a few years ago — a professional considering a major career change, or just someone curious about the world of IT — then this post is for you. My career path took a significant turn from language teaching into the dynamic world of IT. It was a leap of faith, even though I had some prior IT training from high school and from my university days. This past experience made me confident in the courses included in this certificate, but it is not required for a great learning experience.
+Hello everyone! If you're anything like I was a few years ago — a professional considering a major career change, or just someone curious about the world of IT — then this post is for you. My career path took a significant turn from language teaching into the dynamic world of IT. It was a leap of faith, even though I had some prior IT training from high school and from my university days. This experience made me confident in the courses included in this certificate, but it is not required for a great learning experience.
 
 The single most crucial first step I took was earning the **Google IT Support Professional Certificate**. This wasn't just my first Google certificate; it was my first IT certification, period, and it laid the foundation for everything that followed. Today, I want to share my tips and insights to help you get started on your own journey, especially for those of you who want to gain not only conceptual, but also practical awareness to land an IT Support job.
 
@@ -16,7 +23,7 @@ The Google IT Support Professional Certificate is a fantastic entry point for an
 
 ### 📚 The Six-Course Curriculum: A Comprehensive Overview
 
-The program is now divided into six core courses - it was five earlier, but now a sixth one covering AI has been added -, each outlining different pieces of the puzzle that composes the IT landscape. I found this modular approach incredibly effective because it covers all the critical aspects of the curriculum, from **IT architecture** and **system administration** to the essential fields of **networking** and **security**. In today's IT world, foundational knowledge in these areas is a must-have, and this certificate ensures you get it.
+The program is now divided into six core courses - it was five earlier, but now a sixth one covering AI has been added -, each outlining different pieces of the puzzle that compose the IT landscape. I found this modular approach incredibly effective because it covers all the critical aspects of the curriculum, from **IT architecture** and **system administration** to the essential fields of **networking** and **security**. In today's IT world, foundational knowledge in these areas is a must-have, and this certificate ensures you get it.
 
 The six courses are:
 
@@ -45,9 +52,9 @@ The course is hosted on [Coursera](https://www.coursera.org/professional-certifi
 
 When you audit, you won't be able to submit graded assignments, take quizzes, or earn a certificate. This means you'll miss out on the crucial hands-on projects, which are a vital part of the program's value.
 
-Nonetheless, it may be worth investing time in exploring whether your country and/or its local institutions have some partnership in place or scholarship opportunities so to be able to enroll free of charge.
+Nonetheless, it may be worth investing time in exploring whether your country and/or its local institutions have some partnership in place or scholarship opportunities to be able to enroll free of charge.
 
-Especially for those of you who are based in Spain, the Spanish institution [Experiencia Fundae](https://experienciafundae.es/) offers grants to enroll not only to the Google IT Professional Certificate, but also to other Google Professional Certificates for free. In order to apply for a scholarship, [click here](https://experienciafundae.es/beca-google).
+Especially for those of you who are based in Spain, the Spanish institution [Experiencia Fundae](https://experienciafundae.es/) offers grants to enroll not only to the Google IT Professional Certificate, but also in other Google Professional Certificates for free. To apply for a scholarship, [click here](https://experienciafundae.es/beca-google).
 
 To summarize, these can be seen as the main takeaways from this course: 
 - **Hands-on learning**: A strong focus on practical application that leads to meaningful learning.
