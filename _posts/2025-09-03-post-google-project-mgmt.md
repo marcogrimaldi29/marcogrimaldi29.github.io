@@ -8,7 +8,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
-permalink: /google-prject-mgmt/
+permalink: /google-project-mgmt/
 ---
 
 ## 🚀 Beyond the Tech: Why I Took the Google Project Management Certificate 
@@ -37,7 +37,7 @@ The six courses are:
 
 ### 👩🏻‍💻 Peer-Reviewed Assignments and the Capstone Project
 
-One of the most valuable parts of this certificate, and what sets it apart, is the emphasis on **peer-reviewed assignments** and the **Capstone project**. Unlike other exam modalities, such as multiple-choice exams, these tasks require you to apply what you've learned practically way.
+One of the most valuable parts of this certificate, and what sets it apart, is the emphasis on **peer-reviewed assignments** and the **Capstone project**. Unlike other exam modalities, such as multiple-choice exams, these tasks require you to apply what you've learned practically.
 
 * **Peer-Reviewed Assignments**: Throughout the courses, you'll submit projects and plans that are reviewed by your fellow learners. This process not only provides valuable feedback but also allows you to see different approaches and learn from your peers. This **enhanced the learning and practical experience** by giving me a sense of what collaboration and feedback look like in a professional setting, where achieving a common goal is a team effort.
 
@@ -47,11 +47,11 @@ One of the most valuable parts of this certificate, and what sets it apart, is t
 
 ### 📦 Final Remarks and Key Takeaways
 
-As outlined in my previous article [My Journey into IT: How the Google IT Support Professional Certificate Paved the Way](/google-it-support/), the course is accessible on [Coursera](https://www.coursera.org/professional-certificates/google-project-management), and for learners in Spain, scholarship opportunities are available through [Experiencia Fundae](https://experienciafundae.es/) by [clicking here](https://experienciafundae.es/beca-google) and applying to the Google Project Management Professional Certificate.
+As outlined in my previous article [🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way](/google-it-support/), the course is accessible on [Coursera](https://www.coursera.org/professional-certificates/google-project-management), and for learners in Spain, scholarship opportunities are available through [Experiencia Fundae](https://experienciafundae.es/) by [clicking here](https://experienciafundae.es/beca-google) and applying to the Google Project Management Professional Certificate.
 
 #### 🗪 Beyond the Course: Extra Perks
 
-One thing I didn't mention in [My Journey into IT: How the Google IT Support Professional Certificate Paved the Way](/google-it-support/) is that platforms like Coursera and Udemy often provide extensive caption and subtitle options. This means you can absorb subject-related content while simultaneously boosting your reading comprehension in other languages. It can be a little bit of cognitive extra stress, but it's a great way to build matter-related vocabulary.
+One thing I didn't mention in [🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way](/google-it-support/) is that platforms like Coursera and Udemy often provide extensive caption and subtitle options. This means you can absorb subject-related content while simultaneously boosting your reading comprehension in other languages. It can be a little bit of cognitive extra stress, but it's a great way to build matter-related vocabulary.
 
 Also, project management requires an essential skill for professionals: using spreadsheets. Since the amount of resources and readings can be overwhelming, I recommend creating a spreadsheet to track what you've learned. A great, free option is [Google Sheets](https://docs.google.com/spreadsheets/), which keeps you in the same "environment". These are just suggestions, though; what works best for you should always be your first choice.
 
