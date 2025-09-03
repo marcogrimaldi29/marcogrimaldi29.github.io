@@ -13,6 +13,8 @@ permalink: /google-prject-mgmt/
 
 ## 🚀 Beyond the Tech: Why I Took the Google Project Management Certificate 
 
+### ℹ️ Intro 
+
 Hello everyone! Following up on my previous post about the Google IT Support Certificate, I would like to talk about the next step in my IT professional development: the **Google Project Management Professional Certificate**. This was my second Google certification, and it gave me a great understanding of everything about project management types, procedures, and the entire project lifecycle.
 
 For me, this certificate wasn't about a direct career pivot into a management position. Instead, I was really interested in understanding how management and leadership work to better grasp the bigger picture. In any IT role, whether it's support, development, or system administration, you are part of a larger project. Knowing the principles that drive these projects — the planning, the communication, the risk management — is invaluable. This certificate is a comprehensive and practical guide to what it takes to be a successful project manager, and it provides crucial context for anyone working within a team. Therefore, I regarded it as a great add-on to build on the IT Support one.
@@ -41,6 +43,8 @@ One of the most valuable parts of this certificate, and what sets it apart, is t
 
 * **The Capstone Project**: This is the final and most significant part of the certificate. You take on a comprehensive project from start to finish. For me, this experience was instrumental. It wasn't just about passing a test; it was about demonstrating my ability to **manage a project in its entirety**. It truly validated my skills and gave me the confidence to step into a project management role.
 
+---
+
 ### 📦 Final Remarks and Key Takeaways
 
 As outlined in my previous article [My Journey into IT: How the Google IT Support Professional Certificate Paved the Way](/google-it-support/), the course is accessible on [Coursera](https://www.coursera.org/professional-certificates/google-project-management), and for learners in Spain, scholarship opportunities are available through [Experiencia Fundae](https://experienciafundae.es/) by [clicking here](https://experienciafundae.es/beca-google) and applying to the Google Project Management Professional Certificate.
@@ -49,8 +53,10 @@ As outlined in my previous article [My Journey into IT: How the Google IT Suppor
 
 One thing I didn't mention in [My Journey into IT: How the Google IT Support Professional Certificate Paved the Way](/google-it-support/) is that platforms like Coursera and Udemy often provide extensive caption and subtitle options. This means you can absorb subject-related content while simultaneously boosting your reading comprehension in other languages. It can be a little bit of cognitive extra stress, but it's a great way to build matter-related vocabulary.
 
-Also, project management requires an essential skill for professionals: using spreadsheets. Since the amount of resources and readings can be overwhelming, I recommend creating a spreadsheet to track what you've learned. A great, free option is [Google Sheets](https://docs.google.com/), which keeps you in the same "environment". These are just suggestions, though; what works best for you should always be your first choice.
+Also, project management requires an essential skill for professionals: using spreadsheets. Since the amount of resources and readings can be overwhelming, I recommend creating a spreadsheet to track what you've learned. A great, free option is [Google Sheets](https://docs.google.com/spreadsheets/), which keeps you in the same "environment". These are just suggestions, though; what works best for you should always be your first choice.
 
 #### 📊 The Overall Impact
 
 All in all, the project lifecycle and Agile methodologies covered in this certificate imply crucial skills and knowledge that can benefit anyone, including non-IT professionals. The course helped me challenge my usual methods and *modus operandi* for tackling tasks. It pushed me to rethink and try out new approaches that have expanded my personal skillset. If you've never attended related classes, I'm confident this collection of courses will give a significant boost to your *repertoire* as well.
+
+---
