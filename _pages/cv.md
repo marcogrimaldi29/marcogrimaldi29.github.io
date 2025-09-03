@@ -129,13 +129,13 @@ Hereunder, you can find more comprehensive information about my **work experienc
 - Cloud (IaaS, PaaS, SaaS)
 - Cloud Voice
 - Copilot
-- Entra ID (formerly known as Azure Active Directory or AAD)
+- Entra ID - formerly known as Azure Active Directory (AAD)
 - Exchange
 - Google environment
 - HTML & CSS
 - IAM
 - Intune
-- ITIL standards and procedures
+- ITIL
 - ITSM
 - MFA
 - Microsoft 365 environment
