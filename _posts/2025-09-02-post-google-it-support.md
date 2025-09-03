@@ -48,6 +48,8 @@ These exercises are crucial, in particular for retaining and consolidating what 
 
 To sum up, if you want to get closer to the IT world and its support-related jobs, this certificate is a fantastic starting point. For me, it was a great help in understanding what to expect from the field, and its takeaways were instrumental in helping me land my first job as a Service Desk Analyst.
 
+---
+
 ### 📦 Final Thoughts and Key Takeaways
 
 The course is hosted on [Coursera](https://www.coursera.org/professional-certificates/google-it-support), one of the most widely known online learning platforms. Typically, enrolling in the courses requires a monthly fee. However, if you want to get a feel for the content or aren't interested in the official certificate, you have the option to **audit the courses for free**.
@@ -64,3 +66,5 @@ To summarize, these can be seen as the main takeaways from this course:
 - **Career readiness**: It provides an overview of what to expect in an IT role and the soft skills you'll need to succeed.
 
 On the flip side, it's worth mentioning that while Google Professional Certificates equip you with valuable knowledge and skills, they might not be seen as prestigious as an AZ-104 certification from Microsoft or a Google Cloud Platform (GCP) one. This has been my personal experience. Nonetheless, the time you spend on them is definitely a great advantage, especially if an IT Support skillset is what you're after.
+
+---
