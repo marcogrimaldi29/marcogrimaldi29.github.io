@@ -47,7 +47,7 @@ As outlined in my previous article [My Journey into IT: How the Google IT Suppor
 
 #### 🗪 Beyond the Course: Extra Perks
 
-One thing I didn't mention in [My Journey into IT: How the Google IT Support Professional Certificate Paved the Way](/post-3/) is that platforms like Coursera and Udemy often provide extensive caption and subtitle options. This means you can absorb subject-related content while simultaneously boosting your reading comprehension in other languages. It can be a little bit of cognitive extra stress, but it's a great way to build matter-related vocabulary.
+One thing I didn't mention in [My Journey into IT: How the Google IT Support Professional Certificate Paved the Way](/google-it-support/) is that platforms like Coursera and Udemy often provide extensive caption and subtitle options. This means you can absorb subject-related content while simultaneously boosting your reading comprehension in other languages. It can be a little bit of cognitive extra stress, but it's a great way to build matter-related vocabulary.
 
 Also, project management requires an essential skill for professionals: using spreadsheets. Since the amount of resources and readings can be overwhelming, I recommend creating a spreadsheet to track what you've learned. A great, free option is [Google Sheets](https://docs.google.com/), which keeps you in the same "environment". These are just suggestions, though; what works best for you should always be your first choice.
 
