@@ -8,6 +8,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
+permalink: /google-it-support/
 ---
 
 ## 🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way 
