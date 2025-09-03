@@ -8,10 +8,10 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
-permalink: /google-project-mgmt/
+permalink: /google-prject-mgmt/
 ---
 
-## 🚀 Beyond the Tech: Why I Took the Google Project Management Certificate 
+## 🎯 Beyond the Tech: Why I Took the Google Project Management Certificate 
 
 ### ℹ️ Intro 
 
@@ -26,6 +26,7 @@ For me, this certificate wasn't about a direct career pivot into a management po
 The program is structured into six courses, each building on the last to provide a complete understanding of the field and the entire project lifecycle. From the fundamentals to advanced methodologies, this curriculum prepares you for a real-world project environment.
 
 The six courses are:
+
 * **Foundations of Project Management**: This course introduces you to the **core concepts and roles within project management**. You'll learn about the project lifecycle, from initiation to closure, and the key responsibilities of a project manager.
 * **Project Initiation: Starting a Successful Project**: Here, you'll learn **how to define project goals, deliverables, and scope**. This course focuses on creating project charters, managing stakeholders, and setting up a project for success from the very beginning.
 * **Project Planning: Putting It All Together**: This course is all about **creating a detailed plan**. You'll cover essential topics like building work breakdown structures, estimating timelines, managing budgets, and identifying potential risks.
@@ -37,7 +38,7 @@ The six courses are:
 
 ### 👩🏻‍💻 Peer-Reviewed Assignments and the Capstone Project
 
-One of the most valuable parts of this certificate, and what sets it apart, is the emphasis on **peer-reviewed assignments** and the **Capstone project**. Unlike other exam modalities, such as multiple-choice exams, these tasks require you to apply what you've learned practically.
+One of the most valuable parts of this certificate, and what sets it apart, is the emphasis on **peer-reviewed assignments** and the **Capstone project**. Unlike other exam modalities, such as multiple-choice exams, these tasks require you to apply what you've learned practically way.
 
 * **Peer-Reviewed Assignments**: Throughout the courses, you'll submit projects and plans that are reviewed by your fellow learners. This process not only provides valuable feedback but also allows you to see different approaches and learn from your peers. This **enhanced the learning and practical experience** by giving me a sense of what collaboration and feedback look like in a professional setting, where achieving a common goal is a team effort.
 
@@ -47,7 +48,7 @@ One of the most valuable parts of this certificate, and what sets it apart, is t
 
 ### 📦 Final Remarks and Key Takeaways
 
-As outlined in my previous article [🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way](/google-it-support/), the course is accessible on [Coursera](https://www.coursera.org/professional-certificates/google-project-management), and for learners in Spain, scholarship opportunities are available through [Experiencia Fundae](https://experienciafundae.es/) by [clicking here](https://experienciafundae.es/beca-google) and applying to the Google Project Management Professional Certificate.
+The course is accessible on [Coursera](https://www.coursera.org/professional-certificates/google-project-management) and for learners based in Spain, scholarship opportunities are available through [Experiencia Fundae](https://experienciafundae.es/) by [clicking here](https://experienciafundae.es/beca-google).
 
 #### 🗪 Beyond the Course: Extra Perks
 
