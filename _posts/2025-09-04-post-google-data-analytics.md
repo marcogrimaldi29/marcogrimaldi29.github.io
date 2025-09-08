@@ -13,6 +13,9 @@ permalink: /google-data-analytics/
 
 ## 🗃️ My Journey into Data: Why Taking on a New Challenge
 
+**Just a heads-up:** This review reflects my personal experience only. It is not sponsored or endorsed in any way.
+{: .notice--info}
+
 ### ℹ️ Intro 
 
 In the world of IT, you learn to solve problems. But what if you could anticipate them? What if you could use data to not only fix what's broken but to build something better or proactively spot an issue before it could cause an impact? These were the questions that sparked my interest in data analytics, even as a full-time employee.
@@ -72,5 +75,8 @@ My professional background is diverse, ranging from Audio Engineering and Langua
 As I've seen with other Google Professional Certificates, this course's focus on structured learning and hands-on projects made the transition into complex data concepts smooth and engaging. The biggest lesson I learned is that **data literacy is a universal skill**. It's no longer just for analysts — it's for every professional who wants to make smarter decisions. This journey has given me the confidence to not only understand data but to use it as a powerful tool for innovation and continuous improvement in any role I hold. With hindsight, I would say that it may well be of great help in the classroom and in educational settings to better tailor a curriculum to the learner's or group's needs, for instance.
 
 In conclusion, the Google Data Analytics Professional Certificate is a fantastic resource for anyone looking to upskill in the data space, whether they're aiming for a career change or, like me, simply want to broaden their knowledge to enhance their proficiency in their current role. 
+
+**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement or compensation from Google or any related party. My aim is to share insights that may help others assess whether the Google Project Management Professional Certificate aligns with their own goals and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may help cover the costs of such programs.
+{: .notice--info}
 
 ---
