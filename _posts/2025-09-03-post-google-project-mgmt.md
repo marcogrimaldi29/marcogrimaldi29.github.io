@@ -8,7 +8,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
-permalink: /google-prject-mgmt/
+permalink: /google-project-mgmt/
 ---
 
 ## 🎯 Beyond the Tech: Why I Took the Google Project Management Certificate 
