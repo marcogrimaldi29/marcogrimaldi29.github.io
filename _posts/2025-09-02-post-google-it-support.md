@@ -56,9 +56,12 @@ The course is hosted on [Coursera](https://www.coursera.org/professional-certifi
 
 When you audit, you won't be able to submit graded assignments, take quizzes, or earn a certificate. This means you'll miss out on the crucial hands-on projects, which are a vital part of the program's value.
 
-Nonetheless, it may be worth investing time in exploring whether your country and/or its local institutions have some partnership in place or scholarship opportunities to be able to enroll free of charge.
+Nonetheless, it may be worth investing time in exploring whether your country and/or its local institutions have a partnership in place or scholarship opportunities that allow you to enroll free of charge.
 
 Especially for those of you who are based in Spain, the Spanish institution [Experiencia Fundae](https://experienciafundae.es/) offers grants to enroll not only to the Google IT Professional Certificate, but also in other Google Professional Certificates for free. To apply for a scholarship, [click here](https://experienciafundae.es/beca-google).
+
+**Disclaimer:** This article is based solely on my personal experience. I have not received any endorsement or compensation from Google or any related party. My aim is to share insights that may help others assess whether the Google IT Support Professional Certificate aligns with their own goals and needs.
+{: .notice--info}
 
 To summarize, these can be seen as the main takeaways from this course: 
 - **Hands-on learning**: A strong focus on practical application that leads to meaningful learning.
