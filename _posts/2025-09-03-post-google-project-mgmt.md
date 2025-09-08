@@ -13,6 +13,9 @@ permalink: /google-prject-mgmt/
 
 ## 🎯 Beyond the Tech: Why I Took the Google Project Management Certificate 
 
+**Just a heads-up:** This review reflects my personal experience only. It is not sponsored or endorsed in any way.
+{: .notice--info}
+
 ### ℹ️ Intro 
 
 Hello everyone! Following up on my previous post about the Google IT Support Certificate, I would like to talk about the next step in my IT professional development: the **Google Project Management Professional Certificate**. This was my second Google certification, and it gave me a great understanding of everything about project management types, procedures, and the entire project lifecycle.
@@ -38,7 +41,7 @@ The six courses are:
 
 ### 👩🏻‍💻 Peer-Reviewed Assignments and the Capstone Project
 
-One of the most valuable parts of this certificate, and what sets it apart, is the emphasis on **peer-reviewed assignments** and the **Capstone project**. Unlike other exam modalities, such as multiple-choice exams, these tasks require you to apply what you've learned practically way.
+One of the most valuable parts of this certificate, and what sets it apart, is the emphasis on **peer-reviewed assignments** and the **Capstone project**. Unlike other exam modalities, such as multiple-choice exams, these tasks require you to apply what you've learned practically.
 
 * **Peer-Reviewed Assignments**: Throughout the courses, you'll submit projects and plans that are reviewed by your fellow learners. This process not only provides valuable feedback but also allows you to see different approaches and learn from your peers. This **enhanced the learning and practical experience** by giving me a sense of what collaboration and feedback look like in a professional setting, where achieving a common goal is a team effort.
 
@@ -48,7 +51,7 @@ One of the most valuable parts of this certificate, and what sets it apart, is t
 
 ### 📦 Final Remarks and Key Takeaways
 
-The course is accessible on [Coursera](https://www.coursera.org/professional-certificates/google-project-management) and for learners based in Spain, scholarship opportunities are available through [Experiencia Fundae](https://experienciafundae.es/) by [clicking here](https://experienciafundae.es/beca-google).
+The course is accessible on [Coursera](https://www.coursera.org/professional-certificates/google-project-management), and for learners based in Spain, scholarship opportunities are available through [Experiencia Fundae](https://experienciafundae.es/) by [clicking here](https://experienciafundae.es/beca-google).
 
 #### 🗪 Beyond the Course: Extra Perks
 
@@ -59,5 +62,8 @@ Also, project management requires an essential skill for professionals: using sp
 #### 📊 The Overall Impact
 
 All in all, the project lifecycle and Agile methodologies covered in this certificate imply crucial skills and knowledge that can benefit anyone, including non-IT professionals. The course helped me challenge my usual methods and *modus operandi* for tackling tasks. It pushed me to rethink and try out new approaches that have expanded my personal skillset. If you've never attended related classes, I'm confident this collection of courses will give a significant boost to your *repertoire* as well.
+
+**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement or compensation from Google or any related party. My aim is to share insights that may help others assess whether the Google Project Management Professional Certificate aligns with their own goals and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may help cover the costs of such programs.
+{: .notice--info}
 
 ---
