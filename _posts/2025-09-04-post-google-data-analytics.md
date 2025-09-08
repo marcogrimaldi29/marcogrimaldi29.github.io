@@ -76,7 +76,7 @@ As I've seen with other Google Professional Certificates, this course's focus on
 
 In conclusion, the Google Data Analytics Professional Certificate is a fantastic resource for anyone looking to upskill in the data space, whether they're aiming for a career change or, like me, simply want to broaden their knowledge to enhance their proficiency in their current role. 
 
-**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement or compensation from Google or any related party. My aim is to share insights that may help others assess whether the Google Project Management Professional Certificate aligns with their own goals and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may help cover the costs of such programs.
+**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement or compensation from Google or any related party. My aim is to share insights that may help others assess whether the Google Data Analytics Professional Certificate aligns with their own goals and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may help cover the costs of such programs.
 {: .notice--info}
 
 ---
