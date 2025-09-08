@@ -13,6 +13,9 @@ permalink: /google-it-support/
 
 ## 🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way 
 
+**Just a heads-up:** This review reflects my personal experience only. It is not sponsored or endorsed in any way.
+{: .notice--info}
+
 ### ℹ️ Intro 
 
 Hello everyone! If you're anything like I was a few years ago — a professional considering a major career change, or just someone curious about the world of IT — then this post is for you. My career path took a significant turn from language teaching into the dynamic world of IT. It was a leap of faith, even though I had some prior IT training from high school and from my university days. This experience made me confident in the courses included in this certificate, but it is not required for a great learning experience.
@@ -69,5 +72,8 @@ To summarize, these can be seen as the main takeaways from this course:
 - **Career readiness**: It provides an overview of what to expect in an IT role and the soft skills you'll need to succeed.
 
 On the flip side, it's worth mentioning that while Google Professional Certificates equip you with valuable knowledge and skills, they might not be seen as prestigious as an AZ-104 certification from Microsoft or a Google Cloud Platform (GCP) one. This has been my personal experience. Nonetheless, the time you spend on them is definitely a great advantage, especially if an IT Support skillset is what you're after.
+
+**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement or compensation from Google or any related party. My aim is to share insights that may help others assess whether the Google Project Management Professional Certificate aligns with their own goals and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may help cover the costs of such programs.
+{: .notice--info}
 
 ---
