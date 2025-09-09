@@ -13,7 +13,7 @@ permalink: /google-project-mgmt/
 
 ## 🎯 Beyond the Tech: Why I Took the Google Project Management Certificate 
 
-**Just a heads-up:** This review reflects my personal experience only. It is not sponsored or endorsed in any way.
+**Just a heads-up:** This review reflects my personal experience only. It is not sponsored in any way.
 {: .notice--info}
 
 ### ℹ️ Intro 
@@ -61,9 +61,9 @@ Also, project management requires an essential skill for professionals: using sp
 
 #### 📊 The Overall Impact
 
-All in all, the project lifecycle and Agile methodologies covered in this certificate imply crucial skills and knowledge that can benefit anyone, including non-IT professionals. The course helped me challenge my usual methods and *modus operandi* for tackling tasks. It pushed me to rethink and try out new approaches that have expanded my personal skillset. If you've never attended related classes, I'm confident this collection of courses will give a significant boost to your *repertoire* as well.
+All in all, the project lifecycle and Agile methodologies covered in this certificate imply crucial skills and knowledge that can benefit anyone, including non-IT professionals. The course helped me challenge my usual methods and *modus operandi* for tackling tasks. It prompted me to rethink and try out new approaches, which have expanded my personal skill set. If you've never attended related classes, I'm confident this collection of courses will give a significant boost to your *repertoire* as well.
 
-**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement or compensation from Google or any related party. My aim is to share insights that may help others assess whether the Google Project Management Professional Certificate aligns with their own goals and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may help cover the costs of such programs.
+**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. My aim is to share insights that may help others assess whether the Google Project Management Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may foster lifelong learning for a more accessible educational experience.
 {: .notice--info}
 
 ---
