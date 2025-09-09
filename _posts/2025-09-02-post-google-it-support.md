@@ -70,7 +70,7 @@ To summarize, these can be seen as the main takeaways from this course:
 
 On the flip side, it's worth mentioning that while Google Professional Certificates equip you with valuable knowledge and skills, they might not be seen as prestigious as an AZ-104 certification from Microsoft or a Google Cloud Platform (GCP) one. This has been my personal experience. Nonetheless, the time you spend on them is definitely a great advantage, especially if an IT Support skillset is what you're after.
 
-**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. My aim is to share insights that may help others assess whether the Google IT Support Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scolarships or community resources that may foster life-long learning for a more accesible educational experience.
+**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. I aim to share insights that may help others assess whether the Google IT Support Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may foster lifelong learning for a more accessible educational experience.
 {: .notice--info}
 
 ---
