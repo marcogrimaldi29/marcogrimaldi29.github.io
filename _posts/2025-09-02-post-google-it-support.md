@@ -13,7 +13,7 @@ permalink: /google-it-support/
 
 ## 🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way 
 
-**Just a heads-up:** This review reflects my personal experience only. It is not sponsored or endorsed in any way.
+**Just a heads-up:** This review reflects my personal experience only. It is not sponsored in any way.
 {: .notice--info}
 
 ### ℹ️ Intro 
@@ -63,9 +63,6 @@ Nonetheless, it may be worth investing time in exploring whether your country an
 
 Especially for those of you who are based in Spain, the Spanish institution [Experiencia Fundae](https://experienciafundae.es/) offers grants to enroll not only to the Google IT Professional Certificate, but also in other Google Professional Certificates for free. To apply for a scholarship, [click here](https://experienciafundae.es/beca-google).
 
-**Disclaimer:** This article is based solely on my personal experience. I have not received any endorsement or compensation from Google or any related party. My aim is to share insights that may help others assess whether the Google IT Support Professional Certificate aligns with their own goals and needs.
-{: .notice--info}
-
 To summarize, these can be seen as the main takeaways from this course: 
 - **Hands-on learning**: A strong focus on practical application that leads to meaningful learning.
 - **Comprehensive curriculum**: The course covers everything you'll need for an entry-level IT job.
@@ -73,7 +70,7 @@ To summarize, these can be seen as the main takeaways from this course:
 
 On the flip side, it's worth mentioning that while Google Professional Certificates equip you with valuable knowledge and skills, they might not be seen as prestigious as an AZ-104 certification from Microsoft or a Google Cloud Platform (GCP) one. This has been my personal experience. Nonetheless, the time you spend on them is definitely a great advantage, especially if an IT Support skillset is what you're after.
 
-**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement or compensation from Google or any related party. My aim is to share insights that may help others assess whether the Google Project Management Professional Certificate aligns with their own goals and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may help cover the costs of such programs.
+**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. My aim is to share insights that may help others assess whether the Google IT Support Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scolarships or community resources that may foster life-long learning for a more accesible educational experience.
 {: .notice--info}
 
 ---
