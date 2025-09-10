@@ -13,14 +13,14 @@ permalink: /google-data-analytics/
 
 ## 🗃️ My Journey into Data: Why Taking on a New Challenge
 
-**Just a heads-up:** This review reflects my personal experience only. It is not sponsored or endorsed in any way.
+**Just a heads-up:** This review reflects my personal experience only. It is not sponsored in any way.
 {: .notice--info}
 
 ### ℹ️ Intro 
 
 In the world of IT, you learn to solve problems. But what if you could anticipate them? What if you could use data to not only fix what's broken but to build something better or proactively spot an issue before it could cause an impact? These were the questions that sparked my interest in data analytics, even as a full-time employee.
 
-I wasn't looking to become a Data Analyst; I was looking to future-proof my career. In an era dominated by data, AI, and emerging technologies, I expected that understanding how to efficiently work with data was no longer an option — it was a necessity for a plethora of different jobs. 
+I wasn't looking to become a Data Analyst; I was looking to future-proof my career. In an era dominated by data, AI, and emerging technologies, I expected that understanding how to efficiently work with data was no longer an option — it was a necessity for a plethora of different job positions. 
 
 I firmly believe in the power of lifelong learning and that having access to educational resources is key to upskilling if motivation follows. Thanks to a grant obtained via [Experiencia Fundae](https://experienciafundae.es/beca-google), I embarked on a new journey by enrolling in the [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) back in 2021.
 
@@ -28,7 +28,7 @@ I firmly believe in the power of lifelong learning and that having access to edu
 
 ### 📚 The Analyst's Toolkit: A Look at the Courses
 
-The **Google Data Analytics Professional Certificate** is an accessible nine-course program that guides you through the entire data analysis process — no prior experience required. The curriculum is expertly designed to give you the skills and tools used by junior data analysts, from basic concepts to a real-world case study. While Google estimates a six-month completion time at a pace of 10 hours per week, I was able to dedicate more time and successfully finish the course in a shorter timeframe, wholly absorbing all the content.
+The **Google Data Analytics Professional Certificate** is a nine-course program that guides you through the entire data analysis process — no prior experience required. The curriculum is designed to give you the skills and tools used by junior data analysts, from basic concepts to a real-world case study. While Google estimates a six-month completion time at a pace of 10 hours per week, I was able to dedicate more time and successfully finish the course in a shorter timeframe, while retaining all the needed content.
 
 Here is a summary of the courses in the program:
 
