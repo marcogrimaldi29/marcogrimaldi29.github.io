@@ -56,6 +56,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-last-modified-at # Added to set up a GitHub Actions workflow to enable "Last modified" date on posts
 
 author:
   name   : "Marco Grimaldi"
