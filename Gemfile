@@ -14,5 +14,4 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
-  gem "jekyll-last-modified-at" # Added to set up a GitHub Actions workflow to enable "Last modified" date on posts
 end
