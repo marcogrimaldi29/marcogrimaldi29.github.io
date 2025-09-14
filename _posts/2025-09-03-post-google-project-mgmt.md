@@ -1,6 +1,6 @@
 ---
 title: "🏅 Cert Review: Google Project Management Professional Certificate"
-date: 2025-09-03
+date: 2025-09-10
 categories:
   - Certification
 tags:
@@ -20,7 +20,9 @@ permalink: /google-project-mgmt/
 
 Hello everyone! Following up on my previous post about the Google IT Support Certificate, I would like to talk about the next step in my IT professional development: the **Google Project Management Professional Certificate**. This was my second Google certification, and it gave me a great understanding of everything about project management types, procedures, and the entire project lifecycle.
 
-For me, this certificate wasn't about a direct career pivot into a management position. Instead, I was really interested in understanding how management and leadership work to better grasp the bigger picture. In any IT role, whether it's support, development, or system administration, you are part of a larger project. Knowing the principles that drive these projects — the planning, the communication, the risk management — is invaluable. This certificate is a comprehensive and practical guide to what it takes to be a successful project manager, and it provides crucial context for anyone working within a team. Therefore, I regarded it as a great add-on to build on the IT Support one.
+For me, this certificate wasn’t about pivoting directly into a management role. I was more interested in understanding how management and leadership work in order to see the bigger picture. In any IT role — whether support, development, or system administration — you’re part of a larger project. Knowing the principles that drive those projects — planning, communication, risk management — is invaluable, and not only in IT but across many professions.
+
+This certificate offers a clear and practical guide to what it takes to be a successful project manager. More importantly, it provides crucial context for anyone working within a team. That’s why I considered it an excellent complement to the IT Support certificate.
 
 ---
 
