@@ -1,6 +1,6 @@
 ---
 title: "🏅 Cert Review: Google Data Analytics Professional Certificate"
-date: 2025-09-04
+date: 2025-09-15
 categories:
   - Certification
 tags:
@@ -18,11 +18,11 @@ permalink: /google-data-analytics/
 
 ### ℹ️ Intro 
 
-In the world of IT, you learn to solve problems. But what if you could anticipate them? What if you could use data to not only fix what's broken but to build something better or proactively spot an issue before it could cause an impact? These were the questions that sparked my interest in data analytics, even as a full-time employee.
+In any profession, you’re expected to solve problems. But what if you could go a step further — anticipate them, prevent them, and even discover opportunities hidden in plain sight? That’s the power of data. Whether you’re managing a classroom, running a business, supporting customers, or working in IT, the ability to understand and act on data is becoming a core skill.
 
-I wasn't looking to become a Data Analyst; I was looking to future-proof my career. In an era dominated by data, AI, and emerging technologies, I expected that understanding how to efficiently work with data was no longer an option — it was a necessity for a plethora of different job positions. 
+For me, this wasn’t about becoming a full-time Data Analyst. It was about future-proofing my career. In an era shaped by AI, automation, and ever-expanding datasets, data literacy is no longer reserved for technical roles. Teachers, project managers, marketers, healthcare professionals, and countless others can benefit from knowing how to collect, interpret, and visualize data to make better decisions.
 
-I firmly believe in the power of lifelong learning and that having access to educational resources is key to upskilling if motivation follows. Thanks to a grant obtained via [Experiencia Fundae](https://experienciafundae.es/beca-google), I embarked on a new journey by enrolling in the [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) back in 2021.
+I’ve always believed in lifelong learning and in making the most of accessible resources. Thanks to a grant from [Experiencia Fundae](https://experienciafundae.es/beca-google), I decided to take on a new challenge and enrolled in the [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) back in 2021. That choice opened a door to skills and perspectives that I now apply far beyond IT.
 
 ---
 
