@@ -1,3 +1,8 @@
+{% comment %}
+  - Keeps external links opening in a new tab
+  - Restores Minimal Mistakes main.js for TOC scrollspy and other features
+{% endcomment %}
+
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const currentHost = window.location.hostname;
@@ -10,3 +15,8 @@
     });
   });
 </script>
+
+<!-- Minimal Mistakes main JavaScript (scrollspy, smooth scroll, etc.) -->
+<script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+
+{% include_cached scripts/custom.html %}
