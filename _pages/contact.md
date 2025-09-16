@@ -8,8 +8,6 @@ permalink: /contact/
 
 You can get in touch with me through any of the following channels:
 
----
-
 * 🦉 **Duolingo**  
 [duolingo.com/profile/MarcoGrimm](https://www.duolingo.com/profile/MarcoGrimm)
 
