@@ -9,3 +9,18 @@
 <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/images/favicon-192x192.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="256x256" href="{{ '/assets/images/favicon-256x256.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon-512x512.png' | relative_url }}">
+
+<!-- External links in new tabs -->
+<script>
+(function() {
+  document.addEventListener("DOMContentLoaded", function() {
+    const currentHost = window.location.hostname;
+    document.querySelectorAll("a[href]").forEach(link => {
+      if (link.hostname && link.hostname !== currentHost) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+  });
+})();
+</script>
