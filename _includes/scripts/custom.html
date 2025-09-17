@@ -1,10 +1,11 @@
 <script>
 (function() {
-  window.addEventListener("load", function() {
+  window.addEventListener("DOMContentLoaded", function() {
     const currentHost = window.location.hostname;
 
-    document.querySelectorAll("a[href^='http']").forEach(link => {
-      if (link.hostname !== currentHost) {
+    document.querySelectorAll("a[href]").forEach(link => {
+      const linkHost = link.hostname;
+      if (linkHost && linkHost !== currentHost) {
         link.setAttribute("target", "_blank");
         link.setAttribute("rel", "noopener noreferrer");
       }
