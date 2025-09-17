@@ -37,7 +37,7 @@ include:
   - _pages
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
+# The following items will not be processed by default. Create a custom list
 # to override the default setting.
 # exclude:
 #   - Gemfile
@@ -57,6 +57,10 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-last-modified-at # Added to set up a GitHub Actions workflow to enable "Last modified" date on posts
+
+
+scripts:
+  custom: /assets/js/custom.js
 
 author:
   name   : "Marco Grimaldi"
