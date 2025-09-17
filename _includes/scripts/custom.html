@@ -1,6 +1,6 @@
-<!-- External links open in a new tab -->
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+(function() {
+  window.addEventListener("load", function() {
     const currentHost = window.location.hostname;
 
     document.querySelectorAll("a[href^='http']").forEach(link => {
@@ -10,4 +10,6 @@
       }
     });
   });
+})();
 </script>
+<!-- End external links in new tabs script -->
