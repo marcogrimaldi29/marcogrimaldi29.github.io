@@ -5,6 +5,7 @@ categories:
   - Certification
 tags:
   - Google
+  - Project Management
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
@@ -13,7 +14,7 @@ permalink: /google-project-mgmt/
 
 ## 🎯 Beyond the Tech: Why I Took the Google Project Management Certificate 
 
-**Just a heads-up:** This review reflects my personal experience only. It is not sponsored in any way.
+**Just a heads-up:** This review reflects my personal experience only.
 {: .notice--info}
 
 ### ℹ️ Intro 
@@ -33,10 +34,15 @@ The program is structured into six courses, each building on the last to provide
 The six courses are:
 
 * **Foundations of Project Management**: This course introduces you to the **core concepts and roles within project management**. You'll learn about the project lifecycle, from initiation to closure, and the key responsibilities of a project manager.
+
 * **Project Initiation: Starting a Successful Project**: Here, you'll learn **how to define project goals, deliverables, and scope**. This course focuses on creating project charters, managing stakeholders, and setting up a project for success from the very beginning.
+
 * **Project Planning: Putting It All Together**: This course is all about **creating a detailed plan**. You'll cover essential topics like building work breakdown structures, estimating timelines, managing budgets, and identifying potential risks.
+
 * **Project Execution: Running the Show**: This is where you learn to manage the **day-to-day operations of a project**. You'll focus on effective communication, resolving conflicts, and using tools to monitor progress.
+
 * **Agile Project Management**: The course delves into Agile, a popular and flexible project management methodology. You'll learn the principles behind **Scrum** and **Kanban** and how to apply them to manage projects more effectively in fast-paced environments.
+
 * **Capstone: Applying Project Management in the Real World**: This is the culmination of everything you've learned. The capstone project requires you to **apply all the concepts and skills to a real-world scenario**. You'll go through the entire project lifecycle, from defining the project to creating a detailed plan and a final report.
 
 ---
@@ -53,7 +59,7 @@ One of the most valuable parts of this certificate, and what sets it apart, is t
 
 ### 📦 Final Remarks and Key Takeaways
 
-The course is accessible on [Coursera](https://www.coursera.org/professional-certificates/google-project-management), and for learners based in Spain, scholarship opportunities are available through [Experiencia Fundae](https://experienciafundae.es/) by [clicking here](https://experienciafundae.es/beca-google).
+The course is accessible on [Coursera](https://www.coursera.org/professional-certificates/google-project-management) and for learners based in Spain, scholarship opportunities are available through [Experiencia Fundae](https://experienciafundae.es/) by [clicking here](https://experienciafundae.es/beca-google).
 
 #### 🗪 Beyond the Course: Extra Perks
 
