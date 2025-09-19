@@ -1,6 +1,6 @@
 ---
 title: "🏅 Cert Review: Google Project Management Professional Certificate"
-date: 2025-09-10
+date: 2025-09-15
 categories:
   - Certification
 tags:
@@ -65,7 +65,7 @@ Also, project management requires an essential skill for professionals: using sp
 
 All in all, the project lifecycle and Agile methodologies covered in this certificate imply crucial skills and knowledge that can benefit anyone, including non-IT professionals. The course helped me challenge my usual methods and *modus operandi* for tackling tasks. It prompted me to rethink and try out new approaches, which have expanded my personal skill set. If you've never attended related classes, I'm confident this collection of courses will give a significant boost to your *repertoire* as well.
 
-**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. My aim is to share insights that may help others assess whether the Google Project Management Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may foster lifelong learning for a more accessible educational experience.
+**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. I aim to share insights that may help others assess whether the Google Project Management Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may foster lifelong learning for a more accessible educational experience.
 {: .notice--info}
 
 ---
