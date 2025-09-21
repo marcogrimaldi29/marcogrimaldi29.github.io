@@ -16,9 +16,9 @@
 title: Marco Grimaldi
 email: marcogrimaldi29@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I’m Marco Grimaldi — this is my personal web space dedicated to my professional journey 
-  in Cloud Support, Cloud Administration, and Language Learning & Teaching, 
-  and my passions beyond work, such as hiking trails and reading books that inspire curiosity and growth.
+#  I’m Marco Grimaldi — this is my personal web space dedicated to my professional journey 
+#  in Cloud Support, Cloud Administration, and Language Learning & Teaching, 
+#  and my passions beyond work, such as hiking trails and reading books that inspire curiosity and growth.
 # twitter_username: username
 # github_username: marcogrimaldi29
 minimal_mistakes_skin: sunrise
@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Marco Grimaldi"
   avatar : "/assets/images/marco-cv.jpg"
-  bio    : "Powered by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end."
+  bio    : "L2 Managed Services Engineer @ NTT DATA · Language Teacher"
   links:
     - label: "Duolingo"
       icon: "fab fa-duolingo"
