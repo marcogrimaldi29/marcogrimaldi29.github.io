@@ -5,7 +5,6 @@ categories:
   - Certification
 tags:
   - Google
-  - Project Management
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
