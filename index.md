@@ -6,24 +6,12 @@ author_profile: true
 classes: wide
 ---
 
-# Profile card
-feature_row:
-  - image_path: /assets/images/marco-cv.jpg
-    alt: "Marco Grimaldi"
-    title: "Marco Grimaldi"
-    excerpt: "L2 Managed Services Engineer @ NTT DATA · Language Teacher · Audio Engineer"
-    url: "/about/"
-    btn_label: "Learn more"
-    btn_class: "btn--primary"
----
-
-{% include feature_row %}
-
----
-
 ## 👋 Welcome
 
 I’m **Marco Grimaldi** — IT Consultant, Cloud Enthusiast, and Language Trainer.  
+
+Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.
+
 This site is my digital space to share professional resources, certification reviews, and personal passions like hiking trails.
 
 ---
