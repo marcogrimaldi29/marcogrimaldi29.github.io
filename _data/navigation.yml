@@ -1,6 +1,8 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Blog"
+    url: /blog/ 
 # - title: "Categories"
 #   url: /contact/
   - title: "Contact"
