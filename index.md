@@ -22,6 +22,7 @@ It’s meant to be both a **personal and a learning hub** — a place where I co
 ## 🔗 Quick Links
 
 - [🏗️ About](/about/) - About me and this website
+- [✍️ Blog](/blog/) - Recently published posts
 - [💻 Categories](/categories/) - Posts organized by category
 - [📲 Contact](/contact/) - Contact methods to keep in touch
 - [🖼️ Collections](/collections/) - Posts organized by collection
