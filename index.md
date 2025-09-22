@@ -22,15 +22,14 @@ It’s meant to be both a **personal and a learning hub** — a place where I co
 ## 🔗 Quick Links
 
 - [🏗️ About](/about/) - About me and this website
-- [📘 Blog](/blog/) — My recently written posts  
 - [💻 Categories](/categories/) - Posts organized by category
 - [📲 Contact](/contact/) - Contact methods to keep in touch
 - [🖼️ Collections](/collections/) - Posts organized by collection
 - [📃 CV](/cv/) - My up-to-date Curriculum Vitae
 - [💼 LinkedIn](https://www.linkedin.com/in/marco-grimaldi29/) — Connect professionally  
 - [🖼️ Posts](/posts/) - Posts organized by publishing year
-- [🧰 Resources](/resources/) - Useful links, resources and tools · 🚧 Under construction 🚧
-- [🏞 Trails](/trails/) — Explore trails and nature-related posts · 🚧 Under construction 🚧
+- [🧰 Resources](/resources/) - Useful links, resources and tools 🚧 Under construction 🚧
+- [🏞 Trails](/trails/) — Explore trails and nature-related posts 🚧 Under construction 🚧
 
 ---
 
