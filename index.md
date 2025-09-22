@@ -17,7 +17,7 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 
 ---
 
-### 🔗 Quick Links
+## 🔗 Quick Links
 
 - [🏗️ About](/about/) - About me and this website
 - [✍️ Blog](/blog/) - Recently published posts
