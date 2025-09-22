@@ -1,6 +1,6 @@
 ---
 title: "🏅 Cert Review: Google Data Analytics Professional Certificate"
-date: 2025-09-15
+date: 2025-09-22
 categories:
   - Certification
 tags:
