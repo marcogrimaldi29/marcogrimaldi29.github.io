@@ -10,6 +10,7 @@ toc_label: "Table of Contents"
 ## 👨‍🦲 About Me 
 
 I’m **Marco Grimaldi**, a professional with a deep passion for **technology, languages, and learning processes**.  
+
 My career bridges both the IT and linguistic fields, where I thrive on embracing new challenges, adapting to diverse contexts, and continuously expanding my knowledge.  
 
 ---
@@ -62,9 +63,9 @@ It’s an ongoing exercise to:
 
 ### ©️ Credits
 
-This site is built with [GitHub Pages](https://docs.github.com/en/pages) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) Jekyll theme. 
-It offers a simple, ad-free design that allows me to focus on the content while learning along the way.
+I built this site with [GitHub Pages](https://docs.github.com/en/pages), [Jekyll](https://jekyllrb.com/), and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme to keep things simple and focused.
+It’s meant to be both a **personal hub** and a **learning log** — a place where I collect useful resources and share what I’ve been working on.
 
-The favicon and profile picture have been generated via [ChatGPT](https://chatgpt.com/).
+The profile pictures have been generated via [ChatGPT](https://chatgpt.com/).
 
 ---
