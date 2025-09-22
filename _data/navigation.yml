@@ -17,3 +17,5 @@ main:
     url: /resources/ 
 # - title: "Tags"
 #   url: /tags/
+  - title: "Trails"
+    url: /trails/ 
