@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "👋 Welcome to my Homepage"
+title: "👋 Welcome"
 permalink: /
 author_profile: true
 classes: wide
@@ -11,7 +11,7 @@ classes: wide
 
 Hey, I’m **Marco Grimaldi** — IT Consultant, Cloud Enthusiast, and Language Trainer.  
 
-This site is my digital space to keep in touch, stay up-to-date and share professional resources.
+This site is my digital space to keep in touch, stay up-to-date, and share professional resources.
 
 It’s meant to be both a **personal** and a **learning hub** — a place where I collect useful resources and share what I’ve been working on.
 
