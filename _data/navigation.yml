@@ -3,8 +3,8 @@ main:
     url: /about/
   - title: "Blog"
     url: /blog/ 
-# - title: "Categories"
-#   url: /contact/
+  - title: "Categories"
+    url: /contact/
   - title: "Contact"
     url: /contact/
   - title: "Collections"
