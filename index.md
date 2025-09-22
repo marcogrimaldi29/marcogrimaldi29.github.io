@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "👋 Welcome"
+title: "👋 Welcome to my Homepage"
 permalink: /
 author_profile: true
 classes: wide
@@ -26,7 +26,7 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 - [🖼️ Collections](/collections/) - Posts organized by collection
 - [📃 CV](/cv/) - My up-to-date Curriculum Vitae
 - [💼 LinkedIn](https://www.linkedin.com/in/marco-grimaldi29/) — Connect professionally  
-- [🖼️ Posts](/posts/) - Posts organized by publishing year
+- [📰 Posts](/posts/) - Posts organized by publishing year
 - [🧰 Resources](/resources/) - Useful links, resources and tools 🚧 Under construction 🚧
 - [🏞 Trails](/trails/) — Explore trails and nature-related posts 🚧 Under construction 🚧
 
