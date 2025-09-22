@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Welcome"
+title: "👋 Welcome"
 permalink: /
 author_profile: true
 classes: wide
@@ -9,13 +9,11 @@ classes: wide
 **🥜 In a nutshell:** Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.
 {: .notice}
 
-### 👋 Welcome to my website
-
-I’m **Marco Grimaldi** — IT Consultant, Cloud Enthusiast, and Language Trainer.  
+Hey, I’m **Marco Grimaldi** — IT Consultant, Cloud Enthusiast, and Language Trainer.  
 
 This site is my digital space to keep in touch, stay up-to-date and share professional resources.
 
-It’s meant to be both a **personal and a learning hub** — a place where I collect useful resources and share what I’ve been working on.
+It’s meant to be both a **personal** and a **learning hub** — a place where I collect useful resources and share what I’ve been working on.
 
 ---
 
