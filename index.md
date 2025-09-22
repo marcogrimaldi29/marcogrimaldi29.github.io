@@ -9,7 +9,7 @@ classes: wide
 **🥜 In a nutshell:** Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.
 {: .notice}
 
-## 👋 Welcome
+### 👋 Welcome 
 
 I’m **Marco Grimaldi** — IT Consultant, Cloud Enthusiast, and Language Trainer.  
 
@@ -19,7 +19,7 @@ It’s meant to be both a **personal and a learning hub** — a place where I co
 
 ---
 
-## 🔗 Quick Links
+### 🔗 Quick Links
 
 - [🏗️ About](/about/) - About me and this website
 - [✍️ Blog](/blog/) - Recently published posts
