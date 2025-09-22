@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Marco Grimaldi"
   avatar : "/assets/images/marco-cv.jpg"
-  bio    : "L2 Managed Services Engineer @ NTT DATA · Language Teacher"
+  bio    : "L2 Managed Services Engineer @ NTT DATA | Language Teacher"
   links:
     - label: "Duolingo"
       icon: "fab fa-duolingo"
