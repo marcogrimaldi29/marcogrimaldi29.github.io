@@ -19,21 +19,21 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: inherit; /* use same as page */
-    box-shadow: none;
-    border: none;
-    transition: padding 0.22s ease, background-color 0.22s ease, opacity 0.3s ease;
-    opacity: 0.95; /* subtle fade */
+    background: inherit;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* subtle divider line */
+    transition: padding 0.22s ease, opacity 0.3s ease, border-color 0.3s ease;
+    opacity: 0.95;
   }
 
   .masthead.shrink {
     padding: 0.35rem 1rem;
     opacity: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); /* a bit stronger when shrunk */
   }
 
-  /* prevent content from sliding under the masthead */
+  /* Always reserve space equal to the max masthead height */
   body.has-sticky-header #main {
-    padding-top: var(--masthead-height, 4rem);
+    padding-top: var(--masthead-max-height, 5rem);
     transition: padding-top 0.3s ease;
   }
 </style>
@@ -44,23 +44,27 @@
     const main = document.querySelector("#main");
     if (!masthead || !main) return;
 
-    // calculate masthead height dynamically
-    const mastheadHeight = masthead.offsetHeight;
+    // Measure masthead's initial (expanded) height
+    const maxHeight = masthead.offsetHeight;
     document.body.classList.add("has-sticky-header");
-    document.body.style.setProperty("--masthead-height", mastheadHeight + "px");
-
-    // update on resize
-    window.addEventListener("resize", () => {
-      document.body.style.setProperty("--masthead-height", masthead.offsetHeight + "px");
-    });
+    document.body.style.setProperty("--masthead-max-height", maxHeight + "px");
 
     // shrink on scroll
     function onScroll() {
-      if (window.scrollY > 20) masthead.classList.add("shrink");
-      else masthead.classList.remove("shrink");
+      if (window.scrollY > 20) {
+        masthead.classList.add("shrink");
+      } else {
+        masthead.classList.remove("shrink");
+      }
     }
     document.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
+
+    // adjust if resized
+    window.addEventListener("resize", () => {
+      const newHeight = masthead.offsetHeight;
+      document.body.style.setProperty("--masthead-max-height", newHeight + "px");
+    });
   });
 </script>
 
