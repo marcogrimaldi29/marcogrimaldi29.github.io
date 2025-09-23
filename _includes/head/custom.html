@@ -12,35 +12,67 @@
 <link rel="icon" type="image/png" sizes="256x256" href="{{ '/assets/images/favicon-256x256.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon-512x512.png' | relative_url }}">
 
-<!-- Sticky, semi-transparent top navigation bar with shadow + shrink on scroll -->
+<!-- Make masthead visually identical to page background -->
 <style>
+  /* base sticky behaviour */
   .masthead {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(245, 230, 210, 0.9); /* soft beige, matches site */
-    backdrop-filter: blur(6px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+    background: transparent !important;   /* start transparent, JS will set exact color */
+    box-shadow: none !important;          /* remove shadow / contour */
+    border: none !important;              /* remove any border */
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    transition: padding 0.22s ease, background-color 0.22s ease;
   }
 
-  /* Shrink effect */
+  /* make sure internal header parts don't add their own background/borders */
+  .masthead .masthead__inner-wrap,
+  .masthead .masthead__menu,
+  .masthead .site-title,
+  .masthead .visible-links,
+  .masthead .greedy-nav {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* optional slight shrink on scroll but without changing background or adding shadow */
   .masthead.shrink {
-    padding: 0.25rem 1rem;
-    background: rgba(245, 230, 210, 0.95); /* slightly less transparent */
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    padding: 0.35rem 1rem;
+  }
+
+  /* remove any focus outline coming from header elements (keeps a clean contour) */
+  .masthead *:focus {
+    outline: none;
   }
 </style>
 
 <script>
-  // Add/remove "shrink" class when scrolling
-  document.addEventListener("scroll", function () {
+  // Apply the exact computed background color of the page/container to the masthead
+  document.addEventListener("DOMContentLoaded", function () {
     const masthead = document.querySelector(".masthead");
-    if (window.scrollY > 20) {
-      masthead.classList.add("shrink");
-    } else {
-      masthead.classList.remove("shrink");
+    if (!masthead) return;
+
+    // Prefer the main content container so header matches the site area exactly.
+    // Fallback to document.body if that container is not present.
+    const container = document.querySelector(".initial-content") || document.querySelector("body");
+    const containerStyle = window.getComputedStyle(container);
+    const bg = containerStyle.backgroundColor || containerStyle.background || "transparent";
+
+    // Apply the computed background color and ensure no shadow/border remains
+    masthead.style.background = bg;
+    masthead.style.boxShadow = "none";
+    masthead.style.border = "none";
+
+    // shrink behavior (keeps background identical)
+    function onScroll() {
+      if (window.scrollY > 20) masthead.classList.add("shrink");
+      else masthead.classList.remove("shrink");
     }
+    document.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
   });
 </script>
 
