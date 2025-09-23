@@ -12,58 +12,6 @@
 <link rel="icon" type="image/png" sizes="256x256" href="{{ '/assets/images/favicon-256x256.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon-512x512.png' | relative_url }}">
 
-<style>
-  /* Force masthead to stick at the very top, no gap */
-  body {
-    margin-top: 0 !important;
-  }
-
-  .masthead {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 0 !important;
-    z-index: 1000;
-    background: var(--masthead-background, inherit);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  }
-
-  .masthead__inner-wrap {
-    padding: 1rem; /* keep consistent size */
-  }
-
-  /* Remove shrinking effect completely */
-  .masthead.shrink .masthead__inner-wrap {
-    padding: 1rem;
-  }
-
-  /* Push page content down so it doesn’t overlap the fixed header */
-  body.has-fixed-header #main {
-    padding-top: var(--masthead-height, 4rem);
-  }
-</style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const masthead = document.querySelector(".masthead");
-    const main = document.querySelector("#main");
-    if (!masthead || !main) return;
-
-    function updateHeight() {
-      const h = masthead.offsetHeight;
-      document.body.classList.add("has-fixed-header");
-      document.body.style.setProperty("--masthead-height", h + "px");
-    }
-    updateHeight();
-
-    window.addEventListener("resize", updateHeight);
-
-    // No shrink effect, just keep height consistent
-    document.addEventListener("scroll", updateHeight, { passive: true });
-  });
-</script>
-
 <!-- External links in new tabs -->
 <script>
 (function() {
