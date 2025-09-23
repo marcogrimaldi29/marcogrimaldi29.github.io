@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "👋 Welcome to my Homepage"
+title: "👋 Welcome"
 permalink: /
 author_profile: true
 # classes: wide
@@ -20,22 +20,22 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 
 ---
 
-## 🔗 Quick Links
-### [🏗️ About](/about/) 
+### 🔗 Quick Links
+#### [🏗️ About](/about/) 
 About me and this website
-### [✍️ Blog](/blog/)
+#### [✍️ Blog](/blog/)
 Recently published posts
-### [💻 Categories](/categories/)
+#### [💻 Categories](/categories/)
 Posts organized by category
-### [📲 Contact](/contact/)
+#### [📲 Contact](/contact/)
 Contact methods to keep in touch
-### [🖼️ Collections](/collections/)
+#### [🖼️ Collections](/collections/)
 Posts organized by collection
-### [📃 CV](/cv/)
+#### [📃 CV](/cv/)
 My up-to-date Curriculum Vitae
-### [💼 LinkedIn](https://www.linkedin.com/in/marco-grimaldi29/)
+#### [💼 LinkedIn](https://www.linkedin.com/in/marco-grimaldi29/)
 Connect professionally  
-### [📰 Posts](/posts/)
+#### [📰 Posts](/posts/)
 Posts organized by publishing year
 
 ---
