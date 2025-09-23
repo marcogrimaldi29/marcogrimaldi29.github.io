@@ -12,36 +12,35 @@
 <link rel="icon" type="image/png" sizes="256x256" href="{{ '/assets/images/favicon-256x256.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon-512x512.png' | relative_url }}">
 
-<!-- Masthead for sticky and shrink effect for top bar -->
 <style>
+  /* Force masthead to stick at the very top, no gap */
+  body {
+    margin-top: 0 !important;
+  }
+
   .masthead {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    margin-top: 0 !important;
     z-index: 1000;
-    background: var(--masthead-background, inherit); /* use theme’s background */
+    background: var(--masthead-background, inherit);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    transition: border-color 0.25s ease;
   }
 
   .masthead__inner-wrap {
-    padding: 1rem;
-    transition: padding 0.25s ease;
+    padding: 1rem; /* keep consistent size */
   }
 
+  /* Remove shrinking effect completely */
   .masthead.shrink .masthead__inner-wrap {
-    padding: 0.35rem 1rem;
+    padding: 1rem;
   }
 
-  /* Optional: subtle shadow instead of “contour” */
-  .masthead.shrink {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  }
-
+  /* Push page content down so it doesn’t overlap the fixed header */
   body.has-fixed-header #main {
     padding-top: var(--masthead-height, 4rem);
-    transition: padding-top 0.25s ease;
   }
 </style>
 
@@ -60,36 +59,10 @@
 
     window.addEventListener("resize", updateHeight);
 
-    function onScroll() {
-      if (window.scrollY > 20) {
-        masthead.classList.add("shrink");
-      } else {
-        masthead.classList.remove("shrink");
-      }
-      updateHeight();
-    }
-    document.addEventListener("scroll", onScroll, { passive: true });
+    // No shrink effect, just keep height consistent
+    document.addEventListener("scroll", updateHeight, { passive: true });
   });
 </script>
-
-<style>
-  /* Remove default spacing at very top */
-  body {
-    margin-top: 0 !important;
-  }
-
-  .masthead {
-    margin-top: 0 !important;
-    top: 0;
-  }
-
-  /* Ensure the masthead background fills to the very top of the viewport */
-  .masthead,
-  .masthead__inner-wrap {
-    background: var(--masthead-background, inherit);
-  }
-</style>
-
 
 <!-- External links in new tabs -->
 <script>
