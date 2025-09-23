@@ -20,13 +20,13 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background: #fff; /* ensure solid background instead of inherit */
+    background: var(--masthead-background, inherit); /* use theme’s background */
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    transition: padding 0.25s ease, border-color 0.25s ease;
+    transition: border-color 0.25s ease;
   }
 
   .masthead__inner-wrap {
-    padding: 1rem; /* default padding */
+    padding: 1rem;
     transition: padding 0.25s ease;
   }
 
@@ -34,7 +34,11 @@
     padding: 0.35rem 1rem;
   }
 
-  /* Push page content below the fixed header */
+  /* Optional: subtle shadow instead of “contour” */
+  .masthead.shrink {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
   body.has-fixed-header #main {
     padding-top: var(--masthead-height, 4rem);
     transition: padding-top 0.25s ease;
