@@ -4,7 +4,7 @@ layout: single
 permalink: /cv/
 toc: true
 toc_sticky: true
-toc_label: "Table of Contents"
+toc_label: "📃 CV"
 ---
 
 Hereunder, you can find more comprehensive information about my **work experience, education, skills, certifications, and languages**: 
