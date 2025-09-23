@@ -13,9 +13,9 @@ main:
     url: /cv/
 # - title: "Posts"
 #   url: /posts/
-  - title: "Resources"
-    url: /resources/ 
+# - title: "Resources"
+#   url: /resources/ 
 # - title: "Tags"
 #   url: /tags/
-  - title: "Trails"
-    url: /trails/ 
+# - title: "Trails"
+#   url: /trails/ 
