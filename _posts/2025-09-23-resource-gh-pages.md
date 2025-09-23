@@ -39,12 +39,12 @@ These resources have been tested and used while building, reviewing, and editing
 
 ### 🧪 Jekyll
 - [Jekyll](https://jekyllrb.com/)
-- [Jekyll | Forum](https://talk.jekyllrb.com/)
-- [Jekyll | Quickstart](https://jekyllrb.com/docs/)
+- [Jekyll · Forum](https://talk.jekyllrb.com/)
+- [Jekyll · Quickstart](https://jekyllrb.com/docs/)
 - [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/)
 - [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes)
 - [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Stack Overflow | Jekyll-tagged questions](https://stackoverflow.com/questions/tagged/jekyll)
+- [Stack Overflow · Jekyll-tagged questions](https://stackoverflow.com/questions/tagged/jekyll)
 
 ---
 
@@ -56,7 +56,14 @@ These resources have been tested and used while building, reviewing, and editing
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Markdown Live Preview](https://markdownlivepreview.com/)
 - [Markdown Tutorial](https://www.markdowntutorial.com/)
-- [mikefrobbins.com/](https://mikefrobbins.com/)
 - [Use Markdown in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/project/wiki/markdown-guidance)
+
+---
+
+💡 I’ll keep updating this page as I discover and test new resources. Stay tuned!
+
+**🗃️ Log:**
+- Originally published on 2025-09-23.
+{: .notice}
 
 ---
