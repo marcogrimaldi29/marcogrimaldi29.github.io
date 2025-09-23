@@ -72,6 +72,25 @@
   });
 </script>
 
+<style>
+  /* Remove default spacing at very top */
+  body {
+    margin-top: 0 !important;
+  }
+
+  .masthead {
+    margin-top: 0 !important;
+    top: 0;
+  }
+
+  /* Ensure the masthead background fills to the very top of the viewport */
+  .masthead,
+  .masthead__inner-wrap {
+    background: var(--masthead-background, inherit);
+  }
+</style>
+
+
 <!-- External links in new tabs -->
 <script>
 (function() {
