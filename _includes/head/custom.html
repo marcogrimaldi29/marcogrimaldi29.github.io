@@ -12,17 +12,37 @@
 <link rel="icon" type="image/png" sizes="256x256" href="{{ '/assets/images/favicon-256x256.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon-512x512.png' | relative_url }}">
 
-<!-- Sticky, semi-transparent top navigation bar with shadow -->
+<!-- Sticky, semi-transparent top navigation bar with shadow + shrink on scroll -->
 <style>
   .masthead {
     position: sticky;
     top: 0;
-    z-index: 1000; /* keep above other content */
-    background: rgba(255, 255, 255, 0.9); /* semi-transparent white */
-    backdrop-filter: blur(6px); /* nice blur effect on supported browsers */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+    z-index: 1000;
+    background: rgba(245, 230, 210, 0.9); /* soft beige, matches site */
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  /* Shrink effect */
+  .masthead.shrink {
+    padding: 0.25rem 1rem;
+    background: rgba(245, 230, 210, 0.95); /* slightly less transparent */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
   }
 </style>
+
+<script>
+  // Add/remove "shrink" class when scrolling
+  document.addEventListener("scroll", function () {
+    const masthead = document.querySelector(".masthead");
+    if (window.scrollY > 20) {
+      masthead.classList.add("shrink");
+    } else {
+      masthead.classList.remove("shrink");
+    }
+  });
+</script>
 
 <!-- External links in new tabs -->
 <script>
