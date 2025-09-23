@@ -3,7 +3,6 @@ layout: single
 title: "👋 Welcome to my Homepage"
 permalink: /
 author_profile: true
-classes: wide
 toc: true
 toc_sticky: true
 toc_label: "Quick Links"
