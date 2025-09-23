@@ -1,5 +1,5 @@
 ---
-title: "🧰 Useful Resources: GitHub Pages, Jekyll and Markdown"
+title: "🧰 Useful Resources: GitHub Pages, Jekyll, and Markdown"
 last_modified_at: 2025-09-23
 categories:
   - Resources
@@ -13,7 +13,7 @@ toc_label: "🧰 Useful Resources"
 permalink: /res-gh-jekyll-markdown/
 ---
 
-## 🌐 GitHub Pages, Jekyll, Markdown, and more
+## 🌐 GitHub Pages, Jekyll, and Markdown
 
 **⚠️ Warning:** This collection of resources is not meant to be exhaustive or authoritative. Think of it as a starting point — a hub where useful tools and links are gathered and made freely accessible. If you come across any outdated material or inconsistencies, please let me know through the contact options listed [here](/contact/).
 {: .notice--warning}
@@ -23,7 +23,9 @@ permalink: /res-gh-jekyll-markdown/
 
 On this page, you’ll find a curated set of links about **GitHub Pages**, **Jekyll**, and **Markdown**.  
 
-These resources have been tested and used while building, reviewing, and editing this website (among other projects).
+These resources have been tested and used while building, reviewing, and editing this website - among other projects.
+
+I’ll keep updating this page as I discover and test new resources. Stay tuned! 💡
 
 ---
 
@@ -60,10 +62,9 @@ These resources have been tested and used while building, reviewing, and editing
 
 ---
 
-💡 I’ll keep updating this page as I discover and test new resources. Stay tuned!
+### 🗃️ Change Log:
 
-**🗃️ Log:**
-- Originally published on 2025-09-23.
+**2025-09-23:** Initial publication.  
 {: .notice}
 
 ---
