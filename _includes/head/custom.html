@@ -1,3 +1,5 @@
+<!-- Custom head includes -->
+
 <!-- Custom Favicons -->
 <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
@@ -9,6 +11,18 @@
 <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/images/favicon-192x192.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="256x256" href="{{ '/assets/images/favicon-256x256.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon-512x512.png' | relative_url }}">
+
+<!-- Sticky, semi-transparent top navigation bar with shadow -->
+<style>
+  .masthead {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* keep above other content */
+    background: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+    backdrop-filter: blur(6px); /* nice blur effect on supported browsers */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+  }
+</style>
 
 <!-- External links in new tabs -->
 <script>
@@ -24,3 +38,4 @@
   });
 })();
 </script>
+
