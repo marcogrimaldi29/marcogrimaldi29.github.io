@@ -12,26 +12,29 @@
 <link rel="icon" type="image/png" sizes="256x256" href="{{ '/assets/images/favicon-256x256.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon-512x512.png' | relative_url }}">
 
-<!-- masthead for sticky and shrink effect for top bar -->
-
+<!-- Masthead for sticky and shrink effect for top bar -->
 <style>
   .masthead {
-    position: fixed; /* fix it at the very top */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    background: inherit;
+    background: #fff; /* ensure solid background instead of inherit */
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     transition: padding 0.25s ease, border-color 0.25s ease;
   }
 
-  .masthead.shrink {
-    padding: 0.35rem 1rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  .masthead__inner-wrap {
+    padding: 1rem; /* default padding */
+    transition: padding 0.25s ease;
   }
 
-  /* Smoothly push content below the masthead */
+  .masthead.shrink .masthead__inner-wrap {
+    padding: 0.35rem 1rem;
+  }
+
+  /* Push page content below the fixed header */
   body.has-fixed-header #main {
     padding-top: var(--masthead-height, 4rem);
     transition: padding-top 0.25s ease;
@@ -44,7 +47,6 @@
     const main = document.querySelector("#main");
     if (!masthead || !main) return;
 
-    // Measure masthead height
     function updateHeight() {
       const h = masthead.offsetHeight;
       document.body.classList.add("has-fixed-header");
@@ -52,17 +54,14 @@
     }
     updateHeight();
 
-    // Update on resize
     window.addEventListener("resize", updateHeight);
 
-    // Shrink effect on scroll
     function onScroll() {
       if (window.scrollY > 20) {
         masthead.classList.add("shrink");
       } else {
         masthead.classList.remove("shrink");
       }
-      // Update padding so text never overlaps
       updateHeight();
     }
     document.addEventListener("scroll", onScroll, { passive: true });
@@ -83,4 +82,3 @@
   });
 })();
 </script>
-
