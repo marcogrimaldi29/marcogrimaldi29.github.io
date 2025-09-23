@@ -1,9 +1,12 @@
 ---
 layout: single
-title: "👋 Welcome"
+title: "👋 Welcome to my Homepage"
 permalink: /
 author_profile: true
 classes: wide
+toc: true
+toc_sticky: true
+toc_label: "🔗 Quick Links"
 ---
 
 **🥜 In a nutshell:** Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.
