@@ -1,18 +1,27 @@
 ---
 title: "🧰 Useful Resources: AI and Prompt Engineering"
-last_modified_at: 2025-09-24
+last_modified_at: 2025-09-23
 categories:
   - Resources
 tags:
   - AI
   - Prompt Engineering
-toc: true
-toc_sticky: true
-toc_label: "🧰 Useful Resources"
+# toc: true
+# toc_sticky: true
+# toc_label: "🧰 Useful Resources"
 permalink: /res-ai/
 ---
 
-## ✨ AI and Prompt Engineering
+## ✨ AI and Prompt Engineering {: #ai }
+
+---
+
+### 📑 Quick Links
+- [🤖 AI assistants & platforms](#-ai-assistants--platforms--ai-assistants-)
+- [❇️ AI-related docs & articles](#ai-docs)
+- [💬 Prompt Engineering](#prompt-engineering)
+
+---
 
 **⚠️ Note:** This is not a definitive or all-encompassing collection. Think of it more as a living hub — a place where I gather links, tools, and references that I’ve personally found useful and want to share openly. If you spot anything outdated or inconsistent, feel free to reach out through the contact options listed [here](/contact/).
 {: .notice--warning}
@@ -28,7 +37,7 @@ This list will continue to evolve as I explore and validate new resources — so
 
 ---
 
-### 🤖 AI assistants & platforms
+### 🤖 AI assistants & platforms {: #ai-assistants }
 - [Adobe Firefly](https://www.adobe.com/products/firefly.html)
 - [ChatGPT](https://chatgpt.com/)
 - [Clockwise](https://www.getclockwise.com/)
@@ -57,7 +66,7 @@ This list will continue to evolve as I explore and validate new resources — so
 
 ---
 
-### ❇️ AI-related docs & articles
+### ❇️ AI-related docs & articles {: #ai-docs }
 - [Andrew Ng: How AI could empower any business](https://www.ted.com/talks/andrew_ng_how_ai_could_empower_any_business)
 - [Artificial intelligence (AI) vs. machine learning (ML)](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
 - [Artificial intelligence (AI) vs. machine learning (ML)](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/artificial-intelligence-vs-machine-learning)
@@ -86,7 +95,7 @@ This list will continue to evolve as I explore and validate new resources — so
 
 ---
 
-### 💬 Prompt Engineering
+### 💬 Prompt Engineering {: #prompt-engineering }
 - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/pdf/2201.11903)
 - [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
@@ -94,7 +103,7 @@ This list will continue to evolve as I explore and validate new resources — so
 
 ---
 
-### 🗃️ Change Log:
+### 🗃️ Change Log {: #change-logs } 
 
 **2025-09-24:** Initial publication.  
 {: .notice}
