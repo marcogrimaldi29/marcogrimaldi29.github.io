@@ -111,7 +111,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-### 🌍 Languages
+## 🌍 Languages
 
 <div style="max-width: 600px;">
 
