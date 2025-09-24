@@ -6,22 +6,13 @@ categories:
 tags:
   - AI
   - Prompt Engineering
-# toc: true
-# toc_sticky: true
-# toc_label: "🧰 Useful Resources"
+toc: true
+toc_sticky: true
+toc_label: "🧰 Useful Resources"
 permalink: /res-ai/
 ---
 
-## ✨ AI and Prompt Engineering {: #ai }
-
----
-
-### 📑 Quick Links
-- [🤖 AI assistants & platforms](#-ai-assistants--platforms--ai-assistants-)
-- [❇️ AI-related docs & articles](#ai-docs)
-- [💬 Prompt Engineering](#prompt-engineering)
-
----
+## ✨ AI and Prompt Engineering
 
 **⚠️ Note:** This is not a definitive or all-encompassing collection. Think of it more as a living hub — a place where I gather links, tools, and references that I’ve personally found useful and want to share openly. If you spot anything outdated or inconsistent, feel free to reach out through the contact options listed [here](/contact/).
 {: .notice--warning}
@@ -37,7 +28,7 @@ This list will continue to evolve as I explore and validate new resources — so
 
 ---
 
-### 🤖 AI assistants & platforms {: #ai-assistants }
+### 🤖 AI assistants & platforms
 - [Adobe Firefly](https://www.adobe.com/products/firefly.html)
 - [ChatGPT](https://chatgpt.com/)
 - [Clockwise](https://www.getclockwise.com/)
@@ -66,14 +57,14 @@ This list will continue to evolve as I explore and validate new resources — so
 
 ---
 
-### ❇️ AI-related docs & articles {: #ai-docs }
+### ❇️ AI-related docs & articles
 - [Andrew Ng: How AI could empower any business](https://www.ted.com/talks/andrew_ng_how_ai_could_empower_any_business)
 - [Artificial intelligence (AI) vs. machine learning (ML)](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
 - [Artificial intelligence (AI) vs. machine learning (ML)](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/artificial-intelligence-vs-machine-learning)
 - [Ask a Techspert: What is generative AI?](https://blog.google/inside-google/googlers/ask-a-techspert/what-is-generative-ai/)
 - [Gemini Apps Help](https://support.google.com/gemini?sjid=16437201336951480314-EU#topic=15280100)
 - [Gemini Apps Privacy Hub](https://support.google.com/gemini/answer/13594961?visit_id=638290874435602808-735596698&p=privacy_notice&rd=2#privacy_notice)
-- [Google AI | Our AI Principles](https://ai.google/principles/#our-ai-principles-in-action)
+- [Google AI. Our AI Principles](https://ai.google/principles/#our-ai-principles-in-action)
 - [Google PAIR. People + AI Guidebook](https://pair.withgoogle.com/guidebook/)
 - [How randomized response can help collect sensitive information responsibly](https://pair.withgoogle.com/explorables/anonymization/)
 - [Humans in the Loop: The Design of Interactive AI Systems](https://hai.stanford.edu/news/humans-loop-design-interactive-ai-systems)
@@ -95,7 +86,7 @@ This list will continue to evolve as I explore and validate new resources — so
 
 ---
 
-### 💬 Prompt Engineering {: #prompt-engineering }
+### 💬 Prompt Engineering
 - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/pdf/2201.11903)
 - [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
@@ -103,7 +94,7 @@ This list will continue to evolve as I explore and validate new resources — so
 
 ---
 
-### 🗃️ Change Log {: #change-logs } 
+### 🗃️ Change Log
 
 **2025-09-24:** Initial publication.  
 {: .notice}
