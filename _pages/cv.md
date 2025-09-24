@@ -147,6 +147,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>C1</small>
 </div>
 
+</div>
+
 ---
 
 ## 🛠 Skills
