@@ -62,8 +62,8 @@ I’ll keep updating this page as I discover and test new resources. Stay tuned!
 
 ---
 
-### 🗃️ Change Log:
-
+### 🗃️ Change Log
+**2025-09-24:** Formatting typo correction in Change Log.  
 **2025-09-23:** Initial publication.  
 {: .notice}
 
