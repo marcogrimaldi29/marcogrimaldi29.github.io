@@ -1,6 +1,6 @@
 ---
 title: "🧰 Useful Resources: AI and Prompt Engineering"
-last_modified_at: 2025-09-23
+last_modified_at: 2025-09-24
 categories:
   - Resources
 tags:
@@ -12,7 +12,7 @@ toc_label: "🧰 Useful Resources"
 permalink: /res-ai/
 ---
 
-## ✨ AI
+## ✨ AI and Prompt Engineering
 
 **⚠️ Note:** This is not a definitive or all-encompassing collection. Think of it more as a living hub — a place where I gather links, tools, and references that I’ve personally found useful and want to share openly. If you spot anything outdated or inconsistent, feel free to reach out through the contact options listed [here](/contact/).
 {: .notice--warning}
@@ -20,11 +20,11 @@ permalink: /res-ai/
 **ℹ️ Heads-up:** For certification-related materials, take a look at the “📖 Related Resources” section or the inline references included in my “🏅 Cert Review” articles.
 {: .notice--info}
 
-On this page, you’ll find a curated set of links about **AI**, **AI-related docs and articles**, along with **Prompt Engineering** materials.  
+On this page, you’ll find a curated set of links about **AI**, **AI-related docs and articles**, along with **prompt engineering** materials.  
 
 Most of these links come from courses I’ve studied, tools I’ve tested, or research I’ve done while writing articles.
 
-This list will keep evolving as I explore and validate new resources — so consider it a work in progress. Stay tuned! 💡
+This list will continue to evolve as I explore and validate new resources — so consider it a work in progress. Stay tuned! 💡
 
 ---
 
