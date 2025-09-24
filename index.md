@@ -33,7 +33,8 @@ Posts organized by Collection
 My up-to-date Curriculum Vitae
 #### [💼 LinkedIn](https://www.linkedin.com/in/marco-grimaldi29/)
 Connect professionally
-
+#### [🏷️ Tags](/collections/)
+Posts organized by Tag
 ---
 
 **[LinkedIn's About](https://www.linkedin.com/in/marco-grimaldi29/):** "A dedicated professional with a diverse background encompassing technical consulting, education, and the arts. Brings 4 years of experience delivering practical solutions in enterprise consulting and support. Maintains current and relevant technical skills, evidenced by 10x Microsoft and 5x Google certifications. A commitment to ongoing professional development is reflected in the attainment of 1 BA and 2 MA degrees from four European universities across three countries. Fluent in four languages (English, Spanish, Italian, and German), facilitating effective communication and collaboration in international contexts. Prior experience as a foreign language trainer and sound engineer has cultivated a strong aptitude for problem-solving and a meticulous approach to project execution. Seeks to leverage a blend of technical acumen, diverse experiences, and linguistic proficiency to contribute effectively to organizational objectives."
