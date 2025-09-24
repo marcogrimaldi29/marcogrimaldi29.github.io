@@ -111,12 +111,41 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-## 🌍 Languages
+### 🌍 Languages
 
-- **Italian** — Native (C2)
-- **Spanish** — Native (C2)
-- **English** — Proficient (C2)
-- **German** — Advanced (C1)
+<div style="max-width: 600px;">
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Italian</strong>
+  <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
+    <div style="width:100%; background:#0077b6; height:100%;"></div>
+  </div>
+  <small>Native</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>English</strong>
+  <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
+    <div style="width:95%; background:#0096c7; height:100%;"></div>
+  </div>
+  <small>C2</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Spanish</strong>
+  <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
+    <div style="width:95%; background:#0096c7; height:100%;"></div>
+  </div>
+  <small>C2</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>German</strong>
+  <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
+    <div style="width:85%; background:#48cae4; height:100%;"></div>
+  </div>
+  <small>C1</small>
+</div>
 
 ---
 
