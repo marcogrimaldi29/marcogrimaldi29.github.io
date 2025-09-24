@@ -22,21 +22,17 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 
 ### 🔗 Quick Links
 #### [🏗️ About](/about/) 
-About me and this website
-#### [✍️ Blog](/blog/)
-Recently published posts
-#### [💻 Categories](/categories/)
-Posts organized by category
+About Me and this Website
+#### [📰 All Posts](/posts/)
+Posts organized by Year
 #### [📲 Contact](/contact/)
-Contact methods to keep in touch
+Contact Channels to keep in touch
 #### [🖼️ Collections](/collections/)
-Posts organized by collection
+Posts organized by Collection
 #### [📃 CV](/cv/)
 My up-to-date Curriculum Vitae
 #### [💼 LinkedIn](https://www.linkedin.com/in/marco-grimaldi29/)
-Connect professionally  
-#### [📰 Posts](/posts/)
-Posts organized by publishing year
+Connect professionally
 
 ---
 
