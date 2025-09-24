@@ -15,7 +15,7 @@ main:
 #   url: /posts/
 # - title: "Resources"
 #   url: /resources/ 
-# - title: "Tags"
-#   url: /tags/
+  - title: "Tags"
+    url: /tags/
 # - title: "Trails"
 #   url: /trails/ 
