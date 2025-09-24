@@ -13,6 +13,10 @@ I’m **Marco Grimaldi**, a professional with a deep passion for **technology, l
 
 My career bridges both the IT and linguistic fields, where I thrive on embracing new challenges, adapting to diverse contexts, and continuously expanding my knowledge.  
 
+📍 Based in **Las Palmas de Gran Canaria, Spain**, I connect with both local and international communities.  
+
+If you’d like to collaborate, share ideas, or explore common projects, feel free to [get in touch](/contact/).
+
 ---
 
 ### 🌐 Professional Identity
@@ -40,12 +44,6 @@ Outside of the office, I dedicate time to my **passions**:
 - **Hiking** — exploring trails and connecting with nature.  
 - **Reading** — diving into literature, philosophy, and technical books.  
 - **Music** — performing as a multi-instrumentalist and tweaking configs as an audio engineer, in love with world music and sound creativity.  
-
----
-
-📍 Based in **Las Palmas de Gran Canaria, Spain**, I connect with both local and international communities.  
-
-If you’d like to collaborate, share ideas, or explore common projects, feel free to [get in touch](/contact/).
 
 ---
 
