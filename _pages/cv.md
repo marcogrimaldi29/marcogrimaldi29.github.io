@@ -5,6 +5,7 @@ permalink: /cv/
 toc: true
 toc_sticky: true
 toc_label: "📃 CV"
+# Canva: https://www.canva.com/design/DAGfLFzsSo0/1HVmZVk-reJVHVmtx2Vjcw/edit
 ---
 
 Hereunder you can find more granular details about my **work experience**, **education**, **skills**, **certifications**, and **languages**: 
@@ -13,18 +14,18 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-👉 [Download PDF version](/assets/marco-cv-sep25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
+👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
 
 ## 💼 Work Experience 
 ### L2 Managed Services Engineer & Technical Knowledge Manager — NTT DATA  
 *Madrid (Remote)* • *2023 – Present*  
-- Provide Level 2 technical support for Microsoft Teams, M365, and Azure environment, along with Cloud Voice infrastructure.  
-- Troubleshoot complex issues related to Teams meetings, calling, integrations, network, and cloud infrastructure, escalating to L3 or vendors when needed.  
+- Provide Level 2 technical support for Microsoft Teams, M365 and Azure environment, along with Cloud Voice infrastructure.  
+- Troubleshoot complex issues related to Teams meetings, calling, integrations, network and cloud infrastructure, escalating to L3 or vendors when needed.  
 - Monitor system health and performance, proactively identifying and addressing potential issues.  
 - Collaborate with IT teams and vendors to implement changes or troubleshoot complex issues in Teams and Cloud Voice.  
-- Manage knowledge base lifecycle: writing, reviewing, and maintaining documentation, knowledge articles, and troubleshooting guides.  
+- Manage knowledge base lifecycle: writing, reviewing and maintaining documentation, knowledge articles and troubleshooting guides.  
 
 ### IT Service Desk Specialist — Accenture Spain  
 *Seville (Remote)* • *2021 – 2023*  
@@ -170,6 +171,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 - Team player
 
 ---
-👉 [Download PDF version](/assets/marco-cv-sep25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
+
+👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
