@@ -78,7 +78,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-## 📜 Certifications
+## 🏅 Certifications
 
 ### Microsoft Certifications  
 - [MS-721 – Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/87F3712A1939D1EB?sharingId=910D3083CD18E3A4){:target="_blank"} 
@@ -102,9 +102,18 @@ Hereunder you can find more granular details about my **work experience**, **edu
 ### Voice & Network Certifications
 - [SSCA® "Elite" SIP Training — SIP School (2025)](www.thesipschool.com/certificatecheck){:target="_blank"} 
 
+### Languages Certifications  
+- EOI Español para Extranjeros C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
+- EOI English C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
+- EOI English C1 — Escuela Oficial de Idiomas, Gobierno de Canarias (2024)  
+- Goethe-Zertifikat C1 (German) — Goethe Institut (2020)  
+- DELE C1 (Spanish) — Instituto Cervantes (2018)
+
 ---
 
 ## 🌍 Languages
+
+The levels below are aligned with the descriptors of the [Common European Framework of Reference for Languages (CEFR)](https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions).
 
 <div style="max-width: 600px;">
 
@@ -141,18 +150,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 </div>
 
 </div>
-
-The levels above are aligned with the descriptors of the [Common European Framework of Reference for Languages (CEFR)](https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions).
-
-### Languages Certifications  
-
-The following certifications attest my language proficiency:
-
-- 🇪🇸 EOI Español para Extranjeros C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
-- 🇬🇧 EOI English C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
-- 🇬🇧 EOI English C1 — Escuela Oficial de Idiomas, Gobierno de Canarias (2024)  
-- 🇩🇪 Goethe-Zertifikat C1 (German) — Goethe Institut (2020)  
-- 🇪🇸 DELE C1 (Spanish) — Instituto Cervantes (2018)
 
 ---
 
