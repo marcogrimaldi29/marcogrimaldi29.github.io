@@ -158,12 +158,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ### Technical Skills
 
-**Note:** The levels below are **self-assessed** and represent my proficiency in each skill area. They are **subject to change** as I continue to learn and grow professionally. 
-{: .notice--info}
-
 <div style="max-width: 650px;">
 
-<div style="border:1px solid #ccc; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
+<div style="border:1px solid #ddd; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
   <strong>Legend:</strong><br>
   <span style="display:inline-block;width:40px;height:12px;background:#1b4332;border-radius:3px;margin-right:6px;"></span> Fluent (90%)<br>
   <span style="display:inline-block;width:40px;height:12px;background:#2d6a4f;border-radius:3px;margin-right:6px;"></span> Advanced (85%)<br>
@@ -463,10 +460,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 </div>
 
-### Soft Skills
 
-**Note:** The soft skills listed below are based on my **personal assessment** and **feedback** from colleagues and supervisors. They reflect qualities I strive to embody in my professional life.
-{: .notice--info}
+### Soft Skills
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
 
@@ -487,4 +482,3 @@ Hereunder you can find more granular details about my **work experience**, **edu
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
-
