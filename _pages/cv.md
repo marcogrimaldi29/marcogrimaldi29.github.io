@@ -9,8 +9,6 @@ toc_label: "📃 CV"
 
 Hereunder you can find more granular details about my **work experience**, **education**, **skills**, **certifications**, and **languages**: 
 
-{:toc}
-
 ---
 
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
@@ -465,6 +463,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 </div>
 
 </div>
+
 
 ### Soft Skills
 
