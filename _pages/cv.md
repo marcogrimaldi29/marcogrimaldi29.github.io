@@ -154,19 +154,11 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-## 🛠️ Skills
+## 🛠️ Skills {#skills}
 
 ### Technical Skills
 
 <div style="max-width: 650px;">
-
-<div style="border:1px solid #ddd; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
-  <strong>Legend:</strong><br>
-  <span style="display:inline-block;width:40px;height:12px;background:#1b4332;border-radius:3px;margin-right:6px;"></span> Fluent (90%)<br>
-  <span style="display:inline-block;width:40px;height:12px;background:#2d6a4f;border-radius:3px;margin-right:6px;"></span> Advanced (85%)<br>
-  <span style="display:inline-block;width:40px;height:12px;background:#95d5b2;border-radius:3px;margin-right:6px;"></span> Intermediate (65%)<br>
-  <span style="display:inline-block;width:40px;height:12px;background:#d8f3dc;border-radius:3px;margin-right:6px;"></span> Basic (50%)
-</div>
 
 #### ☁️ Cloud & Infrastructure
 
@@ -482,3 +474,4 @@ Hereunder you can find more granular details about my **work experience**, **edu
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
+
