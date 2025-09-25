@@ -164,14 +164,24 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ### Technical Skills
 
+### 🛠️ Skills
+
 <div style="max-width: 650px;">
 
-<h4> ☁️ Cloud & Infrastructure </h4>
+<div style="border:1px solid #ccc; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
+  <strong>Legend:</strong><br>
+  <span style="display:inline-block;width:40px;height:12px;background:#1b4332;border-radius:3px;margin-right:6px;"></span> Fluent<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#2d6a4f;border-radius:3px;margin-right:6px;"></span> Advanced<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#95d5b2;border-radius:3px;margin-right:6px;"></span> Intermediate<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#d8f3dc;border-radius:3px;margin-right:6px;"></span> Basic
+</div>
+
+#### ☁️ Cloud & Infrastructure
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Azure Infrastructure</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#0077b6;height:100%;"></div>
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
   <small>Advanced</small>
 </div>
@@ -179,23 +189,23 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>Cloud (IaaS, PaaS, SaaS)</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:80%;background:#0096c7;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Advanced</small>
+  <small>Fluent</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Cloud Voice</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#48cae4;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Fluent</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Entra ID (Azure AD)</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#90e0ef;height:100%;"></div>
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
   <small>Advanced</small>
 </div>
@@ -203,7 +213,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>Intune</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:75%;background:#ade8f4;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
 </div>
@@ -211,7 +221,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>Microsoft 365 Environment</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#0077b6;height:100%;"></div>
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
   <small>Advanced</small>
 </div>
@@ -219,15 +229,15 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>Networking</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:80%;background:#0096c7;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Advanced</small>
+  <small>Fluent</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>SCCM</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#48cae4;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
 </div>
@@ -235,51 +245,43 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>Telephony</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#90e0ef;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Voice over IP (VoIP)</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#ade8f4;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
+  <small>Fluent</small>
 </div>
 
 ---
 
-<h4> 🤖 AI & Automation </h4>
+#### 🤖 AI & Automation
 
 <div style="margin-bottom: 0.75rem;">
   <strong>AI</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#48cae4;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Fluent</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>ChatGPT</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:75%;background:#0096c7;height:100%;"></div>
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Advanced</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Copilot</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#90e0ef;height:100%;"></div>
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Advanced</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Power Platform</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#ade8f4;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
 </div>
@@ -287,27 +289,27 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>PowerShell</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:80%;background:#0077b6;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
-  <small>Advanced</small>
+  <small>Intermediate</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Python</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#0096c7;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
 </div>
 
 ---
 
-<h4> 📊 Data & Analytics </h4>
+#### 📊 Data & Analytics
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Power BI</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:75%;background:#48cae4;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
 </div>
@@ -315,27 +317,27 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>SQL</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#90e0ef;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
 </div>
 
 ---
 
-<h4> 📡 Communication & Collaboration </h4>
+#### 📡 Communication & Collaboration
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Exchange</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#0077b6;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Advanced</small>
+  <small>Fluent</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Teams</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#0096c7;height:100%;"></div>
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
   <small>Advanced</small>
 </div>
@@ -343,47 +345,55 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>Session Initiation Protocol (SIP)</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#48cae4;height:100%;"></div>
+    <div style="width:50%;background:#d8f3dc;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Basic</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Voice over IP (VoIP)</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
 </div>
 
 ---
 
-<h4> 🔐 Security & Identity </h4>
+#### 🔐 Security & Identity
 
 <div style="margin-bottom: 0.75rem;">
-  <strong>IAM</strong>
+  <strong>Identity and Access Management (IAM)</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:80%;background:#0096c7;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Advanced</small>
+  <small>Fluent</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>MFA</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#0077b6;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Advanced</small>
+  <small>Fluent</small>
 </div>
 
 ---
 
-<h4> 🛠️ IT Operations & Support </h4>
+#### 🛠️ IT Operations & Support
 
 <div style="margin-bottom: 0.75rem;">
   <strong>ITSM</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:75%;background:#90e0ef;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Fluent</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Service Desk</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#0096c7;height:100%;"></div>
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
   <small>Advanced</small>
 </div>
@@ -391,27 +401,27 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>ServiceNow</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#48cae4;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Fluent</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Troubleshooting</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:90%;background:#0077b6;height:100%;"></div>
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
   <small>Advanced</small>
 </div>
 
 ---
 
-<h4> 💻 Development & Tools </h4>
+#### 💻 Development & Tools
 
 <div style="margin-bottom: 0.75rem;">
   <strong>GitHub</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:75%;background:#0096c7;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
 </div>
@@ -419,23 +429,23 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>Google Environment</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#48cae4;height:100%;"></div>
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Fluent</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>HTML & CSS</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#ade8f4;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
-  <small>Basic</small>
+  <small>Intermediate</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>SAP</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:60%;background:#caf0f8;height:100%;"></div>
+    <div style="width:50%;background:#d8f3dc;height:100%;"></div>
   </div>
   <small>Basic</small>
 </div>
@@ -443,22 +453,20 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="margin-bottom: 0.75rem;">
   <strong>Visual Studio Code</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:75%;background:#0096c7;height:100%;"></div>
+    <div style="width:50%;background:#d8f3dc;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Basic</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Wireshark</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:70%;background:#90e0ef;height:100%;"></div>
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
 </div>
 
 </div>
-
----
 
 ### Soft Skills
 
