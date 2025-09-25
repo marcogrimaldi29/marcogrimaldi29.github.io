@@ -160,7 +160,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-## 🛠️ Skills
+## 🌍 Skills
 
 ### Technical Skills
 
