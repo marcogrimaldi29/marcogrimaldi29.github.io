@@ -161,6 +161,16 @@ Hereunder you can find more granular details about my **work experience**, **edu
 **Note:** The levels below are **self-assessed** and represent my proficiency in each skill area. They are **subject to change** as I continue to learn and grow professionally. 
 {: .notice--info}
 
+<div style="max-width: 650px;">
+
+<div style="border:1px solid #ccc; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
+  <strong>Legend:</strong><br>
+  <span style="display:inline-block;width:40px;height:12px;background:#1b4332;border-radius:3px;margin-right:6px;"></span> Fluent (90%)<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#2d6a4f;border-radius:3px;margin-right:6px;"></span> Advanced (85%)<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#95d5b2;border-radius:3px;margin-right:6px;"></span> Intermediate (65%)<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#d8f3dc;border-radius:3px;margin-right:6px;"></span> Basic (50%)
+</div>
+
 #### ☁️ Cloud & Infrastructure
 
 <div style="margin-bottom: 0.75rem;">
@@ -193,14 +203,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
   <small>Fluent</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Google Environment</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
@@ -242,6 +244,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
   </div>
   <small>Advanced</small>
 </div>
+
+---
 
 #### 🤖 AI & Automation
 
@@ -293,6 +297,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Intermediate</small>
 </div>
 
+---
+
 #### 📊 Data & Analytics
 
 <div style="margin-bottom: 0.75rem;">
@@ -310,6 +316,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
   </div>
   <small>Intermediate</small>
 </div>
+
+---
 
 #### 📡 Communication & Collaboration
 
@@ -345,6 +353,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Advanced</small>
 </div>
 
+---
+
 #### 🔐 Security & Identity
 
 <div style="margin-bottom: 0.75rem;">
@@ -363,14 +373,16 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Advanced</small>
 </div>
 
+---
+
 #### 🛠️ IT Operations & Support
 
 <div style="margin-bottom: 0.75rem;">
-  <strong>ITIL</strong>
+  <strong>ITSM</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
-  <small>Fluent</small>
+  <small>Advanced</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
@@ -397,6 +409,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Fluent</small>
 </div>
 
+---
+
 #### 💻 Development & Tools
 
 <div style="margin-bottom: 0.75rem;">
@@ -405,6 +419,14 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Google Environment</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
@@ -465,3 +487,4 @@ Hereunder you can find more granular details about my **work experience**, **edu
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
+
