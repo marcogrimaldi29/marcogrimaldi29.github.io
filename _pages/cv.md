@@ -114,6 +114,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 ## 🌍 Languages
 
 The levels below are aligned with the descriptors of the [Common European Framework of Reference for Languages (CEFR)](https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions).
+{: .notice--primary}
 
 <div style="max-width: 600px;">
 
@@ -153,55 +154,318 @@ The levels below are aligned with the descriptors of the [Common European Framew
 
 ---
 
-## 🛠 Skills
+## 🛠️ Skills
 
 ### Technical Skills
 
-- AI
-- Azure infrastructure
-- ChatGPT
-- Cloud (IaaS, PaaS, SaaS)
-- Cloud Voice
-- Copilot
-- Entra ID (formerly known as Azure Active Directory or AAD)
-- Exchange
-- GitHub
-- Google environment
-- HTML & CSS
-- IAM
-- Intune
-- ITSM
-- MFA
-- Microsoft 365 environment
-- Networking
-- Python
-- Power BI
-- Power Platform
-- PowerShell
-- SAP
-- Service Desk
-- Session Initation Protocol (SIP)
-- SCCM
-- ServiceNow
-- SQL
-- Teams
-- Telephony
-- Troubleshooting
-- Visual Studio Code
-- Voice over IP (VoIP)
-- Wireshark
+The levels below are self-assessed and represent my proficiency in each skill area. They are subject to change as I continue to learn and grow professionally. 
+{: .notice--primary}
+
+<div style="max-width: 650px;">
+
+<div style="border:1px solid #ccc; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
+  <strong>Legend:</strong><br>
+  <span style="display:inline-block;width:40px;height:12px;background:#1b4332;border-radius:3px;margin-right:6px;"></span> Fluent (90%)<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#2d6a4f;border-radius:3px;margin-right:6px;"></span> Advanced (85%)<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#95d5b2;border-radius:3px;margin-right:6px;"></span> Intermediate (65%)<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#d8f3dc;border-radius:3px;margin-right:6px;"></span> Basic (50%)
+</div>
+
+#### ☁️ Cloud & Infrastructure
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Azure Infrastructure</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Cloud (IaaS, PaaS, SaaS)</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Cloud Voice</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Entra ID (Azure AD)</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Google Environment</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Intune</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Microsoft 365 Environment</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Networking</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>SCCM</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Telephony</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+#### 🤖 AI & Automation
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>AI</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>ChatGPT</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Copilot</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Power Platform</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>PowerShell</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Python</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+#### 📊 Data & Analytics
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Power BI</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>SQL</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+#### 📡 Communication & Collaboration
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Exchange</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Teams</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Session Initiation Protocol (SIP)</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:50%;background:#d8f3dc;height:100%;"></div>
+  </div>
+  <small>Basic</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Voice over IP (VoIP)</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+#### 🔐 Security & Identity
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Identity and Access Management (IAM)</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>MFA</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+#### 🛠️ IT Operations & Support
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>ITIL</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Service Desk</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>ServiceNow</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Troubleshooting</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  </div>
+  <small>Fluent</small>
+</div>
+
+#### 💻 Development & Tools
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>GitHub</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>HTML & CSS</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>SAP</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:50%;background:#d8f3dc;height:100%;"></div>
+  </div>
+  <small>Basic</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Visual Studio Code</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:50%;background:#d8f3dc;height:100%;"></div>
+  </div>
+  <small>Basic</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Wireshark</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  </div>
+  <small>Intermediate</small>
+</div>
+
+</div>
 
 ### Soft Skills
 
-- Adaptable
-- Detail-oriented
-- Client-first mentality
-- Fast-paced learner
-- Multitasker
-- Organized
-- Proactive
-- Problem solver
-- Team player
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+
+<span style="background:#5e548e;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Adaptable</span>
+<span style="background:#9f86c0;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Detail-oriented</span>
+<span style="background:#be95c4;color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Client-first mentality</span>
+<span style="background:#e0b1cb;color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Fast-paced learner</span>
+<span style="background:#c77dff;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Multitasker</span>
+<span style="background:#7b2cbf;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Organized</span>
+<span style="background:#9d4edd;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Proactive</span>
+<span style="background:#b185db;color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Problem solver</span>
+<span style="background:#d0bdf4;color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Team player</span>
+
+</div>
 
 ---
 
