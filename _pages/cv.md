@@ -166,7 +166,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <div style="max-width: 650px;">
 
-#### ☁️ Cloud & Infrastructure
+<h4> ☁️ Cloud & Infrastructure </h4>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Azure Infrastructure</strong>
@@ -250,7 +250,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 🤖 AI & Automation
+<h4> 🤖 AI & Automation </h4>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>AI</strong>
@@ -302,7 +302,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 📊 Data & Analytics
+<h4> 📊 Data & Analytics </h4>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Power BI</strong>
@@ -322,7 +322,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 📡 Communication & Collaboration
+<h4> 📡 Communication & Collaboration </h4>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Exchange</strong>
@@ -350,7 +350,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 🔐 Security & Identity
+<h4> 🔐 Security & Identity </h4>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>IAM</strong>
@@ -370,7 +370,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 🛠️ IT Operations & Support
+<h4> 🛠️ IT Operations & Support </h4>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>ITSM</strong>
@@ -406,7 +406,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 💻 Development & Tools
+<h4> 💻 Development & Tools </h4>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>GitHub</strong>
@@ -458,7 +458,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 </div>
 
-
 ---
 
 ### Soft Skills
@@ -482,3 +481,4 @@ Hereunder you can find more granular details about my **work experience**, **edu
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
+
