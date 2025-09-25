@@ -161,8 +161,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 **Note:** The levels below are **self-assessed** and represent my proficiency in each skill area. They are **subject to change** as I continue to learn and grow professionally. 
 {: .notice--info}
 
-<div style="max-width: 650px;">
-
 #### ☁️ Cloud & Infrastructure
 
 <div style="margin-bottom: 0.75rem;">
