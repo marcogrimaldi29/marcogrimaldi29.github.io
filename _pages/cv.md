@@ -9,6 +9,8 @@ toc_label: "📃 CV"
 
 Hereunder you can find more granular details about my **work experience**, **education**, **skills**, **certifications**, and **languages**: 
 
+{:toc}
+
 ---
 
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
@@ -158,11 +160,11 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-## 🌍 Skills
+## 🛠 Skills
 
 ### Technical Skills
 
-<div style="max-width: 600px;">
+<div style="max-width: 650px;">
 
 <div style="border:1px solid #ddd; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
   <strong>Legend:</strong><br>
@@ -172,7 +174,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <span style="display:inline-block;width:40px;height:12px;background:#d8f3dc;border-radius:3px;margin-right:6px;"></span> Basic
 </div>
 
-#### ☁️ Cloud & Infrastructure
+- ☁️ Cloud & Infrastructure
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Azure Infrastructure</strong>
@@ -248,7 +250,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 🤖 AI & Automation
+- 🤖 AI & Automation
 
 <div style="margin-bottom: 0.75rem;">
   <strong>AI</strong>
@@ -300,7 +302,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 📊 Data & Analytics
+- 📊 Data & Analytics
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Power BI</strong>
@@ -320,7 +322,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 📡 Communication & Collaboration
+- 📡 Communication & Collaboration
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Exchange</strong>
@@ -356,7 +358,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 🔐 Security & Identity
+- 🔐 Security & Identity
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Identity and Access Management (IAM)</strong>
@@ -376,7 +378,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 🛠️ IT Operations & Support
+- 🛠️ IT Operations & Support
 
 <div style="margin-bottom: 0.75rem;">
   <strong>ITSM</strong>
@@ -412,7 +414,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-#### 💻 Development & Tools
+- 💻 Development & Tools
 
 <div style="margin-bottom: 0.75rem;">
   <strong>GitHub</strong>
@@ -464,7 +466,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 </div>
 
-
 ### Soft Skills
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
@@ -486,4 +487,3 @@ Hereunder you can find more granular details about my **work experience**, **edu
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
-
