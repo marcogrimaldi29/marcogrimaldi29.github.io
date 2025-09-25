@@ -164,11 +164,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ### Technical Skills
 
-### 🛠️ Skills
+<div style="max-width: 600px;">
 
-<div style="max-width: 650px;">
-
-<div style="border:1px solid #ccc; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
+<div style="border:1px solid #ddd; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
   <strong>Legend:</strong><br>
   <span style="display:inline-block;width:40px;height:12px;background:#1b4332;border-radius:3px;margin-right:6px;"></span> Fluent<br>
   <span style="display:inline-block;width:40px;height:12px;background:#2d6a4f;border-radius:3px;margin-right:6px;"></span> Advanced<br>
