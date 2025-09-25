@@ -4,6 +4,7 @@ date: 2025-09-22
 categories:
   - Certification
 tags:
+  - Data
   - Google
 toc: true
 toc_sticky: true
