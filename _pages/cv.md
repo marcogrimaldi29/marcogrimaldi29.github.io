@@ -166,7 +166,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <div style="max-width: 650px;">
 
-<div style="border:1px solid #ddd; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
+<div style="border:1px solid #eee; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
   <strong>Legend:</strong><br>
   <span style="display:inline-block;width:40px;height:12px;background:#1b4332;border-radius:3px;margin-right:6px;"></span> Fluent<br>
   <span style="display:inline-block;width:40px;height:12px;background:#2d6a4f;border-radius:3px;margin-right:6px;"></span> Advanced<br>
@@ -174,7 +174,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <span style="display:inline-block;width:40px;height:12px;background:#d8f3dc;border-radius:3px;margin-right:6px;"></span> Basic
 </div>
 
-- ☁️ Cloud & Infrastructure
+- **☁️ Cloud & Infrastructure**
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Azure Infrastructure</strong>
@@ -248,9 +248,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Fluent</small>
 </div>
 
----
-
-- 🤖 AI & Automation
+- **🤖 AI & Automation**
 
 <div style="margin-bottom: 0.75rem;">
   <strong>AI</strong>
@@ -300,9 +298,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Intermediate</small>
 </div>
 
----
-
-- 📊 Data & Analytics
+- **📊 Data & Analytics**
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Power BI</strong>
@@ -320,9 +316,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Intermediate</small>
 </div>
 
----
-
-- 📡 Communication & Collaboration
+- **📡 Communication & Collaboration**
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Exchange</strong>
@@ -356,9 +350,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Fluent</small>
 </div>
 
----
-
-- 🔐 Security & Identity
+- **🔐 Security & Identity**
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Identity and Access Management (IAM)</strong>
@@ -376,9 +368,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Fluent</small>
 </div>
 
----
-
-- 🛠️ IT Operations & Support
+- **🛠️ IT Operations & Support**
 
 <div style="margin-bottom: 0.75rem;">
   <strong>ITSM</strong>
@@ -412,9 +402,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Advanced</small>
 </div>
 
----
-
-- 💻 Development & Tools
+- **💻 Development & Tools**
 
 <div style="margin-bottom: 0.75rem;">
   <strong>GitHub</strong>
