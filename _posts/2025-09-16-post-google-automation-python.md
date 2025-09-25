@@ -4,7 +4,9 @@ date: 2025-09-16
 categories:
   - Certification
 tags:
+  - Automation
   - Google
+  - Python
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
