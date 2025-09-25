@@ -164,7 +164,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ### Technical Skills
 
-<div style="max-width: 600px;">
+<div style="max-width: 600px;"><br>
 
 <strong>☁️ Cloud & Infrastructure</strong><br><br>
 
@@ -237,7 +237,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Fluent</small>
+  <small>Fluent</small><br>
 </div>
 
 <strong>🤖 AI & Automation</strong><br><br>
@@ -287,7 +287,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Intermediate</small><br>
 </div>
 
 <strong>📊 Data & Analytics</strong><br><br>
@@ -305,7 +305,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Intermediate</small><br>
 </div>
 
 <strong>📡 Communication & Collaboration</strong><br><br>
@@ -339,7 +339,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Fluent</small>
+  <small>Fluent</small><br>
 </div>
 
 <strong>🔐 Security & Identity</strong><br><br>
@@ -357,7 +357,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
-  <small>Fluent</small>
+  <small>Fluent</small><br>
 </div>
 
 <strong>🛠️ IT Operations & Support</strong><br><br>
@@ -391,7 +391,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:85%;background:#2d6a4f;height:100%;"></div>
   </div>
-  <small>Advanced</small>
+  <small>Advanced</small><br>
 </div>
 
 <strong>💻 Development & Tools</strong><br><br>
@@ -441,7 +441,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
-  <small>Intermediate</small>
+  <small>Intermediate</small><br>
 </div>
 
 </div>
@@ -467,3 +467,4 @@ Hereunder you can find more granular details about my **work experience**, **edu
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
+
