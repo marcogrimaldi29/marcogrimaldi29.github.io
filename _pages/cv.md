@@ -113,8 +113,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ## 🌍 Languages
 
-The levels below are aligned with the descriptors of the [Common European Framework of Reference for Languages (CEFR)](https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions).
-{: .notice--primary}
+**Note:** The levels below are aligned with the descriptors of the **[Common European Framework of Reference for Languages (CEFR)](https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions)**.
+{: .notice--info}
 
 <div style="max-width: 600px;">
 
@@ -158,17 +158,17 @@ The levels below are aligned with the descriptors of the [Common European Framew
 
 ### Technical Skills
 
-The levels below are self-assessed and represent my proficiency in each skill area. They are subject to change as I continue to learn and grow professionally. 
-{: .notice--primary}
+**Note:** The levels below are **self-assessed** and represent my proficiency in each skill area. They are **subject to change** as I continue to learn and grow professionally. 
+{: .notice--info}
 
 <div style="max-width: 650px;">
 
-<div style="border:1px solid #ccc; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:#f8f9fa;">
+<div style="border:1px solid #ddd; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:rgba(248,249,250,0.8);">
   <strong>Legend:</strong><br>
-  <span style="display:inline-block;width:40px;height:12px;background:#1b4332;border-radius:3px;margin-right:6px;"></span> Fluent (90%)<br>
-  <span style="display:inline-block;width:40px;height:12px;background:#2d6a4f;border-radius:3px;margin-right:6px;"></span> Advanced (85%)<br>
-  <span style="display:inline-block;width:40px;height:12px;background:#95d5b2;border-radius:3px;margin-right:6px;"></span> Intermediate (65%)<br>
-  <span style="display:inline-block;width:40px;height:12px;background:#d8f3dc;border-radius:3px;margin-right:6px;"></span> Basic (50%)
+  <span style="display:inline-block;width:40px;height:12px;background:#2f5d4d;border-radius:3px;margin-right:6px;"></span> Fluent<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#3d7a5d;border-radius:3px;margin-right:6px;"></span> Advanced<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#a7dcb6;border-radius:3px;margin-right:6px;"></span> Intermediate<br>
+  <span style="display:inline-block;width:40px;height:12px;background:#e6f6ea;border-radius:3px;margin-right:6px;"></span> Basic
 </div>
 
 #### ☁️ Cloud & Infrastructure
@@ -453,17 +453,20 @@ The levels below are self-assessed and represent my proficiency in each skill ar
 
 ### Soft Skills
 
+**Note:** The soft skills listed below are based on my **personal assessment** and **feedback** from colleagues and supervisors. They reflect qualities I strive to embody in my professional life.
+{: .notice--info}
+
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
 
-<span style="background:#5e548e;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Adaptable</span>
-<span style="background:#9f86c0;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Detail-oriented</span>
-<span style="background:#be95c4;color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Client-first mentality</span>
-<span style="background:#e0b1cb;color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Fast-paced learner</span>
-<span style="background:#c77dff;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Multitasker</span>
-<span style="background:#7b2cbf;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Organized</span>
-<span style="background:#9d4edd;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Proactive</span>
-<span style="background:#b185db;color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Problem solver</span>
-<span style="background:#d0bdf4;color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Team player</span>
+<span style="background:rgba(94,84,142,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Adaptable</span>
+<span style="background:rgba(159,134,192,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Detail-oriented</span>
+<span style="background:rgba(190,149,196,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Client-first mentality</span>
+<span style="background:rgba(224,177,203,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Fast-paced learner</span>
+<span style="background:rgba(199,125,255,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Multitasker</span>
+<span style="background:rgba(123,44,191,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Organized</span>
+<span style="background:rgba(157,78,221,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Proactive</span>
+<span style="background:rgba(177,133,219,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Problem solver</span>
+<span style="background:rgba(208,189,244,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Team player</span>
 
 </div>
 
