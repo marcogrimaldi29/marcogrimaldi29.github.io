@@ -5,6 +5,8 @@ categories:
   - Certification
 tags:
   - Google
+  - IT Support
+  - Troubleshooting
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
