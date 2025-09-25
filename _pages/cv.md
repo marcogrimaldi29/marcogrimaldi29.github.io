@@ -163,14 +163,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <div style="max-width: 650px;">
 
-<div style="border:1px solid #ddd; border-radius:6px; padding:0.75rem; margin-bottom:1.5rem; background:rgba(248,249,250,0.8);">
-  <strong>Legend:</strong><br>
-  <span style="display:inline-block;width:40px;height:12px;background:#2f5d4d;border-radius:3px;margin-right:6px;"></span> Fluent<br>
-  <span style="display:inline-block;width:40px;height:12px;background:#3d7a5d;border-radius:3px;margin-right:6px;"></span> Advanced<br>
-  <span style="display:inline-block;width:40px;height:12px;background:#a7dcb6;border-radius:3px;margin-right:6px;"></span> Intermediate<br>
-  <span style="display:inline-block;width:40px;height:12px;background:#e6f6ea;border-radius:3px;margin-right:6px;"></span> Basic
-</div>
-
 #### ☁️ Cloud & Infrastructure
 
 <div style="margin-bottom: 0.75rem;">
