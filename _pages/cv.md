@@ -317,8 +317,10 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
-  <small>Intermediate</small><br>
+  <small>Intermediate</small>
 </div>
+
+<br>
 
 <strong>📡 Communication & Collaboration</strong><br><br>
 
