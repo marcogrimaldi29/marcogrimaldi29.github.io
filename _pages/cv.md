@@ -108,7 +108,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-### Languages Certifications  
+### Language Certifications  
 - EOI Español para Extranjeros C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
 - EOI English C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
 - EOI English C1 — Escuela Oficial de Idiomas, Gobierno de Canarias (2024)  
@@ -168,7 +168,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <br>
 
-<strong>☁️ Cloud & Infrastructure</strong><br><br>
+<strong>☁️ Cloud & Infrastructure</strong><br>
+
+<br>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Azure Infrastructure</strong>
@@ -244,7 +246,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <br>
 
-<strong>🤖 AI & Automation</strong><br><br>
+<strong>🤖 AI & Automation</strong><br>
+
+<br>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>AI</strong>
@@ -296,7 +300,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <br>
 
-<strong>📊 Data & Analytics</strong><br><br>
+<strong>📊 Data & Analytics</strong><br>
+
+<br>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Power BI</strong>
@@ -350,7 +356,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <br>
 
-<strong>🔐 Security & Identity</strong><br><br>
+<strong>🔐 Security & Identity</strong><br>
+
+<br>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>Identity and Access Management (IAM)</strong>
@@ -370,7 +378,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <br>
 
-<strong>🛠️ IT Operations & Support</strong><br><br>
+<strong>🛠️ IT Operations & Support</strong><br>
+
+<br>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>ITSM</strong>
@@ -406,7 +416,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <br>
 
-<strong>💻 Development & Tools</strong><br><br>
+<strong>💻 Development & Tools</strong><br>
+
+<br>
 
 <div style="margin-bottom: 0.75rem;">
   <strong>GitHub</strong>
@@ -456,8 +468,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <small>Intermediate</small>
 </div>
 
-<br>
-
 </div>
 
 ### Soft Skills
@@ -481,3 +491,4 @@ Hereunder you can find more granular details about my **work experience**, **edu
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
+
