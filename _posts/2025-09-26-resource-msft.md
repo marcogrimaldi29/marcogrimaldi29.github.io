@@ -1,6 +1,6 @@
 ---
 title: "🧰 Useful Resources: Microsoft"
-last_modified_at: 2025-09-26
+last_modified_at: 2025-09-27
 categories:
   - Resources
 tags:
