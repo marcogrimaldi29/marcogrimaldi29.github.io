@@ -120,7 +120,7 @@ This list will keep evolving as I explore and validate new resources — so cons
 ---
 
 
-#### 🔺 Microsoft Entra ID (aka Azure AD)
+### 🔺 Microsoft Entra ID (aka Azure AD)
 - [AADInternals](https://aadinternals.com/osint/)
 - [Application and HR provisioning documentation](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/)
 - [Application management documentation](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/)
@@ -252,7 +252,7 @@ This list will keep evolving as I explore and validate new resources — so cons
 
 ---
 
-### 🗔 Windows
+### 💻 Windows
 - [Make older apps or programs compatible with the latest version of Windows](https://support.microsoft.com/en-us/windows/make-older-apps-or-programs-compatible-with-the-latest-version-of-windows-783d6dd7-b439-bdb0-0490-54eea0f45938)
 - [Overview of Windows Autopilot](https://learn.microsoft.com/en-us/autopilot/overview)
 - [Repair a Windows Image using DISM](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/repair-a-windows-image)
@@ -267,8 +267,8 @@ This list will keep evolving as I explore and validate new resources — so cons
 ---
 
 ### 🗃️ Change Log
-**2025-09-27:** Tags added: AI, Architecture, Azure, Cloud, Collaboration, Compliance, Identity, Infrastructure, Microsoft, Security, Teams.
-**2025-09-26:** Initial publication.
+- **2025-09-27:** Tags added: AI, Architecture, Azure, Cloud, Collaboration, Compliance, Identity, Infrastructure, Microsoft, Security, Teams.
+- **2025-09-26:** Initial publication.
 {: .notice}
 
 ---
