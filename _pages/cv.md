@@ -13,7 +13,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
+👉 [Request PDF version](https://drive.google.com/file/d/12Q73GgucdX0YmrHlmiMYTy3JRZQG81hw/view?usp=drivesdk){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
 
@@ -495,6 +495,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
+👉 [Request PDF version](https://drive.google.com/file/d/12Q73GgucdX0YmrHlmiMYTy3JRZQG81hw/view?usp=drivesdk){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
