@@ -162,6 +162,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ## 🛠 Skills
 
+The levels below are self-assessed and are subject to change over time depending on my learning journey and professional experience.
+{: .notice--info}
+
 ### Technical Skills
 
 <div style="max-width: 600px;">
@@ -202,6 +205,14 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div style="width:90%;background:#1b4332;height:100%;"></div>
   </div>
   <small>Fluent</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Google Environment</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
 </div>
 
 <div style="margin-bottom: 0.75rem;">
@@ -296,6 +307,14 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div style="width:65%;background:#95d5b2;height:100%;"></div>
   </div>
   <small>Intermediate</small>
+</div>
+
+<div style="margin-bottom: 0.75rem;">
+  <strong>Vibe Coding</strong>
+  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  </div>
+  <small>Advanced</small>
 </div>
 
 <br>
@@ -431,14 +450,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 </div>
 
 <div style="margin-bottom: 0.75rem;">
-  <strong>Google Environment</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
   <strong>HTML & CSS</strong>
   <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
     <div style="width:65%;background:#95d5b2;height:100%;"></div>
@@ -474,6 +485,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ### Soft Skills
 
+<br>
+
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
 
 <span style="background:rgba(94,84,142,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Adaptable</span>
@@ -493,4 +506,3 @@ Hereunder you can find more granular details about my **work experience**, **edu
 👉 [Download PDF version](/assets/marco-cv-oct25.pdf){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
-
