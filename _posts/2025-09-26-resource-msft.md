@@ -110,7 +110,7 @@ This list will keep evolving as I explore and validate new resources — so cons
 ---
 
 
-### 🔺 Microsoft Entra ID (aka Azure AD)
+#### 🔺 Microsoft Entra ID (aka Azure AD)
 - [AADInternals](https://aadinternals.com/osint/)
 - [Application and HR provisioning documentation](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/)
 - [Application management documentation](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/)
@@ -247,7 +247,7 @@ This list will keep evolving as I explore and validate new resources — so cons
 - [Overview of Windows Autopilot](https://learn.microsoft.com/en-us/autopilot/overview)
 - [Repair a Windows Image using DISM](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/repair-a-windows-image)
 - [Resolve Windows upgrade errors: Technical information for IT Pros](https://learn.microsoft.com/en-us/windows/deployment/upgrade/resolve-windows-upgrade-errors)
-- [Sysinternals | Process Monitor v4.01](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)
+- [Sysinternals · Process Monitor v4.01](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)
 - [Windows 11 release information](https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information)
 - [Windows Autopilot documentation](https://learn.microsoft.com/en-us/autopilot/)
 - [Windows deployment documentation](https://learn.microsoft.com/en-us/windows/deployment/)
