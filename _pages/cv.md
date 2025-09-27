@@ -92,8 +92,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 - [PL-900 – Microsoft Certified: Power Platform Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/589C8B87C28BCDF4?sharingId=910D3083CD18E3A4){:target="_blank"} 
 - [SC-900 – Microsoft Certified: Security, Compliance & Identity Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3AC5BFB19E06BE2A?sharingId=910D3083CD18E3A4){:target="_blank"} 
 
----
-
 ### Google Professional Certificates  
 - [Cybersecurity Specialization (2024)](https://www.coursera.org/account/accomplishments/specialization/IJR8VBC9PFIK){:target="_blank"} 
 - [Automation with Python (2021)](https://www.coursera.org/account/accomplishments/professional-cert/4YCD4YBD73HB){:target="_blank"} 
@@ -101,12 +99,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
 - [Project Management (2021)](https://www.coursera.org/account/accomplishments/professional-cert/RJ856W9X3F9R){:target="_blank"} 
 - [IT Support (2021)](https://www.coursera.org/account/accomplishments/professional-cert/NCLR33CHTFKV){:target="_blank"} 
 
----
-
 ### Voice & Network Certifications
 - [SSCA® "Elite" SIP Training — SIP School (2025)](www.thesipschool.com/certificatecheck){:target="_blank"} 
-
----
 
 ### Language Certifications  
 - EOI Español para Extranjeros C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
@@ -484,8 +478,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 </div>
 
 ### Soft Skills
-
-<br>
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
 
