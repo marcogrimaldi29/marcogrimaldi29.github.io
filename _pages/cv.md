@@ -162,7 +162,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ## 🛠 Skills
 
-The levels below are self-assessed and are subject to change over time depending on my learning journey and professional experience.
+**Note:** The levels below are self-assessed and are subject to change over time depending on my learning journey and professional experience.
 {: .notice--info}
 
 ### Technical Skills
