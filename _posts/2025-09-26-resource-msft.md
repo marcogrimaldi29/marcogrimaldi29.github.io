@@ -4,7 +4,17 @@ last_modified_at: 2025-09-26
 categories:
   - Resources
 tags:
+  - AI
+  - Architecture
+  - Azure
+  - Cloud
+  - Collaboration
+  - Compliance
+  - Identity
+  - Infrastructure
   - Microsoft
+  - Security
+  - Teams
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
@@ -257,8 +267,8 @@ This list will keep evolving as I explore and validate new resources — so cons
 ---
 
 ### 🗃️ Change Log
-
-**2025-09-26:** Initial publication.  
+**2025-09-27:** Tags added: AI, Architecture, Azure, Cloud, Collaboration, Compliance, Identity, Infrastructure, Microsoft, Security, Teams.
+**2025-09-26:** Initial publication.
 {: .notice}
 
 ---
