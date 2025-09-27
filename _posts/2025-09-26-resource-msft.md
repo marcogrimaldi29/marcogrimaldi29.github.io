@@ -27,24 +27,6 @@ This list will keep evolving as I explore and validate new resources — so cons
 
 ---
 
-### 🌐 Microsoft (General)
-- [Microsoft Accessibility](https://www.microsoft.com/en-us/accessibility)
-- [Microsoft Enterprise Skills Initiative (ESI)](https://esi.microsoft.com/)
-- [Microsoft Events](https://www.microsoft.com/en-us/events)
-- [Microsoft Learn](https://learn.microsoft.com/en-us/)
-- [Microsoft Learn | Choose your Microsoft Credential](https://arch-center.azureedge.net/Credentials/choose-your-microsoft-credential.pdf)
-- [Microsoft Learn | Exam duration and exam experience](https://learn.microsoft.com/en-gb/credentials/certifications/practice-assessments-for-microsoft-certifications)
-- [Microsoft Learn | Exam scoring and score reports](https://learn.microsoft.com/en-gb/credentials/certifications/exam-scoring-reports)
-- [Microsoft Learn | Microsoft Applied Skills](https://learn.microsoft.com/en-us/credentials/applied-skills/)
-- [Microsoft Learn | Microsoft Applied Skills Poster](https://arch-center.azureedge.net/Credentials/microsoft-applied-skills-poster.pdf)
-- [Microsoft Learn | Microsoft Certification Poster](https://arch-center.azureedge.net/Credentials/Certification-Poster_en-us.pdf)
-- [Microsoft Learn | Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-gb/credentials/certifications/practice-assessments-for-microsoft-certifications)
-- [Microsoft Learn | Training and Certification Guide](https://arch-center.azureedge.net/Learning/Credentials/Training-+-Certification-Guide.pdf)
-- [Microsoft Privacy](https://privacy.microsoft.com/)
-- [Microsoft Product Lifecycle](https://learn.microsoft.com/en-us/lifecycle/)
-
----
-
 ### 🔷 Azure
 - [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
 - [Azure Container Instances documentation](https://learn.microsoft.com/en-us/azure/container-instances/)
@@ -86,6 +68,16 @@ This list will keep evolving as I explore and validate new resources — so cons
 
 ---
 
+### 📬 Exchange Online
+- [Exchange admin center in Exchange Online](https://learn.microsoft.com/en-us/exchange/exchange-admin-center)
+- [Exchange Online](https://learn.microsoft.com/en-us/Exchange/exchange-online)
+- [Exchange Online limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)
+- [Exchange Online service description](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
+- [Manage anti-spam policies in Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-protection)
+- [Manage mail flow rules in Exchange Online](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+
+---
+
 ### 🌎 Microsoft 365
 - [Deployment guide for Microsoft 365 Apps](https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/deployment-guide-microsoft-365-apps)
 - [Microsoft 365 Adoption Center](https://adoption.microsoft.com/)
@@ -104,18 +96,71 @@ This list will keep evolving as I explore and validate new resources — so cons
 
 ---
 
-##### 📬 Exchange Online
-- [Exchange admin center in Exchange Online](https://learn.microsoft.com/en-us/exchange/exchange-admin-center)
-- [Exchange Online](https://learn.microsoft.com/en-us/Exchange/exchange-online)
-- [Exchange Online limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)
-- [Exchange Online service description](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
-- [Manage anti-spam policies in Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-protection)
-- [Manage mail flow rules in Exchange Online](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
-
+### ✧₊⁺ Microsoft Copilot
+- [Copilots and generative AI in Power Platform](https://learn.microsoft.com/en-us/power-platform/copilot)
+- [Copilot learning hub](https://learn.microsoft.com/en-us/copilot/)
+- [Copilot Studio overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
+- [Microsoft 365 Copilot Chat documentation](https://learn.microsoft.com/en-us/copilot/microsoft-copilot)
+- [Microsoft 365 Copilot hub](https://learn.microsoft.com/en-us/copilot/microsoft-365/)
+- [Microsoft Copilot in Azure documentation](https://learn.microsoft.com/en-us/azure/copilot/)
+- [Microsoft Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/)
+- [What is Copilot in Fabric?](https://learn.microsoft.com/en-us/fabric/fundamentals/copilot-fabric-overview)
 
 ---
 
-##### 👨‍👨 Microsoft Teams
+
+### 🔺 Microsoft Entra ID (aka Azure AD)
+- [AADInternals](https://aadinternals.com/osint/)
+- [Application and HR provisioning documentation](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/)
+- [Application management documentation](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/)
+- [Enforce a naming policy on Microsoft 365 groups in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/users/groups-naming-policy)
+- [Enterprise user management documentation](https://learn.microsoft.com/en-us/entra/identity/users/)
+- [Hybrid identity documentation](https://learn.microsoft.com/en-us/entra/identity/hybrid/)
+- [Managed identities for Azure resources documentation](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/)
+- [Microsoft Entra architecture documentation](https://learn.microsoft.com/en-us/entra/architecture/)
+- [Microsoft Entra Conditional Access documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/)
+- [Microsoft Entra device identity documentation](https://learn.microsoft.com/en-us/entra/identity/devices/)
+- [Microsoft Entra Domain Services documentation](https://learn.microsoft.com/en-us/entra/identity/domain-services/)
+- [Microsoft Entra fundamentals documentation](https://learn.microsoft.com/en-us/entra/fundamentals/)
+- [Microsoft Entra ID documentation](https://learn.microsoft.com/en-us/entra/identity/)
+- [Microsoft Entra RBAC documentation](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/)
+- [Microsoft Entra releases and announcements](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new)
+- [New name for Azure Active Directory](https://learn.microsoft.com/en-us/entra/fundamentals/new-name)
+- [SaaS App configuration guides for Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/saas-apps/tutorial-list)
+- [Secure your organization's identities with Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/fundamentals/concept-secure-remote-workers)
+- [What is Microsoft Entra?](https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra)
+- [What is Microsoft Entra authentication?](https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication)
+- [What is the Microsoft Entra architecture?](https://learn.microsoft.com/en-us/entra/architecture/architecture)
+
+---
+
+### 🌐 Microsoft (General)
+- [Microsoft Accessibility](https://www.microsoft.com/en-us/accessibility)
+- [Microsoft Enteprise Skills Initiative (ESI)](https://esi.microsoft.com/)
+- [Microsoft Events](https://www.microsoft.com/en-us/events)
+- [Microsoft Learn](https://learn.microsoft.com/en-us/)
+- [Microsoft Learn · Choose your Microsoft Credential](https://arch-center.azureedge.net/Credentials/choose-your-microsoft-credential.pdf)
+- [Microsoft Learn · Exam duration and exam experience](https://learn.microsoft.com/en-gb/credentials/certifications/practice-assessments-for-microsoft-certifications)
+- [Microsoft Learn · Exam scoring and score reports](https://learn.microsoft.com/en-gb/credentials/certifications/exam-scoring-reports)
+- [Microsoft Learn · Microsoft Applied Skills](https://learn.microsoft.com/en-us/credentials/applied-skills/)
+- [Microsoft Learn · Microsoft Applied Skills Poster](https://arch-center.azureedge.net/Credentials/microsoft-applied-skills-poster.pdf)
+- [Microsoft Learn · Microsoft Certification Poster](https://arch-center.azureedge.net/Credentials/Certification-Poster_en-us.pdf)
+- [Microsoft Learn · Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-gb/credentials/certifications/practice-assessments-for-microsoft-certifications)
+- [Microsoft Learn · Training and Certification Guide](https://arch-center.azureedge.net/Learning/Credentials/Training-+-Certification-Guide.pdf)
+- [Microsoft Privacy](https://privacy.microsoft.com/)
+- [Microsoft Product Lifecycle](https://learn.microsoft.com/en-us/lifecycle/)
+
+---
+
+### 🎶 Microsoft Intune
+- [Get started with your Microsoft Intune deployment](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/get-started-with-intune)
+- [Microsoft Intune documentation](https://learn.microsoft.com/en-us/intune/intune-service/)
+- [Microsoft Intune planning guide](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/intune-planning-guide)
+
+---
+
+### 👨‍👨 Microsoft Teams
 - [Browse and add workflows in Microsoft Teams](https://support.microsoft.com/en-us/office/browse-and-add-workflows-in-microsoft-teams-4998095c-8b72-4b0e-984c-f2ad39e6ba9a)
 - [Browser logs and tracing for Teams](https://learn.microsoft.com/en-us/microsoftteams/browser-logs-and-tracing-for-teams)
 - [Clear the Teams client cache](https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/teams-administration/clear-teams-cache)
@@ -153,7 +198,7 @@ This list will keep evolving as I explore and validate new resources — so cons
 
 ---
 
-##### ⚙️ Power Platform
+### ⚙️ Power Platform
 - [Collaborate with Power BI in Microsoft Teams, Outlook, and Office](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-collaborate-microsoft-teams)
 - [Microsoft Power Apps documentation](https://learn.microsoft.com/en-us/power-apps/)
 - [Microsoft Power Automate documentation](https://learn.microsoft.com/en-us/power-automate/)
@@ -166,72 +211,11 @@ This list will keep evolving as I explore and validate new resources — so cons
 
 ---
 
-##### 🔁 SharePoint and OneDrive
-- [Get started with SharePoint](https://support.microsoft.com/en-us/office/get-started-with-sharepoint-909ec2f0-05c8-4e92-8ad3-3f8b0b6cf261)
-- [Introduction to SharePoint and OneDrive in Microsoft 365 for administrators](https://learn.microsoft.com/en-us/sharepoint/introduction)
-- [Intro to file collaboration in Microsoft 365, powered by SharePoint](https://learn.microsoft.com/en-us/sharepoint/intro-to-file-collaboration)
-- [Manage sites in the SharePoint admin center](https://learn.microsoft.com/en-us/sharepoint/manage-sites-in-new-admin-center)
-- [OneDrive service description](https://learn.microsoft.com/en-us/office365/servicedescriptions/onedrive-for-business-service-description)
-- [Restore deleted sites](https://learn.microsoft.com/en-us/sharepoint/restore-deleted-site-collection)
-- [SharePoint limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [SharePoint service description](https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description)
-
----
-
-#### ✧₊⁺ Microsoft Copilot
-- [Copilots and generative AI in Power Platform](https://learn.microsoft.com/en-us/power-platform/copilot)
-- [Copilot learning hub](https://learn.microsoft.com/en-us/copilot/)
-- [Copilot Studio overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
-- [Microsoft 365 Copilot Chat documentation](https://learn.microsoft.com/en-us/copilot/microsoft-copilot)
-- [Microsoft 365 Copilot hub](https://learn.microsoft.com/en-us/copilot/microsoft-365/)
-- [Microsoft Copilot in Azure documentation](https://learn.microsoft.com/en-us/azure/copilot/)
-- [Microsoft Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
-- [Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/)
-- [What is Copilot in Fabric?](https://learn.microsoft.com/en-us/fabric/fundamentals/copilot-fabric-overview)
-
----
-
-#### 🛡️ Microsoft Defender
-- [Microsoft Safety Scanner Download](https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download)
-
----
-
-#### 🔺 Microsoft Entra ID (aka Azure AD)
-- [AADInternals](https://aadinternals.com/osint/)
-- [Application and HR provisioning documentation](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/)
-- [Application management documentation](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/)
-- [Enforce a naming policy on Microsoft 365 groups in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/users/groups-naming-policy)
-- [Enterprise user management documentation](https://learn.microsoft.com/en-us/entra/identity/users/)
-- [Hybrid identity documentation](https://learn.microsoft.com/en-us/entra/identity/hybrid/)
-- [Managed identities for Azure resources documentation](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/)
-- [Microsoft Entra architecture documentation](https://learn.microsoft.com/en-us/entra/architecture/)
-- [Microsoft Entra Conditional Access documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/)
-- [Microsoft Entra device identity documentation](https://learn.microsoft.com/en-us/entra/identity/devices/)
-- [Microsoft Entra Domain Services documentation](https://learn.microsoft.com/en-us/entra/identity/domain-services/)
-- [Microsoft Entra fundamentals documentation](https://learn.microsoft.com/en-us/entra/fundamentals/)
-- [Microsoft Entra ID documentation](https://learn.microsoft.com/en-us/entra/identity/)
-- [Microsoft Entra RBAC documentation](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/)
-- [Microsoft Entra releases and announcements](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new)
-- [New name for Azure Active Directory](https://learn.microsoft.com/en-us/entra/fundamentals/new-name)
-- [SaaS App configuration guides for Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/saas-apps/tutorial-list)
-- [Secure your organization's identities with Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/fundamentals/concept-secure-remote-workers)
-- [What is Microsoft Entra?](https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra)
-- [What is Microsoft Entra authentication?](https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication)
-- [What is the Microsoft Entra architecture?](https://learn.microsoft.com/en-us/entra/architecture/architecture)
-
----
-
-#### 🎶 Microsoft Intune
-- [Get started with your Microsoft Intune deployment](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/get-started-with-intune)
-- [Microsoft Intune documentation](https://learn.microsoft.com/en-us/intune/intune-service/)
-- [Microsoft Intune planning guide](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/intune-planning-guide)
-
----
-
 ### 🔐 Security & Compliance 
 - [Microsoft Defender documentation](https://learn.microsoft.com/en-us/microsoft-365/security/defender/)
 - [Microsoft Purview](https://learn.microsoft.com/en-us/purview/)
 - [Microsoft Purview compliance portal](https://learn.microsoft.com/en-us/microsoft-365/compliance/microsoft-365-compliance-portal)
+- [Microsoft Safety Scanner Download](https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download)
 - [Microsoft Security documentation](https://learn.microsoft.com/en-us/security/)
 - [Microsoft Sentinel documentation](https://learn.microsoft.com/en-us/azure/sentinel/)
 - [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center)
@@ -246,7 +230,19 @@ This list will keep evolving as I explore and validate new resources — so cons
 
 ---
 
-### 🪟 Windows
+### 🔁 SharePoint and OneDrive
+- [Get started with SharePoint](https://support.microsoft.com/en-us/office/get-started-with-sharepoint-909ec2f0-05c8-4e92-8ad3-3f8b0b6cf261)
+- [Introduction to SharePoint and OneDrive in Microsoft 365 for administrators](https://learn.microsoft.com/en-us/sharepoint/introduction)
+- [Intro to file collaboration in Microsoft 365, powered by SharePoint](https://learn.microsoft.com/en-us/sharepoint/intro-to-file-collaboration)
+- [Manage sites in the SharePoint admin center](https://learn.microsoft.com/en-us/sharepoint/manage-sites-in-new-admin-center)
+- [OneDrive service description](https://learn.microsoft.com/en-us/office365/servicedescriptions/onedrive-for-business-service-description)
+- [Restore deleted sites](https://learn.microsoft.com/en-us/sharepoint/restore-deleted-site-collection)
+- [SharePoint limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [SharePoint service description](https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description)
+
+---
+
+### 🗔 Windows
 - [Make older apps or programs compatible with the latest version of Windows](https://support.microsoft.com/en-us/windows/make-older-apps-or-programs-compatible-with-the-latest-version-of-windows-783d6dd7-b439-bdb0-0490-54eea0f45938)
 - [Overview of Windows Autopilot](https://learn.microsoft.com/en-us/autopilot/overview)
 - [Repair a Windows Image using DISM](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/repair-a-windows-image)
