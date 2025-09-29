@@ -80,6 +80,10 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ## 🏅 Certifications
 
+**ℹ️ Note:** The links below point to the **official verification pages** of the corresponding certifications.  
+{: .notice--info}
+
+
 ### Microsoft Certifications  
 - [MS-721 – Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/87F3712A1939D1EB?sharingId=910D3083CD18E3A4){:target="_blank"} 
 - [AI-102 – Microsoft Certified: Azure AI Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ED8D5449484E0E49?sharingId=910D3083CD18E3A4){:target="_blank"} 
@@ -113,7 +117,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ## 🌍 Languages
 
-**Note:** The levels below are aligned with the descriptors of the **[Common European Framework of Reference for Languages (CEFR)](https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions)**.
+**ℹ️ Note:** The levels below are aligned with the descriptors of the **[Common European Framework of Reference for Languages (CEFR)](https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions)**.
 {: .notice--info}
 
 <div style="max-width: 600px;">
@@ -156,7 +160,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ## 🛠 Skills
 
-**Note:** The levels below are self-assessed and are subject to change over time depending on my learning journey and professional experience.
+**ℹ️ Note:** The levels below are self-assessed and are subject to change over time depending on my learning journey and professional experience.
 {: .notice--info}
 
 ### Technical Skills
