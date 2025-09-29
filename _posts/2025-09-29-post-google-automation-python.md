@@ -1,6 +1,6 @@
 ---
 title: "🏅 Cert Review: Google Automation with Python Professional Certificate"
-date: 2025-09-16
+date: 2025-09-29
 categories:
   - Certification
 tags:
