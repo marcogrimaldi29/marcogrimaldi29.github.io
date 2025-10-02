@@ -13,7 +13,7 @@ toc_label: "🧰 Useful Resources"
 permalink: /res-ai/
 ---
 
-## ✨ Useful Resources: AI and Prompt Engineering
+## ✨ AI and Prompt Engineering
 
 **⚠️ Note:** This is not a definitive or all-encompassing collection. Think of it more as a living hub — a place where I gather links, tools, and references that I’ve personally found useful and want to share openly. If you spot anything outdated or inconsistent, feel free to reach out through the contact options listed [here](/contact/).
 {: .notice--warning}
@@ -96,7 +96,7 @@ This list will continue to evolve as I explore and validate new resources — so
 ---
 
 ### 🗃️ Change Log
-- **2025-10-02:** H2 heading and date updated.
+- **2025-10-02:** H2 heading updated and date.
 - **2025-09-24:** Initial publication.  
 {: .notice}
 
