@@ -22,7 +22,7 @@ toc_label: "🧰 Useful Resources"
 permalink: /res-msft/
 ---
 
-## 🪟 Useful Resources: Microsoft
+## 🪟 Microsoft
 
 **⚠️ Important note:** This collection of resources is not meant to be comprehensive. Think of it as a starting point — a hub where useful tools and links are gathered and made freely accessible. If you come across any outdated material or inconsistencies, please let me know through the contact options listed [here](/contact/).
 {: .notice--warning}
