@@ -1,6 +1,7 @@
 ---
 title: "🧰 Useful Resources: Microsoft"
-last_modified_at: 2025-09-27
+date: 2025-09-26
+last_modified_at: 2025-10-02
 categories:
   - Resources
 tags:
@@ -21,7 +22,7 @@ toc_label: "🧰 Useful Resources"
 permalink: /res-msft/
 ---
 
-## 🪟 Microsoft
+## 🪟 Useful Resources: Microsoft
 
 **⚠️ Important note:** This collection of resources is not meant to be comprehensive. Think of it as a starting point — a hub where useful tools and links are gathered and made freely accessible. If you come across any outdated material or inconsistencies, please let me know through the contact options listed [here](/contact/).
 {: .notice--warning}
@@ -267,6 +268,7 @@ This list will keep evolving as I explore and validate new resources — so cons
 ---
 
 ### 🗃️ Change Log
+- **2025-10-02:** H2 heading and date updated.
 - **2025-09-27:** Tags added: AI, Architecture, Azure, Cloud, Collaboration, Compliance, Identity, Infrastructure, Microsoft, Security, Teams.
 - **2025-09-26:** Initial publication.
 {: .notice}
