@@ -63,8 +63,8 @@ I’ll keep updating this page as I discover and test new resources. Stay tuned!
 
 ---
 
-### 🗃️ Change Log:
-- **2025-10-02:** H2 heading updated.
+### 🗃️ Change Log
+- **2025-10-02:** H2 heading and date updated.
 - **2025-09-23:** Initial publication.  
 {: .notice}
 
