@@ -18,7 +18,7 @@ This site is my digital space to keep in touch, stay up-to-date, and share **pro
 
 It’s meant to be both a **personal** and a **learning hub** — a place where I collect useful resources and share what I’ve been working on.
 
-👷‍♂️ Work in progress — fresh content on the way!
+👷‍♂️🚧 Work in progress — fresh content on the way!
 
 ---
 
@@ -29,7 +29,7 @@ About Me and this Website
 #### [📰 All Posts](/posts/)
 Posts organized by Year
 #### [📲 Contact](/contact/)
-Contact Channels to keep in touch
+Contact channels to keep in touch
 #### [🖼️ Collections](/collections/)
 Posts organized by Collection
 #### [📃 CV](/cv/)
