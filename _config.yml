@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "<img src='/assets/images/favicon-32x32.png' alt='Logo' style='height:1.2em; vertical-align:middle; margin-right:6px;'> Marco Grimaldi’s <span style='font-weight:600; color:#4a6cf7;'>Hub</span>"
+title: "<img src='/assets/images/favicon-32x32.png' alt='Logo' class='logo-icon'> Marco Grimaldi’s Hub"
 email: marcogrimaldi29@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-#  I’m Marco Grimaldi — this is my personal web space dedicated to my professional journey 
-#  in Cloud Support, Cloud Administration, and Language Learning & Teaching, 
-#  and my passions beyond work, such as hiking trails and reading books that inspire curiosity and growth.
+  I’m Marco Grimaldi — this is my personal web space dedicated to my professional journey 
+  in Cloud Support, Cloud Administration, and Language Learning & Teaching, 
+  and my passions beyond work, such as hiking trails and reading books that inspire curiosity and growth.
 # twitter_username: username
 # github_username: marcogrimaldi29
 minimal_mistakes_skin: sunrise
@@ -29,15 +29,15 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
 
 # Exclude from processing.
-# The following items will not be processed by default. Create a custom list
+# The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
 #   - Gemfile
@@ -56,7 +56,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - jekyll-last-modified-at # Added to set up a GitHub Actions workflow to enable "Last modified" date on posts
 
 author:
   name   : "Marco Grimaldi"
