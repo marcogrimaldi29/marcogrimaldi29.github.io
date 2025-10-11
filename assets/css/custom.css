@@ -30,3 +30,9 @@
     height: 1.5em;
   }
 }
+
+/* Add this to your main CSS file (e.g. assets/css/main.css) */
+.logo-icon {
+  border: 2px solid #000;
+  border-radius: 6px;
+}
