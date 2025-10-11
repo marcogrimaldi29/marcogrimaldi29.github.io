@@ -1,0 +1,32 @@
+/* --- Header logo and title styling --- */
+.site-title img.logo-icon {
+  height: 1.2em;
+  vertical-align: middle;
+  margin-right: 6px;
+  opacity: 0.9;
+}
+
+.site-title img.logo-icon:hover {
+  opacity: 1;
+}
+
+/* --- Responsive: show only favicon on small screens --- */
+@media (max-width: 640px) {
+  .site-title {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .site-title img.logo-icon {
+    margin-right: 0;
+  }
+
+  /* Hide text on small screens */
+  .site-title {
+    font-size: 0;
+  }
+
+  .site-title img.logo-icon {
+    height: 1.5em;
+  }
+}
