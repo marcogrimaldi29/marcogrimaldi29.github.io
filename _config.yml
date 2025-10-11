@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Marco Grimaldi
+title: "<img src='/assets/images/favicon-32x32.png' alt='Logo' style='height:1.2em; vertical-align:middle; margin-right:6px;'> Marco Grimaldi’s <span style='font-weight:600; color:#4a6cf7;'>Hub</span>"
 email: marcogrimaldi29@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 #  I’m Marco Grimaldi — this is my personal web space dedicated to my professional journey 
