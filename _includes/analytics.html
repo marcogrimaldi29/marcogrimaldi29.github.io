@@ -1,0 +1,12 @@
+<!-- jekyll.environment == "production" prevents tracking during local jekyll serve. When testing locally, set JEKYLL_ENV=production to test -->
+{%- if site.ga_measurement_id and jekyll.environment == "production" -%}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZR22KWJ12P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZR22KWJ12P');
+</script>
+{%- endif -%}
