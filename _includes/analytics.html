@@ -1,14 +1,14 @@
 <!-- jekyll.environment == "production" prevents tracking during local jekyll serve. When testing locally, set JEKYLL_ENV=production to test -->
 {%- if site.ga_measurement_id and jekyll.environment == "production" -%}
 <!-- Google tag (gtag.js) - GDPR-friendly / cookieless configuration -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_measurement_id }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZR22KWJ12P"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   // Configure GA4 with privacy settings
-  gtag('config', '{{ site.ga_measurement_id }}', {
+  gtag('config', 'G-ZR22KWJ12P', {
     'anonymize_ip': true,              // Hide the last octet of the visitor's IP
     'allow_ad_personalization_signals': false, // Disable ad personalization
     'allow_google_signals': false,     // Prevent cross-site tracking / remarketing
