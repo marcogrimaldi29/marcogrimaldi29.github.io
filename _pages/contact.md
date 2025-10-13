@@ -23,7 +23,4 @@ You can get in touch with me through any of the following channels:
 * 🪟 **Microsoft**  
 [learn.microsoft.com/en-us/users/marcogrimaldi-0029](https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/)
 
-* 📱 **Phone**  
-[🇪🇸 +34 644 478 121](tel:+34644478121)
-
 ---
