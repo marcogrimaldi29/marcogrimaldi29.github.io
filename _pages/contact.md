@@ -1,10 +1,11 @@
 ---
 title: "Contact"
 layout: single
+classes: wide
 permalink: /contact/
 ---
 
-## Contact Me
+## 💬 Contact Me
 
 You can get in touch with me through any of the following channels:
 
