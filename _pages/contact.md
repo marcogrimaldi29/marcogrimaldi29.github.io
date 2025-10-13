@@ -23,7 +23,4 @@ You can get in touch with me through any of the following channels:
 * 🪟 **Microsoft**  
 [learn.microsoft.com/en-us/users/marcogrimaldi-0029](https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/)
 
-* 📱 **Phone**  
-[🇪🇸 [phone-removed]](tel:[phone-removed])
-
 ---
