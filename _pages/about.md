@@ -7,7 +7,7 @@ toc_sticky: true
 toc_label: "🏗️ About"
 ---
 
-## 👨‍🦲 About Me 
+## 👨🏻‍💼 About Me 
 
 I’m **Marco Grimaldi**, a professional with a deep passion for **technology, languages, and learning processes**.  
 
@@ -21,7 +21,7 @@ If you’d like to collaborate, share ideas, or explore common projects, feel fr
 
 ---
 
-### 🌐 Professional Identity
+### 🪪 Professional Identity
 
 - **IT & Cloud**: Experienced in Microsoft 365 environments, Teams, Azure administration, and cloud (voice) infrastructures, among other things. I specialize in **technical support, troubleshooting, and knowledge management**, ensuring that complex systems run smoothly and efficiently.  
 - **Languages & Training**: Skilled in teaching and communication, I have worked as a **foreign language teacher & trainer** with individuals and in language projects, fostering learning in multilingual and multicultural contexts. Beyond language teaching, I have guided learners in preparing for certification exams and supported high school students in achieving their academic goals.  
@@ -65,6 +65,6 @@ It’s an ongoing exercise to:
 
 I built this site with [GitHub Pages](https://docs.github.com/en/pages), [Jekyll](https://jekyllrb.com/), and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme to keep things simple and focused.
 
-The profile pictures have been generated via [ChatGPT](https://chatgpt.com/).
+The profile and logo pictures have been generated via [ChatGPT](https://chatgpt.com/).
 
 ---
