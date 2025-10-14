@@ -1,5 +1,5 @@
 ---
-title: "Curriculum Vitae"
+title: "📃 Curriculum Vitae"
 layout: single
 permalink: /cv/
 toc: true
@@ -75,6 +75,11 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ### International Course of German Language and Culture — University of Heidelberg  
 *Heidelberg* • *2018*  
+
+### Baccalaureate in Institute of Technology, Computer Science Specialization - I.T.I. Lattanzio
+*Rome* • *2005 - 2010*
+- Programming languages: C++; Java; HTML; PHP
+- Specialization topics: IT infrastructure; System administration (Windows & Linux); Networking; Cybersecurity; Hardware & Software; Electronics
 
 ---
 
@@ -486,8 +491,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
 
 <span style="background:rgba(94,84,142,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Adaptable</span>
-<span style="background:rgba(159,134,192,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Detail-oriented</span>
 <span style="background:rgba(190,149,196,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Client-first mentality</span>
+<span style="background:rgba(159,134,192,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Detail-oriented</span>
 <span style="background:rgba(224,177,203,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Fast-paced learner</span>
 <span style="background:rgba(199,125,255,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Multitasker</span>
 <span style="background:rgba(123,44,191,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Organized</span>
