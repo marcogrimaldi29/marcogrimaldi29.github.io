@@ -75,6 +75,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ### International Course of German Language and Culture — University of Heidelberg  
 *Heidelberg* • *2018*  
+- Intensive 1-month C1-level summer course (CEFR) at the University of Heidelberg.
 
 ### Baccalaureate in Institute of Technology, Computer Science Specialization - I.T.I. Lattanzio
 *Rome* • *2005 - 2010*
