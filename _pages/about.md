@@ -67,7 +67,7 @@ It’s an ongoing exercise to:
 
 ### ©️ Credits
 
-I built this site with **[GitHub Pages](https://docs.github.com/en/pages)**, **[Jekyll](https://jekyllrb.com/)**, and the **[Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme** to keep things simple and focused.
+I built this site with **[GitHub Pages](https://docs.github.com/en/pages)**, **[Jekyll](https://jekyllrb.com/)**, and the **[Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/)** to keep things simple and focused.
 
 The profile and logo pictures have been generated via **[ChatGPT](https://chatgpt.com/)**.
 
