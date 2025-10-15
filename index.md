@@ -36,6 +36,8 @@ Posts organized by Collection
 My up-to-date Curriculum Vitae
 #### [💼 LinkedIn](https://www.linkedin.com/in/marco-grimaldi29/)
 Connect professionally
+#### [🕵🏼‍♂️ Privacy Notice](/privacy/)
+GDPR-compliant and cookieless
 #### [🏷️ Tags](/tags/)
 Posts organized by Tag
 
