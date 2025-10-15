@@ -2,7 +2,7 @@
 title: "🕵🏼‍♂️ Privacy Notice"
 permalink: /privacy/
 layout: single
-author_profile: false
+author_profile: true
 toc: true
 toc_sticky: true
 toc_label: "🕵🏼‍♂️ Privacy Notice"
