@@ -10,7 +10,7 @@ The site is hosted with [GitHub Pages](https://pages.github.com/):
 
 ## 📬 Contact
 
-You can reach me via the [Contact page](https://marcogrimaldi29.github.io/contact) on the site.
+You can reach me via the [Contact page](https://marcogrimaldi29.github.io/contact/) on the site.
 
 ---
 
@@ -19,5 +19,11 @@ You can reach me via the [Contact page](https://marcogrimaldi29.github.io/contac
 The theme used is [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) by Michael Rose, released under the MIT license.
 
 All original content in this repository (posts, resources, CV) is © Marco Grimaldi.
+
+---
+
+## 📈 Analytics
+
+This site uses [Umami](https://umami.is/) for privacy-friendly analytics.
 
 ---
