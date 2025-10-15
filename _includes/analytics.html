@@ -1,20 +1,4 @@
-<!-- jekyll.environment == "production" prevents tracking during local jekyll serve. When testing locally, set JEKYLL_ENV=production to test -->
-{%- if site.ga_measurement_id and jekyll.environment == "production" -%}
-<!-- Google tag (gtag.js) - GDPR-friendly / cookieless configuration -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZR22KWJ12P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  // Configure GA4 with privacy settings
-  gtag('config', 'G-ZR22KWJ12P', {
-    'anonymize_ip': true,              // Hide the last octet of the visitor's IP
-    'allow_ad_personalization_signals': false, // Disable ad personalization
-    'allow_google_signals': false,     // Prevent cross-site tracking / remarketing
-    'storage': 'none',                 // ❗ disables cookies for analytics
-    'client_storage': 'none',          // newer GA4 key; ensures no cookies/localStorage
-    'debug_mode': false                // optional: turn on only for debugging
-  });
-</script>
+<!-- Umami Analytics - GDPR-friendly / cookieless configuration --> 
+{%- if jekyll.environment == "production" -%}
+<script defer src="https://cloud.umami.is/script.js" data-website-id="e5363bda-3e67-41f1-b38b-31188d781897"></script>
 {%- endif -%}
