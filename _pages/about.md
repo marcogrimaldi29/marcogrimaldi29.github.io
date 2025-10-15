@@ -69,4 +69,10 @@ I built this site with [GitHub Pages](https://docs.github.com/en/pages), [Jekyll
 
 The profile and logo pictures have been generated via [ChatGPT](https://chatgpt.com/).
 
+This site uses **Umami** for privacy-friendly analytics. If you're curious about the tool or want to self-host or try their cloud service, see:
+
+- [Umami — simple, privacy-focused web analytics](https://umami.is/)
+- [Umami documentation](https://umami.is/docs)
+- [Umami Cloud (hosted option)](https://cloud.umami.is)
+
 ---
