@@ -28,8 +28,6 @@ It does **not use cookies** and does **not collect personal data**.
 
 Anonymous statistics (such as page views and referrers) are processed only to improve site content and usability.
 
----
-
 #### 🖥️ Hosting and logs
 
 The site is hosted by **GitHub Pages**, a service provided by GitHub, Inc.  
