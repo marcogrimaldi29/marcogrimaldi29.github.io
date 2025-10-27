@@ -1,6 +1,7 @@
 ---
 title: "🏅 Cert Review: Google IT Support Professional Certificate"
 date: 2025-09-08
+last_modified_at: 2025-10-27
 categories:
   - Certification
 tags:
@@ -15,7 +16,7 @@ permalink: /google-it-support/
 
 ## 🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way 
 
-**Just a heads-up:** This review reflects my personal experience only.
+**❗ Just a heads-up:** This review reflects my personal experience only.
 {: .notice--info}
 
 ### ℹ️ Intro 
@@ -80,7 +81,7 @@ To summarize, these can be seen as the main takeaways from this course:
 
 On the flip side, it's worth mentioning that while Google Professional Certificates equip you with valuable knowledge and skills, they might not be seen as prestigious as an AZ-104 certification from Microsoft or a Google Cloud Platform (GCP) one. This has been my personal experience. Nonetheless, the time you spend on them is definitely a great advantage, especially if an IT Support skillset is what you're after.
 
-**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. I aim to share insights that may help others assess whether the Google IT Support Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may foster lifelong learning for a more accessible educational experience.
+**🚨 Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. I aim to share insights that may help others assess whether the Google IT Support Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may foster lifelong learning for a more accessible educational experience.
 {: .notice--info}
 
 ---
