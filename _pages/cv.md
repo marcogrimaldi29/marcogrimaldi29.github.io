@@ -1,5 +1,6 @@
 ---
 title: "📃 Curriculum Vitae"
+last_modified_at: 2025-10-27
 layout: single
 permalink: /cv/
 toc: true
@@ -89,8 +90,8 @@ Hereunder you can find more granular details about my **work experience**, **edu
 **ℹ️ Note:** The links below point to the **official verification pages** of the corresponding certifications.  
 {: .notice--info}
 
+### Microsoft Certifications
 
-### Microsoft Certifications  
 - [MS-721 – Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/87F3712A1939D1EB?sharingId=910D3083CD18E3A4){:target="_blank"} 
 - [AI-102 – Microsoft Certified: Azure AI Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ED8D5449484E0E49?sharingId=910D3083CD18E3A4){:target="_blank"} 
 - [AZ-104 – Microsoft Certified: Azure Administrator Associate (2023)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/22FAAC5CE067B849?sharingId=910D3083CD18E3A4){:target="_blank"} 
@@ -101,6 +102,10 @@ Hereunder you can find more granular details about my **work experience**, **edu
 - [AZ-900 – Microsoft Certified: Azure Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/5F20CC63EF49A780?sharingId=910D3083CD18E3A4){:target="_blank"} 
 - [PL-900 – Microsoft Certified: Power Platform Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/589C8B87C28BCDF4?sharingId=910D3083CD18E3A4){:target="_blank"} 
 - [SC-900 – Microsoft Certified: Security, Compliance & Identity Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3AC5BFB19E06BE2A?sharingId=910D3083CD18E3A4){:target="_blank"} 
+
+### Microsoft Applied Skills
+- [Microsoft Applied Skills: Get started with identities and access using Microsoft Entra (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/4D6B11F896F57408?sharingId=910D3083CD18E3A4)
+- [Microsoft Applied Skills: Deploy and configure Azure Monitor (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/B1A48535B1D53364?sharingId=910D3083CD18E3A4)
 
 ### Google Professional Certificates  
 - [Cybersecurity Specialization (2024)](https://www.coursera.org/account/accomplishments/specialization/IJR8VBC9PFIK){:target="_blank"} 
