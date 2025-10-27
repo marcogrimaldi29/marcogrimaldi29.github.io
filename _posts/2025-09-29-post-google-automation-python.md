@@ -1,6 +1,7 @@
 ---
 title: "🏅 Cert Review: Google Automation with Python Professional Certificate"
 date: 2025-09-29
+last_modified_at: 2025-10-27
 categories:
   - Certification
 tags:
@@ -15,7 +16,7 @@ permalink: /google-automation-python/
 
 ## 🤖 From Repetition to Automation: A Practical Review
 
-**Just a heads-up:** This review reflects my personal experience only. It is not sponsored in any way.
+**❗ Just a heads-up:** This review reflects my personal experience only.
 {: .notice--info}
 
 ### ℹ️ Intro
@@ -54,11 +55,11 @@ Google estimates around six months at 10 hours a week, but like all Coursera cer
 
 What I appreciated most about this certificate is how practical it is. Rather than staying at the theory level, you spend time working directly with scripts, automating file operations, parsing logs with regular expressions, and testing out solutions in real scenarios. These aren’t abstract exercises — they mirror the kinds of repetitive tasks many professionals face every day.  
 
-On top of Python itself, learning Git and GitHub stood out as an essential skill. Beyond collaboration, version control has given me a structured way to manage projects — such as this website you’re reading, which lives in a GitHub repository, and it's an instance and reflection of Course 3.  
+On top of Python itself, learning Git and GitHub stood out as an essential skill. Beyond collaboration, version control has given me a structured way to manage projects — such as this website you’re reading, which lives in a GitHub repository and it's an instance and reflection of Course 3.  
 
-Personally, the real value of the program wasn’t in “becoming a programmer" but in learning how to apply coding as a problem-solving tool. Whether that means automating a ticketing workflow, managing system logs, or building something personal, the certificate provides a strong foundation and critical hands-on experience that can be adapted to many different professional contexts.  
+Personally, the real value of the program wasn’t in “becoming a programmer", but in learning how to apply coding as a problem-solving tool. Whether that means automating a ticketing workflow, managing system logs, or building something personal, the certificate provides a strong foundation and critical hands-on experience that can be adapted to many different professional contexts.  
 
-**Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. I aim to share insights that may help others assess whether the Google Automation with Python Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may foster lifelong learning for a more accessible educational experience.
+**🚨 Disclaimer:** This article is solely based on my personal account. I have not received any endorsement from Google or any related party. I aim to share insights that may help others assess whether the Google Automation with Python Professional Certificate aligns with their own objectives and needs. Whenever possible, I also encourage you to look into available scholarships or community resources that may foster lifelong learning for a more accessible educational experience.
 {: .notice--info}
 
 ---
