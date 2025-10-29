@@ -1,33 +1,17 @@
 ---
-title: "Google Project Management Certificate Review & Guide 2025"
+title: "🏅 Cert Review: Google Project Management Professional Certificate"
 date: 2025-09-15
 last_modified_at: 2025-10-29
 categories:
   - Certification
-  - Career Development
-  - Project Management
 tags:
-  - Google Project Management Certificate
-  - Project Management Career
-  - Agile Project Management
-  - Project Management Professional
-  - Google Professional Certificate
-  - Project Management Certification
-  - Scrum Project Management
-  - Project Management Tools
-  - Project Management Skills
-  - Project Management Course
+  - Google
+  - Project Management
 excerpt: "In-depth review of the Google Project Management Professional Certificate: course content, hands-on assignments, and career opportunities. Learn how this certification enhances your project management skills in 2025."
 description: "Comprehensive guide to the Google Project Management Professional Certificate. Explore course curriculum, peer-reviewed assignments, and how this certification can advance your project management career in 2025."
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/google-pm-header.jpg
-  caption: "Google Project Management Professional Certificate Review"
-  teaser: /assets/images/google-pm-teaser.jpg
 toc: true
 toc_sticky: true
-toc_label: "Certificate Guide"
+toc_label: "Table of Contents"
 permalink: /google-project-mgmt/
 seo:
   type: "Article"
