@@ -5,7 +5,6 @@
 # Theme Configuration
 minimal_mistakes_skin: sunrise
 remote_theme: mmistakes/minimal-mistakes@4.24.0
-repository: "marcogrimaldi29/marcogrimaldi29.github.io"
 
 # Site Settings
 locale: "en_US"
