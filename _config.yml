@@ -21,7 +21,7 @@ seo:
   logo: "/assets/images/logo-sunrise-domain.jpg"
   locale: "en_US"
   url: "https://marcogrimaldi29.com"
-  
+
   # Social Media and Branding
   social:
     linkedin: "marco-grimaldi29"
@@ -44,6 +44,7 @@ seo:
 
 # Site Configuration
 title: "marcogrimaldi29.com"
+logo: "/assets/images/logo-sunrise-domain.jpg"
 repository: "marcogrimaldi29/marcogrimaldi29.github.io"
 minimal_mistakes_skin: sunrise
 search: true
