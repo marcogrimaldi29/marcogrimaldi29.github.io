@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "👋 Welcome to the Personal & Learning Hub of Marco Grimaldi"
+title: "👋 Welcome to the Hub of Marco Grimaldi"
 permalink: /
 author_profile: true
 toc: true
@@ -12,7 +12,7 @@ og_title: "Marco Grimaldi - IT Professional & Language Teacher"
 og_description: "Personal learning hub of Marco Grimaldi - L2 Managed Services Engineer at NTT DATA. Explore IT resources, certifications, and language learning insights."
 og_type: "website"
 og_image: "/assets/images/logo-sunrise-domain.jpg"
-canonical_url: "https://marcogrimaldi29.github.io/"
+canonical_url: "https://marcogrimaldi29.com/"
 ---
 
 **🥜 In a nutshell:** Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.
