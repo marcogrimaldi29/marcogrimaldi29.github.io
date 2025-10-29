@@ -9,8 +9,8 @@
 # they are accessed via {{ site.title }}, {{ site.email }}, and so on.
 # Any custom variable can be created, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Marco Grimaldi"
-subtitle: "Personal Website"
+title: "marcogrimaldi29.com"
+subtitle: "Marco Grimaldi's Personal Website"
 email: marcogrimaldi29@gmail.com
 logo: "/assets/images/logo-sunrise-domain.jpg"
 repository: "marcogrimaldi29/marcogrimaldi29.github.io"
