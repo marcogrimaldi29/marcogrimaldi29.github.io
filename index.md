@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Marco Grimaldi - L2 Managed Services Engineer & Language Teacher"
+title: "👋 Welcome to the Personal & Learning Hub of Marco Grimaldi"
 permalink: /
 author_profile: true
 toc: true
@@ -17,8 +17,6 @@ canonical_url: "https://marcogrimaldi29.github.io/"
 
 **🥜 In a nutshell:** Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.
 {: .notice}
-
-## 👋 Welcome
 
 Hey, I’m **Marco Grimaldi** — IT Consultant, Cloud Enthusiast, and Language Trainer.  
 
