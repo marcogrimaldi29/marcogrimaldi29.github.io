@@ -3,12 +3,14 @@
 # After changes, restart the server process.
 
 # Theme Configuration
-theme_settings:
-  minimal_mistakes_skin: sunrise
-  repository: "marcogrimaldi29/marcogrimaldi29.github.io"
+minimal_mistakes_skin: sunrise
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+repository: "marcogrimaldi29/marcogrimaldi29.github.io"
 
-# Core Site Settings
+# Site Settings
+locale: "en_US"
 title: &site_title "marcogrimaldi29.com"
+title_separator: "-"
 subtitle: "Personal Website of Marco Grimaldi"
 name: &author_name "Marco Grimaldi"
 email: &author_email "marcogrimaldi29@gmail.com"
@@ -16,10 +18,13 @@ description: &site_description >- # Multiline description
   Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications,
   and language teaching. L2 Managed Services Engineer at NTT DATA sharing professional
   insights and resources.
-url: &site_url "https://marcogrimaldi29.com"
+url: &site_url "https://marcogrimaldi29.github.io"  # Changed to GitHub Pages URL
+baseurl: ""  # the subpath of your site, e.g. "/blog"
+repository: "marcogrimaldi29/marcogrimaldi29.github.io"
 logo: &site_logo "/assets/images/logo-sunrise-domain.jpg"
-locale: "en_US"
 search: true
+search_full_content: true
+search_provider: lunr
 
 # SEO Settings
 seo:
@@ -54,43 +59,61 @@ seo:
     image: *site_logo
     image_alt: "Marco Grimaldi's Website Logo"
 
-# Build Configuration
-build_settings:
-  markdown: kramdown
-  remote_theme: mmistakes/minimal-mistakes
-  include:
-    - _pages
-  exclude:
-    - Gemfile
-    - Gemfile.lock
-    - node_modules
-    - vendor/bundle/
-    - vendor/cache/
-    - vendor/gems/
-    - vendor/ruby/
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-# Output Configuration
-output_settings:
-  permalink: /:categories/:title/
-  paginate: 5
-  paginate_path: /page:num/
-  timezone: Europe/Rome  # Set to Rome timezone
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-# Plugin Configuration
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: Europe/Rome
+
+# Files
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins
 plugins:
-  # SEO and Analytics
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  
-  # Content Enhancement
   - jekyll-paginate
-  - jekyll-feed
-  - jemoji
+  - jekyll-sitemap
   - jekyll-gist
-  
-  # Functionality
+  - jekyll-feed
   - jekyll-include-cache
+  - jemoji
+  - jekyll-seo-tag
   - jekyll-redirect-from
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jemoji
 
 # Author Information
 author:
@@ -144,11 +167,13 @@ defaults:
       toc: true
       toc_sticky: true
 
-# Archive Configuration
-archives:
-  category_archive:
-    type: liquid
-    path: /categories/
-  tag_archive:
-    type: liquid
-    path: /tags/
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+year_archive:
+  type: liquid
+  path: /posts/
