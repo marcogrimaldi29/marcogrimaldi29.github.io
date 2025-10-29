@@ -1,143 +1,126 @@
-# This config file is meant for settings that affect the whole blog, values
-# which are expected to be set up once and rarely edit after that.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when using
-# 'bundle exec jekyll serve'. After changing this file, a reboot of the server process is needed.
+# Jekyll Configuration File
+# WARNING: This file is NOT reloaded automatically when using 'bundle exec jekyll serve'.
+# After changes, restart the server process.
 
-# SEO and Site Settings
-# These settings control both site functionality and SEO optimization
+# Theme Configuration
+theme_settings:
+  minimal_mistakes_skin: sunrise
+  repository: "marcogrimaldi29/marcogrimaldi29.github.io"
+
+# Core Site Settings
+title: &site_title "marcogrimaldi29.com"
+subtitle: "Personal Website of Marco Grimaldi"
+name: &author_name "Marco Grimaldi"
+email: &author_email "marcogrimaldi29@gmail.com"
+description: &site_description >- # Multiline description
+  Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications,
+  and language teaching. L2 Managed Services Engineer at NTT DATA sharing professional
+  insights and resources.
+url: &site_url "https://marcogrimaldi29.com"
+logo: &site_logo "/assets/images/logo-sunrise-domain.jpg"
+locale: "en_US"
+search: true
+
+# SEO Settings
 seo:
-  # Basic Site Information
-  title: "marcogrimaldi29.com"
+  title: *site_title
+  name: *author_name
+  email: *author_email
+  description: *site_description
+  url: *site_url
+  logo: *site_logo
   title_separator: "-"
-  subtitle: "Personal Website of Marco Grimaldi"
-  name: "Marco Grimaldi"
-  description: >- # this means to ignore newlines until "baseurl:"
-    Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications,
-    and language teaching. L2 Managed Services Engineer at NTT DATA sharing professional
-    insights and resources.
-  author: "Marco Grimaldi"
-  email: marcogrimaldi29@gmail.com
-  logo: "/assets/images/logo-sunrise-domain.jpg"
-  locale: "en_US"
-  url: "https://marcogrimaldi29.com"
-
-  # Social Media and Branding
+  author: *author_name
+  
+  # SEO Keywords
+  keywords: >-
+    Marco Grimaldi, NTT DATA, Managed Services Engineer, IT Professional,
+    Cloud Computing, Language Teacher, IT Certifications, Microsoft Learn,
+    Professional Development, Technology Blog, Azure, Cloud Engineering
+    
+  # Webmaster Verification
+  verify:
+    google: # Google Search Console verification code
+    bing: # Bing Webmaster Tools verification code
+    
+  # Social Media
   social:
     linkedin: "marco-grimaldi29"
     github: "marcogrimaldi29"
   
-  # SEO Optimization
-  keywords: >-
-    Marco Grimaldi, NTT DATA, Managed Services Engineer, IT Professional,
-    Cloud Computing, Language Teacher, IT Certifications, Microsoft Learn,
-    Professional Development, Technology Blog
-  verify:
-    google: # Google Search Console verification code
-    bing: # Bing Webmaster Tools verification code
-  
-  # Open Graph Settings
+  # Open Graph
   og:
     type: "website"
-    image: "/assets/images/logo-sunrise-domain.jpg"
+    image: *site_logo
     image_alt: "Marco Grimaldi's Website Logo"
 
-# Site Configuration
-title: "marcogrimaldi29.com"
-logo: "/assets/images/logo-sunrise-domain.jpg"
-repository: "marcogrimaldi29/marcogrimaldi29.github.io"
-minimal_mistakes_skin: sunrise
-search: true
+# Build Configuration
+build_settings:
+  markdown: kramdown
+  remote_theme: mmistakes/minimal-mistakes
+  include:
+    - _pages
+  exclude:
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - vendor/bundle/
+    - vendor/cache/
+    - vendor/gems/
+    - vendor/ruby/
 
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+# Output Configuration
+output_settings:
+  permalink: /:categories/:title/
+  paginate: 5
+  paginate_path: /page:num/
+  timezone: Europe/Rome  # Set to Rome timezone
 
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-include:
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# Plugin Configuration
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
+  # SEO and Analytics
   - jekyll-seo-tag
+  - jekyll-sitemap
+  
+  # Content Enhancement
+  - jekyll-paginate
+  - jekyll-feed
   - jemoji
+  - jekyll-gist
+  
+  # Functionality
   - jekyll-include-cache
   - jekyll-redirect-from
 
+# Author Information
 author:
-  name   : "Marco Grimaldi"
-  avatar : "/assets/images/marco-cv.jpg"
-  bio    : "L2 Managed Services Engineer @ NTT DATA · Language Teacher"
-  links:
-    - label: "Duolingo"
-      icon: "fab fa-duolingo"
-      url: "https://www.duolingo.com/profile/MarcoGrimm"  
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/marcogrimaldi29"
+  name: *author_name
+  avatar: "/assets/images/marco-cv.jpg"
+  bio: "L2 Managed Services Engineer @ NTT DATA · Language Teacher"
+  links: &social_links
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/marco-grimaldi29/"
-    - label: "Microsoft"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/marcogrimaldi29"
+    - label: "Microsoft Learn"
       icon: "fab fa-microsoft"
       url: "https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/"
+    - label: "Duolingo"
+      icon: "fab fa-duolingo"
+      url: "https://www.duolingo.com/profile/MarcoGrimm"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://marcogrimaldi29.github.io"
-#   - label: "Instagram"
-#     icon: "fab fa-fw fa-instagram"
-#     url: "https://instagram.com/"
-#   - label: "Twitter"
-#     icon: "fab fa-fw fa-twitter-square"
-#     url: "https://twitter.com/"
+      url: *site_url
 
+# Footer Configuration
 footer:
-  links:
-    - label: "Duolingo"
-      icon: "fab fa-duolingo"
-      url: "https://www.duolingo.com/profile/MarcoGrimm"  
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/marcogrimaldi29"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/marco-grimaldi29/"
-    - label: "Microsoft"
-      icon: "fab fa-microsoft"
-      url: "https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://marcogrimaldi29.github.io"
-#   - label: "Instagram"
-#     icon: "fab fa-fw fa-instagram"
-#     url: "https://instagram.com/"
-#   - label: "Twitter"
-#     icon: "fab fa-fw fa-twitter-square"
-#     url: "https://twitter.com/"
+  links: *social_links  # Reuse the same social links from author
 
+# Content Defaults
 defaults:
-  # _posts
+  # Post Defaults
   - scope:
       path: ""
       type: posts
@@ -148,17 +131,24 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
+      toc: true
+      toc_sticky: true
+  
+  # Page Defaults
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
+      toc: true
+      toc_sticky: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# Archive Configuration
+archives:
+  category_archive:
+    type: liquid
+    path: /categories/
+  tag_archive:
+    type: liquid
+    path: /tags/
