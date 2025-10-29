@@ -3,21 +3,45 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when using
 # 'bundle exec jekyll serve'. After changing this file, a reboot of the server process is needed.
-#
-# Site settings:
-# These are used to personalize the site. By looking in the HTML files,
-# they are accessed via {{ site.title }}, {{ site.email }}, and so on.
-# Any custom variable can be created, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+
+# SEO and Site Settings
+# These settings control both site functionality and SEO optimization
+seo:
+  # Basic Site Information
+  title: "Marco Grimaldi - L2 Managed Services Engineer & Language Teacher"
+  subtitle: "IT Professional & Language Learning Enthusiast"
+  description: >- # this means to ignore newlines until "baseurl:"
+    Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications,
+    and language teaching. L2 Managed Services Engineer at NTT DATA sharing professional
+    insights and resources.
+  author: "Marco Grimaldi"
+  email: marcogrimaldi29@gmail.com
+  logo: "/assets/images/logo-sunrise-domain.jpg"
+  locale: "en_US"
+  
+  # Social Media and Branding
+  social:
+    linkedin: "marco-grimaldi29"
+    github: "marcogrimaldi29"
+  
+  # SEO Optimization
+  keywords: >-
+    Marco Grimaldi, NTT DATA, Managed Services Engineer, IT Professional,
+    Cloud Computing, Language Teacher, IT Certifications, Microsoft Learn,
+    Professional Development, Technology Blog
+  verify:
+    google: # Google Search Console verification code
+    bing: # Bing Webmaster Tools verification code
+  
+  # Open Graph Settings
+  og:
+    type: "website"
+    image: "/assets/images/logo-sunrise-domain.jpg"
+    image_alt: "Marco Grimaldi's Website Logo"
+
+# Site Configuration
 title: "marcogrimaldi29.com"
-subtitle: "Marco Grimaldi's Personal Website"
-email: marcogrimaldi29@gmail.com
-logo: "/assets/images/logo-sunrise-domain.jpg"
 repository: "marcogrimaldi29/marcogrimaldi29.github.io"
-description: >- # this means to ignore newlines until "baseurl:"
-  Marco Grimaldi's personal and learning hub space used to store and share
-  knowledge about IT, certifications, language learning, and more.
-github_username: marcogrimaldi29
 minimal_mistakes_skin: sunrise
 search: true
 
@@ -52,8 +76,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 author:
   name   : "Marco Grimaldi"
