@@ -8,8 +8,10 @@
 # These settings control both site functionality and SEO optimization
 seo:
   # Basic Site Information
-  title: "Marco Grimaldi - L2 Managed Services Engineer & Language Teacher"
-  subtitle: "IT Professional & Language Learning Enthusiast"
+  title: "marcogrimaldi29.com"
+  title_separator: "-"
+  subtitle: "Personal Website of Marco Grimaldi"
+  name: "Marco Grimaldi"
   description: >- # this means to ignore newlines until "baseurl:"
     Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications,
     and language teaching. L2 Managed Services Engineer at NTT DATA sharing professional
@@ -18,6 +20,7 @@ seo:
   email: marcogrimaldi29@gmail.com
   logo: "/assets/images/logo-sunrise-domain.jpg"
   locale: "en_US"
+  url: "https://marcogrimaldi29.com"
   
   # Social Media and Branding
   social:
