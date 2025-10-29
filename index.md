@@ -1,16 +1,24 @@
 ---
 layout: single
-title: "👋 Welcome"
+title: "Marco Grimaldi - L2 Managed Services Engineer & Language Teacher"
 permalink: /
 author_profile: true
-# classes: wide
 toc: true
 toc_sticky: true
 toc_label: "🏠 Home"
+description: "Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications, and language teaching. Managed Services Engineer at NTT DATA sharing knowledge and professional resources."
+keywords: "Marco Grimaldi, NTT DATA, Managed Services Engineer, Language Teacher, Cloud Computing, IT Certifications, Microsoft Learn, Professional Development"
+og_title: "Marco Grimaldi - IT Professional & Language Teacher"
+og_description: "Personal learning hub of Marco Grimaldi - L2 Managed Services Engineer at NTT DATA. Explore IT resources, certifications, and language learning insights."
+og_type: "website"
+og_image: "/assets/images/logo-sunrise-domain.jpg"
+canonical_url: "https://marcogrimaldi29.github.io/"
 ---
 
 **🥜 In a nutshell:** Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.
 {: .notice}
+
+## 👋 Welcome
 
 Hey, I’m **Marco Grimaldi** — IT Consultant, Cloud Enthusiast, and Language Trainer.  
 
