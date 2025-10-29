@@ -4,6 +4,8 @@ This repository contains the source code of my personal website, built with [Jek
 
 The site is hosted with [GitHub Pages](https://pages.github.com/):  
 
+👉 [https://marcogrimaldi29.com](https://marcogrimaldi29.com)
+or
 👉 [https://marcogrimaldi29.github.io](https://marcogrimaldi29.github.io)
 
 ---
