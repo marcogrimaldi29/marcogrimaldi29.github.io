@@ -1,3 +1,11 @@
+# Allow all robots complete access
 User-agent: *
 Allow: /
+
+# Sitemap location
 Sitemap: https://marcogrimaldi29.github.io/sitemap.xml
+
+# Prevent indexing of search results
+Disallow: /search/
+Disallow: /search?*
+Disallow: /*?*
