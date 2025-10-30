@@ -3,6 +3,8 @@ title: "💬 Contact"
 layout: single
 classes: wide
 permalink: /contact/
+toc: false
+author_profile: true
 ---
 
 You can get in touch with me through any of the following channels:
