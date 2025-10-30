@@ -31,7 +31,7 @@ Thanks to a grant from [Experiencia Fundae](https://experienciafundae.es/beca-go
 
 ### 📚 The Automation Toolkit: A Breakdown of the Courses
 
-The curriculum takes you from basic scripting all the way to building automation that can scale. While no prior IT background is strictly required, I personally found this certificate more technically demanding than others in the Google Career Certificate series, such as [IT Support](/google-it-support/), [Project Management](/google-project-mgmt/), or [Data Analytics](/google-data-analytics/), previously covered in my Cert Review series. The hands-on labs in particular require a good deal of patience and problem-solving, which makes completing the program both challenging and rewarding.  
+The curriculum takes you from basic scripting all the way to building automation that can scale. While no prior IT background is strictly required, I personally found this certificate more technically demanding than others in the Google Career Certificate series, such as [IT Support](/google-it-support/), [Project Management](/google-project-management/), or [Data Analytics](/google-data-analytics/), previously covered in my Cert Review series. The hands-on labs in particular require a good deal of patience and problem-solving, which makes completing the program both challenging and rewarding.  
 
 Google estimates around six months at 10 hours a week, but like all Coursera certificates, it’s self-paced. Below is an outline of the core courses:  
 

@@ -12,7 +12,7 @@ description: "Comprehensive guide to the Google Project Management Professional 
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
-permalink: /google-project-mgmt/
+permalink: /google-project-management/
 seo:
   type: "Article"
   keywords:
@@ -26,7 +26,7 @@ seo:
     - Project Management Skills
     - Project Management Career Guide
     - Project Management Tools
-canonical_url: "https://marcogrimaldi29.com/google-project-mgmt/"
+canonical_url: "https://marcogrimaldi29.com/google-project-management/"
 read_time: true
 comments: true
 share: true
