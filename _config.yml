@@ -138,26 +138,26 @@ author:
       icon: "fab fa-fw fa-microsoft"
       url: "https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/"
     - label: "Duolingo"
-      icon: "fa-brands fa-duolingo"
+      icon: "fab fa-fw fa-duolingo"
       url: "https://www.duolingo.com/profile/MarcoGrimm"
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-link"
       url: *site_url
 
 # Footer Configuration
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fa-brands fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/marco-grimaldi29/"
     - label: "GitHub"
-      icon: "fa-brands fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/marcogrimaldi29"
     - label: "Microsoft"
-      icon: "fa-brands fa-microsoft"
+      icon: "fab fa-fw fa-microsoft"
       url: "https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/"
     - label: "Duolingo"
-      icon: "fa-brands fa-duolingo"
+      icon: "fab fa-fw fa-duolingo"
       url: "https://www.duolingo.com/profile/MarcoGrimm"
     - label: "Website"
       icon: "fas fa-link"
