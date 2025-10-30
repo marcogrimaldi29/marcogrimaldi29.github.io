@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://marcogrimaldi29.github.io/sitemap.xml
