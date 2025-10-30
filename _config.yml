@@ -14,11 +14,11 @@ atom_feed:
 head_scripts:
   - https://kit.fontawesome.com/4eee35f757.js
 
-# Site Settings
+# Core Site Settings
 locale: "en_US"
 title: &site_title "marcogrimaldi29.com"
 title_separator: "-"
-subtitle: "Personal Website of Marco Grimaldi"
+subtitle: "Personal Hub of Marco Grimaldi"
 name: &author_name "Marco Grimaldi"
 email: &author_email "marcogrimaldi29@gmail.com"
 description: &site_description >- # Multiline description
@@ -56,15 +56,8 @@ seo:
     
   # Webmaster Verification
   verify:
-    google: "google-site-verification-code"  # You'll need to add your actual code here
-    bing: "bing-site-verification-code"      # You'll need to add your actual code here
-    
-# Google Analytics
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-XXXXXXXXXX"  # You'll need to add your actual tracking ID
-    anonymize_ip: false
+    google: 2odQD3jEYS9beLb8PwPvtMhlwwBdeqIdQUsqM1V3Cr4  # Replace with your actual verification code
+    bing: ""  # Add Bing verification later if needed
     
   # Social Media
   social:
