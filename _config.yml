@@ -46,14 +46,25 @@ seo:
   
   # SEO Keywords
   keywords: >-
-    Marco Grimaldi, NTT DATA, Managed Services Engineer, IT Professional,
-    Cloud Computing, Language Teacher, IT Certifications, Microsoft Learn,
-    Professional Development, Technology Blog, Azure, Cloud Engineering
+    Marco Grimaldi, NTT DATA Engineer, IT Professional Blog,
+    Cloud Computing Expert, Language Teacher, IT Certifications Guide,
+    Microsoft Azure Certifications, Google IT Certifications,
+    Professional Development Blog, Technology Career Guide,
+    Azure Cloud Engineering, IT Support Professional,
+    Project Management Professional, Data Analytics,
+    Cloud Engineering Blog, Technical Support Guide
     
   # Webmaster Verification
   verify:
-    google: # Google Search Console verification code
-    bing: # Bing Webmaster Tools verification code
+    google: "google-site-verification-code"  # You'll need to add your actual code here
+    bing: "bing-site-verification-code"      # You'll need to add your actual code here
+    
+# Google Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-XXXXXXXXXX"  # You'll need to add your actual tracking ID
+    anonymize_ip: false
     
   # Social Media
   social:
