@@ -67,16 +67,16 @@ Hereunder you can find more granular details about my **work experience**, **edu
 *Seville* • *2020 – 2021*  
 - Internship at IES San Isidoro, Seville.  
 
+### International Course of German Language and Culture — University of Heidelberg  
+*Heidelberg* • *2018*  
+- Intensive 1-month C1-level summer course (CEFR) at the University of Heidelberg.
+
 ### Bachelor’s Degree in Languages in the Information Society — University of Rome "Tor Vergata"  
 *Rome & Heidelberg* • *2014 – 2018*  
 - Final grade: 110/110.  
 - 1-year Erasmus+ KA1 Exchange Program, University of Heidelberg (Germany).  
 - Student representative (academic year: 2016/2017, 2017/2018).  
 - Programming languages and foreign languages: HTML, CSS, JavaScript, SQL, German, English, Spanish.  
-
-### International Course of German Language and Culture — University of Heidelberg  
-*Heidelberg* • *2018*  
-- Intensive 1-month C1-level summer course (CEFR) at the University of Heidelberg.
 
 ### Baccalaureate in Institute of Technology, Computer Science Specialization - I.T.I. Lattanzio
 *Rome* • *2005 - 2010*
