@@ -127,7 +127,7 @@ author:
   name: *author_name
   avatar: "/assets/images/marco-cv.jpg"
   bio: "L2 Managed Services Engineer @ NTT DATA · Language Teacher"
-  links: &social_links
+  links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/marco-grimaldi29/"
