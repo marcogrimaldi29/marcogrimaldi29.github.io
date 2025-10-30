@@ -137,7 +137,8 @@ author:
     - label: "Microsoft"
       icon: "fab fa-fw fa-microsoft"
       url: "https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/"
-    - label: '<img src="/assets/icons/duolingo.svg" alt="Duolingo" width="18" height="18" style="vertical-align:middle;">'
+    - label: "Duolingo"
+      icon: "fa-brands fa-duolingo"
       url: "https://www.duolingo.com/profile/MarcoGrimm"
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -155,7 +156,8 @@ footer:
     - label: "Microsoft"
       icon: "fa-brands fa-microsoft"
       url: "https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/"
-    - label: '<img src="/assets/icons/duolingo.svg" alt="Duolingo" width="18" height="18" style="vertical-align:middle;">'
+    - label: "Duolingo"
+      icon: "fa-brands fa-duolingo"
       url: "https://www.duolingo.com/profile/MarcoGrimm"
     - label: "Website"
       icon: "fas fa-link"
