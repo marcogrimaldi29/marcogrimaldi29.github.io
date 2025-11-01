@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main pages -->
   <url>
     <loc>https://marcogrimaldi29.com/</loc>
     <changefreq>weekly</changefreq>
@@ -29,5 +30,72 @@
     <loc>https://marcogrimaldi29.com/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/privacy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/category-archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/year-archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Blog posts -->
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/09/08/post-google-it-support/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/09/15/post-google-project-management/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/09/22/post-google-data-analytics/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/09/23/resource-gh-pages/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/09/24/resource-ai/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/09/26/resource-msft/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/09/29/post-google-automation-python/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/10/07/post-msft-sc-900/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/10/14/post-msft-pl-900/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/2025/10/29/post-msft-az-900/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
