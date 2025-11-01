@@ -4,6 +4,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://marcogrimaldi29.github.io/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/sitemap.xml
 
 # Prevent indexing of search results
 Disallow: /search/
