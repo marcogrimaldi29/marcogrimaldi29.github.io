@@ -25,7 +25,7 @@ description: &site_description >- # Multiline description
   Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications,
   and language teaching. L2 Managed Services Engineer at NTT DATA sharing professional
   insights and resources.
-url: &site_url "https://marcogrimaldi29.github.io"  # Changed to GitHub Pages URL
+url: &site_url "https://marcogrimaldi29.com"  # Changed to CNAME URL
 baseurl: ""  # the subpath of your site, e.g. "/blog"
 repository: "marcogrimaldi29/marcogrimaldi29.github.io"
 logo: &site_logo "/assets/images/logo-sunrise-domain.jpg"
