@@ -1,7 +1,7 @@
 ---
 title: "🧰 Useful Resources: Microsoft"
 date: 2025-09-26
-last_modified_at: 2025-10-02
+last_modified_at: 2025-11-05
 categories:
   - Resources
 tags:
@@ -14,12 +14,35 @@ tags:
   - Identity
   - Infrastructure
   - Microsoft
+  - Microsoft 365
+  - Power Platform
   - Security
   - Teams
+excerpt: "Curated list of key Microsoft resources — explore documentation, learning paths, and tools across Azure, Microsoft 365, Power Platform, Security, and AI to support professional development and certification prep in 2025."
+description: "Comprehensive hub of Microsoft resources featuring official documentation, learning materials, and productivity tools for Azure, Microsoft 365, Power Platform, Teams, Security, and AI. Ideal for IT professionals, learners, and certification candidates in 2025."
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
-permalink: /res-msft/
+permalink: /resources-microsoft/
+seo:
+  type: "Article"
+  keywords:
+    - Microsoft 365 Resources
+    - Microsoft Azure Documentation
+    - Microsoft Certification Guide
+    - Microsoft Copilot
+    - Microsoft Entra ID
+    - Microsoft Learn
+    - Microsoft Power Platform
+    - Microsoft Resources
+    - Microsoft Security Documentation
+    - Microsoft Teams
+canonical_url: "https://marcogrimaldi29.com/resources-microsoft/"
+read_time: true
+comments: true
+share: true
+related: true
+author_profile: true
 ---
 
 ## 🪟 Microsoft
