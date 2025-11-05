@@ -1,17 +1,40 @@
 ---
-title: "🏅 Cert Review: Google Automation with Python Professional Certificate"
+title: "🏅 Cert Review: Google IT Automation with Python Professional Certificate"
 date: 2025-09-29
-last_modified_at: 2025-10-27
+last_modified_at: 2025-11-05
 categories:
   - Certification
 tags:
   - Automation
   - Google
   - Python
+  - Scripting
+  - Workflow
+excerpt: "Comprehensive review of the Google IT Automation with Python Professional Certificate. Explore the course structure, hands-on labs, and how Python can streamline workflows and boost productivity in 2025."
+description: "Detailed guide to the Google IT Automation with Python Professional Certificate. Learn how this Coursera program teaches scripting, automation, Git, and cloud management to build job-ready technical skills for 2025."
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
 permalink: /google-automation-python/
+seo:
+  type: "Article"
+  keywords:
+    - Automation with Python
+    - Coursera Python Certificate
+    - Google Automation Certificate
+    - Google IT Automation with Python
+    - Google Professional Certificate
+    - IT Automation
+    - Python Automation
+    - Python for IT Professionals
+    - Scripting with Python
+    - Workflow Automation
+canonical_url: "https://marcogrimaldi29.com/google-automation-python/"
+read_time: true
+comments: true
+share: true
+related: true
+author_profile: true
 ---
 
 ## 🤖 From Repetition to Automation: A Practical Review
