@@ -1,16 +1,38 @@
 ---
 title: "🧰 Useful Resources: AI and Prompt Engineering"
-last_modified_at: 2025-10-02
 date: 2025-09-24
+last_modified_at: 2025-11-05
 categories:
   - Resources
 tags:
   - AI
+  - Artificial Intelligence
   - Prompt Engineering
+excerpt: "Curated list of essential AI and Prompt Engineering resources — explore learning materials, tools, and research on generative AI, LLMs, and practical prompt design techniques for 2025."
+description: "Comprehensive hub of AI and Prompt Engineering resources. Discover curated links, guides, and tools covering ChatGPT, Gemini, Copilot, and prompt design strategies for effective generative AI use in 2025."
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
-permalink: /res-ai/
+permalink: /resources-ai/
+seo:
+  type: "Article"
+  keywords:
+    - AI Learning Materials
+    - AI Prompt Design
+    - AI Resources
+    - AI Tools and Platforms
+    - ChatGPT Resources
+    - Generative AI Tools
+    - Google Gemini
+    - Large Language Models
+    - Microsoft Copilot
+    - Prompt Engineering Guide
+canonical_url: "https://marcogrimaldi29.com/resources-ai/"
+read_time: true
+comments: true
+share: true
+related: true
+author_profile: true
 ---
 
 ## ✨ AI and Prompt Engineering
@@ -95,7 +117,8 @@ This list will continue to evolve as I explore and validate new resources — so
 
 ---
 
-### 🗃️ Change Log
+### 🗃️ Changelog
+- **2025-11-05:** Header updated and tags expanded.
 - **2025-10-02:** H2 heading updated and date.
 - **2025-09-24:** Initial publication.  
 {: .notice}
