@@ -1,17 +1,40 @@
 ---
 title: "🧰 Useful Resources: GitHub Pages, Jekyll, and Markdown"
 date: 2025-09-23
-last_modified_at: 2025-10-02
+last_modified_at: 2025-11-05
 categories:
   - Resources
 tags:
   - GitHub Pages
   - Jekyll
   - Markdown
+  - Static Sites
+  - Web Development
+excerpt: "Curated list of essential resources for GitHub Pages, Jekyll, and Markdown — including guides, templates, and practical tools to help you build and maintain static websites effectively."
+description: "Comprehensive collection of links and resources for GitHub Pages, Jekyll, and Markdown. Explore documentation, tutorials, and tools for managing and customizing your static site projects with ease."
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
-permalink: /res-gh-jekyll-markdown/
+permalink: /resources-github-jekyll-markdown/
+seo:
+  type: "Article"
+  keywords:
+    - GitHub Pages Resources
+    - Jekyll Documentation
+    - Jekyll Themes
+    - Markdown Guide
+    - Markdown Syntax Reference
+    - GitHub Pages Setup
+    - Static Website with GitHub Pages
+    - Build a Blog with Jekyll
+    - Minimal Mistakes Theme
+    - GitHub Pages Tutorial
+canonical_url: "https://marcogrimaldi29.com/resources-github-jekyll-markdown/"
+read_time: true
+comments: true
+share: true
+related: true
+author_profile: true
 ---
 
 ## 🌐 GitHub Pages, Jekyll, and Markdown
@@ -63,7 +86,8 @@ I’ll keep updating this page as I discover and test new resources. Stay tuned!
 
 ---
 
-### 🗃️ Change Log
+### 🗃️ Changelog
+- **2025-11-05:** Header updated and tags expanded.
 - **2025-10-02:** H2 heading updated.
 - **2025-09-23:** Initial publication.  
 {: .notice}
