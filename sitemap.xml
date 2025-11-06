@@ -50,52 +50,56 @@
   <!-- Blog posts -->
   <url>
     <loc>https://marcogrimaldi29.com/google-it-support/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/google-project-management/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/google-data-analytics/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/resources-github-jekyll-markdown/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/resources-ai/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/resources-microsoft/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/google-automation-python/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/microsoft-sc-900/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/microsoft-pl-900/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/microsoft-az-900/</loc>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/microsoft-ai-900/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
 </urlset>
