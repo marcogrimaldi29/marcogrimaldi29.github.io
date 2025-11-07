@@ -10,8 +10,8 @@ tags:
   - Markdown
   - Static Sites
   - Web Development
-excerpt: "Curated list of essential resources for GitHub Pages, Jekyll, and Markdown — including guides, templates, and practical tools to help you build and maintain static websites effectively."
-description: "Comprehensive collection of links and resources for GitHub Pages, Jekyll, and Markdown. Explore documentation, tutorials, and tools for managing and customizing your static site projects with ease."
+excerpt: "Essential ecosystem links for static site development. Handy resources covering the GitHub Pages workflow, Jekyll, and Markdown for 2025."
+description: "Detailed resource compilation for building and deploying sites. Discover key documentation and tutorials for GitHub repository setup, Jekyll configuration and Liquid templating, and maximizing content quality with Markdown best practices in 2025."
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
@@ -87,6 +87,7 @@ I’ll keep updating this page as I discover and test new resources. Stay tuned!
 ---
 
 ### 🗃️ Changelog
+- **2025-11-07:** SEO optimization.
 - **2025-11-05:** Header updated and tags expanded.
 - **2025-10-02:** H2 heading updated.
 - **2025-09-23:** Initial publication.  
