@@ -8,8 +8,8 @@ tags:
   - AI
   - Artificial Intelligence
   - Prompt Engineering
-excerpt: "Curated list of essential AI and Prompt Engineering resources — explore learning materials, tools, and research on generative AI, LLMs, and practical prompt design techniques for 2025."
-description: "Comprehensive hub of AI and Prompt Engineering resources. Discover curated links, guides, and tools covering ChatGPT, Gemini, Copilot, and prompt design strategies for effective generative AI use in 2025."
+excerpt: "Comprehensive list of essential AI resources. Explore categorized learning materials and tools spanning AI assistants and platforms, foundational documentation, and advanced Prompt Engineering techniques for the generative AI landscape in 2025."
+description: "Detailed hub of curated AI and Prompt Engineering resources. Discover essential links and guides covering core AI platforms (like ChatGPT, Gemini, and Copilot), official documentation, and practical prompt design strategies for effective skill development in 2025."
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
@@ -118,6 +118,7 @@ This list will continue to evolve as I explore and validate new resources — so
 ---
 
 ### 🗃️ Changelog
+- **2025-11-07:** SEO optimization.
 - **2025-11-05:** Header updated and tags expanded.
 - **2025-10-02:** H2 heading updated and date.
 - **2025-09-24:** Initial publication.  
