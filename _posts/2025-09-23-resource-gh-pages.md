@@ -57,6 +57,8 @@ I’ll keep updating this page as I discover and test new resources. Stay tuned!
 - [About GitHub Pages and Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
 - [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/main/docs/configuration.md#configuration)
 - [Creating a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+- [GitHub Skills](https://skills.github.com/)
 - [Quickstart for GitHub Pages](https://docs.github.com/en/pages/quickstart)
 - [Setting up a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
 - [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
@@ -87,6 +89,7 @@ I’ll keep updating this page as I discover and test new resources. Stay tuned!
 ---
 
 ### 🗃️ Changelog
+- **2025-11-13:** Added "GitHub Skills" link.
 - **2025-11-07:** SEO optimization.
 - **2025-11-05:** Header updated and tags expanded.
 - **2025-10-02:** H2 heading updated.
