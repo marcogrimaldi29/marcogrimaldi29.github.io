@@ -5,10 +5,10 @@ main:
 #   url: /blog/ 
 # - title: "Categories"
 #   url: /categories/
-  - title: "Contact"
-    url: /contact/
   - title: "Collections"
     url: /collections/
+  - title: "Contact"
+    url: /contact/
   - title: "CV"
     url: /cv/
 # - title: "Posts"
