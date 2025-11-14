@@ -1,12 +1,12 @@
 ---
 title: "🏅 Cert Review: Google Data Analytics Professional Certificate"
 date: 2025-09-22
-last_modified_at: 2025-11-05
+last_modified_at: 2025-11-14
 categories:
   - Certification
 tags:
   - Data
- - Data Analytics
+  - Data Analytics
   - Google
 excerpt: "Hands-on look at the Google Data Analytics Professional Certificate — explore the learning path, practical exercises, and data tools that shape future-ready analysts in 2025."
 description: "Detailed review of the Google Data Analytics Professional Certificate on Coursera. Discover how the program builds job-ready analytical skills, introduces key tools, and supports your transition into data-focused roles in 2025."
