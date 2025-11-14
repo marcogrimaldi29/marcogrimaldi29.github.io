@@ -34,10 +34,10 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 About Me and this Website
 #### [📰 All Posts](/posts/)
 Posts organized by Year
-#### [📲 Contact](/contact/)
-Contact channels to keep in touch
 #### [🖼️ Collections](/collections/)
 Posts organized by Collection
+#### [📲 Contact](/contact/)
+Contact channels to keep in touch
 #### [📃 CV](/cv/)
 My up-to-date Curriculum Vitae
 #### [💼 LinkedIn](https://www.linkedin.com/in/marco-grimaldi29/)
