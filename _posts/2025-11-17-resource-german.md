@@ -36,7 +36,7 @@ related: true
 author_profile: true
 ---
 
-## 🥨 German resources
+## 🥨 German Resources
 
 **⚠️ Heads-up:** This collection of resources is not meant to be exhaustive or authoritative. Think of it as a starting point — a hub where useful tools and links are gathered and made freely accessible. If you come across any outdated material or inconsistencies, please let me know through the contact options listed [here](/contact/).
 {: .notice--warning}
@@ -176,3 +176,8 @@ author_profile: true
 
 ---
 
+### 🗃️ Change Log
+- **2025-11-17:** Initial publication.
+{: .notice}
+
+---
