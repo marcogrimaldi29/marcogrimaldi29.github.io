@@ -53,11 +53,11 @@ author_profile: true
 **ℹ️ Information:** For certification-related materials, take a look at the “📖 Related Resources” section or the inline references included in my “🏅 Cert Review” articles.
 {: .notice--info}
 
-On this page, you’ll find a curated set of links about **Microsoft products and services**.  
+🏭 On this page, you’ll find a curated set of links about **Microsoft products and services**.  
 
-Most of these links come from certifications I’ve studied, tools I’ve been using, or work experience gathered throughout the years.
+🔍 Most of these links come from certifications I’ve studied, tools I’ve been using, or work experience gathered throughout the years.
 
-This list will keep evolving as I explore and validate new resources — so consider it a work in progress. Stay tuned! 💡
+💡 This list will keep evolving as I explore and validate new resources — so consider it a work in progress. Stay tuned! 
 
 ---
 
@@ -291,6 +291,7 @@ This list will keep evolving as I explore and validate new resources — so cons
 ---
 
 ### 🗃️ Change Log
+- **2025-11-17:** Format updated.
 - **2025-10-02:** H2 heading and date updated.
 - **2025-09-27:** Tags added: AI, Architecture, Azure, Cloud, Collaboration, Compliance, Identity, Infrastructure, Microsoft, Security, Teams.
 - **2025-09-26:** Initial publication.
