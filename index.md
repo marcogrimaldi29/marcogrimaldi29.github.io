@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "👋 Welcome to the Hub of Marco Grimaldi"
+title: "👋 Welcome to the Personal Hub of Marco Grimaldi"
 permalink: /
 author_profile: true
 toc: true
