@@ -45,11 +45,11 @@ author_profile: true
 **ℹ️ Info:** For certification-related resources, check the "📖 Related Resources" section or the inline references within each "🏅 Cert Review" article.
 {: .notice--info}
 
-On this page, you’ll find a curated set of links about **GitHub Pages**, **Jekyll**, and **Markdown**.  
+💻 On this page, you’ll find a curated set of links about **GitHub Pages**, **Jekyll**, and **Markdown**.  
 
-These resources have been tested and used while building, reviewing, and editing this website - among other projects.
+🔍 These resources have been tested and used while building, reviewing, and editing this website - among other projects.
 
-I’ll keep updating this page as I discover and test new resources. Stay tuned! 💡
+💡 I’ll keep updating this page as I discover and test new resources. Stay tuned! 
 
 ---
 
@@ -89,6 +89,7 @@ I’ll keep updating this page as I discover and test new resources. Stay tuned!
 ---
 
 ### 🗃️ Changelog
+- **2025-11-17:** Format updated.
 - **2025-11-13:** Added "GitHub Skills" link.
 - **2025-11-07:** SEO optimization.
 - **2025-11-05:** Header updated and tags expanded.
