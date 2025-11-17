@@ -43,40 +43,54 @@ author_profile: true
 **ℹ️ Heads-up:** For certification-related materials, take a look at the “📖 Related Resources” section or the inline references included in my “🏅 Cert Review” articles.
 {: .notice--info}
 
-On this page, you’ll find a curated set of links about **AI**, **AI-related docs and articles**, along with **prompt engineering** materials.  
+💻 On this page, you’ll find a curated set of links about **AI**, **AI-related docs and articles**, along with **prompt engineering** materials.  
 
-Most of these links come from courses I’ve studied, tools I’ve tested, or research I’ve done while writing articles.
+🔍 Most of these links come from courses I’ve studied, tools I’ve tested, or research I’ve done while writing articles.
 
-This list will continue to evolve as I explore and validate new resources — so consider it a work in progress. Stay tuned! 💡
+💡 This list will continue to evolve as I explore and validate new resources — so consider it a work in progress. Stay tuned! 
 
 ---
 
 ### 🤖 AI assistants & platforms
-- [Adobe Firefly](https://www.adobe.com/products/firefly.html)
-- [ChatGPT](https://chatgpt.com/)
-- [Clockwise](https://www.getclockwise.com/)
-- [Copilot](https://copilot.microsoft.com/)
-- [Claude](https://claude.ai/)
-- [Craiyon](https://www.craiyon.com/en)
-- [DALL·E](https://openai.com/index/dall-e/)
-- [ElevenLabs](https://elevenlabs.io/)
-- [Gemini](https://gemini.google.com/)
-- [Gemini in Android Studio](https://developer.android.com/studio/gemini/overview)
-- [GitHub Copilot](https://github.com/features/copilot)
-- [Grammarly](https://app.grammarly.com/)
-- [Idoven](https://www.idoven.ai/)
-- [Jasper](https://www.jasper.ai/)
-- [Jupyter AI](https://jupyter-ai.readthedocs.io/en/latest/#)
-- [Magic Design](https://www.canva.com/magic-design/)
-- [Midjourney](https://www.midjourney.com/home)
-- [Mistral AI](https://mistral.ai/)
-- [NotebookLM](https://notebooklm.google/)
-- [Notion](https://www.notion.com/)
-- [Poe](https://poe.com/login)
-- [Replit AI](https://replit.com/ai)
-- [Runway](https://runwayml.com/)
-- [Tabnine](https://www.tabnine.com/)
-- [Zapier AI](https://zapier.com/apps/ai/integrations)
+- [Adobe Firefly](https://www.adobe.com/products/firefly.html) - AI art generator.
+- [Base44](https://base44.com/) - AI coding assistant.
+- [Bolt](https://bolt.new/) - AI coding assistant.
+- [ChatGPT](https://chatgpt.com/) - AI conversational assistant by OpenAI.
+- [Claude](https://claude.ai/) - AI assistant by Anthropic.
+- [Clockwise](https://www.getclockwise.com/) - AI scheduling assistant.
+- [Copilot](https://copilot.microsoft.com/) - AI assistant by Microsoft.
+- [Craiyon](https://www.craiyon.com/en) - AI art generator.
+- [Cursor](https://cursor.com/) - AI coding assistant.
+- [DALL·E](https://openai.com/index/dall-e/) - AI art generator by OpenAI.
+- [Deepseek](https://www.deepseek.com/) - AI-powered search engine.
+- [ElevenLabs](https://elevenlabs.io/) - AI voice synthesis platform.
+- [Emergent](https://app.emergent.sh/) - AI coding assistant.
+- [Ernie](https://ernie.baidu.com/) - AI platform by Baidu.
+- [Gemini](https://gemini.google.com/) - AI model by Google.
+- [Gemini in Android Studio](https://developer.android.com/studio/gemini/overview) - Integration of Gemini AI in Android Studio.
+- [GitHub Copilot](https://github.com/features/copilot) - AI pair programmer by GitHub.
+- [Grammarly](https://app.grammarly.com/) - AI writing assistant.
+- [Idoven](https://www.idoven.ai/) - AI-powered health monitoring platform.
+- [Jasper](https://www.jasper.ai/) - AI content creation tool.
+- [Jupyter AI](https://jupyter-ai.readthedocs.io/en/latest/#) - AI integration for Jupyter notebooks.
+- [Kling AI](https://app.klingai.com/) - AI communication assistant.
+- [Lovable](https://lovable.dev/) - AI coding assistant.
+- [Magic Design](https://www.canva.com/magic-design/) - AI-powered design tool.
+- [Manus](https://manus.ai/) - General purpose AI assistant.
+- [Midjourney](https://www.midjourney.com/home) - AI art generator.
+- [Mistral AI](https://mistral.ai/) - AI research and development company.
+- [NotebookLM](https://notebooklm.google/) - AI-Powered Research Partner by Google.
+- [Notion](https://www.notion.com/) - AI-enhanced productivity tool.
+- [Poe](https://poe.com/login) - AI chat platform.
+- [Qwen AI](https://qwen.ai/home) - AI model by Alibaba.
+- [Replit AI](https://replit.com/ai) - AI coding assistant.
+- [Rocket](https://www.rocket.new/) - AI coding assistant.
+- [Runway](https://runwayml.com/) - AI video editing platform.
+- [Seed bytedance](https://seed.bytedance.com/) - AI research platform by Bytedance.
+- [Tabnine](https://www.tabnine.com/) - AI code completion tool.
+- [VibeCode](https://www.vibecodeapp.com/) - AI coding assistant.
+- [Z.ai Chat](https://chat.z.ai/) - AI chat platform.
+- [Zapier AI](https://zapier.com/apps/ai/integrations) - AI automation tool.
 
 ---
 
@@ -118,6 +132,7 @@ This list will continue to evolve as I explore and validate new resources — so
 ---
 
 ### 🗃️ Changelog
+- **2025-11-17:** Format updated and content of "AI assistants & platforms" expanded with new AI coding assistants and platforms.
 - **2025-11-07:** SEO optimization.
 - **2025-11-05:** Header updated and tags expanded.
 - **2025-10-02:** H2 heading updated and date.
