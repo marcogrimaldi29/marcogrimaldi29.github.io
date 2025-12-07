@@ -6,10 +6,10 @@ author_profile: true
 toc: true
 toc_sticky: true
 toc_label: "🏠 Home"
-description: "Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications, and language teaching. Managed Services Engineer at NTT DATA sharing knowledge and professional resources."
-keywords: "Marco Grimaldi, NTT DATA, Managed Services Engineer, Language Teacher, Cloud Computing, IT Certifications, Microsoft Learn, Professional Development"
+description: "Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications, and language teaching. Cloud Consultant at Concentrix sharing knowledge and professional resources."
+keywords: "Marco Grimaldi, Concentrix, Cloud Consultant, Language Teacher, Cloud Computing, IT Certifications, Microsoft Learn, Professional Development"
 og_title: "Marco Grimaldi - IT Professional & Language Teacher"
-og_description: "Personal learning hub of Marco Grimaldi - L2 Managed Services Engineer at NTT DATA. Explore IT resources, certifications, and language learning insights."
+og_description: "Personal learning hub of Marco Grimaldi - Cloud Consultant at Concentrix. Explore IT resources, certifications, and language learning insights."
 og_type: "website"
 og_image: "/assets/images/logo-sunrise-domain.jpg"
 canonical_url: "https://marcogrimaldi29.com/"
