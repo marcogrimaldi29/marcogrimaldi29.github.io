@@ -20,8 +20,18 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ## 💼 Work Experience 
 
+### Cloud Resiliency Consultant — Concentrix  
+*A Coruña (Remote)* • *2025 – Present* 
+- Lead advisory workshops to assist clients in building resilient cloud architectures.
+- Advise on strategies to improve system reliability and availability.
+- Develop and implement disaster recovery and business continuity plans.
+- Conduct formal risk assessments to identify potential vulnerabilities.
+- Design major incident response plans to mitigate and manage disruptions effectively.
+- Collaborate with client teams to understand their architectural needs and provide tailored solutions.
+- Educate clients on best practices for building resilient systems.
+
 ### L2 Managed Services Engineer & Technical Knowledge Manager — NTT DATA  
-*Madrid (Remote)* • *2023 – Present*  
+*Madrid (Remote)* • *2023 – 2025*  
 - Provide Level 2 technical support for Microsoft Teams, M365 and Azure environment, along with Cloud Voice infrastructure.  
 - Troubleshoot complex issues related to Teams meetings, calling, integrations, network and cloud infrastructure, escalating to L3 or vendors when needed.  
 - Monitor system health and performance, proactively identifying and addressing potential issues.  
@@ -104,6 +114,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 - [SC-900 – Microsoft Certified: Security, Compliance & Identity Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3AC5BFB19E06BE2A?sharingId=910D3083CD18E3A4){:target="_blank"} 
 
 ### Microsoft Applied Skills
+- [Microsoft Applied Skills: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/E584DFFBBF564647?sharingId=910D3083CD18E3A4)
 - [Microsoft Applied Skills: Get started with identities and access using Microsoft Entra (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/4D6B11F896F57408?sharingId=910D3083CD18E3A4)
 - [Microsoft Applied Skills: Deploy and configure Azure Monitor (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/B1A48535B1D53364?sharingId=910D3083CD18E3A4)
 
