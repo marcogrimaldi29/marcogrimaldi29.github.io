@@ -23,7 +23,7 @@ name: &author_name "Marco Grimaldi"
 email: &author_email "marcogrimaldi29@gmail.com"
 description: &site_description >- # Multiline description
   Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications,
-  and language teaching. L2 Managed Services Engineer at NTT DATA sharing professional
+  and language teaching. Cloud Consultant at Concentrix sharing professional
   insights and resources.
 url: &site_url "https://marcogrimaldi29.com"  # Changed to CNAME URL
 baseurl: ""  # the subpath of your site, e.g. "/blog"
@@ -46,7 +46,7 @@ seo:
   
   # SEO Keywords
   keywords: >-
-    Marco Grimaldi, NTT DATA Engineer, IT Professional Blog,
+    Marco Grimaldi, Concentrix Cloud Consultant, IT Professional Blog,
     Cloud Computing Expert, Language Teacher, IT Certifications Guide,
     Microsoft Azure Certifications, Google IT Certifications,
     Professional Development Blog, Technology Career Guide,
@@ -130,7 +130,7 @@ whitelist:
 author:
   name: *author_name
   avatar: "/assets/images/marco-cv.jpg"
-  bio: "L2 Managed Services Engineer @ NTT DATA · Language Teacher"
+  bio: "Cloud Resiliency Consultant @ Concentrix · Language Teacher"
   links:
     - label: "Duolingo"
       icon: "fas fa-language"
