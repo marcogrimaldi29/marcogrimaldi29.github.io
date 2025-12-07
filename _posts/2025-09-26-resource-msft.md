@@ -170,6 +170,7 @@ author_profile: true
 ---
 
 ### 🌐 Microsoft (General)
+- [Microsoft 365 renames](https://m365maps.com/renames.html)
 - [Microsoft Accessibility](https://www.microsoft.com/en-us/accessibility)
 - [Microsoft Enteprise Skills Initiative (ESI)](https://esi.microsoft.com/)
 - [Microsoft Events](https://www.microsoft.com/en-us/events)
