@@ -1,6 +1,6 @@
 ---
 title: "📃 Curriculum Vitae"
-last_modified_at: 2025-12-07
+last_modified_at: 2025-12-08
 layout: single
 permalink: /cv/
 toc: true
@@ -101,7 +101,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 {: .notice--info}
 
 ### Microsoft Certifications
-
 - [MS-721 – Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/87F3712A1939D1EB?sharingId=910D3083CD18E3A4){:target="_blank"} 
 - [AI-102 – Microsoft Certified: Azure AI Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ED8D5449484E0E49?sharingId=910D3083CD18E3A4){:target="_blank"} 
 - [AZ-104 – Microsoft Certified: Azure Administrator Associate (2023)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/22FAAC5CE067B849?sharingId=910D3083CD18E3A4){:target="_blank"} 
