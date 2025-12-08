@@ -114,9 +114,10 @@ Hereunder you can find more granular details about my **work experience**, **edu
 - [SC-900 – Microsoft Certified: Security, Compliance & Identity Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3AC5BFB19E06BE2A?sharingId=910D3083CD18E3A4){:target="_blank"} 
 
 ### Microsoft Applied Skills
-- [Microsoft Applied Skills: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/E584DFFBBF564647?sharingId=910D3083CD18E3A4)
-- [Microsoft Applied Skills: Get started with identities and access using Microsoft Entra (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/4D6B11F896F57408?sharingId=910D3083CD18E3A4)
-- [Microsoft Applied Skills: Deploy and configure Azure Monitor (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/B1A48535B1D53364?sharingId=910D3083CD18E3A4)
+- [Microsoft Applied Skills: Configure secure access to your workloads using Azure networking (2025)](https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/2D626F59872CEE72?sharingId=910D3083CD18E3A4){:target="_blank"}
+- [Microsoft Applied Skills: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/E584DFFBBF564647?sharingId=910D3083CD18E3A4){:target="_blank"}
+- [Microsoft Applied Skills: Get started with identities and access using Microsoft Entra (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/4D6B11F896F57408?sharingId=910D3083CD18E3A4){:target="_blank"}
+- [Microsoft Applied Skills: Deploy and configure Azure Monitor (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/B1A48535B1D53364?sharingId=910D3083CD18E3A4){:target="_blank"}
 
 ### Google Professional Certificates  
 - [Cybersecurity Specialization (2024)](https://www.coursera.org/account/accomplishments/specialization/IJR8VBC9PFIK){:target="_blank"} 
