@@ -14,7 +14,7 @@ Your privacy matters. This page explains what information is (and isn’t) colle
 
 ### 👨🏻‍💼 Who operates this website
 
-This website is a personal project maintained by **Marco Grimaldi**, hosted on [GitHub Pages](https://pages.github.com) and built with [Jekyll](https://jekyllrb.com).
+This website is a personal project maintained by **Marco Grimaldi**, hosted on **[GitHub Pages](https://pages.github.com)** and built with **[Jekyll](https://jekyllrb.com)**.
 
 ---
 
@@ -22,7 +22,7 @@ This website is a personal project maintained by **Marco Grimaldi**, hosted on [
 
 #### 📊 Visit analytics (Umami)
 
-This site uses [Umami Analytics](https://umami.is), a privacy-friendly, open-source analytics platform.  
+This site uses **[Umami Analytics](https://umami.is)**, a privacy-friendly, open-source analytics platform.  
 
 It does **not use cookies** and does **not collect personal data**.  
 
@@ -34,7 +34,7 @@ The site is hosted by **GitHub Pages**, a service provided by GitHub, Inc.
 
 GitHub may collect limited technical data (such as IP addresses and request metadata) for operational and security purposes.  
 
-For details, please review [GitHub’s Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
+For details, please review **[GitHub’s Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)**.
 
 ---
 
@@ -48,7 +48,7 @@ GitHub Pages itself may use cookies strictly necessary for site delivery and per
 
 ### ⚖️ Your rights
 
-Depending on your jurisdiction (for example, under the EU General Data Protection Regulation – [GDPR](https://gdpr.eu/what-is-gdpr/)), you may have the right to:
+Depending on your jurisdiction (for example, under the EU General Data Protection Regulation – **[GDPR](https://gdpr.eu/what-is-gdpr/)**), you may have the right to:
 
 - Request access to, correction of, or deletion of personal data (*if any were ever collected*);
 - Object to or restrict data processing;
