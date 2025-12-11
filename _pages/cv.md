@@ -1,6 +1,6 @@
 ---
 title: "📃 Curriculum Vitae"
-last_modified_at: 2025-12-08
+last_modified_at: 2025-12-11
 layout: single
 permalink: /cv/
 toc: true
@@ -113,6 +113,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 - [SC-900 – Microsoft Certified: Security, Compliance & Identity Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3AC5BFB19E06BE2A?sharingId=910D3083CD18E3A4){:target="_blank"} 
 
 ### Microsoft Applied Skills
+- [Microsoft Applied Skills: Secure storage for Azure Files and Azure Blob Storage (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/43A169C60BF93CE2?sharingId=910D3083CD18E3A4){:target="_blank"}
 - [Microsoft Applied Skills: Configure secure access to your workloads using Azure networking (2025)](https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/2D626F59872CEE72?sharingId=910D3083CD18E3A4){:target="_blank"}
 - [Microsoft Applied Skills: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/E584DFFBBF564647?sharingId=910D3083CD18E3A4){:target="_blank"}
 - [Microsoft Applied Skills: Get started with identities and access using Microsoft Entra (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/4D6B11F896F57408?sharingId=910D3083CD18E3A4){:target="_blank"}
