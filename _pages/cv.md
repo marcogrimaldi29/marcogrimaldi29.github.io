@@ -38,31 +38,32 @@ Hereunder you can find more granular details about my **work experience**, **edu
 - Collaborate with IT teams and vendors to implement changes or troubleshoot complex issues in Teams and Cloud Voice.  
 - Manage knowledge base lifecycle: writing, reviewing and maintaining documentation, knowledge articles and troubleshooting guides.  
 
-### IT Service Desk Specialist — Accenture Spain  
+### App/Cloud Support Associate — Accenture Spain  
 *Seville (Remote)* • *2021 – 2023*  
-- Provided IT support in German, English, and Spanish via phone, email, and web.  
-- Resolved incidents and service requests using ITSM tools following ITIL processes.  
-- Skilled in Azure, Active Directory, Exchange, Intune, MFA, Microsoft 365, Networking, PowerShell, SaaS, PaaS, IaaS, SAP, SCCM, Windows 10/11, Security & Compliance.  
+- Provide IT support in German, English, and Spanish via phone, email, and web.  
+- Resolve incidents and service requests using ITSM tools following ITIL processes.  
+- Skilled in Azure, Azure AD, Active Directory, Exchange, IaaS, Identity and Access Management, Intune, MFA, Microsoft 365, Networking, PaaS, PowerShell, SaaS, SAP, SCCM, Security & Compliance, Windows 10/11,
 
 ### German Teacher & Erasmus+ KA2 Project Contributor — Idiomas Carlos V  
 *Seville (On Site)* • *2021*  
-- Taught German for the Childcare Educator Program of the Lower Saxony Ministry of Labor.  
-- Contributed to Erasmus+ KA2 project management.  
+- Teach German for the Childcare Educator Program of the Lower Saxony Ministry of Labor.  
+- Contribute to Erasmus+ KA2 project management.  
 
 ### Foreign Language Teacher — Studiamo Insieme  
 *Rome (Hybrid)* • *2019 - 2021*  
-- Online classes and tutoring in German, Italian, English, and Spanish.  
+- Teach and tutor in German, Italian, English, and Spanish in remote and on site settings.  
 - Specialized in learners with Special Educational Needs.  
 
 ### Front Desk Assistant, Erasmus+ Office — University of Rome "Tor Vergata"  
 *Rome (On Site)* • *2016*  
-- Supported international students (incoming and outgoing).  
-- Managed applications and liaised with partner universities.  
+- Support incoming and outgoing international students both online and in person.  
+- Manage communication, applications and liaise with partner universities.  
 
 ### Audio Engineer & Musician — Freelance  
 *Rome (On Site)* • *2010 – 2018*  
-- Organized and technically managed musical events.  
-- Performed artistic and multi-instrumental shows at entertainment events.  
+- Prepare, organize and manage the technical and organizational aspects of musical live events from onset to completion.
+- Perform artistic and multi-instrumental shows at entertainment events. 
+- Record, mix and master audio tracks in studio settings.
 
 ---
 
