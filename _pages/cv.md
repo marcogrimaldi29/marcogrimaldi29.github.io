@@ -1,6 +1,6 @@
 ---
 title: "📃 Curriculum Vitae"
-last_modified_at: 2025-12-11
+last_modified_at: 2025-12-17
 layout: single
 permalink: /cv/
 toc: true
