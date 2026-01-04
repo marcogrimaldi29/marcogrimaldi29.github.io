@@ -89,6 +89,7 @@ author_profile: true
 ---
 
 ### 🗃️ Changelog
+- **2026-01-04:** Updated descriptions and keywords for SEO optimization.
 - **2025-11-17:** Format updated.
 - **2025-11-13:** Added "GitHub Skills" link.
 - **2025-11-07:** SEO optimization.
