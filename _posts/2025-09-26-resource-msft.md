@@ -1,7 +1,7 @@
 ---
 title: "🧰 Useful Resources: Microsoft"
 date: 2025-09-26
-last_modified_at: 2025-11-05
+last_modified_at: 2026-01-04
 categories:
   - Resources
 tags:
@@ -18,8 +18,8 @@ tags:
   - Power Platform
   - Security
   - Teams
-excerpt: "Curated list of key Microsoft resources — explore documentation, learning paths, and tools across Azure, Microsoft 365, Power Platform, Security, and AI to support professional development and certification prep in 2025."
-description: "Comprehensive hub of Microsoft resources featuring official documentation, learning materials, and productivity tools for Azure, Microsoft 365, Power Platform, Teams, Security, and AI. Ideal for IT professionals, learners, and certification candidates in 2025."
+excerpt: "Curated list of key Microsoft resources — explore documentation, learning paths, and tools across Azure, Microsoft 365, Power Platform, Security, and AI to support professional development and certification prep in 2026."
+description: "Comprehensive hub of Microsoft resources featuring official documentation, learning materials, and productivity tools for Azure, Microsoft 365, Power Platform, Teams, Security, and AI. Ideal for IT professionals, learners, and certification candidates in 2026."
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
