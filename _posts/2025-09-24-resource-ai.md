@@ -1,15 +1,15 @@
 ---
 title: "🧰 Useful Resources: AI and Prompt Engineering"
 date: 2025-09-24
-last_modified_at: 2025-11-05
+last_modified_at: 2026-01-04
 categories:
   - Resources
 tags:
   - AI
   - Artificial Intelligence
   - Prompt Engineering
-excerpt: "Comprehensive list of essential AI resources. Explore categorized learning materials and tools spanning AI assistants and platforms, foundational documentation, and advanced Prompt Engineering techniques for the generative AI landscape in 2025."
-description: "Detailed hub of curated AI and Prompt Engineering resources. Discover essential links and guides covering core AI platforms (like ChatGPT, Gemini, and Copilot), official documentation, and practical prompt design strategies for effective skill development in 2025."
+excerpt: "Comprehensive list of essential AI resources. Explore categorized learning materials and tools spanning AI assistants and platforms, foundational documentation, and advanced Prompt Engineering techniques for the generative AI landscape in 2026."
+description: "Detailed hub of curated AI and Prompt Engineering resources. Discover essential links and guides covering core AI platforms (like ChatGPT, Gemini, and Copilot), official documentation, and practical prompt design strategies for effective skill development in 2026."
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
@@ -69,7 +69,9 @@ author_profile: true
 - [Gemini](https://gemini.google.com/) - AI model by Google.
 - [Gemini in Android Studio](https://developer.android.com/studio/gemini/overview) - Integration of Gemini AI in Android Studio.
 - [GitHub Copilot](https://github.com/features/copilot) - AI pair programmer by GitHub.
+- [GitHub Models](https://github.com/features/models) - AI models by GitHub.
 - [Grammarly](https://app.grammarly.com/) - AI writing assistant.
+- [Hugging Face](https://huggingface.co/) - AI model repository and platform.
 - [Idoven](https://www.idoven.ai/) - AI-powered health monitoring platform.
 - [Jasper](https://www.jasper.ai/) - AI content creation tool.
 - [Jupyter AI](https://jupyter-ai.readthedocs.io/en/latest/#) - AI integration for Jupyter notebooks.
@@ -108,8 +110,11 @@ author_profile: true
 - [Introducing NotebookLM](https://blog.google/technology/ai/notebooklm-google-ai/)
 - [Large language models, explained with a minimum of math and jargon](https://www.understandingai.org/p/large-language-models-explained-with)
 - [Med-PaLM](https://sites.research.google/med-palm/)
+- [Microsoft Foundry · Catalog](https://ai.azure.com/catalog) - AI model repository and platform.
+- [Microsoft Foundry · Discussions](https://github.com/orgs/azure-ai-foundry/discussions) - AI community discussions by Microsoft Foundry.
 - [Overcoming AI’s Transparency Paradox](https://www.forbes.com/sites/aparnadhinakaran/2021/09/10/overcoming-ais-transparency-paradox/)
 - [QuantumBlack](https://www.mckinsey.com/capabilities/quantumblack/how-we-help-clients)
+- [Swagger](https://swagger.io/)
 - [The economic potential of generative AI: The next productivity frontier](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-AI-the-next-productivity-frontier#introduction)
 - [Turn ideas into music with MusicLM](https://blog.google/technology/ai/musiclm-google-ai-test-kitchen/)
 - [Understanding Data Drift and Model Drift: Drift Detection in Python](https://www.datacamp.com/tutorial/understanding-data-drift-model-drift)
@@ -128,7 +133,7 @@ author_profile: true
 - [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [Prompt Engineering Guide: The Ultimate Guide to Generative AI](https://learnprompting.org/docs/introduction)
-
+- [Prompt Engineering Techniques: Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/prompt-engineering?view=foundry-classic)
 ---
 
 ### 🗃️ Changelog
