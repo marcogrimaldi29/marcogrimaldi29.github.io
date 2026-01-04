@@ -1,7 +1,7 @@
 ---
 title: "🧰 Useful Resources: GitHub Pages, Jekyll, and Markdown"
 date: 2025-09-23
-last_modified_at: 2025-11-05
+last_modified_at: 2026-01-04
 categories:
   - Resources
 tags:
@@ -10,8 +10,8 @@ tags:
   - Markdown
   - Static Sites
   - Web Development
-excerpt: "Essential ecosystem links for static site development. Handy resources covering the GitHub Pages workflow, Jekyll, and Markdown for 2025."
-description: "Detailed resource compilation for building and deploying sites. Discover key documentation and tutorials for GitHub repository setup, Jekyll configuration and Liquid templating, and maximizing content quality with Markdown best practices in 2025."
+excerpt: "Essential ecosystem links for static site development. Handy resources covering the GitHub Pages workflow, Jekyll, and Markdown for 2026."
+description: "Detailed resource compilation for building and deploying sites. Discover key documentation and tutorials for GitHub repository setup, Jekyll configuration and Liquid templating, and maximizing content quality with Markdown best practices in 2026."
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
