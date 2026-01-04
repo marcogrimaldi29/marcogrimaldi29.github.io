@@ -1,13 +1,13 @@
 ---
 title: "🧰 Useful Resources: German"
 date: 2025-11-17
-last_modified_at: 2025-11-17
+last_modified_at: 2026-01-04
 categories:
   - Resources
 tags:
   - German
 excerpt: "Curated list of German resources for language learners and people who want to explore the German language."
-description: "Comprehensive hub of German language resources including learning materials, grammar guides, vocabulary lists, and cultural insights. Ideal for language learners and enthusiasts in 2025."
+description: "Comprehensive hub of German language resources including learning materials, grammar guides, vocabulary lists, and cultural insights. Ideal for language learners and enthusiasts in 2026."
 toc: true
 toc_sticky: true
 toc_label: "🧰 Useful Resources"
@@ -177,6 +177,7 @@ author_profile: true
 ---
 
 ### 🗃️ Change Log
+- **2026-01-04:** Updated descriptions and keywords for SEO optimization.
 - **2025-11-17:** Initial publication.
 {: .notice}
 
