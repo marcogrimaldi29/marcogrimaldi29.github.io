@@ -1,15 +1,15 @@
 ---
 title: "🏅 Cert Review: Google IT Support Professional Certificate"
 date: 2025-09-08
-last_modified_at: 2025-10-27
+last_modified_at: 2026-01-04
 categories:
   - Certification
 tags:
   - Google
   - IT Support
   - Troubleshooting
-excerpt: "Comprehensive review of the Google IT Support Professional Certificate: course content, hands-on experience, and career opportunities. Learn how this certification can launch your IT career in 2025."
-description: "Detailed review and guide for the Google IT Support Professional Certificate. Discover course content, practical learning experiences, and how this certification can help start your IT career in 2025."
+excerpt: "Comprehensive review of the Google IT Support Professional Certificate: course content, hands-on experience, and career opportunities. Learn how this certification can launch your IT career in 2026."
+description: "Detailed review and guide for the Google IT Support Professional Certificate. Discover course content, practical learning experiences, and how this certification can help start your IT career in 2026."
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
