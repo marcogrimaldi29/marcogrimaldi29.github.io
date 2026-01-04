@@ -137,6 +137,7 @@ author_profile: true
 ---
 
 ### 🗃️ Changelog
+- **2026-01-04:** Updated descriptions and keywords for SEO optimization.
 - **2025-11-17:** Format updated and content of "AI assistants & platforms" expanded with new AI coding assistants and platforms.
 - **2025-11-07:** SEO optimization.
 - **2025-11-05:** Header updated and tags expanded.
