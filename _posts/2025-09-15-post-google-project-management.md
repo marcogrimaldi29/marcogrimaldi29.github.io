@@ -1,7 +1,7 @@
 ---
 title: "🏅 Cert Review: Google Project Management Professional Certificate"
 date: 2025-09-15
-last_modified_at: 2025-10-29
+last_modified_at: 2026-01-04
 categories:
   - Certification
 tags:
