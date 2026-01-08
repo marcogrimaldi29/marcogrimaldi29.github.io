@@ -73,3 +73,83 @@
     aspect-ratio: 4 / 3; /* taller on phones */
   }
 }
+
+/* -----------------------------------------------
+   TOC (Table of Contents) styles: make TOC
+   scrollable, selectable and clickable
+   ----------------------------------------------- */
+#TableOfContents,
+.table-of-contents,
+.toc,
+nav.table-of-contents,
+.page__toc,
+.toc-wrapper {
+  /* Keep TOC usable on tall pages without overflowing the viewport */
+  max-height: calc(100vh - 12rem);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 0.5rem; /* space for scrollbar */
+  user-select: text; /* allow copying/selecting headings */
+  -webkit-user-select: text;
+}
+
+/* Ensure TOC links are block-level (easier to tap/click) */
+#TableOfContents a,
+.table-of-contents a,
+.toc a {
+  display: block;
+  padding: 0.25rem 0;
+}
+
+/* Special handling for sticky TOC variations */
+.is-sticky .toc,
+.toc--sticky,
+.page__toc--sticky {
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
+}
+
+/* Unobtrusive scrollbar styling (optional) */
+#TableOfContents::-webkit-scrollbar,
+.table-of-contents::-webkit-scrollbar,
+.toc::-webkit-scrollbar {
+  width: 10px;
+}
+#TableOfContents::-webkit-scrollbar-thumb,
+.table-of-contents::-webkit-scrollbar-thumb,
+.toc::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.12);
+  border-radius: 6px;
+}
+
+/* ------------------------------------------------------------------
+   Ensure parent containers don't clip the TOC and allow internal
+   scrolling. Uses :has() where supported, with safe fallbacks.
+   ------------------------------------------------------------------ */
+.page__toc-wrapper:has(.toc),
+.toc-wrapper:has(.toc),
+.toc-container:has(.toc),
+aside:has(.table-of-contents),
+.content:has(.table-of-contents) {
+  overflow: visible; /* avoid clipping children when they need to scroll */
+  height: auto;
+}
+
+/* Fallback for older browsers without :has: target common wrapper classes */
+.page__toc-wrapper,
+.toc-wrapper,
+.toc-container {
+  overflow: visible;
+  height: auto;
+}
+
+/* Make sure the TOC itself remains scrollable and interactive */
+.toc,
+.table-of-contents,
+#TableOfContents {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  touch-action: pan-y;
+  scrollbar-gutter: stable;
+}
