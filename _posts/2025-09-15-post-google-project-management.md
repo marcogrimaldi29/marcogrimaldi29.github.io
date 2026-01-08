@@ -7,8 +7,8 @@ categories:
 tags:
   - Google
   - Project Management
-excerpt: "In-depth review of the Google Project Management Professional Certificate: course content, hands-on assignments, and career opportunities. Learn how this certification enhances your project management skills in 2025."
-description: "Comprehensive guide to the Google Project Management Professional Certificate. Explore course curriculum, peer-reviewed assignments, and how this certification can advance your project management career in 2025."
+excerpt: "In-depth review of the Google Project Management Professional Certificate: course content, hands-on assignments, and career opportunities. Learn how this certification enhances your project management skills in 2026."
+description: "Comprehensive guide to the Google Project Management Professional Certificate. Explore course curriculum, peer-reviewed assignments, and how this certification can advance your project management career in 2026."
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
