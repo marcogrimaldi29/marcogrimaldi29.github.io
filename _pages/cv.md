@@ -100,7 +100,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ## 🏅 Certifications
 
-**ℹ️ Note:** The links below point to the **official verification pages** of the corresponding certifications.  
+**ℹ️ Note:** The certifications are grouped by vendor (Microsoft, Google) and area of expertise (Voice & Network, Languages). The links below point to the **official verification pages** of the corresponding certificates.
 {: .notice--info}
 
 * **Microsoft Certifications**
@@ -533,5 +533,3 @@ Hereunder you can find more granular details about my **work experience**, **edu
 👉 [Request PDF version](https://drive.google.com/file/d/12Q73GgucdX0YmrHlmiMYTy3JRZQG81hw/view?usp=drivesdk){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
 
 ---
-
-*Last updated: January 9, 2026*
