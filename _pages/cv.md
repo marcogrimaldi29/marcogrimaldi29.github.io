@@ -6,8 +6,6 @@ permalink: /cv/
 toc: true
 toc_sticky: true
 toc_label: "📃 CV"
-kramdown:
-  toc_levels: 2..3
 ---
 
 Hereunder you can find more granular details about my **work experience**, **education**, **skills**, **certifications**, and **languages**: 
@@ -22,79 +20,79 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ## 💼 Work Experience 
 
-#### Cloud Resiliency Consultant — Concentrix  
+* **Cloud Resiliency Consultant — Concentrix**
 *A Coruña (Remote)* • *2025 – Present* 
-- Lead advisory workshops to assist clients in building resilient cloud architectures.
-- Advise on strategies to improve system reliability and availability.
-- Develop and implement disaster recovery and business continuity plans.
-- Conduct formal risk assessments to identify potential vulnerabilities.
-- Design major incident response plans to mitigate and manage disruptions effectively.
-- Collaborate with client teams to understand their architectural needs and provide tailored solutions.
-- Educate clients on best practices for building resilient systems.
+  - Lead advisory workshops to assist clients in building resilient cloud architectures.
+  - Advise on strategies to improve system reliability and availability.
+  - Develop and implement disaster recovery and business continuity plans.
+  - Conduct formal risk assessments to identify potential vulnerabilities.
+  - Design major incident response plans to mitigate and manage disruptions effectively.
+  - Collaborate with client teams to understand their architectural needs and provide tailored solutions.
+  - Educate clients on best practices for building resilient systems.
 
-#### L2 Managed Services Engineer & Technical Knowledge Manager — NTT DATA  
+* **L2 Managed Services Engineer & Technical Knowledge Manager — NTT DATA** 
 *Madrid (Remote)* • *2023 – 2025*  
-- Provide Level 2 technical support for Microsoft Teams, M365 and Azure environment, along with Cloud Voice infrastructure.  
-- Troubleshoot complex issues related to Teams meetings, calling, integrations, network and cloud infrastructure, escalating to L3 or vendors when needed.  
-- Monitor system health and performance, proactively identifying and addressing potential issues.  
-- Collaborate with IT teams and vendors to implement changes or troubleshoot complex issues in Teams and Cloud Voice.  
-- Manage knowledge base lifecycle: writing, reviewing and maintaining documentation, knowledge articles and troubleshooting guides.  
+  - Provide Level 2 technical support for Microsoft Teams, M365 and Azure environment, along with Cloud Voice infrastructure.  
+  - Troubleshoot complex issues related to Teams meetings, calling, integrations, network and cloud infrastructure, escalating to L3 or vendors when needed.  
+  - Monitor system health and performance, proactively identifying and addressing potential issues.  
+  - Collaborate with IT teams and vendors to implement changes or troubleshoot complex issues in Teams and Cloud Voice.  
+  - Manage knowledge base lifecycle: writing, reviewing and maintaining documentation, knowledge articles and troubleshooting guides.  
 
-#### App/Cloud Support Associate — Accenture Spain  
+* **App/Cloud Support Associate — Accenture Spain**  
 *Seville (Remote)* • *2021 – 2023*  
-- Provide IT support in German, English, and Spanish via phone, email, and web.  
-- Resolve incidents and service requests using ITSM tools following ITIL processes.  
-- Skilled in Azure, Azure AD, Active Directory, Exchange, IaaS, Identity and Access Management, Intune, MFA, Microsoft 365, Networking, PaaS, PowerShell, SaaS, SAP, SCCM, Security & Compliance, Windows 10/11,
+  - Provide IT support in German, English, and Spanish via phone, email, and web.  
+  - Resolve incidents and service requests using ITSM tools following ITIL processes.  
+  - Skilled in Azure, Azure AD, Active Directory, Exchange, IaaS, Identity and Access Management, Intune, MFA, Microsoft 365, Networking, PaaS, PowerShell, SaaS, SAP, SCCM, Security & Compliance, Windows 10/11.
 
-#### German Teacher & Erasmus+ KA2 Project Contributor — Idiomas Carlos V  
+* **German Teacher & Erasmus+ KA2 Project Contributor — Idiomas Carlos V**
 *Seville (On Site)* • *2021*  
-- Teach German for the Childcare Educator Program of the Lower Saxony Ministry of Labor.  
-- Contribute to Erasmus+ KA2 project management.  
+  - Teach German for the Childcare Educator Program of the Lower Saxony Ministry of Labor.  
+  - Contribute to Erasmus+ KA2 project management.  
 
-#### Foreign Language Teacher — Studiamo Insieme
+* **Foreign Language Teacher — Studiamo Insieme**  
 *Rome (Hybrid)* • *2019 - 2021*  
-- Teach and tutor in German, Italian, English, and Spanish in remote and on site settings.  
-- Specialized in learners with Special Educational Needs.  
+  - Teach and tutor in German, Italian, English, and Spanish in remote and on site settings.  
+  - Specialized in learners with Special Educational Needs.  
 
-#### Front Desk Assistant, Erasmus+ Office — University of Rome "Tor Vergata"  
+* **Front Desk Assistant, Erasmus+ Office — University of Rome "Tor Vergata"**  
 *Rome (On Site)* • *2016*  
-- Support incoming and outgoing international students both online and in person.  
-- Manage communication, applications and liaise with partner universities.  
+  - Support incoming and outgoing international students both online and in person.  
+  - Manage communication, applications and liaise with partner universities.  
 
-#### Audio Engineer & Musician — Freelance  
+* **Audio Engineer & Musician — Freelance**  
 *Rome (On Site)* • *2010 – 2018*  
-- Prepare, organize and manage the technical and organizational aspects of musical live events from onset to completion.
-- Perform artistic and multi-instrumental shows at entertainment events. 
-- Record, mix and master audio tracks in studio settings.
+  - Prepare, organize and manage the technical and organizational aspects of musical live events from onset to completion.
+  - Perform artistic and multi-instrumental shows at entertainment events. 
+  - Record, mix and master audio tracks in studio settings.
 
 ---
 
 ## 🎓 Education
 
-#### Master’s Degree in Italian Literature, Modern Philology & Linguistics — University of Rome "Tor Vergata"  
+* **Master’s Degree in Italian Literature, Modern Philology & Linguistics — University of Rome "Tor Vergata"**
 *Rome & Mainz* • *2018 – 2022*  
-- Final grade: 110/110 Summa Cum Laude.  
-- 1-year Erasmus+ KA1 Exchange Program, University JGU Mainz (Germany).  
+  - Final grade: 110/110 Summa Cum Laude.  
+  - 1-year Erasmus+ KA1 Exchange Program, University JGU Mainz (Germany).  
 
-#### Master’s Degree in Teacher Training (MAES) — University Pablo de Olavide  
+* **Master’s Degree in Teacher Training (MAES) — University Pablo de Olavide**  
 *Seville* • *2020 – 2021*  
-- Internship at IES San Isidoro, Seville.  
+  - Internship at IES San Isidoro, Seville.  
 
-#### International Course of German Language and Culture — University of Heidelberg  
+* **International Course of German Language and Culture — University of Heidelberg**  
 *Heidelberg* • *2018*  
-- Intensive 1-month C1-level summer course (CEFR) at the University of Heidelberg.
+  - Intensive 1-month C1-level summer course (CEFR) at the University of Heidelberg.
 
-#### Bachelor’s Degree in Languages in the Information Society — University of Rome "Tor Vergata"  
+* **Bachelor’s Degree in Languages in the Information Society — University of Rome "Tor Vergata"**  
 *Rome & Heidelberg* • *2014 – 2018*  
-- Final grade: 110/110.  
-- 1-year Erasmus+ KA1 Exchange Program, University of Heidelberg (Germany).  
-- Student representative (academic year: 2016/2017, 2017/2018).  
-- Programming languages and foreign languages: HTML, CSS, JavaScript, SQL, German, English, Spanish.  
+  - Final grade: 110/110.  
+  - 1-year Erasmus+ KA1 Exchange Program, University of Heidelberg (Germany).  
+  - Student representative (academic year: 2016/2017, 2017/2018).  
+  - Programming languages and foreign languages: HTML, CSS, JavaScript, SQL, German, English, Spanish.  
 
-#### Baccalaureate in Institute of Technology, Computer Science Specialization - I.T.I. Lattanzio
+* **Baccalaureate in Institute of Technology, Computer Science Specialization - I.T.I. Lattanzio**  
 *Rome* • *2005 - 2010*
-- Programming languages: C++; Java; HTML; PHP
-- Specialization topics: IT infrastructure; System administration (Windows & Linux); Networking; Cybersecurity; Hardware & Software; Electronics
+  - Programming languages: C++; Java; HTML; PHP
+  - Specialization topics: IT infrastructure; System administration (Windows & Linux); Networking; Cybersecurity; Hardware & Software; Electronics
 
 ---
 
