@@ -65,6 +65,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   - Perform artistic and multi-instrumental shows at entertainment events. 
   - Record, mix and master audio tracks in studio settings.
 
+
 ---
 
 ## 🎓 Education
@@ -94,6 +95,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   - Programming languages: C++; Java; HTML; PHP
   - Specialization topics: IT infrastructure; System administration (Windows & Linux); Networking; Cybersecurity; Hardware & Software; Electronics
 
+
 ---
 
 ## 🏅 Certifications
@@ -113,12 +115,14 @@ Hereunder you can find more granular details about my **work experience**, **edu
   - [PL-900 – Microsoft Certified: Power Platform Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/589C8B87C28BCDF4?sharingId=910D3083CD18E3A4){:target="_blank"} 
   - [SC-900 – Microsoft Certified: Security, Compliance & Identity Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3AC5BFB19E06BE2A?sharingId=910D3083CD18E3A4){:target="_blank"} 
 
+
 * **Microsoft Applied Skills**
   - [Microsoft Applied Skills: Secure storage for Azure Files and Azure Blob Storage (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/43A169C60BF93CE2?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Configure secure access to your workloads using Azure networking (2025)](https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/2D626F59872CEE72?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/E584DFFBBF564647?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Get started with identities and access using Microsoft Entra (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/4D6B11F896F57408?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Deploy and configure Azure Monitor (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/B1A48535B1D53364?sharingId=910D3083CD18E3A4){:target="_blank"}
+
 
 * **Google Professional Certificates**  
   - [Cybersecurity Specialization (2024)](https://www.coursera.org/account/accomplishments/specialization/IJR8VBC9PFIK){:target="_blank"} 
@@ -127,8 +131,10 @@ Hereunder you can find more granular details about my **work experience**, **edu
   - [Project Management (2021)](https://www.coursera.org/account/accomplishments/professional-cert/RJ856W9X3F9R){:target="_blank"} 
   - [IT Support (2021)](https://www.coursera.org/account/accomplishments/professional-cert/NCLR33CHTFKV){:target="_blank"} 
 
+
 * **Voice & Network Certifications**
   - [SSCA® "Elite" SIP Training — SIP School (2025)](www.thesipschool.com/certificatecheck){:target="_blank"} 
+
 
 * **Language Certifications**
   - EOI Español para Extranjeros C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
@@ -136,6 +142,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   - EOI English C1 — Escuela Oficial de Idiomas, Gobierno de Canarias (2024)  
   - Goethe-Zertifikat C1 (German) — Goethe Institut (2020)  
   - DELE C1 (Spanish) — Instituto Cervantes (2018)
+
 
 ---
 
@@ -180,14 +187,13 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 </div>
 
+
 ---
 
-## 🛠 Skills
+## 🛠️ Technical Skills
 
 **ℹ️ Note:** The levels below are self-assessed and are subject to change over time depending on my learning journey and professional experience.
 {: .notice--info}
-
-### Technical Skills
 
 <div style="max-width: 600px;">
 
@@ -421,7 +427,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 <br>
 
-<strong>🛠️ IT Operations & Support</strong><br>
+<strong>🛠 IT Operations & Support</strong><br>
 
 <br>
 
@@ -505,7 +511,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 </div>
 
-### Soft Skills
+## 💡 Soft Skills
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
 
@@ -520,6 +526,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <span style="background:rgba(208,189,244,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Team player</span>
 
 </div>
+
 
 ---
 
