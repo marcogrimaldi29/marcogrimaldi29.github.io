@@ -117,6 +117,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 
 * **Microsoft Applied Skills**
+  - [Microsoft Applied Skills: Migrate SQL Server workloads to Azure SQL Database (2026)](https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/A6956A066FE7A131?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Secure storage for Azure Files and Azure Blob Storage (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/43A169C60BF93CE2?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Configure secure access to your workloads using Azure networking (2025)](https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/2D626F59872CEE72?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/E584DFFBBF564647?sharingId=910D3083CD18E3A4){:target="_blank"}
