@@ -117,6 +117,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 
 * **Microsoft Applied Skills**
+  - [Microsoft Applied Skills: Deploy cloud-native apps using Azure Container Apps (2026)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/334B98F06ECE2E39?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Defend against cyberthreats with Microsoft Defender XDR (2026)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/37681EA077397999?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Migrate SQL Server workloads to Azure SQL Database (2026)](https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/A6956A066FE7A131?sharingId=910D3083CD18E3A4){:target="_blank"}
   - [Microsoft Applied Skills: Secure storage for Azure Files and Azure Blob Storage (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/43A169C60BF93CE2?sharingId=910D3083CD18E3A4){:target="_blank"}
