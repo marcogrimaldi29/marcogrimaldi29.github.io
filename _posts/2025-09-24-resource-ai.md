@@ -53,6 +53,7 @@ author_profile: true
 
 ### 🤖 AI assistants & platforms
 - [Adobe Firefly](https://www.adobe.com/products/firefly.html) - AI art generator.
+- [Arena](https://arena.ai/) - AI coding assistant.
 - [Base44](https://base44.com/) - AI coding assistant.
 - [Bolt](https://bolt.new/) - AI coding assistant.
 - [ChatGPT](https://chatgpt.com/) - AI conversational assistant by OpenAI.
