@@ -1,7 +1,7 @@
 ---
 title: "📚 Microsoft Study Notes: Central Hub"
 date: 2026-02-27
-last_modified_at: 2026-02-27
+last_modified_at: 2026-02-28
 categories:
   - Study Notes
 tags:
@@ -47,11 +47,22 @@ author_profile: true
 
 ☁️ The below list will continue to grow as I prepare and organize my notes while studying for my upcoming Microsoft certifications. Should you be on a cloud journey on your own, I hope you find these notes useful and may they help you in your learning path! 
 
+---
+
 ### 🏢 AZ-305: Designing Microsoft Azure Infrastructure Solutions 
 
 This certification is part of the Azure Solutions Architect Expert certification path. It focuses on designing infrastructure solutions on Microsoft Azure, covering topics such as compute, storage, networking, and security. 
 
 For more details, check out the [AZ-305 Study Notes here](https://marcogrimaldi29.com/az-305-study-notes/).
+
+---
+
+### 🏢 AZ-500: Microsoft Azure Security Technologies
+This certification is part of the Azure Security Engineer Associate certification path. It focuses on implementing security controls and threat protection, managing identity and access, and protecting data, applications, and networks in Microsoft Azure.
+
+For more details, check out the [AZ-500 Study Notes here](https://marcogrimaldi29.com/az-500-study-notes/).
+
+---
 
 ### 🗃️ Changelog
 - **2026-02-27:** Study Notes Landing Page Created & AZ-305 Study Notes Added.
