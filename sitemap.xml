@@ -108,12 +108,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
-  </url>
-    <url>
+  <url>
     <loc>https://marcogrimaldi29.com/microsoft-ms-700/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
   </url>
     <url>
     <loc>https://marcogrimaldi29.com/microsoft-study-notes/</loc>
