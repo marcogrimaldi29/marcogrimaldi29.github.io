@@ -64,6 +64,13 @@ For more details, check out the [AZ-500 Study Notes here](https://marcogrimaldi2
 
 ---
 
+### 🏢 AZ-104: Microsoft Azure Administrator 
+This certification is part of the Azure Administrator Associate certification path. It focuses on implementing security controls and threat protection, managing identity and access, and protecting data, applications, and networks in Microsoft Azure.
+
+For more details, check out the [AZ-104 Study Notes here](https://marcogrimaldi29.com/az-104-study-notes/).
+
+---
+
 ### 🗃️ Changelog
 - **2026-03-01:** AZ-104 Study Notes Added to the Central Hub Landing Page.
 - **2026-02-28:** AZ-500 Study Notes Added to the Central Hub Landing Page.
