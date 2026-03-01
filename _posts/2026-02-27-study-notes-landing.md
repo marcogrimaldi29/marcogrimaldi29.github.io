@@ -1,7 +1,7 @@
 ---
-title: "📚 Microsoft Study Notes: Central Hub"
+title: "🧑‍🏫 Microsoft Study Notes: Central Hub"
 date: 2026-02-27
-last_modified_at: 2026-02-28
+last_modified_at: 2026-03-01
 categories:
   - Study Notes
 tags:
@@ -15,7 +15,7 @@ excerpt: "Explore comprehensive study notes for Microsoft certifications, includ
 description: "Discover a wealth of study notes for Microsoft certifications, covering Azure, Microsoft 365, and more. This landing page serves as a central hub for all your certification preparation needs, offering detailed guides, tips, and resources to help you succeed in your exams."
 toc: true
 toc_sticky: true
-toc_label: "📚 Study Notes"
+toc_label: "🧑‍🏫 Study Notes"
 permalink: /microsoft-study-notes/
 seo:
   type: "Article"
@@ -65,5 +65,7 @@ For more details, check out the [AZ-500 Study Notes here](https://marcogrimaldi2
 ---
 
 ### 🗃️ Changelog
+- **2026-03-01:** AZ-104 Study Notes Added to the Central Hub Landing Page.
+- **2026-02-28:** AZ-500 Study Notes Added to the Central Hub Landing Page.
 - **2026-02-27:** Study Notes Landing Page Created & AZ-305 Study Notes Added.
 {: .notice}
