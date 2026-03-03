@@ -52,6 +52,7 @@ main-right:
   - title: "📄 CV"
     url: /cv/
   - title: "📘 Study Notes"
+    url: /microsoft-study-notes/
     children:
       - title: "📘 AZ-305 Study Notes"
         url: https://marcogrimaldi29.com/az-305-study-notes/

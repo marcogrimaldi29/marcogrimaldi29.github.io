@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% include base_path %}
+
+<div class="page__inner-wrap" style="display: flex; gap: 2rem;">
+
+  <!-- Main content -->
+  <div style="flex: 1; min-width: 0;">
+    {% include page__hero_html %}
+    <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+      {% if page.title %}
+        <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">
+      {% endif %}
+      <div class="page__content" itemprop="text">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+
+  <!-- Right sidebar nav -->
+  <aside class="page__sidebar" style="width: 220px; flex-shrink: 0;">
+    {% include nav_list nav="main-right" %}
+  </aside>
+
+</div>
