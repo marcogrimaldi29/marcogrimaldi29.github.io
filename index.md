@@ -28,74 +28,6 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 
 ---
 
-### 🔗 Quick Links
-
-#### [🏗️ About](/about/) 
-About Me and this Website
-#### [📰 All Posts](/posts/)
-Posts organized by Year
-#### [🖼️ Collections](/collections/)
-Posts organized by Collection
-#### [📲 Contact](/contact/)
-Contact channels to keep in touch
-#### [📃 CV](/cv/)
-My up-to-date Curriculum Vitae
-#### [💼 LinkedIn](https://www.linkedin.com/in/marco-grimaldi29/)
-Connect professionally
-#### [🕵🏼‍♂️ Privacy Notice](/privacy/)
-GDPR-compliant and cookieless
-#### [🏷️ Tags](/tags/)
-Posts organized by Tag
-
----
-
-  <!-- ✏️ ALL NEW CODE COPIED BELOW -->
-
-## 📦 Resources
-
-<div class="resource-grid">
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Certification</span>
-    </div>
-    <h3 class="resource-card__title">AZ-305 Study Notes</h3>
-    <p class="resource-card__desc">
-      Microsoft Azure Solutions Architect Expert — exam prep notes covering
-      Identity & Governance, Data Storage, Business Continuity, and Infrastructure.
-    </p>
-    <div class="resource-card__meta">
-      <span>🏅 Expert Level</span>
-      <span>📄 8 Modules</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🔐</span>
-      <span class="resource-card__tag certification">Certification</span>
-    </div>
-    <h3 class="resource-card__title">AZ-500 Study Notes</h3>
-    <p class="resource-card__desc">
-      Microsoft Azure Security Technologies — identity, platform protection,
-      security operations, and data & application security.
-    </p>
-    <div class="resource-card__meta">
-      <span>🛡️ Associate Level</span>
-      <span>🚧 Coming Soon</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/microsoft-study-notes/" class="resource-card__btn resource-card__btn--secondary">Microsoft Hub →</a>
-  </div>
-
-  <!-- ✏️ ADD MORE CARDS HERE — copy a block above -->
-
-</div>
-
----
-
 ## 🔗 Quick Links
 
 <div class="quicklink-grid">
@@ -105,9 +37,9 @@ Posts organized by Tag
     <div><strong>About</strong><small>About me & this website</small></div>
   </a>
 
-  <a href="/resources/" class="quicklink-card">
+  <a href="/collections/" class="quicklink-card">
     <span class="quicklink-card__icon">📦</span>
-    <div><strong>All Resources</strong><small>Browse the full catalogue</small></div>
+    <div><strong>Collections</strong><small>Browse the full catalogue by collection</small></div>
   </a>
 
   <a href="/contact/" class="quicklink-card">
@@ -130,4 +62,195 @@ Posts organized by Tag
     <div><strong>Privacy Notice</strong><small>GDPR-compliant & cookieless</small></div>
   </a>
 
+  <a href="https://marcogrimaldi29.com/microsoft-study-notes/" class="quicklink-card">
+    <span class="quicklink-card__icon">📘</span>
+    <div><strong>Microsoft Study Notes</strong><small>My personal study notes for Microsoft certifications</small></div>
+  </a>
+
 </div>
+
+---
+
+  <!-- ✏️ ALL NEW CODE COPIED BELOW -->
+
+## 📦 Resources
+
+<div class="resource-grid">
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h3 class="resource-card__title">AZ-305 Study Notes</h3>
+    <p class="resource-card__desc">
+      Microsoft Azure Solutions Architect Expert — exam prep notes covering
+      all domains and topics contained in the AZ-305 exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🏅 Expert Level</span>
+      <span>📄 4 Skills</span>
+      <span>🚧 Coming Soon</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h3 class="resource-card__title">AZ-500 Study Notes</h3>
+    <p class="resource-card__desc">
+      Microsoft Azure Security Engineer Associate — exam prep notes covering all
+      domains and topics contained in the AZ-500 exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 4 Skills</span>
+      <span>🚧 Coming Soon</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-500-study-notes/" class="resource-card__btn resource-card__btn--secondary">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h3 class="resource-card__title">AZ-104 Study Notes</h3>
+    <p class="resource-card__desc">
+      Microsoft Azure Administrator Associate — exam prep notes covering all
+      domains and topics contained in the AZ-104 exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 5 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/microsoft-study-notes/" class="resource-card__btn resource-card__btn--secondary">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🏅</span>
+      <span class="resource-card__tag certification">Cert Review</span>
+    </div>
+    <h3 class="resource-card__title">🔐 MS-700 Overview: Teams Administrator Associate</h3>
+    <p class="resource-card__desc">
+      Microsoft Teams Administrator Associate — a review of the MS-700 exam, covering my prep journey, study resources, and exam experience.
+    </p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 4 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/microsoft-ms-700/" class="resource-card__btn resource-card__btn--secondary">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🏅</span>
+      <span class="resource-card__tag certification">Cert Review</span>
+    </div>
+    <h3 class="resource-card__title">🔐 DP-900 Overview: Azure Data Fundamentals</h3>
+    <p class="resource-card__desc">
+      Microsoft Certified: Azure Data Fundamentals (DP-900) — a review of the DP-900 exam, covering my prep journey, study resources, and exam experience.
+    </p>
+    <div class="resource-card__meta">
+      <span>🔤 Fundamentals Level</span>
+      <span>📄 4 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/microsoft-dp-900/" class="resource-card__btn resource-card__btn--secondary">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🏅</span>
+      <span class="resource-card__tag certification">Cert Review</span>
+    </div>
+    <h3 class="resource-card__title">🔐 DP-900 Overview: Azure Data Fundamentals</h3>
+    <p class="resource-card__desc">
+      Microsoft Certified: Azure Data Fundamentals (DP-900) — a review of the DP-900 exam, covering my prep journey, study resources, and exam experience.
+    </p>
+    <div class="resource-card__meta">
+      <span>🔤 Fundamentals Level</span>
+      <span>📄 4 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/microsoft-dp-900/" class="resource-card__btn resource-card__btn--secondary">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🏅</span>
+      <span class="resource-card__tag certification">Cert Review</span>
+    </div>
+    <h3 class="resource-card__title">🔐 AI-900 Overview: Azure AI Fundamentals</h3>
+    <p class="resource-card__desc">
+      Microsoft Certified: Azure AI Fundamentals (AI-900) — a review of the AI-900 exam, covering my prep journey, study resources, and exam experience.
+    </p>
+    <div class="resource-card__meta">
+      <span>🔤 Fundamentals Level</span>
+      <span>📄 5 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/microsoft-ai-900/" class="resource-card__btn resource-card__btn--secondary">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🏅</span>
+      <span class="resource-card__tag certification">Cert Review</span>
+    </div>
+    <h3 class="resource-card__title">🔐 AZ-900 Overview: Azure Fundamentals</h3>
+    <p class="resource-card__desc">
+      Microsoft Certified: Azure Fundamentals (AZ-900) — a review of the AZ-900 exam, covering my prep journey, study resources, and exam experience.
+    </p>
+    <div class="resource-card__meta">
+      <span>🔤 Fundamentals Level</span>
+      <span>📄 3 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/microsoft-az-900/" class="resource-card__btn resource-card__btn--secondary">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🏅</span>
+      <span class="resource-card__tag certification">Cert Review</span>
+    </div>
+    <h3 class="resource-card__title">🔐 PL-900 Overview: Microsoft Power Platform Fundamentals</h3>
+    <p class="resource-card__desc">
+      Microsoft Certified: Power Platform Fundamentals (PL-900) — a review of the PL-900 exam, covering my prep journey, study resources, and exam experience.
+    </p>
+    <div class="resource-card__meta">
+      <span>🔤 Fundamentals Level</span>
+      <span>📄 5 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/microsoft-pl-900/" class="resource-card__btn resource-card__btn--secondary">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🏅</span>
+      <span class="resource-card__tag certification">Cert Review</span>
+    </div>
+    <h3 class="resource-card__title">🔐 SC-900 Overview: Microsoft Security, Compliance, and Identity Fundamentals</h3>
+    <p class="resource-card__desc">
+      Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900) — a review of the SC-900 exam, covering my prep journey, study resources, and exam experience.
+    </p>
+    <div class="resource-card__meta">
+      <span>🔤 Fundamentals Level</span>
+      <span>📄 4 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/microsoft-sc-900/" class="resource-card__btn resource-card__btn--secondary">View Notes →</a>
+  </div>
+
+</div>
+
+---
+
