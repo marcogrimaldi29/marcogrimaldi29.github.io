@@ -336,7 +336,7 @@ Here you can find a selection of my latest resources, including certification re
     </div>
     <h4 class="resource-card__title">German Resources</h4>
     <p class="resource-card__desc">
-      Curated collection of resources for learning German, including grammar guides, vocabulary lists, and practice exercises.
+      Curated collection of resources for learning German.
     </p>
     <a href="https://marcogrimaldi29.com/resources-german/" class="resource-card__btn">View Resources →</a>
   </div>
