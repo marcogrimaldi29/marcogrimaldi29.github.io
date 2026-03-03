@@ -3,11 +3,9 @@ layout: single
 title: "👋 Welcome to the Personal Hub of Marco Grimaldi"
 permalink: /
 author_profile: true
-toc: false
+toc: true
 toc_sticky: true
 toc_label: "🏠 Home"
-sidebar:
-  nav: "sidebar-right"
 description: "Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications, and language teaching. Cloud Consultant at Concentrix sharing knowledge and professional resources."
 keywords: "Marco Grimaldi, Concentrix, Cloud Consultant, Language Teacher, Cloud Computing, IT Certifications, Microsoft Learn, Professional Development"
 og_title: "Marco Grimaldi - IT Professional & Language Teacher"
@@ -88,66 +86,6 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 ## 📦 Resources
 
 Here you can find a selection of my latest resources, including certification reviews, study notes, and more. Click on the corresponding link on each resource to be redirected.
-
-### 📘 Study Notes
-
-<div class="resource-grid">
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
-    </div>
-    <h4 class="resource-card__title">AZ-305 Study Notes</h4>
-    <p class="resource-card__desc">
-      Microsoft Azure Solutions Architect Expert — exam prep notes covering
-      all domains and topics contained in the AZ-305 exam.
-    </p>
-    <div class="resource-card__meta">
-      <span>🏅 Expert Level</span>
-      <span>📄 4 Skills</span>
-      <span>🚧 Coming Soon</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
-    </div>
-    <h4 class="resource-card__title">AZ-500 Study Notes</h4>
-    <p class="resource-card__desc">
-      Microsoft Azure Security Engineer Associate — exam prep notes covering all
-      domains and topics contained in the AZ-500 exam.
-    </p>
-    <div class="resource-card__meta">
-      <span>🛡️ Associate Level</span>
-      <span>📄 4 Skills</span>
-      <span>🚧 Coming Soon</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-500-study-notes/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
-    </div>
-    <h4 class="resource-card__title">AZ-104 Study Notes</h4>
-    <p class="resource-card__desc">
-      Microsoft Azure Administrator Associate — exam prep notes covering all
-      domains and topics contained in the AZ-104 exam.
-    </p>
-    <div class="resource-card__meta">
-      <span>🛡️ Associate Level</span>
-      <span>📄 5 Skills</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-104-study-notes/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-</div>
 
 ### 🏅 Certification Reviews
 
@@ -321,6 +259,66 @@ Here you can find a selection of my latest resources, including certification re
       <span>✅ Complete</span>
     </div>
     <a href="https://marcogrimaldi29.com/google-it-support/" class="resource-card__btn">Read Review →</a>
+  </div>
+
+</div>
+
+### 📘 Study Notes
+
+<div class="resource-grid">
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305 Study Notes</h4>
+    <p class="resource-card__desc">
+      Microsoft Azure Solutions Architect Expert — exam prep notes covering
+      all domains and topics contained in the AZ-305 exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🏅 Expert Level</span>
+      <span>📄 4 Skills</span>
+      <span>🚧 Coming Soon</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">AZ-500 Study Notes</h4>
+    <p class="resource-card__desc">
+      Microsoft Azure Security Engineer Associate — exam prep notes covering all
+      domains and topics contained in the AZ-500 exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 4 Skills</span>
+      <span>🚧 Coming Soon</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-500-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">AZ-104 Study Notes</h4>
+    <p class="resource-card__desc">
+      Microsoft Azure Administrator Associate — exam prep notes covering all
+      domains and topics contained in the AZ-104 exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 5 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-104-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
 
 </div>
