@@ -1,20 +1,10 @@
-# Jekyll Configuration File
-# WARNING: This file is NOT reloaded automatically when using 'bundle exec jekyll serve'.
-# After changes, restart the server process.
+# ============================================================
+#  _config.yml — Jekyll + Minimal Mistakes configuration
+# ============================================================
 
-# Theme Configuration
-minimal_mistakes_skin: sunrise
-remote_theme: mmistakes/minimal-mistakes@4.24.0
-
-# Font Awesome Configuration
-atom_feed:
-  path: # blank (default) uses feed.xml
-
-# Font Awesome kit
-head_scripts:
-  - https://kit.fontawesome.com/4eee35f757.js
-
+# ============================================================
 # Core Site Settings
+# ============================================================
 locale: "en_US"
 title: &site_title "marcogrimaldi29.com"
 title_separator: "-"
@@ -26,14 +16,31 @@ description: &site_description >- # Multiline description
   and language teaching. Cloud Consultant at Concentrix sharing professional
   insights and resources.
 url: &site_url "https://marcogrimaldi29.com"  # Changed to CNAME URL
-baseurl: ""  # the subpath of your site, e.g. "/blog"
+baseurl: ""  # the subpath of the site, e.g. "/blog"
 repository: "marcogrimaldi29/marcogrimaldi29.github.io"
 logo: &site_logo "/assets/images/logo-sunrise-domain.jpg"
 search: true
 search_full_content: true
 search_provider: lunr
 
+# ============================================================
+# Theme Configuration
+# ============================================================
+minimal_mistakes_skin: dark
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+
+# Font Awesome Configuration
+# atom_feed:
+#  path: # blank (default) uses feed.xml
+
+# Font Awesome kit
+# head_scripts:
+#  - https://kit.fontawesome.com/4eee35f757.js
+
+
+# ============================================================
 # SEO Settings
+# ============================================================
 seo:
   title: *site_title
   name: *author_name
@@ -70,7 +77,10 @@ seo:
     image: *site_logo
     image_alt: "Marco Grimaldi's Website Logo"
 
+
+# ============================================================
 # Build settings
+# ============================================================
 markdown: kramdown
 highlighter: rouge
 lsi: false
@@ -106,7 +116,9 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+# ============================================================
 # Plugins
+# ============================================================
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -126,7 +138,9 @@ whitelist:
   - jekyll-include-cache
   - jemoji
 
+# ============================================================
 # Author Information
+# ============================================================
 author:
   name: *author_name
   avatar: "/assets/images/marco-cv.jpg"
@@ -148,7 +162,9 @@ author:
       icon: "fas fa-link"
       url: *site_url
 
+# ============================================================
 # Footer Configuration
+# ============================================================
 footer:
   links:
     - label: "Duolingo"
@@ -167,7 +183,10 @@ footer:
       icon: "fas fa-link"
       url: *site_url
 
+
+# ============================================================
 # Content Defaults
+# ============================================================
 defaults:
   # Post Defaults
   - scope:
@@ -193,7 +212,10 @@ defaults:
       toc: true
       toc_sticky: true
 
+
+# ============================================================
 # Archives
+# ============================================================
 category_archive:
   type: liquid
   path: /categories/
