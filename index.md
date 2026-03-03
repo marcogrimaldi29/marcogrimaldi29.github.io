@@ -3,11 +3,11 @@ layout: single
 title: "👋 Welcome to the Personal Hub of Marco Grimaldi"
 permalink: /
 author_profile: true
-toc: true
+toc: false
 toc_sticky: true
 toc_label: "🏠 Home"
 sidebar:
-  nav: "main"
+  nav: "sidebar-right"
 description: "Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications, and language teaching. Cloud Consultant at Concentrix sharing knowledge and professional resources."
 keywords: "Marco Grimaldi, Concentrix, Cloud Consultant, Language Teacher, Cloud Computing, IT Certifications, Microsoft Learn, Professional Development"
 og_title: "Marco Grimaldi - IT Professional & Language Teacher"
