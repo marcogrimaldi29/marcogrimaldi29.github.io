@@ -272,14 +272,14 @@ Here you can find a selection of my latest resources, including certification re
       <span class="resource-card__icon">🥽</span>
       <span class="resource-card__tag certification">Deep Dive</span>
     </div>
-    <h4 class="resource-card__title">AZ-305: Azure Messaging Services — Deep Dive</h4>
+    <h4 class="resource-card__title">AZ-305: Data & Analytics Services — Deep Dive</h4>
     <p class="resource-card__desc">
-      Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage. Includes architecture, use cases, and best practices for each service.
+      Deep dive into Azure Data Analytics, covering Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Data Lake Storage. Includes architecture, use cases, and best practices for each service.
     </p>
     <div class="resource-card__meta">
-      <span>📨 Messaging</span>
+      <span>📈 Data Analytics</span>
     </div>
-    <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
+    <a href="https://marcogrimaldi29.com/az-305-data-analytics/" class="resource-card__btn">Deep Dive →</a>
   </div>
 
   <div class="resource-card">
