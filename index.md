@@ -269,6 +269,36 @@ Here you can find a selection of my latest resources, including certification re
 
   <div class="resource-card">
     <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305: Azure Messaging Services — Deep Dive</h4>
+    <p class="resource-card__desc">
+      Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage. Includes architecture, use cases, and best practices for each service.
+    </p>
+    <div class="resource-card__meta">
+      <span>📨 Messaging</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305: Azure Messaging Services — Deep Dive</h4>
+    <p class="resource-card__desc">
+      Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage. Includes architecture, use cases, and best practices for each service.
+    </p>
+    <div class="resource-card__meta">
+      <span>📨 Messaging</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
       <span class="resource-card__icon">📘</span>
       <span class="resource-card__tag certification">Study Notes</span>
     </div>
@@ -278,9 +308,8 @@ Here you can find a selection of my latest resources, including certification re
       all domains and topics contained in the AZ-305 exam.
     </p>
     <div class="resource-card__meta">
-      <span>🏅 Expert Level</span>
+      <span>🏆 Expert Level</span>
       <span>📄 4 Skills</span>
-      <span>🚧 Coming Soon</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
@@ -298,7 +327,7 @@ Here you can find a selection of my latest resources, including certification re
     <div class="resource-card__meta">
       <span>🛡️ Associate Level</span>
       <span>📄 4 Skills</span>
-      <span>🚧 Coming Soon</span>
+      <span>🚧 Retiring</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-500-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
