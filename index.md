@@ -272,7 +272,7 @@ Here you can find a selection of my latest resources, including certification re
       <span class="resource-card__icon">🥽</span>
       <span class="resource-card__tag certification">Deep Dive</span>
     </div>
-    <h4 class="resource-card__title">AZ-305: Migration, HA & BCDR — Deep Dive</h4>
+    <h3 class="resource-card__title">AZ-305: Migration, HA & BCDR — Deep Dive</h3>
     <p class="resource-card__desc">
       Deep dive into Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services, covering Azure Migrate, Azure Site Recovery, Azure Backup and more. Includes architecture, use cases, and best practices for each service.
     </p>
@@ -287,7 +287,7 @@ Here you can find a selection of my latest resources, including certification re
       <span class="resource-card__icon">🥽</span>
       <span class="resource-card__tag certification">Deep Dive</span>
     </div>
-    <h4 class="resource-card__title">AZ-305: Compute Services — Deep Dive</h4>
+    <h3 class="resource-card__title">AZ-305: Compute Services — Deep Dive</h3>
     <p class="resource-card__desc">
       Deep dive into Azure Compute Services, covering Azure VMs and VMSS, Azure App Service, Serverless and Containers. Includes architecture, use cases, and best practices for each service.
     </p>
