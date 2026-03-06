@@ -272,6 +272,21 @@ Here you can find a selection of my latest resources, including certification re
       <span class="resource-card__icon">🥽</span>
       <span class="resource-card__tag certification">Deep Dive</span>
     </div>
+    <h4 class="resource-card__title">AZ-305: Migration, HA & BCDR — Deep Dive</h4>
+    <p class="resource-card__desc">
+      Deep dive into Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services, covering Azure Migrate, Azure Site Recovery, Azure Backup and more. Includes architecture, use cases, and best practices for each service.
+    </p>
+    <div class="resource-card__meta">
+      <span>🌋 BCDR</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-bcdr/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
     <h4 class="resource-card__title">AZ-305: Compute Services — Deep Dive</h4>
     <p class="resource-card__desc">
       Deep dive into Azure Compute Services, covering Azure VMs and VMSS, Azure App Service, Serverless and Containers. Includes architecture, use cases, and best practices for each service.
