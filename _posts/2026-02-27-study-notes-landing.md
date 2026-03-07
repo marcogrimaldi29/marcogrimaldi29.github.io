@@ -49,6 +49,14 @@ author_profile: true
 
 ---
 
+### 🏢 AZ-400: Designing and Implementing Microsoft DevOps Solutions
+
+This companion notes article is part of the AZ-400: Designing and Implementing Microsoft DevOps Solutions certification path. It focuses on DevOps practices, including continuous integration, continuous deployment, and infrastructure as code.
+
+For more details, check out the [📘 AZ-400 Study Notes here](https://marcogrimaldi29.com/az-400-study-notes/).
+
+---
+
 ### 🥽 AZ-305: Migration, HA & BCDR — Deep Dive
 
 This companion notes article is part of the AZ-305: Designing Microsoft Azure Infrastructure Solutions certification path. It focuses on Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services, covering topics such as Azure Migrate, Azure Site Recovery, Azure Backup, and Azure Availability Zones.
