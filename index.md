@@ -290,7 +290,7 @@ Here you can find a selection of my latest resources, including certification re
     </div>
     <h3 class="resource-card__title">AZ-305: Migration, HA & BCDR — Deep Dive</h3>
     <p class="resource-card__desc">
-      Deep dive into Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services, covering Azure Migrate, Azure Site Recovery, Azure Backup and more. Includes architecture, use cases, and best practices for each service.
+      Deep dive into Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services.
     </p>
     <div class="resource-card__meta">
       <span>🌋 BCDR</span>
@@ -305,7 +305,7 @@ Here you can find a selection of my latest resources, including certification re
     </div>
     <h3 class="resource-card__title">AZ-305: Compute Services — Deep Dive</h3>
     <p class="resource-card__desc">
-      Deep dive into Azure Compute Services, covering Azure VMs and VMSS, Azure App Service, Serverless and Containers. Includes architecture, use cases, and best practices for each service.
+      Deep dive into Azure Compute Services, covering Azure VMs and VMSS, Azure App Service, Serverless and Containers.
     </p>
     <div class="resource-card__meta">
       <span>🖥️ Compute</span>
@@ -320,7 +320,7 @@ Here you can find a selection of my latest resources, including certification re
     </div>
     <h4 class="resource-card__title">AZ-305: Data & Analytics Services — Deep Dive</h4>
     <p class="resource-card__desc">
-      Deep dive into Azure Data Analytics, covering Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Data Lake Storage. Includes architecture, use cases, and best practices for each service.
+      Deep dive into Azure Data Analytics, covering Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Data Lake Storage.
     </p>
     <div class="resource-card__meta">
       <span>📈 Data Analytics</span>
@@ -335,7 +335,7 @@ Here you can find a selection of my latest resources, including certification re
     </div>
     <h4 class="resource-card__title">AZ-305: Azure Messaging Services — Deep Dive</h4>
     <p class="resource-card__desc">
-      Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage. Includes architecture, use cases, and best practices for each service.
+      Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage.
     </p>
     <div class="resource-card__meta">
       <span>📨 Messaging</span>
