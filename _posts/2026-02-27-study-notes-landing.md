@@ -112,6 +112,7 @@ For more details, check out the [📘 AZ-104 Study Notes here](https://marcogrim
 ---
 
 ### 🗃️ Changelog
+- **2026-03-07:** AZ-400 Study Notes Added to the Central Hub Landing Page.
 - **2026-03-06:** Companion Notes to AZ-305 added related to (a) Messaging, (b) Data & Analytics, (c) Compute Services, and (d) Migration, HA & BCDR.
 - **2026-03-02:** AZ-305 Study Notes Added to the Central Hub Landing Page.
 - **2026-03-01:** AZ-104 Study Notes Added to the Central Hub Landing Page.

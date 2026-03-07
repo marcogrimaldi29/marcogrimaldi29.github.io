@@ -269,6 +269,22 @@ Here you can find a selection of my latest resources, including certification re
 
   <div class="resource-card">
     <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">AZ-400 Study Notes</h4>
+    <p class="resource-card__desc">
+      Microsoft Azure DevOps Engineer Expert — exam prep notes covering all domains and topics contained in the AZ-400 exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🏆 Expert Level</span>
+      <span>📄 5 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-400-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
       <span class="resource-card__icon">🥽</span>
       <span class="resource-card__tag certification">Deep Dive</span>
     </div>
