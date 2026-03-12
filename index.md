@@ -356,6 +356,7 @@ Here you can find a selection of my latest resources, including certification re
     <div class="resource-card__meta">
       <span>🏆 Expert Level</span>
       <span>📄 4 Skills</span>
+        <span>✅ Complete</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
