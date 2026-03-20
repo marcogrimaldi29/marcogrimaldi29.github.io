@@ -272,6 +272,21 @@ Here you can find a selection of my latest resources, including certification re
       <span class="resource-card__icon">📘</span>
       <span class="resource-card__tag certification">Study Notes</span>
     </div>
+    <h4 class="resource-card__title">ITIL v4 Foundation Study Notes</h4>
+    <p class="resource-card__desc">
+      ITIL v4 Foundation — exam prep notes covering all domains and topics contained in the ITIL v4 Foundation exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🔤 Foundation Level</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/itil-v4-foundation/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
     <h4 class="resource-card__title">AZ-400 Study Notes</h4>
     <p class="resource-card__desc">
       Microsoft Azure DevOps Engineer Expert — exam prep notes covering all domains and topics contained in the AZ-400 exam.
@@ -294,6 +309,7 @@ Here you can find a selection of my latest resources, including certification re
     </p>
     <div class="resource-card__meta">
       <span>🌋 BCDR</span>
+      <span>🤿 Deep Dive</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-305-bcdr/" class="resource-card__btn">Deep Dive →</a>
   </div>
@@ -309,6 +325,7 @@ Here you can find a selection of my latest resources, including certification re
     </p>
     <div class="resource-card__meta">
       <span>🖥️ Compute</span>
+      <span>🤿 Deep Dive</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-305-compute/" class="resource-card__btn">Deep Dive →</a>
   </div>
@@ -324,6 +341,7 @@ Here you can find a selection of my latest resources, including certification re
     </p>
     <div class="resource-card__meta">
       <span>📈 Data Analytics</span>
+      <span>🤿 Deep Dive</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-305-data-analytics/" class="resource-card__btn">Deep Dive →</a>
   </div>
@@ -339,6 +357,7 @@ Here you can find a selection of my latest resources, including certification re
     </p>
     <div class="resource-card__meta">
       <span>📨 Messaging</span>
+      <span>🤿 Deep Dive</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
   </div>
