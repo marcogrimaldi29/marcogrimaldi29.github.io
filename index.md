@@ -87,6 +87,8 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 
 Here you can find a selection of my latest resources, including certification reviews, study notes, and more. Click on the corresponding link on each resource to be redirected.
 
+---
+
 ### 🏅 Certification Reviews
 
 <div class="resource-grid">
@@ -263,6 +265,8 @@ Here you can find a selection of my latest resources, including certification re
 
 </div>
 
+---
+
 ### 📘 Study Notes
 
 <div class="resource-grid">
@@ -279,7 +283,7 @@ Here you can find a selection of my latest resources, including certification re
     <div class="resource-card__meta">
       <span>🔤 Foundation Level</span>
     </div>
-    <a href="https://marcogrimaldi29.com/itil-v4-foundation/" class="resource-card__btn">View Notes →</a>
+    <a href="https://marcogrimaldi29.com/itil-4-foundation/" class="resource-card__btn">View Notes →</a>
   </div>
 
   <div class="resource-card">
@@ -417,6 +421,8 @@ Here you can find a selection of my latest resources, including certification re
   </div>
 
 </div>
+
+---
 
 ### 🧰 Useful Resources
 
