@@ -2,9 +2,11 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://marcogrimaldi29.github.io/sitemap.xml
+# Sitemap index (references main + all sub-repo sitemaps)
 Sitemap: https://marcogrimaldi29.com/sitemap.xml
+
+# Sub-repo sitemaps (also listed individually for broader crawler support)
+Sitemap: https://marcogrimaldi29.com/az-305-study-notes/sitemap.xml
 
 # Prevent indexing of search results
 Disallow: /search/
