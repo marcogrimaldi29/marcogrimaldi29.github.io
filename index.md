@@ -70,7 +70,7 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
     <div><strong>Privacy Notice</strong><small>GDPR-compliant & cookieless</small></div>
   </a>
 
-  <a href="https://marcogrimaldi29.com/microsoft-study-notes/" class="quicklink-card">
+  <a href="https://marcogrimaldi29.com/#-study-notes" class="quicklink-card">
     <span class="quicklink-card__icon">📘</span>
     <div><strong>Study Notes</strong><small>My personal study notes for Microsoft certifications</small></div>
   </a>
@@ -270,6 +270,38 @@ Here you can find a selection of my latest resources, including certification re
 ### 📘 Study Notes
 
 <div class="resource-grid">
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">DP-700 Study Notes</h4>
+    <p class="resource-card__desc">
+      Fabric Data Engineer Associate — exam prep notes covering all domains and topics contained in the DP-700 exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 3 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/dp-700-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">DP-600 Study Notes</h4>
+    <p class="resource-card__desc">
+      Fabric Analytics Engineer Associate — exam prep notes covering all domains and topics contained in the DP-600 exam.
+    </p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 3 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/dp-600-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
 
   <div class="resource-card">
     <div class="resource-card__header">
