@@ -89,13 +89,9 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 <!--- RESOURCES --->
 <!----------------->
 
-## 📦 Resources
+## 🛬 Landing Pages
 
-Here you can find a selection of my latest resources, including certification reviews, study notes, and more. Click on the corresponding link on each resource to be redirected.
-
----
-
-### 🛬 Landing Pages
+📦 Here you can find a selection of my latest resources, including certification reviews, study notes, and useful resources. Click on the corresponding link on each landing page to discover more.
 
 <div class="resource-grid">
 
