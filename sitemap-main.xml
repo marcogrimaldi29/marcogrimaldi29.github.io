@@ -65,12 +65,12 @@
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/resources-ai/</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/resources-microsoft/</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
@@ -165,6 +165,15 @@
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/dp-700-study-notes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/study-notes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+    <loc>https://marcogrimaldi29.com/cert-reviews/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
