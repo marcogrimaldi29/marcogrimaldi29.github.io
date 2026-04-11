@@ -49,7 +49,7 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
     <span class="quicklink-card__icon">🏅</span>
     <div><strong>Cert Reviews</strong><small>My certification reviews and exam experiences</small></div>
   </a>
-  
+
   <a href="/collections/" class="quicklink-card">
     <span class="quicklink-card__icon">🖼️</span>
     <div><strong>Collections</strong><small>Browse the full catalogue by collection</small></div>
@@ -95,423 +95,44 @@ Here you can find a selection of my latest resources, including certification re
 
 ---
 
-### 🏅 Certification Reviews
+### 🛬 Landing Pages
 
 <div class="resource-grid">
 
   <div class="resource-card">
     <div class="resource-card__header">
       <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
+      <span class="resource-card__tag certification">Landing Page</span>
     </div>
-    <h4 class="resource-card__title">MS-700 Overview: Teams Administrator Associate</h4>
+    <h4 class="resource-card__title">Certification Reviews</h4>
     <p class="resource-card__desc">
-      Microsoft Teams Administrator Associate — a review of the MS-700 exam, covering my prep journey, study resources, and exam experience.
+      Central hub for all my certification reviews and exam experiences across Microsoft, Google, and more.
     </p>
-    <div class="resource-card__meta">
-      <span>🛡️ Associate Level</span>
-      <span>📄 4 Skills</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/microsoft-ms-700/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
-    </div>
-    <h4 class="resource-card__title">DP-900 Overview: Azure Data Fundamentals</h4>
-    <p class="resource-card__desc">
-      Microsoft Certified: Azure Data Fundamentals — a review of the DP-900 exam, covering my prep journey, study resources, and exam experience.
-    </p>
-    <div class="resource-card__meta">
-      <span>🔤 Fundamentals Level</span>
-      <span>📄 4 Skills</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/microsoft-dp-900/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
-    </div>
-    <h4 class="resource-card__title">AI-900 Overview: Azure AI Fundamentals</h4>
-    <p class="resource-card__desc">
-      Microsoft Certified: Azure AI Fundamentals — a review of the AI-900 exam, covering my prep journey, study resources, and exam experience.
-    </p>
-    <div class="resource-card__meta">
-      <span>🔤 Fundamentals Level</span>
-      <span>📄 5 Skills</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/microsoft-ai-900/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
-    </div>
-    <h4 class="resource-card__title">AZ-900 Overview: Azure Fundamentals</h4>
-    <p class="resource-card__desc">
-      Microsoft Certified: Azure Fundamentals — a review of the AZ-900 exam, covering my prep journey, study resources, and exam experience.
-    </p>
-    <div class="resource-card__meta">
-      <span>🔤 Fundamentals Level</span>
-      <span>📄 3 Skills</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/microsoft-az-900/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
-    </div>
-    <h4 class="resource-card__title">PL-900 Overview: Microsoft Power Platform Fundamentals</h4>
-    <p class="resource-card__desc">
-      Microsoft Certified: Power Platform Fundamentals — a review of the PL-900 exam, covering my prep journey, study resources, and exam experience.
-    </p>
-    <div class="resource-card__meta">
-      <span>🔤 Fundamentals Level</span>
-      <span>📄 5 Skills</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/microsoft-pl-900/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
-    </div>
-    <h4 class="resource-card__title">SC-900 Overview: Microsoft Security, Compliance, and Identity Fundamentals</h4>
-    <p class="resource-card__desc">
-      Microsoft Certified: Security, Compliance, and Identity Fundamentals — a review of the SC-900 exam, covering my prep journey, study resources, and exam experience.
-    </p>
-    <div class="resource-card__meta">
-      <span>🔤 Fundamentals Level</span>
-      <span>📄 4 Skills</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/microsoft-sc-900/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
-    </div>
-    <h3 class="resource-card__title">Google IT Automation with Python</h3>
-    <p class="resource-card__desc">
-      Google IT Automation with Python Professional Certificate — a review of the Google IT Automation with Python path.
-    </p>
-    <div class="resource-card__meta">
-      <span>🎓 Professional Certificate</span>
-      <span>👨🏻‍🏫 7 Courses</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/google-automation-python/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
-    </div>
-    <h4 class="resource-card__title">Google Data Analytics</h4>
-    <p class="resource-card__desc">
-      Google Data Analytics Professional Certificate — a review of the Google Data Analytics path.
-    </p>
-    <div class="resource-card__meta">
-      <span>🎓 Professional Certificate</span>
-      <span>👨🏻‍🏫 9 Courses</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/google-data-analytics/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
-    </div>
-    <h4 class="resource-card__title">Google Project Management</h4>
-    <p class="resource-card__desc">
-      Google Project Management Professional Certificate — a review of the Google Project Management path.
-    </p>
-    <div class="resource-card__meta">
-      <span>🎓 Professional Certificate</span>
-      <span>👨🏻‍🏫 6 Courses</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/google-project-management/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🏅</span>
-      <span class="resource-card__tag certification">Cert Review</span>
-    </div>
-    <h4 class="resource-card__title">Google IT Support</h4>
-    <p class="resource-card__desc">
-      Google IT Support Professional Certificate — a review of the Google IT Support path.
-    </p>
-    <div class="resource-card__meta">
-      <span>🎓 Professional Certificate</span>
-      <span>👨🏻‍🏫 6 Courses</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/google-it-support/" class="resource-card__btn">Read Review →</a>
-  </div>
-
-</div>
-
----
-
-### 📘 Study Notes
-
-<div class="resource-grid">
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
-    </div>
-    <h4 class="resource-card__title">DP-700 Study Notes</h4>
-    <p class="resource-card__desc">
-      Fabric Data Engineer Associate — exam prep notes covering all domains and topics contained in the DP-700 exam.
-    </p>
-    <div class="resource-card__meta">
-      <span>🛡️ Associate Level</span>
-      <span>📄 3 Skills</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/dp-700-study-notes/" class="resource-card__btn">View Notes →</a>
+    <a href="/cert-reviews/" class="resource-card__btn">View All →</a>
   </div>
 
   <div class="resource-card">
     <div class="resource-card__header">
       <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
+      <span class="resource-card__tag certification">Landing Page</span>
     </div>
-    <h4 class="resource-card__title">DP-600 Study Notes</h4>
+    <h4 class="resource-card__title">Study Notes</h4>
     <p class="resource-card__desc">
-      Fabric Analytics Engineer Associate — exam prep notes covering all domains and topics contained in the DP-600 exam.
+      Comprehensive study notes for Microsoft Azure, ITIL, and other certifications.
     </p>
-    <div class="resource-card__meta">
-      <span>🛡️ Associate Level</span>
-      <span>📄 3 Skills</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/dp-600-study-notes/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
-    </div>
-    <h4 class="resource-card__title">ITIL v4 Foundation Study Notes</h4>
-    <p class="resource-card__desc">
-      ITIL v4 Foundation — exam prep notes covering all domains and topics contained in the ITIL v4 Foundation exam.
-    </p>
-    <div class="resource-card__meta">
-      <span>🔤 Foundation Level</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/itil-4-foundation/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
-    </div>
-    <h4 class="resource-card__title">AZ-400 Study Notes</h4>
-    <p class="resource-card__desc">
-      Microsoft Azure DevOps Engineer Expert — exam prep notes covering all domains and topics contained in the AZ-400 exam.
-    </p>
-    <div class="resource-card__meta">
-      <span>🏆 Expert Level</span>
-      <span>📄 5 Skills</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-400-study-notes/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🥽</span>
-      <span class="resource-card__tag certification">Deep Dive</span>
-    </div>
-    <h3 class="resource-card__title">AZ-305: Migration, HA & BCDR — Deep Dive</h3>
-    <p class="resource-card__desc">
-      Deep dive into Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services.
-    </p>
-    <div class="resource-card__meta">
-      <span>🌋 BCDR</span>
-      <span>🤿 Deep Dive</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-bcdr/" class="resource-card__btn">Deep Dive →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🥽</span>
-      <span class="resource-card__tag certification">Deep Dive</span>
-    </div>
-    <h3 class="resource-card__title">AZ-305: Compute Services — Deep Dive</h3>
-    <p class="resource-card__desc">
-      Deep dive into Azure Compute Services, covering Azure VMs and VMSS, Azure App Service, Serverless and Containers.
-    </p>
-    <div class="resource-card__meta">
-      <span>🖥️ Compute</span>
-      <span>🤿 Deep Dive</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-compute/" class="resource-card__btn">Deep Dive →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🥽</span>
-      <span class="resource-card__tag certification">Deep Dive</span>
-    </div>
-    <h4 class="resource-card__title">AZ-305: Data & Analytics Services — Deep Dive</h4>
-    <p class="resource-card__desc">
-      Deep dive into Azure Data Analytics, covering Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Data Lake Storage.
-    </p>
-    <div class="resource-card__meta">
-      <span>📈 Data Analytics</span>
-      <span>🤿 Deep Dive</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-data-analytics/" class="resource-card__btn">Deep Dive →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🥽</span>
-      <span class="resource-card__tag certification">Deep Dive</span>
-    </div>
-    <h4 class="resource-card__title">AZ-305: Azure Messaging Services — Deep Dive</h4>
-    <p class="resource-card__desc">
-      Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage.
-    </p>
-    <div class="resource-card__meta">
-      <span>📨 Messaging</span>
-      <span>🤿 Deep Dive</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
-    </div>
-    <h4 class="resource-card__title">AZ-305 Study Notes</h4>
-    <p class="resource-card__desc">
-      Microsoft Azure Solutions Architect Expert — exam prep notes covering
-      all domains and topics contained in the AZ-305 exam.
-    </p>
-    <div class="resource-card__meta">
-      <span>🏆 Expert Level</span>
-      <span>📄 4 Skills</span>
-        <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
-    </div>
-    <h4 class="resource-card__title">AZ-500 Study Notes</h4>
-    <p class="resource-card__desc">
-      Microsoft Azure Security Engineer Associate — exam prep notes covering all
-      domains and topics contained in the AZ-500 exam.
-    </p>
-    <div class="resource-card__meta">
-      <span>🛡️ Associate Level</span>
-      <span>📄 4 Skills</span>
-      <span>🚧 Retiring</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-500-study-notes/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">📘</span>
-      <span class="resource-card__tag certification">Study Notes</span>
-    </div>
-    <h4 class="resource-card__title">AZ-104 Study Notes</h4>
-    <p class="resource-card__desc">
-      Microsoft Azure Administrator Associate — exam prep notes covering all
-      domains and topics contained in the AZ-104 exam.
-    </p>
-    <div class="resource-card__meta">
-      <span>🛡️ Associate Level</span>
-      <span>📄 5 Skills</span>
-      <span>✅ Complete</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-104-study-notes/" class="resource-card__btn">View Notes →</a>
-  </div>
-
-</div>
-
----
-
-### 🧰 Useful Resources
-
-<div class="resource-grid">
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🧰</span>
-      <span class="resource-card__tag certification">Useful Resources</span>
-    </div>
-    <h4 class="resource-card__title">German Resources</h4>
-    <p class="resource-card__desc">
-      Curated collection of resources for learning German.
-    </p>
-    <a href="https://marcogrimaldi29.com/resources-german/" class="resource-card__btn">View Resources →</a>
+    <a href="/study-notes/" class="resource-card__btn">View All →</a>
   </div>
 
   <div class="resource-card">
     <div class="resource-card__header">
       <span class="resource-card__icon">🧰</span>
-      <span class="resource-card__tag certification">Useful Resources</span>
+      <span class="resource-card__tag certification">Landing Page</span>
     </div>
-    <h4 class="resource-card__title">Microsoft Resources</h4>
+    <h4 class="resource-card__title">Useful Resources</h4>
     <p class="resource-card__desc">
-      Curated collection of resources and documentation for Microsoft technologies.
+      Curated collections of resources for German learning, Microsoft docs, AI tools, and development guides.
     </p>
-    <a href="https://marcogrimaldi29.com/resources-microsoft/" class="resource-card__btn">View Resources →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🧰</span>
-      <span class="resource-card__tag certification">Useful Resources</span>
-    </div>
-    <h4 class="resource-card__title">AI Resources</h4>
-    <p class="resource-card__desc">
-      Curated collection of AI resources.
-    </p>
-    <a href="https://marcogrimaldi29.com/resources-ai/" class="resource-card__btn">View Resources →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🧰</span>
-      <span class="resource-card__tag certification">Useful Resources</span>
-    </div>
-    <h4 class="resource-card__title">GitHub, Jekyll, and Markdown Resources</h4>
-    <p class="resource-card__desc">
-      Curated collection of resources for GitHub, Jekyll, and Markdown.
-    </p>
-    <a href="https://marcogrimaldi29.com/resources-github-jekyll-markdown/" class="resource-card__btn">View Resources →</a>
+    <a href="/resources/" class="resource-card__btn">View All →</a>
   </div>
 
 </div>
