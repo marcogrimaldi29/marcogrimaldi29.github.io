@@ -11,19 +11,33 @@ You can get in touch with me through any of the following channels:
 
 ---
 
-* 🦉 **Duolingo**  
-[duolingo.com/profile/MarcoGrimm](https://www.duolingo.com/profile/MarcoGrimm)
+<div class="quicklink-grid">
 
-* 📧 **Email**  
-[marcogrimaldi29@gmail.com](mailto:marcogrimaldi29@gmail.com)  
+  <a href="https://www.duolingo.com/profile/MarcoGrimm" class="quicklink-card">
+    <span class="quicklink-card__icon">🦉</span>
+    <div><strong>Duolingo</strong><small>https://www.duolingo.com/profile/MarcoGrimm</small></div>
+  </a>
 
-* 🐙 **GitHub**  
-[github.com/marcogrimaldi29](https://github.com/marcogrimaldi29)  
+  <a href="mailto:marcogrimaldi29@gmail.com" class="quicklink-card">
+    <span class="quicklink-card__icon">📧</span>
+    <div><strong>Email</strong><small>mailto:marcogrimaldi29@gmail.com</small></div>
+  </a>
 
-* 💼 **LinkedIn**  
-[linkedin.com/in/marco-grimaldi29](https://www.linkedin.com/in/marco-grimaldi29/)  
+  <a href="https://github.com/marcogrimaldi29" class="quicklink-card">
+    <span class="quicklink-card__icon">🐙</span>
+    <div><strong>GitHub</strong><small>https://github.com/marcogrimaldi29</small></div>
+  </a>
 
-* 🪟 **Microsoft**  
-[learn.microsoft.com/en-us/users/marcogrimaldi-0029](https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/)
+  <a href="https://www.linkedin.com/in/marco-grimaldi29/" class="quicklink-card">
+    <span class="quicklink-card__icon">💼</span>
+    <div><strong>LinkedIn</strong><small>https://www.linkedin.com/in/marco-grimaldi29/</small></div>
+  </a>
+
+  <a href="https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/" class="quicklink-card">
+    <span class="quicklink-card__icon">🪟</span>
+    <div><strong>Microsoft Learn</strong><small>https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/</small></div>
+  </a>
+
+</div>
 
 ---
