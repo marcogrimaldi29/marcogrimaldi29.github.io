@@ -173,7 +173,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
     <loc>https://marcogrimaldi29.com/cert-reviews/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/resources/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
