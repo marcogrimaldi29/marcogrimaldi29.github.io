@@ -70,7 +70,7 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
     <div><strong>Privacy Notice</strong><small>GDPR-compliant & cookieless</small></div>
   </a>
 
-  <a href="https://marcogrimaldi29.com/#-study-notes" class="quicklink-card">
+  <a href="https://marcogrimaldi29.com/study-notes/" class="quicklink-card">
     <span class="quicklink-card__icon">📘</span>
     <div><strong>Study Notes</strong><small>My personal study notes for Microsoft certifications</small></div>
   </a>
