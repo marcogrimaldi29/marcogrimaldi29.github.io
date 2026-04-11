@@ -45,6 +45,11 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
     <div><strong>About</strong><small>About me & this website</small></div>
   </a>
 
+  <a href="/cert-reviews/" class="quicklink-card">
+    <span class="quicklink-card__icon">🏅</span>
+    <div><strong>Cert Reviews</strong><small>My certification reviews and exam experiences</small></div>
+  </a>
+  
   <a href="/collections/" class="quicklink-card">
     <span class="quicklink-card__icon">🖼️</span>
     <div><strong>Collections</strong><small>Browse the full catalogue by collection</small></div>
@@ -75,10 +80,6 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
     <div><strong>Study Notes</strong><small>My personal study notes for Microsoft certifications</small></div>
   </a>
 
-  <a href="/cert-reviews/" class="quicklink-card">
-    <span class="quicklink-card__icon">🏅</span>
-    <div><strong>Cert Reviews</strong><small>My certification reviews and exam experiences</small></div>
-  </a>
 
 </div>
 
