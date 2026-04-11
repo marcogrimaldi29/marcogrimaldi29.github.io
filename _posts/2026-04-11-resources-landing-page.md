@@ -3,7 +3,7 @@ title: "🛬 Landing Page: Useful Resources"
 date: 2026-04-11
 last_modified_at: 2026-04-11
 categories:
-  - Useful Resources
+  - Resources
 tags:
   - Resources
   - German
