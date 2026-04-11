@@ -9,22 +9,22 @@
   <url>
     <loc>https://marcogrimaldi29.com/about/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/collections/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/contact/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/cv/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/privacy/</loc>
@@ -38,8 +38,8 @@
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/tags/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
   
   <!-- Blog posts -->
@@ -65,12 +65,12 @@
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/resources-ai/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/resources-microsoft/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
@@ -105,7 +105,7 @@
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/resources-german/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
@@ -115,57 +115,57 @@
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/az-305-study-notes/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/az-500-study-notes/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/az-104-study-notes/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/az-400-study-notes/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/az-305-messaging/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/az-305-data-analytics/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/az-305-compute/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/az-305-bcdr/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/itil-4-foundation/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/dp-600-study-notes/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/dp-700-study-notes/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
