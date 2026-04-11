@@ -10,12 +10,53 @@
     <loc>https://marcogrimaldi29.com/az-305-study-notes/sitemap.xml</loc>
   </sitemap>
 
-  <!-- Add future sub-repo sitemaps here, e.g.:
+  <!-- Sub-repo: AZ-305 Data Analytics -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/az-305-data-analytics/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub-repo: AZ-305 Compute -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/az-305-compute/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub-repo: AZ-305 Messaging -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/az-305-messaging/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub-repo: AZ-305 BCDR -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/az-305-bcdr/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub-repo: AZ-500 Study Notes -->
   <sitemap>
     <loc>https://marcogrimaldi29.com/az-500-study-notes/sitemap.xml</loc>
   </sitemap>
+
+  <!-- Sub-repo: AZ-104 Study Notes -->
   <sitemap>
     <loc>https://marcogrimaldi29.com/az-104-study-notes/sitemap.xml</loc>
   </sitemap>
-  -->
+
+  <!-- Sub-repo: DP-600 Study Notes -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/dp-600-study-notes/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub-repo: DP-700 Study Notes -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/dp-700-study-notes/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub-repo: AZ-400 Study Notes -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/az-400-study-notes/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub-repo: ITIL-4 Foundation -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/itil-4-foundation/sitemap.xml</loc>
+  </sitemap>
 </sitemapindex>
