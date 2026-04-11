@@ -18,7 +18,7 @@ excerpt: "Explore comprehensive study notes for various certifications, includin
 description: "Discover a wealth of study notes for certifications across Microsoft Azure, Google, ITIL, and other platforms. This landing page serves as a central hub for all your certification preparation needs, offering detailed guides, tips, and resources to help you succeed in your exams."
 toc: true
 toc_sticky: true
-toc_label: "🛫 Taking off: Study Notes"
+toc_label: "🛬 Landing Page: Study Notes"
 permalink: /study-notes/
 seo:
   type: "Article"
@@ -40,8 +40,6 @@ related: true
 author_profile: true
 ---
 
-## 🛬 Landing Page: Study Notes
-
 **ℹ️ Heads-up:** For other certification-related materials and insights, take a look at the "📖 Related Resources" section or the inline references included in my "🏅 Cert Review" articles too.
 {: .notice--info}
 
@@ -53,7 +51,7 @@ author_profile: true
 
 ---
 
-### 📘 Study Notes
+## 📘 Study Notes
 
 <div class="resource-grid">
 
@@ -178,7 +176,7 @@ author_profile: true
 
 ---
 
-### 🥽 Deep Dives
+## 🥽 Deep Dives
 
 <div class="resource-grid">
 
