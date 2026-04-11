@@ -1,5 +1,5 @@
 ---
-title: "📘 Study Notes & 🥽 Deep Dives: Landing Page"
+title: "🛬 Landing Page: Study Notes"
 date: 2026-02-27
 last_modified_at: 2026-04-11
 categories:
@@ -18,7 +18,7 @@ excerpt: "Explore comprehensive study notes for various certifications, includin
 description: "Discover a wealth of study notes for certifications across Microsoft Azure, Google, ITIL, and other platforms. This landing page serves as a central hub for all your certification preparation needs, offering detailed guides, tips, and resources to help you succeed in your exams."
 toc: true
 toc_sticky: true
-toc_label: "📘 Study Notes & 🥽 Deep Dives"
+toc_label: "🛫 Taking off: Study Notes"
 permalink: /study-notes/
 seo:
   type: "Article"
@@ -40,7 +40,7 @@ related: true
 author_profile: true
 ---
 
-## 🫙 Central Hub for Study Notes
+## 🛬 Landing Page: Study Notes
 
 **ℹ️ Heads-up:** For other certification-related materials and insights, take a look at the "📖 Related Resources" section or the inline references included in my "🏅 Cert Review" articles too.
 {: .notice--info}
@@ -50,78 +50,6 @@ author_profile: true
 🗒️ The study notes have been created with the help of AI tools, GitHub Pages, together with personal notebook notes taken while studying the official documentation, and lots and lots of bookmarks!
 
 ☁️ The below list will continue to grow as I prepare and organize my notes while studying for my upcoming certifications. Should you be on a learning journey on your own, I hope you find these notes useful and may they help you in your learning path! Feel free to reach out if you have any questions or suggestions for improvement. Happy studying! 🚀
-
----
-
-### 🥽 Deep Dives
-
-<div class="resource-grid">
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🥽</span>
-      <span class="resource-card__tag certification">Deep Dive</span>
-    </div>
-    <h3 class="resource-card__title">AZ-305: Migration, HA & BCDR — Deep Dive</h3>
-    <p class="resource-card__desc">
-      Deep dive into Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services.
-    </p>
-    <div class="resource-card__meta">
-      <span>🌋 BCDR</span>
-      <span>🤿 Deep Dive</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-bcdr/" class="resource-card__btn">Deep Dive →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🥽</span>
-      <span class="resource-card__tag certification">Deep Dive</span>
-    </div>
-    <h3 class="resource-card__title">AZ-305: Compute Services — Deep Dive</h3>
-    <p class="resource-card__desc">
-      Deep dive into Azure Compute Services, covering Azure VMs and VMSS, Azure App Service, Serverless and Containers.
-    </p>
-    <div class="resource-card__meta">
-      <span>🖥️ Compute</span>
-      <span>🤿 Deep Dive</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-compute/" class="resource-card__btn">Deep Dive →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🥽</span>
-      <span class="resource-card__tag certification">Deep Dive</span>
-    </div>
-    <h4 class="resource-card__title">AZ-305: Data & Analytics Services — Deep Dive</h4>
-    <p class="resource-card__desc">
-      Deep dive into Azure Data Analytics, covering Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Data Lake Storage.
-    </p>
-    <div class="resource-card__meta">
-      <span>📈 Data Analytics</span>
-      <span>🤿 Deep Dive</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-data-analytics/" class="resource-card__btn">Deep Dive →</a>
-  </div>
-
-  <div class="resource-card">
-    <div class="resource-card__header">
-      <span class="resource-card__icon">🥽</span>
-      <span class="resource-card__tag certification">Deep Dive</span>
-    </div>
-    <h4 class="resource-card__title">AZ-305: Azure Messaging Services — Deep Dive</h4>
-    <p class="resource-card__desc">
-      Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage.
-    </p>
-    <div class="resource-card__meta">
-      <span>📨 Messaging</span>
-      <span>🤿 Deep Dive</span>
-    </div>
-    <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
-  </div>
-
-</div>
 
 ---
 
@@ -250,6 +178,78 @@ author_profile: true
 
 ---
 
+### 🥽 Deep Dives
+
+<div class="resource-grid">
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h3 class="resource-card__title">AZ-305: Migration, HA & BCDR — Deep Dive</h3>
+    <p class="resource-card__desc">
+      Deep dive into Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services.
+    </p>
+    <div class="resource-card__meta">
+      <span>🌋 BCDR</span>
+      <span>🤿 Deep Dive</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-bcdr/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h3 class="resource-card__title">AZ-305: Compute Services — Deep Dive</h3>
+    <p class="resource-card__desc">
+      Deep dive into Azure Compute Services, covering Azure VMs and VMSS, Azure App Service, Serverless and Containers.
+    </p>
+    <div class="resource-card__meta">
+      <span>🖥️ Compute</span>
+      <span>🤿 Deep Dive</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-compute/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305: Data & Analytics Services — Deep Dive</h4>
+    <p class="resource-card__desc">
+      Deep dive into Azure Data Analytics, covering Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Data Lake Storage.
+    </p>
+    <div class="resource-card__meta">
+      <span>📈 Data Analytics</span>
+      <span>🤿 Deep Dive</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-data-analytics/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305: Azure Messaging Services — Deep Dive</h4>
+    <p class="resource-card__desc">
+      Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage.
+    </p>
+    <div class="resource-card__meta">
+      <span>📨 Messaging</span>
+      <span>🤿 Deep Dive</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+</div>
+
+---
+
 ### 🗃️ Changelog
 - **2026-04-11:** Landing page updated to include all study notes (Microsoft, Google, ITIL, etc.) with visual quicklink cards.
 - **2026-03-07:** AZ-400 Study Notes Added to the Central Hub Landing Page.
@@ -259,3 +259,5 @@ author_profile: true
 - **2026-02-28:** AZ-500 Study Notes Added to the Central Hub Landing Page.
 - **2026-02-27:** Study Notes Landing Page Created & AZ-305 Study Notes Added.
 {: .notice}
+
+---
