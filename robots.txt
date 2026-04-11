@@ -7,6 +7,16 @@ Sitemap: https://marcogrimaldi29.com/sitemap.xml
 
 # Sub-repo sitemaps (also listed individually for broader crawler support)
 Sitemap: https://marcogrimaldi29.com/az-305-study-notes/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/az-305-data-analytics/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/az-305-compute/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/az-305-messaging/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/az-305-bcdr/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/az-500-study-notes/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/az-104-study-notes/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/dp-600-study-notes/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/dp-700-study-notes/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/az-400-study-notes/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/itil-4-foundation/sitemap.xml
 
 # Prevent indexing of search results
 Disallow: /search/
