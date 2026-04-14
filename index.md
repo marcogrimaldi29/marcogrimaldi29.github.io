@@ -1,11 +1,11 @@
 ---
-layout: single
+layout: splash
 title: "👋 Welcome to the Personal Hub of Marco Grimaldi"
 permalink: /
 author_profile: true
-toc: true
-toc_sticky: true
-toc_label: "🏠 Home"
+# toc: true
+# toc_sticky: true
+# toc_label: "🏠 Home"
 description: "Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications, and language teaching. Cloud Consultant at Concentrix sharing knowledge and professional resources."
 keywords: "Marco Grimaldi, Concentrix, Cloud Consultant, Language Teacher, Cloud Computing, IT Certifications, Microsoft Learn, Professional Development"
 og_title: "Marco Grimaldi - IT Professional & Language Teacher"
@@ -80,14 +80,16 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
     <div><strong>Study Notes</strong><small>My personal study notes for Microsoft certifications</small></div>
   </a>
 
-
+  <a href="https://marcogrimaldi29.com/resources/" class="quicklink-card">
+    <span class="quicklink-card__icon">🧰</span>
+    <div><strong>Useful Resources</strong><small>Curated collections of resources for German learning, Microsoft docs, AI tools, and development guides</small></div>
+  </a>
+  
 </div>
 
 ---
 
-<!----------------->
-<!--- RESOURCES --->
-<!----------------->
+<!-- RESOURCE GRID
 
 ## 🛬 Landing Pages
 
@@ -132,6 +134,7 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
   </div>
 
 </div>
+-->
 
 ---
 
