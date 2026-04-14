@@ -5,12 +5,16 @@ main:
 #   url: /blog/ 
 # - title: "Categories"
 #   url: /categories/
-  - title: "Collections"
-    url: /collections/
+# - title: "Collections"
+#   url: /collections/
+  - title: "Cert Reviews"
+    url: /cert-reviews/
   - title: "Contact"
     url: /contact/
   - title: "CV"
     url: /cv/
+  - title: "Study Notes"
+    url: /study-notes/
 # - title: "Posts"
 #   url: /posts/
 # - title: "Resources"
@@ -19,54 +23,3 @@ main:
 #   url: /tags/
 # - title: "Trails"
 #   url: /trails/ 
-
-sidebar-right:
-  - title: "🏗️ About"
-    url: /about/
-  - title: "🏅 Cert Reviews"
-    children:
-      - title: "🏅 MS-700 Review: Teams Administrator Associate"
-        url: /microsoft-ms-700/
-      - title: "🏅 DP-900 Review: Azure Data Fundamentals"
-        url: /microsoft-dp-900/
-      - title: "🏅 AI-900 Review: Azure Data Fundamentals"
-        url: /microsoft-ai-900/
-      - title: "🏅 AZ-900 Review: Azure Fundamentals"
-        url: /microsoft-az-900/
-      - title: "🏅 PL-900 Review: Power Platform Fundamentals"
-        url: /microsoft-pl-900/
-      - title: "🏅 SC-900 Review: Security, Compliance, and Identity Fundamentals"
-        url: /microsoft-sc-900/
-      - title: "🏅 Google IT Automation with Python Professional Certificate Review"
-        url: /google-automation-python/
-      - title: "🏅 Google Data Analytics Professional Certificate Review"
-        url: /google-data-analytics/
-      - title: "🏅 Google Project Management Professional Certificate Review"
-        url: /google-project-management/
-      - title: "🏅 Google IT Support Professional Certificate Review"
-        url: /google-it-support/
-  - title: "📚 Collections"
-    url: /collections/
-  - title: "💬 Contact"
-    url: /contact/
-  - title: "📄 CV"
-    url: /cv/
-  - title: "📘 Study Notes"
-    url: /microsoft-study-notes/
-    children:
-      - title: "📘 AZ-305 Study Notes"
-        url: https://marcogrimaldi29.com/az-305-study-notes/
-      - title: "📘 AZ-500 Study Notes"
-        url: https://marcogrimaldi29.com/az-500-study-notes/
-      - title: "📘 AZ-104 Study Notes"
-        url: https://marcogrimaldi29.com/az-104-study-notes/
-  - title: "🧰 Useful Resources"
-    children:
-      - title: "🥨 German Resources"
-        url: /resources-german/
-      - title: "🪟 Microsoft Resources"
-        url: /resources-microsoft/
-      - title: "✨ AI and Prompt Engineering Resources"
-        url: /resources-ai/
-      - title: "🌐 GitHub Pages, Jekyll, and Markdown Resources"
-        url: /resources-github-jekyll-markdown/
