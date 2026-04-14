@@ -51,11 +51,6 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
     <div><strong>Cert Reviews</strong><small>My certification reviews and exam experiences</small></div>
   </a>
 
-  <a href="/collections/" class="quicklink-card">
-    <span class="quicklink-card__icon">🖼️</span>
-    <div><strong>Collections</strong><small>Browse the full catalogue by collection</small></div>
-  </a>
-
   <a href="/contact/" class="quicklink-card">
     <span class="quicklink-card__icon">📲</span>
     <div><strong>Contact</strong><small>Let's get in touch</small></div>
@@ -136,6 +131,4 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 
 </div>
 -->
-
----
 
