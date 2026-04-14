@@ -78,7 +78,7 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
 
   <a href="https://marcogrimaldi29.com/resources/" class="quicklink-card">
     <span class="quicklink-card__icon">🧰</span>
-    <div><strong>Useful Resources</strong><small>Curated collections of resources for German learning, Microsoft docs, AI tools, and development guides</small></div>
+    <div><strong>Useful Resources</strong><small>Curated collections of various resources</small></div>
   </a>
   
 </div>
@@ -130,5 +130,5 @@ It’s meant to be both a **personal** and a **learning hub** — a place where 
   </div>
 
 </div>
--->
 
+-->
