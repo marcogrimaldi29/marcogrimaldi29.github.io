@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: wide
 title: "👋 Welcome to the Personal Hub of Marco Grimaldi"
 permalink: /
 author_profile: true
