@@ -1,7 +1,7 @@
 ---
 title: "🛬 Landing Page: Study Notes"
 date: 2026-02-27
-last_modified_at: 2026-04-11
+last_modified_at: 2026-04-14
 categories:
   - Study Notes
 tags:
@@ -248,8 +248,9 @@ author_profile: true
 
 ---
 
-### 🗃️ Changelog
-- **2026-04-11:** Landing page updated to include all study notes (Microsoft, Google, ITIL, etc.) with visual quicklink cards.
+## 🗃️ Changelog
+- **2026-04-14:** Updated formatting and added new study notes for DP-700 and DP-600.
+- **2026-04-11:** Landing page updated to include all study notes (Microsoft, ITIL, etc.) with visual quicklink cards.
 - **2026-03-07:** AZ-400 Study Notes Added to the Central Hub Landing Page.
 - **2026-03-06:** Companion Notes to AZ-305 added related to (a) Messaging, (b) Data & Analytics, (c) Compute Services, and (d) Migration, HA & BCDR.
 - **2026-03-02:** AZ-305 Study Notes Added to the Central Hub Landing Page.
