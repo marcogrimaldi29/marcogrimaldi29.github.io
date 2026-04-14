@@ -1,5 +1,6 @@
 ---
-layout: wide
+layout: single
+classes: wide
 title: "👋 Welcome to the Personal Hub of Marco Grimaldi"
 permalink: /
 author_profile: true
