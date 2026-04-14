@@ -1,7 +1,9 @@
 ---
+layout: single
+classes: wide
 title: "🛬 Landing Page: Useful Resources"
 date: 2026-04-11
-last_modified_at: 2026-04-11
+last_modified_at: 2026-04-14
 categories:
   - Resources
 tags:
@@ -14,9 +16,9 @@ tags:
   - Markdown
 excerpt: "Explore curated collections of useful resources for learning German, Microsoft technologies, AI, and development tools."
 description: "Discover a variety of useful resources including German learning materials, Microsoft documentation, AI tools, and GitHub/Jekyll/Markdown guides."
-toc: true
-toc_sticky: true
-toc_label: "🧰 Useful Resources"
+# toc: true
+# toc_sticky: true
+# toc_label: "🧰 Useful Resources"
 permalink: /resources/
 seo:
   type: "Article"
@@ -46,6 +48,8 @@ author_profile: true
 ☁️ The below list will continue to grow as I discover and organize more useful materials. Should you be exploring similar topics, I hope you find these resources helpful and may they aid in your learning path! Feel free to reach out if you have any questions or suggestions for improvement. Happy exploring! 🚀
 
 ---
+
+## 🧰 Useful Resources
 
 <div class="resource-grid">
 
@@ -101,7 +105,8 @@ author_profile: true
 
 ---
 
-### 🗃️ Changelog
+## 🗃️ Changelog
+- **2026-04-14:** Updated formatting.
 - **2026-04-11:** Useful Resources landing page created with all current resource collections.
 {: .notice}
 
