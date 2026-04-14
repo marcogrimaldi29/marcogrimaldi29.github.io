@@ -1,7 +1,7 @@
 ---
 title: "🛬 Landing Page: Cert Reviews"
 date: 2026-04-11
-last_modified_at: 2026-04-11
+last_modified_at: 2026-04-14
 categories:
   - Certification
 tags:
@@ -231,7 +231,8 @@ author_profile: true
 
 ---
 
-### 🗃️ Changelog
+## 🗃️ Changelog
+- **2026-04-14:** Updated changelog formatting.
 - **2026-04-11:** Certification Reviews landing page created with all current reviews.
 {: .notice}
 
