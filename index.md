@@ -19,6 +19,10 @@ canonical_url: "https://marcogrimaldi29.com/"
 <div class="cert-groups">
 
   <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">👋</span>
+      <span class="cert-group__header-title">Welcome to the Personal Hub of Marco Grimaldi</span>
+    </div>
     <div class="cert-group__body">
       <div class="notice"><strong>🥜 In a nutshell:</strong> Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.</div>
       <p>Hey, I’m <strong>Marco Grimaldi</strong> — IT Consultant, Cloud Enthusiast, and Language Trainer.</p>
