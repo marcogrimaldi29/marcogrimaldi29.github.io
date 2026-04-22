@@ -324,42 +324,47 @@ Hereunder you can find more granular details about my **work experience**, **edu
 **ℹ️ Note:** The levels below are aligned with the descriptors of the **[Common European Framework of Reference for Languages (CEFR)](https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions)**.
 {: .notice--info}
 
-<div style="max-width: 600px;">
+<div class="cert-groups">
 
-<div style="margin-bottom: 0.75rem;">
-  <strong>Italian</strong>
-  <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
-    <div style="width:100%; background:#0077b6; height:100%;"></div>
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">🌍</span>
+      <span class="cert-group__header-title">Languages</span>
+      <span class="cert-group__header-count">4 languages</span>
+    </div>
+    <div class="cert-group__body">
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Italian</strong>
+        <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
+          <div style="width:100%; background:#0077b6; height:100%;"></div>
+        </div>
+        <small>Native</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>English</strong>
+        <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
+          <div style="width:95%; background:#0096c7; height:100%;"></div>
+        </div>
+        <small>C2</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Spanish</strong>
+        <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
+          <div style="width:95%; background:#0096c7; height:100%;"></div>
+        </div>
+        <small>C2</small>
+      </div>
+      <div>
+        <strong>German</strong>
+        <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
+          <div style="width:85%; background:#48cae4; height:100%;"></div>
+        </div>
+        <small>C1</small>
+      </div>
+    </div>
   </div>
-  <small>Native</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>English</strong>
-  <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
-    <div style="width:95%; background:#0096c7; height:100%;"></div>
-  </div>
-  <small>C2</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Spanish</strong>
-  <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
-    <div style="width:95%; background:#0096c7; height:100%;"></div>
-  </div>
-  <small>C2</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>German</strong>
-  <div style="background:#e0e0e0; border-radius:6px; overflow:hidden; height:12px; margin-top:4px;">
-    <div style="width:85%; background:#48cae4; height:100%;"></div>
-  </div>
-  <small>C1</small>
-</div>
 
 </div>
-
 
 ---
 
@@ -368,335 +373,342 @@ Hereunder you can find more granular details about my **work experience**, **edu
 **ℹ️ Note:** The levels below are self-assessed and are subject to change over time depending on my learning journey and professional experience.
 {: .notice--info}
 
-<div style="max-width: 600px;">
+<div class="cert-groups">
 
-<br>
-
-<strong>☁️ Cloud & Infrastructure</strong><br>
-
-<br>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Azure Infrastructure</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">☁️</span>
+      <span class="cert-group__header-title">Cloud & Infrastructure</span>
+      <span class="cert-group__header-count">10 skills</span>
+    </div>
+    <div class="cert-group__body">
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Azure Infrastructure</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Cloud (IaaS, PaaS, SaaS)</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Cloud Voice</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Entra ID (Azure AD)</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Google Environment</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Intune</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Microsoft 365 Environment</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Networking</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>SCCM</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+      <div>
+        <strong>Telephony</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+    </div>
   </div>
-  <small>Fluent</small>
-</div>
 
-<div style="margin-bottom: 0.75rem;">
-  <strong>Cloud (IaaS, PaaS, SaaS)</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">🤖</span>
+      <span class="cert-group__header-title">AI & Automation</span>
+      <span class="cert-group__header-count">7 skills</span>
+    </div>
+    <div class="cert-group__body">
+      <div style="margin-bottom: 0.75rem;">
+        <strong>AI</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>ChatGPT</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Copilot</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Power Platform</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>PowerShell</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Python</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+      <div>
+        <strong>Vibe Coding</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+    </div>
   </div>
-  <small>Advanced</small>
-</div>
 
-<div style="margin-bottom: 0.75rem;">
-  <strong>Cloud Voice</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">📊</span>
+      <span class="cert-group__header-title">Data & Analytics</span>
+      <span class="cert-group__header-count">2 skills</span>
+    </div>
+    <div class="cert-group__body">
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Power BI</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+      <div>
+        <strong>SQL</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+    </div>
   </div>
-  <small>Advanced</small>
-</div>
 
-<div style="margin-bottom: 0.75rem;">
-  <strong>Entra ID (Azure AD)</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">📡</span>
+      <span class="cert-group__header-title">Communication & Collaboration</span>
+      <span class="cert-group__header-count">4 skills</span>
+    </div>
+    <div class="cert-group__body">
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Exchange</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Teams</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Session Initiation Protocol (SIP)</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div>
+        <strong>Voice over IP (VoIP)</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+    </div>
   </div>
-  <small>Fluent</small>
-</div>
 
-<div style="margin-bottom: 0.75rem;">
-  <strong>Google Environment</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">🔐</span>
+      <span class="cert-group__header-title">Security & Identity</span>
+      <span class="cert-group__header-count">2 skills</span>
+    </div>
+    <div class="cert-group__body">
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Identity and Access Management (IAM)</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div>
+        <strong>MFA</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+    </div>
   </div>
-  <small>Advanced</small>
-</div>
 
-<div style="margin-bottom: 0.75rem;">
-  <strong>Intune</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">🛠️</span>
+      <span class="cert-group__header-title">IT Operations & Support</span>
+      <span class="cert-group__header-count">4 skills</span>
+    </div>
+    <div class="cert-group__body">
+      <div style="margin-bottom: 0.75rem;">
+        <strong>ITSM</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Service Desk</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>ServiceNow</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div>
+        <strong>Troubleshooting</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
+      </div>
+    </div>
   </div>
-  <small>Intermediate</small>
-</div>
 
-<div style="margin-bottom: 0.75rem;">
-  <strong>Microsoft 365 Environment</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:90%;background:#1b4332;height:100%;"></div>
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">💻</span>
+      <span class="cert-group__header-title">Development & Tools</span>
+      <span class="cert-group__header-count">5 skills</span>
+    </div>
+    <div class="cert-group__body">
+      <div style="margin-bottom: 0.75rem;">
+        <strong>GitHub</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>HTML & CSS</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>SAP</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:50%;background:#d8f3dc;height:100%;"></div>
+        </div>
+        <small>Basic</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Visual Studio Code</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:50%;background:#d8f3dc;height:100%;"></div>
+        </div>
+        <small>Basic</small>
+      </div>
+      <div>
+        <strong>Wireshark</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+    </div>
   </div>
-  <small>Fluent</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Networking</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>SCCM</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Telephony</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<br>
-
-<strong>🤖 AI & Automation</strong><br>
-
-<br>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>AI</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>ChatGPT</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:90%;background:#1b4332;height:100%;"></div>
-  </div>
-  <small>Fluent</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Copilot</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:90%;background:#1b4332;height:100%;"></div>
-  </div>
-  <small>Fluent</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Power Platform</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>PowerShell</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Python</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Vibe Coding</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<br>
-
-<strong>📊 Data & Analytics</strong><br>
-
-<br>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Power BI</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>SQL</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
-</div>
-
-<br>
-
-<strong>📡 Communication & Collaboration</strong><br><br>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Exchange</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Teams</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:90%;background:#1b4332;height:100%;"></div>
-  </div>
-  <small>Fluent</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Session Initiation Protocol (SIP)</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small><br>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Voice over IP (VoIP)</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<br>
-
-<strong>🔐 Security & Identity</strong><br>
-
-<br>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Identity and Access Management (IAM)</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>MFA</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<br>
-
-<strong>🛠 IT Operations & Support</strong><br>
-
-<br>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>ITSM</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Service Desk</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:90%;background:#1b4332;height:100%;"></div>
-  </div>
-  <small>Fluent</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>ServiceNow</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-  </div>
-  <small>Advanced</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Troubleshooting</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:90%;background:#1b4332;height:100%;"></div>
-  </div>
-  <small>Fluent</small>
-</div>
-
-<br>
-
-<strong>💻 Development & Tools</strong><br>
-
-<br>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>GitHub</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>HTML & CSS</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>SAP</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:50%;background:#d8f3dc;height:100%;"></div>
-  </div>
-  <small>Basic</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Visual Studio Code</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:50%;background:#d8f3dc;height:100%;"></div>
-  </div>
-  <small>Basic</small>
-</div>
-
-<div style="margin-bottom: 0.75rem;">
-  <strong>Wireshark</strong>
-  <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-    <div style="width:65%;background:#95d5b2;height:100%;"></div>
-  </div>
-  <small>Intermediate</small>
-</div>
 
 </div>
 
 ## 💡 Soft Skills
 
-<div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+<div class="cert-groups">
 
-<span style="background:rgba(94,84,142,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Adaptable</span>
-<span style="background:rgba(190,149,196,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Client-first mentality</span>
-<span style="background:rgba(159,134,192,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Detail-oriented</span>
-<span style="background:rgba(224,177,203,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Fast-paced learner</span>
-<span style="background:rgba(199,125,255,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Multitasker</span>
-<span style="background:rgba(123,44,191,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Organized</span>
-<span style="background:rgba(157,78,221,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Proactive</span>
-<span style="background:rgba(177,133,219,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Problem solver</span>
-<span style="background:rgba(208,189,244,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Team player</span>
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">💡</span>
+      <span class="cert-group__header-title">Soft Skills</span>
+      <span class="cert-group__header-count">9 skills</span>
+    </div>
+    <div class="cert-group__body">
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        <span style="background:rgba(94,84,142,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Adaptable</span>
+        <span style="background:rgba(190,149,196,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Client-first mentality</span>
+        <span style="background:rgba(159,134,192,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Detail-oriented</span>
+        <span style="background:rgba(224,177,203,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Fast-paced learner</span>
+        <span style="background:rgba(199,125,255,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Multitasker</span>
+        <span style="background:rgba(123,44,191,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Organized</span>
+        <span style="background:rgba(157,78,221,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Proactive</span>
+        <span style="background:rgba(177,133,219,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Problem solver</span>
+        <span style="background:rgba(208,189,244,0.7);color:#000;padding:4px 10px;border-radius:12px;font-size:0.85em;">Team player</span>
+      </div>
+    </div>
+  </div>
 
 </div>
 
