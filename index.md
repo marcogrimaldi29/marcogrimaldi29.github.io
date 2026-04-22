@@ -16,74 +16,71 @@ og_image: "/assets/images/logo-sunrise-domain.jpg"
 canonical_url: "https://marcogrimaldi29.com/"
 ---
 
-<!----------------->
-<!----- INTRO ----->
-<!----------------->
+<div class="cert-groups">
 
-**🥜 In a nutshell:** Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.
-{: .notice}
+  <div class="cert-group">
+    <div class="cert-group__body">
+      <div class="notice"><strong>🥜 In a nutshell:</strong> Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.</div>
+      <p>Hey, I’m <strong>Marco Grimaldi</strong> — IT Consultant, Cloud Enthusiast, and Language Trainer.</p>
+      <p>This site is my digital space to keep in touch, stay up-to-date, and share <strong>professional resources</strong>.</p>
+      <p>It’s meant to be both a <strong>personal</strong> and a <strong>learning hub</strong> — a place where I collect useful resources and share what I’ve been working on.</p>
+      <p>👷‍♂️🚧 <strong>Work in progress</strong> 🚧👷‍♂️ — fresh content on the way!</p>
+    </div>
+  </div>
 
-Hey, I’m **Marco Grimaldi** — IT Consultant, Cloud Enthusiast, and Language Trainer.  
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">🔗</span>
+      <span class="cert-group__header-title">Quick Links</span>
+    </div>
+    <div class="cert-group__body">
+      <div class="quicklink-grid" style="margin: 0;">
 
-This site is my digital space to keep in touch, stay up-to-date, and share **professional resources**.
+        <a href="/about/" class="quicklink-card">
+          <span class="quicklink-card__icon">🏗️</span>
+          <div><strong>About</strong><small>About me & this website</small></div>
+        </a>
 
-It’s meant to be both a **personal** and a **learning hub** — a place where I collect useful resources and share what I’ve been working on.
+        <a href="/cert-reviews/" class="quicklink-card">
+          <span class="quicklink-card__icon">🏅</span>
+          <div><strong>Cert Reviews</strong><small>My certification reviews and exam experiences</small></div>
+        </a>
 
-👷‍♂️🚧 **Work in progress** 🚧👷‍♂️ - fresh content on the way!
+        <a href="/contact/" class="quicklink-card">
+          <span class="quicklink-card__icon">📲</span>
+          <div><strong>Contact</strong><small>Let’s get in touch</small></div>
+        </a>
 
----
+        <a href="/cv/" class="quicklink-card">
+          <span class="quicklink-card__icon">📃</span>
+          <div><strong>CV</strong><small>My Curriculum Vitae</small></div>
+        </a>
 
-<!----------------->
-<!-- QUICK LINKS -->
-<!----------------->
+        <a href="https://www.linkedin.com/in/marco-grimaldi29/" class="quicklink-card">
+          <span class="quicklink-card__icon">💼</span>
+          <div><strong>LinkedIn</strong><small>Connect professionally</small></div>
+        </a>
 
-## 🔗 Quick Links
+        <a href="/privacy/" class="quicklink-card">
+          <span class="quicklink-card__icon">🕵🏼</span>
+          <div><strong>Privacy Notice</strong><small>GDPR-compliant & cookieless</small></div>
+        </a>
 
-<div class="quicklink-grid">
+        <a href="https://marcogrimaldi29.com/study-notes/" class="quicklink-card">
+          <span class="quicklink-card__icon">📘</span>
+          <div><strong>Study Notes</strong><small>My personal study notes for Microsoft certifications</small></div>
+        </a>
 
-  <a href="/about/" class="quicklink-card">
-    <span class="quicklink-card__icon">🏗️</span>
-    <div><strong>About</strong><small>About me & this website</small></div>
-  </a>
+        <a href="https://marcogrimaldi29.com/resources/" class="quicklink-card">
+          <span class="quicklink-card__icon">🧰</span>
+          <div><strong>Useful Resources</strong><small>Curated collections of various resources</small></div>
+        </a>
 
-  <a href="/cert-reviews/" class="quicklink-card">
-    <span class="quicklink-card__icon">🏅</span>
-    <div><strong>Cert Reviews</strong><small>My certification reviews and exam experiences</small></div>
-  </a>
+      </div>
+    </div>
+  </div>
 
-  <a href="/contact/" class="quicklink-card">
-    <span class="quicklink-card__icon">📲</span>
-    <div><strong>Contact</strong><small>Let's get in touch</small></div>
-  </a>
-
-  <a href="/cv/" class="quicklink-card">
-    <span class="quicklink-card__icon">📃</span>
-    <div><strong>CV</strong><small>My Curriculum Vitae</small></div>
-  </a>
-
-  <a href="https://www.linkedin.com/in/marco-grimaldi29/" class="quicklink-card">
-    <span class="quicklink-card__icon">💼</span>
-    <div><strong>LinkedIn</strong><small>Connect professionally</small></div>
-  </a>
-
-  <a href="/privacy/" class="quicklink-card">
-    <span class="quicklink-card__icon">🕵🏼</span>
-    <div><strong>Privacy Notice</strong><small>GDPR-compliant & cookieless</small></div>
-  </a>
-
-  <a href="https://marcogrimaldi29.com/study-notes/" class="quicklink-card">
-    <span class="quicklink-card__icon">📘</span>
-    <div><strong>Study Notes</strong><small>My personal study notes for Microsoft certifications</small></div>
-  </a>
-
-  <a href="https://marcogrimaldi29.com/resources/" class="quicklink-card">
-    <span class="quicklink-card__icon">🧰</span>
-    <div><strong>Useful Resources</strong><small>Curated collections of various resources</small></div>
-  </a>
-  
 </div>
-
----
 
 <!-- RESOURCE GRID
 
