@@ -26,9 +26,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">Cloud Resiliency Consultant</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">Concentrix</span>
-      <span class="cv-card__sep">·</span>
+
       <span>A Coruña (Remote)</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2025 – Present</span>
     </div>
     <ul>
@@ -46,9 +46,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">L2 Managed Services Engineer & Technical Knowledge Manager</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">NTT DATA</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Madrid (Remote)</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2023 – 2025</span>
     </div>
     <ul>
@@ -64,9 +64,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">App/Cloud Support Associate</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">Accenture Spain</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Seville (Remote)</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2021 – 2023</span>
     </div>
     <ul>
@@ -80,9 +80,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">German Teacher & Erasmus+ KA2 Project Contributor</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">Idiomas Carlos V</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Seville (On Site)</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2021</span>
     </div>
     <ul>
@@ -95,9 +95,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">Foreign Language Teacher</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">Studiamo Insieme</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Rome (Hybrid)</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2019 – 2021</span>
     </div>
     <ul>
@@ -110,9 +110,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">Front Desk Assistant, Erasmus+ Office</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">University of Rome "Tor Vergata"</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Rome (On Site)</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2016</span>
     </div>
     <ul>
@@ -125,9 +125,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">Audio Engineer & Musician</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">Freelance</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Rome (On Site)</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2010 – 2018</span>
     </div>
     <ul>
@@ -150,9 +150,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">Master’s Degree in Italian Literature, Modern Philology & Linguistics</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">University of Rome "Tor Vergata"</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Rome & Mainz</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2018 – 2022</span>
     </div>
     <ul>
@@ -165,9 +165,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">Master’s Degree in Teacher Training (MAES)</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">University Pablo de Olavide</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Seville</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2020 – 2021</span>
     </div>
     <ul>
@@ -179,9 +179,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">International Course of German Language and Culture</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">University of Heidelberg</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Heidelberg</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2018</span>
     </div>
     <ul>
@@ -193,9 +193,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">Bachelor’s Degree in Languages in the Information Society</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">University of Rome "Tor Vergata"</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Rome & Heidelberg</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2014 – 2018</span>
     </div>
     <ul>
@@ -210,9 +210,9 @@ Hereunder you can find more granular details about my **work experience**, **edu
     <div class="cv-card__role">Baccalaureate — Institute of Technology, Computer Science Specialization</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">I.T.I. Lattanzio</span>
-      <span class="cv-card__sep">·</span>
+
       <span>Rome</span>
-      <span class="cv-card__sep">·</span>
+
       <span>2005 – 2010</span>
     </div>
     <ul>

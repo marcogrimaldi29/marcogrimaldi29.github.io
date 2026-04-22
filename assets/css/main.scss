@@ -148,12 +148,14 @@
   margin: 1rem 0 1.5rem;
 }
 
+.cv-timeline > .cv-card:nth-child(odd)  { background: rgba(255,255,255,0.03); }
+.cv-timeline > .cv-card:nth-child(even) { background: rgba(255,255,255,0.07); }
+
 .cv-card {
   border: 1px solid rgba(255,255,255,0.1);
   border-left: 4px solid #1a73e8;
   border-radius: 0 8px 8px 0;
   padding: 1rem 1.25rem;
-  background: rgba(255,255,255,0.04);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 
   &:hover {
@@ -169,7 +171,8 @@
 
   &__company {
     font-weight: 600;
-    color: #7ab4f5;
+    background: rgba(26,115,232,0.25) !important;
+    color: #7ab4f5 !important;
   }
 
   &__meta {
@@ -177,12 +180,17 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 0.35rem;
-    font-size: 0.78rem;
-    color: #999;
     margin-bottom: 0.75rem;
-  }
 
-  &__sep { color: #555; }
+    span {
+      font-size: 0.72rem;
+      font-weight: 500;
+      background: rgba(255,255,255,0.08);
+      color: #bbb;
+      padding: 2px 8px;
+      border-radius: 20px;
+    }
+  }
 
   ul {
     margin: 0;
@@ -240,10 +248,9 @@
   }
 
   &__list {
-    padding: 0.7rem 1rem 0.8rem;
+    padding: 0.2rem 0 0.3rem;
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
   }
 
   &__item {
@@ -252,6 +259,10 @@
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
+    padding: 0.38rem 1rem;
+
+    &:nth-child(odd)  { background: transparent; }
+    &:nth-child(even) { background: rgba(255,255,255,0.05); }
 
     &::before {
       content: "🏅";
