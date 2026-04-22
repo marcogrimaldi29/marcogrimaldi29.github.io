@@ -63,7 +63,7 @@ Hereunder you can find more granular details about my **work experience**, **edu
   <div class="cv-card">
     <div class="cv-card__role">App/Cloud Support Associate</div>
     <div class="cv-card__meta">
-      <span class="cv-card__company">Accenture Spain</span>
+      <span class="cv-card__company">Accenture</span>
 
       <span>Seville (Remote)</span>
 
@@ -690,11 +690,6 @@ Hereunder you can find more granular details about my **work experience**, **edu
 <div class="cert-groups">
 
   <div class="cert-group">
-    <div class="cert-group__header">
-      <span class="cert-group__header-icon">💡</span>
-      <span class="cert-group__header-title">Soft Skills</span>
-      <span class="cert-group__header-count">9 skills</span>
-    </div>
     <div class="cert-group__body">
       <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
         <span style="background:rgba(94,84,142,0.7);color:#fff;padding:4px 10px;border-radius:12px;font-size:0.85em;">Adaptable</span>
