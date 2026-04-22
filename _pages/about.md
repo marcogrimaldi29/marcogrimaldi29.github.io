@@ -3,13 +3,16 @@ layout: single
 title: "🏗️ About"
 permalink: /about/
 classes: wide
+toc: false
 ---
-
-## 👨🏻‍💼 About Me
 
 <div class="cert-groups">
 
   <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">👨🏻‍💼</span>
+      <span class="cert-group__header-title">About Me</span>
+    </div>
     <div class="cert-group__body">
       <p>I’m <strong>Marco Grimaldi</strong>, a professional with a deep passion for <strong>technology</strong>, <strong>languages</strong>, and <strong>learning processes</strong>.</p>
       <p>My career bridges both the IT and linguistic fields, where I thrive on embracing new challenges, adapting to diverse contexts, and continuously expanding my knowledge.</p>
@@ -70,11 +73,13 @@ classes: wide
 
 ---
 
-## 🚧 About this Website
-
 <div class="cert-groups">
 
   <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">🚧</span>
+      <span class="cert-group__header-title">About this Website</span>
+    </div>
     <div class="cert-group__body">
       <p>This website is my effort to maintain an up-to-date digital presence for my personal brand.</p>
       <p>Its purpose is to connect with peers, share ideas, explore collaboration opportunities, and hopefully give something back from what I’ve learned so far in this journey.</p>
