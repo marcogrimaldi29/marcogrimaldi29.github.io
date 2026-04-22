@@ -1,6 +1,6 @@
 ---
 title: "📃 Curriculum Vitae"
-last_modified_at: 2026-03-12
+last_modified_at: 2026-04-22
 layout: single
 permalink: /cv/
 toc: true
@@ -18,82 +18,210 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 ---
 
-## 💼 Work Experience 
+## 💼 Work Experience
 
-* **Cloud Resiliency Consultant — Concentrix**    
-*A Coruña (Remote)* • *2025 – Present* 
-  - Lead advisory workshops to assist clients in building resilient cloud architectures.
-  - Advise on strategies to improve system reliability and availability.
-  - Develop and implement disaster recovery and business continuity plans.
-  - Conduct formal risk assessments to identify potential vulnerabilities.
-  - Design major incident response plans to mitigate and manage disruptions effectively.
-  - Collaborate with client teams to understand their architectural needs and provide tailored solutions.
-  - Educate clients on best practices for building resilient systems.
+<div class="cv-timeline">
 
-* **L2 Managed Services Engineer & Technical Knowledge Manager — NTT DATA**   
-*Madrid (Remote)* • *2023 – 2025*  
-  - Provide Level 2 technical support for Microsoft Teams, M365 and Azure environment, along with Cloud Voice infrastructure.  
-  - Troubleshoot complex issues related to Teams meetings, calling, integrations, network and cloud infrastructure, escalating to L3 or vendors when needed.  
-  - Monitor system health and performance, proactively identifying and addressing potential issues.  
-  - Collaborate with IT teams and vendors to implement changes or troubleshoot complex issues in Teams and Cloud Voice.  
-  - Manage knowledge base lifecycle: writing, reviewing and maintaining documentation, knowledge articles and troubleshooting guides.  
+  <div class="cv-card">
+    <div class="cv-card__role">Cloud Resiliency Consultant</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">Concentrix</span>
+      <span class="cv-card__sep">·</span>
+      <span>A Coruña (Remote)</span>
+      <span class="cv-card__sep">·</span>
+      <span>2025 – Present</span>
+    </div>
+    <ul>
+      <li>Lead advisory workshops to assist clients in building resilient cloud architectures.</li>
+      <li>Advise on strategies to improve system reliability and availability.</li>
+      <li>Develop and implement disaster recovery and business continuity plans.</li>
+      <li>Conduct formal risk assessments to identify potential vulnerabilities.</li>
+      <li>Design major incident response plans to mitigate and manage disruptions effectively.</li>
+      <li>Collaborate with client teams to understand their architectural needs and provide tailored solutions.</li>
+      <li>Educate clients on best practices for building resilient systems.</li>
+    </ul>
+  </div>
 
-* **App/Cloud Support Associate — Accenture Spain**  
-*Seville (Remote)* • *2021 – 2023*  
-  - Provide IT support in German, English, and Spanish via phone, email, and web.  
-  - Resolve incidents and service requests using ITSM tools following ITIL processes.  
-  - Skilled in Azure, Azure AD, Active Directory, Exchange, IaaS, Identity and Access Management, Intune, MFA, Microsoft 365, Networking, PaaS, PowerShell, SaaS, SAP, SCCM, Security & Compliance, Windows 10/11.
+  <div class="cv-card">
+    <div class="cv-card__role">L2 Managed Services Engineer & Technical Knowledge Manager</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">NTT DATA</span>
+      <span class="cv-card__sep">·</span>
+      <span>Madrid (Remote)</span>
+      <span class="cv-card__sep">·</span>
+      <span>2023 – 2025</span>
+    </div>
+    <ul>
+      <li>Provide Level 2 technical support for Microsoft Teams, M365 and Azure environment, along with Cloud Voice infrastructure.</li>
+      <li>Troubleshoot complex issues related to Teams meetings, calling, integrations, network and cloud infrastructure, escalating to L3 or vendors when needed.</li>
+      <li>Monitor system health and performance, proactively identifying and addressing potential issues.</li>
+      <li>Collaborate with IT teams and vendors to implement changes or troubleshoot complex issues in Teams and Cloud Voice.</li>
+      <li>Manage knowledge base lifecycle: writing, reviewing and maintaining documentation, knowledge articles and troubleshooting guides.</li>
+    </ul>
+  </div>
 
-* **German Teacher & Erasmus+ KA2 Project Contributor — Idiomas Carlos V**  
-*Seville (On Site)* • *2021*  
-  - Teach German for the Childcare Educator Program of the Lower Saxony Ministry of Labor.  
-  - Contribute to Erasmus+ KA2 project management.  
+  <div class="cv-card">
+    <div class="cv-card__role">App/Cloud Support Associate</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">Accenture Spain</span>
+      <span class="cv-card__sep">·</span>
+      <span>Seville (Remote)</span>
+      <span class="cv-card__sep">·</span>
+      <span>2021 – 2023</span>
+    </div>
+    <ul>
+      <li>Provide IT support in German, English, and Spanish via phone, email, and web.</li>
+      <li>Resolve incidents and service requests using ITSM tools following ITIL processes.</li>
+      <li>Skilled in Azure, Azure AD, Active Directory, Exchange, IaaS, Identity and Access Management, Intune, MFA, Microsoft 365, Networking, PaaS, PowerShell, SaaS, SAP, SCCM, Security & Compliance, Windows 10/11.</li>
+    </ul>
+  </div>
 
-* **Foreign Language Teacher — Studiamo Insieme**  
-*Rome (Hybrid)* • *2019 - 2021*  
-  - Teach and tutor in German, Italian, English, and Spanish in remote and on site settings.  
-  - Specialized in learners with Special Educational Needs.  
+  <div class="cv-card">
+    <div class="cv-card__role">German Teacher & Erasmus+ KA2 Project Contributor</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">Idiomas Carlos V</span>
+      <span class="cv-card__sep">·</span>
+      <span>Seville (On Site)</span>
+      <span class="cv-card__sep">·</span>
+      <span>2021</span>
+    </div>
+    <ul>
+      <li>Teach German for the Childcare Educator Program of the Lower Saxony Ministry of Labor.</li>
+      <li>Contribute to Erasmus+ KA2 project management.</li>
+    </ul>
+  </div>
 
-* **Front Desk Assistant, Erasmus+ Office — University of Rome "Tor Vergata"**  
-*Rome (On Site)* • *2016*  
-  - Support incoming and outgoing international students both online and in person.  
-  - Manage communication, applications and liaise with partner universities.  
+  <div class="cv-card">
+    <div class="cv-card__role">Foreign Language Teacher</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">Studiamo Insieme</span>
+      <span class="cv-card__sep">·</span>
+      <span>Rome (Hybrid)</span>
+      <span class="cv-card__sep">·</span>
+      <span>2019 – 2021</span>
+    </div>
+    <ul>
+      <li>Teach and tutor in German, Italian, English, and Spanish in remote and on site settings.</li>
+      <li>Specialized in learners with Special Educational Needs.</li>
+    </ul>
+  </div>
 
-* **Audio Engineer & Musician — Freelance**  
-*Rome (On Site)* • *2010 – 2018*  
-  - Prepare, organize and manage the technical and organizational aspects of musical live events from onset to completion.
-  - Perform artistic and multi-instrumental shows at entertainment events. 
-  - Record, mix and master audio tracks in studio settings.
+  <div class="cv-card">
+    <div class="cv-card__role">Front Desk Assistant, Erasmus+ Office</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">University of Rome "Tor Vergata"</span>
+      <span class="cv-card__sep">·</span>
+      <span>Rome (On Site)</span>
+      <span class="cv-card__sep">·</span>
+      <span>2016</span>
+    </div>
+    <ul>
+      <li>Support incoming and outgoing international students both online and in person.</li>
+      <li>Manage communication, applications and liaise with partner universities.</li>
+    </ul>
+  </div>
+
+  <div class="cv-card">
+    <div class="cv-card__role">Audio Engineer & Musician</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">Freelance</span>
+      <span class="cv-card__sep">·</span>
+      <span>Rome (On Site)</span>
+      <span class="cv-card__sep">·</span>
+      <span>2010 – 2018</span>
+    </div>
+    <ul>
+      <li>Prepare, organize and manage the technical and organizational aspects of musical live events from onset to completion.</li>
+      <li>Perform artistic and multi-instrumental shows at entertainment events.</li>
+      <li>Record, mix and master audio tracks in studio settings.</li>
+    </ul>
+  </div>
+
+</div>
 
 
 ---
 
 ## 🎓 Education
 
-* **Master’s Degree in Italian Literature, Modern Philology & Linguistics — University of Rome "Tor Vergata"**    
-*Rome & Mainz* • *2018 – 2022*  
-  - Final grade: 110/110 Summa Cum Laude.  
-  - 1-year Erasmus+ KA1 Exchange Program, University JGU Mainz (Germany).  
+<div class="cv-timeline">
 
-* **Master’s Degree in Teacher Training (MAES) — University Pablo de Olavide**  
-*Seville* • *2020 – 2021*  
-  - Internship at IES San Isidoro, Seville.  
+  <div class="cv-card cv-card--edu">
+    <div class="cv-card__role">Master’s Degree in Italian Literature, Modern Philology & Linguistics</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">University of Rome "Tor Vergata"</span>
+      <span class="cv-card__sep">·</span>
+      <span>Rome & Mainz</span>
+      <span class="cv-card__sep">·</span>
+      <span>2018 – 2022</span>
+    </div>
+    <ul>
+      <li>Final grade: 110/110 Summa Cum Laude.</li>
+      <li>1-year Erasmus+ KA1 Exchange Program, University JGU Mainz (Germany).</li>
+    </ul>
+  </div>
 
-* **International Course of German Language and Culture — University of Heidelberg**  
-*Heidelberg* • *2018*  
-  - Intensive 1-month C1-level summer course (CEFR) at the University of Heidelberg.
+  <div class="cv-card cv-card--edu">
+    <div class="cv-card__role">Master’s Degree in Teacher Training (MAES)</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">University Pablo de Olavide</span>
+      <span class="cv-card__sep">·</span>
+      <span>Seville</span>
+      <span class="cv-card__sep">·</span>
+      <span>2020 – 2021</span>
+    </div>
+    <ul>
+      <li>Internship at IES San Isidoro, Seville.</li>
+    </ul>
+  </div>
 
-* **Bachelor’s Degree in Languages in the Information Society — University of Rome "Tor Vergata"**  
-*Rome & Heidelberg* • *2014 – 2018*  
-  - Final grade: 110/110.  
-  - 1-year Erasmus+ KA1 Exchange Program, University of Heidelberg (Germany).  
-  - Student representative (academic year: 2016/2017, 2017/2018).  
-  - Programming languages and foreign languages: HTML, CSS, JavaScript, SQL, German, English, Spanish.  
+  <div class="cv-card cv-card--edu">
+    <div class="cv-card__role">International Course of German Language and Culture</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">University of Heidelberg</span>
+      <span class="cv-card__sep">·</span>
+      <span>Heidelberg</span>
+      <span class="cv-card__sep">·</span>
+      <span>2018</span>
+    </div>
+    <ul>
+      <li>Intensive 1-month C1-level summer course (CEFR) at the University of Heidelberg.</li>
+    </ul>
+  </div>
 
-* **Baccalaureate in Institute of Technology, Computer Science Specialization - I.T.I. Lattanzio**  
-*Rome* • *2005 - 2010*
-  - Programming languages: C++; Java; HTML; PHP
-  - Specialization topics: IT infrastructure; System administration (Windows & Linux); Networking; Cybersecurity; Hardware & Software; Electronics
+  <div class="cv-card cv-card--edu">
+    <div class="cv-card__role">Bachelor’s Degree in Languages in the Information Society</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">University of Rome "Tor Vergata"</span>
+      <span class="cv-card__sep">·</span>
+      <span>Rome & Heidelberg</span>
+      <span class="cv-card__sep">·</span>
+      <span>2014 – 2018</span>
+    </div>
+    <ul>
+      <li>Final grade: 110/110.</li>
+      <li>1-year Erasmus+ KA1 Exchange Program, University of Heidelberg (Germany).</li>
+      <li>Student representative (academic year: 2016/2017, 2017/2018).</li>
+      <li>Programming languages and foreign languages: HTML, CSS, JavaScript, SQL, German, English, Spanish.</li>
+    </ul>
+  </div>
+
+  <div class="cv-card cv-card--edu">
+    <div class="cv-card__role">Baccalaureate — Institute of Technology, Computer Science Specialization</div>
+    <div class="cv-card__meta">
+      <span class="cv-card__company">I.T.I. Lattanzio</span>
+      <span class="cv-card__sep">·</span>
+      <span>Rome</span>
+      <span class="cv-card__sep">·</span>
+      <span>2005 – 2010</span>
+    </div>
+    <ul>
+      <li>Programming languages: C++, Java, HTML, PHP.</li>
+      <li>Specialization topics: IT infrastructure; System administration (Windows & Linux); Networking; Cybersecurity; Hardware & Software; Electronics.</li>
+    </ul>
+  </div>
+
+</div>
 
 
 ---
@@ -103,50 +231,90 @@ Hereunder you can find more granular details about my **work experience**, **edu
 **ℹ️ Note:** The certifications are grouped by vendor (Microsoft, Google) and area of expertise (Voice & Network, Languages). The links below point to the **official verification pages** of the corresponding certificates.
 {: .notice--info}
 
-* **Microsoft Certifications**
-  - [AZ-305 – Microsoft Certified: Azure Solutions Architect Expert (2026)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3A7124C273B93B9A?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [MS-721 – Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/87F3712A1939D1EB?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [AI-102 – Microsoft Certified: Azure AI Engineer Associate (2024)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ED8D5449484E0E49?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [AZ-104 – Microsoft Certified: Azure Administrator Associate (2023)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/22FAAC5CE067B849?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [MS-700 – Microsoft 365 Certified: Teams Administrator Associate (2023)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ACD012742AAC1C77?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [MS-900 – Microsoft 365 Certified: Fundamentals (2023)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/74BA22913AF0D37C?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [DP-900 – Microsoft Certified: Azure Data Fundamentals (2023)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/96F556DAB850B8CE?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [AI-900 – Microsoft Certified: Azure AI Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/1CDBB6A39F288836?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [AZ-900 – Microsoft Certified: Azure Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/5F20CC63EF49A780?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [PL-900 – Microsoft Certified: Power Platform Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/589C8B87C28BCDF4?sharingId=910D3083CD18E3A4){:target="_blank"} 
-  - [SC-900 – Microsoft Certified: Security, Compliance & Identity Fundamentals (2022)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3AC5BFB19E06BE2A?sharingId=910D3083CD18E3A4){:target="_blank"} 
+<div class="cert-groups">
 
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">🪟</span>
+      <span class="cert-group__header-title">Microsoft Certifications</span>
+      <span class="cert-group__header-count">11 certs</span>
+    </div>
+    <div class="cert-group__list">
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3A7124C273B93B9A?sharingId=910D3083CD18E3A4" target="_blank">AZ-305 – Microsoft Certified: Azure Solutions Architect Expert (2026)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/87F3712A1939D1EB?sharingId=910D3083CD18E3A4" target="_blank">MS-721 – Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate (2024)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ED8D5449484E0E49?sharingId=910D3083CD18E3A4" target="_blank">AI-102 – Microsoft Certified: Azure AI Engineer Associate (2024)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/22FAAC5CE067B849?sharingId=910D3083CD18E3A4" target="_blank">AZ-104 – Microsoft Certified: Azure Administrator Associate (2023)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ACD012742AAC1C77?sharingId=910D3083CD18E3A4" target="_blank">MS-700 – Microsoft 365 Certified: Teams Administrator Associate (2023)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/74BA22913AF0D37C?sharingId=910D3083CD18E3A4" target="_blank">MS-900 – Microsoft 365 Certified: Fundamentals (2023)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/96F556DAB850B8CE?sharingId=910D3083CD18E3A4" target="_blank">DP-900 – Microsoft Certified: Azure Data Fundamentals (2023)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/1CDBB6A39F288836?sharingId=910D3083CD18E3A4" target="_blank">AI-900 – Microsoft Certified: Azure AI Fundamentals (2022)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/5F20CC63EF49A780?sharingId=910D3083CD18E3A4" target="_blank">AZ-900 – Microsoft Certified: Azure Fundamentals (2022)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/589C8B87C28BCDF4?sharingId=910D3083CD18E3A4" target="_blank">PL-900 – Microsoft Certified: Power Platform Fundamentals (2022)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3AC5BFB19E06BE2A?sharingId=910D3083CD18E3A4" target="_blank">SC-900 – Microsoft Certified: Security, Compliance & Identity Fundamentals (2022)</a></div>
+    </div>
+  </div>
 
-* **Microsoft Applied Skills**
-  - [Microsoft Applied Skills: Get started with Azure management tasks (2026)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ED7684D7E86D2EEC?sharingId=910D3083CD18E3A4){:target="_blank"}
-  - [Microsoft Applied Skills: Deploy cloud-native apps using Azure Container Apps (2026)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/334B98F06ECE2E39?sharingId=910D3083CD18E3A4){:target="_blank"}
-  - [Microsoft Applied Skills: Defend against cyberthreats with Microsoft Defender XDR (2026)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/37681EA077397999?sharingId=910D3083CD18E3A4){:target="_blank"}
-  - [Microsoft Applied Skills: Migrate SQL Server workloads to Azure SQL Database (2026)](https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/A6956A066FE7A131?sharingId=910D3083CD18E3A4){:target="_blank"}
-  - [Microsoft Applied Skills: Secure storage for Azure Files and Azure Blob Storage (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/43A169C60BF93CE2?sharingId=910D3083CD18E3A4){:target="_blank"}
-  - [Microsoft Applied Skills: Configure secure access to your workloads using Azure networking (2025)](https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/2D626F59872CEE72?sharingId=910D3083CD18E3A4){:target="_blank"}
-  - [Microsoft Applied Skills: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/E584DFFBBF564647?sharingId=910D3083CD18E3A4){:target="_blank"}
-  - [Microsoft Applied Skills: Get started with identities and access using Microsoft Entra (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/4D6B11F896F57408?sharingId=910D3083CD18E3A4){:target="_blank"}
-  - [Microsoft Applied Skills: Deploy and configure Azure Monitor (2025)](https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/B1A48535B1D53364?sharingId=910D3083CD18E3A4){:target="_blank"}
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">⚙️</span>
+      <span class="cert-group__header-title">Microsoft Applied Skills</span>
+      <span class="cert-group__header-count">9 certs</span>
+    </div>
+    <div class="cert-group__list">
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ED7684D7E86D2EEC?sharingId=910D3083CD18E3A4" target="_blank">Get started with Azure management tasks (2026)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/334B98F06ECE2E39?sharingId=910D3083CD18E3A4" target="_blank">Deploy cloud-native apps using Azure Container Apps (2026)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/37681EA077397999?sharingId=910D3083CD18E3A4" target="_blank">Defend against cyberthreats with Microsoft Defender XDR (2026)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/A6956A066FE7A131?sharingId=910D3083CD18E3A4" target="_blank">Migrate SQL Server workloads to Azure SQL Database (2026)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/43A169C60BF93CE2?sharingId=910D3083CD18E3A4" target="_blank">Secure storage for Azure Files and Azure Blob Storage (2025)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-gb/MarcoGrimaldi-0029/2D626F59872CEE72?sharingId=910D3083CD18E3A4" target="_blank">Configure secure access to your workloads using Azure networking (2025)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/E584DFFBBF564647?sharingId=910D3083CD18E3A4" target="_blank">Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview (2025)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/4D6B11F896F57408?sharingId=910D3083CD18E3A4" target="_blank">Get started with identities and access using Microsoft Entra (2025)</a></div>
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/B1A48535B1D53364?sharingId=910D3083CD18E3A4" target="_blank">Deploy and configure Azure Monitor (2025)</a></div>
+    </div>
+  </div>
 
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">🌐</span>
+      <span class="cert-group__header-title">Google Professional Certificates</span>
+      <span class="cert-group__header-count">5 certs</span>
+    </div>
+    <div class="cert-group__list">
+      <div class="cert-group__item"><a href="https://www.coursera.org/account/accomplishments/specialization/IJR8VBC9PFIK" target="_blank">Cybersecurity Specialization (2024)</a></div>
+      <div class="cert-group__item"><a href="https://www.coursera.org/account/accomplishments/professional-cert/4YCD4YBD73HB" target="_blank">Automation with Python (2021)</a></div>
+      <div class="cert-group__item"><a href="https://www.coursera.org/account/accomplishments/professional-cert/WWP79TZL8WRX" target="_blank">Data Analytics (2021)</a></div>
+      <div class="cert-group__item"><a href="https://www.coursera.org/account/accomplishments/professional-cert/RJ856W9X3F9R" target="_blank">Project Management (2021)</a></div>
+      <div class="cert-group__item"><a href="https://www.coursera.org/account/accomplishments/professional-cert/NCLR33CHTFKV" target="_blank">IT Support (2021)</a></div>
+    </div>
+  </div>
 
-* **Google Professional Certificates**  
-  - [Cybersecurity Specialization (2024)](https://www.coursera.org/account/accomplishments/specialization/IJR8VBC9PFIK){:target="_blank"} 
-  - [Automation with Python (2021)](https://www.coursera.org/account/accomplishments/professional-cert/4YCD4YBD73HB){:target="_blank"} 
-  - [Data Analytics (2021)](https://www.coursera.org/account/accomplishments/professional-cert/WWP79TZL8WRX){:target="_blank"} 
-  - [Project Management (2021)](https://www.coursera.org/account/accomplishments/professional-cert/RJ856W9X3F9R){:target="_blank"} 
-  - [IT Support (2021)](https://www.coursera.org/account/accomplishments/professional-cert/NCLR33CHTFKV){:target="_blank"} 
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">📡</span>
+      <span class="cert-group__header-title">Voice & Network Certifications</span>
+      <span class="cert-group__header-count">1 cert</span>
+    </div>
+    <div class="cert-group__list">
+      <div class="cert-group__item">SSCA® "Elite" SIP Training — SIP School (2025)</div>
+    </div>
+  </div>
 
+  <div class="cert-group">
+    <div class="cert-group__header">
+      <span class="cert-group__header-icon">🗣️</span>
+      <span class="cert-group__header-title">Language Certifications</span>
+      <span class="cert-group__header-count">5 certs</span>
+    </div>
+    <div class="cert-group__list">
+      <div class="cert-group__item">EOI Español para Extranjeros C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)</div>
+      <div class="cert-group__item">EOI English C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)</div>
+      <div class="cert-group__item">EOI English C1 — Escuela Oficial de Idiomas, Gobierno de Canarias (2024)</div>
+      <div class="cert-group__item">Goethe-Zertifikat C1 (German) — Goethe Institut (2020)</div>
+      <div class="cert-group__item">DELE C1 (Spanish) — Instituto Cervantes (2018)</div>
+    </div>
+  </div>
 
-* **Voice & Network Certifications**
-  - SSCA® "Elite" SIP Training — SIP School (2025)
-
-
-* **Language Certifications**
-  - EOI Español para Extranjeros C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
-  - EOI English C2 — Escuela Oficial de Idiomas, Gobierno de Canarias (2025)  
-  - EOI English C1 — Escuela Oficial de Idiomas, Gobierno de Canarias (2024)  
-  - Goethe-Zertifikat C1 (German) — Goethe Institut (2020)  
-  - DELE C1 (Spanish) — Instituto Cervantes (2018)
+</div>
 
 
 ---
