@@ -52,6 +52,7 @@ author_profile: true
   </div>
 
   <div class="cert-group">
+    <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">📘 Study Notes</h2>
     <div class="cert-group__header">
       <span class="cert-group__header-icon">📘</span>
       <span class="cert-group__header-title">Study Notes</span>
@@ -164,6 +165,7 @@ author_profile: true
   </div>
 
   <div class="cert-group">
+    <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">🥽 Deep Dives</h2>
     <div class="cert-group__header">
       <span class="cert-group__header-icon">🥽</span>
       <span class="cert-group__header-title">Deep Dives</span>
@@ -232,6 +234,7 @@ author_profile: true
   </div>
 
   <div class="cert-group">
+    <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">🗃️ Changelog</h2>
     <div class="cert-group__header">
       <span class="cert-group__header-icon">🗃️</span>
       <span class="cert-group__header-title">Changelog</span>
