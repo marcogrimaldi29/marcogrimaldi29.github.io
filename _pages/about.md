@@ -2,26 +2,24 @@
 layout: single
 title: "🏗️ About"
 permalink: /about/
-toc: true
-toc_sticky: true
-toc_label: "🏗️ About"
+classes: wide
 ---
 
 ## 👨🏻‍💼 About Me
 
-I’m **Marco Grimaldi**, a professional with a deep passion for **technology**, **languages**, and **learning processes**.
-
-My career bridges both the IT and linguistic fields, where I thrive on embracing new challenges, adapting to diverse contexts, and continuously expanding my knowledge.
-
-If you’d like to collaborate, share ideas, or explore common projects, feel free to [get in touch](/contact/).
-
-📍 Based in **Gran Canaria**, **Spain**, I connect with both local and international communities:
-
-<div class="iframe-container">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451094.0934524308!2d-15.926099052522252!3d27.95799965633496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40855504bf07c1%3A0x2ec916c8a5acdb16!2sGran%20Canaria!5e0!3m2!1sen!2ses!4v1760204137367!5m2!1sen!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-
 <div class="cert-groups">
+
+  <div class="cert-group">
+    <div class="cert-group__body">
+      <p>I’m <strong>Marco Grimaldi</strong>, a professional with a deep passion for <strong>technology</strong>, <strong>languages</strong>, and <strong>learning processes</strong>.</p>
+      <p>My career bridges both the IT and linguistic fields, where I thrive on embracing new challenges, adapting to diverse contexts, and continuously expanding my knowledge.</p>
+      <p>If you’d like to collaborate, share ideas, or explore common projects, feel free to <a href="/contact/">get in touch</a>.</p>
+      <p>📍 Based in <strong>Gran Canaria</strong>, <strong>Spain</strong>, I connect with both local and international communities:</p>
+      <div class="iframe-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451094.0934524308!2d-15.926099052522252!3d27.95799965633496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40855504bf07c1%3A0x2ec916c8a5acdb16!2sGran%20Canaria!5e0!3m2!1sen!2ses!4v1760204137367!5m2!1sen!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
 
   <div class="cert-group">
     <div class="cert-group__header">
@@ -74,14 +72,12 @@ If you’d like to collaborate, share ideas, or explore common projects, feel fr
 
 ## 🚧 About this Website
 
-This website is my effort to maintain an up-to-date digital presence for my personal brand.
-
-Its purpose is to connect with peers, share ideas, explore collaboration opportunities, and hopefully give something back from what I’ve learned so far in this journey.
-
 <div class="cert-groups">
 
   <div class="cert-group">
     <div class="cert-group__body">
+      <p>This website is my effort to maintain an up-to-date digital presence for my personal brand.</p>
+      <p>Its purpose is to connect with peers, share ideas, explore collaboration opportunities, and hopefully give something back from what I’ve learned so far in this journey.</p>
       <p>It’s an ongoing exercise to:</p>
       <ul>
         <li>keep writing about the things I love — technology, languages, lifelong learning, and some of my passions too</li>
