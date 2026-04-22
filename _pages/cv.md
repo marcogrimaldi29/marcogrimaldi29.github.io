@@ -8,13 +8,14 @@ toc_sticky: true
 toc_label: "📃 CV"
 ---
 
-Hereunder you can find more granular details about my **work experience**, **education**, **skills**, **certifications**, and **languages**: 
-
-{:toc}
-
----
-
-👉 [Request PDF version](https://drive.google.com/file/d/12Q73GgucdX0YmrHlmiMYTy3JRZQG81hw/view?usp=drivesdk){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
+<div class="cert-groups">
+  <div class="cert-group">
+    <div class="cert-group__body">
+      <p>Hereunder you can find more granular details about my <strong>work experience</strong>, <strong>education</strong>, <strong>skills</strong>, <strong>certifications</strong>, and <strong>languages</strong>.</p>
+      <a href="https://drive.google.com/file/d/12Q73GgucdX0YmrHlmiMYTy3JRZQG81hw/view?usp=drivesdk" class="btn btn--primary" target="_blank">👉 Request PDF version</a>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -707,9 +708,3 @@ Hereunder you can find more granular details about my **work experience**, **edu
 
 </div>
 
-
----
-
-👉 [Request PDF version](https://drive.google.com/file/d/12Q73GgucdX0YmrHlmiMYTy3JRZQG81hw/view?usp=drivesdk){: .btn .btn--primary download="Marco_Grimaldi_CV.pdf"}
-
----
