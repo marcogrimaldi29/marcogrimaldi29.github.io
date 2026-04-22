@@ -247,6 +247,12 @@
     }
   }
 
+  h2#{&}__header,
+  h3#{&}__header {
+    margin: 0;
+    font-size: 1rem;
+  }
+
   &__body {
     padding: 0.85rem 1rem 0.9rem;
 

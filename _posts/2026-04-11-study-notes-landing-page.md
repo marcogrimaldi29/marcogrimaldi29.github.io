@@ -52,11 +52,10 @@ author_profile: true
   </div>
 
   <div class="cert-group">
-    <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">📘 Study Notes</h2>
-    <div class="cert-group__header">
+    <h2 class="cert-group__header">
       <span class="cert-group__header-icon">📘</span>
       <span class="cert-group__header-title">Study Notes</span>
-    </div>
+    </h2>
     <div class="cert-group__body">
       <div class="resource-grid" style="margin: 0;">
 
@@ -165,11 +164,10 @@ author_profile: true
   </div>
 
   <div class="cert-group">
-    <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">🥽 Deep Dives</h2>
-    <div class="cert-group__header">
+    <h2 class="cert-group__header">
       <span class="cert-group__header-icon">🥽</span>
       <span class="cert-group__header-title">Deep Dives</span>
-    </div>
+    </h2>
     <div class="cert-group__body">
       <div class="resource-grid" style="margin: 0;">
 
@@ -234,11 +232,10 @@ author_profile: true
   </div>
 
   <div class="cert-group">
-    <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">🗃️ Changelog</h2>
-    <div class="cert-group__header">
+    <h2 class="cert-group__header">
       <span class="cert-group__header-icon">🗃️</span>
       <span class="cert-group__header-title">Changelog</span>
-    </div>
+    </h2>
     <div class="cert-group__body">
       <ul>
         <li><strong>2026-04-22:</strong> Page layout updated — intro, Study Notes, Deep Dives, and Changelog wrapped in consistent cert-group containers.</li>
