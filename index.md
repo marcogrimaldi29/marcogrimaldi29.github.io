@@ -24,11 +24,11 @@ canonical_url: "https://marcogrimaldi29.com/"
       <span class="cert-group__header-title">Welcome to the Personal Hub of Marco Grimaldi</span>
     </div>
     <div class="cert-group__body">
-      <div class="notice"><strong>🥜 In a nutshell:</strong> Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.</div>
       <p>Hey, I’m <strong>Marco Grimaldi</strong> — IT Consultant, Cloud Enthusiast, and Language Trainer.</p>
       <p>This site is my digital space to keep in touch, stay up-to-date, and share <strong>professional resources</strong>.</p>
       <p>It’s meant to be both a <strong>personal</strong> and a <strong>learning hub</strong> — a place where I collect useful resources and share what I’ve been working on.</p>
       <p>👷‍♂️🚧 <strong>Work in progress</strong> 🚧👷‍♂️ — fresh content on the way!</p>
+      <div class="notice"><strong>🥜 In a nutshell:</strong> Sparked by curiosity, fueled by challenges, and adaptable enough to keep trying to debug life, even if the patch notes never end.</div>
     </div>
   </div>
 
