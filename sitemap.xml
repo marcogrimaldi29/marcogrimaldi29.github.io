@@ -59,4 +59,9 @@
   <sitemap>
     <loc>https://marcogrimaldi29.com/itil-4-foundation/sitemap.xml</loc>
   </sitemap>
+
+  <!-- Sub-repo: Engage Center Notes -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/engage-center-notes/sitemap.xml</loc>
+  </sitemap>
 </sitemapindex>
