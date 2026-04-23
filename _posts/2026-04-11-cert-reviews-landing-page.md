@@ -40,10 +40,11 @@ author_profile: true
       <p>🗒️ On this landing page, you'll find a list of useful certification reviews. Click on the corresponding link on each certification to be redirected.</p>
       <p>✨ The certification reviews have been created with the help of AI tools, GitHub Pages, together with personal experiences taken while studying and taking the exams, and lots and lots of bookmarks!</p>
       <p>☁️ The below list will continue to grow as I take more certifications. Should you be on a certification journey on your own, I hope you find these reviews useful and may they help you in your learning path! Feel free to reach out if you have any questions or suggestions for improvement. Happy studying!</p>
-      <div class="notice--info notice"><strong>ℹ️ Heads-up:</strong> For other certification-related materials and insights, take a look at the "📘 Study Notes" articles too.</div>
     </div>
   </div>
 </div>
+
+<div class="notice--info notice"><strong>ℹ️ Heads-up:</strong> For other certification-related materials and insights, take a look at the "📘 Study Notes" articles too.</div>
 
 ## 🔤 Google
 
