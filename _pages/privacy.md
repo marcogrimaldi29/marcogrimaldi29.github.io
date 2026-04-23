@@ -7,7 +7,7 @@ author_profile: true
 toc: false
 ---
 
-<div class="notice--info notice"><strong>🕵🏼‍♂️ Privacy Notice:</strong> Your privacy matters. This page explains what information is (and isn't) collected when you visit this website.</div>
+<div class="notice--info notice">Your privacy matters. This page explains what information is (and isn't) collected when you visit this website.</div>
 
 <div class="cert-groups">
 
