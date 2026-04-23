@@ -1,7 +1,7 @@
 ---
 title: "🛬 Landing Page: Study Notes"
 date: 2026-02-27
-last_modified_at: 2026-04-22
+last_modified_at: 2026-04-23
 categories:
   - Study Notes
 tags:
@@ -41,7 +41,6 @@ author_profile: true
 ---
 
 <div class="cert-groups">
-
   <div class="cert-group">
     <div class="cert-group__body">
       <p>🗒️ On this landing page, you'll find a list of useful study notes for various certifications. Click on the corresponding link on each certification to be redirected.</p>
@@ -50,194 +49,185 @@ author_profile: true
       <div class="notice--info notice"><strong>ℹ️ Heads-up:</strong> For other certification-related materials and insights, take a look at the "🏅 Cert Review" articles too.</div>
     </div>
   </div>
+</div>
 
-  <div class="cert-group">
-    <h2 class="cert-group__header">
-      <span class="cert-group__header-icon">📘</span>
-      <span class="cert-group__header-title">Study Notes</span>
-    </h2>
-    <div class="cert-group__body">
-      <div class="resource-grid" style="margin: 0;">
+## 📘 Study Notes
 
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">📘</span>
-            <span class="resource-card__tag certification">Study Notes</span>
-          </div>
-          <h4 class="resource-card__title">DP-700 Study Notes</h4>
-          <p class="resource-card__desc">Fabric Data Engineer Associate — exam prep notes covering all domains and topics contained in the DP-700 exam.</p>
-          <div class="resource-card__meta">
-            <span>🛡️ Associate Level</span>
-            <span>📄 3 Skills</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/dp-700-study-notes/" class="resource-card__btn">View Notes →</a>
-        </div>
+<div class="resource-grid">
 
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">📘</span>
-            <span class="resource-card__tag certification">Study Notes</span>
-          </div>
-          <h4 class="resource-card__title">DP-600 Study Notes</h4>
-          <p class="resource-card__desc">Fabric Analytics Engineer Associate — exam prep notes covering all domains and topics contained in the DP-600 exam.</p>
-          <div class="resource-card__meta">
-            <span>🛡️ Associate Level</span>
-            <span>📄 3 Skills</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/dp-600-study-notes/" class="resource-card__btn">View Notes →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">📘</span>
-            <span class="resource-card__tag certification">Study Notes</span>
-          </div>
-          <h4 class="resource-card__title">ITIL v4 Foundation Study Notes</h4>
-          <p class="resource-card__desc">ITIL v4 Foundation — exam prep notes covering all domains and topics contained in the ITIL v4 Foundation exam.</p>
-          <div class="resource-card__meta">
-            <span>🔤 Foundation Level</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/itil-4-foundation/" class="resource-card__btn">View Notes →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">📘</span>
-            <span class="resource-card__tag certification">Study Notes</span>
-          </div>
-          <h4 class="resource-card__title">AZ-400 Study Notes</h4>
-          <p class="resource-card__desc">Microsoft Azure DevOps Engineer Expert — exam prep notes covering all domains and topics contained in the AZ-400 exam.</p>
-          <div class="resource-card__meta">
-            <span>🏆 Expert Level</span>
-            <span>📄 5 Skills</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/az-400-study-notes/" class="resource-card__btn">View Notes →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">📘</span>
-            <span class="resource-card__tag certification">Study Notes</span>
-          </div>
-          <h4 class="resource-card__title">AZ-305 Study Notes</h4>
-          <p class="resource-card__desc">Microsoft Azure Solutions Architect Expert — exam prep notes covering all domains and topics contained in the AZ-305 exam.</p>
-          <div class="resource-card__meta">
-            <span>🏆 Expert Level</span>
-            <span>📄 4 Skills</span>
-            <span>✅ Complete</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">📘</span>
-            <span class="resource-card__tag certification">Study Notes</span>
-          </div>
-          <h4 class="resource-card__title">AZ-500 Study Notes</h4>
-          <p class="resource-card__desc">Microsoft Azure Security Engineer Associate — exam prep notes covering all domains and topics contained in the AZ-500 exam.</p>
-          <div class="resource-card__meta">
-            <span>🛡️ Associate Level</span>
-            <span>📄 4 Skills</span>
-            <span>🚧 Retiring</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/az-500-study-notes/" class="resource-card__btn">View Notes →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">📘</span>
-            <span class="resource-card__tag certification">Study Notes</span>
-          </div>
-          <h4 class="resource-card__title">AZ-104 Study Notes</h4>
-          <p class="resource-card__desc">Microsoft Azure Administrator Associate — exam prep notes covering all domains and topics contained in the AZ-104 exam.</p>
-          <div class="resource-card__meta">
-            <span>🛡️ Associate Level</span>
-            <span>📄 5 Skills</span>
-            <span>✅ Complete</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/az-104-study-notes/" class="resource-card__btn">View Notes →</a>
-        </div>
-
-      </div>
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
     </div>
+    <h4 class="resource-card__title">DP-700 Study Notes</h4>
+    <p class="resource-card__desc">Fabric Data Engineer Associate — exam prep notes covering all domains and topics contained in the DP-700 exam.</p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 3 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/dp-700-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
 
-  <div class="cert-group">
-    <h2 class="cert-group__header">
-      <span class="cert-group__header-icon">🥽</span>
-      <span class="cert-group__header-title">Deep Dives</span>
-    </h2>
-    <div class="cert-group__body">
-      <div class="resource-grid" style="margin: 0;">
-
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">🥽</span>
-            <span class="resource-card__tag certification">Deep Dive</span>
-          </div>
-          <h4 class="resource-card__title">AZ-305: Migration, HA & BCDR — Deep Dive</h4>
-          <p class="resource-card__desc">Deep dive into Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services.</p>
-          <div class="resource-card__meta">
-            <span>🌋 BCDR</span>
-            <span>🤿 Deep Dive</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/az-305-bcdr/" class="resource-card__btn">Deep Dive →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">🥽</span>
-            <span class="resource-card__tag certification">Deep Dive</span>
-          </div>
-          <h4 class="resource-card__title">AZ-305: Compute Services — Deep Dive</h4>
-          <p class="resource-card__desc">Deep dive into Azure Compute Services, covering Azure VMs and VMSS, Azure App Service, Serverless and Containers.</p>
-          <div class="resource-card__meta">
-            <span>🖥️ Compute</span>
-            <span>🤿 Deep Dive</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/az-305-compute/" class="resource-card__btn">Deep Dive →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">🥽</span>
-            <span class="resource-card__tag certification">Deep Dive</span>
-          </div>
-          <h4 class="resource-card__title">AZ-305: Data & Analytics Services — Deep Dive</h4>
-          <p class="resource-card__desc">Deep dive into Azure Data Analytics, covering Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Data Lake Storage.</p>
-          <div class="resource-card__meta">
-            <span>📈 Data Analytics</span>
-            <span>🤿 Deep Dive</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/az-305-data-analytics/" class="resource-card__btn">Deep Dive →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-card__header">
-            <span class="resource-card__icon">🥽</span>
-            <span class="resource-card__tag certification">Deep Dive</span>
-          </div>
-          <h4 class="resource-card__title">AZ-305: Azure Messaging Services — Deep Dive</h4>
-          <p class="resource-card__desc">Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage.</p>
-          <div class="resource-card__meta">
-            <span>📨 Messaging</span>
-            <span>🤿 Deep Dive</span>
-          </div>
-          <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
-        </div>
-
-      </div>
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
     </div>
+    <h4 class="resource-card__title">DP-600 Study Notes</h4>
+    <p class="resource-card__desc">Fabric Analytics Engineer Associate — exam prep notes covering all domains and topics contained in the DP-600 exam.</p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 3 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/dp-600-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
 
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">ITIL v4 Foundation Study Notes</h4>
+    <p class="resource-card__desc">ITIL v4 Foundation — exam prep notes covering all domains and topics contained in the ITIL v4 Foundation exam.</p>
+    <div class="resource-card__meta">
+      <span>🔤 Foundation Level</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/itil-4-foundation/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">AZ-400 Study Notes</h4>
+    <p class="resource-card__desc">Microsoft Azure DevOps Engineer Expert — exam prep notes covering all domains and topics contained in the AZ-400 exam.</p>
+    <div class="resource-card__meta">
+      <span>🏆 Expert Level</span>
+      <span>📄 5 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-400-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305 Study Notes</h4>
+    <p class="resource-card__desc">Microsoft Azure Solutions Architect Expert — exam prep notes covering all domains and topics contained in the AZ-305 exam.</p>
+    <div class="resource-card__meta">
+      <span>🏆 Expert Level</span>
+      <span>📄 4 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">AZ-500 Study Notes</h4>
+    <p class="resource-card__desc">Microsoft Azure Security Engineer Associate — exam prep notes covering all domains and topics contained in the AZ-500 exam.</p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 4 Skills</span>
+      <span>🚧 Retiring</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-500-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">AZ-104 Study Notes</h4>
+    <p class="resource-card__desc">Microsoft Azure Administrator Associate — exam prep notes covering all domains and topics contained in the AZ-104 exam.</p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 5 Skills</span>
+      <span>✅ Complete</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-104-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+</div>
+
+## 🥽 Deep Dives
+
+<div class="resource-grid">
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305: Migration, HA & BCDR — Deep Dive</h4>
+    <p class="resource-card__desc">Deep dive into Azure Migration, High Availability, and Business Continuity & Disaster Recovery (BCDR) services.</p>
+    <div class="resource-card__meta">
+      <span>🌋 BCDR</span>
+      <span>🤿 Deep Dive</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-bcdr/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305: Compute Services — Deep Dive</h4>
+    <p class="resource-card__desc">Deep dive into Azure Compute Services, covering Azure VMs and VMSS, Azure App Service, Serverless and Containers.</p>
+    <div class="resource-card__meta">
+      <span>🖥️ Compute</span>
+      <span>🤿 Deep Dive</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-compute/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305: Data & Analytics Services — Deep Dive</h4>
+    <p class="resource-card__desc">Deep dive into Azure Data Analytics, covering Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Data Lake Storage.</p>
+    <div class="resource-card__meta">
+      <span>📈 Data Analytics</span>
+      <span>🤿 Deep Dive</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-data-analytics/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
+    <h4 class="resource-card__title">AZ-305: Azure Messaging Services — Deep Dive</h4>
+    <p class="resource-card__desc">Deep dive into Azure Messaging Services, covering Azure Service Bus, Azure Event Hubs, Azure Event Grid, and Azure Queue Storage.</p>
+    <div class="resource-card__meta">
+      <span>📨 Messaging</span>
+      <span>🤿 Deep Dive</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
+  </div>
+
+</div>
+
+<div class="cert-groups">
   <div class="cert-group">
-    <h2 class="cert-group__header">
+    <div class="cert-group__header">
       <span class="cert-group__header-icon">🗃️</span>
       <span class="cert-group__header-title">Changelog</span>
-    </h2>
+    </div>
     <div class="cert-group__body">
       <ul>
+        <li><strong>2026-04-23:</strong> Study Notes and Deep Dives sections moved outside containers to plain Markdown headings, restoring TOC visibility; Changelog kept containerized.</li>
         <li><strong>2026-04-22:</strong> Page layout updated — intro, Study Notes, Deep Dives, and Changelog wrapped in consistent cert-group containers.</li>
         <li><strong>2026-04-14:</strong> Updated formatting and added new study notes for DP-700 and DP-600.</li>
         <li><strong>2026-04-11:</strong> Landing page updated to include all study notes (Microsoft, ITIL, etc.) with visual quicklink cards.</li>
@@ -250,7 +240,4 @@ author_profile: true
       </ul>
     </div>
   </div>
-
 </div>
-
----
