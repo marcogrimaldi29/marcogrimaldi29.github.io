@@ -42,7 +42,7 @@ author_profile: true
     <div class="cert-group__body">
       <p>🗒️ On this landing page, you'll find a curated collection of useful resources across various topics. Click on the corresponding link on each resource to be redirected.</p>
       <p>✨ These resources have been collected over time from my learning journey, work experiences, and personal interests. They include guides, documentation, tools, and more to help with learning and development.</p>
-      <p>☁️ The below list will continue to grow as I discover and organize more useful materials. Should you be exploring similar topics, I hope you find these resources helpful and may they aid in your learning path! Feel free to reach out if you have any questions or suggestions for improvement. Happy exploring! 🚀</p>
+      <p>☁️ The below list will continue to grow as I discover and organize more useful materials. Should you be exploring similar topics, I hope you find these resources helpful and may they aid in your learning path! Feel free to reach out if you have any questions or suggestions for improvement. Happy exploring!</p>
       <div class="notice--info notice"><strong>ℹ️ Heads-up:</strong> For other certification-related materials and insights, take a look at the "🏅 Cert Reviews" and "📘 Study Notes" sections too.</div>
     </div>
   </div>
