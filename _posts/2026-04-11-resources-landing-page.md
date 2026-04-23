@@ -48,6 +48,10 @@ author_profile: true
   </div>
 
   <div class="cert-group">
+    <h2 class="cert-group__header">
+      <span class="cert-group__header-icon">🧰</span>
+      <span class="cert-group__header-title">Useful Resources</span>
+    </h2>
     <div class="cert-group__body">
       <div class="resource-grid" style="margin: 0;">
 
