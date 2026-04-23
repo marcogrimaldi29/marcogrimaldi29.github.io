@@ -384,11 +384,25 @@ toc_label: "📃 CV"
     </div>
     <div class="cert-group__body">
       <div style="margin-bottom: 0.75rem;">
-        <strong>Microsoft Azure</strong>
+        <strong>Cloud (IaaS, PaaS, SaaS)</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:90%;background:#1b4332;height:100%;"></div>
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
-        <small>Fluent</small>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Computer Networking</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Containerization & Virtualization</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
         <strong>Microsoft 365</strong>
@@ -398,25 +412,11 @@ toc_label: "📃 CV"
         <small>Fluent</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Cloud (IaaS, PaaS, SaaS)</strong>
+        <strong>Microsoft Azure</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
         </div>
-        <small>Advanced</small>
-      </div>
-      <div style="margin-bottom: 0.75rem;">
-        <strong>Solution Architecture</strong>
-        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-        </div>
-        <small>Advanced</small>
-      </div>
-      <div style="margin-bottom: 0.75rem;">
-        <strong>Resiliency, BC & DR</strong>
-        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-        </div>
-        <small>Advanced</small>
+        <small>Fluent</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
         <strong>Microsoft Entra ID & Active Directory</strong>
@@ -426,18 +426,18 @@ toc_label: "📃 CV"
         <small>Fluent</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Computer Networking</strong>
+        <strong>Resiliency, BC & DR</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
         <small>Advanced</small>
       </div>
       <div>
-        <strong>Containerization & Virtualization</strong>
+        <strong>Solution Architecture</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
-        <small>Intermediate</small>
+        <small>Advanced</small>
       </div>
     </div>
   </div>
@@ -450,14 +450,14 @@ toc_label: "📃 CV"
     </div>
     <div class="cert-group__body">
       <div style="margin-bottom: 0.75rem;">
-        <strong>Cybersecurity</strong>
+        <strong>Cloud Security</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
         <small>Advanced</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Cloud Security</strong>
+        <strong>Cybersecurity</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
@@ -471,18 +471,18 @@ toc_label: "📃 CV"
         <small>Advanced</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Risk Assessment & Compliance</strong>
-        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-        </div>
-        <small>Advanced</small>
-      </div>
-      <div>
         <strong>Microsoft Defender & Information Protection</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:65%;background:#95d5b2;height:100%;"></div>
         </div>
         <small>Intermediate</small>
+      </div>
+      <div>
+        <strong>Risk Assessment & Compliance</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
       </div>
     </div>
   </div>
@@ -502,20 +502,6 @@ toc_label: "📃 CV"
         <small>Advanced</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Microsoft Copilot</strong>
-        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:90%;background:#1b4332;height:100%;"></div>
-        </div>
-        <small>Fluent</small>
-      </div>
-      <div style="margin-bottom: 0.75rem;">
-        <strong>Microsoft Power Platform</strong>
-        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:65%;background:#95d5b2;height:100%;"></div>
-        </div>
-        <small>Intermediate</small>
-      </div>
-      <div style="margin-bottom: 0.75rem;">
         <strong>Azure Machine Learning</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:65%;background:#95d5b2;height:100%;"></div>
@@ -524,6 +510,20 @@ toc_label: "📃 CV"
       </div>
       <div style="margin-bottom: 0.75rem;">
         <strong>DevOps & Automation</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Microsoft Copilot</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Microsoft Power Platform</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:65%;background:#95d5b2;height:100%;"></div>
         </div>
@@ -585,6 +585,13 @@ toc_label: "📃 CV"
     </div>
     <div class="cert-group__body">
       <div style="margin-bottom: 0.75rem;">
+        <strong>Cloud Voice</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+        </div>
+        <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
         <strong>Microsoft Teams</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:90%;background:#1b4332;height:100%;"></div>
@@ -592,18 +599,11 @@ toc_label: "📃 CV"
         <small>Fluent</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Unified Communications</strong>
+        <strong>Session Border Controller</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
         </div>
-        <small>Advanced</small>
-      </div>
-      <div style="margin-bottom: 0.75rem;">
-        <strong>Cloud Voice</strong>
-        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
-        </div>
-        <small>Advanced</small>
+        <small>Intermediate</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
         <strong>Session Initiation Protocol (SIP)</strong>
@@ -613,18 +613,18 @@ toc_label: "📃 CV"
         <small>Advanced</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Voice over IP (VoIP)</strong>
+        <strong>Unified Communications</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
         <small>Advanced</small>
       </div>
       <div>
-        <strong>Session Border Controller</strong>
+        <strong>Voice over IP (VoIP)</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
-        <small>Intermediate</small>
+        <small>Advanced</small>
       </div>
     </div>
   </div>
@@ -637,28 +637,21 @@ toc_label: "📃 CV"
     </div>
     <div class="cert-group__body">
       <div style="margin-bottom: 0.75rem;">
-        <strong>Service Desk & Technical Support</strong>
+        <strong>Agile & Project Management</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:90%;background:#1b4332;height:100%;"></div>
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
         </div>
-        <small>Fluent</small>
+        <small>Intermediate</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Troubleshooting</strong>
-        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:90%;background:#1b4332;height:100%;"></div>
-        </div>
-        <small>Fluent</small>
-      </div>
-      <div style="margin-bottom: 0.75rem;">
-        <strong>ITSM & ITIL</strong>
+        <strong>Incident & Major Incident Management</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
         <small>Advanced</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Incident & Major Incident Management</strong>
+        <strong>ITSM & ITIL</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
@@ -671,12 +664,19 @@ toc_label: "📃 CV"
         </div>
         <small>Advanced</small>
       </div>
-      <div>
-        <strong>Agile & Project Management</strong>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>Service Desk & Technical Support</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
         </div>
-        <small>Intermediate</small>
+        <small>Fluent</small>
+      </div>
+      <div>
+        <strong>Troubleshooting</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:90%;background:#1b4332;height:100%;"></div>
+        </div>
+        <small>Fluent</small>
       </div>
     </div>
   </div>
@@ -688,13 +688,6 @@ toc_label: "📃 CV"
       <span class="cert-group__header-count">6 skills</span>
     </div>
     <div class="cert-group__body">
-      <div style="margin-bottom: 0.75rem;">
-        <strong>HTML & CSS</strong>
-        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:65%;background:#95d5b2;height:100%;"></div>
-        </div>
-        <small>Intermediate</small>
-      </div>
       <div style="margin-bottom: 0.75rem;">
         <strong>Bash</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
@@ -715,6 +708,13 @@ toc_label: "📃 CV"
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
         <small>Advanced</small>
+      </div>
+      <div style="margin-bottom: 0.75rem;">
+        <strong>HTML & CSS</strong>
+        <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
+          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+        </div>
+        <small>Intermediate</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
         <strong>Visual Studio Code</strong>
@@ -741,7 +741,7 @@ toc_label: "📃 CV"
     </div>
     <div class="cert-group__body">
       <div style="margin-bottom: 0.75rem;">
-        <strong>German Language Teaching</strong>
+        <strong>Adult & Special Education</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
@@ -755,14 +755,14 @@ toc_label: "📃 CV"
         <small>Advanced</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
-        <strong>Spanish Language Teaching</strong>
+        <strong>German Language Teaching</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
         <small>Advanced</small>
       </div>
       <div>
-        <strong>Adult & Special Education</strong>
+        <strong>Spanish Language Teaching</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
           <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
