@@ -7,13 +7,9 @@ author_profile: true
 toc: false
 ---
 
-<div class="cert-groups">
+<div class="notice--info notice"><strong>🕵🏼‍♂️ Privacy Notice:</strong> Your privacy matters. This page explains what information is (and isn't) collected when you visit this website.</div>
 
-  <div class="cert-group">
-    <div class="cert-group__body">
-      <div class="notice--info notice"><strong>🕵🏼‍♂️ Privacy Notice:</strong> Your privacy matters. This page explains what information is (and isn't) collected when you visit this website.</div>
-    </div>
-  </div>
+<div class="cert-groups">
 
   <div class="cert-group">
     <h3 class="cert-group__header">
@@ -76,8 +72,9 @@ toc: false
     </h3>
     <div class="cert-group__body">
       <p>For questions or concerns about this Privacy Notice, feel free to <a href="/contact/">reach out to me</a>.</p>
-      <p><em>This website respects your privacy. No cookies. No tracking profiles. Just insights to improve your browsing experience.</em></p>
     </div>
   </div>
 
 </div>
+
+<div class="notice notice--success"><em>This website respects your privacy. No cookies. No tracking profiles. Just insights to improve your browsing experience.</em></div>
