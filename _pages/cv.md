@@ -698,9 +698,9 @@ toc_label: "📃 CV"
       <div style="margin-bottom: 0.75rem;">
         <strong>GitHub</strong>
         <div style="background:#e0e0e0;border-radius:6px;overflow:hidden;height:12px;margin-top:4px;">
-          <div style="width:65%;background:#95d5b2;height:100%;"></div>
+          <div style="width:85%;background:#2d6a4f;height:100%;"></div>
         </div>
-        <small>Intermediate</small>
+        <small>Advanced</small>
       </div>
       <div style="margin-bottom: 0.75rem;">
         <strong>Google Workspace</strong>
