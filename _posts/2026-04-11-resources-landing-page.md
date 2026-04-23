@@ -16,9 +16,7 @@ tags:
   - Markdown
 excerpt: "Explore curated collections of useful resources for learning German, Microsoft technologies, AI, and development tools."
 description: "Discover a variety of useful resources including German learning materials, Microsoft documentation, AI tools, and GitHub/Jekyll/Markdown guides."
-toc: true
-toc_sticky: true
-toc_label: "🛬 Landing Page: Useful Resources"
+toc: false
 permalink: /resources/
 seo:
   type: "Article"
@@ -50,10 +48,6 @@ author_profile: true
   </div>
 
   <div class="cert-group">
-    <h2 class="cert-group__header">
-      <span class="cert-group__header-icon">🧰</span>
-      <span class="cert-group__header-title">Useful Resources</span>
-    </h2>
     <div class="cert-group__body">
       <div class="resource-grid" style="margin: 0;">
 

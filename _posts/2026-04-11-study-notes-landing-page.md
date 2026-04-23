@@ -53,7 +53,10 @@ author_profile: true
 
 ## 📘 Study Notes
 
-<div class="resource-grid">
+<div class="cert-groups">
+  <div class="cert-group">
+    <div class="cert-group__body">
+      <div class="resource-grid" style="margin: 0;">
 
   <div class="resource-card">
     <div class="resource-card__header">
@@ -155,11 +158,17 @@ author_profile: true
     <a href="https://marcogrimaldi29.com/az-104-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
 
+      </div>
+    </div>
+  </div>
 </div>
 
 ## 🥽 Deep Dives
 
-<div class="resource-grid">
+<div class="cert-groups">
+  <div class="cert-group">
+    <div class="cert-group__body">
+      <div class="resource-grid" style="margin: 0;">
 
   <div class="resource-card">
     <div class="resource-card__header">
@@ -217,6 +226,9 @@ author_profile: true
     <a href="https://marcogrimaldi29.com/az-305-messaging/" class="resource-card__btn">Deep Dive →</a>
   </div>
 
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="cert-groups">

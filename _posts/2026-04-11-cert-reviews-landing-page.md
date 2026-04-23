@@ -47,7 +47,10 @@ author_profile: true
 
 ## 🔤 Google
 
-<div class="resource-grid">
+<div class="cert-groups">
+  <div class="cert-group">
+    <div class="cert-group__body">
+      <div class="resource-grid" style="margin: 0;">
 
   <div class="resource-card">
     <div class="resource-card__header">
@@ -109,11 +112,17 @@ author_profile: true
     <a href="https://marcogrimaldi29.com/google-it-support/" class="resource-card__btn">Read Review →</a>
   </div>
 
+      </div>
+    </div>
+  </div>
 </div>
 
 ## 🪟 Microsoft
 
-<div class="resource-grid">
+<div class="cert-groups">
+  <div class="cert-group">
+    <div class="cert-group__body">
+      <div class="resource-grid" style="margin: 0;">
 
   <div class="resource-card">
     <div class="resource-card__header">
@@ -205,6 +214,9 @@ author_profile: true
     <a href="https://marcogrimaldi29.com/microsoft-sc-900/" class="resource-card__btn">Read Review →</a>
   </div>
 
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="cert-groups">
