@@ -4,16 +4,14 @@ permalink: /privacy/
 layout: single
 classes: wide
 author_profile: true
-toc: true
-toc_sticky: true
-toc_label: "🕵🏼‍♂️ Privacy Notice"
+toc: false
 ---
 
 <div class="cert-groups">
 
   <div class="cert-group">
     <div class="cert-group__body">
-      <p>Your privacy matters. This page explains what information is (and isn't) collected when you visit this website.</p>
+      <div class="notice--info notice"><strong>🕵🏼‍♂️ Privacy Notice:</strong> Your privacy matters. This page explains what information is (and isn't) collected when you visit this website.</div>
     </div>
   </div>
 
