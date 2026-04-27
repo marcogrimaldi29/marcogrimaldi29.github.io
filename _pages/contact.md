@@ -19,11 +19,6 @@ author_profile: true
           <div><strong>Duolingo</strong></div>
         </a>
 
-        <a href="mailto:marcogrimaldi29@gmail.com" class="quicklink-card">
-          <span class="quicklink-card__icon">📧</span>
-          <div><strong>Email</strong></div>
-        </a>
-
         <a href="https://github.com/marcogrimaldi29" class="quicklink-card">
           <span class="quicklink-card__icon">🐙</span>
           <div><strong>GitHub</strong></div>
