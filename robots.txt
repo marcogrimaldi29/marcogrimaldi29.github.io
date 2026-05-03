@@ -17,6 +17,7 @@ Sitemap: https://marcogrimaldi29.com/dp-600-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/dp-700-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/az-400-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/itil-4-foundation/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/engage-center-notes/sitemap.xml
 
 # Prevent indexing of search results
 Disallow: /search/
