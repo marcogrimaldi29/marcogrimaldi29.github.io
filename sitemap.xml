@@ -65,3 +65,9 @@
     <loc>https://marcogrimaldi29.com/engage-center-notes/sitemap.xml</loc>
   </sitemap>
 </sitemapindex>
+
+  <!-- Sub-repo: WAF Cost Optimization -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/waf-cost-opt/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
