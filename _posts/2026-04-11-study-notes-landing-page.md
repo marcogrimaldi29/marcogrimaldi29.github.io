@@ -176,6 +176,20 @@ author_profile: true
       <span class="resource-card__icon">🥽</span>
       <span class="resource-card__tag certification">Deep Dive</span>
     </div>
+    <h4 class="resource-card__title">WAF - Cost Optimization</h4>
+    <p class="resource-card__desc">Microsoft Well-Architected Framework — cost optimization strategies and best practices.</p>
+    <div class="resource-card__meta">
+      <span>🪙 Cost Optimization</span>
+      <span>📋 CSA Reference</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/waf-cost-opt/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">🥽</span>
+      <span class="resource-card__tag certification">Deep Dive</span>
+    </div>
     <h4 class="resource-card__title">Engage Center - CSA Deep Dive</h4>
     <p class="resource-card__desc">Microsoft Engage Center — CSA reference notes covering case management, Unified & Premier support contracts, Digital MIRP, and Services Hub migration guidance.</p>
     <div class="resource-card__meta">
