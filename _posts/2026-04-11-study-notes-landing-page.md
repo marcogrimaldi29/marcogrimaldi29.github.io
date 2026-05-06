@@ -1,7 +1,7 @@
 ---
 title: "🛬 Landing Page: Study Notes"
 date: 2026-02-27
-last_modified_at: 2026-04-24
+last_modified_at: 2026-05-05
 categories:
   - Study Notes
 tags:
@@ -268,6 +268,7 @@ author_profile: true
     </div>
     <div class="cert-group__body">
       <ul>
+        <li><strong>2026-05-05:</strong> Cost Optimization Notes added to the Study Notes section.</li>
         <li><strong>2026-04-24:</strong> Engage Center Notes added to the Study Notes section.</li>
         <li><strong>2026-04-23:</strong> Study Notes and Deep Dives sections moved outside containers to plain Markdown headings, restoring TOC visibility; Changelog kept containerized.</li>
         <li><strong>2026-04-22:</strong> Page layout updated — intro, Study Notes, Deep Dives, and Changelog wrapped in consistent cert-group containers.</li>
