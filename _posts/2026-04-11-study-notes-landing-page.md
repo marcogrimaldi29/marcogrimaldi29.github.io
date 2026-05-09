@@ -64,13 +64,14 @@ author_profile: true
       <span class="resource-card__icon">📘</span>
       <span class="resource-card__tag certification">Study Notes</span>
     </div>
-    <h4 class="resource-card__title">DP-700 Study Notes</h4>
-    <p class="resource-card__desc">Fabric Data Engineer Associate — exam prep notes covering all domains and topics contained in the DP-700 exam.</p>
+    <h4 class="resource-card__title">MS-700 Study Notes</h4>
+    <p class="resource-card__desc">Microsoft Teams Solutions Engineer Associate — exam prep notes covering all domains and topics contained in the MS-700 exam.</p>
     <div class="resource-card__meta">
       <span>🛡️ Associate Level</span>
-      <span>📄 3 Skills</span>
+      <span>📄 4 Skills</span>
+      <span>✅ Passed</span>
     </div>
-    <a href="https://marcogrimaldi29.com/dp-700-study-notes/" class="resource-card__btn">View Notes →</a>
+    <a href="https://marcogrimaldi29.com/ms-700-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
 
   <div class="resource-card">
@@ -78,13 +79,13 @@ author_profile: true
       <span class="resource-card__icon">📘</span>
       <span class="resource-card__tag certification">Study Notes</span>
     </div>
-    <h4 class="resource-card__title">MS-700 Study Notes</h4>
-    <p class="resource-card__desc">Microsoft Teams Solutions Engineer Associate — exam prep notes covering all domains and topics contained in the MS-700 exam.</p>
+    <h4 class="resource-card__title">DP-700 Study Notes</h4>
+    <p class="resource-card__desc">Fabric Data Engineer Associate — exam prep notes covering all domains and topics contained in the DP-700 exam.</p>
     <div class="resource-card__meta">
       <span>🛡️ Associate Level</span>
       <span>📄 3 Skills</span>
     </div>
-    <a href="https://marcogrimaldi29.com/ms-700-study-notes/" class="resource-card__btn">View Notes →</a>
+    <a href="https://marcogrimaldi29.com/dp-700-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
 
   <div class="resource-card">
@@ -138,7 +139,7 @@ author_profile: true
     <div class="resource-card__meta">
       <span>🏆 Expert Level</span>
       <span>📄 4 Skills</span>
-      <span>✅ Complete</span>
+      <span>✅ Passed</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-305-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
@@ -168,7 +169,7 @@ author_profile: true
     <div class="resource-card__meta">
       <span>🛡️ Associate Level</span>
       <span>📄 5 Skills</span>
-      <span>✅ Complete</span>
+      <span>✅ Passed</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-104-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
