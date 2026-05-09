@@ -55,6 +55,11 @@
     <loc>https://marcogrimaldi29.com/az-400-study-notes/sitemap.xml</loc>
   </sitemap>
 
+  <!-- Sub-repo: MS-700 Study Notes -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/ms-700-study-notes/sitemap.xml</loc>
+  </sitemap>
+
   <!-- Sub-repo: ITIL-4 Foundation -->
   <sitemap>
     <loc>https://marcogrimaldi29.com/itil-4-foundation/sitemap.xml</loc>

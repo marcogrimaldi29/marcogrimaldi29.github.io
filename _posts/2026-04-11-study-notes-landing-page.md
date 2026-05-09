@@ -78,6 +78,20 @@ author_profile: true
       <span class="resource-card__icon">📘</span>
       <span class="resource-card__tag certification">Study Notes</span>
     </div>
+    <h4 class="resource-card__title">MS-700 Study Notes</h4>
+    <p class="resource-card__desc">Microsoft Teams Solutions Engineer Associate — exam prep notes covering all domains and topics contained in the MS-700 exam.</p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 3 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/ms-700-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
     <h4 class="resource-card__title">DP-600 Study Notes</h4>
     <p class="resource-card__desc">Fabric Analytics Engineer Associate — exam prep notes covering all domains and topics contained in the DP-600 exam.</p>
     <div class="resource-card__meta">
@@ -268,6 +282,7 @@ author_profile: true
     </div>
     <div class="cert-group__body">
       <ul>
+        <li><strong>2026-05-09:</strong> MS-700 Study Notes added to the Study Notes Landing Page.</li>
         <li><strong>2026-05-05:</strong> Cost Optimization Notes added to the Study Notes section.</li>
         <li><strong>2026-04-24:</strong> Engage Center Notes added to the Study Notes section.</li>
         <li><strong>2026-04-23:</strong> Study Notes and Deep Dives sections moved outside containers to plain Markdown headings, restoring TOC visibility; Changelog kept containerized.</li>
