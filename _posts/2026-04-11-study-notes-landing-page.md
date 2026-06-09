@@ -122,10 +122,11 @@ author_profile: true
       <span class="resource-card__icon">📘</span>
       <span class="resource-card__tag certification">Study Notes</span>
     </div>
-    <h4 class="resource-card__title">ITIL v4 Foundation Study Notes</h4>
-    <p class="resource-card__desc">ITIL v4 Foundation — exam prep notes covering all domains and topics contained in the ITIL v4 Foundation exam.</p>
+    <h4 class="resource-card__title">ITIL® 4 Foundation Study Notes</h4>
+    <p class="resource-card__desc">ITIL® 4 Foundation — exam prep notes covering all domains and topics contained in the ITIL® 4 Foundation exam.</p>
     <div class="resource-card__meta">
       <span>🔤 Foundation Level</span>
+      <span>✅ Passed</span>
     </div>
     <a href="https://marcogrimaldi29.com/itil-4-foundation/" class="resource-card__btn">View Notes →</a>
   </div>
@@ -206,7 +207,7 @@ author_profile: true
       <span class="resource-card__icon">🥽</span>
       <span class="resource-card__tag certification">Deep Dive</span>
     </div>
-    <h4 class="resource-card__title">WAF: Cost Optimization  — Deep Dive</h4>
+    <h4 class="resource-card__title">Azure Well-Architected Framework: Cost Optimization — Deep Dive</h4>
     <p class="resource-card__desc">Microsoft Well-Architected Framework — cost optimization strategies and best practices.</p>
     <div class="resource-card__meta">
       <span>🪙 Cost Optimization</span>
@@ -220,8 +221,8 @@ author_profile: true
       <span class="resource-card__icon">🥽</span>
       <span class="resource-card__tag certification">Deep Dive</span>
     </div>
-    <h4 class="resource-card__title">Engage Center — Deep Dive</h4>
-    <p class="resource-card__desc">Microsoft Engage Center — CSA reference notes covering case management, Unified & Premier support contracts, Digital MIRP, and Services Hub migration guidance.</p>
+    <h4 class="resource-card__title">Microsoft Engage Center — Deep Dive</h4>
+    <p class="resource-card__desc">Microsoft Engage Center — Companion notes covering the Engage Center portal, Unified & Premier support contracts, Digital MIRP, and a Services Hub comparison.</p>
     <div class="resource-card__meta">
       <span>🎫 Unified Support</span>
       <span>📋 CSA Reference</span>

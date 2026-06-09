@@ -276,7 +276,7 @@ toc_label: "📃 CV"
 
   <div class="cert-group">
     <div class="cert-group__header">
-      <span class="cert-group__header-icon">🌐</span>
+      <span class="cert-group__header-icon">🔤</span>
       <span class="cert-group__header-title">Google Professional Certificates</span>
       <span class="cert-group__header-count">5 certs</span>
     </div>
@@ -292,10 +292,11 @@ toc_label: "📃 CV"
   <div class="cert-group">
     <div class="cert-group__header">
       <span class="cert-group__header-icon">📡</span>
-      <span class="cert-group__header-title">Voice & Network Certifications</span>
-      <span class="cert-group__header-count">1 cert</span>
+      <span class="cert-group__header-title">Voice & IT Certifications</span>
+      <span class="cert-group__header-count">2 certs</span>
     </div>
     <div class="cert-group__list">
+      <div class="cert-group__item">ITIL® 4 Foundation - PeopleCert (2026)</div>
       <div class="cert-group__item">SSCA® "Elite" SIP Training — SIP School (2025)</div>
     </div>
   </div>
