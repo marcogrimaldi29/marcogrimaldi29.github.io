@@ -262,6 +262,7 @@ toc_label: "📃 CV"
       <span class="cert-group__header-count">9 certs</span>
     </div>
     <div class="cert-group__list">
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/5DD7FEC497ACA2D1?sharingId=910D3083CD18E3A4" target="_blank">Streamline business workflows with AI chat (2026)</a></div>
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ED7684D7E86D2EEC?sharingId=910D3083CD18E3A4" target="_blank">Get started with Azure management tasks (2026)</a></div>
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/334B98F06ECE2E39?sharingId=910D3083CD18E3A4" target="_blank">Deploy cloud-native apps using Azure Container Apps (2026)</a></div>
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/37681EA077397999?sharingId=910D3083CD18E3A4" target="_blank">Defend against cyberthreats with Microsoft Defender XDR (2026)</a></div>
