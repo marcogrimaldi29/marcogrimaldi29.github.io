@@ -18,7 +18,7 @@ description: &site_description >- # Multiline description
 url: &site_url "https://marcogrimaldi29.com"  # Changed to CNAME URL
 baseurl: ""  # the subpath of the site, e.g. "/blog"
 repository: "marcogrimaldi29/marcogrimaldi29.github.io"
-logo: &site_logo "/assets/images/logo-sunrise-domain.jpg"
+logo: &site_logo "/assets/images/site-mark-no-bg.png"
 search: true
 search_full_content: true
 search_provider: lunr
@@ -143,7 +143,7 @@ whitelist:
 # ============================================================
 author:
   name: *author_name
-  avatar: "/assets/images/marco-cv.jpg"
+  avatar: "/assets/images/marcogrimaldi29.jpg"
   bio: "Cloud Resiliency Consultant @ Concentrix · Language Teacher"
   links:
     - label: "Duolingo"
