@@ -293,7 +293,7 @@ toc_label: "📃 CV"
   <div class="cert-group">
     <div class="cert-group__header">
       <span class="cert-group__header-icon">📡</span>
-      <span class="cert-group__header-title">Voice & IT Certifications</span>
+      <span class="cert-group__header-title">Other IT Certifications</span>
       <span class="cert-group__header-count">2 certs</span>
     </div>
     <div class="cert-group__list">
