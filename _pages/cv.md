@@ -297,7 +297,7 @@ toc_label: "📃 CV"
       <span class="cert-group__header-count">2 certs</span>
     </div>
     <div class="cert-group__list">
-      <div class="cert-group__item">ITIL® 4 Foundation - PeopleCert (2026)</div>
+      <div class="cert-group__item"><a href="https://badges.peoplecert.org/Badge/en/B93726C5-8B49-4E6E-B17C-8421A7727D55" target="_blank">ITIL® 4 Foundation - PeopleCert (2026)</a></div>
       <div class="cert-group__item">SSCA® "Elite" SIP Training — SIP School (2025)</div>
     </div>
   </div>
