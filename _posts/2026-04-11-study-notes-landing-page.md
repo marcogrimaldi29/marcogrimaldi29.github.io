@@ -69,6 +69,7 @@ author_profile: true
     <div class="resource-card__meta">
       <span>🏆 Expert Level</span>
       <span>📄 4 Skills</span>
+      <span>🚧 Retiring</span>
     </div>
     <a href="https://marcogrimaldi29.com/ms-102-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
@@ -184,7 +185,7 @@ author_profile: true
     <div class="resource-card__meta">
       <span>🛡️ Associate Level</span>
       <span>📄 4 Skills</span>
-      <span>🚧 Retiring</span>
+      <span>⛔ Retired</span>
     </div>
     <a href="https://marcogrimaldi29.com/az-500-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
