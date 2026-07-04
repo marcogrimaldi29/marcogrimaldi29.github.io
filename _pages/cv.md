@@ -258,9 +258,10 @@ toc_label: "📃 CV"
     <div class="cert-group__header">
       <span class="cert-group__header-icon">⚙️</span>
       <span class="cert-group__header-title">Microsoft Applied Skills</span>
-      <span class="cert-group__header-count">10 certs</span>
+      <span class="cert-group__header-count">11 certs</span>
     </div>
     <div class="cert-group__list">
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/4192AF310DC399CC?sharingId=910D3083CD18E3A4" target="_blank">Implement a Real-Time Intelligence solution with Microsoft Fabric (2026)</a></div>
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/5DD7FEC497ACA2D1?sharingId=910D3083CD18E3A4" target="_blank">Streamline business workflows with AI chat (2026)</a></div>
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/ED7684D7E86D2EEC?sharingId=910D3083CD18E3A4" target="_blank">Get started with Azure management tasks (2026)</a></div>
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/334B98F06ECE2E39?sharingId=910D3083CD18E3A4" target="_blank">Deploy cloud-native apps using Azure Container Apps (2026)</a></div>
