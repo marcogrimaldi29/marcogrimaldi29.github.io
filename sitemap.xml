@@ -48,11 +48,13 @@
   <!-- Sub-repo: DP-700 Study Notes -->
   <sitemap>
     <loc>https://marcogrimaldi29.com/dp-700-study-notes/sitemap.xml</loc>
+    <loc>https://marcogrimaldi29.com/dp-700-study-notes-v2/sitemap.xml</loc>
   </sitemap>
 
   <!-- Sub-repo: AZ-400 Study Notes -->
   <sitemap>
     <loc>https://marcogrimaldi29.com/az-400-study-notes/sitemap.xml</loc>
+    <loc>https://marcogrimaldi29.com/az-400-study-notes-v2/sitemap.xml</loc>
   </sitemap>
 
   <!-- Sub-repo: MS-700 Study Notes -->
