@@ -134,6 +134,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://marcogrimaldi29.com/az-400-study-notes-v2/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://marcogrimaldi29.com/az-305-messaging/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -165,6 +170,11 @@
   </url>
   <url>
     <loc>https://marcogrimaldi29.com/dp-700-study-notes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://marcogrimaldi29.com/dp-700-study-notes-v2/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

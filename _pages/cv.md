@@ -237,7 +237,7 @@ toc_label: "📃 CV"
     <div class="cert-group__header">
       <span class="cert-group__header-icon">🪟</span>
       <span class="cert-group__header-title">Microsoft Certifications</span>
-      <span class="cert-group__header-count">11 certs</span>
+      <span class="cert-group__header-count">12 certs</span>
     </div>
     <div class="cert-group__list">
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/38B17BA0808706AA?sharingId=910D3083CD18E3A4" target="_blank">DP-600 – Microsoft Certified: Fabric Analytics Engineer Associate (2026)</a></div>
