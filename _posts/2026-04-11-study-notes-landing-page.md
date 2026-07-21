@@ -114,8 +114,12 @@ author_profile: true
     <div class="resource-card__meta">
       <span>🛡️ Associate Level</span>
       <span>📄 3 Skills</span>
+      <span>🆕 v2 available</span>
     </div>
-    <a href="https://marcogrimaldi29.com/dp-700-study-notes/" class="resource-card__btn">View Notes →</a>
+    <div class="resource-card__btns">
+      <a href="https://marcogrimaldi29.com/dp-700-study-notes-v2/" class="resource-card__btn">View v2 Notes →</a>
+      <a href="https://marcogrimaldi29.com/dp-700-study-notes/" class="resource-card__btn resource-card__btn--secondary">View v1 Notes →</a>
+    </div>
   </div>
 
   <div class="resource-card">
@@ -315,6 +319,7 @@ author_profile: true
     </div>
     <div class="cert-group__body">
       <ul>
+        <li><strong>2026-07-21:</strong> DP-700 Study Notes v2 added to the DP-700 card — rebuilt as a static HTML/CSS/JS site and aligned to the skills measured effective 21 July 2026.</li>
         <li><strong>2026-05-09:</strong> MS-700 Study Notes added to the Study Notes Landing Page.</li>
         <li><strong>2026-05-05:</strong> Cost Optimization Notes added to the Study Notes section.</li>
         <li><strong>2026-04-24:</strong> Engage Center Notes added to the Study Notes section.</li>
