@@ -13,9 +13,11 @@ Sitemap: https://marcogrimaldi29.com/az-305-compute/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/az-305-messaging/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/az-305-bcdr/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/az-400-study-notes/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/az-400-study-notes-v2/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/az-500-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/dp-600-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/dp-700-study-notes/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/dp-700-study-notes-v2/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/ms-102-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/ms-700-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/ms-721-study-notes/sitemap.xml

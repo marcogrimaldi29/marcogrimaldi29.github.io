@@ -162,7 +162,10 @@ author_profile: true
       <span>🏆 Expert Level</span>
       <span>📄 5 Skills</span>
     </div>
-    <a href="https://marcogrimaldi29.com/az-400-study-notes/" class="resource-card__btn">View Notes →</a>
+    <div class="resource-card__btns">
+      <a href="https://marcogrimaldi29.com/az-400-study-notes-v2/" class="resource-card__btn">View v2 Notes →</a>
+      <a href="https://marcogrimaldi29.com/az-400-study-notes/" class="resource-card__btn resource-card__btn--secondary">View v1 Notes →</a>
+    </div>
   </div>
 
   <div class="resource-card">
