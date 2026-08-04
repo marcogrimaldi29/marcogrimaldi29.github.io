@@ -25,7 +25,7 @@ canonical_url: "https://marcogrimaldi29.com/projects/"
 
 </div>
 
-<div class="resource-grid">
+<div class="resource-grid resource-grid--wide">
 
   <div class="resource-card">
     <div class="resource-card__header">
