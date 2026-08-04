@@ -65,7 +65,7 @@ canonical_url: "https://marcogrimaldi29.com/"
           <div><strong>Privacy Notice</strong><small>GDPR-compliant & cookieless</small></div>
         </a>
 
-        <a href="/projects/" class="quicklink-card">
+        <a href="https://marcogrimaldi29.com/projects/" class="quicklink-card">
           <span class="quicklink-card__icon">🚀</span>
           <div><strong>Projects</strong><small>Hands-on projects and things I build</small></div>
         </a>
