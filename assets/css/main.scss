@@ -116,6 +116,8 @@
 
   &__header { display: flex; align-items: center; gap: 0.5rem; }
   &__icon   { font-size: 1.2rem; line-height: 1; }
+  // When the icon is an image (e.g. a project logo) rather than an emoji.
+  img#{&}__icon { width: 1.6rem; height: 1.6rem; object-fit: contain; }
 
   &__tag {
     font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em;
