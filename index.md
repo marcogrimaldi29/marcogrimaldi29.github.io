@@ -35,22 +35,22 @@ canonical_url: "https://marcogrimaldi29.com/"
     <div class="cert-group__body">
       <div class="quicklink-grid" style="margin: 0;">
 
-        <a href="/about/" class="quicklink-card">
+        <a href="https://marcogrimaldi29.com/about/" class="quicklink-card">
           <span class="quicklink-card__icon">🏗️</span>
           <div><strong>About</strong><small>About me & this website</small></div>
         </a>
 
-        <a href="/cert-reviews/" class="quicklink-card">
+        <a href="https://marcogrimaldi29.com/cert-reviews/" class="quicklink-card">
           <span class="quicklink-card__icon">🏅</span>
           <div><strong>Cert Reviews</strong><small>My certification reviews and exam experiences</small></div>
         </a>
 
-        <a href="/contact/" class="quicklink-card">
+        <a href="https://marcogrimaldi29.com/contact/" class="quicklink-card">
           <span class="quicklink-card__icon">📲</span>
           <div><strong>Contact</strong><small>Let’s get in touch</small></div>
         </a>
 
-        <a href="/cv/" class="quicklink-card">
+        <a href="https://marcogrimaldi29.com/cv/" class="quicklink-card">
           <span class="quicklink-card__icon">📃</span>
           <div><strong>CV</strong><small>My Curriculum Vitae</small></div>
         </a>
@@ -60,7 +60,7 @@ canonical_url: "https://marcogrimaldi29.com/"
           <div><strong>LinkedIn</strong><small>Connect professionally</small></div>
         </a>
 
-        <a href="/privacy/" class="quicklink-card">
+        <a href="https://marcogrimaldi29.com/privacy/" class="quicklink-card">
           <span class="quicklink-card__icon">🕵🏼</span>
           <div><strong>Privacy Notice</strong><small>GDPR-compliant & cookieless</small></div>
         </a>
