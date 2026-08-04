@@ -290,13 +290,3 @@ author_profile: true
 - [wscript](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wscript)
 
 ---
-
-### 🗃️ Change Log
-- **2026-01-04:** Updated descriptions and keywords for SEO optimization.
-- **2025-11-17:** Format updated.
-- **2025-10-02:** H2 heading and date updated.
-- **2025-09-27:** Tags added: AI, Architecture, Azure, Cloud, Collaboration, Compliance, Identity, Infrastructure, Microsoft, Security, Teams.
-- **2025-09-26:** Initial publication.
-{: .notice}
-
----

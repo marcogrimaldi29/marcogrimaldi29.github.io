@@ -87,15 +87,3 @@ author_profile: true
 - [Use Markdown in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/project/wiki/markdown-guidance)
 
 ---
-
-### 🗃️ Changelog
-- **2026-01-04:** Updated descriptions and keywords for SEO optimization.
-- **2025-11-17:** Format updated.
-- **2025-11-13:** Added "GitHub Skills" link.
-- **2025-11-07:** SEO optimization.
-- **2025-11-05:** Header updated and tags expanded.
-- **2025-10-02:** H2 heading updated.
-- **2025-09-23:** Initial publication.  
-{: .notice}
-
----
