@@ -18,7 +18,7 @@ canonical_url: "https://marcogrimaldi29.com/projects/"
   <div class="cert-group">
     <div class="cert-group__body">
       <p>Welcome to my <strong>Projects</strong> hub — a place where I collect the hands-on things I build across <strong>cloud</strong>, <strong>data</strong>, and <strong>IT</strong>.</p>
-      <p>Each project lives in its <strong>own dedicated repository</strong> and is published under <code>marcogrimaldi29.com/&lt;project-name&gt;/</code>, similarly to my <a href="/study-notes/">study notes</a>. This page is the index that ties them together.</p>
+      <p>Each project lives in its <strong>own dedicated repository</strong> and is published under <code>marcogrimaldi29.com/&lt;project-name&gt;/</code>, similarly to my <a href="https://marcogrimaldi29.com/study-notes/">📘 Study Notes</a>. This page is the index that ties them together.</p>
       <p>👷‍♂️🚧 <strong>Work in progress</strong> 🚧👷‍♂️ — more projects on the way!</p>
     </div>
   </div>
@@ -29,7 +29,7 @@ canonical_url: "https://marcogrimaldi29.com/projects/"
 
   <div class="resource-card">
     <div class="resource-card__header">
-      <span class="resource-card__icon">🎓</span>
+      <img class="resource-card__icon" src="/assets/images/fluentia-mark.svg" alt="Fluentia logo" width="24" height="24" />
       <span class="resource-card__tag certification">Data &amp; Cloud</span>
     </div>
     <h4 class="resource-card__title">Fluentia Lab</h4>
