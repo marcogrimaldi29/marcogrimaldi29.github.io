@@ -13,6 +13,8 @@ main:
     url: /contact/
   - title: "CV"
     url: /cv/
+  - title: "Projects"
+    url: /projects/
   - title: "Study Notes"
     url: /study-notes/
 # - title: "Posts"
