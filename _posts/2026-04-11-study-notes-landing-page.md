@@ -313,30 +313,3 @@ author_profile: true
     </div>
   </div>
 </div>
-
-<div class="cert-groups">
-  <div class="cert-group">
-    <div class="cert-group__header">
-      <span class="cert-group__header-icon">🗃️</span>
-      <span class="cert-group__header-title">Changelog</span>
-    </div>
-    <div class="cert-group__body">
-      <ul>
-        <li><strong>2026-07-21:</strong> DP-700 Study Notes v2 added to the DP-700 card — rebuilt as a static HTML/CSS/JS site and aligned to the skills measured effective 21 July 2026.</li>
-        <li><strong>2026-05-09:</strong> MS-700 Study Notes added to the Study Notes Landing Page.</li>
-        <li><strong>2026-05-05:</strong> Cost Optimization Notes added to the Study Notes section.</li>
-        <li><strong>2026-04-24:</strong> Engage Center Notes added to the Study Notes section.</li>
-        <li><strong>2026-04-23:</strong> Study Notes and Deep Dives sections moved outside containers to plain Markdown headings, restoring TOC visibility; Changelog kept containerized.</li>
-        <li><strong>2026-04-22:</strong> Page layout updated — intro, Study Notes, Deep Dives, and Changelog wrapped in consistent cert-group containers.</li>
-        <li><strong>2026-04-14:</strong> Updated formatting and added new study notes for DP-700 and DP-600.</li>
-        <li><strong>2026-04-11:</strong> Landing page updated to include all study notes (Microsoft, ITIL, etc.) with visual quicklink cards.</li>
-        <li><strong>2026-03-07:</strong> AZ-400 Study Notes added to the Central Hub Landing Page.</li>
-        <li><strong>2026-03-06:</strong> Companion Notes to AZ-305 added related to (a) Messaging, (b) Data & Analytics, (c) Compute Services, and (d) Migration, HA & BCDR.</li>
-        <li><strong>2026-03-02:</strong> AZ-305 Study Notes added to the Central Hub Landing Page.</li>
-        <li><strong>2026-03-01:</strong> AZ-104 Study Notes added to the Central Hub Landing Page.</li>
-        <li><strong>2026-02-28:</strong> AZ-500 Study Notes added to the Central Hub Landing Page.</li>
-        <li><strong>2026-02-27:</strong> Study Notes Landing Page created & AZ-305 Study Notes added.</li>
-      </ul>
-    </div>
-  </div>
-</div>
