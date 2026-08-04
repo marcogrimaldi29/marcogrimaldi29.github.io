@@ -103,19 +103,3 @@ author_profile: true
   </div>
 
 </div>
-
-<div class="cert-groups">
-  <div class="cert-group">
-    <div class="cert-group__header">
-      <span class="cert-group__header-icon">🗃️</span>
-      <span class="cert-group__header-title">Changelog</span>
-    </div>
-    <div class="cert-group__body">
-      <ul>
-        <li><strong>2026-04-23:</strong> Page layout updated — intro, Useful Resources, and Changelog wrapped in consistent cert-group containers; TOC re-enabled with heading anchors.</li>
-        <li><strong>2026-04-14:</strong> Updated formatting.</li>
-        <li><strong>2026-04-11:</strong> Useful Resources landing page created with all current resource collections.</li>
-      </ul>
-    </div>
-  </div>
-</div>

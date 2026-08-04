@@ -219,20 +219,3 @@ author_profile: true
     </div>
   </div>
 </div>
-
-<div class="cert-groups">
-  <div class="cert-group">
-    <div class="cert-group__header">
-      <span class="cert-group__header-icon">🗃️</span>
-      <span class="cert-group__header-title">Changelog</span>
-    </div>
-    <div class="cert-group__body">
-      <ul>
-        <li><strong>2026-04-23:</strong> Google and Microsoft sections moved outside containers to plain Markdown headings, restoring TOC visibility; Changelog kept containerized.</li>
-        <li><strong>2026-04-22:</strong> Page layout updated — intro, Cert Reviews (Google, Microsoft), and Changelog wrapped in consistent cert-group containers.</li>
-        <li><strong>2026-04-14:</strong> Updated changelog formatting.</li>
-        <li><strong>2026-04-11:</strong> Certification Reviews landing page created with all current reviews.</li>
-      </ul>
-    </div>
-  </div>
-</div>
