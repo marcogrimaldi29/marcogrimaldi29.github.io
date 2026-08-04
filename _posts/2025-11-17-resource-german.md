@@ -175,10 +175,3 @@ author_profile: true
 - [Reverso Context](https://context.reverso.net/translation/german-english/) - A translation tool that offers contextual examples for German phrases and idioms.
 
 ---
-
-### 🗃️ Change Log
-- **2026-01-04:** Updated descriptions and keywords for SEO optimization.
-- **2025-11-17:** Initial publication.
-{: .notice}
-
----

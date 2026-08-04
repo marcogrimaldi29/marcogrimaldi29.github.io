@@ -135,15 +135,5 @@ author_profile: true
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [Prompt Engineering Guide: The Ultimate Guide to Generative AI](https://learnprompting.org/docs/introduction)
 - [Prompt Engineering Techniques: Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/prompt-engineering?view=foundry-classic)
----
-
-### 🗃️ Changelog
-- **2026-01-04:** Updated descriptions and keywords for SEO optimization.
-- **2025-11-17:** Format updated and content of "AI assistants & platforms" expanded with new AI coding assistants and platforms.
-- **2025-11-07:** SEO optimization.
-- **2025-11-05:** Header updated and tags expanded.
-- **2025-10-02:** H2 heading updated and date.
-- **2025-09-24:** Initial publication.  
-{: .notice}
 
 ---
