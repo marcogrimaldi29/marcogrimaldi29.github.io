@@ -94,6 +94,13 @@
   margin: 1rem 0 1.5rem;
 }
 
+// Wider variant — for cards with longer descriptions (e.g. project cards).
+// auto-fit lets a lone card expand to a comfortable reading width instead of
+// staying pinned to the narrow min track that auto-fill reserves.
+.resource-grid--wide {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 520px));
+}
+
 .resource-card {
   border: 1px solid rgba(0,0,0,0.12);
   border-radius: 8px;
