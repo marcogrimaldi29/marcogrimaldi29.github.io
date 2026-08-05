@@ -10,7 +10,6 @@ title: &site_title "marcogrimaldi29.com"
 title_separator: "-"
 subtitle: "Personal Hub of Marco Grimaldi"
 name: &author_name "Marco Grimaldi"
-email: &author_email "marcogrimaldi29@gmail.com"
 description: &site_description >- # Multiline description
   Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications,
   and language teaching. Cloud Consultant at Concentrix sharing professional
