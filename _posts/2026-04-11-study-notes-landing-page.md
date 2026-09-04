@@ -1,7 +1,7 @@
 ---
 title: "🛬 Landing Page: Study Notes"
 date: 2026-02-27
-last_modified_at: 2026-05-09
+last_modified_at: 2026-09-04
 categories:
   - Study Notes
 tags:
@@ -114,6 +114,7 @@ author_profile: true
     <div class="resource-card__meta">
       <span>🛡️ Associate Level</span>
       <span>📄 3 Skills</span>
+      <span>✅ Passed</span>
       <span>🆕 v2 available</span>
     </div>
     <div class="resource-card__btns">
@@ -131,8 +132,8 @@ author_profile: true
     <p class="resource-card__desc">Fabric Analytics Engineer Associate — exam prep notes covering all domains and topics contained in the DP-600 exam.</p>
     <div class="resource-card__meta">
       <span>🛡️ Associate Level</span>
-      <span>✅ Passed</span>
       <span>📄 3 Skills</span>
+      <span>✅ Passed</span>
     </div>
     <a href="https://marcogrimaldi29.com/dp-600-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
