@@ -237,9 +237,10 @@ toc_label: "📃 CV"
     <div class="cert-group__header">
       <span class="cert-group__header-icon">🪟</span>
       <span class="cert-group__header-title">Microsoft Certifications</span>
-      <span class="cert-group__header-count">12 certs</span>
+      <span class="cert-group__header-count">13 certs</span>
     </div>
     <div class="cert-group__list">
+      <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/C920E77F6327FF1F?sharingId=910D3083CD18E3A4" target="_blank">DP-700 – Microsoft Certified: Fabric Data Engineer Associate (2026)</a></div>
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/38B17BA0808706AA?sharingId=910D3083CD18E3A4" target="_blank">DP-600 – Microsoft Certified: Fabric Analytics Engineer Associate (2026)</a></div>
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/3A7124C273B93B9A?sharingId=910D3083CD18E3A4" target="_blank">AZ-305 – Microsoft Certified: Azure Solutions Architect Expert (2026)</a></div>
       <div class="cert-group__item"><a href="https://learn.microsoft.com/api/credentials/share/en-us/MarcoGrimaldi-0029/87F3712A1939D1EB?sharingId=910D3083CD18E3A4" target="_blank">MS-721 – Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate (2024)</a></div>
