@@ -68,7 +68,7 @@ author_profile: true
     <p class="resource-card__desc">GitHub Copilot — exam prep notes covering all domains and topics contained in the GH-300 exam.</p>
     <div class="resource-card__meta">
       <span>🐙 Specialty Level</span>
-      <span>📄 6 Skills</span>
+      <span>📄 7 Skills</span>
     </div>
     <a href="https://marcogrimaldi29.com/gh-300-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
