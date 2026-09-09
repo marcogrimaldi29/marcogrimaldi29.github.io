@@ -64,6 +64,34 @@ author_profile: true
       <span class="resource-card__icon">📘</span>
       <span class="resource-card__tag certification">Study Notes</span>
     </div>
+    <h4 class="resource-card__title">GH-300 Study Notes</h4>
+    <p class="resource-card__desc">GitHub Copilot — exam prep notes covering all domains and topics contained in the GH-300 exam.</p>
+    <div class="resource-card__meta">
+      <span>🐙 Specialty Level</span>
+      <span>📄 6 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/gh-300-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
+    <h4 class="resource-card__title">GH-900 Study Notes</h4>
+    <p class="resource-card__desc">GitHub Foundations — exam prep notes covering all domains and topics contained in the GH-900 exam.</p>
+    <div class="resource-card__meta">
+      <span>🐙 Specialty Level</span>
+      <span>📄 7 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/gh-900-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
     <h4 class="resource-card__title">MS-102 Study Notes</h4>
     <p class="resource-card__desc">Microsoft 365 Administrator Expert — exam prep notes covering all domains and topics contained in the MS-102 exam.</p>
     <div class="resource-card__meta">
