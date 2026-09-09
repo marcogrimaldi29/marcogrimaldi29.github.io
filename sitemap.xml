@@ -45,16 +45,26 @@
     <loc>https://marcogrimaldi29.com/dp-600-study-notes/sitemap.xml</loc>
   </sitemap>
 
-  <!-- Sub-repo: DP-700 Study Notes -->
+  <!-- Sub-repo: DP-700 Study Notes (v1 and v2) -->
   <sitemap>
     <loc>https://marcogrimaldi29.com/dp-700-study-notes/sitemap.xml</loc>
     <loc>https://marcogrimaldi29.com/dp-700-study-notes-v2/sitemap.xml</loc>
   </sitemap>
 
-  <!-- Sub-repo: AZ-400 Study Notes -->
+  <!-- Sub-repo: AZ-400 Study Notes (v1 and v2) -->
   <sitemap>
     <loc>https://marcogrimaldi29.com/az-400-study-notes/sitemap.xml</loc>
     <loc>https://marcogrimaldi29.com/az-400-study-notes-v2/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub-repo: GH-300 Study Notes -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/gh-300-study-notes/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub-repo: GH-900 Study Notes -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/gh-900-study-notes/sitemap.xml</loc>
   </sitemap>
 
   <!-- Sub-repo: MS-700 Study Notes -->
