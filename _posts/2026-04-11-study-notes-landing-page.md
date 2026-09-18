@@ -67,8 +67,8 @@ author_profile: true
     <h4 class="resource-card__title">AI-103 Study Notes</h4>
     <p class="resource-card__desc">Azure AI Apps and Agents Developer Associate — exam prep notes covering all domains and topics contained in the AI-103 exam.</p>
     <div class="resource-card__meta">
-      <span>🐙 Specialty Level</span>
-      <span>📄 6 Skills</span>
+      <span>🛡️ Associate Level</span>
+      <span>📄 5 Skills</span>
     </div>
     <a href="https://marcogrimaldi29.com/ai-103-study-notes/" class="resource-card__btn">View Notes →</a>
   </div>
