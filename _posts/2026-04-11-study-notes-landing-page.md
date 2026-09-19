@@ -64,6 +64,20 @@ author_profile: true
       <span class="resource-card__icon">📘</span>
       <span class="resource-card__tag certification">Study Notes</span>
     </div>
+    <h4 class="resource-card__title">SC-500 Study Notes</h4>
+    <p class="resource-card__desc">Cloud and AI Security Engineer Associate — exam prep notes covering all domains and topics contained in the SC-500 exam.</p>
+    <div class="resource-card__meta">
+      <span>🛡️ Associate Level</span>
+      <span>📄 4 Skills</span>
+    </div>
+    <a href="https://marcogrimaldi29.com/sc-500-study-notes/" class="resource-card__btn">View Notes →</a>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-card__header">
+      <span class="resource-card__icon">📘</span>
+      <span class="resource-card__tag certification">Study Notes</span>
+    </div>
     <h4 class="resource-card__title">AI-103 Study Notes</h4>
     <p class="resource-card__desc">Azure AI Apps and Agents Developer Associate — exam prep notes covering all domains and topics contained in the AI-103 exam.</p>
     <div class="resource-card__meta">
