@@ -87,6 +87,11 @@
     <loc>https://marcogrimaldi29.com/ms-102-study-notes/sitemap.xml</loc>
   </sitemap>
 
+    <!-- Sub-repo: SC-500 Study Notes -->
+  <sitemap>
+    <loc>https://marcogrimaldi29.com/sc-500-study-notes/sitemap.xml</loc>
+  </sitemap>
+
   <!-- Sub-repo: ITIL-4 Foundation -->
   <sitemap>
     <loc>https://marcogrimaldi29.com/itil-4-foundation/sitemap.xml</loc>

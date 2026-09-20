@@ -26,6 +26,7 @@ Sitemap: https://marcogrimaldi29.com/itil-4-foundation/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/ms-102-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/ms-700-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/ms-721-study-notes/sitemap.xml
+Sitemap: https://marcogrimaldi29.com/sc-500-study-notes/sitemap.xml
 Sitemap: https://marcogrimaldi29.com/waf-cost-opt/sitemap.xml
 
 # Prevent indexing of search results
