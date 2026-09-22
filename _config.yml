@@ -12,7 +12,7 @@ subtitle: "Personal Hub of Marco Grimaldi"
 name: &author_name "Marco Grimaldi"
 description: &site_description >- # Multiline description
   Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications,
-  and language teaching. Cloud Consultant at Concentrix sharing professional
+  and language teaching. Cloud Solution Architect at Concentrix sharing professional
   insights and resources.
 url: &site_url "https://marcogrimaldi29.com"  # Changed to CNAME URL
 baseurl: ""  # the subpath of the site, e.g. "/blog"
@@ -52,7 +52,7 @@ seo:
   
   # SEO Keywords
   keywords: >-
-    Marco Grimaldi, Concentrix Cloud Consultant, IT Professional Blog,
+    Marco Grimaldi, Concentrix Cloud Solution Architect, Cloud Consultant, Professional Blog,
     Cloud Computing Expert, Language Teacher, IT Certifications Guide,
     Microsoft Azure Certifications, Google IT Certifications,
     Professional Development Blog, Technology Career Guide,
@@ -143,7 +143,7 @@ whitelist:
 author:
   name: *author_name
   avatar: "/assets/images/marcogrimaldi29.jpg"
-  bio: "Cloud Resiliency Consultant @ Concentrix · Language Teacher"
+  bio: "Cloud Solution Architect @ Concentrix · Language Teacher"
   links:
     - label: "Duolingo"
       icon: "fas fa-language"

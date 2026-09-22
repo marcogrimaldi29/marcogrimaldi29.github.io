@@ -7,10 +7,10 @@ author_profile: true
 # toc: true
 # toc_sticky: true
 # toc_label: "🏠 Home"
-description: "Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications, and language teaching. Cloud Consultant at Concentrix sharing knowledge and professional resources."
-keywords: "Marco Grimaldi, Concentrix, Cloud Consultant, Language Teacher, Cloud Computing, IT Certifications, Microsoft Learn, Professional Development"
+description: "Marco Grimaldi's personal and learning hub for IT, cloud computing, certifications, and language teaching. Cloud Solution Architect at Concentrix sharing knowledge and professional resources."
+keywords: "Marco Grimaldi, Concentrix, Cloud Solution Architect, Language Teacher, Cloud Computing, IT Certifications, Microsoft Learn, Professional Development"
 og_title: "Marco Grimaldi - IT Professional & Language Teacher"
-og_description: "Personal learning hub of Marco Grimaldi - Cloud Consultant at Concentrix. Explore IT resources, certifications, and language learning insights."
+og_description: "Personal learning hub of Marco Grimaldi - Cloud Solution Architect at Concentrix. Explore IT resources, certifications, and language learning insights."
 og_type: "website"
 og_image: "/assets/images/logo-sunrise-domain.jpg"
 canonical_url: "https://marcogrimaldi29.com/"
@@ -20,7 +20,7 @@ canonical_url: "https://marcogrimaldi29.com/"
 
   <div class="cert-group">
     <div class="cert-group__body">
-      <p>Hey, I’m <strong>Marco Grimaldi</strong> — IT Consultant, Cloud Enthusiast, and Language Trainer.</p>
+      <p>Hey, I’m <strong>Marco Grimaldi</strong> — Tech Enthusiast, Cloud Architect & Consultant, and Language Teacher.</p>
       <p>This site is my digital space to keep in touch, stay up-to-date, and share <strong>professional resources</strong>.</p>
       <p>It’s meant to be both a <strong>personal</strong> and a <strong>learning hub</strong> — a place where I collect useful resources and share what I’ve been working on.</p>
       <p>👷‍♂️🚧 <strong>Work in progress</strong> 🚧👷‍♂️ — fresh content on the way!</p>

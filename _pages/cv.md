@@ -1,6 +1,6 @@
 ---
 title: "📃 Curriculum Vitae"
-last_modified_at: 2026-07-04
+last_modified_at: 2026-09-22
 layout: single
 permalink: /cv/
 toc: true
@@ -23,7 +23,7 @@ toc_label: "📃 CV"
 <div class="cv-timeline">
 
   <div class="cv-card">
-    <div class="cv-card__role">Cloud Resiliency Consultant</div>
+    <div class="cv-card__role">Cloud Solution Architect</div>
     <div class="cv-card__meta">
       <span class="cv-card__company">Concentrix</span>
 
@@ -32,13 +32,12 @@ toc_label: "📃 CV"
       <span>2025 – Present</span>
     </div>
     <ul>
-      <li>Lead advisory workshops to assist clients in building resilient cloud architectures.</li>
-      <li>Advise on strategies to improve system reliability and availability.</li>
-      <li>Develop and implement disaster recovery and business continuity plans.</li>
-      <li>Conduct formal risk assessments to identify potential vulnerabilities.</li>
-      <li>Design major incident response plans to mitigate and manage disruptions effectively.</li>
+      <li>Serve as a Cloud Solution Architect (CSA) in an advisory role, guiding clients on Resiliency, Reliability, Cost Optimization, and Governance.</li>
+      <li>Lead resiliency workshops to help clients build reliable, highly available cloud architectures.</li>
+      <li>Conduct formal risk assessments and design Disaster Recovery, Business Continuity, and Major Incident Response Plans to minimize the impact of disruptions.</li>
+      <li>Deliver Cost Optimization, FinOps, and Governance workshops, helping clients control cloud spend and stay compliant.</li>
       <li>Collaborate with client teams to understand their architectural needs and provide tailored solutions.</li>
-      <li>Educate clients on best practices for building resilient systems.</li>
+      <li>Educate clients on best practices for building resilient, cost-efficient, and well-governed environments, aligned with the Azure Well-Architected and Cloud Adoption Frameworks.</li>
     </ul>
   </div>
 
