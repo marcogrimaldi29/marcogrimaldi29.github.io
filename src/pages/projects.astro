@@ -1,0 +1,39 @@
+---
+/** /projects/ — data-driven landing for hands-on labs (each lives in its own repo). */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import QuickLink from '@components/QuickLink.astro';
+import WorkInProgress from '@components/WorkInProgress.astro';
+import { projects } from '@data/landings';
+---
+
+<PageLayout
+  title="Projects"
+  heading="🚀 Projects"
+  eyebrow="// hands-on labs"
+  lead="Hands-on things I build across cloud, data, and IT. Each project lives in its own dedicated repository and is published under marcogrimaldi29.com/<project-name>/, just like my study notes."
+  description="Hands-on cloud, data, and IT projects by Marco Grimaldi — each hosted in its own dedicated repository."
+  searchable
+  brandRail
+>
+  <h2 class="section-heading" id="projects">projects</h2>
+  <div class="card-grid">
+    {projects.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <WorkInProgress
+    body="This hub is just getting started — more cloud, data, and IT projects are on the way. Check back regularly."
+  />
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// see also'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="📘"
+      title="Study Notes"
+      subtitle="Structured prep material"
+      href="/study-notes/"
+    />
+    <QuickLink icon="🧰" title="Resources" subtitle="Curated collections" href="/resources/" />
+  </div>
+</PageLayout>

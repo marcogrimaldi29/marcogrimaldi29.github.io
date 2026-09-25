@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Cloud Corpora">
+  <defs>
+    <linearGradient id="cc-g" x1="8" y1="9" x2="24" y2="23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3fb950" />
+      <stop offset="0.5" stop-color="#2ec5c5" />
+      <stop offset="1" stop-color="#4493f8" />
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="8" fill="#0b1422" stroke="rgba(255,255,255,0.12)" />
+  <g fill="url(#cc-g)">
+    <circle cx="12" cy="15.5" r="3.4" />
+    <circle cx="16.6" cy="12.8" r="4.4" />
+    <circle cx="21" cy="15.5" r="3.6" />
+    <rect x="8.4" y="15" width="14.6" height="6" rx="3" />
+  </g>
+  <g stroke="#0b1422" stroke-width="1.4" stroke-linecap="round" opacity="0.85">
+    <line x1="11.6" y1="17.6" x2="19.8" y2="17.6" />
+    <line x1="11.6" y1="19.7" x2="17" y2="19.7" />
+  </g>
+</svg>

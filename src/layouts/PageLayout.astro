@@ -1,0 +1,74 @@
+---
+/**
+ * PageLayout — BaseLayout + PageHero, with optional docs-style rails:
+ * a left SideNav (`navGroups`), a right "On this page" TOC (`headings`), and a
+ * left BrandCard (`brandRail`, when the left rail is otherwise empty).
+ */
+import BaseLayout from './BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import SideNav from '@components/SideNav.astro';
+import type { SideNavGroup } from '@components/SideNav.astro';
+import BrandCard from '@components/BrandCard.astro';
+import TableOfContents from '@components/TableOfContents.astro';
+import type { TocHeading } from '@components/TableOfContents.astro';
+
+interface Props {
+  title: string;
+  heading?: string;
+  eyebrow?: string;
+  lead?: string;
+  description?: string;
+  type?: 'website' | 'article';
+  /** Keep the page out of search results (site search, 404). */
+  noindex?: boolean;
+  searchable?: boolean;
+  navGroups?: SideNavGroup[];
+  headings?: TocHeading[];
+  brandRail?: boolean;
+}
+const {
+  title,
+  heading,
+  eyebrow,
+  lead,
+  description,
+  type = 'website',
+  noindex = false,
+  searchable = false,
+  navGroups,
+  headings = [],
+  brandRail = false,
+} = Astro.props;
+
+const hasNav = Boolean(navGroups && navGroups.length);
+const hasBrand = brandRail && !hasNav;
+const hasToc = headings.filter((h) => h.depth === 2 || h.depth === 3).length >= 2;
+const cols =
+  [(hasNav || hasBrand) && 'nav', hasToc && 'toc'].filter(Boolean).join('-') || undefined;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  type={type}
+  noindex={noindex}
+  wide={hasNav || hasBrand || hasToc}
+>
+  <div class="doc" data-cols={cols}>
+    {hasNav && <SideNav groups={navGroups!} current={Astro.url.pathname} />}
+    {hasBrand && <BrandCard />}
+    <div class="doc__main" data-pagefind-body={searchable ? '' : undefined}>
+      {
+        heading && (
+          <PageHero title={heading} eyebrow={eyebrow} lead={lead}>
+            <slot name="hero" />
+          </PageHero>
+        )
+      }
+      {/* In-page quick view: visible only when the right rail is hidden (narrow). */}
+      {hasToc && <TableOfContents headings={headings} variant="inline" />}
+      <slot />
+    </div>
+    {hasToc && <TableOfContents headings={headings} />}
+  </div>
+</BaseLayout>

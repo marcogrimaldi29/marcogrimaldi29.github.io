@@ -1,0 +1,256 @@
+---
+/** Home IT (/it/) — mirror of the English home, in Italian. */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import QuickLink from '@components/QuickLink.astro';
+import LinkCard from '@components/LinkCard.astro';
+import BrandCard from '@components/BrandCard.astro';
+import SiteGraph from '@components/SiteGraph.astro';
+import WorkInProgress from '@components/WorkInProgress.astro';
+import Logo from '@components/Logo.astro';
+import CertBadges from '@components/CertBadges.astro';
+import { profile } from '@data/profile';
+import {
+  certReviewsGoogleIt,
+  certReviewsMicrosoftIt,
+  studyNotesIt,
+  deepDivesIt,
+  resourceCollectionsIt,
+} from '@data/landings-it';
+import { toGraphChildren } from '@data/landings';
+
+const certCount = certReviewsGoogleIt.length + certReviewsMicrosoftIt.length;
+const notesCount = studyNotesIt.length + deepDivesIt.length;
+
+// The explore grid and featured cards are sorted by the localized `title`, so
+// each language reads alphabetically. `enTitle` (English title) is kept only to
+// key the graph drill-down children below.
+const quickLinks = [
+  {
+    icon: '🏗️',
+    title: 'Chi sono',
+    subtitle: 'Background & sito',
+    href: '/it/about/',
+    enTitle: 'About',
+  },
+  {
+    icon: '🏅',
+    title: 'Recensioni',
+    subtitle: 'Esperienze d’esame',
+    href: '/it/cert-reviews/',
+    enTitle: 'Cert Reviews',
+  },
+  { icon: '📃', title: 'CV', subtitle: 'Esperienza & competenze', href: '/it/cv/', enTitle: 'CV' },
+  {
+    icon: '🚀',
+    title: 'Progetti',
+    subtitle: 'Lab pratici',
+    href: '/it/projects/',
+    enTitle: 'Projects',
+  },
+  {
+    icon: '📘',
+    title: 'Appunti',
+    subtitle: 'Note sulle certificazioni',
+    href: '/it/study-notes/',
+    enTitle: 'Study Notes',
+  },
+  {
+    icon: '🧰',
+    title: 'Risorse',
+    subtitle: 'Raccolte selezionate',
+    href: '/it/resources/',
+    enTitle: 'Resources',
+  },
+  {
+    icon: '📲',
+    title: 'Contatti',
+    subtitle: 'Mettiamoci in contatto',
+    href: '/it/contact/',
+    enTitle: 'Contact',
+  },
+  {
+    icon: '🍪',
+    title: 'Privacy',
+    subtitle: 'GDPR-friendly & senza cookie',
+    href: '/it/privacy/',
+    enTitle: 'Privacy',
+  },
+];
+
+// I nodi del grafo riusano tutte le destinazioni di esplora; i tre hub di
+// atterraggio portano i figli (articoli / risorse) per la vista a fuoco.
+const childrenByEn: Record<string, ReturnType<typeof toGraphChildren>> = {
+  'Cert Reviews': toGraphChildren([...certReviewsGoogleIt, ...certReviewsMicrosoftIt]),
+  'Study Notes': toGraphChildren([...studyNotesIt, ...deepDivesIt]),
+  Resources: toGraphChildren(resourceCollectionsIt),
+};
+const graphNodes = quickLinks.map(({ icon, title, href, enTitle }) => ({
+  icon: icon ?? '🔗',
+  label: title,
+  href,
+  children: childrenByEn[enTitle],
+}));
+
+const featured = [
+  {
+    icon: '🏅',
+    tag: `${certCount} articoli`,
+    tagType: 'certification' as const,
+    title: 'Recensioni',
+    description:
+      'Recensioni in prima persona degli esami passati — strategie di preparazione, risorse e consigli.',
+    href: '/it/cert-reviews/',
+    ctaLabel: 'Sfoglia le recensioni →',
+  },
+  {
+    icon: '📘',
+    tag: `${notesCount} articoli`,
+    tagType: 'guide' as const,
+    title: 'Appunti',
+    description:
+      'Appunti strutturati per Azure, ITIL e altro — il riferimento che avrei voluto avere mentre studiavo.',
+    href: '/it/study-notes/',
+    ctaLabel: 'Apri gli appunti →',
+  },
+];
+---
+
+<BaseLayout
+  title="Home"
+  description="Marco Grimaldi — Cloud Solution Architect: recensioni di certificazioni, appunti di studio e risorse pratiche su architetture cloud, Microsoft Azure e formazione IT."
+  wide
+>
+  <div class="doc" data-cols="nav">
+    <BrandCard />
+    <div class="doc__main">
+      <section class="hero">
+        <p class="eyebrow">// hub personale</p>
+        <h1 class="hero__title">Ciao, sono <span class="gradient-text">Marco Grimaldi</span></h1>
+        <p class="hero__lead">
+          Offro consulenza su architetture e design cloud — applicando metodologie consolidate per
+          realizzare soluzioni ben progettate e scalabili. Questo sito è un hub in continua crescita
+          dove condivido ciò che imparo: recensioni di certificazioni, appunti di studio e risorse
+          pratiche per altri professionisti IT, con nuovi contenuti aggiunti regolarmente.
+        </p>
+        <p class="hero__status">
+          <Logo size={22} mark />
+          {profile.role}
+        </p>
+        <CertBadges />
+      </section>
+
+      <h2 class="section-heading">esplora</h2>
+      <div class="grid grid--quicklinks">
+        {
+          [...quickLinks]
+            .sort((a, b) => a.title.localeCompare(b.title))
+            .map(({ enTitle, ...q }) => <QuickLink {...q} />)
+        }
+      </div>
+
+      <h2 class="section-heading">in evidenza</h2>
+      <div class="featured-bento">
+        <SiteGraph
+          nodes={graphNodes}
+          center={{ label: 'Home', href: '/it/', icon: '🏠' }}
+          caption="Mappa interattiva del sito che collega le sezioni principali."
+          backLabel="Indietro"
+          openHint="Riclicca il centro per aprire"
+        />
+        <div class="featured-bento__rail">
+          {
+            [...featured]
+              .sort((a, b) => a.title.localeCompare(b.title))
+              .map((f) => <LinkCard {...f} />)
+          }
+        </div>
+      </div>
+
+      <hr class="see-also-rule" />
+      <WorkInProgress
+        title="Lavori in corso"
+        body="Nuovi contenuti vengono scritti e pubblicati di continuo — nuove recensioni di certificazioni, appunti di studio e risorse selezionate sono in arrivo. Torna a trovarci regolarmente."
+      />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: var(--sp-6) 0 var(--sp-5);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero__title {
+    font-size: var(--fs-2xl);
+    margin: 0 0 var(--sp-4);
+    letter-spacing: -0.02em;
+  }
+
+  .hero__lead {
+    font-size: var(--fs-lg);
+    color: var(--text-muted);
+    max-width: 46rem;
+    margin: 0 0 var(--sp-4);
+  }
+
+  .hero__status {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    color: var(--text-subtle);
+    margin: 0;
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--sp-4);
+    margin-block: var(--sp-4);
+  }
+
+  .grid--quicklinks {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .grid--cards {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  /* Featured bento: the interactive site map is the hero tile on the left; a
+     rail of uniform cards sits on the right. Keeping the graph in a ~1.6fr
+     column holds it near its intended size rather than stretching full-width. */
+  .featured-bento {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(15rem, 1fr);
+    gap: var(--sp-4);
+    align-items: start;
+    margin-block: var(--sp-4);
+  }
+
+  /* The graph ships with its own vertical margins (for a stacked layout);
+     drop them so it aligns flush with the top of the card rail. */
+  .featured-bento :global(.sitegraph) {
+    margin: 0;
+  }
+
+  .featured-bento__rail {
+    display: grid;
+    gap: var(--sp-4);
+    align-content: start;
+  }
+
+  /* Stack below the breakpoint: graph on top, then the cards reflow into an
+     auto-fitting row so they stay uniform and never get too narrow. */
+  @media (width <= 60rem) {
+    .featured-bento {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .featured-bento__rail {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+  }
+</style>

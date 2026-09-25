@@ -1,0 +1,22 @@
+---
+/** /de/search/ — Website-Suche (Pagefind). */
+import PageLayout from '@layouts/PageLayout.astro';
+import Search from '@components/Search.astro';
+import { getLocaleFromUrl, useTranslations } from '@i18n/utils';
+
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+---
+
+<PageLayout
+  title="Suche"
+  heading="🔎 Suche"
+  eyebrow="// website-suche"
+  lead="Finde Lernnotizen, Zertifizierungs-Reviews und Ressourcen auf der gesamten Website."
+  description="Finde Lernnotizen, Zertifizierungs-Reviews und Ressourcen auf der gesamten Website."
+  noindex
+>
+  <Search />
+  <noscript>
+    <p class="notice notice--info">{t('search.noscript')}</p>
+  </noscript>
+</PageLayout>

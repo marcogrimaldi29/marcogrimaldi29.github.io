@@ -1,0 +1,126 @@
+---
+/** /about/ — restyled in a clean GitHub/dev-README layout. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LocationMap from '@components/LocationMap.astro';
+
+const headings = [
+  { depth: 2, slug: 'about-me', text: 'about me' },
+  { depth: 2, slug: 'professional-identity', text: 'professional identity' },
+  { depth: 2, slug: 'values', text: 'values' },
+  { depth: 2, slug: 'beyond-work', text: 'beyond work' },
+  { depth: 2, slug: 'about-this-site', text: 'about this site' },
+];
+---
+
+<PageLayout
+  title="About"
+  heading="🏗️ About"
+  eyebrow="// background & this site"
+  lead="I’m Marco Grimaldi — a Cloud Solution Architect and IT Consultant with a parallel life in languages and teaching. I thrive on new challenges, diverse contexts, and continuous learning."
+  description="I’m Marco Grimaldi — a Cloud Solution Architect and IT Consultant with a parallel life in languages and teaching. I thrive on new challenges, diverse contexts, and continuous learning."
+  headings={headings}
+  brandRail
+>
+  <div class="about">
+    <h2 class="section-heading" id="about-me">about me</h2>
+    <p>
+      My career bridges the IT and linguistic fields. If you’d like to collaborate, share ideas, or
+      explore common projects, feel free to <a href="/contact/">get in touch</a>.
+    </p>
+    <p>
+      📍 Based in <strong>Gran Canaria, Spain</strong> — connecting with local and international communities.
+    </p>
+
+    <LocationMap
+      region="Canary Islands"
+      country="Spain"
+      caption="Geo-locator highlighting Gran Canaria in the Canary Islands, Spain."
+    />
+
+    <h2 class="section-heading" id="professional-identity">professional identity</h2>
+    <ul>
+      <li>
+        <strong>IT &amp; Cloud</strong> — Microsoft 365, Teams, Azure administration and cloud (voice)
+        infrastructures. I specialize in technical support, troubleshooting, and knowledge management.
+      </li>
+      <li>
+        <strong>Languages &amp; Training</strong> — foreign-language teacher &amp; trainer across multilingual,
+        multicultural contexts, including exam preparation and academic support.
+      </li>
+      <li>
+        <strong>Inclusive Education</strong> — experience working with learners with functional diversity,
+        adapting methods and tools so everyone can succeed.
+      </li>
+    </ul>
+    <p>
+      This blend of technical expertise and linguistic competence lets me operate effectively in
+      international, cross-functional environments.
+    </p>
+
+    <h2 class="section-heading" id="values">values</h2>
+    <ul>
+      <li>
+        <strong>Problem-solving</strong> — clear, structured solutions to technical and organizational
+        challenges.
+      </li>
+      <li>
+        <strong>Collaboration</strong> — learning from others and contributing to shared goals.
+      </li>
+      <li>
+        <strong>Continuous learning</strong> — driven by curiosity in both technology and languages.
+      </li>
+      <li>
+        <strong>Inclusion &amp; empathy</strong> — technology and education should be accessible to everyone.
+      </li>
+    </ul>
+
+    <h2 class="section-heading" id="beyond-work">beyond work</h2>
+    <ul>
+      <li><strong>Hiking</strong> — exploring trails and connecting with nature.</li>
+      <li><strong>Reading</strong> — technical books, non-fiction, and literature.</li>
+      <li><strong>Music</strong> — multi-instrumentalist and audio engineer.</li>
+    </ul>
+
+    <h2 class="section-heading" id="about-this-site">about this site</h2>
+    <p>
+      Built with <a href="https://www.astro.build/" rel="noopener" target="_blank">Astro</a> and a custom
+      component library, deployed on <a
+        href="https://docs.github.com/en/pages"
+        rel="noopener"
+        target="_blank">GitHub Pages</a
+      >. Analytics are privacy-friendly and cookieless via <a
+        href="https://umami.is/"
+        rel="noopener"
+        target="_blank">Umami</a
+      >. Content was edited with the help of AI models such as <a
+        href="https://chatgpt.com/"
+        rel="noopener"
+        target="_blank">ChatGPT 5.x</a
+      >, <a href="https://www.claude.com/" rel="noopener" target="_blank">Claude Opus 4.x</a> and <a
+        href="https://www.claude.com/"
+        rel="noopener"
+        target="_blank">Claude Sonnet 4.x</a
+      >.
+    </p>
+  </div>
+</PageLayout>
+
+<style>
+  .about p {
+    max-width: 48rem;
+  }
+
+  .about ul {
+    max-width: 48rem;
+    padding-left: 1.4rem;
+  }
+
+  .about li {
+    margin-bottom: var(--sp-2);
+    line-height: 1.6;
+  }
+
+  .about li::marker {
+    color: var(--brand);
+  }
+</style>

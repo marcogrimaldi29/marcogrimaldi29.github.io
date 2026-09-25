@@ -1,0 +1,53 @@
+---
+/** /es/study-notes/ — landing ES (apuntes). Article links point to EN articles. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import QuickLink from '@components/QuickLink.astro';
+import SupportNote from '@components/SupportNote.astro';
+import { studyNotesEs, deepDivesEs } from '@data/landings-es';
+import { toStudyNav } from '@data/landings';
+
+const navGroups = [
+  { title: 'Apuntes', items: toStudyNav(studyNotesEs, / Apuntes$/, (s) => `Serie ${s}`) },
+  { title: 'Análisis', items: toStudyNav(deepDivesEs, undefined, (s) => `Serie ${s}`) },
+];
+const headings = [
+  { depth: 2, slug: 'apuntes', text: 'apuntes' },
+  { depth: 2, slug: 'analisis', text: 'análisis' },
+];
+---
+
+<PageLayout
+  title="Apuntes"
+  heading="📘 Apuntes"
+  eyebrow="// apuntes sobre certificaciones"
+  lead="Apuntes estructurados para exámenes de TI: Microsoft, ITIL y más — además de análisis en profundidad de temas específicos de arquitectura cloud."
+  description="Apuntes estructurados para exámenes de TI: Microsoft, ITIL y más — además de análisis en profundidad de temas específicos de arquitectura cloud."
+  searchable
+  navGroups={navGroups}
+  headings={headings}
+>
+  <SupportNote />
+
+  <h2 class="section-heading" id="apuntes">apuntes</h2>
+  <div class="card-grid">
+    {studyNotesEs.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <h2 class="section-heading" id="analisis">análisis</h2>
+  <div class="card-grid">
+    {deepDivesEs.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// ver también'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="🏅"
+      title="Reseñas"
+      subtitle="Experiencias y consejos de examen"
+      href="/es/cert-reviews/"
+    />
+    <QuickLink icon="🧰" title="Recursos" subtitle="Colecciones curadas" href="/es/resources/" />
+  </div>
+</PageLayout>

@@ -1,0 +1,165 @@
+/* ============================================================
+ * Design tokens — GitHub-dark canvas + Azure-blue/cyan accent.
+ * Cloud-native / dev-oriented identity for a Cloud Solution
+ * Architect. Single coherent dark theme; WCAG-AA text on surfaces.
+ * ============================================================ */
+
+:root {
+  /* Brand — Azure blue primary, cyan secondary */
+  --brand: #4493f8;
+  --brand-strong: #6cb6ff;
+  --brand-emphasis: #1f6feb;
+  --accent: #39c5cf;
+  --accent-strong: #56d4dd;
+
+  /* The one reserved gradient — hero name, skill bars, logo: green → azure */
+  --gradient: linear-gradient(90deg, #3fb950 0%, #2ec5c5 50%, #4493f8 100%);
+  --gradient-soft: linear-gradient(135deg, rgb(68 147 248 / 14%), rgb(57 197 207 / 10%));
+
+  /* Surfaces — GitHub dark ramp */
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface-2: #1c2128;
+  --surface-3: #21262d;
+  --border: #30363d;
+  --border-muted: #21262d;
+  --border-strong: #3d444d;
+
+  /* Text — all AA+ on --bg / --surface */
+  --text: #e6edf3;
+  --text-muted: #9da7b3;
+  --text-subtle: #7d8590;
+  --on-brand: #fff;
+
+  /* Status */
+  --info: #a371f7;
+  --success: #3fb950;
+  --warning: #d29922;
+  --danger: #f85149;
+
+  /* Label/badge palettes (GitHub-label style: tinted bg + bright fg + ring) */
+  --tag-cert-bg: rgb(68 147 248 / 15%);
+  --tag-cert-fg: #6cb6ff;
+  --tag-cert-ring: rgb(68 147 248 / 35%);
+  --tag-guide-bg: rgb(63 185 80 / 15%);
+  --tag-guide-fg: #56d364;
+  --tag-guide-ring: rgb(63 185 80 / 35%);
+  --tag-tool-bg: rgb(210 153 34 / 15%);
+  --tag-tool-fg: #e3b341;
+  --tag-tool-ring: rgb(210 153 34 / 35%);
+
+  /* Typography */
+  --font-sans:
+    -apple-system, blinkmacsystemfont, 'Segoe UI', 'Noto Sans', helvetica, arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-mono:
+    ui-monospace, 'SF Mono', 'JetBrains Mono', 'Cascadia Code', 'Roboto Mono', menlo, consolas,
+    monospace;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.95rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2.25rem;
+  --lh: 1.65;
+
+  /* Spacing scale */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+
+  /* Radii / shadow / motion — GitHub uses 6px */
+  --radius: 6px;
+  --radius-sm: 4px;
+  --radius-lg: 12px;
+  --radius-pill: 2em;
+  --shadow: 0 1px 0 rgb(1 4 9 / 30%);
+  --shadow-hover: 0 8px 24px rgb(1 4 9 / 40%);
+  --transition: 0.16s ease;
+
+  /* Layout */
+  --content-max: 60rem;
+  --content-wide: 86rem;
+  --toc-w: 14rem;
+  --nav-w: 15rem;
+  --header-h: 3.5rem;
+}
+
+/* ============================================================
+ * Light theme — same Azure-blue/cyan + green→azure identity on a
+ * GitHub-light canvas. Applied via `data-theme="light"` on <html>
+ * (set before paint by the inline script in BaseLayout). Brand,
+ * accent and status hues are darkened so text stays WCAG-AA on the
+ * pale surfaces; the reserved gradient keeps its green→azure ramp
+ * with deeper stops for contrast. The Logo/favicon mark keeps its
+ * dark chip in both themes, so the brand reads identically.
+ * ============================================================ */
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  /* Brand — azure/cyan darkened for AA on light surfaces */
+  --brand: #1f6feb;
+  --brand-strong: #0969da;
+  --brand-emphasis: #0a58c2;
+  --accent: #0d8b96;
+  --accent-strong: #0a6e78;
+
+  /* Reserved gradient — same green→azure identity, deeper stops for light bg */
+  --gradient: linear-gradient(90deg, #1a7f37 0%, #0d8b96 50%, #0969da 100%);
+  --gradient-soft: linear-gradient(135deg, rgb(31 111 235 / 8%), rgb(13 139 150 / 7%));
+
+  /* Surfaces — GitHub light ramp (white cards on a pale-grey canvas) */
+  --bg: #f6f8fa;
+  --surface: #fff;
+  --surface-2: #eef1f4;
+  --surface-3: #e6eaef;
+  --border: #d0d7de;
+  --border-muted: #d8dee4;
+  --border-strong: #afb8c1;
+
+  /* Text — AA+ on --bg / --surface */
+  --text: #1f2328;
+  --text-muted: #59636e;
+  --text-subtle: #6e7781;
+  --on-brand: #fff;
+
+  /* Status */
+  --info: #8250df;
+  --success: #1a7f37;
+  --warning: #9a6700;
+  --danger: #cf222e;
+
+  /* Label/badge palettes — tinted bg + darker fg + ring for light surfaces */
+  --tag-cert-bg: rgb(9 105 218 / 10%);
+  --tag-cert-fg: #0969da;
+  --tag-cert-ring: rgb(9 105 218 / 30%);
+  --tag-guide-bg: rgb(26 127 55 / 10%);
+  --tag-guide-fg: #1a7f37;
+  --tag-guide-ring: rgb(26 127 55 / 30%);
+  --tag-tool-bg: rgb(154 103 0 / 12%);
+  --tag-tool-fg: #9a6700;
+  --tag-tool-ring: rgb(154 103 0 / 30%);
+
+  /* Shadows — softer, neutral-grey on light */
+  --shadow: 0 1px 0 rgb(31 35 40 / 6%);
+  --shadow-hover: 0 8px 24px rgb(31 35 40 / 12%);
+}
+
+/* Honor reduced-motion globally. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: 0s;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

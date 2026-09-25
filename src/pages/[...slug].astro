@@ -1,0 +1,102 @@
+---
+/**
+ * Renders every post at its `permalink`. English posts keep the unprefixed URL
+ * (zero-URL-breakage); other locales are served under their prefix
+ * (e.g. /it/microsoft-az-900/). The left-rail section nav matches the article's
+ * category AND locale.
+ */
+import { getCollection, render } from 'astro:content';
+import PostLayout from '@layouts/PostLayout.astro';
+import type { SideNavGroup } from '@components/SideNav.astro';
+import { certReviewsGoogle, certReviewsMicrosoft, resourceCollections } from '@data/landings';
+import {
+  certReviewsGoogleIt,
+  certReviewsMicrosoftIt,
+  resourceCollectionsIt,
+} from '@data/landings-it';
+import {
+  certReviewsGoogleEs,
+  certReviewsMicrosoftEs,
+  resourceCollectionsEs,
+} from '@data/landings-es';
+import {
+  certReviewsGoogleDe,
+  certReviewsMicrosoftDe,
+  resourceCollectionsDe,
+} from '@data/landings-de';
+
+/** Per-locale landing-card sets + the localized section titles. */
+const landingsByLocale = {
+  en: {
+    microsoft: certReviewsMicrosoft,
+    google: certReviewsGoogle,
+    resources: resourceCollections,
+    collectionsTitle: 'Collections',
+  },
+  it: {
+    microsoft: certReviewsMicrosoftIt,
+    google: certReviewsGoogleIt,
+    resources: resourceCollectionsIt,
+    collectionsTitle: 'Raccolte',
+  },
+  es: {
+    microsoft: certReviewsMicrosoftEs,
+    google: certReviewsGoogleEs,
+    resources: resourceCollectionsEs,
+    collectionsTitle: 'Colecciones',
+  },
+  de: {
+    microsoft: certReviewsMicrosoftDe,
+    google: certReviewsGoogleDe,
+    resources: resourceCollectionsDe,
+    collectionsTitle: 'Sammlungen',
+  },
+} as const;
+
+/** Categories are localized in frontmatter; map each to its canonical kind. */
+const CERT_CATEGORIES = new Set([
+  'Certification',
+  'Certificazione',
+  'Certificación',
+  'Zertifizierung',
+]);
+const RESOURCE_CATEGORIES = new Set(['Resources', 'Risorse', 'Recursos', 'Ressourcen']);
+
+/** Left-rail section nav matching the article's category + locale. */
+function navForCategory(category: string | undefined, locale: string): SideNavGroup[] | undefined {
+  const sets = landingsByLocale[locale as keyof typeof landingsByLocale] ?? landingsByLocale.en;
+  if (category && CERT_CATEGORIES.has(category)) {
+    return [
+      { title: 'Microsoft', items: sets.microsoft.map((c) => ({ label: c.title, href: c.href })) },
+      { title: 'Google', items: sets.google.map((c) => ({ label: c.title, href: c.href })) },
+    ];
+  }
+  if (category && RESOURCE_CATEGORIES.has(category)) {
+    return [
+      {
+        title: sets.collectionsTitle,
+        items: sets.resources.map((c) => ({ label: c.title, href: c.href })),
+      },
+    ];
+  }
+  return undefined;
+}
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  return posts.map((post) => {
+    const slug = post.data.permalink.replace(/^\/|\/$/g, '');
+    // English stays unprefixed; other locales get their /<locale>/ prefix.
+    const path = post.data.locale === 'en' ? slug : `${post.data.locale}/${slug}`;
+    return { params: { slug: path }, props: { post } };
+  });
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const navGroups = navForCategory(post.data.categories[0], post.data.locale);
+---
+
+<PostLayout post={post} headings={headings} navGroups={navGroups}>
+  <Content />
+</PostLayout>

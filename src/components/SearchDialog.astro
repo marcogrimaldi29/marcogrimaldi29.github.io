@@ -1,0 +1,641 @@
+---
+/**
+ * SearchDialog — magnifying-glass button in the header that unfolds a
+ * command-palette style search window over the page.
+ *
+ * It queries the same Pagefind index as the /search/ page, through Pagefind's
+ * JS API rather than its prebuilt UI, so the window can match the site's look
+ * (mono meta, surface cards, brand focus ring). The index is only fetched the
+ * first time the window opens, so pages that never search pay nothing for it.
+ * Pagefind picks the index matching <html lang>, so each locale searches its
+ * own pages.
+ *
+ * Progressive enhancement: the trigger is a real link to the /search/ page.
+ * With scripting it opens the dialog instead; without it, it navigates.
+ *
+ * Shortcuts: Ctrl/⌘ + K or "/" open it; ↑/↓ move through results; Enter opens
+ * the highlighted one; Esc closes (native <dialog> behavior).
+ */
+import { getLocaleFromUrl, localizePath, useTranslations } from '@i18n/utils';
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<a
+  class="search-toggle"
+  href={localizePath('/search/', locale)}
+  data-search-open
+  aria-label={t('search.open')}
+  title={`${t('search.open')} (Ctrl K)`}
+>
+  <svg
+    viewBox="0 0 24 24"
+    width="18"
+    height="18"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <circle cx="11" cy="11" r="7"></circle>
+    <path d="m20 20-3.5-3.5"></path>
+  </svg>
+</a>
+
+<dialog
+  class="search-dialog"
+  aria-label={t('nav.search')}
+  data-search-dialog
+  data-msg-hint={t('search.hint')}
+  data-msg-empty={t('search.noResults')}
+  data-msg-one={t('search.result')}
+  data-msg-many={t('search.results')}
+  data-msg-error={t('search.unavailable')}
+>
+  <div class="search-dialog__panel">
+    <div class="search-dialog__bar">
+      <svg
+        class="search-dialog__icon"
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <circle cx="11" cy="11" r="7"></circle>
+        <path d="m20 20-3.5-3.5"></path>
+      </svg>
+      <input
+        class="search-dialog__input"
+        type="search"
+        role="combobox"
+        aria-autocomplete="list"
+        aria-controls="search-dialog-results"
+        aria-expanded="false"
+        aria-label={t('nav.search')}
+        placeholder={t('search.placeholder')}
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+        enterkeyhint="go"
+        data-search-input
+      />
+      <button type="button" class="search-dialog__close" data-search-close>
+        <kbd>esc</kbd>
+        <span class="visually-hidden">{t('search.close')}</span>
+      </button>
+    </div>
+
+    <p class="search-dialog__status" role="status" aria-live="polite" data-search-status>
+      {t('search.hint')}
+    </p>
+
+    <ul
+      id="search-dialog-results"
+      class="search-dialog__results"
+      role="listbox"
+      aria-label={t('nav.search')}
+      data-search-results
+    >
+    </ul>
+
+    <footer class="search-dialog__foot" aria-hidden="true">
+      <span><kbd>↑</kbd><kbd>↓</kbd> {t('search.keyNavigate')}</span>
+      <span><kbd>↵</kbd> {t('search.keyOpen')}</span>
+      <span><kbd>esc</kbd> {t('search.keyClose')}</span>
+    </footer>
+  </div>
+</dialog>
+
+<script>
+  interface PagefindSubResult {
+    title: string;
+    url: string;
+    excerpt: string;
+  }
+  interface PagefindData {
+    url: string;
+    excerpt: string;
+    meta: { title?: string };
+    sub_results: PagefindSubResult[];
+  }
+  interface Pagefind {
+    options(opts: Record<string, unknown>): Promise<void>;
+    init(): Promise<void>;
+    preload(term: string): Promise<void>;
+    debouncedSearch(
+      term: string,
+      opts?: Record<string, unknown>,
+      ms?: number,
+    ): Promise<{ results: { data(): Promise<PagefindData> }[] } | null>;
+  }
+
+  const MAX_RESULTS = 8;
+  const MAX_SUB_RESULTS = 2;
+
+  const dialog = document.querySelector<HTMLDialogElement>('[data-search-dialog]');
+  const input = dialog?.querySelector<HTMLInputElement>('[data-search-input]');
+  const list = dialog?.querySelector<HTMLUListElement>('[data-search-results]');
+  const status = dialog?.querySelector<HTMLElement>('[data-search-status]');
+
+  if (dialog && input && list && status) {
+    const msg = dialog.dataset;
+    let pagefind: Promise<Pagefind> | undefined;
+    let active = -1;
+
+    // Loaded on first use. The file only exists after Pagefind indexes the
+    // build, so the URL is built at runtime and made absolute: Vite's dev
+    // server tags root-relative dynamic imports with `?import`, which it then
+    // refuses to serve from public/.
+    const loadPagefind = () => {
+      pagefind ??= (async () => {
+        const url = new URL('/pagefind/pagefind.js', window.location.origin).href;
+        const pf = (await import(/* @vite-ignore */ url)) as Pagefind;
+        await pf.options({ excerptLength: 22 });
+        await pf.init();
+        return pf;
+      })();
+      return pagefind;
+    };
+
+    const options = () => Array.from(list.querySelectorAll<HTMLAnchorElement>('[role="option"]'));
+
+    const setActive = (index: number) => {
+      const opts = options();
+      opts.forEach((o, i) => o.setAttribute('aria-selected', String(i === index)));
+      active = index;
+      const current = opts[index];
+      if (current) {
+        input.setAttribute('aria-activedescendant', current.id);
+        current.scrollIntoView({ block: 'nearest' });
+      } else {
+        input.removeAttribute('aria-activedescendant');
+      }
+    };
+
+    const setStatus = (text: string) => {
+      status.textContent = text;
+      status.hidden = text === '';
+    };
+
+    const clearResults = () => {
+      list.replaceChildren();
+      input.setAttribute('aria-expanded', 'false');
+      setActive(-1);
+    };
+
+    // Pagefind URLs carry `.html` only for non-directory pages; the site uses
+    // trailing-slash URLs, so the path doubles as a readable breadcrumb.
+    const crumb = (url: string) => decodeURI(url.split('#')[0] ?? url);
+
+    let optionId = 0;
+    const option = (href: string, title: string, excerpt: string, sub: boolean) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.id = `search-opt-${optionId++}`;
+      a.href = href;
+      a.className = sub ? 'search-hit search-hit--sub' : 'search-hit';
+      a.setAttribute('role', 'option');
+      a.setAttribute('aria-selected', 'false');
+      a.tabIndex = -1;
+
+      const head = document.createElement('span');
+      head.className = 'search-hit__title';
+      head.textContent = title;
+      a.append(head);
+
+      if (!sub) {
+        const path = document.createElement('span');
+        path.className = 'search-hit__path';
+        path.textContent = crumb(href);
+        a.append(path);
+      }
+
+      // Pagefind excerpts are HTML-escaped page text with only <mark> added.
+      const text = document.createElement('span');
+      text.className = 'search-hit__excerpt';
+      text.innerHTML = excerpt;
+      a.append(text);
+
+      li.append(a);
+      return li;
+    };
+
+    const render = (hits: PagefindData[], total: number, term: string) => {
+      optionId = 0;
+      const items = hits.flatMap((hit) => [
+        option(hit.url, hit.meta.title ?? crumb(hit.url), hit.excerpt, false),
+        ...hit.sub_results
+          // The first sub-result is usually the page itself (no anchor).
+          .filter((s) => s.url.includes('#'))
+          .slice(0, MAX_SUB_RESULTS)
+          .map((s) => option(s.url, s.title, s.excerpt, true)),
+      ]);
+      list.replaceChildren(...items);
+      input.setAttribute('aria-expanded', String(items.length > 0));
+
+      if (total === 0) setStatus(`${msg.msgEmpty} “${term}”`);
+      else setStatus(`${total} ${total === 1 ? msg.msgOne : msg.msgMany}`);
+      setActive(items.length ? 0 : -1);
+    };
+
+    const search = async () => {
+      const term = input.value.trim();
+      if (!term) {
+        clearResults();
+        setStatus(msg.msgHint ?? '');
+        return;
+      }
+      try {
+        const pf = await loadPagefind();
+        const res = await pf.debouncedSearch(term, {}, 180);
+        if (res === null) return; // superseded by a newer keystroke
+        const hits = await Promise.all(res.results.slice(0, MAX_RESULTS).map((r) => r.data()));
+        // A slower earlier query must not overwrite a newer one.
+        if (input.value.trim() !== term) return;
+        render(hits, res.results.length, term);
+      } catch (err) {
+        console.warn('[search] Pagefind index unavailable', err);
+        clearResults();
+        setStatus(msg.msgError ?? '');
+      }
+    };
+
+    const open = () => {
+      if (dialog.open) return;
+      dialog.showModal();
+      input.focus();
+      input.select();
+      void loadPagefind().catch(() => undefined);
+    };
+
+    const close = () => dialog.close();
+
+    document.querySelectorAll<HTMLAnchorElement>('[data-search-open]').forEach((trigger) => {
+      trigger.setAttribute('role', 'button');
+      trigger.setAttribute('aria-haspopup', 'dialog');
+      trigger.addEventListener('click', (e) => {
+        // Let modified clicks (new tab / window) reach the real /search/ page.
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+        e.preventDefault();
+        open();
+      });
+    });
+
+    dialog.querySelector('[data-search-close]')?.addEventListener('click', close);
+
+    // A click on the backdrop lands on the <dialog> element itself, outside
+    // the panel — treat it as dismiss.
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) close();
+    });
+
+    input.addEventListener('input', () => {
+      const term = input.value.trim();
+      if (term)
+        void loadPagefind().then(
+          (pf) => pf.preload(term),
+          () => undefined,
+        );
+      void search();
+    });
+
+    input.addEventListener('keydown', (e) => {
+      const count = options().length;
+      // A filled search field eats the first Esc to clear itself; the window
+      // promises "esc close", so close straight away instead.
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        close();
+      } else if (e.key === 'ArrowDown' && count) {
+        e.preventDefault();
+        setActive((active + 1) % count);
+      } else if (e.key === 'ArrowUp' && count) {
+        e.preventDefault();
+        setActive((active - 1 + count) % count);
+      } else if (e.key === 'Enter') {
+        const target = options()[active];
+        if (target) {
+          e.preventDefault();
+          target.click();
+        }
+      }
+    });
+
+    // Hover follows the keyboard highlight so the two never disagree.
+    list.addEventListener('mousemove', (e) => {
+      const hit = (e.target as Element).closest<HTMLAnchorElement>('[role="option"]');
+      if (!hit) return;
+      const index = options().indexOf(hit);
+      if (index !== active) setActive(index);
+    });
+
+    // Following a same-page anchor keeps the document loaded, so close the
+    // window explicitly or it would sit over the section it just jumped to.
+    list.addEventListener('click', (e) => {
+      if ((e.target as Element).closest('a')) close();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      const el = document.activeElement as HTMLElement | null;
+      const typing = !!el && (el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName));
+      if ((e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        if (dialog.open) close();
+        else open();
+      } else if (e.key === '/' && !typing && !dialog.open) {
+        e.preventDefault();
+        open();
+      }
+    });
+  }
+</script>
+
+<style>
+  /* ── Trigger — same chip as the hamburger / language buttons ── */
+  .search-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text-muted);
+    transition:
+      color var(--transition),
+      border-color var(--transition),
+      background var(--transition);
+  }
+
+  .search-toggle:hover {
+    color: var(--text);
+    border-color: var(--border-strong);
+    background: var(--surface-2);
+    text-decoration: none;
+  }
+
+  @media (width <= 60rem) {
+    .search-toggle {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  /* ── Window ──────────────────────────────────────────────── */
+  .search-dialog {
+    width: min(40rem, calc(100% - 2 * var(--sp-4)));
+    max-width: none;
+    max-height: none;
+    margin: 12vh auto auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    overflow: visible;
+  }
+
+  .search-dialog::backdrop {
+    background: rgb(1 4 9 / 55%);
+    backdrop-filter: blur(4px);
+  }
+
+  :root[data-theme='light'] .search-dialog::backdrop {
+    background: rgb(31 35 40 / 30%);
+  }
+
+  .search-dialog[open] {
+    animation: search-unfold 0.18s ease-out;
+  }
+
+  .search-dialog[open]::backdrop {
+    animation: search-fade 0.18s ease-out;
+  }
+
+  @keyframes search-unfold {
+    from {
+      opacity: 0;
+      transform: translateY(-10px) scale(0.98);
+    }
+  }
+
+  @keyframes search-fade {
+    from {
+      opacity: 0;
+    }
+  }
+
+  .search-dialog__panel {
+    display: flex;
+    flex-direction: column;
+    max-height: min(36rem, 76vh);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-hover);
+    overflow: hidden;
+  }
+
+  /* Gradient hairline on top — the reserved green→azure brand ramp. */
+  .search-dialog__panel::before {
+    content: '';
+    height: 2px;
+    flex-shrink: 0;
+    background: var(--gradient);
+    opacity: 0.8;
+  }
+
+  .search-dialog__bar {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    padding: var(--sp-3) var(--sp-4);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .search-dialog__icon {
+    flex-shrink: 0;
+    color: var(--brand-strong);
+  }
+
+  .search-dialog__input {
+    flex: 1;
+    min-width: 0;
+    padding: var(--sp-2) 0;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: var(--fs-lg);
+    outline: none;
+  }
+
+  .search-dialog__input::placeholder {
+    color: var(--text-subtle);
+  }
+
+  /* The native clear "x" duplicates Esc and clashes with the theme. */
+  .search-dialog__input::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
+  .search-dialog__close {
+    flex-shrink: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .search-dialog kbd {
+    display: inline-block;
+    min-width: 1.4rem;
+    padding: 1px 5px;
+    border: 1px solid var(--border);
+    border-bottom-width: 2px;
+    border-radius: var(--radius-sm);
+    background: var(--surface-2);
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .search-dialog__close:hover kbd {
+    color: var(--text);
+    border-color: var(--border-strong);
+  }
+
+  .search-dialog__status {
+    margin: 0;
+    padding: var(--sp-3) var(--sp-4) var(--sp-1);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-subtle);
+  }
+
+  .search-dialog__results {
+    flex: 1;
+    min-height: 0;
+    margin: 0;
+    padding: var(--sp-1) var(--sp-2) var(--sp-2);
+    list-style: none;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .search-dialog__results:empty {
+    display: none;
+  }
+
+  /* ── Result rows ─────────────────────────────────────────── */
+  .search-dialog :global(.search-hit) {
+    display: grid;
+    gap: 2px;
+    padding: var(--sp-2) var(--sp-3);
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .search-dialog :global(.search-hit[aria-selected='true']) {
+    border-color: var(--border-strong);
+    background: var(--surface-2);
+    box-shadow: inset 2px 0 0 var(--brand);
+  }
+
+  /* Headings inside a page, nested under their page with a guide line. */
+  .search-dialog :global(.search-hit--sub) {
+    margin-left: var(--sp-4);
+    border-left: 2px solid var(--border);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+
+  .search-dialog :global(.search-hit__title) {
+    font-weight: 600;
+    font-size: var(--fs-base);
+  }
+
+  .search-dialog :global(.search-hit--sub .search-hit__title) {
+    font-weight: 500;
+    font-size: var(--fs-sm);
+  }
+
+  .search-dialog :global(.search-hit[aria-selected='true'] .search-hit__title) {
+    color: var(--brand-strong);
+  }
+
+  .search-dialog :global(.search-hit__path) {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-subtle);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .search-dialog :global(.search-hit__excerpt) {
+    color: var(--text-muted);
+    font-size: var(--fs-sm);
+    line-height: 1.55;
+  }
+
+  .search-dialog :global(.search-hit__excerpt mark) {
+    padding: 0 2px;
+    border-radius: 3px;
+    background: var(--tag-cert-bg);
+    color: var(--tag-cert-fg);
+  }
+
+  /* ── Footer — keyboard hints ─────────────────────────────── */
+  .search-dialog__foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2) var(--sp-4);
+    padding: var(--sp-2) var(--sp-4);
+    border-top: 1px solid var(--border);
+    background: var(--surface-2);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-subtle);
+  }
+
+  .search-dialog__foot kbd {
+    margin-right: 2px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* Phone: pin the window near the top so the on-screen keyboard leaves
+     room for results, and drop the keyboard-hint footer (no arrow keys). */
+  @media (width <= 34rem) {
+    .search-dialog {
+      margin-top: var(--sp-3);
+    }
+
+    .search-dialog__panel {
+      max-height: calc(100dvh - 2 * var(--sp-3));
+    }
+
+    .search-dialog__foot {
+      display: none;
+    }
+  }
+</style>

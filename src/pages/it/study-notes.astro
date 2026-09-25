@@ -1,0 +1,53 @@
+---
+/** /it/study-notes/ — landing IT (appunti). Article links point to EN articles. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import QuickLink from '@components/QuickLink.astro';
+import SupportNote from '@components/SupportNote.astro';
+import { studyNotesIt, deepDivesIt } from '@data/landings-it';
+import { toStudyNav } from '@data/landings';
+
+const navGroups = [
+  { title: 'Appunti', items: toStudyNav(studyNotesIt, / Appunti$/, (s) => `Serie ${s}`) },
+  { title: 'Approfondimenti', items: toStudyNav(deepDivesIt, undefined, (s) => `Serie ${s}`) },
+];
+const headings = [
+  { depth: 2, slug: 'appunti', text: 'appunti' },
+  { depth: 2, slug: 'approfondimenti', text: 'approfondimenti' },
+];
+---
+
+<PageLayout
+  title="Appunti"
+  heading="📘 Appunti"
+  eyebrow="// appunti sulle certificazioni"
+  lead="Appunti strutturati per esami IT: Microsoft, ITIL e altro — più approfondimenti su temi specifici di architetture cloud."
+  description="Appunti strutturati per esami IT: Microsoft, ITIL e altro — più approfondimenti su temi specifici di architetture cloud."
+  searchable
+  navGroups={navGroups}
+  headings={headings}
+>
+  <SupportNote />
+
+  <h2 class="section-heading" id="appunti">appunti</h2>
+  <div class="card-grid">
+    {studyNotesIt.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <h2 class="section-heading" id="approfondimenti">approfondimenti</h2>
+  <div class="card-grid">
+    {deepDivesIt.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// vedi anche'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="🏅"
+      title="Recensioni"
+      subtitle="Esperienze e consigli d’esame"
+      href="/it/cert-reviews/"
+    />
+    <QuickLink icon="🧰" title="Risorse" subtitle="Raccolte curate" href="/it/resources/" />
+  </div>
+</PageLayout>

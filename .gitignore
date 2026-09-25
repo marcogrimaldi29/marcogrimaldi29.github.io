@@ -1,4 +1,33 @@
-_site
-.sass-cache
-.jekyll-metadata
-Gemfile.lock
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# pagefind index (generated)
+public/pagefind/
+
+# local tooling (Claude Code)
+.claude/
+
+# logs / env / os
+npm-debug.log*
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Cached source data for generators (not committed)
+scripts/.cache/
+
+# Private maintainer material — development notes, the cutover runbook, audit
+# findings and AI working instructions. The repository is public, and none of
+# this is needed to build or deploy the site, so it stays on disk only.
+# (Anchored with a leading slash so an unrelated `docs/` deeper in the tree,
+# e.g. a future content collection, is not swept up by accident.)
+/docs/
+/PLAN.md
+/instructions*.md

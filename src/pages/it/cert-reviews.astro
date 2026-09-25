@@ -1,0 +1,55 @@
+---
+/** /it/cert-reviews/ — landing IT (recensioni). Article links point to EN articles. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import QuickLink from '@components/QuickLink.astro';
+import SupportNote from '@components/SupportNote.astro';
+import { certReviewsGoogleIt, certReviewsMicrosoftIt } from '@data/landings-it';
+
+const navGroups = [
+  {
+    title: 'Microsoft',
+    items: certReviewsMicrosoftIt.map((c) => ({ label: c.title, href: c.href })),
+  },
+  { title: 'Google', items: certReviewsGoogleIt.map((c) => ({ label: c.title, href: c.href })) },
+];
+const headings = [
+  { depth: 2, slug: 'microsoft', text: 'microsoft' },
+  { depth: 2, slug: 'google', text: 'google' },
+];
+---
+
+<PageLayout
+  title="Recensioni"
+  heading="🏅 Recensioni"
+  eyebrow="// recensioni & esperienze d’esame"
+  lead="Recensioni in prima persona delle certificazioni che ho conseguito — strategie di preparazione, risorse di studio ed esperienza d’esame."
+  description="Recensioni in prima persona delle certificazioni che ho conseguito — strategie di preparazione, risorse di studio ed esperienza d’esame."
+  searchable
+  navGroups={navGroups}
+  headings={headings}
+>
+  <SupportNote kind="reviews" />
+
+  <h2 class="section-heading" id="microsoft">microsoft</h2>
+  <div class="card-grid">
+    {certReviewsMicrosoftIt.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <h2 class="section-heading" id="google">google</h2>
+  <div class="card-grid">
+    {certReviewsGoogleIt.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// vedi anche'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="📘"
+      title="Appunti"
+      subtitle="Materiale di preparazione"
+      href="/it/study-notes/"
+    />
+    <QuickLink icon="🧰" title="Risorse" subtitle="Raccolte curate" href="/it/resources/" />
+  </div>
+</PageLayout>

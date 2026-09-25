@@ -1,0 +1,58 @@
+---
+/** /de/study-notes/ — Landing DE (Lernnotizen). Article links point to EN articles. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import QuickLink from '@components/QuickLink.astro';
+import SupportNote from '@components/SupportNote.astro';
+import { studyNotesDe, deepDivesDe } from '@data/landings-de';
+import { toStudyNav } from '@data/landings';
+
+const navGroups = [
+  { title: 'Lernnotizen', items: toStudyNav(studyNotesDe, / Lernnotizen$/, (s) => `${s}-Serie`) },
+  { title: 'Deep Dives', items: toStudyNav(deepDivesDe, undefined, (s) => `${s}-Serie`) },
+];
+const headings = [
+  { depth: 2, slug: 'lernnotizen', text: 'lernnotizen' },
+  { depth: 2, slug: 'deep-dives', text: 'deep dives' },
+];
+---
+
+<PageLayout
+  title="Notizen"
+  heading="📘 Notizen"
+  eyebrow="// notizen zu zertifizierungen"
+  lead="Strukturierte Notizen für IT-Prüfungen: Microsoft, ITIL und mehr — plus Deep Dives zu speziellen Themen der Cloud-Architektur."
+  description="Strukturierte Notizen für IT-Prüfungen: Microsoft, ITIL und mehr — plus Deep Dives zu speziellen Themen der Cloud-Architektur."
+  searchable
+  navGroups={navGroups}
+  headings={headings}
+>
+  <SupportNote />
+
+  <h2 class="section-heading" id="lernnotizen">lernnotizen</h2>
+  <div class="card-grid">
+    {studyNotesDe.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <h2 class="section-heading" id="deep-dives">deep dives</h2>
+  <div class="card-grid">
+    {deepDivesDe.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// siehe auch'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="🏅"
+      title="Reviews"
+      subtitle="Prüfungserfahrungen & Tipps"
+      href="/de/cert-reviews/"
+    />
+    <QuickLink
+      icon="🧰"
+      title="Ressourcen"
+      subtitle="Kuratierte Sammlungen"
+      href="/de/resources/"
+    />
+  </div>
+</PageLayout>

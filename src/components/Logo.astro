@@ -1,0 +1,79 @@
+---
+/**
+ * Logo — palette-matched brand mark (green→azure on a dark chip).
+ *   - default: the "MG" monogram + a small sunrise above it.
+ *   - `mark`:  sunrise only (no initials), centered + larger.
+ * Used in the header, footer, and the home hero. Decorative by default; pass a
+ * `title` for standalone use (then it becomes a labelled image).
+ */
+interface Props {
+  size?: number;
+  title?: string;
+  mark?: boolean;
+}
+const { size = 32, title, mark = false } = Astro.props;
+const uid = 'mg-' + Math.random().toString(36).slice(2, 8);
+---
+
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 32 32"
+  role={title ? 'img' : undefined}
+  aria-label={title}
+  aria-hidden={title ? undefined : 'true'}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id={uid} x1="5" y1="16" x2="27" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3fb950"></stop>
+      <stop offset="0.5" stop-color="#2ec5c5"></stop>
+      <stop offset="1" stop-color="#4493f8"></stop>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="8" fill="#0b1422" stroke="rgba(255,255,255,0.12)"
+  ></rect>
+
+  {
+    mark ? (
+      <Fragment>
+        <g stroke={`url(#${uid})`} stroke-width="1.9" stroke-linecap="round">
+          <line x1="16" y1="10.5" x2="16" y2="7.5" />
+          <line x1="10.2" y1="12.6" x2="8.4" y2="10.8" />
+          <line x1="21.8" y1="12.6" x2="23.6" y2="10.8" />
+        </g>
+        <path d="M8.5 20 a7.5 7.5 0 0 1 15 0 z" fill={`url(#${uid})`} />
+        <line
+          x1="4.5"
+          y1="20"
+          x2="27.5"
+          y2="20"
+          stroke="#2ec5c5"
+          stroke-width="1.9"
+          stroke-linecap="round"
+        />
+      </Fragment>
+    ) : (
+      <Fragment>
+        <g stroke={`url(#${uid})`} stroke-width="1.5" stroke-linecap="round">
+          <line x1="16" y1="7.4" x2="16" y2="5.2" />
+          <line x1="11.6" y1="9" x2="10.2" y2="7.6" />
+          <line x1="20.4" y1="9" x2="21.8" y2="7.6" />
+        </g>
+        <path d="M12.2 12 a3.8 3.8 0 0 1 7.6 0 z" fill={`url(#${uid})`} />
+        <text
+          x="16"
+          y="25.6"
+          text-anchor="middle"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="12.5"
+          font-weight="700"
+          letter-spacing="-0.5"
+          fill={`url(#${uid})`}
+        >
+          MG
+        </text>
+      </Fragment>
+    )
+  }
+</svg>

@@ -1,0 +1,210 @@
+---
+/** Home (English, unprefixed → '/'). Hero + explore grid + featured section. */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import QuickLink from '@components/QuickLink.astro';
+import LinkCard from '@components/LinkCard.astro';
+import BrandCard from '@components/BrandCard.astro';
+import SiteGraph from '@components/SiteGraph.astro';
+import WorkInProgress from '@components/WorkInProgress.astro';
+import Logo from '@components/Logo.astro';
+import CertBadges from '@components/CertBadges.astro';
+import { profile } from '@data/profile';
+import {
+  certReviewsGoogle,
+  certReviewsMicrosoft,
+  studyNotes,
+  deepDives,
+  resourceCollections,
+  toGraphChildren,
+} from '@data/landings';
+
+const certCount = certReviewsGoogle.length + certReviewsMicrosoft.length;
+const notesCount = studyNotes.length + deepDives.length;
+
+const quickLinks = [
+  { icon: '🏗️', title: 'About', subtitle: 'Background & this site', href: '/about/' },
+  { icon: '🏅', title: 'Cert Reviews', subtitle: 'Exam experiences', href: '/cert-reviews/' },
+  { icon: '📃', title: 'CV', subtitle: 'Experience & skills', href: '/cv/' },
+  { icon: '🚀', title: 'Projects', subtitle: 'Hands-on labs', href: '/projects/' },
+  { icon: '📘', title: 'Study Notes', subtitle: 'Cert notes', href: '/study-notes/' },
+  { icon: '🧰', title: 'Resources', subtitle: 'Curated collections', href: '/resources/' },
+  { icon: '📲', title: 'Contact', subtitle: 'Let’s get in touch', href: '/contact/' },
+  { icon: '🍪', title: 'Privacy', subtitle: 'GDPR-friendly & cookieless', href: '/privacy/' },
+];
+
+// Graph nodes reuse every explore destination; the three landing hubs carry
+// drill-down children (their articles / resources) for the focused graph view.
+const childrenByTitle: Record<string, ReturnType<typeof toGraphChildren>> = {
+  'Cert Reviews': toGraphChildren([...certReviewsGoogle, ...certReviewsMicrosoft]),
+  'Study Notes': toGraphChildren([...studyNotes, ...deepDives]),
+  Resources: toGraphChildren(resourceCollections),
+};
+const graphNodes = quickLinks.map(({ icon, title, href }) => ({
+  icon: icon ?? '🔗',
+  label: title,
+  href,
+  children: childrenByTitle[title],
+}));
+
+const featured = [
+  {
+    icon: '🏅',
+    tag: `${certCount} articles`,
+    tagType: 'certification' as const,
+    title: 'Cert Reviews',
+    description:
+      'First-hand reviews of Microsoft & Google exams — prep strategy, resources, and tips.',
+    href: '/cert-reviews/',
+    ctaLabel: 'Browse reviews →',
+  },
+  {
+    icon: '📘',
+    tag: `${notesCount} articles`,
+    tagType: 'guide' as const,
+    title: 'Study Notes',
+    description:
+      'Structured notes for Azure, ITIL and more — the spaced reference I wish I’d had while studying.',
+    href: '/study-notes/',
+    ctaLabel: 'Open notes →',
+  },
+];
+---
+
+<BaseLayout
+  title="Home"
+  description="Marco Grimaldi — Cloud Solution Architect sharing certification reviews, study notes and practical resources on cloud architecture, Microsoft Azure and IT learning."
+  wide
+>
+  <div class="doc" data-cols="nav">
+    <BrandCard />
+    <div class="doc__main">
+      <section class="hero">
+        <p class="eyebrow">// personal hub</p>
+        <h1 class="hero__title">Hey, I’m <span class="gradient-text">Marco Grimaldi</span></h1>
+        <p class="hero__lead">
+          I advise on cloud architecture and design — translating best practices into
+          well-architected, scalable solutions. This site is a continuously growing hub where I
+          share what I learn along the way: certification reviews, study notes, and practical
+          resources for fellow IT professionals, with new content added regularly.
+        </p>
+        <p class="hero__status">
+          <Logo size={22} mark />
+          {profile.role}
+        </p>
+        <CertBadges />
+      </section>
+
+      <h2 class="section-heading">explore</h2>
+      <div class="grid grid--quicklinks">
+        {
+          [...quickLinks]
+            .sort((a, b) => a.title.localeCompare(b.title))
+            .map((q) => <QuickLink {...q} />)
+        }
+      </div>
+
+      <h2 class="section-heading">featured</h2>
+      <div class="featured-bento">
+        <SiteGraph
+          nodes={graphNodes}
+          center={{ label: 'Home', href: '/', icon: '🏠' }}
+          caption="Interactive site map linking the main sections."
+          backLabel="Back"
+          openHint="Click the centre again to open"
+        />
+        <div class="featured-bento__rail">
+          {
+            [...featured]
+              .sort((a, b) => a.title.localeCompare(b.title))
+              .map((f) => <LinkCard {...f} />)
+          }
+        </div>
+      </div>
+
+      <hr class="see-also-rule" />
+      <WorkInProgress />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: var(--sp-6) 0 var(--sp-5);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero__title {
+    font-size: var(--fs-2xl);
+    margin: 0 0 var(--sp-4);
+    letter-spacing: -0.02em;
+  }
+
+  .hero__lead {
+    font-size: var(--fs-lg);
+    color: var(--text-muted);
+    max-width: 46rem;
+    margin: 0 0 var(--sp-4);
+  }
+
+  .hero__status {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    color: var(--text-subtle);
+    margin: 0;
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--sp-4);
+    margin-block: var(--sp-4);
+  }
+
+  .grid--quicklinks {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .grid--cards {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  /* Featured bento: the interactive site map is the hero tile on the left; a
+     rail of uniform cards (Cert Reviews, Study Notes, Work-in-progress, …) sits
+     on the right. The rail is data-driven, so new featured cards just slot in.
+     Keeping the graph in a ~1.6fr column holds it near its intended size rather
+     than letting it stretch full-width. */
+  .featured-bento {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(15rem, 1fr);
+    gap: var(--sp-4);
+    align-items: start;
+    margin-block: var(--sp-4);
+  }
+
+  /* The graph ships with its own vertical margins (for a stacked layout);
+     drop them so it aligns flush with the top of the card rail. */
+  .featured-bento :global(.sitegraph) {
+    margin: 0;
+  }
+
+  .featured-bento__rail {
+    display: grid;
+    gap: var(--sp-4);
+    align-content: start;
+  }
+
+  /* Stack below the breakpoint: graph on top, then the cards reflow into an
+     auto-fitting row so they stay uniform and never get too narrow. */
+  @media (width <= 60rem) {
+    .featured-bento {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .featured-bento__rail {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+  }
+</style>

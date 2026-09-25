@@ -1,0 +1,187 @@
+---
+/**
+ * SupportNote — a polite call-to-action inviting readers who found the content
+ * useful to star the related work on GitHub or connect on LinkedIn. The study
+ * notes each live in their own repository, so the GitHub link points to the
+ * profile (the hub for all of them). Localized from the URL locale; the heading
+ * and body adapt to the page via the `kind` prop (notes / reviews / resources).
+ */
+import { profile } from '@data/profile';
+import BrandIcon from './BrandIcon.astro';
+import { getLocaleFromUrl } from '@i18n/utils';
+
+interface Props {
+  kind?: 'notes' | 'reviews' | 'resources';
+}
+const { kind = 'notes' } = Astro.props;
+
+const locale = getLocaleFromUrl(Astro.url);
+
+const githubUrl = `https://github.com/${profile.social.github}`;
+const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
+
+interface Copy {
+  heading: string;
+  body: string;
+}
+interface Locale {
+  star: string;
+  connect: string;
+  notes: Copy;
+  reviews: Copy;
+  resources: Copy;
+}
+
+const strings: Record<string, Locale> = {
+  en: {
+    star: 'Star on GitHub',
+    connect: 'Connect on LinkedIn',
+    notes: {
+      heading: 'Did these notes help?',
+      body: 'Each set of study notes has its own GitHub repo. If they were useful, leaving a ⭐ means a lot — or connect with me and let’s keep the motivation going.',
+    },
+    reviews: {
+      heading: 'Did these reviews help?',
+      body: 'If these reviews helped your prep, a ⭐ on GitHub means a lot — or connect with me and let’s keep the motivation going.',
+    },
+    resources: {
+      heading: 'Did these resources help?',
+      body: 'If these resources were useful, a ⭐ on GitHub means a lot — or connect with me and let’s keep the motivation going.',
+    },
+  },
+  it: {
+    star: 'Lascia una stella su GitHub',
+    connect: 'Connettiti su LinkedIn',
+    notes: {
+      heading: 'Questi appunti ti sono stati utili?',
+      body: 'Ogni raccolta di appunti ha il suo repository su GitHub. Se ti sono stati utili, lasciare una ⭐ significa molto — oppure connettiti con me e manteniamo viva la motivazione.',
+    },
+    reviews: {
+      heading: 'Queste recensioni ti sono state utili?',
+      body: 'Se queste recensioni ti hanno aiutato nella preparazione, una ⭐ su GitHub significa molto — oppure connettiti con me e manteniamo viva la motivazione.',
+    },
+    resources: {
+      heading: 'Queste risorse ti sono state utili?',
+      body: 'Se queste risorse ti sono state utili, una ⭐ su GitHub significa molto — oppure connettiti con me e manteniamo viva la motivazione.',
+    },
+  },
+  es: {
+    star: 'Deja una estrella en GitHub',
+    connect: 'Conecta en LinkedIn',
+    notes: {
+      heading: '¿Te han resultado útiles estos apuntes?',
+      body: 'Cada conjunto de apuntes tiene su propio repositorio en GitHub. Si te han servido, dejar una ⭐ significa mucho — o conecta conmigo y mantengamos viva la motivación.',
+    },
+    reviews: {
+      heading: '¿Te han resultado útiles estas reseñas?',
+      body: 'Si estas reseñas te han ayudado en la preparación, una ⭐ en GitHub significa mucho — o conecta conmigo y mantengamos viva la motivación.',
+    },
+    resources: {
+      heading: '¿Te han resultado útiles estos recursos?',
+      body: 'Si estos recursos te han servido, una ⭐ en GitHub significa mucho — o conecta conmigo y mantengamos viva la motivación.',
+    },
+  },
+  de: {
+    star: 'Stern auf GitHub geben',
+    connect: 'Auf LinkedIn vernetzen',
+    notes: {
+      heading: 'Haben dir diese Notizen geholfen?',
+      body: 'Jede Notizensammlung hat ihr eigenes GitHub-Repository. Wenn sie nützlich waren, bedeutet ein ⭐ viel — oder vernetze dich mit mir, damit die Motivation erhalten bleibt.',
+    },
+    reviews: {
+      heading: 'Haben dir diese Reviews geholfen?',
+      body: 'Wenn dir diese Reviews bei der Vorbereitung geholfen haben, bedeutet ein ⭐ auf GitHub viel — oder vernetze dich mit mir, damit die Motivation erhalten bleibt.',
+    },
+    resources: {
+      heading: 'Haben dir diese Ressourcen geholfen?',
+      body: 'Wenn diese Ressourcen nützlich waren, bedeutet ein ⭐ auf GitHub viel — oder vernetze dich mit mir, damit die Motivation erhalten bleibt.',
+    },
+  },
+};
+
+const l = strings[locale] ?? strings.en;
+const t = l[kind];
+---
+
+<aside class="support">
+  <span class="support__icon" aria-hidden="true">⭐</span>
+  <div class="support__body">
+    <p class="support__heading">{t.heading}</p>
+    <p class="support__text">{t.body}</p>
+    <div class="support__actions">
+      <a class="btn support__gh" href={githubUrl} rel="noopener noreferrer" target="_blank">
+        <BrandIcon brand="GitHub" size={16} />
+        {l.star}
+      </a>
+      <a class="btn support__li" href={linkedinUrl} rel="noopener noreferrer" target="_blank">
+        <BrandIcon brand="LinkedIn" size={16} />
+        {l.connect}
+      </a>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .support {
+    display: flex;
+    gap: var(--sp-4);
+    align-items: flex-start;
+    margin: var(--sp-5) 0;
+    padding: var(--sp-4) var(--sp-5);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--brand);
+    border-radius: var(--radius);
+    background: var(--gradient-soft);
+  }
+
+  .support__icon {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    flex-shrink: 0;
+  }
+
+  .support__body {
+    min-width: 0;
+  }
+
+  .support__heading {
+    margin: 0 0 var(--sp-1);
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .support__text {
+    margin: 0 0 var(--sp-4);
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    max-width: 46rem;
+  }
+
+  .support__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+  }
+
+  /* Brand-matched buttons: GitHub black, LinkedIn blue. */
+  .support__gh {
+    background: #181717;
+    color: #fff;
+    border-color: var(--border-strong);
+  }
+
+  .support__gh:hover {
+    background: #24292e;
+  }
+
+  .support__li {
+    background: #0a66c2;
+    color: #fff;
+    border-color: #0a66c2;
+  }
+
+  .support__li:hover {
+    background: #1275d1;
+    border-color: #1275d1;
+  }
+</style>

@@ -1,0 +1,144 @@
+---
+/**
+ * LogoDisclaimer — trademark + attribution notice for pages where company /
+ * institution logos appear. Rendered in the site's standard `.notice` callout
+ * and localized from the URL locale. Two variants:
+ *   - `paths` (default): CV wording, framing the logos as illustrating the
+ *     learning / professional paths described. Also renders the Wikimedia
+ *     Commons source + required CC attributions for the CC-licensed logos.
+ *   - `plain`: generic wording for pages without described paths (e.g. Contact).
+ */
+import { getLocaleFromUrl } from '@i18n/utils';
+
+interface Props {
+  variant?: 'paths' | 'plain';
+  /** Optional extra note shown in the same box (e.g. the certifications grouping note). */
+  note?: string;
+}
+const { variant = 'paths', note } = Astro.props;
+
+const locale = getLocaleFromUrl(Astro.url);
+
+const labels: Record<string, string> = { en: 'Note', it: 'Nota', es: 'Nota', de: 'Hinweis' };
+
+const creditLabels: Record<string, string> = {
+  en: 'Logo credits',
+  it: 'Crediti loghi',
+  es: 'Créditos de logos',
+  de: 'Logo-Nachweise',
+};
+
+const commonsLeads: Record<string, string> = {
+  en: 'Logos via Wikimedia Commons — public domain unless noted below:',
+  it: 'Loghi tramite Wikimedia Commons — di pubblico dominio salvo dove indicato:',
+  es: 'Logotipos vía Wikimedia Commons — de dominio público salvo lo indicado:',
+  de: 'Logos über Wikimedia Commons — gemeinfrei, sofern unten nicht anders angegeben:',
+};
+
+const stringsByVariant: Record<'paths' | 'plain', Record<string, string>> = {
+  paths: {
+    en: 'All logos and trademarks are the property of their respective institutions and companies. They appear here purely as visual aids to illustrate the learning and professional paths described, and imply no affiliation or endorsement.',
+    it: 'Tutti i loghi e i marchi appartengono alle rispettive istituzioni e aziende. Sono mostrati qui unicamente come supporto visivo per illustrare i percorsi formativi e professionali descritti e non implicano alcuna affiliazione o sponsorizzazione.',
+    es: 'Todos los logotipos y marcas son propiedad de sus respectivas instituciones y empresas. Se muestran aquí únicamente como apoyo visual para ilustrar las trayectorias formativas y profesionales descritas, sin implicar afiliación ni patrocinio.',
+    de: 'Alle Logos und Marken sind Eigentum der jeweiligen Institutionen und Unternehmen. Sie dienen hier ausschließlich als visuelle Unterstützung zur Veranschaulichung der dargestellten Bildungs- und Berufswege und bedeuten keine Zugehörigkeit oder Sponsorisierung.',
+  },
+  plain: {
+    en: 'All logos and trademarks are the property of their respective institutions and companies. They appear here purely as visual aids and imply no affiliation or endorsement.',
+    it: 'Tutti i loghi e i marchi appartengono alle rispettive istituzioni e aziende. Sono mostrati qui unicamente come supporto visivo e non implicano alcuna affiliazione o sponsorizzazione.',
+    es: 'Todos los logotipos y marcas son propiedad de sus respectivas instituciones y empresas. Se muestran aquí únicamente como apoyo visual, sin implicar afiliación ni patrocinio.',
+    de: 'Alle Logos und Marken sind Eigentum der jeweiligen Institutionen und Unternehmen. Sie dienen hier ausschließlich als visuelle Unterstützung und bedeuten keine Zugehörigkeit oder Sponsorisierung.',
+  },
+};
+
+// Logos that are NOT public domain and require attribution under their license.
+const attributions = [
+  {
+    holder: 'Universidad Pablo de Olavide',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Marca-UPO-Horizontal.png',
+  },
+  {
+    holder: 'Gobierno de Canarias',
+    license: 'CC BY 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:S%C3%ADmbolo_del_Gobierno_de_Canarias.svg',
+  },
+  {
+    holder: 'Instituto Cervantes',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Logotipo_del_Instituto_Cervantes.svg',
+  },
+  {
+    holder: 'Goethe-Institut',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Logo_Goethe-Institut.png',
+  },
+];
+
+const strings = stringsByVariant[variant];
+const label = labels[locale] ?? labels.en;
+const text = strings[locale] ?? strings.en;
+const creditLabel = creditLabels[locale] ?? creditLabels.en;
+const commonsLead = commonsLeads[locale] ?? commonsLeads.en;
+---
+
+<div class="notice notice--info logo-disclaimer">
+  {
+    note && (
+      <p class="logo-disclaimer__text">
+        <strong>ℹ️ {label}:</strong> {note}
+      </p>
+    )
+  }
+  <p class="logo-disclaimer__text"><strong>ℹ️ {label}:</strong> {text}</p>
+  {
+    variant === 'paths' && (
+      <p class="logo-credits">
+        <strong>©️ {creditLabel}:</strong> {commonsLead}{' '}
+        {attributions.map((a, i) => (
+          <>
+            {i > 0 ? ' · ' : ''}
+            <a href={a.sourceUrl} rel="noopener" target="_blank">
+              {a.holder}
+            </a>{' '}
+            (
+            <a href={a.licenseUrl} rel="noopener" target="_blank">
+              {a.license}
+            </a>
+            )
+          </>
+        ))}
+        .
+      </p>
+    )
+  }
+</div>
+
+<style>
+  .logo-disclaimer {
+    margin-block: var(--sp-4);
+  }
+
+  .logo-disclaimer__text {
+    margin: 0;
+  }
+
+  .logo-disclaimer__text + .logo-disclaimer__text {
+    margin-top: var(--sp-2);
+  }
+
+  .logo-credits {
+    margin: var(--sp-2) 0 0;
+    max-width: 48rem;
+    font-size: 0.72rem;
+    line-height: 1.6;
+    color: var(--text-subtle);
+  }
+
+  .logo-credits a {
+    color: var(--text-muted);
+  }
+</style>

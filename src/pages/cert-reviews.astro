@@ -1,0 +1,55 @@
+---
+/** /cert-reviews/ — data-driven landing with docs rails (side-nav + TOC). */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import QuickLink from '@components/QuickLink.astro';
+import SupportNote from '@components/SupportNote.astro';
+import { certReviewsGoogle, certReviewsMicrosoft } from '@data/landings';
+
+const navGroups = [
+  {
+    title: 'Microsoft',
+    items: certReviewsMicrosoft.map((c) => ({ label: c.title, href: c.href })),
+  },
+  { title: 'Google', items: certReviewsGoogle.map((c) => ({ label: c.title, href: c.href })) },
+];
+const headings = [
+  { depth: 2, slug: 'microsoft', text: 'microsoft' },
+  { depth: 2, slug: 'google', text: 'google' },
+];
+---
+
+<PageLayout
+  title="Cert Reviews"
+  heading="🏅 Cert Reviews"
+  eyebrow="// certification reviews & exam experiences"
+  lead="First-hand reviews of the certifications I’ve earned — prep strategies, study resources, and exam experience."
+  description="First-hand reviews of the certifications I’ve earned — prep strategies, study resources, and exam experience."
+  searchable
+  navGroups={navGroups}
+  headings={headings}
+>
+  <SupportNote kind="reviews" />
+
+  <h2 class="section-heading" id="microsoft">microsoft</h2>
+  <div class="card-grid">
+    {certReviewsMicrosoft.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <h2 class="section-heading" id="google">google</h2>
+  <div class="card-grid">
+    {certReviewsGoogle.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// see also'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="📘"
+      title="Study Notes"
+      subtitle="Structured prep material"
+      href="/study-notes/"
+    />
+    <QuickLink icon="🧰" title="Resources" subtitle="Curated collections" href="/resources/" />
+  </div>
+</PageLayout>
