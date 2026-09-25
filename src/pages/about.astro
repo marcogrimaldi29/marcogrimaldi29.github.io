@@ -27,8 +27,10 @@ const headings = [
       My career bridges the IT and linguistic fields. If you’d like to collaborate, share ideas, or
       explore common projects, feel free to <a href="/contact/">get in touch</a>.
     </p>
-    <p>
-      📍 Based in <strong>Gran Canaria, Spain</strong> — connecting with local and international communities.
+    <p class="about__where">
+      <span
+        >📍 Based in <strong>Gran Canaria, Spain</strong> — connecting with local and international communities.</span
+      >
     </p>
 
     <LocationMap
@@ -96,11 +98,11 @@ const headings = [
         href="https://chatgpt.com/"
         rel="noopener"
         target="_blank">ChatGPT 5.x</a
-      >, <a href="https://www.claude.com/" rel="noopener" target="_blank">Claude Opus 4.x</a> and <a
+      >, <a href="https://www.claude.com/" rel="noopener" target="_blank">Claude Opus 4.x</a>, <a
         href="https://www.claude.com/"
         rel="noopener"
-        target="_blank">Claude Sonnet 4.x</a
-      >.
+        target="_blank">Claude Opus 5.x</a
+      > and <a href="https://www.claude.com/" rel="noopener" target="_blank">Claude Sonnet 4.x</a>.
     </p>
   </div>
 </PageLayout>
@@ -108,6 +110,25 @@ const headings = [
 <style>
   .about p {
     max-width: 48rem;
+  }
+
+  /* Location line: centred over the map and kept to one line by scaling the
+     text with the column width (2.15cqi fits the longest locale, German).
+     Phones get a readable size instead and wrap into two even lines. */
+  .about__where {
+    container-type: inline-size;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .about__where span {
+    font-size: clamp(0.7rem, 2.15cqi, var(--fs-base));
+  }
+
+  @media (width <= 34rem) {
+    .about__where span {
+      font-size: 0.75rem;
+    }
   }
 
   .about ul {
