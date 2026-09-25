@@ -1,0 +1,119 @@
+---
+/** /it/privacy/ — informativa sulla privacy. */
+import PageLayout from '@layouts/PageLayout.astro';
+
+const headings = [
+  { depth: 2, slug: 'chi-gestisce', text: 'chi gestisce il sito' },
+  { depth: 2, slug: 'dati-raccolti', text: 'quali dati vengono raccolti' },
+  { depth: 2, slug: 'cookie', text: 'cookie' },
+  { depth: 2, slug: 'i-tuoi-diritti', text: 'i tuoi diritti' },
+  { depth: 2, slug: 'contatti', text: 'contatti' },
+];
+---
+
+<PageLayout
+  title="Informativa sulla Privacy"
+  heading="🍪 Informativa sulla Privacy"
+  eyebrow="// conforme al gdpr · senza cookie"
+  lead="Quali informazioni vengono — e non vengono — raccolte quando visiti questo sito. Nessun cookie, nessun profilo di tracciamento — solo statistiche anonime per migliorare la tua esperienza."
+  description="Quali informazioni vengono — e non vengono — raccolte quando visiti questo sito. Nessun cookie, nessun profilo di tracciamento — solo statistiche anonime per migliorare la tua esperienza."
+  headings={headings}
+  brandRail
+>
+  <div class="legal">
+    <h2 class="section-heading" id="chi-gestisce">chi gestisce il sito</h2>
+    <p>
+      Questo sito è un progetto personale gestito da <strong>Marco Grimaldi</strong>, ospitato su <a
+        href="https://pages.github.com"
+        rel="noopener"
+        target="_blank">GitHub Pages</a
+      > e realizzato con <a href="https://www.astro.build/" rel="noopener" target="_blank">Astro</a
+      >.
+    </p>
+
+    <h2 class="section-heading" id="dati-raccolti">quali dati vengono raccolti</h2>
+    <p><strong>📊 Analitiche di visita (Umami)</strong></p>
+    <p>
+      Questo sito utilizza <a href="https://umami.is" rel="noopener" target="_blank"
+        >Umami Analytics</a
+      >, una piattaforma di analisi open-source rispettosa della privacy. Non utilizza <strong
+        >cookie</strong
+      > e non raccoglie <strong>dati personali</strong>. Statistiche anonime (come visualizzazioni
+      di pagina e referrer) vengono elaborate solo per migliorare i contenuti e l’usabilità del
+      sito.
+    </p>
+    <p><strong>🖥️ Hosting e log</strong></p>
+    <p>
+      Il sito è ospitato da <strong>GitHub Pages</strong> (GitHub, Inc.), che può raccogliere dati tecnici
+      limitati — come indirizzi IP e metadati delle richieste — per finalità operative e di sicurezza.
+      Per i dettagli, consulta l’<a
+        href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+        rel="noopener"
+        target="_blank">Informativa sulla privacy di GitHub</a
+      >.
+    </p>
+
+    <h2 class="section-heading" id="cookie">cookie</h2>
+    <p>
+      Questo sito <strong>non utilizza alcun cookie</strong> per analitiche, pubblicità o tracciamento.
+      GitHub Pages può utilizzare cookie strettamente necessari per l’erogazione e le prestazioni del
+      sito.
+    </p>
+
+    <h2 class="section-heading" id="i-tuoi-diritti">i tuoi diritti</h2>
+    <p>
+      A seconda della tua giurisdizione (ad esempio, ai sensi del Regolamento generale sulla
+      protezione dei dati dell’UE — <a
+        href="https://gdpr.eu/what-is-gdpr/"
+        rel="noopener"
+        target="_blank">GDPR</a
+      >), potresti avere il diritto di:
+    </p>
+    <ul>
+      <li>
+        Richiedere l’accesso, la rettifica o la cancellazione dei dati personali (se mai raccolti);
+      </li>
+      <li>Opporti o limitare il trattamento dei dati;</li>
+      <li>Presentare un reclamo a un’autorità di controllo.</li>
+    </ul>
+    <p>
+      Poiché questo sito non raccoglie attivamente dati personali, questi diritti generalmente non
+      si applicano. Puoi comunque <a href="/it/contact/">contattare il titolare</a> in qualsiasi momento
+      per chiarimenti.
+    </p>
+
+    <h2 class="section-heading" id="contatti">contatti</h2>
+    <p>
+      Per domande o dubbi su questa Informativa sulla Privacy, non esitare a <a href="/it/contact/"
+        >contattarmi</a
+      >.
+    </p>
+
+    <p class="notice notice--success">
+      <em>
+        Questo sito rispetta la tua privacy. Niente cookie. Nessun profilo di tracciamento. Solo
+        statistiche per migliorare la tua esperienza di navigazione.
+      </em>
+    </p>
+  </div>
+</PageLayout>
+
+<style>
+  .legal p {
+    max-width: 48rem;
+  }
+
+  .legal ul {
+    max-width: 48rem;
+    padding-left: 1.4rem;
+  }
+
+  .legal li {
+    margin-bottom: var(--sp-2);
+    line-height: 1.6;
+  }
+
+  .legal li::marker {
+    color: var(--brand);
+  }
+</style>

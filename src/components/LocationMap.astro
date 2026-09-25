@@ -1,0 +1,513 @@
+---
+/**
+ * LocationMap — on-brand "geo-locator" HUD replacing the Google Maps iframe.
+ * Static tactical-dashboard map using the classic Spanish-map convention:
+ * mainland Spain (Iberian Peninsula) drawn full-size, with the Canary Islands
+ * relocated into a labelled inset panel at lower-left — freed from the real
+ * ~1000 km ocean gap so the islands read large — and Gran Canaria locked under
+ * a radar reticle as the focus. Pure SVG/CSS, no third-party embed, themed from
+ * design tokens. Only subtle ambient motion (radar sweep, pulse, scanline).
+ *
+ * Motion honors reduced-motion via the global token rule.
+ *
+ * Technical HUD labels (GEO-LOCATOR, LAT, LON…) read as a machine readout and
+ * stay language-neutral; the human-facing `region` (inset title) + `caption`
+ * are localized.
+ */
+interface Props {
+  place?: string;
+  region?: string;
+  country?: string;
+  lat?: string;
+  lon?: string;
+  caption?: string;
+}
+const {
+  place = 'Gran Canaria',
+  region = 'Canary Islands',
+  country = 'Spain',
+  lat = '28.00° N',
+  lon = '15.60° W',
+  caption = `Map of mainland ${country} with the ${region} inset, locating ${place}.`,
+} = Astro.props;
+---
+
+<figure class="geomap" role="img" aria-label={caption}>
+  <header class="geomap__chrome" aria-hidden="true">
+    <span class="geomap__led"></span>
+    <span class="geomap__brand">GEO-LOCATOR</span>
+    <span class="geomap__slash">//</span>
+    <span class="geomap__link">SAT-LINK</span>
+    <span class="geomap__coord">{lat} · {lon}</span>
+  </header>
+
+  <div class="geomap__screen">
+    <svg
+      viewBox="0 0 640 360"
+      class="geomap__svg"
+      aria-hidden="true"
+      preserveAspectRatio="xMidYMid slice"
+    >
+      <defs>
+        <pattern id="gm-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+          <path d="M32 0H0V32" fill="none" class="gm-gridline"></path>
+        </pattern>
+        <radialGradient id="gm-vignette" cx="50%" cy="52%" r="85%">
+          <stop offset="60%" stop-color="#000" stop-opacity="0"></stop>
+          <stop offset="100%" stop-color="#000" stop-opacity="0.4"></stop>
+        </radialGradient>
+        <filter id="gm-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="3" result="b"></feGaussianBlur>
+          <feMerge>
+            <feMergeNode in="b"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
+        </filter>
+        <clipPath id="gm-inset-clip">
+          <rect x="14" y="206" width="191" height="136" rx="5"></rect>
+        </clipPath>
+      </defs>
+
+      <!-- backdrop -->
+      <rect width="640" height="360" class="gm-bg"></rect>
+      <rect width="640" height="360" fill="url(#gm-grid)"></rect>
+
+      <!-- graticule -->
+      <g class="gm-grat">
+        <line x1="320" y1="0" x2="320" y2="360"></line>
+        <line x1="480" y1="0" x2="480" y2="360"></line>
+        <line x1="0" y1="120" x2="640" y2="120"></line>
+        <line x1="0" y1="240" x2="640" y2="240"></line>
+      </g>
+
+      <!-- mainland Spain (Iberian Peninsula), full size -->
+      <g class="gm-geo">
+        <path
+          d="M221 63 L383 40 L442 43 L590 86 L501 224 L430 301 L330 328 L230 290 L215 224 L239 132 Z"
+        ></path>
+      </g>
+
+      <!-- ESPAÑA marker (Madrid) -->
+      <g class="gm-place">
+        <circle cx="386" cy="158" r="9" class="gm-place-ring"></circle>
+        <g class="gm-place-cross">
+          <line x1="379" y1="158" x2="393" y2="158"></line>
+          <line x1="386" y1="151" x2="386" y2="165"></line>
+        </g>
+        <circle cx="386" cy="158" r="1.8" class="gm-place-dot"></circle>
+        <text x="400" y="155" class="gm-place-label">{country}</text>
+        <text x="400" y="168" class="gm-place-coord">40.42°N · 3.70°W</text>
+      </g>
+
+      <!-- Canary Islands inset panel (relocated; islands drawn large) -->
+      <g class="gm-inset">
+        <rect x="14" y="206" width="191" height="136" rx="5" class="gm-inset-bg"></rect>
+
+        <g clip-path="url(#gm-inset-clip)">
+          <!-- archipelago (W → E): El Hierro, La Palma, La Gomera, Tenerife,
+               Gran Canaria, Fuerteventura, Lanzarote (+ La Graciosa) -->
+          <g class="gm-isles">
+            <path d="M26 314 L33 307 L41 313 L36 322 L28 320 Z"></path>
+            <path d="M34 263 L41 269 L42 282 L38 290 L32 281 L33 269 Z"></path>
+            <path d="M52 298 L58 292 L67 295 L68 302 L60 305 L53 303 Z"></path>
+            <path d="M64 293 L78 281 L98 284 L103 292 L90 300 L70 299 Z"></path>
+            <path d="M154 303 L161 292 L177 273 L185 269 L181 281 L170 295 L159 306 Z"></path>
+            <path d="M177 274 L184 261 L195 250 L201 252 L196 263 L186 274 Z"></path>
+            <circle cx="191" cy="249" r="2"></circle>
+          </g>
+          <path
+            class="gm-isle-active"
+            d="M107 302 Q108 292 117 291 Q127 292 127 302 Q127 312 117 313 Q108 312 107 302 Z"
+          ></path>
+
+          <!-- radar lock on Gran Canaria -->
+          <g class="gm-pulse">
+            <circle cx="117" cy="302" r="12" class="gm-ring1"></circle>
+            <circle cx="117" cy="302" r="12" class="gm-ring2"></circle>
+          </g>
+
+          <circle cx="117" cy="302" r="16" class="gm-reticle"></circle>
+          <circle cx="117" cy="302" r="24" class="gm-reticle gm-reticle--faint"></circle>
+
+          <g class="gm-sweep">
+            <path d="M117 302 L139 302 L135 290 Z" class="gm-sweep-wedge"></path>
+            <line x1="117" y1="302" x2="139" y2="302" class="gm-sweep-line"></line>
+          </g>
+
+          <g class="gm-cross">
+            <line x1="107" y1="302" x2="127" y2="302"></line>
+            <line x1="117" y1="292" x2="117" y2="312"></line>
+          </g>
+          <g class="gm-bracket">
+            <path d="M97 282 H107 M97 282 V292"></path>
+            <path d="M137 282 H127 M137 282 V292"></path>
+            <path d="M97 322 H107 M97 322 V312"></path>
+            <path d="M137 322 H127 M137 322 V312"></path>
+          </g>
+          <circle cx="117" cy="302" r="2.4" class="gm-dot"></circle>
+        </g>
+
+        <!-- inset frame + title -->
+        <rect x="14" y="206" width="191" height="136" rx="5" class="gm-inset-frame"></rect>
+        <line x1="14" y1="228" x2="205" y2="228" class="gm-inset-rule"></line>
+        <text x="24" y="222" class="gm-inset-title">{region}</text>
+        <text x="117" y="337" class="gm-label gm-label--inset">GRAN CANARIA</text>
+      </g>
+
+      <rect width="640" height="360" fill="url(#gm-vignette)"></rect>
+    </svg>
+    <div class="geomap__scan" aria-hidden="true"></div>
+  </div>
+
+  <footer class="geomap__telemetry" aria-hidden="true">
+    <span><b>LAT</b> {lat}</span>
+    <span><b>LON</b> {lon}</span>
+    <span class="geomap__sector"><b>SECTOR</b> {region}</span>
+    <span class="geomap__live"><i></i>LIVE</span>
+  </footer>
+
+  <figcaption class="geomap__sr">{caption}</figcaption>
+</figure>
+
+<style>
+  .geomap {
+    margin: var(--sp-5) 0;
+    max-width: 48rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    font-family: var(--font-mono);
+  }
+
+  /* ---- chrome header ---- */
+  .geomap__chrome {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-2) var(--sp-3);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--text-subtle);
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .geomap__led {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success);
+    box-shadow: 0 0 8px var(--success);
+    animation: gm-blink 2.4s ease-in-out infinite;
+  }
+
+  .geomap__brand {
+    color: var(--brand-strong);
+    font-weight: 600;
+  }
+
+  .geomap__slash {
+    color: var(--border-strong);
+  }
+
+  .geomap__coord {
+    margin-left: auto;
+    color: var(--accent);
+  }
+
+  /* ---- screen ---- */
+  .geomap__screen {
+    position: relative;
+    aspect-ratio: 16 / 9;
+  }
+
+  .geomap__svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gm-bg {
+    fill: var(--bg);
+  }
+
+  .gm-gridline {
+    stroke: color-mix(in srgb, var(--brand) 12%, transparent);
+    stroke-width: 1;
+  }
+
+  .gm-grat line {
+    stroke: color-mix(in srgb, var(--accent) 14%, transparent);
+    stroke-width: 1;
+    stroke-dasharray: 2 8;
+  }
+
+  /* ---- mainland Spain ---- */
+  .gm-geo path {
+    fill: color-mix(in srgb, var(--brand) 18%, var(--surface-3));
+    stroke: color-mix(in srgb, var(--accent) 45%, transparent);
+    stroke-width: 1.2;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .gm-place-ring {
+    fill: none;
+    stroke: color-mix(in srgb, var(--accent) 45%, transparent);
+    stroke-width: 1;
+    stroke-dasharray: 3 4;
+  }
+
+  .gm-place-cross line {
+    stroke: color-mix(in srgb, var(--accent) 75%, transparent);
+    stroke-width: 1;
+  }
+
+  .gm-place-dot {
+    fill: var(--accent-strong);
+  }
+
+  .gm-place-label {
+    fill: var(--text);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+  }
+
+  .gm-place-coord {
+    fill: var(--text-subtle);
+    font-size: 9px;
+    letter-spacing: 0.05em;
+    font-family: var(--font-mono);
+  }
+
+  /* ---- Canary Islands inset ---- */
+  .gm-inset-bg {
+    fill: var(--surface);
+  }
+
+  .gm-inset-frame {
+    fill: none;
+    stroke: var(--border-strong);
+    stroke-width: 1;
+  }
+
+  .gm-inset-rule {
+    stroke: var(--border);
+    stroke-width: 1;
+  }
+
+  .gm-inset-title {
+    fill: var(--accent);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+  }
+
+  .gm-isles path,
+  .gm-isles circle {
+    fill: color-mix(in srgb, var(--brand) 32%, var(--surface-3));
+    stroke: color-mix(in srgb, var(--brand) 50%, transparent);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .gm-isle-active {
+    fill: var(--brand);
+    stroke: var(--brand-strong);
+    stroke-width: 1.2;
+    vector-effect: non-scaling-stroke;
+    filter: url(#gm-glow);
+  }
+
+  /* ---- radar lock ---- */
+  .gm-pulse circle {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 1.2;
+    transform-box: view-box;
+    transform-origin: 117px 302px;
+    opacity: 0;
+  }
+
+  .gm-ring1 {
+    animation: gm-ping 3.2s ease-out infinite;
+  }
+
+  .gm-ring2 {
+    animation: gm-ping 3.2s ease-out infinite;
+    animation-delay: 1.6s;
+  }
+
+  .gm-reticle {
+    fill: none;
+    stroke: color-mix(in srgb, var(--brand) 65%, transparent);
+    stroke-width: 1;
+    stroke-dasharray: 4 5;
+  }
+
+  .gm-reticle--faint {
+    stroke: color-mix(in srgb, var(--brand) 32%, transparent);
+  }
+
+  .gm-sweep {
+    transform-box: view-box;
+    transform-origin: 117px 302px;
+    animation: gm-spin 5s linear infinite;
+  }
+
+  .gm-sweep-wedge {
+    fill: color-mix(in srgb, var(--accent) 38%, transparent);
+  }
+
+  .gm-sweep-line {
+    stroke: var(--accent-strong);
+    stroke-width: 1.4;
+  }
+
+  .gm-cross line {
+    stroke: var(--brand-strong);
+    stroke-width: 1;
+  }
+
+  .gm-bracket path {
+    fill: none;
+    stroke: var(--accent-strong);
+    stroke-width: 1.4;
+  }
+
+  .gm-dot {
+    fill: #fff;
+  }
+
+  .gm-label {
+    fill: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    font-family: var(--font-mono);
+  }
+
+  .gm-label--inset {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-anchor: middle;
+  }
+
+  /* moving scanline */
+  .geomap__scan {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      color-mix(in srgb, var(--accent) 14%, transparent) 50%,
+      transparent 100%
+    );
+    height: 28%;
+    animation: gm-scan 6s ease-in-out infinite;
+  }
+
+  /* ---- telemetry footer ---- */
+  .geomap__telemetry {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+    flex-wrap: wrap;
+    padding: var(--sp-2) var(--sp-3);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    background: var(--surface-2);
+    border-top: 1px solid var(--border);
+  }
+
+  .geomap__telemetry b {
+    color: var(--text-subtle);
+    font-weight: 600;
+    margin-right: 4px;
+  }
+
+  .geomap__live {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--success);
+    font-weight: 600;
+  }
+
+  .geomap__live i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--success);
+    box-shadow: 0 0 8px var(--success);
+    animation: gm-blink 1.6s ease-in-out infinite;
+  }
+
+  .geomap__sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 30rem) {
+    .geomap__sector {
+      display: none;
+    }
+  }
+
+  @keyframes gm-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes gm-ping {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.85;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      transform: scale(2.6);
+      opacity: 0;
+    }
+  }
+
+  @keyframes gm-blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes gm-scan {
+    0%,
+    100% {
+      transform: translateY(-30%);
+    }
+    50% {
+      transform: translateY(360%);
+    }
+  }
+</style>

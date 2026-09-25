@@ -1,0 +1,1001 @@
+---
+/**
+ * CareerMap — an on-brand SVG "heat-map" of the Western/Central-European cities
+ * in the CV. Each city is a glowing node whose size scales with how many CV
+ * entries are tied to it (Rome is the hottest); colour follows the site
+ * convention — azure `--brand` = work, green `--success` = education, the green→
+ * azure gradient = a city with both. Clicking/activating a node swaps an inline
+ * panel below the map to that city's experiences (the SiteGraph drill-down
+ * pattern — no modal). Progressive enhancement: nodes are real anchors to the
+ * per-city panels (`:target` reveals them with no JS); the script upgrades that
+ * to in-place view switching with focus management.
+ *
+ * Node positions are deterministic (equirectangular `project()` from cv-map.ts).
+ * The land is a real coastline (Natural Earth 50m, projected through the SAME
+ * transform by scripts/generate-map-land.mjs → cv-map-land.ts) used as a clip
+ * path, filled with a dot matrix for the gitter "pointed map" look — so the
+ * coastline and the nodes share one projection and stay aligned. Machine-readout
+ * chrome (CAREER-MAP, crumb) stays language-neutral; human-facing copy is
+ * localized. The node pulse is gated by prefers-reduced-motion.
+ */
+import type { CvEntry } from '@data/cv';
+import {
+  MAP,
+  project,
+  cities,
+  cityNames,
+  cityOrder,
+  experienceCities,
+  educationCities,
+  type CityId,
+} from '@data/cv-map';
+import { landPath, canaryPath, canaryFrame, canaryMark } from '@data/cv-map-land';
+import { resolveLogos } from '@data/orgLogos';
+import { getLocaleFromUrl, useTranslations } from '@i18n/utils';
+
+interface Props {
+  experience: CvEntry[];
+  education: CvEntry[];
+}
+const { experience, education } = Astro.props;
+
+// Index coupling guard — fail the build if a CV entry lacks a city mapping.
+if (experience.length !== experienceCities.length) {
+  throw new Error(
+    `CareerMap: experience (${experience.length}) and experienceCities (${experienceCities.length}) lengths differ — update src/data/cv-map.ts.`,
+  );
+}
+if (education.length !== educationCities.length) {
+  throw new Error(
+    `CareerMap: education (${education.length}) and educationCities (${educationCities.length}) lengths differ — update src/data/cv-map.ts.`,
+  );
+}
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const names = cityNames[locale];
+
+// Group entries by city (an entry can fan out to >1 city via Erasmus exchanges).
+interface Agg {
+  id: CityId;
+  work: CvEntry[];
+  edu: CvEntry[];
+}
+const aggs = new Map<CityId, Agg>(cityOrder.map((id) => [id, { id, work: [], edu: [] }]));
+experience.forEach((e, i) => experienceCities[i].forEach((id) => aggs.get(id)!.work.push(e)));
+education.forEach((e, i) => educationCities[i].forEach((id) => aggs.get(id)!.edu.push(e)));
+
+const MAX = 6; // Rome — the hottest city; drives the node-radius scale.
+type NodeType = 'work' | 'edu' | 'both';
+const nodes = cityOrder.map((id) => {
+  const a = aggs.get(id)!;
+  const count = a.work.length + a.edu.length;
+  const { x, y } = project(cities[id].lon, cities[id].lat);
+  const type: NodeType = a.work.length && a.edu.length ? 'both' : a.work.length ? 'work' : 'edu';
+  const r = +(9 + ((count - 1) / (MAX - 1)) * 13).toFixed(1);
+  return {
+    id,
+    name: names[id],
+    count,
+    x,
+    y,
+    r,
+    halo: +(r + 8).toFixed(1),
+    type,
+    work: a.work,
+    edu: a.edu,
+  };
+});
+// Paint ascending by count so the biggest (Rome) sits on top.
+const paint = [...nodes].sort((p, q) => p.count - q.count);
+const entriesWord = (c: number) => (c === 1 ? t('cv.map.entry') : t('cv.map.entries'));
+---
+
+<section class="careermap" aria-labelledby="career-map">
+  <figure class="cmap" role="group" aria-label={t('cv.map.aria')}>
+    <header class="cmap__chrome" aria-hidden="true">
+      <span class="cmap__led"></span>
+      <span class="cmap__brand">CAREER-MAP</span>
+      <span class="cmap__slash">//</span>
+      <span class="cmap__crumb" data-cmap-crumb>EUROPE</span>
+      <span class="cmap__count">{nodes.length} CITIES</span>
+    </header>
+
+    <div class="cmap__screen">
+      <svg
+        viewBox={`0 0 ${MAP.w} ${MAP.h}`}
+        class="cmap__svg"
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+      >
+        <defs>
+          <pattern id="cm-dots" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="4" cy="4" r="1.15" class="cm-dot"></circle>
+          </pattern>
+          <clipPath id="cm-land-clip">
+            <path d={landPath}></path>
+          </clipPath>
+          <radialGradient id="cm-vignette" cx="50%" cy="50%" r="78%">
+            <stop offset="58%" stop-color="#000" stop-opacity="0"></stop>
+            <stop offset="100%" stop-color="#000" stop-opacity="0.4"></stop>
+          </radialGradient>
+          <linearGradient id="cm-gradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#3fb950"></stop>
+            <stop offset="50%" stop-color="#2ec5c5"></stop>
+            <stop offset="100%" stop-color="#4493f8"></stop>
+          </linearGradient>
+          <filter id="cm-glow" x="-70%" y="-70%" width="240%" height="240%">
+            <feGaussianBlur stdDeviation="3.4" result="b"></feGaussianBlur>
+            <feMerge>
+              <feMergeNode in="b"></feMergeNode>
+              <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <rect width={MAP.w} height={MAP.h} class="cm-bg"></rect>
+
+        {
+          /* land: a real coastline (Natural Earth 50m, projected) rendered as a
+            faint silhouette filled with a dot matrix — the gitter "pointed map". */
+        }
+        <path d={landPath} class="cm-land"></path>
+        <g clip-path="url(#cm-land-clip)">
+          <rect width={MAP.w} height={MAP.h} fill="url(#cm-dots)"></rect>
+        </g>
+
+        {/* ── city nodes ── */}
+        <g class="cm-nodes">
+          {
+            paint.map((n, i) => (
+              <a
+                class="cmap-link"
+                href={`#cmap-city-${n.id}`}
+                data-city={n.id}
+                data-caption={`${n.name} · ${n.count} ${entriesWord(n.count)}`}
+                aria-label={`${n.name} — ${n.count} ${entriesWord(n.count)}`}
+              >
+                <g class:list={['cm-node', `cm-node--${n.type}`]} data-type={n.type}>
+                  <circle class="cm-node__halo" cx={n.x} cy={n.y} r={n.halo} />
+                  <circle
+                    class="cm-node__pulse"
+                    cx={n.x}
+                    cy={n.y}
+                    r={n.r}
+                    style={`animation-delay:${(i * 0.5).toFixed(2)}s`}
+                  />
+                  <circle class="cm-node__chip" cx={n.x} cy={n.y} r={n.r} />
+                  <text class="cm-node__num" x={n.x} y={n.y + 0.5} text-anchor="middle">
+                    {n.count}
+                  </text>
+                  <text
+                    class="cm-node__label"
+                    x={n.x}
+                    y={n.id === 'mainz' ? n.y - n.r - 6 : n.y + n.r + 14}
+                    text-anchor="middle"
+                  >
+                    {n.name}
+                  </text>
+                </g>
+              </a>
+            ))
+          }
+        </g>
+
+        {
+          /* Canary Islands inset — they sit ~1000km off the mainland bbox, so a
+            relocated panel marks where I'm based with a violet radar lock (not a
+            CV node). */
+        }
+        <g
+          class="cm-inset"
+          role="img"
+          aria-label={`${t('cv.map.based')} — ${t('cv.map.canaries')}`}
+        >
+          <rect
+            x={canaryFrame.x}
+            y={canaryFrame.y}
+            width={canaryFrame.w}
+            height={canaryFrame.h}
+            rx="5"
+            class="cm-inset__bg"></rect>
+          <text x={canaryFrame.x + 8} y={canaryFrame.y + 15} class="cm-inset__title">
+            {t('cv.map.canaries')}
+          </text>
+          <line
+            x1={canaryFrame.x}
+            y1={canaryFrame.y + 21}
+            x2={canaryFrame.x + canaryFrame.w}
+            y2={canaryFrame.y + 21}
+            class="cm-inset__rule"></line>
+          <clipPath id="cm-inset-clip">
+            <rect
+              x={canaryFrame.x}
+              y={canaryFrame.y + 22}
+              width={canaryFrame.w}
+              height={canaryFrame.h - 22}></rect>
+          </clipPath>
+          <g clip-path="url(#cm-inset-clip)">
+            <path d={canaryPath} class="cm-canary"></path>
+            {/* "based here" radar lock (purple = --info note hue) on Gran Canaria */}
+            <g class="cm-radar" aria-hidden="true">
+              <circle
+                class="cm-radar__ping"
+                cx={canaryMark.x}
+                cy={canaryMark.y}
+                r="10"
+                style={`transform-origin:${canaryMark.x}px ${canaryMark.y}px`}></circle>
+              <circle
+                class="cm-radar__ping cm-radar__ping--2"
+                cx={canaryMark.x}
+                cy={canaryMark.y}
+                r="10"
+                style={`transform-origin:${canaryMark.x}px ${canaryMark.y}px`}></circle>
+              <circle class="cm-radar__reticle" cx={canaryMark.x} cy={canaryMark.y} r="11"></circle>
+              <g
+                class="cm-radar__sweep"
+                style={`transform-origin:${canaryMark.x}px ${canaryMark.y}px`}
+              >
+                <line x1={canaryMark.x} y1={canaryMark.y} x2={canaryMark.x + 12} y2={canaryMark.y}
+                ></line>
+              </g>
+              <circle class="cm-radar__dot" cx={canaryMark.x} cy={canaryMark.y} r="2.5"></circle>
+            </g>
+          </g>
+        </g>
+
+        <rect width={MAP.w} height={MAP.h} fill="url(#cm-vignette)" pointer-events="none"></rect>
+      </svg>
+    </div>
+
+    <footer class="cmap__telemetry" aria-hidden="true">
+      <span class="cmap__legend"><i class="cmap__dot cmap__dot--work"></i>{t('cv.map.work')}</span>
+      <span class="cmap__legend">
+        <i class="cmap__dot cmap__dot--edu"></i>{t('cv.map.education')}
+      </span>
+      <span class="cmap__legend"><i class="cmap__dot cmap__dot--base"></i>{t('cv.map.base')}</span>
+      <span class="cmap__caption" data-cmap-caption>{t('cv.map.hint')}</span>
+      <span class="cmap__live"><i></i>LIVE</span>
+    </footer>
+
+    <figcaption class="cmap__sr">{t('cv.map.caption')}</figcaption>
+  </figure>
+
+  <div
+    class="cmap-panel"
+    data-cmap-panel
+    role="region"
+    aria-labelledby="career-map"
+    aria-live="polite"
+  >
+    <div class="cmap-view" data-view="summary">
+      <p class="cmap-hint">{t('cv.map.hint')}</p>
+    </div>
+
+    {
+      cityOrder.map((id) => {
+        const n = nodes.find((m) => m.id === id)!;
+        return (
+          <div class="cmap-view cmap-view--off" data-view-city={id} id={`cmap-city-${id}`}>
+            <div class="cmap-view__head">
+              <a class="cmap-back" href="#career-map" data-back aria-label={t('cv.map.back')}>
+                <span aria-hidden="true">←</span> {t('cv.map.back')}
+              </a>
+              <h3 class="cmap-view__title" tabindex="-1">
+                {n.name}
+              </h3>
+              <span class="badge cmap-count">
+                {n.count} {entriesWord(n.count)}
+              </span>
+            </div>
+
+            {n.work.length > 0 && (
+              <div class="cmap-group">
+                <h4 class="cmap-group__label">{t('cv.map.work')}</h4>
+                <ul class="cmap-list">
+                  {n.work.map((e) => {
+                    const logos = resolveLogos(e.org, [e.org, ...e.meta, ...e.points].join(' '));
+                    return (
+                      <li class="cmap-entry">
+                        <span class="cmap-entry__logos">
+                          {logos.length > 0 ? (
+                            logos.map((src) => (
+                              <img
+                                class:list={[
+                                  'cmap-entry__logo',
+                                  src.includes('site-mark') && 'cmap-entry__logo--mark',
+                                ]}
+                                src={src}
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                              />
+                            ))
+                          ) : (
+                            <span
+                              class="cmap-entry__logo cmap-entry__logo--empty"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </span>
+                        <div class="cmap-entry__body">
+                          <span class="cmap-entry__role">{e.role}</span>
+                          <span class="cmap-entry__pills">
+                            <span class="badge badge--cert">{e.org}</span>
+                            <span class="badge badge--guide">{e.meta[0]}</span>
+                            <span class="badge">{e.meta[1]}</span>
+                          </span>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+
+            {n.edu.length > 0 && (
+              <div class="cmap-group">
+                <h4 class="cmap-group__label">{t('cv.map.education')}</h4>
+                <ul class="cmap-list">
+                  {n.edu.map((e) => {
+                    const logos = resolveLogos(e.org, [e.org, ...e.meta, ...e.points].join(' '));
+                    return (
+                      <li class="cmap-entry">
+                        <span class="cmap-entry__logos">
+                          {logos.length > 0 ? (
+                            logos.map((src) => (
+                              <img
+                                class:list={[
+                                  'cmap-entry__logo',
+                                  src.includes('site-mark') && 'cmap-entry__logo--mark',
+                                ]}
+                                src={src}
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                              />
+                            ))
+                          ) : (
+                            <span
+                              class="cmap-entry__logo cmap-entry__logo--empty"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </span>
+                        <div class="cmap-entry__body">
+                          <span class="cmap-entry__role">{e.role}</span>
+                          <span class="cmap-entry__pills">
+                            <span class="badge badge--cert">{e.org}</span>
+                            <span class="badge badge--guide">{e.meta[0]}</span>
+                            <span class="badge">{e.meta[1]}</span>
+                          </span>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
+
+<script>
+  function initCareerMap(root: HTMLElement) {
+    const views = new Map<string, HTMLElement>();
+    root.querySelectorAll<HTMLElement>('.cmap-view').forEach((v) => {
+      const key = v.dataset.view ?? v.dataset.viewCity;
+      if (key) views.set(key, v);
+    });
+    const crumbEl = root.querySelector<HTMLElement>('[data-cmap-crumb]');
+    const captionEl = root.querySelector<HTMLElement>('[data-cmap-caption]');
+    const defaultCrumb = crumbEl?.textContent ?? '';
+    const defaultCaption = captionEl?.textContent ?? '';
+    let lastNode: HTMLElement | null = null;
+
+    function show(name: string, focusInto = true) {
+      if (!views.has(name)) return;
+      views.forEach((v, k) => v.classList.toggle('cmap-view--off', k !== name));
+      const v = views.get(name)!;
+      const isCity = name !== 'summary';
+      const title = v.querySelector<HTMLElement>('.cmap-view__title')?.textContent?.trim() ?? '';
+      if (crumbEl) crumbEl.textContent = isCity ? title.toUpperCase() : defaultCrumb;
+      if (captionEl && !isCity) captionEl.textContent = defaultCaption;
+      if (focusInto && isCity) v.querySelector<HTMLElement>('.cmap-view__title')?.focus();
+    }
+
+    // Node activation → swap to that city's view (instead of a hash jump).
+    root.querySelectorAll<SVGAElement>('.cmap-link').forEach((link) => {
+      const id = link.dataset.city;
+      const cap = link.dataset.caption ?? '';
+      if (!id) return;
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        lastNode = link as unknown as HTMLElement;
+        show(id);
+      });
+      const set = () => {
+        if (captionEl) captionEl.textContent = cap;
+      };
+      const clear = () => {
+        if (captionEl && root.querySelector('.cmap-view[data-view="summary"]:not(.cmap-view--off)'))
+          captionEl.textContent = defaultCaption;
+      };
+      link.addEventListener('pointerenter', set);
+      link.addEventListener('pointerleave', clear);
+      link.addEventListener('focusin', set);
+      link.addEventListener('focusout', clear);
+    });
+
+    // Back controls → return to the summary and restore focus to the node.
+    root.querySelectorAll<HTMLAnchorElement>('.cmap-back').forEach((back) => {
+      back.addEventListener('click', (e) => {
+        e.preventDefault();
+        show('summary', false);
+        lastNode?.focus();
+      });
+    });
+
+    // Esc inside the panel returns to the summary too.
+    root.querySelector<HTMLElement>('[data-cmap-panel]')?.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        show('summary', false);
+        lastNode?.focus();
+      }
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>('.careermap').forEach(initCareerMap);
+</script>
+
+<style>
+  .careermap {
+    margin-block: var(--sp-4) var(--sp-5);
+  }
+
+  /* ---- HUD card (mirrors LocationMap / SiteGraph chrome) ---- */
+  .cmap {
+    margin: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    font-family: var(--font-mono);
+  }
+
+  .cmap__chrome,
+  .cmap__telemetry {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-2) var(--sp-3);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--text-subtle);
+    background: var(--surface-2);
+  }
+
+  .cmap__chrome {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .cmap__telemetry {
+    gap: var(--sp-3);
+    border-top: 1px solid var(--border);
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+  }
+
+  .cmap__led {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success);
+    box-shadow: 0 0 8px var(--success);
+    animation: cm-blink 2.4s ease-in-out infinite;
+  }
+
+  .cmap__brand {
+    color: var(--brand-strong);
+    font-weight: 600;
+  }
+
+  .cmap__slash {
+    color: var(--border-strong);
+  }
+
+  .cmap__crumb {
+    color: var(--accent);
+  }
+
+  .cmap__count {
+    margin-left: auto;
+    color: var(--text-subtle);
+  }
+
+  .cmap__screen {
+    position: relative;
+    aspect-ratio: 760 / 460;
+  }
+
+  .cmap__svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cm-bg {
+    fill: var(--bg);
+  }
+
+  /* ---- dotted land (gitter "pointed map") ---- */
+  .cm-land {
+    fill: color-mix(in srgb, var(--brand) 7%, transparent);
+    stroke: color-mix(in srgb, var(--accent) 26%, transparent);
+    stroke-width: 1;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .cm-dot {
+    fill: color-mix(in srgb, var(--accent) 55%, var(--border-strong));
+  }
+
+  /* ---- Canary Islands inset ---- */
+  .cm-inset__bg {
+    fill: var(--surface-2);
+    stroke: var(--border-strong);
+    stroke-width: 1;
+  }
+
+  .cm-inset__title {
+    fill: var(--accent);
+    font-size: 9.5px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+  }
+
+  .cm-inset__rule {
+    stroke: var(--border);
+    stroke-width: 1;
+  }
+
+  .cm-canary {
+    fill: color-mix(in srgb, var(--accent) 30%, var(--surface-3));
+    stroke: color-mix(in srgb, var(--accent) 45%, transparent);
+    stroke-width: 1;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  /* "based here" radar lock on Gran Canaria — violet (the `--info` note hue). */
+  .cm-radar__ping {
+    fill: none;
+    stroke: var(--info);
+    stroke-width: 1.2;
+    opacity: 0;
+    transform-box: view-box;
+    animation: cm-radar-ping 3s ease-out infinite;
+  }
+
+  .cm-radar__ping--2 {
+    animation-delay: 1.5s;
+  }
+
+  .cm-radar__reticle {
+    fill: none;
+    stroke: color-mix(in srgb, var(--info) 65%, transparent);
+    stroke-width: 1;
+    stroke-dasharray: 3 4;
+  }
+
+  .cm-radar__sweep {
+    transform-box: view-box;
+    animation: cm-radar-spin 4s linear infinite;
+  }
+
+  .cm-radar__sweep line {
+    stroke: var(--info);
+    stroke-width: 1.4;
+    stroke-linecap: round;
+  }
+
+  .cm-radar__dot {
+    fill: var(--info);
+  }
+
+  @keyframes cm-radar-ping {
+    0% {
+      transform: scale(0.4);
+      opacity: 0.7;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      transform: scale(2.4);
+      opacity: 0;
+    }
+  }
+
+  @keyframes cm-radar-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* ---- nodes ---- */
+  .cmap-link {
+    cursor: pointer;
+  }
+
+  .cmap-link:hover,
+  .cmap-link:focus {
+    text-decoration: none;
+  }
+
+  .cm-node__halo {
+    opacity: 0.9;
+    transition: opacity var(--transition);
+  }
+
+  .cm-node__chip {
+    stroke: var(--surface);
+    stroke-width: 1.4;
+    filter: url(#cm-glow);
+    transition: stroke var(--transition);
+  }
+
+  .cm-node__pulse {
+    fill: none;
+    stroke-width: 1.4;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: cm-pulse 3.4s ease-out infinite;
+  }
+
+  .cm-node__num {
+    fill: var(--on-brand);
+    font-size: 12px;
+    font-weight: 700;
+    dominant-baseline: middle;
+    font-family: var(--font-mono);
+    pointer-events: none;
+  }
+
+  .cm-node__label {
+    fill: var(--text);
+    stroke: var(--bg);
+    stroke-width: 3px;
+    paint-order: stroke;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-family: var(--font-mono);
+    pointer-events: none;
+  }
+
+  /* type colours (azure work · green education · gradient both) */
+  .cm-node--work .cm-node__chip {
+    fill: var(--brand);
+  }
+  .cm-node--work .cm-node__halo {
+    fill: color-mix(in srgb, var(--brand) 22%, transparent);
+  }
+  .cm-node--work .cm-node__pulse {
+    stroke: var(--brand);
+  }
+
+  .cm-node--edu .cm-node__chip {
+    fill: var(--success);
+  }
+  .cm-node--edu .cm-node__halo {
+    fill: color-mix(in srgb, var(--success) 22%, transparent);
+  }
+  .cm-node--edu .cm-node__pulse {
+    stroke: var(--success);
+  }
+
+  .cm-node--both .cm-node__chip {
+    fill: url(#cm-gradient);
+  }
+  .cm-node--both .cm-node__halo {
+    fill: color-mix(in srgb, var(--accent) 22%, transparent);
+  }
+  .cm-node--both .cm-node__pulse {
+    stroke: var(--accent);
+  }
+
+  .cmap-link:hover .cm-node__halo,
+  .cmap-link:focus-visible .cm-node__halo {
+    opacity: 1;
+  }
+
+  .cmap-link:hover .cm-node__chip,
+  .cmap-link:focus-visible .cm-node__chip {
+    stroke: var(--brand-strong);
+  }
+
+  .cmap-link:focus {
+    outline: none;
+  }
+
+  .cmap-link:focus-visible .cm-node__chip {
+    stroke: var(--brand-strong);
+    stroke-width: 2.4;
+  }
+
+  /* ---- telemetry legend ---- */
+  .cmap__legend {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .cmap__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .cmap__dot--work {
+    background: var(--brand);
+  }
+
+  .cmap__dot--edu {
+    background: var(--success);
+  }
+
+  .cmap__dot--base {
+    background: var(--info);
+  }
+
+  .cmap__caption {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text-subtle);
+    flex: 1 1 0;
+  }
+
+  .cmap__live {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--success);
+    font-weight: 600;
+  }
+
+  .cmap__live i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--success);
+    box-shadow: 0 0 8px var(--success);
+    animation: cm-blink 1.6s ease-in-out infinite;
+  }
+
+  .cmap__sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* ---- inline detail panel ---- */
+  .cmap-panel {
+    margin-top: var(--sp-3);
+  }
+
+  .cmap-view--off {
+    display: none;
+  }
+
+  /* No-JS fallback: a hash jump to a city reveals its panel. */
+  .cmap-view--off:target {
+    display: block;
+  }
+
+  .cmap-hint {
+    margin: 0;
+    padding: var(--sp-3) var(--sp-4);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius);
+    background: var(--surface-2);
+    color: var(--text-muted);
+    font-size: var(--fs-sm);
+    text-align: center;
+  }
+
+  .cmap-view__head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--sp-2) var(--sp-3);
+    margin-bottom: var(--sp-3);
+  }
+
+  /* City entry-count pill — violet (the `--info` note-box hue) so it reads apart
+     from the green location pills inside each work/education entry. */
+  .cmap-count {
+    background: color-mix(in srgb, var(--info) 15%, transparent);
+    color: var(--info);
+    border-color: color-mix(in srgb, var(--info) 35%, transparent);
+  }
+
+  .cmap-back {
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    color: var(--brand-strong);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .cmap-back:hover {
+    text-decoration: none;
+    color: var(--brand);
+  }
+
+  .cmap-view__title {
+    margin: 0;
+    font-size: var(--fs-lg);
+  }
+
+  .cmap-view__title:focus {
+    outline: none;
+  }
+
+  .cmap-view__title:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  .cmap-group + .cmap-group {
+    margin-top: var(--sp-4);
+  }
+
+  .cmap-group__label {
+    margin: 0 0 var(--sp-2);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-subtle);
+  }
+
+  .cmap-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  .cmap-entry {
+    display: flex;
+    /* Centre the logo column and text together, so a taller double-logo
+       (Erasmus) entry doesn't leave dead space under the pills. */
+    align-items: center;
+    gap: var(--sp-3);
+    padding: var(--sp-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  /* Logo column — stacks the (≤2) tiles so single- and double-logo entries keep
+     the same left edge. Double = an Erasmus exchange (org + host university). */
+  .cmap-entry__logos {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  /* Org/institution logo tile (light background so any logo reads in both
+     themes), matching the TimelineCard chips. */
+  .cmap-entry__logo {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    background: #f4f6f8;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 5px;
+    box-shadow: var(--shadow);
+  }
+
+  /* The square personal site-mark fills the tile — pad it in to match the
+     letterboxed institution logos. */
+  .cmap-entry__logo--mark {
+    padding: 10px;
+  }
+
+  .cmap-entry__body {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  .cmap-entry__role {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .cmap-entry__pills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+
+  .cmap-entry__pills .badge--cert {
+    font-family: var(--font-mono);
+  }
+
+  @media (width <= 34rem) {
+    .cmap__legend {
+      display: none;
+    }
+  }
+
+  @keyframes cm-blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes cm-pulse {
+    0% {
+      transform: scale(0.7);
+      opacity: 0.55;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+      transform: scale(2.1);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cm-node__pulse {
+      animation: none;
+      opacity: 0;
+    }
+
+    /* keep a static radar lock (reticle + dot) with no motion */
+    .cm-radar__ping {
+      animation: none;
+      opacity: 0;
+    }
+
+    .cm-radar__sweep {
+      animation: none;
+    }
+  }
+</style>

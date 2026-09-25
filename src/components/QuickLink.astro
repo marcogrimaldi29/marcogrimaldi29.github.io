@@ -1,0 +1,90 @@
+---
+/** QuickLink — GitHub-style nav card with an icon chip. The chip shows an emoji
+ * `icon` by default, or an inline `BrandIcon` SVG logo when `brand` is set. */
+import BrandIcon from '@components/BrandIcon.astro';
+interface Props {
+  title: string;
+  subtitle?: string;
+  icon?: string;
+  brand?: string;
+  href: string;
+}
+const { title, subtitle, icon = '🔗', brand, href } = Astro.props;
+---
+
+<a class="quicklink" href={href}>
+  <span class="quicklink__chip" aria-hidden="true">
+    {brand ? <BrandIcon brand={brand} size={20} /> : icon}
+  </span>
+  <span class="quicklink__text">
+    <strong>{title}</strong>
+    {subtitle && <small>{subtitle}</small>}
+  </span>
+  <span class="quicklink__arrow" aria-hidden="true">→</span>
+</a>
+
+<style>
+  .quicklink {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    padding: var(--sp-3) var(--sp-4);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    transition:
+      border-color var(--transition),
+      background var(--transition),
+      transform var(--transition);
+  }
+
+  .quicklink:hover {
+    background: var(--surface-2);
+    border-color: var(--brand);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  .quicklink__chip {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: var(--radius);
+    background: var(--surface-3);
+    border: 1px solid var(--border);
+    font-size: 1.15rem;
+  }
+
+  .quicklink__text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .quicklink strong {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .quicklink small {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 1px;
+  }
+
+  .quicklink__arrow {
+    margin-left: auto;
+    color: var(--text-subtle);
+    transition:
+      color var(--transition),
+      transform var(--transition);
+  }
+
+  .quicklink:hover .quicklink__arrow {
+    color: var(--brand-strong);
+    transform: translateX(2px);
+  }
+</style>

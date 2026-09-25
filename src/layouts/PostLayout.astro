@@ -1,0 +1,119 @@
+---
+/**
+ * PostLayout — single article in a docs layout: article body + right-rail
+ * "On this page" TOC. `data-pagefind-body` marks the article for search.
+ */
+import BaseLayout from './BaseLayout.astro';
+import TableOfContents from '@components/TableOfContents.astro';
+import type { TocHeading } from '@components/TableOfContents.astro';
+import SideNav from '@components/SideNav.astro';
+import type { SideNavGroup } from '@components/SideNav.astro';
+import type { CollectionEntry } from 'astro:content';
+import { profile } from '@data/profile';
+import { lastCommitDate } from '@data/gitDate';
+import { getLocaleFromUrl, useTranslations } from '@i18n/utils';
+import '@styles/content.css';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+  headings: TocHeading[];
+  navGroups?: SideNavGroup[];
+}
+const { post, headings, navGroups } = Astro.props;
+const { title, date, last_modified_at, description, excerpt, tags, categories } = post.data;
+
+// "Updated" reflects the last Git commit that touched this article's file; falls
+// back to the frontmatter `last_modified_at` when there is no commit for it.
+const updated = (post.filePath ? lastCommitDate(post.filePath) : undefined) ?? last_modified_at;
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const dateLocale = { en: 'en-US', it: 'it-IT', es: 'es-ES', de: 'de-DE' }[locale];
+const fmt = (d: Date) =>
+  d.toLocaleDateString(dateLocale, { year: 'numeric', month: 'short', day: 'numeric' });
+const category = categories[0];
+const hasNav = Boolean(navGroups && navGroups.length);
+const hasToc = headings.filter((h) => h.depth === 2 || h.depth === 3).length >= 2;
+const cols = [hasNav && 'nav', hasToc && 'toc'].filter(Boolean).join('-') || undefined;
+---
+
+<BaseLayout
+  title={title}
+  description={description ?? excerpt}
+  type="article"
+  publishedDate={date}
+  modifiedDate={updated}
+  authorName={profile.name}
+  wide={hasToc || hasNav}
+>
+  <div class="doc" data-cols={cols}>
+    {hasNav && <SideNav groups={navGroups!} current={Astro.url.pathname} />}
+    <article class="doc__main post" data-pagefind-body>
+      <header class="post__header">
+        {category && <p class="eyebrow">// {category.toLowerCase()}</p>}
+        <h1 class="post__title">{title}</h1>
+        <div class="post__meta">
+          <span class="badge">
+            {t('post.created')}:{' '}
+            <time datetime={date.toISOString()}>{fmt(date)}</time>
+          </span>
+          {
+            updated && (
+              <span class="badge">
+                {t('post.updated')}: <time datetime={updated.toISOString()}>{fmt(updated)}</time>
+              </span>
+            )
+          }
+        </div>
+        {
+          tags.length > 0 && (
+            <ul class="post__tags" aria-label="Tags">
+              {tags.map((tag) => (
+                <li class="badge">{tag}</li>
+              ))}
+            </ul>
+          )
+        }
+      </header>
+
+      <div class="prose">
+        <slot />
+      </div>
+    </article>
+
+    <TableOfContents headings={headings} />
+  </div>
+</BaseLayout>
+
+<style>
+  .post {
+    max-width: 48rem;
+  }
+
+  .post__header {
+    margin-bottom: var(--sp-6);
+    padding-bottom: var(--sp-4);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .post__title {
+    font-size: var(--fs-2xl);
+    letter-spacing: -0.02em;
+    margin: 0 0 var(--sp-4);
+  }
+
+  .post__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+
+  .post__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    list-style: none;
+    margin: var(--sp-3) 0 0;
+    padding: 0;
+  }
+</style>

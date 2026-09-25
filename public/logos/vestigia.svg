@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Vestigia">
+  <!--
+    Vestigia brand mark — "Every trail, traced."
+    Footprint = vestigium, the trace left on the ground by a walked trail
+    Forward tilt = motion, a step being taken rather than a static print
+    Gradient    = marcogrimaldi29.com sunrise palette (green → teal → blue)
+  -->
+  <defs>
+    <linearGradient id="ve-g" x1="9" y1="7" x2="23" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3fb950" />
+      <stop offset="0.5" stop-color="#2ec5c5" />
+      <stop offset="1" stop-color="#4493f8" />
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="8" fill="#0b1422" stroke="rgba(255,255,255,0.12)" />
+  <g fill="url(#ve-g)" transform="rotate(-7 16 16) translate(-1.1 0.4)">
+    <!-- sole: ball, arch and heel in one contour -->
+    <path d="M11.0 13.0
+             C 11.0 9.7 14.0 8.9 16.3 8.9
+             C 19.5 8.9 21.5 10.6 21.5 13.4
+             C 21.5 16.3 20.3 18.3 19.9 20.3
+             C 19.5 22.4 19.4 24.9 17.2 25.5
+             C 15.1 26.1 13.3 24.7 13.3 22.6
+             C 13.3 20.9 14.2 19.6 13.8 17.9
+             C 13.5 16.4 11.0 15.7 11.0 13.0 Z" />
+    <!-- toes -->
+    <circle cx="11.9" cy="8.0" r="1.75" />
+    <circle cx="15.2" cy="6.4" r="1.45" />
+    <circle cx="18.2" cy="6.3" r="1.3" />
+    <circle cx="20.7" cy="7.2" r="1.15" />
+    <circle cx="22.4" cy="8.9" r="1.0" />
+  </g>
+</svg>

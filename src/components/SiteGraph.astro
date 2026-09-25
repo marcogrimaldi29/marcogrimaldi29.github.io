@@ -1,0 +1,962 @@
+---
+/**
+ * SiteGraph — an interactive "constellation" of the site's main destinations
+ * with one level of drill-down. Visitors roam by clicking animated nodes:
+ *
+ * - Root view: the Home hub + the explore destinations. Plain destinations
+ *   (About, CV, Contact, Privacy) navigate on click. The three landing hubs
+ *   with `children` (Cert Reviews, Study Notes, Resources) instead FOCUS:
+ *   clicking re-centres the graph on that hub and fans its articles/resources
+ *   out as sub-nodes.
+ * - Focused view: the chosen hub sits in the centre as a plain link (so a
+ *   second click opens its landing page), its children orbit on one or two
+ *   rings (each links straight to the article/resource), and a Back control
+ *   returns to the root.
+ *
+ * Progressive enhancement & a11y:
+ * - Every view is pre-rendered server-side with real <a> links and short,
+ *   readable labels. With no JS the root view shows and the landing hubs link
+ *   directly to their pages (no expand) — nothing is lost. The script only
+ *   intercepts the first click on a landing hub to swap views, drives ambient
+ *   float, and reveals each child's full title on hover/focus.
+ * - View switching (focus / back) is navigation, not motion, so it works even
+ *   under prefers-reduced-motion; only the rAF float loop is gated off there.
+ *
+ * Machine-readout chrome stays language-neutral; human-facing labels
+ * (`caption`, `backLabel`, `openHint`, node/child labels) are localized by the
+ * caller.
+ */
+import { profile } from '@data/profile';
+
+interface ChildNode {
+  label: string;
+  full: string;
+  href: string;
+  icon: string;
+}
+interface GraphNode {
+  label: string;
+  href: string;
+  icon: string;
+  children?: ChildNode[];
+}
+interface Props {
+  nodes: GraphNode[];
+  center: { label: string; href: string; icon?: string };
+  caption?: string;
+  backLabel?: string;
+  openHint?: string;
+}
+const {
+  nodes,
+  center,
+  caption = `Interactive site map linking ${nodes.length} sections.`,
+  backLabel = 'Back',
+  openHint = 'Click the centre again to open',
+} = Astro.props;
+
+const cx = 400;
+const cy = 242;
+
+type Placed<T> = T & { x: number; y: number; phase: number; amp: number; i: number };
+
+function ring<T>(items: T[], rx: number, ry: number, start: number, base = 0): Placed<T>[] {
+  const m = items.length;
+  return items.map((it, k) => {
+    const a = start + (k * 2 * Math.PI) / m;
+    return {
+      ...it,
+      x: +(cx + rx * Math.cos(a)).toFixed(1),
+      y: +(cy + ry * Math.sin(a)).toFixed(1),
+      phase: +((base + k) * 1.33).toFixed(2),
+      amp: 4 + ((base + k) % 3) * 2,
+      i: base + k,
+    };
+  });
+}
+
+// Nodes are laid out alphabetically by their (localized) label, clockwise from
+// the top — so each locale orders by its own translated names.
+const byLabel = <T extends { label: string }>(arr: T[]): T[] =>
+  [...arr].sort((a, b) => a.label.localeCompare(b.label));
+
+// Root destinations on a single ellipse.
+const rootNodes = ring(byLabel(nodes), 300, 168, -Math.PI / 2);
+const rootRing = rootNodes.map((p) => `${p.x},${p.y}`).join(' ');
+
+// One focused view per landing hub that has children. ≤7 children → one ring;
+// more → an inner + a half-step-offset outer ring so 10–15 fit without overlap.
+function layoutChildren(children: ChildNode[]): Placed<ChildNode>[] {
+  const sorted = byLabel(children);
+  const m = sorted.length;
+  if (m <= 7) return ring(sorted, 300, 168, -Math.PI / 2);
+  // Dense views (10–15): one clockwise angular sweep with the radius alternating
+  // between two ellipses (a zigzag), so the alphabetical order still reads
+  // clockwise while the nodes stay spread out and uncrowded.
+  return sorted.map((it, k) => {
+    const a = -Math.PI / 2 + (k * 2 * Math.PI) / m;
+    const outer = k % 2 === 0;
+    const rx = outer ? 332 : 198;
+    const ry = outer ? 206 : 122;
+    return {
+      ...it,
+      x: +(cx + rx * Math.cos(a)).toFixed(1),
+      y: +(cy + ry * Math.sin(a)).toFixed(1),
+      phase: +(k * 1.33).toFixed(2),
+      amp: 4 + (k % 3) * 2,
+      i: k,
+    };
+  });
+}
+
+const views = rootNodes
+  .filter((node) => node.children && node.children.length > 0)
+  .map((node) => {
+    const children = layoutChildren(node.children as ChildNode[]);
+    // Only the single-ring views draw a connecting ring polygon.
+    const ringPts = children.length <= 7 ? children.map((c) => `${c.x},${c.y}`).join(' ') : '';
+    return { name: `cat-${node.i}`, hub: node, children, ringPts };
+  });
+---
+
+<nav class="sitegraph" aria-label={caption} data-open-hint={openHint}>
+  <header class="sitegraph__chrome" aria-hidden="true">
+    <span class="sitegraph__led"></span>
+    <span class="sitegraph__brand">SITE-MAP</span>
+    <span class="sitegraph__slash">//</span>
+    <span class="sitegraph__crumb">ROOT</span>
+    <span class="sitegraph__count">{nodes.length + 1} ENDPOINTS</span>
+  </header>
+
+  <div class="sitegraph__screen">
+    <svg
+      viewBox="0 0 800 484"
+      class="sitegraph__svg"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+    >
+      <defs>
+        <pattern id="sg-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M40 0H0V40" fill="none" class="sg-gridline"></path>
+        </pattern>
+        <radialGradient id="sg-vignette" cx="50%" cy="50%" r="75%">
+          <stop offset="58%" stop-color="#000" stop-opacity="0"></stop>
+          <stop offset="100%" stop-color="#000" stop-opacity="0.45"></stop>
+        </radialGradient>
+        <linearGradient id="sg-edge" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#3fb950"></stop>
+          <stop offset="50%" stop-color="#2ec5c5"></stop>
+          <stop offset="100%" stop-color="#4493f8"></stop>
+        </linearGradient>
+        <radialGradient id="sg-hub" cx="38%" cy="32%" r="80%">
+          <stop offset="0%" stop-color="#6cb6ff"></stop>
+          <stop offset="55%" stop-color="#2ec5c5"></stop>
+          <stop offset="100%" stop-color="#1f6feb"></stop>
+        </radialGradient>
+        <filter id="sg-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="3.4" result="b"></feGaussianBlur>
+          <feMerge>
+            <feMergeNode in="b"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
+        </filter>
+      </defs>
+
+      <rect width="800" height="484" class="sg-bg"></rect>
+      <rect width="800" height="484" fill="url(#sg-grid)"></rect>
+
+      {/* ── Root view ─────────────────────────────────────────── */}
+      <g class="sg-view" data-view="root">
+        <g class="sg-scene">
+          <g class="sg-edges">
+            <polygon class="sg-ring" points={rootRing}></polygon>
+            {
+              rootNodes.map((p) => (
+                <line class="sg-edge" data-i={p.i} x1={cx} y1={cy} x2={p.x} y2={p.y} />
+              ))
+            }
+          </g>
+          <g class="sg-nodes">
+            <a href={center.href} class="sg-link sg-link--hub" aria-label={center.label}>
+              <g class="sg-node sg-node--hub" data-hub data-bx={cx} data-by={cy}>
+                <circle class="sg-node__halo" cx={cx} cy={cy} r="44"></circle>
+                <circle class="sg-node__chip sg-node__chip--hub" cx={cx} cy={cy} r="34"></circle>
+                <text
+                  class="sg-node__icon sg-node__icon--hub"
+                  x={cx}
+                  y={cy + 1}
+                  text-anchor="middle">{center.icon ?? '🏠'}</text
+                >
+                <text
+                  class="sg-node__label sg-node__label--hub"
+                  x={cx}
+                  y={cy + 58}
+                  text-anchor="middle">{center.label}</text
+                >
+              </g>
+            </a>
+            {
+              rootNodes.map((p) => {
+                const expandable = p.children && p.children.length > 0;
+                return (
+                  <a
+                    href={p.href}
+                    class:list={['sg-link', expandable && 'sg-link--branch']}
+                    aria-label={expandable ? `${p.label} — expand` : p.label}
+                    data-expand={expandable ? `cat-${p.i}` : undefined}
+                  >
+                    <g
+                      class="sg-node"
+                      data-i={p.i}
+                      data-bx={p.x}
+                      data-by={p.y}
+                      data-phase={p.phase}
+                      data-amp={p.amp}
+                    >
+                      <circle class="sg-node__halo" cx={p.x} cy={p.y} r="34" />
+                      <circle class="sg-node__chip" cx={p.x} cy={p.y} r="26" />
+                      <text class="sg-node__icon" x={p.x} y={p.y + 1} text-anchor="middle">
+                        {p.icon}
+                      </text>
+                      <text class="sg-node__label" x={p.x} y={p.y + 46} text-anchor="middle">
+                        {p.label}
+                      </text>
+                      {expandable && (
+                        <circle class="sg-node__badge" cx={p.x + 19} cy={p.y - 19} r="8" />
+                      )}
+                      {expandable && (
+                        <text
+                          class="sg-node__badge-txt"
+                          x={p.x + 19}
+                          y={p.y - 18}
+                          text-anchor="middle"
+                        >
+                          {p.children!.length}
+                        </text>
+                      )}
+                    </g>
+                  </a>
+                );
+              })
+            }
+          </g>
+        </g>
+      </g>
+
+      {/* ── Focused views (one per landing hub) ───────────────── */}
+      {
+        views.map((v) => {
+          return (
+            <g class="sg-view sg-view--off" data-view={v.name}>
+              <g class="sg-scene">
+                <g class="sg-edges">
+                  {v.ringPts && <polygon class="sg-ring" points={v.ringPts} />}
+                  {v.children.map((c) => (
+                    <line class="sg-edge" data-i={c.i} x1={cx} y1={cy} x2={c.x} y2={c.y} />
+                  ))}
+                </g>
+                <g class="sg-nodes">
+                  {/* focused hub → plain link, second click opens the page */}
+                  <a
+                    href={v.hub.href}
+                    class="sg-link sg-link--hub"
+                    aria-label={`${v.hub.label} — open`}
+                  >
+                    <g class="sg-node sg-node--hub" data-hub data-bx={cx} data-by={cy}>
+                      <circle class="sg-node__halo" cx={cx} cy={cy} r="44" />
+                      <circle class="sg-node__chip sg-node__chip--hub" cx={cx} cy={cy} r="34" />
+                      <text
+                        class="sg-node__icon sg-node__icon--hub"
+                        x={cx}
+                        y={cy + 1}
+                        text-anchor="middle"
+                      >
+                        {v.hub.icon}
+                      </text>
+                      <text
+                        class="sg-node__label sg-node__label--hub"
+                        x={cx}
+                        y={cy + 58}
+                        text-anchor="middle"
+                      >
+                        {v.hub.label}
+                      </text>
+                    </g>
+                  </a>
+                  {v.children.map((c) => (
+                    <a
+                      href={c.href}
+                      class="sg-link sg-link--child"
+                      aria-label={c.full}
+                      data-full={c.full}
+                    >
+                      <g
+                        class="sg-node sg-node--child"
+                        data-i={c.i}
+                        data-bx={c.x}
+                        data-by={c.y}
+                        data-phase={c.phase}
+                        data-amp={c.amp}
+                      >
+                        <title>{c.full}</title>
+                        <circle
+                          class="sg-node__halo sg-node__halo--child"
+                          cx={c.x}
+                          cy={c.y}
+                          r="26"
+                        />
+                        <circle
+                          class="sg-node__chip sg-node__chip--child"
+                          cx={c.x}
+                          cy={c.y}
+                          r="19"
+                        />
+                        <text
+                          class="sg-node__icon sg-node__icon--child"
+                          x={c.x}
+                          y={c.y + 1}
+                          text-anchor="middle"
+                        >
+                          {c.icon}
+                        </text>
+                        <text
+                          class="sg-node__label sg-node__label--child"
+                          x={c.x}
+                          y={c.y + 34}
+                          text-anchor="middle"
+                        >
+                          {c.label}
+                        </text>
+                      </g>
+                    </a>
+                  ))}
+                </g>
+              </g>
+
+              {/* Back control (top-left) — a real link to home (graceful no-JS
+                  fallback), intercepted by the script to return to the root view. */}
+              <a class="sg-back" href={center.href} data-back="root" aria-label={backLabel}>
+                <rect class="sg-back__chip" x="20" y="18" width="96" height="30" rx="15" />
+                <text class="sg-back__label" x="68" y="33" text-anchor="middle">
+                  <tspan class="sg-back__arrow">←</tspan>
+                  <tspan dx="6">{backLabel}</tspan>
+                </text>
+              </a>
+            </g>
+          );
+        })
+      }
+
+      <rect width="800" height="484" fill="url(#sg-vignette)" pointer-events="none"></rect>
+    </svg>
+  </div>
+
+  <footer class="sitegraph__telemetry" aria-hidden="true">
+    <span><b>HUB</b> {profile.domain}</span>
+    <span class="sitegraph__nodes"><b>NODES</b> {nodes.length}</span>
+    <span class="sitegraph__caption">click a node to navigate</span>
+    <span class="sitegraph__live"><i></i>LIVE</span>
+  </footer>
+</nav>
+
+<script>
+  const cx0 = 400;
+  const cy0 = 242;
+
+  type Orbit = {
+    el: SVGGElement;
+    bx: number;
+    by: number;
+    phase: number;
+    amp: number;
+    x: number;
+    y: number;
+  };
+  type View = {
+    name: string;
+    el: SVGGElement;
+    scene: SVGGElement | null;
+    hub: { el: SVGGElement; bx: number; by: number; x: number; y: number } | null;
+    ring: SVGPolygonElement | null;
+    orbits: Orbit[];
+    edges: Map<number, SVGLineElement>;
+    crumb: string;
+    title: string;
+    nodeCount: number;
+  };
+
+  function readOrbit(el: SVGGElement): Orbit {
+    return {
+      el,
+      bx: Number(el.dataset.bx),
+      by: Number(el.dataset.by),
+      phase: Number(el.dataset.phase),
+      amp: Number(el.dataset.amp),
+      x: Number(el.dataset.bx),
+      y: Number(el.dataset.by),
+    };
+  }
+
+  function initGraph(root: HTMLElement) {
+    const crumbEl = root.querySelector<HTMLElement>('.sitegraph__crumb');
+    const nodesEl = root.querySelector<HTMLElement>('.sitegraph__nodes');
+    const countEl = root.querySelector<HTMLElement>('.sitegraph__count');
+    const captionEl = root.querySelector<HTMLElement>('.sitegraph__caption');
+    const rootCount = countEl?.textContent ?? '';
+    const defaultHint = captionEl?.textContent ?? '';
+    const openHint = root.dataset.openHint ?? '';
+
+    const views = new Map<string, View>();
+    root.querySelectorAll<SVGGElement>('.sg-view').forEach((viewEl) => {
+      const name = viewEl.dataset.view ?? 'root';
+      const hubEl = viewEl.querySelector<SVGGElement>('.sg-node--hub');
+      const orbits = Array.from(
+        viewEl.querySelectorAll<SVGGElement>('.sg-node:not(.sg-node--hub)'),
+      ).map(readOrbit);
+      const edges = new Map<number, SVGLineElement>();
+      viewEl.querySelectorAll<SVGLineElement>('.sg-edge').forEach((line) => {
+        edges.set(Number(line.dataset.i), line);
+      });
+      const hubLabel =
+        viewEl.querySelector<SVGTextElement>('.sg-node__label--hub')?.textContent?.trim() ?? '';
+      views.set(name, {
+        name,
+        el: viewEl,
+        scene: viewEl.querySelector<SVGGElement>('.sg-scene'),
+        hub: hubEl
+          ? {
+              el: hubEl,
+              bx: Number(hubEl.dataset.bx),
+              by: Number(hubEl.dataset.by),
+              x: cx0,
+              y: cy0,
+            }
+          : null,
+        ring: viewEl.querySelector<SVGPolygonElement>('.sg-ring'),
+        orbits,
+        edges,
+        crumb: name === 'root' ? 'ROOT' : hubLabel.toUpperCase(),
+        title: hubLabel,
+        nodeCount: orbits.length,
+      });
+    });
+
+    let active = 'root';
+    let pxT = 0;
+    let pyT = 0;
+    let px = 0;
+    let py = 0;
+
+    const focusFirstLink = (viewEl: SVGGElement) =>
+      viewEl.querySelector<SVGAElement>('.sg-link--hub')?.focus();
+
+    function show(name: string, focusInto = true) {
+      if (!views.has(name)) return;
+      views.forEach((v, k) => {
+        v.el.classList.toggle('sg-view--off', k !== name);
+      });
+      active = name;
+      const v = views.get(name)!;
+      root.classList.toggle('sitegraph--focused', name !== 'root');
+      if (crumbEl) crumbEl.textContent = v.crumb;
+      if (nodesEl) nodesEl.innerHTML = `<b>NODES</b> ${v.nodeCount}`;
+      if (countEl) countEl.textContent = name === 'root' ? rootCount : `Endpoint: ${v.title}`;
+      if (captionEl) captionEl.textContent = name === 'root' ? defaultHint : openHint;
+      pxT = pyT = px = py = 0;
+      if (focusInto && name !== 'root') focusFirstLink(v.el);
+    }
+
+    // First click on a landing hub focuses its view instead of navigating.
+    root.querySelectorAll<SVGAElement>('.sg-link--branch').forEach((link) => {
+      const target = link.dataset.expand;
+      if (!target) return;
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        show(target);
+      });
+    });
+
+    // Back controls — real links (Enter activates natively → fires click);
+    // intercepted to return to the root view and restore focus to the hub.
+    root.querySelectorAll<SVGAElement>('.sg-back').forEach((back) => {
+      back.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Remember which hub we came from before switching, to restore focus.
+        const cameFrom = back.closest<SVGGElement>('.sg-view')?.dataset.view;
+        show(back.dataset.back ?? 'root', false);
+        root.querySelector<SVGAElement>(`.sg-link--branch[data-expand="${cameFrom}"]`)?.focus();
+      });
+    });
+
+    // Hover/focus a child → surface its full title in the caption.
+    root.querySelectorAll<SVGAElement>('.sg-link--child').forEach((link) => {
+      const full = link.dataset.full ?? '';
+      const set = () => {
+        if (captionEl) captionEl.textContent = full;
+      };
+      const clear = () => {
+        if (captionEl && active !== 'root') captionEl.textContent = openHint;
+      };
+      link.addEventListener('pointerenter', set);
+      link.addEventListener('pointerleave', clear);
+      link.addEventListener('focusin', set);
+      link.addEventListener('focusout', clear);
+    });
+
+    // Edge highlight follows the hovered/focused node in any view.
+    root.querySelectorAll<SVGAElement>('.sg-link').forEach((link) => {
+      const i = link.querySelector<SVGGElement>('.sg-node')?.dataset.i;
+      if (i === undefined) return;
+      const view = link.closest<HTMLElement>('.sg-view')?.dataset.view ?? 'root';
+      const edge = views.get(view)?.edges.get(Number(i));
+      if (!edge) return;
+      const on = () => edge.classList.add('is-active');
+      const off = () => edge.classList.remove('is-active');
+      link.addEventListener('pointerenter', on);
+      link.addEventListener('pointerleave', off);
+      link.addEventListener('focusin', on);
+      link.addEventListener('focusout', off);
+    });
+
+    root.addEventListener('pointermove', (e) => {
+      const r = root.getBoundingClientRect();
+      pxT = ((e.clientX - r.left) / r.width - 0.5) * 22;
+      pyT = ((e.clientY - r.top) / r.height - 0.5) * 14;
+    });
+    root.addEventListener('pointerleave', () => {
+      pxT = 0;
+      pyT = 0;
+    });
+
+    // Ambient float (gated by reduced-motion; view switching works regardless).
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let raf = 0;
+    const start = performance.now();
+
+    const frame = (now: number) => {
+      const t = (now - start) / 1000;
+      const v = views.get(active);
+      if (v) {
+        if (v.hub) {
+          const hx = 3 * Math.sin(t * 0.4);
+          const hy = 3 * Math.cos(t * 0.4);
+          v.hub.x = v.hub.bx + hx;
+          v.hub.y = v.hub.by + hy;
+          v.hub.el.setAttribute('transform', `translate(${hx.toFixed(2)} ${hy.toFixed(2)})`);
+        }
+        for (const o of v.orbits) {
+          const ox = o.amp * Math.sin(t * 0.6 + o.phase);
+          const oy = o.amp * 0.7 * Math.cos(t * 0.6 + o.phase);
+          o.x = o.bx + ox;
+          o.y = o.by + oy;
+          o.el.setAttribute('transform', `translate(${ox.toFixed(2)} ${oy.toFixed(2)})`);
+        }
+        const hubX = v.hub?.x ?? cx0;
+        const hubY = v.hub?.y ?? cy0;
+        v.edges.forEach((line, i) => {
+          const o = v.orbits.find((n) => Number(n.el.dataset.i) === i);
+          if (!o) return;
+          line.setAttribute('x1', hubX.toFixed(2));
+          line.setAttribute('y1', hubY.toFixed(2));
+          line.setAttribute('x2', o.x.toFixed(2));
+          line.setAttribute('y2', o.y.toFixed(2));
+        });
+        if (v.ring) v.ring.setAttribute('points', v.orbits.map((o) => `${o.x},${o.y}`).join(' '));
+        px += (pxT - px) * 0.06;
+        py += (pyT - py) * 0.06;
+        v.scene?.setAttribute('transform', `translate(${px.toFixed(2)} ${py.toFixed(2)})`);
+      }
+      raf = requestAnimationFrame(frame);
+    };
+
+    if (!reduce.matches) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting && !raf) raf = requestAnimationFrame(frame);
+            else if (!entry.isIntersecting && raf) {
+              cancelAnimationFrame(raf);
+              raf = 0;
+            }
+          }
+        },
+        { threshold: 0.05 },
+      );
+      io.observe(root);
+    }
+  }
+
+  document.querySelectorAll<HTMLElement>('.sitegraph').forEach(initGraph);
+</script>
+
+<style>
+  .sitegraph {
+    display: block;
+    /* Cap at the SVG's native design size (viewBox 800×484) and centre it.
+       Without this the graph fills the full-width home column (~1080px) and
+       the SVG's preserveAspectRatio scales every node/icon up with it, so on a
+       maximised window it overflows; narrower windows happened to land near the
+       intended size. */
+    max-width: 800px;
+    margin: var(--sp-4) auto var(--sp-6);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    font-family: var(--font-mono);
+  }
+
+  /* ---- chrome ---- */
+  .sitegraph__chrome {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-2) var(--sp-3);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--text-subtle);
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sitegraph__led {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success);
+    box-shadow: 0 0 8px var(--success);
+    animation: sg-blink 2.4s ease-in-out infinite;
+  }
+
+  .sitegraph__brand {
+    color: var(--brand-strong);
+    font-weight: 600;
+  }
+
+  .sitegraph__slash {
+    color: var(--border-strong);
+  }
+
+  .sitegraph__crumb {
+    color: var(--accent);
+  }
+
+  .sitegraph__count {
+    margin-left: auto;
+    color: var(--text-subtle);
+  }
+
+  /* ---- screen ---- */
+  .sitegraph__screen {
+    position: relative;
+    aspect-ratio: 800 / 484;
+  }
+
+  .sitegraph__svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Only the active view renders; focused views start off until the script
+     (or never, with no JS) swaps them in. */
+  .sg-view--off {
+    display: none;
+  }
+
+  .sg-bg {
+    fill: var(--bg);
+  }
+
+  .sg-gridline {
+    stroke: color-mix(in srgb, var(--brand) 10%, transparent);
+    stroke-width: 1;
+  }
+
+  /* ---- edges ---- */
+  .sg-edge {
+    stroke: url(#sg-edge);
+    stroke-width: 1.4;
+    opacity: 0.32;
+    vector-effect: non-scaling-stroke;
+    transition:
+      opacity var(--transition),
+      stroke-width var(--transition);
+  }
+
+  .sg-edge.is-active {
+    opacity: 0.95;
+    stroke-width: 2.4;
+    filter: url(#sg-glow);
+  }
+
+  .sg-ring {
+    fill: none;
+    stroke: color-mix(in srgb, var(--accent) 28%, transparent);
+    stroke-width: 1;
+    stroke-dasharray: 3 7;
+    vector-effect: non-scaling-stroke;
+  }
+
+  /* ---- nodes ---- */
+  .sg-link {
+    cursor: pointer;
+  }
+
+  /* SVG <a> links must never inherit the global underline-on-hover (it draws
+     a stray line under the node/back text). */
+  .sg-link:hover,
+  .sg-link:focus,
+  .sg-back:hover,
+  .sg-back:focus {
+    text-decoration: none;
+  }
+
+  .sg-node {
+    transform-box: fill-box;
+  }
+
+  .sg-node__halo {
+    fill: none;
+    stroke: color-mix(in srgb, var(--brand) 30%, transparent);
+    stroke-width: 1;
+    stroke-dasharray: 3 5;
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transition:
+      opacity var(--transition),
+      transform var(--transition);
+  }
+
+  .sg-node__chip {
+    fill: var(--surface-3);
+    stroke: var(--border-strong);
+    stroke-width: 1.4;
+    transition:
+      fill var(--transition),
+      stroke var(--transition);
+  }
+
+  .sg-node__chip--hub {
+    fill: url(#sg-hub);
+    stroke: var(--brand-strong);
+    stroke-width: 1.6;
+    filter: url(#sg-glow);
+  }
+
+  .sg-node__chip--child {
+    fill: var(--surface-2);
+  }
+
+  .sg-node__icon {
+    font-size: 22px;
+    dominant-baseline: middle;
+  }
+
+  .sg-node__icon--hub {
+    font-size: 30px;
+  }
+
+  .sg-node__icon--child {
+    font-size: 15px;
+  }
+
+  .sg-node__label {
+    fill: var(--text-muted);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-family: var(--font-mono);
+    transition: fill var(--transition);
+  }
+
+  .sg-node__label--hub {
+    fill: var(--text);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  .sg-node__label--child {
+    font-size: 10.5px;
+    fill: var(--text-subtle);
+  }
+
+  /* expandable-branch badge (child count) */
+  .sg-node__badge {
+    fill: var(--brand-emphasis);
+    stroke: var(--surface);
+    stroke-width: 1.5;
+  }
+
+  .sg-node__badge-txt {
+    fill: var(--on-brand);
+    font-size: 9.5px;
+    font-weight: 700;
+    dominant-baseline: middle;
+    font-family: var(--font-mono);
+  }
+
+  /* hover / focus highlight (CSS-driven so it works without the script) */
+  .sg-link:hover .sg-node__chip,
+  .sg-link:focus-visible .sg-node__chip {
+    fill: color-mix(in srgb, var(--brand) 24%, var(--surface-3));
+    stroke: var(--brand);
+  }
+
+  .sg-link:hover .sg-node__halo,
+  .sg-link:focus-visible .sg-node__halo {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+
+  .sg-link:hover .sg-node__label,
+  .sg-link:focus-visible .sg-node__label {
+    fill: var(--brand-strong);
+  }
+
+  .sg-link:focus {
+    outline: none;
+  }
+
+  .sg-link:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* ---- back control ---- */
+  .sg-back {
+    cursor: pointer;
+  }
+
+  .sg-back__chip {
+    fill: var(--surface-3);
+    stroke: var(--border-strong);
+    stroke-width: 1.2;
+    transition:
+      fill var(--transition),
+      stroke var(--transition);
+  }
+
+  .sg-back:hover .sg-back__chip,
+  .sg-back:focus-visible .sg-back__chip {
+    fill: color-mix(in srgb, var(--brand) 22%, var(--surface-3));
+    stroke: var(--brand);
+  }
+
+  /* Single middle-anchored label keeps "← Back" centred in the pill. */
+  .sg-back__label {
+    fill: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    dominant-baseline: central;
+    font-family: var(--font-mono);
+  }
+
+  .sg-back__arrow {
+    fill: var(--brand-strong);
+    font-size: 15px;
+  }
+
+  .sg-back:focus {
+    outline: none;
+  }
+
+  .sg-back:focus-visible .sg-back__chip {
+    stroke: var(--brand);
+    stroke-width: 2;
+  }
+
+  /* ---- telemetry ---- */
+  .sitegraph__telemetry {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+    flex-wrap: wrap;
+    padding: var(--sp-2) var(--sp-3);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    background: var(--surface-2);
+    border-top: 1px solid var(--border);
+  }
+
+  .sitegraph__telemetry b {
+    color: var(--text-subtle);
+    font-weight: 600;
+    margin-right: 4px;
+  }
+
+  .sitegraph__caption {
+    /* flex-basis 0 so the (nowrap) hint never forces a line break that would
+       bump the LIVE indicator to a second row; it grows to fill the free space
+       and ellipsis-truncates only if the hint is longer than that space. */
+    flex: 1 1 0;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text-subtle);
+  }
+
+  .sitegraph--focused .sitegraph__caption {
+    color: var(--accent);
+  }
+
+  .sitegraph__live {
+    /* The caption's flex-grow positions this at the right edge; stay on one
+       line and never shrink. (Right-aligned on mobile via the media query,
+       where the caption is hidden and can't push us over.) */
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--success);
+    font-weight: 600;
+  }
+
+  .sitegraph__live i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--success);
+    box-shadow: 0 0 8px var(--success);
+    animation: sg-blink 1.6s ease-in-out infinite;
+  }
+
+  @media (max-width: 34rem) {
+    .sitegraph__caption {
+      display: none;
+    }
+
+    /* No caption here to grow, so push the LIVE tag to the right edge. */
+    .sitegraph__live {
+      margin-left: auto;
+    }
+
+    .sg-node__label {
+      font-size: 15px;
+    }
+
+    .sg-node__label--child {
+      font-size: 12px;
+    }
+
+    .sg-node__icon {
+      font-size: 26px;
+    }
+  }
+
+  @keyframes sg-blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+</style>

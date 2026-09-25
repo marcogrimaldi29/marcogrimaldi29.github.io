@@ -1,0 +1,155 @@
+---
+/**
+ * PageActions — floating bottom-right controls that fade in once the user has
+ * scrolled down: a locale-aware "Home" link (hidden on the home page itself)
+ * and a "Back to top" button. Smooth-scroll respects prefers-reduced-motion.
+ */
+import { getLocaleFromUrl, useTranslations, localizePath, unlocalizePath } from '@i18n/utils';
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const homeHref = localizePath('/', locale);
+const isHome = unlocalizePath(Astro.url.pathname) === '/';
+---
+
+<div class="page-actions" data-page-actions>
+  {
+    !isHome && (
+      <a
+        class="page-actions__btn"
+        href={homeHref}
+        aria-label={t('action.home')}
+        title={t('action.home')}
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m3 10.5 9-7.5 9 7.5" />
+          <path d="M5 9.5V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5" />
+        </svg>
+      </a>
+    )
+  }
+  <button
+    class="page-actions__btn"
+    type="button"
+    data-back-to-top
+    aria-label={t('action.backToTop')}
+    title={t('action.backToTop')}
+  >
+    <svg
+      viewBox="0 0 24 24"
+      width="20"
+      height="20"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M12 19V5"></path>
+      <path d="m5 12 7-7 7 7"></path>
+    </svg>
+  </button>
+</div>
+
+<script>
+  const actions = document.querySelector<HTMLElement>('[data-page-actions]');
+  if (actions) {
+    const SHOW_AT = 400;
+    let ticking = false;
+    const update = () => {
+      actions.classList.toggle('is-visible', window.scrollY > SHOW_AT);
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    actions.querySelector('[data-back-to-top]')?.addEventListener('click', () => {
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  }
+</script>
+
+<style>
+  .page-actions {
+    position: fixed;
+    right: var(--sp-4);
+    bottom: var(--sp-4);
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+    /* Hidden until scrolled — fade + slight rise. */
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition:
+      opacity var(--transition),
+      transform var(--transition);
+  }
+
+  .page-actions.is-visible {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .page-actions__btn {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    box-shadow: var(--shadow-hover);
+    cursor: pointer;
+    transition:
+      color var(--transition),
+      border-color var(--transition),
+      background var(--transition),
+      transform var(--transition);
+  }
+
+  .page-actions__btn:hover {
+    color: var(--text);
+    border-color: var(--brand);
+    background: var(--surface-2);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  .page-actions__btn:active {
+    transform: translateY(0);
+  }
+
+  @media (width <= 480px) {
+    .page-actions {
+      right: var(--sp-3);
+      bottom: var(--sp-3);
+    }
+
+    .page-actions__btn {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,184 @@
+---
+/**
+ * CvCard — experience/education entry. Org & institution logos appear as small
+ * tile chips in the card's top-right. The primary logo is matched from the org
+ * name; secondary logos cover Erasmus exchanges mentioned in meta/points (e.g. a
+ * degree at Tor Vergata with an exchange at Mainz). All matching is on proper
+ * nouns stable across locales (Mainz also localizes to Magonza/Maguncia).
+ */
+import { resolveLogos } from '@data/orgLogos';
+
+interface Props {
+  role: string;
+  org: string;
+  meta?: string[];
+  points: string[];
+  variant?: 'work' | 'edu';
+}
+const { role, org, meta = [], points, variant = 'work' } = Astro.props;
+
+// Company / institution logos (Wikimedia Commons, credited in LogoDisclaimer) —
+// resolved via the shared matcher so CareerMap reuses the same list. Entries with
+// no match (Carlos V, Studiamo Insieme, I.T.I. Lattanzio…) show an empty tile.
+const logos = resolveLogos(org, [org, ...meta, ...points].join(' '));
+---
+
+<article class:list={['cvcard', variant === 'edu' && 'cvcard--edu']}>
+  <div class="cvcard__head">
+    <div class="cvcard__headtext">
+      <h3 class="cvcard__role">{role}</h3>
+      <div class="cvcard__meta">
+        <span class="cvcard__org">{org}</span>
+        {
+          /* meta is [location, time-period]; the location pill is greened to
+            set it apart from the gray time pill. */
+        }
+        {meta.map((m, i) => <span class:list={['badge', i === 0 && 'cvcard__loc']}>{m}</span>)}
+      </div>
+    </div>
+    <div class="cvcard__logos">
+      {
+        logos.length > 0 ? (
+          logos.map((src) => (
+            <img
+              class:list={['cvcard__logo', src.includes('site-mark') && 'cvcard__logo--mark']}
+              src={src}
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+            />
+          ))
+        ) : (
+          <span class="cvcard__logo cvcard__logo--empty" aria-hidden="true" />
+        )
+      }
+    </div>
+  </div>
+  <ul>
+    {points.map((p) => <li>{p}</li>)}
+  </ul>
+</article>
+
+<style>
+  .cvcard {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--brand);
+    border-radius: var(--radius);
+    padding: var(--sp-4) var(--sp-5);
+    background: var(--surface);
+    margin-block: var(--sp-3);
+    transition:
+      border-color var(--transition),
+      transform var(--transition);
+  }
+
+  /* Hover brightens each card's OWN semantic colour (work = azure, education =
+     green) — never the cyan that now denotes notices — so the meaning stays clear. */
+  .cvcard:hover {
+    transform: translateX(3px);
+    border-left-color: var(--brand-strong);
+  }
+
+  .cvcard--edu {
+    border-left-color: var(--success);
+  }
+
+  .cvcard--edu:hover {
+    border-left-color: color-mix(in srgb, var(--success) 65%, #fff);
+  }
+
+  .cvcard__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--sp-4);
+  }
+
+  .cvcard__headtext {
+    min-width: 0;
+  }
+
+  /* Logo tile chips — light background keeps every logo readable; slightly
+     dimmed at rest, brightening on hover for a dynamic touch. */
+  .cvcard__logos {
+    display: flex;
+    flex-shrink: 0;
+    gap: var(--sp-2);
+  }
+
+  .cvcard__logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    background: #f4f6f8;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 6px;
+    box-shadow: var(--shadow);
+    opacity: 0.88;
+    transition:
+      opacity var(--transition),
+      transform var(--transition);
+  }
+
+  /* The personal placeholder mark is square, so it fills the tile; pad it down
+     to match the smaller, letterboxed institution logos. */
+  .cvcard__logo--mark {
+    padding: 13px;
+  }
+
+  .cvcard:hover .cvcard__logo {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+
+  .cvcard__role {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 var(--sp-2);
+  }
+
+  .cvcard__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-3);
+  }
+
+  .cvcard__org {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    background: var(--tag-cert-bg);
+    color: var(--tag-cert-fg);
+    border: 1px solid var(--tag-cert-ring);
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+  }
+
+  /* Location pill — green (guide ramp) to read apart from the gray time pill. */
+  .cvcard__loc {
+    background: var(--tag-guide-bg);
+    color: var(--tag-guide-fg);
+    border-color: var(--tag-guide-ring);
+  }
+
+  .cvcard ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .cvcard li {
+    font-size: var(--fs-sm);
+    margin-bottom: var(--sp-1);
+    line-height: 1.6;
+    color: var(--text-muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cvcard:hover .cvcard__logo {
+      transform: none;
+    }
+  }
+</style>

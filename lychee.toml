@@ -1,0 +1,25 @@
+# lychee link-checker config. Used by CI (advisory) and the weekly link-rot job.
+
+# Network behaviour — be patient and tolerant of bot-hostile hosts.
+max_retries = 2
+retry_wait_time = 2
+timeout = 20
+max_concurrency = 8
+
+# Treat these as "reachable": many sites return these to bots/HEAD requests.
+#   403 Forbidden, 429 Too Many Requests, 999 (LinkedIn's bot block).
+accept = ["200", "206", "403", "429", "999"]
+
+# Skip mailto:/tel: and known bot-blocking or auth-gated hosts that produce
+# false negatives even when the link is valid in a browser.
+exclude_mail = true
+exclude = [
+  "linkedin\\.com",
+  "udemy\\.com",
+  "duolingo\\.com",
+  "x\\.com",
+  "twitter\\.com",
+  # Local audit server (only present in built HTML during CI runs).
+  "127\\.0\\.0\\.1",
+  "localhost",
+]

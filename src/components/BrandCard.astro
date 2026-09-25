@@ -1,0 +1,96 @@
+---
+/**
+ * BrandCard — left-rail personal-brand panel: logo + name + work title + the
+ * social links from the footer, with branded platform logos for readability.
+ */
+import { Image } from 'astro:assets';
+import { profile } from '@data/profile';
+import BrandIcon from './BrandIcon.astro';
+import { getLocaleFromUrl, useTranslations } from '@i18n/utils';
+import avatar from '@assets/avatar.png';
+
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+---
+
+<aside class="brandcard doc__rail doc__nav" aria-label={t('brand.profile')}>
+  <Image
+    class="brandcard__avatar"
+    src={avatar}
+    alt={`${profile.name} avatar`}
+    width={56}
+    height={56}
+    densities={[1, 2]}
+    loading="eager"
+  />
+  <p class="brandcard__name">{profile.name}</p>
+  <p class="brandcard__title">{profile.bio}</p>
+  <ul class="brandcard__links">
+    {
+      profile.links.map((l) => (
+        <li>
+          <a href={l.url} rel="noopener noreferrer" target="_blank">
+            <BrandIcon brand={l.label} />
+            <span>{l.label}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</aside>
+
+<style>
+  .brandcard {
+    text-align: center;
+  }
+
+  .brandcard__avatar {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin-inline: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+  }
+
+  .brandcard__name {
+    font-weight: 600;
+    margin: var(--sp-3) 0 var(--sp-1);
+  }
+
+  .brandcard__title {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    margin: 0 0 var(--sp-4);
+    padding-bottom: var(--sp-4);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* inline-flex → the list shrinks to its widest row and centers as one block
+     (parent is text-align:center), while rows stay left-aligned so every icon
+     shares the same left edge. */
+  .brandcard__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--sp-1);
+    text-align: left;
+  }
+
+  .brandcard__links a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: 5px 6px;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  .brandcard__links a:hover {
+    color: var(--text);
+    background: var(--surface-2);
+  }
+</style>

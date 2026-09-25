@@ -1,0 +1,168 @@
+---
+/** /de/cv/ — Lebenslauf (DE-Daten). */
+import PageLayout from '@layouts/PageLayout.astro';
+import Panel from '@components/Panel.astro';
+import TimelineCard from '@components/TimelineCard.astro';
+import CareerMap from '@components/CareerMap.astro';
+import SkillBar from '@components/SkillBar.astro';
+import SkillMarquee from '@components/SkillMarquee.astro';
+import CollabNote from '@components/CollabNote.astro';
+import LogoDisclaimer from '@components/LogoDisclaimer.astro';
+import BrandIcon from '@components/BrandIcon.astro';
+import UpdatedBadge from '@components/UpdatedBadge.astro';
+import CertBadges from '@components/CertBadges.astro';
+import { cvUpdated, certBadges } from '@data/cv';
+import {
+  experienceDe,
+  educationDe,
+  certificationsDe,
+  languagesDe,
+  technicalSkillsDe,
+  softSkillsDe,
+} from '@data/cv-de';
+
+const headings = [
+  { depth: 2, slug: 'berufserfahrung', text: 'berufserfahrung' },
+  { depth: 2, slug: 'ausbildung', text: 'ausbildung' },
+  { depth: 2, slug: 'karriere-karte', text: 'karriere-karte' },
+  { depth: 2, slug: 'zertifizierungen', text: 'zertifizierungen' },
+  { depth: 2, slug: 'sprachen', text: 'sprachen' },
+  { depth: 2, slug: 'technische-kompetenzen', text: 'technische kompetenzen' },
+  { depth: 2, slug: 'soft-skills', text: 'soft skills' },
+];
+---
+
+<PageLayout
+  title="Lebenslauf"
+  heading="📃 Lebenslauf"
+  eyebrow="// erfahrung · ausbildung · kompetenzen"
+  lead="Ein detaillierter Überblick über meine Berufserfahrung, Ausbildung, Zertifizierungen, Sprachen und technischen Kompetenzen."
+  description="Ein detaillierter Überblick über meine Berufserfahrung, Ausbildung, Zertifizierungen, Sprachen und technischen Kompetenzen."
+  headings={headings}
+  brandRail
+>
+  <UpdatedBadge slot="hero" date={cvUpdated} />
+
+  <h2 class="section-heading" id="berufserfahrung">💼 berufserfahrung</h2>
+  <LogoDisclaimer />
+  {experienceDe.map((e) => <TimelineCard {...e} variant="work" />)}
+
+  <h2 class="section-heading" id="ausbildung">🎓 ausbildung</h2>
+  {educationDe.map((e) => <TimelineCard {...e} variant="edu" />)}
+
+  <h2 class="section-heading" id="karriere-karte">🗺️ Karriere-Karte</h2>
+  <CareerMap experience={experienceDe} education={educationDe} />
+
+  <h2 class="section-heading" id="zertifizierungen">🏅 zertifizierungen</h2>
+  <LogoDisclaimer
+    note="Die Zertifizierungen sind nach Anbieter und Kompetenzbereich gruppiert. Die Links führen zu den offiziellen Verifizierungsseiten."
+  />
+  <Panel icon="🏆" title="Abzeichen" titleAs="h3" count={`${certBadges.length} Abzeichen`}>
+    <CertBadges flush />
+  </Panel>
+  {
+    certificationsDe.map((g) => (
+      <Panel icon={g.icon} title={g.title} titleAs="h3" count={`${g.items.length} Zert.`}>
+        <ul class="cert-list">
+          {g.items.map((item) => (
+            <li>
+              {item.logo ? (
+                <img
+                  class="cert-list__logo"
+                  src={item.logo}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                />
+              ) : g.brand ? (
+                <BrandIcon brand={g.brand} size={15} />
+              ) : (
+                <span class="cert-list__bullet" aria-hidden="true">
+                  🏅
+                </span>
+              )}
+              {item.url ? (
+                <a href={item.url} rel="noopener" target="_blank">
+                  {item.name}
+                </a>
+              ) : (
+                item.name
+              )}
+            </li>
+          ))}
+        </ul>
+      </Panel>
+    ))
+  }
+
+  <h2 class="section-heading" id="sprachen">🌍 sprachen</h2>
+  <p class="notice notice--info">
+    <strong>ℹ️ Hinweis:</strong> Die Niveaus orientieren sich an den Deskriptoren des
+    <a
+      href="https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions"
+      rel="noopener"
+      target="_blank">GER</a
+    >.
+  </p>
+  <Panel icon="💬" title="Sprachen" titleAs="h3" count={`${languagesDe.length} Sprachen`}>
+    {languagesDe.map((l) => <SkillBar label={l.name} level={l.level} />)}
+  </Panel>
+
+  <h2 class="section-heading" id="technische-kompetenzen">🔧 technische kompetenzen</h2>
+  <p class="notice notice--info">
+    <strong>ℹ️ Hinweis:</strong> Die Niveaus sind selbst eingeschätzt und können sich im Lauf der Zeit
+    ändern.
+  </p>
+  {
+    technicalSkillsDe.map((g) => (
+      <Panel icon={g.icon} title={g.title} titleAs="h3" count={`${g.skills.length} Kompetenzen`}>
+        {g.skills.map((s) => (
+          <SkillBar label={s.name} level={s.level} />
+        ))}
+      </Panel>
+    ))
+  }
+
+  <h2 class="section-heading" id="soft-skills">💡 soft skills</h2>
+  <SkillMarquee items={softSkillsDe} />
+
+  <hr class="see-also-rule" />
+  <CollabNote />
+</PageLayout>
+
+<style>
+  .cert-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cert-list li {
+    font-size: var(--fs-sm);
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-2);
+    padding: var(--sp-2) var(--sp-1);
+  }
+
+  .cert-list li:nth-child(even) {
+    background: var(--surface-2);
+  }
+
+  .cert-list li > svg,
+  .cert-list__bullet {
+    flex-shrink: 0;
+    margin-top: 0.1em;
+  }
+
+  .cert-list__logo {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 1.05em;
+    margin-top: 0.15em;
+    object-fit: contain;
+    object-position: left center;
+  }
+</style>

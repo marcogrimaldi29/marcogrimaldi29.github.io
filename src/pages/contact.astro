@@ -1,0 +1,62 @@
+---
+/** /contact/ — channels as a card grid. */
+import PageLayout from '@layouts/PageLayout.astro';
+import QuickLink from '@components/QuickLink.astro';
+import LogoDisclaimer from '@components/LogoDisclaimer.astro';
+
+const channels = [
+  {
+    brand: 'Duolingo',
+    title: 'Duolingo',
+    subtitle: 'Language streak',
+    href: 'https://www.duolingo.com/profile/MarcoGrimm',
+  },
+  {
+    brand: 'GitHub',
+    title: 'GitHub',
+    subtitle: 'Code & projects',
+    href: 'https://github.com/marcogrimaldi29',
+  },
+  {
+    brand: 'LinkedIn',
+    title: 'LinkedIn',
+    subtitle: 'Professional network',
+    href: 'https://www.linkedin.com/in/marco-grimaldi29/',
+  },
+  {
+    brand: 'Microsoft',
+    title: 'Microsoft Learn',
+    subtitle: 'Certifications & profile',
+    href: 'https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/',
+  },
+];
+---
+
+<PageLayout
+  title="Contact"
+  heading="💬 Contact"
+  eyebrow="// let’s connect"
+  lead="The best ways to reach me — for collaboration, questions, or just to say hi."
+  description="The best ways to reach me — for collaboration, questions, or just to say hi."
+  brandRail
+>
+  <LogoDisclaimer variant="plain" />
+  <div class="card-grid channels">
+    {channels.map((c) => <QuickLink {...c} />)}
+  </div>
+</PageLayout>
+
+<style>
+  /* Four channels read best as a balanced 2×2 — cap the columns at 2 (the
+     global .card-grid's auto-fill would otherwise fit 3 at full width, leaving
+     a lonely 3+1). Collapse to a single column only on phones. */
+  .channels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (width <= 30rem) {
+    .channels {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

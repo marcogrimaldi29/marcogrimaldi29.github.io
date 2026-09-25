@@ -1,0 +1,211 @@
+---
+/**
+ * ThemeToggle — floating bottom-LEFT control (mirror of PageActions on the
+ * right) that fades in once the user scrolls. It flips between the dark and
+ * light themes by toggling `data-theme` on <html>, persisting the choice to
+ * localStorage, and updating the address-bar `theme-color`.
+ *
+ * The icon IS the brand mark and stays on-palette in both themes: the green→
+ * azure "sunset" logo while dark, morphing (cross-fade + scale/rotate) into a
+ * full sun while light. The morph is gated off under prefers-reduced-motion via
+ * the global --transition reset.
+ *
+ * Initial theme is applied before paint by the inline script in BaseLayout, so
+ * the right icon shows with no flash. The label describes the action (the theme
+ * it switches TO) and is kept in sync by the script.
+ */
+import { getLocaleFromUrl, useTranslations } from '@i18n/utils';
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<button
+  class="theme-toggle"
+  type="button"
+  data-theme-toggle
+  data-label-light={t('action.lightMode')}
+  data-label-dark={t('action.darkMode')}
+  aria-label={t('action.lightMode')}
+  title={t('action.lightMode')}
+>
+  <svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true">
+    <defs>
+      <linearGradient id="tt-grad" x1="3" y1="12" x2="21" y2="12" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#3fb950"></stop>
+        <stop offset="0.5" stop-color="#2ec5c5"></stop>
+        <stop offset="1" stop-color="#4493f8"></stop>
+      </linearGradient>
+    </defs>
+
+    {/* Full sun — shown in light mode */}
+    <g class="tt-sun">
+      <circle cx="12" cy="12" r="4.1" fill="url(#tt-grad)"></circle>
+      <g stroke="url(#tt-grad)" stroke-width="2" stroke-linecap="round">
+        <line x1="12" y1="1.6" x2="12" y2="3.8"></line>
+        <line x1="12" y1="20.2" x2="12" y2="22.4"></line>
+        <line x1="1.6" y1="12" x2="3.8" y2="12"></line>
+        <line x1="20.2" y1="12" x2="22.4" y2="12"></line>
+        <line x1="4.6" y1="4.6" x2="6.1" y2="6.1"></line>
+        <line x1="17.9" y1="17.9" x2="19.4" y2="19.4"></line>
+        <line x1="4.6" y1="19.4" x2="6.1" y2="17.9"></line>
+        <line x1="17.9" y1="6.1" x2="19.4" y2="4.6"></line>
+      </g>
+    </g>
+
+    {/* Sunset mark (rays + half-dome + horizon) — shown in dark mode */}
+    <g class="tt-sunset">
+      <g stroke="url(#tt-grad)" stroke-width="2" stroke-linecap="round">
+        <line x1="12" y1="5" x2="12" y2="2.6"></line>
+        <line x1="6.4" y1="7" x2="4.8" y2="5.4"></line>
+        <line x1="17.6" y1="7" x2="19.2" y2="5.4"></line>
+      </g>
+      <path d="M6 15.5 a6 6 0 0 1 12 0 z" fill="url(#tt-grad)"></path>
+      <line
+        x1="3"
+        y1="15.5"
+        x2="21"
+        y2="15.5"
+        stroke="url(#tt-grad)"
+        stroke-width="2"
+        stroke-linecap="round"></line>
+    </g>
+  </svg>
+</button>
+
+<script>
+  const btn = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+  if (btn) {
+    const meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+    const COLORS = { dark: '#0d1117', light: '#f6f8fa' } as const;
+
+    // The label always names the action (the theme we'd switch TO).
+    const syncLabel = () => {
+      const isLight = document.documentElement.dataset.theme === 'light';
+      const label = (isLight ? btn.dataset.labelDark : btn.dataset.labelLight) ?? '';
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+      btn.setAttribute('aria-pressed', String(isLight));
+    };
+    syncLabel();
+
+    btn.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+      document.documentElement.dataset.theme = next;
+      try {
+        localStorage.setItem('theme', next);
+      } catch {
+        /* private mode / storage disabled — the choice just won't persist */
+      }
+      meta?.setAttribute('content', COLORS[next]);
+      syncLabel();
+    });
+
+    // Reveal on scroll, mirroring PageActions.
+    const SHOW_AT = 400;
+    let ticking = false;
+    const update = () => {
+      btn.classList.toggle('is-visible', window.scrollY > SHOW_AT);
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+</script>
+
+<style>
+  .theme-toggle {
+    position: fixed;
+    left: var(--sp-4);
+    bottom: var(--sp-4);
+    z-index: 40;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    box-shadow: var(--shadow-hover);
+    cursor: pointer;
+    /* Hidden until scrolled — fade + slight rise (matches PageActions). */
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition:
+      opacity var(--transition),
+      transform var(--transition),
+      border-color var(--transition),
+      background var(--transition);
+  }
+
+  .theme-toggle.is-visible {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .theme-toggle:hover {
+    border-color: var(--brand);
+    background: var(--surface-2);
+    transform: translateY(-2px);
+  }
+
+  .theme-toggle:active {
+    transform: none;
+  }
+
+  .theme-toggle__icon {
+    width: 22px;
+    height: 22px;
+    overflow: visible;
+  }
+
+  /* ---- sunset ⇄ sun morph (cross-fade + scale/rotate around each centre) ---- */
+  .tt-sun,
+  .tt-sunset {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition:
+      opacity 0.45s ease,
+      transform 0.45s ease;
+  }
+
+  /* Default = dark: the sunset mark is shown, the sun is tucked away. */
+  .tt-sun {
+    opacity: 0;
+    transform: scale(0.4) rotate(-60deg);
+  }
+
+  .tt-sunset {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Light: the sun rises in, the sunset mark sets out. */
+  :root[data-theme='light'] .tt-sun {
+    opacity: 1;
+    transform: none;
+  }
+
+  :root[data-theme='light'] .tt-sunset {
+    opacity: 0;
+    transform: scale(0.4) rotate(60deg);
+  }
+
+  @media (width <= 480px) {
+    .theme-toggle {
+      left: var(--sp-3);
+      bottom: var(--sp-3);
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+</style>

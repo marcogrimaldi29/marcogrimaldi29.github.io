@@ -1,0 +1,23 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox", "--disable-dev-shm-usage"]
+    }
+  },
+  "urls": [
+    "http://127.0.0.1:4321/",
+    "http://127.0.0.1:4321/about/",
+    "http://127.0.0.1:4321/cv/",
+    "http://127.0.0.1:4321/contact/",
+    "http://127.0.0.1:4321/study-notes/",
+    "http://127.0.0.1:4321/cert-reviews/",
+    "http://127.0.0.1:4321/resources/",
+    "http://127.0.0.1:4321/search/",
+    "http://127.0.0.1:4321/cert-reviews/microsoft-az-900/",
+    "http://127.0.0.1:4321/it/",
+    "http://127.0.0.1:4321/es/",
+    "http://127.0.0.1:4321/de/"
+  ]
+}

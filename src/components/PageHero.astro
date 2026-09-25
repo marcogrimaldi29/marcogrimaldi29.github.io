@@ -1,0 +1,37 @@
+---
+/** PageHero — consistent page header: mono eyebrow + title + lead + slot. */
+interface Props {
+  title: string;
+  eyebrow?: string;
+  lead?: string;
+}
+const { title, eyebrow, lead } = Astro.props;
+---
+
+<header class="page-hero">
+  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+  <h1 class="page-hero__title">{title}</h1>
+  {lead && <p class="page-hero__lead">{lead}</p>}
+  <slot />
+</header>
+
+<style>
+  .page-hero {
+    padding: var(--sp-5) 0 var(--sp-4);
+    margin-bottom: var(--sp-5);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .page-hero__title {
+    font-size: var(--fs-2xl);
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  .page-hero__lead {
+    font-size: var(--fs-lg);
+    color: var(--text-muted);
+    max-width: 48rem;
+    margin: var(--sp-3) 0 0;
+  }
+</style>

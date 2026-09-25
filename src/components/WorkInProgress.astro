@@ -1,0 +1,115 @@
+---
+/**
+ * WorkInProgress — a call-out (mirroring CollabNote's layout) signalling that
+ * the site is actively growing: new content is continuously being deployed.
+ * Sits below the home "featured" section, after a divider. An amber
+ * "work in progress" accent replaces CollabNote's blue, the emoji stays
+ * unboxed, and a slim animated bar conveys the ongoing "deploying" state.
+ *
+ * Copy is passed in (English defaults) so each locale's home can localize it —
+ * same convention as SiteGraph. The bar animation is gated behind
+ * prefers-reduced-motion.
+ */
+interface Props {
+  /** Heading line. */
+  title?: string;
+  /** Body paragraph. */
+  body?: string;
+  /** Unboxed lead emoji. */
+  icon?: string;
+}
+const {
+  title = 'Work in progress',
+  body = 'New content is continuously being written and deployed to the site — fresh certification reviews, study notes, and curated resources are on the way. Check back regularly.',
+  icon = '🚧',
+} = Astro.props;
+---
+
+<aside class="wip">
+  <span class="wip__icon" aria-hidden="true">{icon}</span>
+  <div class="wip__body">
+    <p class="wip__heading">{title}</p>
+    <p class="wip__text">{body}</p>
+    <div class="wip__bar" aria-hidden="true"><span></span></div>
+  </div>
+</aside>
+
+<style>
+  /* Same shape as CollabNote, with an amber "work in progress" accent. */
+  .wip {
+    display: flex;
+    gap: var(--sp-4);
+    align-items: flex-start;
+    margin: var(--sp-5) 0;
+    padding: var(--sp-4) var(--sp-5);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--tag-tool-fg);
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, rgb(210 153 34 / 14%), rgb(227 179 65 / 9%));
+  }
+
+  .wip__icon {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    flex-shrink: 0;
+  }
+
+  .wip__body {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .wip__heading {
+    margin: 0 0 var(--sp-1);
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .wip__text {
+    margin: 0 0 var(--sp-3);
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    max-width: 46rem;
+  }
+
+  /* Indeterminate amber "deploying" bar — a sliver sweeping across a track. */
+  .wip__bar {
+    position: relative;
+    height: 4px;
+    max-width: 46rem;
+    border-radius: var(--radius-pill);
+    background: var(--surface-3);
+    overflow: hidden;
+  }
+
+  .wip__bar span {
+    position: absolute;
+    inset: 0;
+    width: 38%;
+    border-radius: inherit;
+    background: linear-gradient(
+      90deg,
+      rgb(227 179 65 / 0),
+      var(--tag-tool-fg),
+      rgb(227 179 65 / 0)
+    );
+    animation: wip-sweep 1.9s ease-in-out infinite;
+  }
+
+  @keyframes wip-sweep {
+    0% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(320%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wip__bar span {
+      animation: none;
+      width: 100%;
+      opacity: 0.6;
+    }
+  }
+</style>

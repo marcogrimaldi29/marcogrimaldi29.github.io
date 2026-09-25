@@ -1,0 +1,147 @@
+---
+/**
+ * Single SEO component — replaces jekyll-seo-tag + the hardcoded canonical in
+ * head/custom.html (fixes audit SEO-1 double-canonical, SEO-2 no structured data,
+ * SEO-3 hreflang). Emits canonical, OG/Twitter, hreflang alternates and JSON-LD.
+ */
+import { profile } from '@data/profile';
+import { locales, defaultLocale, type Locale } from '@i18n/ui';
+import { localizePath, unlocalizePath } from '@i18n/utils';
+
+interface Props {
+  title: string;
+  description?: string;
+  locale?: Locale;
+  image?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+  /** Article metadata — emitted into JSON-LD for posts. */
+  publishedDate?: Date;
+  modifiedDate?: Date;
+  authorName?: string;
+}
+
+const {
+  title,
+  description = profile.description,
+  locale = defaultLocale,
+  image = profile.logo,
+  type = 'website',
+  noindex = false,
+  publishedDate,
+  modifiedDate,
+  authorName = profile.name,
+} = Astro.props;
+
+const site = Astro.site ?? new URL('https://marcogrimaldi29.com');
+const canonicalPath = Astro.url.pathname;
+const canonical = new URL(canonicalPath, site).href;
+const imageUrl = new URL(image, site).href;
+const basePath = unlocalizePath(canonicalPath);
+const homeUrl = new URL('/', site).href;
+
+// The English home page is the one that speaks for the whole site: it carries
+// the WebSite entity (Google reads its `name` as the site name shown in search
+// results). Every other page is a WebPage that points back at it.
+const isRootHome = canonicalPath === '/';
+
+// hreflang alternates for every locale + x-default.
+const alternates = locales.map((l) => ({
+  lang: l,
+  href: new URL(localizePath(basePath, l), site).href,
+}));
+
+const author = {
+  '@type': 'Person',
+  name: authorName,
+  url: site.origin,
+  sameAs: [
+    `https://www.linkedin.com/in/${profile.social.linkedin}/`,
+    `https://github.com/${profile.social.github}`,
+  ],
+};
+
+/** The site itself — `name` is what Google may show as the site name. */
+const webSite = {
+  '@type': 'WebSite',
+  name: profile.title,
+  alternateName: profile.subtitle,
+  url: homeUrl,
+};
+
+const jsonLd =
+  type === 'article'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: title,
+        description,
+        url: canonical,
+        inLanguage: locale,
+        image: imageUrl,
+        author,
+        isPartOf: webSite,
+        ...(publishedDate && { datePublished: publishedDate.toISOString() }),
+        ...(modifiedDate && { dateModified: modifiedDate.toISOString() }),
+      }
+    : isRootHome
+      ? {
+          '@context': 'https://schema.org',
+          ...webSite,
+          description,
+          inLanguage: locale,
+          author,
+        }
+      : {
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: title,
+          description,
+          url: canonical,
+          inLanguage: locale,
+          isPartOf: webSite,
+          author,
+        };
+---
+
+<title>{title} - {profile.title}</title>
+<meta name="description" content={description} />
+
+{
+  /* A noindex page states no canonical and no hreflang: both are indexing
+     signals for a page that is asking not to be indexed, and on the 404 page
+     they would point at URLs that do not exist (/404/, /it/404/, …). */
+}
+{
+  noindex ? (
+    <meta name="robots" content="noindex,nofollow" />
+  ) : (
+    <Fragment>
+      <link rel="canonical" href={canonical} />
+      {alternates.map((a) => (
+        <link rel="alternate" hreflang={a.lang} href={a.href} />
+      ))}
+      <link rel="alternate" hreflang="x-default" href={new URL(basePath, site).href} />
+    </Fragment>
+  )
+}
+
+{/* RSS — the feed the Jekyll site published at this same URL. */}
+<link rel="alternate" type="application/rss+xml" title={profile.title} href="/feed.xml" />
+
+{/* Open Graph */}
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={profile.title} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:locale" content={locale} />
+
+{/* Twitter */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
