@@ -25,16 +25,14 @@ const logos = resolveLogos(org, [org, ...meta, ...points].join(' '));
 
 <article class:list={['cvcard', variant === 'edu' && 'cvcard--edu']}>
   <div class="cvcard__head">
-    <div class="cvcard__headtext">
-      <h3 class="cvcard__role">{role}</h3>
-      <div class="cvcard__meta">
-        <span class="cvcard__org">{org}</span>
-        {
-          /* meta is [location, time-period]; the location pill is greened to
-            set it apart from the gray time pill. */
-        }
-        {meta.map((m, i) => <span class:list={['badge', i === 0 && 'cvcard__loc']}>{m}</span>)}
-      </div>
+    <h3 class="cvcard__role">{role}</h3>
+    <div class="cvcard__meta">
+      <span class="cvcard__org">{org}</span>
+      {
+        /* meta is [location, time-period]; the location pill is greened to
+          set it apart from the gray time pill. */
+      }
+      {meta.map((m, i) => <span class:list={['badge', i === 0 && 'cvcard__loc']}>{m}</span>)}
     </div>
     <div class="cvcard__logos">
       {
@@ -87,20 +85,25 @@ const logos = resolveLogos(org, [org, ...meta, ...points].join(' '));
     border-left-color: color-mix(in srgb, var(--success) 65%, #fff);
   }
 
+  /* Grid head: title + pills on the left, logo tiles on the right. On phones
+     the pills drop below the logos and take the full card width, so long
+     institution names stay on one line instead of squeezing beside the tiles. */
   .cvcard__head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: var(--sp-4);
-  }
-
-  .cvcard__headtext {
-    min-width: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      'role logos'
+      'meta logos';
+    align-items: start;
+    column-gap: var(--sp-4);
+    row-gap: var(--sp-2);
+    margin-bottom: var(--sp-3);
   }
 
   /* Logo tile chips — light background keeps every logo readable; slightly
      dimmed at rest, brightening on hover for a dynamic touch. */
   .cvcard__logos {
+    grid-area: logos;
     display: flex;
     flex-shrink: 0;
     gap: var(--sp-2);
@@ -133,28 +136,42 @@ const logos = resolveLogos(org, [org, ...meta, ...points].join(' '));
   }
 
   .cvcard__role {
+    grid-area: role;
     font-size: 1rem;
     font-weight: 600;
-    margin: 0 0 var(--sp-2);
+    margin: 0;
   }
 
   .cvcard__meta {
+    grid-area: meta;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: var(--sp-2);
-    margin-bottom: var(--sp-3);
+    gap: 0.375rem;
+    min-width: 0;
   }
 
+  /* Institution pill — sized like the sibling .badge pills (same font size,
+     padding and line box) so the row reads as one set. Very long names may
+     still wrap on the narrowest phones; balance keeps the two lines even. */
   .cvcard__org {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
     font-family: var(--font-mono);
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 500;
+    line-height: 1.4;
+    text-wrap: balance;
     background: var(--tag-cert-bg);
     color: var(--tag-cert-fg);
     border: 1px solid var(--tag-cert-ring);
     padding: 2px 8px;
     border-radius: var(--radius-pill);
+  }
+
+  .cvcard__meta .badge {
+    line-height: 1.4;
   }
 
   /* Location pill — green (guide ramp) to read apart from the gray time pill. */
@@ -174,6 +191,30 @@ const logos = resolveLogos(org, [org, ...meta, ...points].join(' '));
     margin-bottom: var(--sp-1);
     line-height: 1.6;
     color: var(--text-muted);
+  }
+
+  @media (width <= 34rem) {
+    .cvcard {
+      padding: var(--sp-4);
+    }
+
+    .cvcard__head {
+      grid-template-areas:
+        'role logos'
+        'meta meta';
+      align-items: center;
+      column-gap: var(--sp-3);
+    }
+
+    .cvcard__logo {
+      width: 38px;
+      height: 38px;
+      padding: 5px;
+    }
+
+    .cvcard__logo--mark {
+      padding: 11px;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
