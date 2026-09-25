@@ -5,8 +5,7 @@ export const profile = {
   domain: 'marcogrimaldi29.com',
   title: 'marcogrimaldi29.com',
   subtitle: 'Personal Hub of Marco Grimaldi',
-  bio: 'Cloud Solution Architect @ Concentrix',
-  // Job title alone — the home hero status line (the sidebar card keeps `bio`).
+  // Job title alone — shown on the home hero status line and the sidebar card.
   role: 'Cloud Solution Architect',
   // Default og:image / twitter:image. Generated from public/site-mark.svg by
   // `npm run favicons`, at the 1200x630 Open Graph aspect ratio.
