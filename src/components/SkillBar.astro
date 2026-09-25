@@ -1,0 +1,85 @@
+---
+/**
+ * SkillBar — accessible proficiency bar with a gradient fill and a monospace
+ * level chip. Level is shown as text (not color-only). Replaces the inline-
+ * styled bars in cv.md (audit CQ-2).
+ */
+interface Props {
+  label: string;
+  level: string;
+}
+const { label, level } = Astro.props;
+
+const LEVEL_VALUE: Record<string, number> = {
+  Native: 100,
+  Nativo: 100,
+  Muttersprachlich: 100,
+  C2: 95,
+  C1: 85,
+  Fluent: 90,
+  Fluente: 90,
+  Fluido: 90,
+  Fließend: 90,
+  Advanced: 85,
+  Avanzato: 85,
+  Avanzado: 85,
+  Fortgeschritten: 85,
+  Intermediate: 65,
+  Intermedio: 65,
+  Mittelstufe: 65,
+};
+const value = LEVEL_VALUE[level] ?? 50;
+---
+
+<div class="skillbar">
+  <div class="skillbar__top">
+    <strong>{label}</strong>
+    <span class="skillbar__level">{level}</span>
+  </div>
+  <div class="skillbar__track" aria-hidden="true">
+    <div class="skillbar__fill" style={`width:${value}%`}></div>
+  </div>
+</div>
+
+<style>
+  .skillbar {
+    margin-bottom: var(--sp-3);
+  }
+
+  .skillbar:last-child {
+    margin-bottom: 0;
+  }
+
+  .skillbar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--sp-2);
+    margin-bottom: 5px;
+  }
+
+  .skillbar__top strong {
+    font-size: var(--fs-sm);
+    font-weight: 500;
+  }
+
+  .skillbar__level {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--accent-strong);
+  }
+
+  .skillbar__track {
+    background: var(--surface-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    height: 8px;
+  }
+
+  .skillbar__fill {
+    height: 100%;
+    border-radius: var(--radius-pill);
+    background: var(--gradient);
+  }
+</style>

@@ -1,0 +1,126 @@
+---
+/** /it/about/ — chi sono. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LocationMap from '@components/LocationMap.astro';
+
+const headings = [
+  { depth: 2, slug: 'su-di-me', text: 'su di me' },
+  { depth: 2, slug: 'identita-professionale', text: 'identità professionale' },
+  { depth: 2, slug: 'valori', text: 'valori' },
+  { depth: 2, slug: 'oltre-il-lavoro', text: 'oltre il lavoro' },
+  { depth: 2, slug: 'su-questo-sito', text: 'su questo sito' },
+];
+---
+
+<PageLayout
+  title="Chi sono"
+  heading="🏗️ Chi sono"
+  eyebrow="// background & sito"
+  lead="Sono Marco Grimaldi — Cloud Solution Architect e Consulente IT, con una vita parallela tra lingue e insegnamento. Mi appassionano le nuove sfide, i contesti diversi e l’apprendimento continuo."
+  description="Sono Marco Grimaldi — Cloud Solution Architect e Consulente IT, con una vita parallela tra lingue e insegnamento. Mi appassionano le nuove sfide, i contesti diversi e l’apprendimento continuo."
+  headings={headings}
+  brandRail
+>
+  <div class="about">
+    <h2 class="section-heading" id="su-di-me">su di me</h2>
+    <p>
+      Il mio percorso unisce l’ambito IT e quello linguistico. Se vuoi collaborare, condividere idee
+      o esplorare progetti comuni, non esitare a <a href="/it/contact/">contattarmi</a>.
+    </p>
+    <p>
+      📍 Con base a <strong>Gran Canaria, Spagna</strong> — in contatto con comunità locali e internazionali.
+    </p>
+
+    <LocationMap
+      region="Isole Canarie"
+      country="Spagna"
+      caption="Geo-localizzatore che evidenzia Gran Canaria nelle Isole Canarie, Spagna."
+    />
+
+    <h2 class="section-heading" id="identita-professionale">identità professionale</h2>
+    <ul>
+      <li>
+        <strong>IT & Cloud</strong> — Microsoft 365, Teams, amministrazione Azure e infrastrutture cloud
+        (voice). Mi occupo di supporto tecnico, troubleshooting e knowledge management.
+      </li>
+      <li>
+        <strong>Lingue & Formazione</strong> — insegnante e formatore di lingue straniere in contesti
+        multilingue e multiculturali, inclusa la preparazione agli esami e il supporto accademico.
+      </li>
+      <li>
+        <strong>Educazione inclusiva</strong> — esperienza con studenti con diversità funzionale, adattando
+        metodi e strumenti perché tutti possano avere successo.
+      </li>
+    </ul>
+    <p>
+      Questo mix di competenze tecniche e linguistiche mi permette di operare efficacemente in
+      contesti internazionali e interfunzionali.
+    </p>
+
+    <h2 class="section-heading" id="valori">valori</h2>
+    <ul>
+      <li>
+        <strong>Problem solving</strong> — soluzioni chiare e strutturate a sfide tecniche e organizzative.
+      </li>
+      <li>
+        <strong>Collaborazione</strong> — imparare dagli altri e contribuire a obiettivi comuni.
+      </li>
+      <li>
+        <strong>Apprendimento continuo</strong> — spinto dalla curiosità nella tecnologia e nelle lingue.
+      </li>
+      <li>
+        <strong>Inclusione & empatia</strong> — tecnologia ed educazione dovrebbero essere accessibili
+        a tutti.
+      </li>
+    </ul>
+
+    <h2 class="section-heading" id="oltre-il-lavoro">oltre il lavoro</h2>
+    <ul>
+      <li><strong>Escursionismo</strong> — esplorare sentieri e connettersi con la natura.</li>
+      <li><strong>Lettura</strong> — libri tecnici, saggistica, e letteratura.</li>
+      <li><strong>Musica</strong> — polistrumentista e tecnico del suono.</li>
+    </ul>
+
+    <h2 class="section-heading" id="su-questo-sito">su questo sito</h2>
+    <p>
+      Realizzato con <a href="https://www.astro.build/" rel="noopener" target="_blank">Astro</a> e una
+      libreria di componenti personalizzata, distribuito su <a
+        href="https://docs.github.com/en/pages"
+        rel="noopener"
+        target="_blank">GitHub Pages</a
+      >. Le analitiche sono rispettose della privacy e senza cookie tramite <a
+        href="https://umami.is/"
+        rel="noopener"
+        target="_blank">Umami</a
+      >. I contenuti sono stati editati con l’ausilio di modelli di IA come <a
+        href="https://chatgpt.com/"
+        rel="noopener"
+        target="_blank">ChatGPT 5.x</a
+      >, <a href="https://www.claude.com/" rel="noopener" target="_blank">Claude Opus 4.x</a> e <a
+        href="https://www.claude.com/"
+        rel="noopener"
+        target="_blank">Claude Sonnet 4.x</a
+      >.
+    </p>
+  </div>
+</PageLayout>
+
+<style>
+  .about p {
+    max-width: 48rem;
+  }
+
+  .about ul {
+    max-width: 48rem;
+    padding-left: 1.4rem;
+  }
+
+  .about li {
+    margin-bottom: var(--sp-2);
+    line-height: 1.6;
+  }
+
+  .about li::marker {
+    color: var(--brand);
+  }
+</style>

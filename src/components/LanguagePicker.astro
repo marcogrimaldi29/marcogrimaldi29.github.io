@@ -1,0 +1,342 @@
+---
+/**
+ * LanguagePicker — locale switcher. Links to the equivalent page in each
+ * locale (English unprefixed). Only offered for the hub; spoke deep-links
+ * stay English until a spoke is migrated (hub↔spoke contract).
+ *
+ * Two shapes:
+ * - `menu` (header): the plain inline row on wide screens; on small screens it
+ *   collapses behind a flag button that unfolds the list, mirroring the nav
+ *   hamburger. The disclosure is driven by the shared `[data-disclosure]`
+ *   script in BaseLayout.
+ * - `stack` (footer): a vertical column with each language spelled out.
+ */
+import { locales, localeNames, type Locale } from '@i18n/ui';
+import { localizePath, unlocalizePath, useTranslations } from '@i18n/utils';
+
+interface Props {
+  current: Locale;
+  variant?: 'menu' | 'stack';
+}
+const { current, variant = 'menu' } = Astro.props;
+const t = useTranslations(current);
+
+// The 404 page is served by GitHub Pages for ANY unknown path, so there is no
+// "equivalent page" to switch to — and /it/404/ etc. are not real URLs. Offer
+// the locale home pages instead of links that 404 again.
+const path = Astro.url.pathname;
+const isNotFound = path === '/404' || path === '/404/' || path === '/404.html';
+const basePath = isNotFound ? '/' : unlocalizePath(path);
+
+const items = locales.map((l) => ({
+  code: l,
+  name: localeNames[l],
+  href: localizePath(basePath, l),
+  isCurrent: l === current,
+}));
+
+const panelId = 'lang-menu-panel';
+---
+
+{
+  variant === 'menu' ? (
+    <div class="lang">
+      <button
+        type="button"
+        class="lang__toggle"
+        data-disclosure
+        aria-controls={panelId}
+        aria-expanded="false"
+        aria-label={`${t('lang.label')}: ${localeNames[current]}`}
+      >
+        <svg
+          class="lang__flag"
+          viewBox="0 0 24 24"
+          width="18"
+          height="18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M5 21V4" />
+          <path d="M5 4h12l-2.2 3.5L17 11H5z" />
+        </svg>
+        <span class="lang__code">{current.toUpperCase()}</span>
+        <svg
+          class="lang__chevron"
+          viewBox="0 0 24 24"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </button>
+
+      {/* Not a <nav>: the toggle button already carries the accessible name,
+          and the footer's "Language" column is the named landmark. */}
+      <div id={panelId} class="lang__panel">
+        <ul class="lang__list">
+          {items.map((i) => (
+            <li>
+              <a
+                href={i.href}
+                hreflang={i.code}
+                lang={i.code}
+                aria-current={i.isCurrent ? 'true' : undefined}
+                class:list={['lang__link', i.isCurrent && 'is-active']}
+              >
+                <span class="lang__link-code">{i.code.toUpperCase()}</span>
+                <span class="lang__link-name">{i.name}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  ) : (
+    /* No <nav> here: the footer column that wraps this is already the labelled
+       landmark, and a second one named "Language" would duplicate it. */
+    <div class="lang lang--stack">
+      <ul class="lang__list lang__list--stack">
+        {items.map((i) => (
+          <li>
+            <a
+              href={i.href}
+              hreflang={i.code}
+              lang={i.code}
+              aria-current={i.isCurrent ? 'true' : undefined}
+              class:list={['lang__link', 'lang__link--stack', i.isCurrent && 'is-active']}
+            >
+              <span class="lang__link-code">{i.code.toUpperCase()}</span>
+              <span class="lang__link-name">{i.name}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+<style>
+  .lang {
+    position: relative;
+  }
+
+  .lang__list {
+    display: flex;
+    gap: var(--sp-1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .lang__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: 2px 8px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    border: 1px solid transparent;
+  }
+
+  .lang__link:hover {
+    color: var(--text);
+    background: var(--surface-2);
+    text-decoration: none;
+  }
+
+  .lang__link.is-active {
+    color: var(--brand-strong);
+    border-color: var(--border-strong);
+    background: var(--surface-2);
+  }
+
+  /* The wide-screen row shows codes only; the spelled-out name stays in the
+     accessibility tree (and becomes visible in the menu/stack shapes). */
+  .lang__link-name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* ── Flag toggle (small screens only) ───────────────────── */
+  .lang__toggle {
+    display: none;
+    align-items: center;
+    gap: var(--sp-1);
+    min-height: 2.5rem;
+    padding-inline: var(--sp-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition:
+      color var(--transition),
+      border-color var(--transition),
+      background var(--transition);
+  }
+
+  .lang__toggle:hover {
+    color: var(--text);
+    border-color: var(--border-strong);
+    background: var(--surface-2);
+  }
+
+  .lang__toggle[aria-expanded='true'] {
+    color: var(--text);
+    border-color: var(--brand);
+    background: var(--surface-2);
+  }
+
+  .lang__chevron {
+    transition: transform var(--transition);
+  }
+
+  .lang__toggle[aria-expanded='true'] .lang__chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Phone: the header also carries the search button, so the chevron goes and
+     the padding tightens to keep the wordmark whole. The flag + code still
+     read as a language menu. */
+  @media (width <= 34rem) {
+    .lang__toggle {
+      padding-inline: 6px;
+    }
+
+    .lang__chevron {
+      display: none;
+    }
+  }
+
+  /* ── Footer stack ───────────────────────────────────────── */
+  .lang__list--stack {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sp-1);
+  }
+
+  .lang__link--stack {
+    padding: var(--sp-1) var(--sp-2);
+    margin-inline-start: calc(var(--sp-2) * -1);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    letter-spacing: normal;
+  }
+
+  .lang__link--stack .lang__link-code {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--text-subtle);
+  }
+
+  .lang__link--stack.is-active .lang__link-code {
+    color: var(--brand-strong);
+  }
+
+  /* Un-hide the spelled-out name. `overflow` must go back to visible too:
+     while it is hidden the span's automatic minimum size is 0, so as a flex
+     item it shrinks below its own text and the name gets clipped. */
+  .lang__link--stack .lang__link-name {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip-path: none;
+  }
+
+  /* ── Small screens: collapse the row into the flag menu ──
+     Only when JS can drive the disclosure; without it the plain row stays
+     visible and usable (progressive enhancement). */
+  @media (width <= 60rem) {
+    :root.js .lang .lang__toggle {
+      display: inline-flex;
+    }
+
+    :root.js .lang .lang__panel {
+      position: absolute;
+      top: calc(100% + var(--sp-2));
+      right: 0;
+      z-index: 60;
+      min-width: 11rem;
+      padding: var(--sp-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      box-shadow: var(--shadow-hover);
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-6px);
+      /* `visibility` is not transitioned — it gates focusability, so it flips
+         instantly (see the same note on the nav panel in BaseLayout). */
+      transition:
+        opacity var(--transition),
+        transform var(--transition);
+    }
+
+    :root.js .lang .lang__panel[data-open] {
+      visibility: visible;
+      opacity: 1;
+      transform: none;
+    }
+
+    :root.js .lang .lang__list {
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    /* Comfortable touch targets, and the language name spelled out. */
+    :root.js .lang .lang__link {
+      min-height: 2.5rem;
+      width: 100%;
+      padding-inline: var(--sp-3);
+      font-size: var(--fs-sm);
+      font-weight: 500;
+      letter-spacing: normal;
+    }
+
+    :root.js .lang .lang__link-code {
+      min-width: 1.75rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--text-subtle);
+    }
+
+    :root.js .lang .lang__link.is-active .lang__link-code {
+      color: var(--brand-strong);
+    }
+
+    :root.js .lang .lang__link-name {
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip-path: none;
+    }
+  }
+</style>

@@ -1,0 +1,44 @@
+---
+/** /de/resources/ — Landing DE (Ressourcen). */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import SupportNote from '@components/SupportNote.astro';
+import QuickLink from '@components/QuickLink.astro';
+import { resourceCollectionsDe } from '@data/landings-de';
+
+const navGroups = [
+  {
+    title: 'Sammlungen',
+    items: resourceCollectionsDe.map((c) => ({ label: c.title, href: c.href })),
+  },
+];
+---
+
+<PageLayout
+  title="Nützliche Ressourcen"
+  heading="🧰 Nützliche Ressourcen"
+  eyebrow="// kuratierte sammlungen"
+  lead="Kuratierte Sammlungen von Links und Referenzen, die ich auf meinem Lernweg zusammengetragen habe — Deutsch, Microsoft, KI und Dev-Workflows."
+  description="Kuratierte Sammlungen nützlicher Ressourcen zum Deutschlernen, zu Microsoft-Technologien, KI und Entwicklungswerkzeugen."
+  searchable
+  navGroups={navGroups}
+>
+  <SupportNote kind="resources" />
+
+  <h2 class="section-heading" id="sammlungen">sammlungen</h2>
+  <div class="card-grid">
+    {resourceCollectionsDe.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// siehe auch'}</p>
+  <div class="card-grid">
+    <QuickLink icon="📘" title="Notizen" subtitle="Vorbereitungsmaterial" href="/de/study-notes/" />
+    <QuickLink
+      icon="🏅"
+      title="Reviews"
+      subtitle="Prüfungserfahrungen & Tipps"
+      href="/de/cert-reviews/"
+    />
+  </div>
+</PageLayout>

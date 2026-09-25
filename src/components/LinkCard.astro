@@ -1,0 +1,272 @@
+---
+/**
+ * ResourceCard — GitHub repo-card style: icon chip, title, description,
+ * badge meta, and a footer action. Replaces the hand-copied resource-card
+ * HTML (audit CQ-1).
+ */
+interface Props {
+  title: string;
+  description: string;
+  icon?: string;
+  /** Optional logo path shown in the chip instead of the emoji (e.g. a project's own brand mark). */
+  iconSrc?: string;
+  tag?: string;
+  tagType?: 'certification' | 'guide' | 'tool';
+  meta?: string[];
+  href: string;
+  ctaLabel?: string;
+  /** Renders the footer CTA as a non-interactive label (no link) — for cards not yet published. */
+  comingSoon?: boolean;
+  /** Optional secondary link (e.g. a v2 edition) — rendered as an animated pill in the footer. */
+  altHref?: string;
+  altLabel?: string;
+}
+
+const {
+  title,
+  description,
+  icon = '📦',
+  iconSrc,
+  tag,
+  tagType = 'certification',
+  meta = [],
+  href,
+  ctaLabel = 'View →',
+  comingSoon = false,
+  altHref,
+  altLabel = 'v2',
+} = Astro.props;
+
+const badgeClass = { certification: 'badge--cert', guide: 'badge--guide', tool: 'badge--tool' }[
+  tagType
+];
+
+// Absolute (http/https) hrefs point off-site — e.g. the study-notes & deep-dive
+// "spoke" repos hosted in their own GitHub Pages sites. Open those in a new tab;
+// internal root-relative links navigate in place as usual.
+const isExternal = /^https?:\/\//i.test(href);
+const linkAttrs = isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+const altIsExternal = altHref ? /^https?:\/\//i.test(altHref) : false;
+const altLinkAttrs = altIsExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+---
+
+<article class:list={['rcard', comingSoon && 'rcard--soon']}>
+  <div class="rcard__top">
+    <span class:list={['rcard__chip', iconSrc && 'rcard__chip--img']} aria-hidden="true">
+      {
+        iconSrc ? (
+          <img class="rcard__logo" src={iconSrc} alt="" loading="lazy" decoding="async" />
+        ) : (
+          icon
+        )
+      }
+    </span>
+    {tag && <span class={`badge ${badgeClass}`}>{tag}</span>}
+  </div>
+  <h3 class="rcard__title">{title}</h3>
+  <p class="rcard__desc">{description}</p>
+  {
+    meta.length > 0 && (
+      <div class="rcard__meta">
+        {meta.map((m) => (
+          <span class="badge">{m}</span>
+        ))}
+      </div>
+    )
+  }
+  <div class="rcard__footer">
+    {
+      comingSoon ? (
+        <span class="rcard__cta rcard__cta--soon">{ctaLabel}</span>
+      ) : (
+        <a class="rcard__cta" href={href} {...linkAttrs}>
+          {ctaLabel}
+        </a>
+      )
+    }
+    {
+      altHref && (
+        <a class="rcard__alt" href={altHref} {...altLinkAttrs}>
+          <span class="rcard__alt-spark" aria-hidden="true">
+            🆕
+          </span>
+          {altLabel}
+          <span class="rcard__alt-arrow" aria-hidden="true">
+            {altIsExternal ? '↗' : '→'}
+          </span>
+        </a>
+      )
+    }
+  </div>
+</article>
+
+<style>
+  .rcard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+    padding: var(--sp-4) var(--sp-5);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    transition:
+      border-color var(--transition),
+      transform var(--transition),
+      box-shadow var(--transition);
+  }
+
+  .rcard:hover {
+    border-color: var(--brand);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  /* Coming-soon card: no live destination yet, so it stays static and the CTA
+     is a muted, non-interactive label (no stretched link covering the card). */
+  .rcard--soon:hover {
+    border-color: var(--border);
+    transform: none;
+    box-shadow: none;
+  }
+
+  .rcard__cta--soon {
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    color: var(--text-subtle);
+    cursor: default;
+  }
+
+  .rcard__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-2);
+  }
+
+  .rcard__chip {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius);
+    background: var(--gradient-soft);
+    border: 1px solid var(--tag-cert-ring);
+    font-size: 1.3rem;
+  }
+
+  /* Logo-mark chips (project brand marks) bring their own background + border,
+     so drop the default chip fill and let the SVG fill the square. */
+  .rcard__chip--img {
+    background: none;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .rcard__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .rcard__title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text);
+  }
+
+  .rcard__desc {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    line-height: 1.6;
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .rcard__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+
+  /* Footer row: primary CTA left, optional v2 pill right. Must stay unpositioned
+     so the CTA's stretched-link ::after keeps covering the whole card. */
+  .rcard__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-2);
+  }
+
+  .rcard__cta {
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    color: var(--brand-strong);
+  }
+
+  .rcard__cta::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  .rcard:hover .rcard__cta {
+    text-decoration: none;
+  }
+
+  /* Secondary "v2" pill — layered above the stretched link so it stays
+     clickable. Amber "tool" ramp: no other element on note cards uses it, so
+     the pill stands out at a glance. Animated lift + amber glow on hover,
+     press-down on click. */
+  .rcard__alt {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--tag-tool-fg);
+    padding: 0.2rem 0.65rem;
+    border: 1px solid var(--tag-tool-ring);
+    border-radius: 999px;
+    background: var(--tag-tool-bg);
+    transition:
+      border-color var(--transition),
+      background var(--transition),
+      box-shadow var(--transition),
+      transform var(--transition);
+  }
+
+  .rcard__alt:hover,
+  .rcard__alt:focus-visible {
+    border-color: var(--tag-tool-fg);
+    background: color-mix(in srgb, var(--tag-tool-fg) 24%, transparent);
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--tag-tool-fg) 25%, transparent);
+    text-decoration: none;
+  }
+
+  .rcard__alt:active {
+    transform: translateY(0) scale(0.95);
+  }
+
+  .rcard__alt-spark,
+  .rcard__alt-arrow {
+    transition: transform var(--transition);
+  }
+
+  .rcard__alt:hover .rcard__alt-spark {
+    transform: rotate(15deg) scale(1.15);
+  }
+
+  .rcard__alt:hover .rcard__alt-arrow {
+    transform: translate(2px, -1px);
+  }
+</style>

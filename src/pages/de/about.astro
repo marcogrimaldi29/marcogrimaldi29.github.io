@@ -1,0 +1,131 @@
+---
+/** /de/about/ — über mich. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LocationMap from '@components/LocationMap.astro';
+
+const headings = [
+  { depth: 2, slug: 'ueber-mich', text: 'über mich' },
+  { depth: 2, slug: 'berufliche-identitaet', text: 'berufliche identität' },
+  { depth: 2, slug: 'werte', text: 'werte' },
+  { depth: 2, slug: 'jenseits-der-arbeit', text: 'jenseits der arbeit' },
+  { depth: 2, slug: 'ueber-diese-website', text: 'über diese website' },
+];
+---
+
+<PageLayout
+  title="Über mich"
+  heading="🏗️ Über mich"
+  eyebrow="// werdegang & website"
+  lead="Ich bin Marco Grimaldi — Cloud Solution Architect und IT-Berater, mit einem zweiten Leben zwischen Sprachen und Lehre. Ich brenne für neue Herausforderungen, vielfältige Kontexte und kontinuierliches Lernen."
+  description="Ich bin Marco Grimaldi — Cloud Solution Architect und IT-Berater, mit einem zweiten Leben zwischen Sprachen und Lehre. Ich brenne für neue Herausforderungen, vielfältige Kontexte und kontinuierliches Lernen."
+  headings={headings}
+  brandRail
+>
+  <div class="about">
+    <h2 class="section-heading" id="ueber-mich">über mich</h2>
+    <p>
+      Mein Werdegang verbindet die IT- und die Sprachenwelt. Wenn du zusammenarbeiten, Ideen teilen
+      oder gemeinsame Projekte erkunden möchtest, zögere nicht, mich zu <a href="/de/contact/"
+        >kontaktieren</a
+      >.
+    </p>
+    <p>
+      📍 Mit Basis auf <strong>Gran Canaria, Spanien</strong> — in Kontakt mit lokalen und internationalen
+      Communities.
+    </p>
+
+    <LocationMap
+      region="Kanaren"
+      country="Spanien"
+      caption="Geo-Locator, der Gran Canaria auf den Kanarischen Inseln, Spanien, hervorhebt."
+    />
+
+    <h2 class="section-heading" id="berufliche-identitaet">berufliche identität</h2>
+    <ul>
+      <li>
+        <strong>IT & Cloud</strong> — Microsoft 365, Teams, Azure-Administration und Cloud-Infrastrukturen
+        (Voice). Ich kümmere mich um technischen Support, Troubleshooting und Wissensmanagement.
+      </li>
+      <li>
+        <strong>Sprachen & Bildung</strong> — Lehrer und Trainer für Fremdsprachen in mehrsprachigen und
+        multikulturellen Kontexten, einschließlich Prüfungsvorbereitung und akademischer Begleitung.
+      </li>
+      <li>
+        <strong>Inklusive Bildung</strong> — Erfahrung mit Lernenden mit funktionaler Diversität, wobei
+        Methoden und Werkzeuge so angepasst werden, dass alle erfolgreich sein können.
+      </li>
+    </ul>
+    <p>
+      Diese Kombination aus technischen und sprachlichen Kompetenzen ermöglicht es mir, in
+      internationalen und funktionsübergreifenden Kontexten effektiv zu arbeiten.
+    </p>
+
+    <h2 class="section-heading" id="werte">werte</h2>
+    <ul>
+      <li>
+        <strong>Problemlösung</strong> — klare, strukturierte Lösungen für technische und organisatorische
+        Herausforderungen.
+      </li>
+      <li>
+        <strong>Zusammenarbeit</strong> — von anderen lernen und zu gemeinsamen Zielen beitragen.
+      </li>
+      <li>
+        <strong>Kontinuierliches Lernen</strong> — angetrieben von Neugier auf Technologie und Sprachen.
+      </li>
+      <li>
+        <strong>Inklusion & Empathie</strong> — Technologie und Bildung sollten für alle zugänglich sein.
+      </li>
+    </ul>
+
+    <h2 class="section-heading" id="jenseits-der-arbeit">jenseits der arbeit</h2>
+    <ul>
+      <li><strong>Wandern</strong> — Wege erkunden und mich mit der Natur verbinden.</li>
+      <li><strong>Lesen</strong> — Fachbücher, Sachbücher und Literatur.</li>
+      <li>
+        <strong>Musik</strong> — Multiinstrumentalist und Tontechniker, verliebt in Weltmusik.
+      </li>
+    </ul>
+
+    <h2 class="section-heading" id="ueber-diese-website">über diese website</h2>
+    <p>
+      Erstellt mit <a href="https://www.astro.build/" rel="noopener" target="_blank">Astro</a> und einer
+      eigenen Komponentenbibliothek, bereitgestellt über <a
+        href="https://docs.github.com/en/pages"
+        rel="noopener"
+        target="_blank">GitHub Pages</a
+      >. Die Analytics sind datenschutzfreundlich und ohne Cookies über <a
+        href="https://umami.is/"
+        rel="noopener"
+        target="_blank">Umami</a
+      >. Die Inhalte wurden mit Unterstützung von KI-Modellen wie <a
+        href="https://chatgpt.com/"
+        rel="noopener"
+        target="_blank">ChatGPT 5.x</a
+      >, <a href="https://www.claude.com/" rel="noopener" target="_blank">Claude Opus 4.x</a> und <a
+        href="https://www.claude.com/"
+        rel="noopener"
+        target="_blank">Claude Sonnet 4.x</a
+      > bearbeitet.
+    </p>
+  </div>
+</PageLayout>
+
+<style>
+  .about p {
+    max-width: 48rem;
+  }
+
+  .about ul {
+    max-width: 48rem;
+    padding-left: 1.4rem;
+  }
+
+  .about li {
+    margin-bottom: var(--sp-2);
+    line-height: 1.6;
+  }
+
+  .about li::marker {
+    color: var(--brand);
+  }
+</style>

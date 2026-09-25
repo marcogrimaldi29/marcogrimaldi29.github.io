@@ -1,0 +1,100 @@
+---
+/**
+ * Certification badge row — shown on the home hero (under the work title) and
+ * in the CV Certifications panel. Data comes from the single `certBadges`
+ * source in `@data/cv`, so adding a cert there updates every badge row at once.
+ * Microsoft badges link to their verification page; ITIL has none. `flush` drops
+ * the default top margin when nested in a box (e.g. the CV panel).
+ */
+import { certBadges } from '@data/cv';
+
+interface Props {
+  flush?: boolean;
+}
+const { flush = false } = Astro.props;
+---
+
+<ul class:list={['cert-badges', { 'cert-badges--flush': flush }]} aria-label="Certifications">
+  {
+    certBadges.map(({ code, name, url }) => {
+      const img = (
+        <img
+          class="cert-badges__img"
+          src={`/badges/${code}-badge.png`}
+          alt={`${name} certification badge`}
+          width="60"
+          height="60"
+          loading="lazy"
+          decoding="async"
+        />
+      );
+      return (
+        <li class="cert-badges__item">
+          {url ? (
+            <a
+              class="cert-badges__link"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`Verify ${name}`}
+            >
+              {img}
+            </a>
+          ) : (
+            img
+          )}
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  .cert-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+    list-style: none;
+    margin: var(--sp-4) 0 0;
+    padding: 0;
+  }
+
+  .cert-badges--flush {
+    margin-top: 0;
+  }
+
+  .cert-badges__item {
+    display: flex;
+  }
+
+  .cert-badges__link {
+    display: inline-flex;
+    border-radius: 50%;
+    transition: transform 0.15s ease;
+  }
+
+  .cert-badges__link:hover,
+  .cert-badges__link:focus-visible {
+    transform: translateY(-2px) scale(1.05);
+  }
+
+  .cert-badges__link:focus-visible {
+    outline: 2px solid var(--accent, currentColor);
+    outline-offset: 2px;
+  }
+
+  .cert-badges__img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  @media (width <= 40rem) {
+    .cert-badges__img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+</style>

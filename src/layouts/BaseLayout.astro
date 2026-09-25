@@ -1,0 +1,675 @@
+---
+/**
+ * BaseLayout — document shell: head (SEO, favicons, Umami), skip link, header
+ * (nav + LanguagePicker) and footer. Analytics ID comes from a build-time env
+ * var (PUBLIC_UMAMI_WEBSITE_ID), replacing the broken sed step (audit OP-1).
+ */
+import '@styles/global.css';
+import SEO from '@components/SEO.astro';
+import LanguagePicker from '@components/LanguagePicker.astro';
+import PageActions from '@components/PageActions.astro';
+import ThemeToggle from '@components/ThemeToggle.astro';
+import SearchDialog from '@components/SearchDialog.astro';
+import BrandIcon from '@components/BrandIcon.astro';
+import Logo from '@components/Logo.astro';
+import { profile } from '@data/profile';
+import { mainNav } from '@data/navigation';
+import type { Locale } from '@i18n/ui';
+import { getLocaleFromUrl, useTranslations, localizePath, unlocalizePath } from '@i18n/utils';
+
+interface Props {
+  title: string;
+  description?: string;
+  type?: 'website' | 'article';
+  image?: string;
+  publishedDate?: Date;
+  modifiedDate?: Date;
+  authorName?: string;
+  /** Keep the page out of search results (site search, 404) — see SEO.astro. */
+  noindex?: boolean;
+  /** Widen the main column to fit docs-style rails (TOC / side-nav). */
+  wide?: boolean;
+}
+const {
+  title,
+  description,
+  type = 'website',
+  image,
+  publishedDate,
+  modifiedDate,
+  authorName,
+  noindex = false,
+  wide = false,
+} = Astro.props;
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+// Nav tabs are ordered alphabetically by their translated label, so each
+// language reads alphabetically (matching the home explore/featured + sitemap).
+const navItems = [...mainNav].sort((a, b) => t(a.labelKey).localeCompare(t(b.labelKey), locale));
+const activePath = unlocalizePath(Astro.url.pathname);
+const umamiId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    {
+      /* Apply the saved theme before paint so there's no flash of the wrong
+        theme. Dark is the default (the brand's dark-first identity); only an
+        explicit earlier choice in localStorage switches to light. */
+    }
+    <script is:inline>
+      (function () {
+        // Marks that scripting is available, before paint. The collapsed mobile
+        // menus are gated on `.js`, so without scripting the nav and language
+        // row stay visible instead of hiding behind a button nothing can open.
+        document.documentElement.classList.add('js');
+        try {
+          var stored = localStorage.getItem('theme');
+          var theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+          document.documentElement.dataset.theme = theme;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', theme === 'light' ? '#f6f8fa' : '#0d1117');
+        } catch (e) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0d1117" />
+
+    <SEO
+      title={title}
+      description={description}
+      locale={locale}
+      type={type}
+      image={image}
+      publishedDate={publishedDate}
+      modifiedDate={modifiedDate}
+      authorName={authorName}
+      noindex={noindex}
+    />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    {
+      umamiId && (
+        <script is:inline defer src="https://cloud.umami.is/script.js" data-website-id={umamiId} />
+      )
+    }
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t('skip.toContent')}</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href={localizePath('/', locale)} aria-label={`${profile.name} — home`}>
+          <Logo size={30} mark />
+          <span class="brand__text">marcogrimaldi29<span class="brand__dim">.com</span></span>
+        </a>
+        <div class="site-header__end">
+          <div class="nav-menu">
+            <button
+              type="button"
+              class="nav-menu__toggle"
+              data-disclosure
+              aria-controls="site-nav"
+              aria-expanded="false"
+              aria-label={t('nav.menu')}
+            >
+              <span class="nav-menu__bars" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+
+            <nav id="site-nav" class="site-header__nav" aria-label="Primary">
+              {
+                navItems.map((item) => (
+                  <a
+                    href={localizePath(item.path, locale)}
+                    aria-current={activePath === item.path ? 'page' : undefined}
+                  >
+                    {t(item.labelKey).toLowerCase().replace(/\s+/g, '-')}
+                  </a>
+                ))
+              }
+            </nav>
+          </div>
+          <span class="brand-divider brand-divider--menu" aria-hidden="true"></span>
+          <SearchDialog />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <LanguagePicker current={locale} />
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class:list={['container', wide && 'container--wide']}>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__col site-footer__col--brand">
+          <div class="site-footer__brand">
+            <Logo size={22} mark />
+            <span>© {year} {profile.name}</span>
+            <p class="site-footer__built">
+              <span>{t('footer.builtWith')}</span>
+              <a
+                class="site-footer__astro"
+                href="https://astro.build/"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Astro"
+                title="Astro"
+              >
+                <BrandIcon brand="Astro" size={16} />
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <nav class="site-footer__col" aria-labelledby="footer-connect">
+          <h2 class="site-footer__title" id="footer-connect">{t('footer.connect')}</h2>
+          <ul class="site-footer__links">
+            {
+              profile.links.map((l) => (
+                <li>
+                  <a href={l.url} rel="noopener noreferrer" target="_blank">
+                    <BrandIcon brand={l.label} size={18} />
+                    <span>{l.label}</span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-labelledby="footer-explore">
+          <h2 class="site-footer__title" id="footer-explore">{t('footer.explore')}</h2>
+          <ul class="site-footer__list">
+            {
+              navItems.map((item) => (
+                <li>
+                  <a
+                    href={localizePath(item.path, locale)}
+                    aria-current={activePath === item.path ? 'page' : undefined}
+                  >
+                    {t(item.labelKey)}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-labelledby="footer-language">
+          <h2 class="site-footer__title" id="footer-language">{t('lang.label')}</h2>
+          <LanguagePicker current={locale} variant="stack" />
+        </nav>
+      </div>
+    </footer>
+
+    <PageActions />
+    <ThemeToggle />
+
+    <script>
+      // Mirror the real header height into --header-h-live so the sticky docs
+      // rails (TOC / side-nav) anchor below the header even when it wraps to a
+      // second line at narrow widths — otherwise the taller header hid them.
+      const header = document.querySelector<HTMLElement>('.site-header');
+      if (header) {
+        const sync = () =>
+          document.documentElement.style.setProperty('--header-h-live', `${header.offsetHeight}px`);
+        sync();
+        new ResizeObserver(sync).observe(header);
+      }
+
+      // Disclosure menus (nav hamburger + language flag). One generic handler:
+      // a `[data-disclosure]` button owns the panel named by aria-controls, and
+      // the panel opens via `data-open`. State lives in aria-expanded, so the
+      // button reports itself correctly to assistive tech.
+      const toggles = Array.from(
+        document.querySelectorAll<HTMLButtonElement>('button[data-disclosure]'),
+      );
+
+      if (toggles.length) {
+        const panelOf = (t: HTMLButtonElement) =>
+          document.getElementById(t.getAttribute('aria-controls') ?? '');
+
+        const setOpen = (t: HTMLButtonElement, open: boolean) => {
+          t.setAttribute('aria-expanded', String(open));
+          panelOf(t)?.toggleAttribute('data-open', open);
+        };
+
+        const closeAll = (except?: HTMLButtonElement) =>
+          toggles.forEach((t) => t !== except && setOpen(t, false));
+
+        toggles.forEach((t) =>
+          t.addEventListener('click', () => {
+            const open = t.getAttribute('aria-expanded') !== 'true';
+            closeAll(t);
+            setOpen(t, open);
+          }),
+        );
+
+        // Click anywhere outside an open menu closes it.
+        document.addEventListener('click', (e) => {
+          const target = e.target as Node;
+          const inside = toggles.some(
+            (t) => t.contains(target) || panelOf(t)?.contains(target) === true,
+          );
+          if (!inside) closeAll();
+        });
+
+        // Escape closes and returns focus to the button that opened the menu.
+        document.addEventListener('keydown', (e) => {
+          if (e.key !== 'Escape') return;
+          const open = toggles.find((t) => t.getAttribute('aria-expanded') === 'true');
+          if (open) {
+            closeAll();
+            open.focus();
+          }
+        });
+
+        // Above the breakpoint the panels are laid out inline again, so drop any
+        // leftover open state when the viewport grows.
+        const wide = window.matchMedia('(width > 60rem)');
+        wide.addEventListener('change', (e) => e.matches && closeAll());
+      }
+    </script>
+
+    <style>
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        border-bottom: 1px solid var(--border);
+        background: color-mix(in srgb, var(--bg) 78%, transparent);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+
+      .site-header__inner {
+        display: flex;
+        align-items: center;
+        gap: var(--sp-5);
+        min-height: var(--header-h);
+        padding-block: var(--sp-2);
+      }
+
+      /* Nav + divider + language picker, kept together and right-aligned. When
+         the row runs out of room the group wraps internally and each line stays
+         flush-right, so the languages drop neatly below the nav tabs. */
+      .site-header__end {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: var(--sp-2) var(--sp-5);
+        margin-left: auto;
+      }
+
+      /* On-brand separator between the nav/social group and the language picker:
+         a slim gradient pill echoing the logo's green→azure ramp. */
+      .brand-divider {
+        width: 2px;
+        height: 1.2rem;
+        flex-shrink: 0;
+        align-self: center;
+        border-radius: var(--radius-pill);
+        background: var(--gradient);
+        opacity: 0.6;
+      }
+
+      .brand-divider--menu {
+        display: none;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--sp-2);
+        min-width: 0;
+        color: var(--text);
+        font-family: var(--font-mono);
+      }
+
+      .brand:hover {
+        text-decoration: none;
+      }
+
+      .brand__text {
+        font-size: 0.9rem;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .brand__dim {
+        color: var(--text-subtle);
+      }
+
+      .nav-menu {
+        position: relative;
+      }
+
+      .site-header__nav {
+        display: flex;
+        gap: var(--sp-4);
+        flex-wrap: wrap;
+      }
+
+      /* ── Hamburger (small screens only) ─────────────────────── */
+      .nav-menu__toggle {
+        display: none;
+        place-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: var(--surface);
+        color: var(--text-muted);
+        cursor: pointer;
+        transition:
+          color var(--transition),
+          border-color var(--transition),
+          background var(--transition);
+      }
+
+      .nav-menu__toggle:hover {
+        color: var(--text);
+        border-color: var(--border-strong);
+        background: var(--surface-2);
+      }
+
+      .nav-menu__toggle[aria-expanded='true'] {
+        color: var(--text);
+        border-color: var(--brand);
+        background: var(--surface-2);
+      }
+
+      /* Three bars that fold into an X when the menu opens. */
+      .nav-menu__bars {
+        display: grid;
+        gap: 4px;
+        width: 1.125rem;
+      }
+
+      .nav-menu__bars span {
+        display: block;
+        height: 2px;
+        border-radius: 1px;
+        background: currentcolor;
+        transition:
+          transform var(--transition),
+          opacity var(--transition);
+      }
+
+      .nav-menu__toggle[aria-expanded='true'] .nav-menu__bars span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      .nav-menu__toggle[aria-expanded='true'] .nav-menu__bars span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .nav-menu__toggle[aria-expanded='true'] .nav-menu__bars span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+
+      .site-header__nav a {
+        color: var(--text-muted);
+        font-family: var(--font-mono);
+        font-size: var(--fs-sm);
+        padding-bottom: 2px;
+        border-bottom: 2px solid transparent;
+      }
+
+      .site-header__nav a:hover {
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .site-header__nav a[aria-current='page'] {
+        color: var(--text);
+        border-bottom-color: var(--brand);
+      }
+
+      /* ── Small screens: nav collapses behind the hamburger ──
+         Gated on `.js` so the plain nav row survives without scripting. */
+      @media (width <= 60rem) {
+        :root.js .nav-menu__toggle {
+          display: grid;
+        }
+
+        /* Two compact buttons now stand in for the whole nav, so the header
+           stays a single row: brand (truncating if it must) + menu + language. */
+        :root.js .site-header__inner {
+          gap: var(--sp-3);
+        }
+
+        :root.js .site-header__end {
+          flex-wrap: nowrap;
+          gap: var(--sp-2);
+        }
+
+        /* Menu | search | language — each button set apart like the groups
+           they replace on wide screens. */
+        :root.js .brand-divider--menu {
+          display: block;
+        }
+
+        :root.js .site-header__nav {
+          position: absolute;
+          top: calc(100% + var(--sp-2));
+          right: 0;
+          z-index: 60;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          gap: 2px;
+          min-width: 12rem;
+          padding: var(--sp-2);
+          border: 1px solid var(--border);
+          border-radius: var(--radius-lg);
+          background: var(--surface);
+          box-shadow: var(--shadow-hover);
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(-6px);
+          /* Deliberately NOT transitioning `visibility`: it gates focusability,
+             and tying it to a transition means the links only become reachable
+             once that transition runs. It flips instantly; opacity/transform
+             carry the animation. */
+          transition:
+            opacity var(--transition),
+            transform var(--transition);
+        }
+
+        :root.js .site-header__nav[data-open] {
+          visibility: visible;
+          opacity: 1;
+          transform: none;
+        }
+
+        /* Rows instead of underlined tabs, with a comfortable tap target. */
+        :root.js .site-header__nav a {
+          display: flex;
+          align-items: center;
+          min-height: 2.5rem;
+          padding: 0 var(--sp-3);
+          border-bottom: none;
+          border-radius: var(--radius);
+        }
+
+        :root.js .site-header__nav a:hover {
+          background: var(--surface-2);
+        }
+
+        :root.js .site-header__nav a[aria-current='page'] {
+          color: var(--brand-strong);
+          background: var(--surface-2);
+        }
+      }
+
+      /* Phone: shave the wordmark slightly and tighten the button group so
+         the full domain still fits beside menu | search | language instead of
+         ellipsing. */
+      @media (width <= 34rem) {
+        .brand {
+          gap: var(--sp-1);
+        }
+
+        .brand__text {
+          font-size: 0.75rem;
+        }
+
+        :root.js .site-header__inner {
+          gap: 6px;
+        }
+
+        :root.js .site-header__end {
+          gap: var(--sp-1);
+        }
+      }
+
+      main {
+        min-height: 60vh;
+        padding-block: var(--sp-6);
+      }
+
+      .site-footer {
+        border-top: 1px solid var(--border);
+        background: var(--surface);
+        margin-top: var(--sp-7);
+      }
+
+      /* Four columns: identity · social · sections · languages. The brand
+         column is widest; the three link columns size to their content. */
+      .site-footer__inner {
+        display: grid;
+        grid-template-columns: minmax(14rem, 1.6fr) repeat(3, minmax(7rem, 1fr));
+        gap: var(--sp-5) var(--sp-6);
+        padding-block: var(--sp-6);
+        font-size: var(--fs-sm);
+        color: var(--text-muted);
+      }
+
+      .site-footer__col {
+        display: flex;
+        flex-direction: column;
+        gap: var(--sp-2);
+        min-width: 0;
+      }
+
+      .site-footer__title {
+        margin: 0 0 var(--sp-1);
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-subtle);
+      }
+
+      /* Logo in the first column; the copyright and the "Built with" line
+         share the second, so both start at the same edge. */
+      .site-footer__brand {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: var(--sp-1) var(--sp-2);
+        font-family: var(--font-mono);
+        color: var(--text);
+      }
+
+      .site-footer__built {
+        grid-column: 2;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: var(--sp-1);
+        font-size: 0.72rem;
+        color: var(--text-subtle);
+      }
+
+      /* Astro logo link — subtle like the caption, brand colour on hover. */
+      .site-footer__astro {
+        display: inline-flex;
+        padding: 2px;
+        border-radius: var(--radius-sm);
+        color: var(--text-muted);
+        transition: color var(--transition);
+      }
+
+      .site-footer__astro:hover {
+        color: var(--brand-strong);
+      }
+
+      .site-footer__links,
+      .site-footer__list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--sp-1);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .site-footer__links a,
+      .site-footer__list a {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--sp-2);
+        /* Negative inline start keeps the text optically flush with the column
+           heading while the padding still gives a comfortable tap target. */
+        margin-inline-start: calc(var(--sp-2) * -1);
+        padding: var(--sp-1) var(--sp-2);
+        border-radius: var(--radius-sm);
+        color: var(--text-muted);
+      }
+
+      .site-footer__links a:hover,
+      .site-footer__list a:hover {
+        color: var(--text);
+        background: var(--surface-2);
+        text-decoration: none;
+      }
+
+      .site-footer__list a[aria-current='page'] {
+        color: var(--brand-strong);
+      }
+
+      /* Narrow desktop / tablet: keep all four columns on the SAME row — just
+         tighter. Space is bought from the gaps and the column minimums rather
+         than by dropping a column onto a line of its own. */
+      @media (width <= 60rem) {
+        .site-footer__inner {
+          grid-template-columns: minmax(9rem, 1.3fr) repeat(3, minmax(5.5rem, 1fr));
+          gap: var(--sp-4);
+        }
+      }
+
+      /* Phone: below ~34rem four columns can no longer hold their labels
+         without shredding them, so they stack into one. */
+      @media (width <= 34rem) {
+        .site-footer__inner {
+          grid-template-columns: minmax(0, 1fr);
+          gap: var(--sp-5);
+        }
+      }
+    </style>
+  </body>
+</html>

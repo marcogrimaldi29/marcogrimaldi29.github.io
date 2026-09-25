@@ -1,0 +1,116 @@
+---
+/** /es/privacy/ — política de privacidad. */
+import PageLayout from '@layouts/PageLayout.astro';
+
+const headings = [
+  { depth: 2, slug: 'quien-gestiona', text: 'quién gestiona el sitio' },
+  { depth: 2, slug: 'datos-recogidos', text: 'qué datos se recogen' },
+  { depth: 2, slug: 'cookies', text: 'cookies' },
+  { depth: 2, slug: 'tus-derechos', text: 'tus derechos' },
+  { depth: 2, slug: 'contacto', text: 'contacto' },
+];
+---
+
+<PageLayout
+  title="Política de Privacidad"
+  heading="🍪 Política de Privacidad"
+  eyebrow="// conforme al rgpd · sin cookies"
+  lead="Qué información se recoge — y cuál no — cuando visitas este sitio. Sin cookies, sin perfiles de seguimiento — solo estadísticas anónimas para mejorar tu experiencia."
+  description="Qué información se recoge — y cuál no — cuando visitas este sitio. Sin cookies, sin perfiles de seguimiento — solo estadísticas anónimas para mejorar tu experiencia."
+  headings={headings}
+  brandRail
+>
+  <div class="legal">
+    <h2 class="section-heading" id="quien-gestiona">quién gestiona el sitio</h2>
+    <p>
+      Este sitio es un proyecto personal gestionado por <strong>Marco Grimaldi</strong>, alojado en <a
+        href="https://pages.github.com"
+        rel="noopener"
+        target="_blank">GitHub Pages</a
+      > y construido con <a href="https://www.astro.build/" rel="noopener" target="_blank">Astro</a
+      >.
+    </p>
+
+    <h2 class="section-heading" id="datos-recogidos">qué datos se recogen</h2>
+    <p><strong>📊 Analítica de visitas (Umami)</strong></p>
+    <p>
+      Este sitio utiliza <a href="https://umami.is" rel="noopener" target="_blank"
+        >Umami Analytics</a
+      >, una plataforma de analítica de código abierto y respetuosa con la privacidad. No utiliza <strong
+        >cookies</strong
+      > ni recoge <strong>datos personales</strong>. Solo se procesan estadísticas anónimas (como
+      páginas vistas y referrers) para mejorar el contenido y la usabilidad del sitio.
+    </p>
+    <p><strong>🖥️ Hosting y registros</strong></p>
+    <p>
+      El sitio está alojado en <strong>GitHub Pages</strong> (GitHub, Inc.), que puede recoger datos técnicos
+      limitados — como direcciones IP y metadatos de las solicitudes — con fines operativos y de seguridad.
+      Para más detalles, consulta la <a
+        href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+        rel="noopener"
+        target="_blank">Política de privacidad de GitHub</a
+      >.
+    </p>
+
+    <h2 class="section-heading" id="cookies">cookies</h2>
+    <p>
+      Este sitio <strong>no utiliza ninguna cookie</strong> para analítica, publicidad o seguimiento.
+      GitHub Pages puede utilizar cookies estrictamente necesarias para la entrega y el rendimiento del
+      sitio.
+    </p>
+
+    <h2 class="section-heading" id="tus-derechos">tus derechos</h2>
+    <p>
+      Según tu jurisdicción (por ejemplo, en virtud del Reglamento General de Protección de Datos de
+      la UE — <a href="https://gdpr.eu/what-is-gdpr/" rel="noopener" target="_blank">RGPD</a>),
+      podrías tener derecho a:
+    </p>
+    <ul>
+      <li>
+        Solicitar el acceso, la rectificación o la supresión de datos personales (si se hubieran
+        recogido);
+      </li>
+      <li>Oponerte o limitar el tratamiento de los datos;</li>
+      <li>Presentar una reclamación ante una autoridad de control.</li>
+    </ul>
+    <p>
+      Dado que este sitio no recoge activamente datos personales, estos derechos por lo general no
+      son aplicables. Aun así, puedes <a href="/es/contact/">contactar con el responsable</a> en cualquier
+      momento para cualquier aclaración.
+    </p>
+
+    <h2 class="section-heading" id="contacto">contacto</h2>
+    <p>
+      Si tienes preguntas o dudas sobre esta Política de Privacidad, no dudes en <a
+        href="/es/contact/">contactarme</a
+      >.
+    </p>
+
+    <p class="notice notice--success">
+      <em>
+        Este sitio respeta tu privacidad. Sin cookies. Sin perfiles de seguimiento. Solo
+        estadísticas para mejorar tu experiencia de navegación.
+      </em>
+    </p>
+  </div>
+</PageLayout>
+
+<style>
+  .legal p {
+    max-width: 48rem;
+  }
+
+  .legal ul {
+    max-width: 48rem;
+    padding-left: 1.4rem;
+  }
+
+  .legal li {
+    margin-bottom: var(--sp-2);
+    line-height: 1.6;
+  }
+
+  .legal li::marker {
+    color: var(--brand);
+  }
+</style>

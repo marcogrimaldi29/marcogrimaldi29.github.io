@@ -1,0 +1,49 @@
+---
+/** /resources/ — data-driven landing with a docs side-nav. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import SupportNote from '@components/SupportNote.astro';
+import QuickLink from '@components/QuickLink.astro';
+import { resourceCollections } from '@data/landings';
+
+const navGroups = [
+  {
+    title: 'Collections',
+    items: resourceCollections.map((c) => ({ label: c.title, href: c.href })),
+  },
+];
+---
+
+<PageLayout
+  title="Useful Resources"
+  heading="🧰 Useful Resources"
+  eyebrow="// curated collections"
+  lead="Curated collections of links and references gathered across my learning journey — German, Microsoft, AI, and dev workflows."
+  description="Curated collections of useful resources for learning German, Microsoft technologies, AI, and developer tooling."
+  searchable
+  navGroups={navGroups}
+>
+  <SupportNote kind="resources" />
+
+  <h2 class="section-heading" id="collections">collections</h2>
+  <div class="card-grid">
+    {resourceCollections.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// see also'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="📘"
+      title="Study Notes"
+      subtitle="Structured prep material"
+      href="/study-notes/"
+    />
+    <QuickLink
+      icon="🏅"
+      title="Cert Reviews"
+      subtitle="Exam experiences & tips"
+      href="/cert-reviews/"
+    />
+  </div>
+</PageLayout>

@@ -1,0 +1,62 @@
+---
+/** /it/contact/ — contatti. */
+import PageLayout from '@layouts/PageLayout.astro';
+import QuickLink from '@components/QuickLink.astro';
+import LogoDisclaimer from '@components/LogoDisclaimer.astro';
+
+const channels = [
+  {
+    brand: 'Duolingo',
+    title: 'Duolingo',
+    subtitle: 'Streak di lingue',
+    href: 'https://www.duolingo.com/profile/MarcoGrimm',
+  },
+  {
+    brand: 'GitHub',
+    title: 'GitHub',
+    subtitle: 'Codice & progetti',
+    href: 'https://github.com/marcogrimaldi29',
+  },
+  {
+    brand: 'LinkedIn',
+    title: 'LinkedIn',
+    subtitle: 'Rete professionale',
+    href: 'https://www.linkedin.com/in/marco-grimaldi29/',
+  },
+  {
+    brand: 'Microsoft',
+    title: 'Microsoft Learn',
+    subtitle: 'Certificazioni & profilo',
+    href: 'https://learn.microsoft.com/en-us/users/marcogrimaldi-0029/',
+  },
+];
+---
+
+<PageLayout
+  title="Contatti"
+  heading="💬 Contatti"
+  eyebrow="// mettiamoci in contatto"
+  lead="I modi migliori per contattarmi — per collaborazioni, domande o anche solo per un saluto."
+  description="I modi migliori per contattarmi — per collaborazioni, domande o anche solo per un saluto."
+  brandRail
+>
+  <LogoDisclaimer variant="plain" />
+  <div class="card-grid channels">
+    {channels.map((c) => <QuickLink {...c} />)}
+  </div>
+</PageLayout>
+
+<style>
+  /* Four channels read best as a balanced 2×2 — cap the columns at 2 (the
+     global .card-grid's auto-fill would otherwise fit 3 at full width, leaving
+     a lonely 3+1). Collapse to a single column only on phones. */
+  .channels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (width <= 30rem) {
+    .channels {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

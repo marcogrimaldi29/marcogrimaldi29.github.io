@@ -1,0 +1,132 @@
+---
+/** /es/about/ — sobre mí. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LocationMap from '@components/LocationMap.astro';
+
+const headings = [
+  { depth: 2, slug: 'sobre-mi', text: 'sobre mí' },
+  { depth: 2, slug: 'identidad-profesional', text: 'identidad profesional' },
+  { depth: 2, slug: 'valores', text: 'valores' },
+  { depth: 2, slug: 'mas-alla-del-trabajo', text: 'más allá del trabajo' },
+  { depth: 2, slug: 'sobre-este-sitio', text: 'sobre este sitio' },
+];
+---
+
+<PageLayout
+  title="Sobre mí"
+  heading="🏗️ Sobre mí"
+  eyebrow="// trayectoria y sitio"
+  lead="Soy Marco Grimaldi — Cloud Solution Architect y Consultor de TI, con una vida paralela entre idiomas y docencia. Me apasionan los nuevos retos, los contextos diversos y el aprendizaje continuo."
+  description="Soy Marco Grimaldi — Cloud Solution Architect y Consultor de TI, con una vida paralela entre idiomas y docencia. Me apasionan los nuevos retos, los contextos diversos y el aprendizaje continuo."
+  headings={headings}
+  brandRail
+>
+  <div class="about">
+    <h2 class="section-heading" id="sobre-mi">sobre mí</h2>
+    <p>
+      Mi trayectoria combina el ámbito de las TI y el de los idiomas. Si quieres colaborar,
+      compartir ideas o explorar proyectos en común, no dudes en <a href="/es/contact/"
+        >contactarme</a
+      >.
+    </p>
+    <p>
+      📍 Con base en <strong>Gran Canaria, España</strong> — en contacto con comunidades locales e internacionales.
+    </p>
+
+    <LocationMap
+      region="Islas Canarias"
+      country="España"
+      caption="Geolocalizador que destaca Gran Canaria en las Islas Canarias, España."
+    />
+
+    <h2 class="section-heading" id="identidad-profesional">identidad profesional</h2>
+    <ul>
+      <li>
+        <strong>TI y Cloud</strong> — Microsoft 365, Teams, administración de Azure e infraestructuras
+        cloud (voice). Me ocupo de soporte técnico, troubleshooting y gestión del conocimiento.
+      </li>
+      <li>
+        <strong>Idiomas y Formación</strong> — profesor y formador de lenguas extranjeras en contextos
+        multilingües y multiculturales, incluida la preparación de exámenes y el apoyo académico.
+      </li>
+      <li>
+        <strong>Educación inclusiva</strong> — experiencia con estudiantes con diversidad funcional, adaptando
+        métodos y herramientas para que todos puedan tener éxito.
+      </li>
+    </ul>
+    <p>
+      Esta combinación de competencias técnicas y lingüísticas me permite desenvolverme con eficacia
+      en contextos internacionales e interfuncionales.
+    </p>
+
+    <h2 class="section-heading" id="valores">valores</h2>
+    <ul>
+      <li>
+        <strong>Resolución de problemas</strong> — soluciones claras y estructuradas a retos técnicos
+        y organizativos.
+      </li>
+      <li>
+        <strong>Colaboración</strong> — aprender de los demás y contribuir a objetivos comunes.
+      </li>
+      <li>
+        <strong>Aprendizaje continuo</strong> — impulsado por la curiosidad en la tecnología y los idiomas.
+      </li>
+      <li>
+        <strong>Inclusión y empatía</strong> — la tecnología y la educación deberían ser accesibles para
+        todos.
+      </li>
+    </ul>
+
+    <h2 class="section-heading" id="mas-alla-del-trabajo">más allá del trabajo</h2>
+    <ul>
+      <li><strong>Senderismo</strong> — explorar rutas y conectar con la naturaleza.</li>
+      <li><strong>Lectura</strong> — libros técnicos, ensayos y literatura.</li>
+      <li>
+        <strong>Música</strong> — multiinstrumentista y técnico de sonido, enamorado de la música del
+        mundo.
+      </li>
+    </ul>
+
+    <h2 class="section-heading" id="sobre-este-sitio">sobre este sitio</h2>
+    <p>
+      Hecho con <a href="https://www.astro.build/" rel="noopener" target="_blank">Astro</a> y una biblioteca
+      de componentes propia, desplegado en <a
+        href="https://docs.github.com/en/pages"
+        rel="noopener"
+        target="_blank">GitHub Pages</a
+      >. La analítica es respetuosa con la privacidad y sin cookies mediante <a
+        href="https://umami.is/"
+        rel="noopener"
+        target="_blank">Umami</a
+      >. Los contenidos se han editado con la ayuda de modelos de IA como <a
+        href="https://chatgpt.com/"
+        rel="noopener"
+        target="_blank">ChatGPT 5.x</a
+      >, <a href="https://www.claude.com/" rel="noopener" target="_blank">Claude Opus 4.x</a> y <a
+        href="https://www.claude.com/"
+        rel="noopener"
+        target="_blank">Claude Sonnet 4.x</a
+      >.
+    </p>
+  </div>
+</PageLayout>
+
+<style>
+  .about p {
+    max-width: 48rem;
+  }
+
+  .about ul {
+    max-width: 48rem;
+    padding-left: 1.4rem;
+  }
+
+  .about li {
+    margin-bottom: var(--sp-2);
+    line-height: 1.6;
+  }
+
+  .about li::marker {
+    color: var(--brand);
+  }
+</style>

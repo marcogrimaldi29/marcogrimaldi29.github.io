@@ -1,0 +1,45 @@
+---
+/** /de/projects/ — Landing DE (Projekte). Jedes Projekt lebt in seinem eigenen Repository. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import QuickLink from '@components/QuickLink.astro';
+import WorkInProgress from '@components/WorkInProgress.astro';
+import { projectsDe } from '@data/landings-de';
+---
+
+<PageLayout
+  title="Projekte"
+  heading="🚀 Projekte"
+  eyebrow="// praktische Labs"
+  lead="Praktische Dinge, die ich in Cloud, Daten und IT baue. Jedes Projekt lebt in seinem eigenen Repository und wird unter marcogrimaldi29.com/<projekt-name>/ veröffentlicht — genau wie meine Lernnotizen."
+  description="Praktische Cloud-, Daten- und IT-Projekte von Marco Grimaldi — jedes in seinem eigenen Repository gehostet."
+  searchable
+  brandRail
+>
+  <h2 class="section-heading" id="projekte">projekte</h2>
+  <div class="card-grid">
+    {projectsDe.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <WorkInProgress
+    title="In Arbeit"
+    body="Dieser Hub fängt gerade erst an — weitere Cloud-, Daten- und IT-Projekte sind unterwegs. Schau regelmäßig vorbei."
+  />
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// siehe auch'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="📘"
+      title="Lernnotizen"
+      subtitle="Strukturiertes Lernmaterial"
+      href="/de/study-notes/"
+    />
+    <QuickLink
+      icon="🧰"
+      title="Ressourcen"
+      subtitle="Kuratierte Sammlungen"
+      href="/de/resources/"
+    />
+  </div>
+</PageLayout>

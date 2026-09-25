@@ -1,0 +1,15 @@
+# Normalize line endings to LF in the repo (and on checkout) for cross-platform
+# consistency — keeps Windows working copies in sync with the Linux CI runners
+# and with Prettier's expectations.
+* text=auto eol=lf
+
+# Binary assets — never normalize.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.webp binary
+*.svg text eol=lf
+*.woff binary
+*.woff2 binary
+*.pdf binary

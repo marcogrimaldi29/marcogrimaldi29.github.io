@@ -1,0 +1,82 @@
+---
+/**
+ * SkillMarquee — soft skills as an infinite, auto-scrolling pill carousel (like
+ * a sponsor/testimonial marquee). Labels use the site's green→azure gradient
+ * text. The list is rendered twice so the loop is seamless; the second copy is
+ * aria-hidden. Pauses on hover; under reduced-motion it simply sits still.
+ */
+import { getLocaleFromUrl } from '@i18n/utils';
+
+interface Props {
+  items: string[];
+  label?: string;
+}
+const { items, label = 'Soft skills' } = Astro.props;
+
+// Sort alphabetically in the page's own language (locale-aware collation), so
+// each locale reads A→Z just like the English list.
+const locale = getLocaleFromUrl(Astro.url);
+const sorted = [...items].sort((a, b) => a.localeCompare(b, locale));
+---
+
+<div class="marquee" aria-label={label}>
+  <ul class="marquee__track">
+    {
+      sorted.map((s) => (
+        <li class="marquee__pill">
+          <span class="gradient-text">{s}</span>
+        </li>
+      ))
+    }
+    {
+      sorted.map((s) => (
+        <li class="marquee__pill" aria-hidden="true">
+          <span class="gradient-text">{s}</span>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .marquee {
+    position: relative;
+    overflow: hidden;
+    margin-block: var(--sp-3);
+    -webkit-mask: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+    mask: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  }
+
+  .marquee__track {
+    display: flex;
+    width: max-content;
+    margin: 0;
+    padding: var(--sp-2) 0;
+    list-style: none;
+    animation: marquee-scroll 26s linear infinite;
+  }
+
+  .marquee:hover .marquee__track,
+  .marquee:focus-within .marquee__track {
+    animation-play-state: paused;
+  }
+
+  .marquee__pill {
+    flex-shrink: 0;
+    margin-inline-end: var(--sp-3);
+    padding: 8px 18px;
+    border-radius: var(--radius-pill);
+    background: var(--surface-2);
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  @keyframes marquee-scroll {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+</style>

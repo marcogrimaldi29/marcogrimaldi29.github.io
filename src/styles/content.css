@@ -1,0 +1,372 @@
+/* ============================================================
+ * .prose — authored Markdown article bodies (posts + landings).
+ * Tuned to the GitHub-dark / Azure identity, plus the legacy card
+ * classes (resource-card, cert-group, quicklink) re-skinned to
+ * match the component library so migrated content looks native.
+ * ============================================================ */
+
+.prose {
+  font-size: var(--fs-base);
+  line-height: var(--lh);
+  color: var(--text);
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+/* Dev-doc heading style — leading mono # / ## and lowercase, to match the
+ * site's .section-heading aesthetic. */
+.prose h2,
+.prose h3 {
+  text-transform: lowercase;
+}
+
+.prose h2::before,
+.prose h3::before {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--brand);
+}
+
+.prose h2::before {
+  content: '# ';
+}
+
+.prose h3::before {
+  content: '## ';
+  font-size: 0.9em;
+}
+
+.prose h2 {
+  font-size: 1.4rem;
+  margin: var(--sp-6) 0 var(--sp-3);
+}
+
+.prose h3 {
+  font-size: 1.15rem;
+  margin: var(--sp-5) 0 var(--sp-3);
+  color: var(--text);
+}
+
+.prose h4 {
+  font-size: 1rem;
+  margin: var(--sp-4) 0 var(--sp-2);
+}
+
+.prose p,
+.prose li {
+  color: var(--text);
+}
+
+.prose a {
+  color: var(--brand-strong);
+  text-decoration: underline;
+  text-decoration-color: var(--tag-cert-ring);
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  text-decoration-color: var(--brand);
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: var(--sp-6) 0;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 1px 5px;
+  border-radius: var(--radius-sm);
+}
+
+.prose pre {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: var(--sp-4);
+  border-radius: var(--radius);
+  overflow: auto;
+}
+
+.prose pre code {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--brand);
+  background: var(--surface);
+  margin: var(--sp-4) 0;
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text-muted);
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.4rem;
+}
+
+.prose li {
+  margin-bottom: var(--sp-1);
+  line-height: 1.6;
+}
+
+.prose li::marker {
+  color: var(--brand);
+}
+
+.prose img {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* ── Resource grid / cards (legacy classes) ────────────────── */
+.prose .resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--sp-4);
+  margin: var(--sp-4) 0;
+}
+
+.prose .resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.prose .resource-card:hover {
+  border-color: var(--brand);
+  transform: translateY(-3px);
+}
+
+.prose .resource-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.prose .resource-card__icon {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius);
+  background: var(--gradient-soft);
+  border: 1px solid var(--tag-cert-ring);
+  font-size: 1.3rem;
+}
+
+.prose .resource-card__tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  background: var(--tag-cert-bg);
+  color: var(--tag-cert-fg);
+  border: 1px solid var(--tag-cert-ring);
+  text-transform: lowercase;
+}
+
+.prose .resource-card__tag.guide {
+  background: var(--tag-guide-bg);
+  color: var(--tag-guide-fg);
+  border-color: var(--tag-guide-ring);
+}
+
+.prose .resource-card__tag.tool {
+  background: var(--tag-tool-bg);
+  color: var(--tag-tool-fg);
+  border-color: var(--tag-tool-ring);
+}
+
+.prose .resource-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.prose .resource-card__desc {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: 1.6;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.prose .resource-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.prose .resource-card__meta span {
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 2px 8px;
+}
+
+.prose .resource-card__btn {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--brand-strong) !important;
+  text-decoration: none !important;
+}
+
+.prose .resource-card__btn--secondary {
+  color: var(--accent-strong) !important;
+}
+
+/* ── Cert groups (legacy classes) ──────────────────────────── */
+.prose .cert-groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  margin: var(--sp-4) 0;
+}
+
+.prose .cert-group {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.prose .cert-group__header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-5);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  margin: 0;
+}
+
+.prose .cert-group__header-icon {
+  font-size: 1.1rem;
+}
+
+.prose .cert-group__header-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.prose .cert-group__header-count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  background: var(--tag-cert-bg);
+  color: var(--tag-cert-fg);
+  border: 1px solid var(--tag-cert-ring);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+}
+
+.prose .cert-group__body {
+  padding: var(--sp-4) var(--sp-5);
+}
+
+.prose .cert-group__body > .resource-grid {
+  margin: 0;
+}
+
+.prose .cert-group__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.prose .cert-group__item {
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+  display: flex;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-5);
+}
+
+.prose .cert-group__item:nth-child(even) {
+  background: var(--surface-2);
+}
+
+.prose .cert-group__item::before {
+  content: '▹';
+  color: var(--brand);
+  flex-shrink: 0;
+}
+
+.prose .cert-group__item a {
+  color: var(--brand-strong);
+}
+
+/* ── Quick links (legacy classes) ──────────────────────────── */
+.prose .quicklink-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--sp-3);
+  margin: var(--sp-4) 0;
+}
+
+.prose .quicklink-card {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text) !important;
+  text-decoration: none !important;
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.prose .quicklink-card:hover {
+  border-color: var(--brand);
+  transform: translateY(-2px);
+}
+
+.prose .quicklink-card__icon {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  border-radius: var(--radius);
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  font-size: 1.15rem;
+}
+
+.prose .quicklink-card strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.prose .quicklink-card small {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}

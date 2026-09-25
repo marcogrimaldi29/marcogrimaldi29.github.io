@@ -1,0 +1,77 @@
+name: Deploy to GitHub Pages
+
+# Builds and deploys the site whenever master is updated. The build re-runs the
+# full verify suite first, so even direct pushes to master are validated before
+# they go live.
+#
+# `master` (not `main`) is deliberate: it is the repo's default branch AND the
+# only branch the `github-pages` environment allows to deploy. Changing one
+# without the other silently breaks production deploys.
+#
+# The custom domain (marcogrimaldi29.com) comes from Settings -> Pages, NOT from
+# public/CNAME: GitHub ignores any CNAME file when publishing from a custom
+# Actions workflow. The file is kept only so a branch-based build (the rollback
+# path) still knows the domain.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deploy at a time; let an in-progress deploy finish rather than
+# cancelling it (avoids publishing a half-built site).
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Verify & build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # Full history so the CV "updated" pill can read the last commit date.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify (type-check, lint, format)
+        run: npm run verify
+
+      - name: Build (Astro + Pagefind)
+        run: npm run build
+        env:
+          # Two names on purpose: the repo secret is UMAMI_WEBSITE_ID (the one
+          # the Jekyll workflow already used), while Astro only exposes env vars
+          # prefixed PUBLIC_ — BaseLayout reads PUBLIC_UMAMI_WEBSITE_ID.
+          PUBLIC_UMAMI_WEBSITE_ID: ${{ secrets.UMAMI_WEBSITE_ID }}
+
+      # v4+ excludes dotfiles from the artifact; the Astro build emits none
+      # (its asset dir is `_astro/`, not a dotfile), so nothing is lost.
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

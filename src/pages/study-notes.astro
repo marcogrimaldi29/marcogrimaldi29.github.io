@@ -1,0 +1,52 @@
+---
+/** /study-notes/ — data-driven landing with docs rails (side-nav + TOC). */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import QuickLink from '@components/QuickLink.astro';
+import SupportNote from '@components/SupportNote.astro';
+import { studyNotes, deepDives, toStudyNav } from '@data/landings';
+
+const navGroups = [
+  { title: 'Study Notes', items: toStudyNav(studyNotes, / Study Notes$/) },
+  { title: 'Deep Dives', items: toStudyNav(deepDives) },
+];
+const headings = [
+  { depth: 2, slug: 'study-notes', text: 'study notes' },
+  { depth: 2, slug: 'deep-dives', text: 'deep dives' },
+];
+---
+
+<PageLayout
+  title="Study Notes"
+  heading="📘 Study Notes"
+  eyebrow="// certification study notes"
+  lead="Structured notes for IT exams: Microsoft, ITIL and more — plus deep dives into specific cloud-architecture topics."
+  description="Structured notes for IT exams: Microsoft, ITIL and more — plus deep dives into specific cloud-architecture topics."
+  searchable
+  navGroups={navGroups}
+  headings={headings}
+>
+  <SupportNote />
+
+  <h2 class="section-heading" id="study-notes">study notes</h2>
+  <div class="card-grid">
+    {studyNotes.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <h2 class="section-heading" id="deep-dives">deep dives</h2>
+  <div class="card-grid">
+    {deepDives.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// see also'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="🏅"
+      title="Cert Reviews"
+      subtitle="Exam experiences & tips"
+      href="/cert-reviews/"
+    />
+    <QuickLink icon="🧰" title="Resources" subtitle="Curated collections" href="/resources/" />
+  </div>
+</PageLayout>

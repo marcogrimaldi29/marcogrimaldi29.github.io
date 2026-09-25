@@ -1,0 +1,34 @@
+---
+/**
+ * UpdatedBadge — a small "updated · <date>" pill, matching the article header
+ * badge from PostLayout. Localized label + date formatting from the URL locale.
+ */
+import { getLocaleFromUrl, useTranslations } from '@i18n/utils';
+
+interface Props {
+  date: Date;
+}
+const { date } = Astro.props;
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const dateLocale = { en: 'en-US', it: 'it-IT', es: 'es-ES', de: 'de-DE' }[locale];
+const fmt = date.toLocaleDateString(dateLocale, {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+});
+---
+
+<p class="updated-badge">
+  <span class="badge">
+    {t('post.updated')}:{' '}
+    <time datetime={date.toISOString()}>{fmt}</time>
+  </span>
+</p>
+
+<style>
+  .updated-badge {
+    margin: var(--sp-3) 0 0;
+  }
+</style>

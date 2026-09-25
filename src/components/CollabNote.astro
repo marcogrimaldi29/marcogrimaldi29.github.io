@@ -1,0 +1,101 @@
+---
+/**
+ * CollabNote — a call-to-action inviting visitors interested in collaborating
+ * to reach out on LinkedIn. Mirrors SupportNote's styling; used at the bottom
+ * of the CV pages. Localized from the URL locale.
+ */
+import { profile } from '@data/profile';
+import BrandIcon from './BrandIcon.astro';
+import { getLocaleFromUrl } from '@i18n/utils';
+
+const locale = getLocaleFromUrl(Astro.url);
+const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
+
+interface Strings {
+  heading: string;
+  body: string;
+  connect: string;
+}
+
+const strings: Record<string, Strings> = {
+  en: {
+    heading: 'Interested in collaborating?',
+    body: 'If you’d like to work together, share ideas, or explore opportunities, let’s connect on LinkedIn.',
+    connect: 'Connect on LinkedIn',
+  },
+  it: {
+    heading: 'Ti va di collaborare?',
+    body: 'Se vuoi lavorare insieme, condividere idee o esplorare opportunità, connettiamoci su LinkedIn.',
+    connect: 'Connettiti su LinkedIn',
+  },
+  es: {
+    heading: '¿Te interesa colaborar?',
+    body: 'Si quieres trabajar juntos, compartir ideas o explorar oportunidades, conectemos en LinkedIn.',
+    connect: 'Conecta en LinkedIn',
+  },
+  de: {
+    heading: 'Interesse an einer Zusammenarbeit?',
+    body: 'Wenn du zusammenarbeiten, Ideen teilen oder Möglichkeiten ausloten möchtest, vernetzen wir uns auf LinkedIn.',
+    connect: 'Auf LinkedIn vernetzen',
+  },
+};
+
+const t = strings[locale] ?? strings.en;
+---
+
+<aside class="collab">
+  <span class="collab__icon" aria-hidden="true">🤝</span>
+  <div class="collab__body">
+    <p class="collab__heading">{t.heading}</p>
+    <p class="collab__text">{t.body}</p>
+    <div class="collab__actions">
+      <a class="btn btn--primary" href={linkedinUrl} rel="noopener noreferrer" target="_blank">
+        <BrandIcon brand="LinkedIn" size={16} />
+        {t.connect}
+      </a>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .collab {
+    display: flex;
+    gap: var(--sp-4);
+    align-items: flex-start;
+    margin: var(--sp-5) 0;
+    padding: var(--sp-4) var(--sp-5);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--brand);
+    border-radius: var(--radius);
+    background: var(--gradient-soft);
+  }
+
+  .collab__icon {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    flex-shrink: 0;
+  }
+
+  .collab__body {
+    min-width: 0;
+  }
+
+  .collab__heading {
+    margin: 0 0 var(--sp-1);
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .collab__text {
+    margin: 0 0 var(--sp-4);
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    max-width: 46rem;
+  }
+
+  .collab__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+  }
+</style>

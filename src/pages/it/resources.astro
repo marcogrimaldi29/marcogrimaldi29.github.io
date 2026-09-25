@@ -1,0 +1,49 @@
+---
+/** /it/resources/ — landing IT (risorse). Resource links point to EN articles. */
+import PageLayout from '@layouts/PageLayout.astro';
+import LinkCard from '@components/LinkCard.astro';
+import SupportNote from '@components/SupportNote.astro';
+import QuickLink from '@components/QuickLink.astro';
+import { resourceCollectionsIt } from '@data/landings-it';
+
+const navGroups = [
+  {
+    title: 'Raccolte',
+    items: resourceCollectionsIt.map((c) => ({ label: c.title, href: c.href })),
+  },
+];
+---
+
+<PageLayout
+  title="Risorse Utili"
+  heading="🧰 Risorse Utili"
+  eyebrow="// raccolte curate"
+  lead="Raccolte curate di link e riferimenti messi insieme lungo il mio percorso di apprendimento — tedesco, Microsoft, IA e flussi di lavoro dev."
+  description="Raccolte curate di risorse utili per imparare il tedesco, le tecnologie Microsoft, l’IA e gli strumenti di sviluppo."
+  searchable
+  navGroups={navGroups}
+>
+  <SupportNote kind="resources" />
+
+  <h2 class="section-heading" id="raccolte">raccolte</h2>
+  <div class="card-grid">
+    {resourceCollectionsIt.map((c) => <LinkCard {...c} />)}
+  </div>
+
+  <hr class="see-also-rule" />
+  <p class="eyebrow">{'// vedi anche'}</p>
+  <div class="card-grid">
+    <QuickLink
+      icon="📘"
+      title="Appunti"
+      subtitle="Materiale di preparazione"
+      href="/it/study-notes/"
+    />
+    <QuickLink
+      icon="🏅"
+      title="Recensioni"
+      subtitle="Esperienze e consigli d’esame"
+      href="/it/cert-reviews/"
+    />
+  </div>
+</PageLayout>

@@ -1,0 +1,187 @@
+---
+/**
+ * SideNav — left-rail section navigation (Astro/GitHub-docs style). Lists
+ * grouped links; used on landing hubs to index all study notes / cert reviews.
+ * `current` (a pathname) marks the active item. Items may also be folds
+ * ({ label, items }) rendered as collapsible <details> sub-groups — used to
+ * keep long series (MS-/DP-/AZ- study notes) short at first sight.
+ */
+import { getLocaleFromUrl, useTranslations } from '@i18n/utils';
+
+export interface SideNavItem {
+  label: string;
+  href: string;
+}
+export interface SideNavFold {
+  label: string;
+  items: SideNavItem[];
+}
+export interface SideNavGroup {
+  title: string;
+  items: (SideNavItem | SideNavFold)[];
+}
+interface Props {
+  groups: SideNavGroup[];
+  label?: string;
+  current?: string;
+}
+const { groups, label, current } = Astro.props;
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+const navLabel = label ?? t('nav.section');
+
+const isFold = (i: SideNavItem | SideNavFold): i is SideNavFold => 'items' in i;
+---
+
+<nav class="sidenav doc__rail doc__nav" aria-label={navLabel}>
+  {
+    groups.map((g) => (
+      <div class="sidenav__group">
+        <p class="sidenav__title">{g.title}</p>
+        <ul>
+          {g.items.map((i) =>
+            isFold(i) ? (
+              <li>
+                <details class="sidenav__fold" open={i.items.some((s) => s.href === current)}>
+                  <summary>
+                    <span class="sidenav__chevron" aria-hidden="true">
+                      ▸
+                    </span>
+                    {i.label}
+                    <span class="sidenav__count">{i.items.length}</span>
+                  </summary>
+                  <ul class="sidenav__sub">
+                    {i.items.map((s) => (
+                      <li>
+                        <a
+                          href={s.href}
+                          aria-current={current && s.href === current ? 'page' : undefined}
+                        >
+                          {s.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
+            ) : (
+              <li>
+                <a href={i.href} aria-current={current && i.href === current ? 'page' : undefined}>
+                  {i.label}
+                </a>
+              </li>
+            ),
+          )}
+        </ul>
+      </div>
+    ))
+  }
+</nav>
+
+<style>
+  .sidenav__group {
+    margin-bottom: var(--sp-4);
+  }
+
+  .sidenav__title {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: lowercase;
+    letter-spacing: 0.03em;
+    color: var(--text-subtle);
+    margin: 0 0 var(--sp-2);
+  }
+
+  .sidenav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid var(--border);
+  }
+
+  .sidenav a {
+    display: block;
+    padding: 5px 0 5px var(--sp-3);
+    margin-left: -1px;
+    border-left: 2px solid transparent;
+    color: var(--text-muted);
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .sidenav a:hover {
+    color: var(--text);
+  }
+
+  .sidenav a[aria-current='page'] {
+    color: var(--brand-strong);
+    border-left-color: var(--brand);
+  }
+
+  /* Collapsible series fold: summary styled like a link, chevron rotates when
+     open, count hints how many links hide inside. */
+  .sidenav__fold summary {
+    display: flex;
+    align-items: center;
+    gap: 0.45em;
+    padding: 5px 0 5px var(--sp-3);
+    margin-left: -1px;
+    border-left: 2px solid transparent;
+    color: var(--text-muted);
+    line-height: 1.4;
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+  }
+
+  .sidenav__fold summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .sidenav__fold summary:hover {
+    color: var(--text);
+  }
+
+  .sidenav__chevron {
+    display: inline-block;
+    font-size: 0.75em;
+    color: var(--text-subtle);
+    transition: transform var(--transition);
+  }
+
+  .sidenav__fold[open] > summary .sidenav__chevron {
+    transform: rotate(90deg);
+  }
+
+  .sidenav__count {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-subtle);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0 0.45em;
+    line-height: 1.5;
+  }
+
+  /* Indented sub-list keeps the docs-rail hierarchy readable. */
+  .sidenav__sub {
+    margin-left: var(--sp-3);
+  }
+
+  /* Smooth expand/collapse where supported (progressive enhancement —
+     ::details-content + interpolate-size); instant toggle elsewhere. */
+  .sidenav__fold {
+    interpolate-size: allow-keywords;
+  }
+
+  .sidenav__fold::details-content {
+    block-size: 0;
+    overflow: clip;
+    transition:
+      block-size var(--transition),
+      content-visibility var(--transition) allow-discrete;
+  }
+
+  .sidenav__fold[open]::details-content {
+    block-size: auto;
+  }
+</style>
