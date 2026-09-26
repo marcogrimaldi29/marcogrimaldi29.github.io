@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://github.com/marcogrimaldi29/marcogrimaldi29.github.io/actions/workflows/deploy.yml"><img src="https://img.shields.io/github/actions/workflow/status/marcogrimaldi29/marcogrimaldi29.github.io/deploy.yml?branch=master&style=for-the-badge&label=Deploy&logo=githubpages&logoColor=3fb950&labelColor=0b1422" alt="Deploy to GitHub Pages" /></a>
-  <a href="https://github.com/marcogrimaldi29/marcogrimaldi29.github.io/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/marcogrimaldi29/marcogrimaldi29.github.io/ci.yml?branch=master&style=for-the-badge&label=CI&logo=githubactions&logoColor=2ec5c5&labelColor=0b1422" alt="CI" /></a>
+  <a href="https://github.com/marcogrimaldi29/marcogrimaldi29.github.io/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/marcogrimaldi29/marcogrimaldi29.github.io/ci.yml?style=for-the-badge&label=CI&logo=githubactions&logoColor=2ec5c5&labelColor=0b1422" alt="CI" /></a>
   <a href="https://astro.build/"><img src="https://img.shields.io/badge/Built_with-Astro-4493f8?style=for-the-badge&logo=astro&logoColor=4493f8&labelColor=0b1422" alt="Built with Astro" /></a>
 </p>
 
