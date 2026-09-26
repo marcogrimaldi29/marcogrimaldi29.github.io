@@ -268,9 +268,25 @@ const panelId = 'lang-menu-panel';
     clip-path: none;
   }
 
+  /* Phone: the footer's three link columns share one row, so the stack
+     tightens to match the Connect / Explore rows (see BaseLayout). */
+  @media (width <= 34rem) {
+    .lang__link--stack {
+      gap: 6px;
+      margin-inline-start: -6px;
+      padding: 3px 6px;
+      font-size: 0.75rem;
+    }
+
+    .lang__link--stack .lang__link-code {
+      font-size: 0.66rem;
+    }
+  }
+
   /* ── Small screens: collapse the row into the flag menu ──
      Only when JS can drive the disclosure; without it the plain row stays
-     visible and usable (progressive enhancement). */
+     visible and usable (progressive enhancement). The list rules are scoped
+     to the panel so they never reach the footer stack, which shares `.lang`. */
   @media (width <= 60rem) {
     :root.js .lang .lang__toggle {
       display: inline-flex;
@@ -303,13 +319,13 @@ const panelId = 'lang-menu-panel';
       transform: none;
     }
 
-    :root.js .lang .lang__list {
+    :root.js .lang__panel .lang__list {
       flex-direction: column;
       gap: 2px;
     }
 
     /* Comfortable touch targets, and the language name spelled out. */
-    :root.js .lang .lang__link {
+    :root.js .lang__panel .lang__link {
       min-height: 2.5rem;
       width: 100%;
       padding-inline: var(--sp-3);
@@ -318,7 +334,7 @@ const panelId = 'lang-menu-panel';
       letter-spacing: normal;
     }
 
-    :root.js .lang .lang__link-code {
+    :root.js .lang__panel .lang__link-code {
       min-width: 1.75rem;
       font-family: var(--font-mono);
       font-size: 0.72rem;
@@ -327,11 +343,11 @@ const panelId = 'lang-menu-panel';
       color: var(--text-subtle);
     }
 
-    :root.js .lang .lang__link.is-active .lang__link-code {
+    :root.js .lang__panel .lang__link.is-active .lang__link-code {
       color: var(--brand-strong);
     }
 
-    :root.js .lang .lang__link-name {
+    :root.js .lang__panel .lang__link-name {
       position: static;
       width: auto;
       height: auto;
