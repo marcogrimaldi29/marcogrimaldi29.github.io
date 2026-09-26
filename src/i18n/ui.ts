@@ -70,6 +70,11 @@ export const ui = {
     'footer.builtWith': 'Built with',
     'footer.connect': 'Connect',
     'footer.explore': 'Explore',
+    'footer.support.lead': 'Found this site useful?',
+    'footer.support.body':
+      'Star the repo on GitHub or buy me a coffee — it helps keep the project going.',
+    'footer.support.star': 'Star on GitHub',
+    'footer.support.coffee': 'Buy me a coffee',
   },
   it: {
     'nav.about': 'Chi sono',
@@ -124,6 +129,11 @@ export const ui = {
     'footer.builtWith': 'Realizzato con',
     'footer.connect': 'Connettiti',
     'footer.explore': 'Esplora',
+    'footer.support.lead': 'Ti è stato utile questo sito?',
+    'footer.support.body':
+      'Lascia una stella al repository su GitHub o offrimi un caffè: aiuta a mandare avanti il progetto.',
+    'footer.support.star': 'Stella su GitHub',
+    'footer.support.coffee': 'Offrimi un caffè',
   },
   es: {
     'nav.about': 'Sobre mí',
@@ -178,6 +188,11 @@ export const ui = {
     'footer.builtWith': 'Hecho con',
     'footer.connect': 'Conecta',
     'footer.explore': 'Explora',
+    'footer.support.lead': '¿Te ha resultado útil este sitio?',
+    'footer.support.body':
+      'Dale una estrella al repositorio en GitHub o invítame a un café: ayuda a que el proyecto siga adelante.',
+    'footer.support.star': 'Estrella en GitHub',
+    'footer.support.coffee': 'Invítame a un café',
   },
   de: {
     'nav.about': 'Über mich',
@@ -233,6 +248,11 @@ export const ui = {
     'footer.builtWith': 'Erstellt mit',
     'footer.connect': 'Vernetzen',
     'footer.explore': 'Entdecken',
+    'footer.support.lead': 'War diese Seite hilfreich?',
+    'footer.support.body':
+      'Gib dem Repository einen Stern auf GitHub oder spendier mir einen Kaffee – das hilft, das Projekt am Laufen zu halten.',
+    'footer.support.star': 'Stern auf GitHub',
+    'footer.support.coffee': 'Spendier mir einen Kaffee',
   },
 } as const;
 
