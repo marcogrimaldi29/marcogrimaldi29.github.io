@@ -192,9 +192,12 @@ const {
     color: var(--text-subtle);
     background: var(--surface-2);
     border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .geomap__led {
+    flex-shrink: 0;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -467,6 +470,18 @@ const {
 
   @media (max-width: 30rem) {
     .geomap__sector {
+      display: none;
+    }
+
+    /* Keep the HUD strip on one line on phones: drop the decorative
+       "// SAT-LINK" and tighten the type so the coordinates still fit. */
+    .geomap__chrome {
+      font-size: 0.66rem;
+      letter-spacing: 0.03em;
+    }
+
+    .geomap__slash,
+    .geomap__link {
       display: none;
     }
   }

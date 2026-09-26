@@ -161,10 +161,13 @@ const year = new Date().getFullYear();
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div class="site-footer__col site-footer__col--brand">
-          <div class="site-footer__brand">
-            <Logo size={22} mark />
-            <span>© {year} {profile.name}</span>
-            <p class="site-footer__built">
+          <p class="site-footer__title site-footer__brand">
+            <Logo size={16} mark />
+            <span>© {year}</span>
+          </p>
+          <ul class="site-footer__list">
+            <li class="site-footer__item">{profile.name}</li>
+            <li class="site-footer__item">
               <span>{t('footer.builtWith')}</span>
               <a
                 class="site-footer__astro"
@@ -176,8 +179,8 @@ const year = new Date().getFullYear();
               >
                 <BrandIcon brand="Astro" size={16} />
               </a>
-            </p>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <nav class="site-footer__col" aria-labelledby="footer-connect">
@@ -291,12 +294,16 @@ const year = new Date().getFullYear();
     </script>
 
     <style>
+      /* Near-opaque so nav labels stay legible over scrolled text; the blur
+         only softens what little shows through. Also the size container for
+         the phone wordmark below (cqi = header width, scrollbar excluded). */
       .site-header {
         position: sticky;
         top: 0;
         z-index: 50;
+        container-type: inline-size;
         border-bottom: 1px solid var(--border);
-        background: color-mix(in srgb, var(--bg) 78%, transparent);
+        background: color-mix(in srgb, var(--bg) 94%, transparent);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
       }
@@ -337,13 +344,21 @@ const year = new Date().getFullYear();
         display: none;
       }
 
+      /* The wordmark never gives up width to the nav: when the row runs short
+         the nav/language group wraps instead (desktop) or the wordmark scales
+         down (phones, below). The ellipsis is only a last-resort fallback. */
       .brand {
         display: inline-flex;
+        flex-shrink: 0;
         align-items: center;
         gap: var(--sp-2);
         min-width: 0;
         color: var(--text);
         font-family: var(--font-mono);
+      }
+
+      .brand :global(svg) {
+        flex-shrink: 0;
       }
 
       .brand:hover {
@@ -524,16 +539,23 @@ const year = new Date().getFullYear();
         }
       }
 
-      /* Phone: shave the wordmark slightly and tighten the button group so
-         the full domain still fits beside menu | search | language instead of
-         ellipsing. */
+      /* Phone: the full domain must fit beside menu | search | language. The
+         wordmark scales with the header width — (width − everything else) ÷
+         11.3, the domain's width per px of this mono font — capped at 0.75rem,
+         so it shrinks only on the narrowest screens instead of being cut off. */
       @media (width <= 34rem) {
         .brand {
+          flex-shrink: 1;
           gap: var(--sp-1);
         }
 
+        .brand :global(svg) {
+          width: 26px;
+          height: 26px;
+        }
+
         .brand__text {
-          font-size: 0.75rem;
+          font-size: clamp(0.62rem, calc((100cqi - 240px) / 11.3), 0.75rem);
         }
 
         :root.js .site-header__inner {
@@ -542,6 +564,32 @@ const year = new Date().getFullYear();
 
         :root.js .site-header__end {
           gap: var(--sp-1);
+        }
+      }
+
+      /* Small phones (≤ 384px): buy the wordmark room from the chrome — slimmer
+         gutters, the decorative dividers dropped and 36px buttons. */
+      @media (width <= 24rem) {
+        .site-header__inner {
+          padding-inline: var(--sp-4);
+        }
+
+        :root.js .site-header .brand-divider {
+          display: none;
+        }
+
+        .site-header :global(.nav-menu__toggle),
+        .site-header :global(.search-toggle) {
+          width: 2.25rem;
+          height: 2.25rem;
+        }
+
+        .site-header :global(.lang__toggle) {
+          min-height: 2.25rem;
+        }
+
+        .brand__text {
+          font-size: clamp(0.62rem, calc((100cqi - 204px) / 11.3), 0.75rem);
         }
       }
 
@@ -584,38 +632,35 @@ const year = new Date().getFullYear();
         color: var(--text-subtle);
       }
 
-      /* Logo in the first column; the copyright and the "Built with" line
-         share the second, so both start at the same edge. */
+      /* Brand column reads like the others: a column heading (small logo +
+         "© year") over plain rows (name, "Built with Astro"). */
       .site-footer__brand {
-        display: grid;
-        grid-template-columns: auto 1fr;
+        display: flex;
         align-items: center;
-        gap: var(--sp-1) var(--sp-2);
-        font-family: var(--font-mono);
-        color: var(--text);
+        gap: var(--sp-2);
       }
 
-      .site-footer__built {
-        grid-column: 2;
-        margin: 0;
+      /* Plain-text rows, padded like the link rows so all columns share one
+         vertical rhythm. */
+      .site-footer__item {
         display: flex;
         align-items: center;
         gap: var(--sp-1);
-        font-size: 0.72rem;
-        color: var(--text-subtle);
+        padding-block: var(--sp-1);
       }
 
-      /* Astro logo link — subtle like the caption, brand colour on hover. */
-      .site-footer__astro {
-        display: inline-flex;
+      /* Astro logo link — subtle like the text, brand colour on hover. Scoped
+         under the row so it beats the generic list-link padding/hover. */
+      .site-footer__item .site-footer__astro {
+        margin: 0;
         padding: 2px;
-        border-radius: var(--radius-sm);
         color: var(--text-muted);
         transition: color var(--transition);
       }
 
-      .site-footer__astro:hover {
+      .site-footer__item .site-footer__astro:hover {
         color: var(--brand-strong);
+        background: none;
       }
 
       .site-footer__links,
@@ -662,12 +707,12 @@ const year = new Date().getFullYear();
         }
       }
 
-      /* Phone: below ~34rem four columns can no longer hold their labels
-         without shredding them, so they stack into one. */
+      /* Phone: four columns no longer fit, so they pair up two per row —
+         brand | connect, then explore | language. */
       @media (width <= 34rem) {
         .site-footer__inner {
-          grid-template-columns: minmax(0, 1fr);
-          gap: var(--sp-5);
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: var(--sp-5) var(--sp-4);
         }
       }
     </style>

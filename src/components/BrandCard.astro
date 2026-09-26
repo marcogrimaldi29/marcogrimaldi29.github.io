@@ -23,7 +23,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
     loading="eager"
   />
   <p class="brandcard__name">{profile.name}</p>
-  <p class="brandcard__title">{profile.bio}</p>
+  <p class="brandcard__title">{profile.role}</p>
   <ul class="brandcard__links">
     {
       profile.links.map((l) => (
