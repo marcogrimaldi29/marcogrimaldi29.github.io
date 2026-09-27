@@ -1,11 +1,11 @@
 ---
 /**
- * BrandIcon — inline SVG platform logo. GitHub/Duolingo come from simple-icons;
- * LinkedIn, Microsoft and Google (removed from simple-icons for trademark
- * reasons) are hand-drawn. Decorative by default (aria-hidden) — the parent
+ * BrandIcon — inline SVG platform logo. GitHub/Duolingo/Astro/Buy Me a Coffee
+ * come from simple-icons; LinkedIn, Microsoft and Google (removed from
+ * simple-icons for trademark reasons) are hand-drawn. Decorative by default (aria-hidden) — the parent
  * link/button should provide the accessible name.
  */
-import { siGithub, siDuolingo, siAstro } from 'simple-icons';
+import { siGithub, siDuolingo, siAstro, siBuymeacoffee } from 'simple-icons';
 
 interface Props {
   brand: string;
@@ -17,6 +17,7 @@ const simple: Record<string, { path: string }> = {
   github: siGithub,
   duolingo: siDuolingo,
   astro: siAstro,
+  'buy me a coffee': siBuymeacoffee,
 };
 const icon = simple[b];
 

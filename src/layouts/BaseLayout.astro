@@ -5,6 +5,7 @@
  * var (PUBLIC_UMAMI_WEBSITE_ID), replacing the broken sed step (audit OP-1).
  */
 import '@styles/global.css';
+import { Image } from 'astro:assets';
 import SEO from '@components/SEO.astro';
 import LanguagePicker from '@components/LanguagePicker.astro';
 import PageActions from '@components/PageActions.astro';
@@ -14,6 +15,7 @@ import BrandIcon from '@components/BrandIcon.astro';
 import Logo from '@components/Logo.astro';
 import { profile } from '@data/profile';
 import { mainNav } from '@data/navigation';
+import avatar from '@assets/avatar.png';
 import type { Locale } from '@i18n/ui';
 import { getLocaleFromUrl, useTranslations, localizePath, unlocalizePath } from '@i18n/utils';
 
@@ -161,26 +163,60 @@ const year = new Date().getFullYear();
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div class="site-footer__col site-footer__col--brand">
-          <p class="site-footer__title site-footer__brand">
-            <Logo size={16} mark />
-            <span>© {year}</span>
-          </p>
-          <ul class="site-footer__list">
-            <li class="site-footer__item">{profile.name}</li>
-            <li class="site-footer__item">
-              <span>{t('footer.builtWith')}</span>
+          <div class="footer-id">
+            <Image
+              class="footer-id__avatar"
+              src={avatar}
+              alt=""
+              width={64}
+              height={64}
+              densities={[1, 2]}
+            />
+            <div class="footer-id__meta">
+              <p class="footer-id__pill footer-id__pill--year">
+                <Logo size={14} mark />
+                <span>© {year}</span>
+              </p>
+              <p class="footer-id__name">{profile.name}</p>
+              <p class="footer-id__role">{profile.role}</p>
               <a
-                class="site-footer__astro"
+                class="footer-id__pill footer-id__pill--astro"
                 href="https://astro.build/"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="Astro"
-                title="Astro"
               >
-                <BrandIcon brand="Astro" size={16} />
+                <BrandIcon brand="Astro" size={12} />
+                <span>{t('footer.builtWith')} Astro</span>
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
+
+          <div class="footer-support">
+            <p class="footer-support__text">
+              <span aria-hidden="true">⭐ </span><strong>{t('footer.support.lead')}</strong>{' '}
+              {t('footer.support.body')}
+            </p>
+            <div class="footer-support__actions">
+              <a
+                class="footer-support__btn footer-support__btn--star"
+                href={profile.repo}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <BrandIcon brand="GitHub" size={16} />
+                <span>{t('footer.support.star')}</span>
+              </a>
+              <a
+                class="footer-support__btn footer-support__btn--coffee"
+                href={profile.support}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <BrandIcon brand="Buy Me a Coffee" size={16} />
+                <span>{t('footer.support.coffee')}</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         <nav class="site-footer__col" aria-labelledby="footer-connect">
@@ -605,12 +641,16 @@ const year = new Date().getFullYear();
       }
 
       /* Four columns: identity · social · sections · languages. The brand
-         column is widest; the three link columns size to their content. */
+         column is widest — wide enough for the support buttons side by side;
+         the three link columns share the rest. */
       .site-footer__inner {
         display: grid;
-        grid-template-columns: minmax(14rem, 1.6fr) repeat(3, minmax(7rem, 1fr));
+        grid-template-columns: minmax(18rem, 2fr) repeat(3, minmax(7rem, 1fr));
         gap: var(--sp-5) var(--sp-6);
-        padding-block: var(--sp-6);
+        /* The bottom padding clears the floating theme toggle and page actions
+           (44px buttons, --sp-4 off the viewport edge), so at full scroll they
+           never sit on top of the footer's last row. */
+        padding-block: var(--sp-6) calc(2.75rem + var(--sp-4) * 2);
         font-size: var(--fs-sm);
         color: var(--text-muted);
       }
@@ -632,35 +672,171 @@ const year = new Date().getFullYear();
         color: var(--text-subtle);
       }
 
-      /* Brand column reads like the others: a column heading (small logo +
-         "© year") over plain rows (name, "Built with Astro"). */
-      .site-footer__brand {
+      /* ── Brand column: a maintainer-style identity card ──────────
+         Avatar in a gradient ring beside the name and role, framed by two
+         pills ("© year" above, "Built with Astro" below); then the support
+         callout (star the repo / buy me a coffee). The social links live in
+         Connect, so they are not repeated here. */
+      .site-footer__col--brand {
+        gap: var(--sp-4);
+      }
+
+      .footer-id {
         display: flex;
         align-items: center;
+        gap: var(--sp-4);
+      }
+
+      /* The avatar's own white margin shows as an inner ring once it is cut to
+         a circle; the transparent border lets the brand gradient paint the
+         outer ring. */
+      .footer-id__avatar {
+        flex-shrink: 0;
+        width: 64px;
+        height: 64px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        background: var(--gradient) border-box;
+      }
+
+      .footer-id__meta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 0;
+      }
+
+      /* GitHub-label pills, like the "Maintainer" badge on the study notes. */
+      .footer-id__pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+        padding: 2px 10px 2px 4px;
+        border: 1px solid;
+        border-radius: var(--radius-pill);
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 700;
+        line-height: 1.5;
+        white-space: nowrap;
+      }
+
+      .footer-id__pill--year {
+        margin-bottom: var(--sp-2);
+        border-color: var(--tag-guide-ring);
+        background: var(--tag-guide-bg);
+        color: var(--tag-guide-fg);
+        letter-spacing: 0.08em;
+      }
+
+      /* Neutral, so it credits the framework without competing with the year;
+         the whole pill links to Astro and lights up in the brand blue on hover.
+         The icon sits in its own small disc to balance the logo chip above. */
+      .footer-id__pill--astro {
+        margin-top: var(--sp-2);
+        padding-left: 3px;
+        border-color: var(--border-strong);
+        background: var(--surface-2);
+        color: var(--text-muted);
+        transition:
+          color var(--transition),
+          border-color var(--transition);
+      }
+
+      .footer-id__pill--astro :global(svg) {
+        box-sizing: content-box;
+        padding: 2px;
+        border-radius: 50%;
+        background: var(--surface-3);
+      }
+
+      .footer-id__pill--astro:hover {
+        border-color: var(--brand);
+        color: var(--brand-strong);
+        text-decoration: none;
+      }
+
+      .footer-id__name {
+        margin: 0;
+        color: var(--text);
+        font-size: var(--fs-base);
+        font-weight: 700;
+      }
+
+      .footer-id__role {
+        margin: 0;
+        color: var(--text-muted);
+      }
+
+      /* Warm-tinted callout, echoing the "Star the repo" note on the notes. */
+      .footer-support {
+        padding: var(--sp-3) var(--sp-4);
+        border: 1px solid var(--tag-tool-ring);
+        border-radius: var(--radius-lg);
+        background: var(--tag-tool-bg);
+      }
+
+      .footer-support__text {
+        margin: 0 0 var(--sp-3);
+        line-height: 1.55;
+      }
+
+      .footer-support__text strong {
+        color: var(--text);
+      }
+
+      .footer-support__actions {
+        display: flex;
+        flex-wrap: wrap;
         gap: var(--sp-2);
       }
 
-      /* Plain-text rows, padded like the link rows so all columns share one
-         vertical rhythm. */
-      .site-footer__item {
-        display: flex;
+      .footer-support__btn {
+        display: inline-flex;
         align-items: center;
-        gap: var(--sp-1);
-        padding-block: var(--sp-1);
+        gap: var(--sp-2);
+        min-height: 2.25rem;
+        padding: var(--sp-1) var(--sp-3);
+        border: 1px solid transparent;
+        border-radius: var(--radius);
+        font-weight: 600;
+        transition:
+          background var(--transition),
+          border-color var(--transition),
+          box-shadow var(--transition),
+          transform var(--transition);
       }
 
-      /* Astro logo link — subtle like the text, brand colour on hover. Scoped
-         under the row so it beats the generic list-link padding/hover. */
-      .site-footer__item .site-footer__astro {
-        margin: 0;
-        padding: 2px;
-        color: var(--text-muted);
-        transition: color var(--transition);
+      .footer-support__btn:hover {
+        text-decoration: none;
+        transform: translateY(-1px);
       }
 
-      .site-footer__item .site-footer__astro:hover {
-        color: var(--brand-strong);
-        background: none;
+      .footer-support__btn--star {
+        border-color: var(--border-strong);
+        background: var(--surface-2);
+        color: var(--text);
+      }
+
+      .footer-support__btn--star:hover {
+        border-color: var(--brand);
+        background: var(--surface-3);
+      }
+
+      /* Buy Me a Coffee's own brand colours (yellow + near-black), in both
+         themes, so the button reads as theirs. On hover the contour turns their
+         near-black, as the GitHub button's turns brand blue; the inset ring
+         doubles it so it still shows against the dark callout. */
+      .footer-support__btn--coffee {
+        border-color: #ffdd00;
+        background: #ffdd00;
+        color: #0d0c22;
+      }
+
+      .footer-support__btn--coffee:hover {
+        border-color: #0d0c22;
+        box-shadow: inset 0 0 0 1px #0d0c22;
       }
 
       .site-footer__links,
@@ -697,22 +873,64 @@ const year = new Date().getFullYear();
         color: var(--brand-strong);
       }
 
-      /* Narrow desktop / tablet: keep all four columns on the SAME row — just
-         tighter. Space is bought from the gaps and the column minimums rather
-         than by dropping a column onto a line of its own. */
+      /* Narrow desktop / tablet: the identity card is too rich to squeeze into
+         a quarter of the row, so it takes a full-width band of its own (card
+         and support callout side by side) above the three link columns. */
       @media (width <= 60rem) {
         .site-footer__inner {
-          grid-template-columns: minmax(9rem, 1.3fr) repeat(3, minmax(5.5rem, 1fr));
-          gap: var(--sp-4);
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: var(--sp-5) var(--sp-4);
+        }
+
+        .site-footer__col--brand {
+          grid-column: 1 / -1;
+          flex-flow: row wrap;
+          align-items: center;
+          gap: var(--sp-4) var(--sp-6);
+          padding-bottom: var(--sp-5);
+          border-bottom: 1px solid var(--border);
+        }
+
+        .footer-support {
+          flex: 1 1 20rem;
         }
       }
 
-      /* Phone: four columns no longer fit, so they pair up two per row —
-         brand | connect, then explore | language. */
+      /* Phone: the card stacks again over its full-width band, while the
+         three link columns keep sharing one row — tighter gaps, smaller type
+         and slimmer row padding fit each into a third of the width (~6rem at
+         375px, still whole at 320px) instead of spilling onto a second row.
+         The language stack tightens to match in LanguagePicker. */
       @media (width <= 34rem) {
         .site-footer__inner {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: var(--sp-5) var(--sp-4);
+          gap: var(--sp-5) var(--sp-3);
+        }
+
+        .site-footer__title {
+          font-size: 0.66rem;
+          letter-spacing: 0.06em;
+        }
+
+        .site-footer__links a,
+        .site-footer__list a {
+          gap: 6px;
+          margin-inline-start: -6px;
+          padding: 3px 6px;
+          font-size: 0.75rem;
+        }
+
+        .site-footer__links :global(svg) {
+          width: 16px;
+          height: 16px;
+        }
+
+        .site-footer__col--brand {
+          flex-flow: column nowrap;
+          align-items: stretch;
+        }
+
+        .footer-support {
+          flex: none;
         }
       }
     </style>

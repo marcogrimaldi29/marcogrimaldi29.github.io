@@ -1,14 +1,16 @@
 ---
 /**
  * SupportNote — a polite call-to-action inviting readers who found the content
- * useful to star the related work on GitHub or connect on LinkedIn. The study
- * notes each live in their own repository, so the GitHub link points to the
- * profile (the hub for all of them). Localized from the URL locale; the heading
- * and body adapt to the page via the `kind` prop (notes / reviews / resources).
+ * useful to star the related work on GitHub or connect on LinkedIn, and, if
+ * they'd like to chip in, to buy me a coffee (tips fund the exam fees for the
+ * next certifications to take and review). The study notes each live in their
+ * own repository, so the GitHub link points to the profile (the hub for all of
+ * them). Localized from the URL locale; the heading and body adapt to the page
+ * via the `kind` prop (notes / reviews / resources).
  */
 import { profile } from '@data/profile';
 import BrandIcon from './BrandIcon.astro';
-import { getLocaleFromUrl } from '@i18n/utils';
+import { getLocaleFromUrl, useTranslations } from '@i18n/utils';
 
 interface Props {
   kind?: 'notes' | 'reviews' | 'resources';
@@ -16,6 +18,7 @@ interface Props {
 const { kind = 'notes' } = Astro.props;
 
 const locale = getLocaleFromUrl(Astro.url);
+const ui = useTranslations(locale);
 
 const githubUrl = `https://github.com/${profile.social.github}`;
 const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
@@ -27,6 +30,7 @@ interface Copy {
 interface Locale {
   star: string;
   connect: string;
+  tip: string;
   notes: Copy;
   reviews: Copy;
   resources: Copy;
@@ -36,6 +40,7 @@ const strings: Record<string, Locale> = {
   en: {
     star: 'Star on GitHub',
     connect: 'Connect on LinkedIn',
+    tip: 'And if you’d like to chip in, you can buy me a coffee — tips go toward the exam fees for the next certifications I’ll take and review.',
     notes: {
       heading: 'Did these notes help?',
       body: 'Each set of study notes has its own GitHub repo. If they were useful, leaving a ⭐ means a lot — or connect with me and let’s keep the motivation going.',
@@ -52,6 +57,7 @@ const strings: Record<string, Locale> = {
   it: {
     star: 'Lascia una stella su GitHub',
     connect: 'Connettiti su LinkedIn',
+    tip: 'E se vuoi dare una mano, puoi offrirmi un caffè: i contributi aiutano a coprire i costi d’esame delle prossime certificazioni da sostenere e recensire.',
     notes: {
       heading: 'Questi appunti ti sono stati utili?',
       body: 'Ogni raccolta di appunti ha il suo repository su GitHub. Se ti sono stati utili, lasciare una ⭐ significa molto — oppure connettiti con me e manteniamo viva la motivazione.',
@@ -68,6 +74,7 @@ const strings: Record<string, Locale> = {
   es: {
     star: 'Deja una estrella en GitHub',
     connect: 'Conecta en LinkedIn',
+    tip: 'Y si quieres echar una mano, puedes invitarme a un café: las aportaciones ayudan a cubrir las tasas de examen de las próximas certificaciones que presentaré y reseñaré.',
     notes: {
       heading: '¿Te han resultado útiles estos apuntes?',
       body: 'Cada conjunto de apuntes tiene su propio repositorio en GitHub. Si te han servido, dejar una ⭐ significa mucho — o conecta conmigo y mantengamos viva la motivación.',
@@ -84,6 +91,7 @@ const strings: Record<string, Locale> = {
   de: {
     star: 'Stern auf GitHub geben',
     connect: 'Auf LinkedIn vernetzen',
+    tip: 'Und wenn du etwas beitragen möchtest, kannst du mir einen Kaffee spendieren – damit finanziere ich die Prüfungsgebühren für die nächsten Zertifizierungen, die ich ablegen und hier besprechen werde.',
     notes: {
       heading: 'Haben dir diese Notizen geholfen?',
       body: 'Jede Notizensammlung hat ihr eigenes GitHub-Repository. Wenn sie nützlich waren, bedeutet ein ⭐ viel — oder vernetze dich mit mir, damit die Motivation erhalten bleibt.',
@@ -107,7 +115,7 @@ const t = l[kind];
   <span class="support__icon" aria-hidden="true">⭐</span>
   <div class="support__body">
     <p class="support__heading">{t.heading}</p>
-    <p class="support__text">{t.body}</p>
+    <p class="support__text">{t.body} {l.tip}</p>
     <div class="support__actions">
       <a class="btn support__gh" href={githubUrl} rel="noopener noreferrer" target="_blank">
         <BrandIcon brand="GitHub" size={16} />
@@ -116,6 +124,15 @@ const t = l[kind];
       <a class="btn support__li" href={linkedinUrl} rel="noopener noreferrer" target="_blank">
         <BrandIcon brand="LinkedIn" size={16} />
         {l.connect}
+      </a>
+      <a
+        class="btn support__coffee"
+        href={profile.support}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <BrandIcon brand="Buy Me a Coffee" size={16} />
+        {ui('footer.support.coffee')}
       </a>
     </div>
   </div>
@@ -163,7 +180,8 @@ const t = l[kind];
     gap: var(--sp-3);
   }
 
-  /* Brand-matched buttons: GitHub black, LinkedIn blue. */
+  /* Brand-matched buttons: GitHub black, LinkedIn blue, Buy Me a Coffee
+     yellow (the same colours as the footer's coffee button). */
   .support__gh {
     background: #181717;
     color: #fff;
@@ -183,5 +201,15 @@ const t = l[kind];
   .support__li:hover {
     background: #1275d1;
     border-color: #1275d1;
+  }
+
+  .support__coffee {
+    background: #ffdd00;
+    color: #0d0c22;
+    border-color: #ffdd00;
+  }
+
+  .support__coffee:hover {
+    border-color: #0d0c22;
   }
 </style>
