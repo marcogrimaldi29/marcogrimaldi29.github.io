@@ -93,8 +93,8 @@ searched 🔎 from the header.
 ## 💚 Support
 
 If the notes or reviews helped you, there are a few ways to show it: ⭐ star this repo on GitHub,
-🤝 connect with me on LinkedIn, or ☕ buy me a coffee. Coffee tips go toward the exam fees for new
-certifications, which I then take and review on the site 🏅.
+🤝 connect with me on LinkedIn, or ☕ buy me a coffee. I convert caffeine into notes and reviews at
+a very favourable rate 📈.
 
 <p>
   <a href="https://github.com/marcogrimaldi29/marcogrimaldi29.github.io"><img src="https://img.shields.io/badge/Star_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Star on GitHub" /></a>
