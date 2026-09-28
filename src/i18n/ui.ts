@@ -72,8 +72,9 @@ export const ui = {
     'footer.explore': 'Explore',
     'footer.support.lead': 'Found this site useful?',
     'footer.support.body':
-      'Star the repo on GitHub, or buy me a coffee — tips help fund the exam fees for new certifications I take and review here.',
+      'Starring the repo on GitHub means a lot — or connect with me on LinkedIn and let’s keep the motivation going. And if you’d like to chip in, buy me a coffee: I convert caffeine into notes and reviews at a very favourable rate.',
     'footer.support.star': 'Star on GitHub',
+    'footer.support.connect': 'Connect on LinkedIn',
     'footer.support.coffee': 'Buy me a coffee',
   },
   it: {
@@ -131,8 +132,9 @@ export const ui = {
     'footer.explore': 'Esplora',
     'footer.support.lead': 'Ti è stato utile questo sito?',
     'footer.support.body':
-      'Lascia una stella al repository su GitHub o offrimi un caffè: i contributi aiutano a coprire i costi d’esame delle nuove certificazioni che poi recensisco qui.',
+      'Lasciare una stella al repository su GitHub significa molto — oppure connettiti con me su LinkedIn e manteniamo viva la motivazione. E se vuoi dare una mano, offrimi un caffè: trasformo la caffeina in appunti e recensioni a un tasso di cambio molto conveniente.',
     'footer.support.star': 'Stella su GitHub',
+    'footer.support.connect': 'Connettiti su LinkedIn',
     'footer.support.coffee': 'Offrimi un caffè',
   },
   es: {
@@ -190,8 +192,9 @@ export const ui = {
     'footer.explore': 'Explora',
     'footer.support.lead': '¿Te ha resultado útil este sitio?',
     'footer.support.body':
-      'Dale una estrella al repositorio en GitHub o invítame a un café: las aportaciones ayudan a pagar las tasas de examen de nuevas certificaciones que luego reseño aquí.',
+      'Dar una estrella al repositorio en GitHub significa mucho — o conecta conmigo en LinkedIn y mantengamos viva la motivación. Y si quieres echar una mano, invítame a un café: convierto la cafeína en apuntes y reseñas a un tipo de cambio muy favorable.',
     'footer.support.star': 'Estrella en GitHub',
+    'footer.support.connect': 'Conecta en LinkedIn',
     'footer.support.coffee': 'Invítame a un café',
   },
   de: {
@@ -250,8 +253,9 @@ export const ui = {
     'footer.explore': 'Entdecken',
     'footer.support.lead': 'War diese Seite hilfreich?',
     'footer.support.body':
-      'Gib dem Repository einen Stern auf GitHub oder spendier mir einen Kaffee – damit finanziere ich die Prüfungsgebühren für neue Zertifizierungen, die ich anschließend hier bespreche.',
+      'Ein Stern für das Repository auf GitHub bedeutet viel – oder vernetze dich mit mir auf LinkedIn, damit die Motivation erhalten bleibt. Und wenn du etwas beitragen möchtest, spendier mir einen Kaffee: Ich wandle Koffein zu einem sehr günstigen Kurs in Notizen und Reviews um.',
     'footer.support.star': 'Stern auf GitHub',
+    'footer.support.connect': 'Auf LinkedIn vernetzen',
     'footer.support.coffee': 'Kaffee spendieren',
   },
 } as const;
