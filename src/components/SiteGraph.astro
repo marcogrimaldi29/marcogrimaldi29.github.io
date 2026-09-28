@@ -352,7 +352,7 @@ const views = rootNodes
   </div>
 
   <footer class="sitegraph__telemetry" aria-hidden="true">
-    <span><b>HUB</b> {profile.domain}</span>
+    <span class="sitegraph__hub"><b>HUB</b> {profile.domain}</span>
     <span class="sitegraph__nodes"><b>NODES</b> {nodes.length}</span>
     <span class="sitegraph__caption">click a node to navigate</span>
     <span class="sitegraph__live"><i></i>LIVE</span>
@@ -928,6 +928,29 @@ const views = rootNodes
   }
 
   @media (max-width: 34rem) {
+    /* Keep the telemetry strip on one line on phones — HUB, NODES and LIVE
+       only just fit at 375px, so LIVE wrapped to a second row on narrower
+       screens. Tighter type and gaps fit them from ~350px up; below that the
+       hub domain ellipsis-truncates rather than pushing LIVE down. */
+    .sitegraph__telemetry {
+      flex-wrap: nowrap;
+      gap: var(--sp-3);
+      font-size: 0.66rem;
+      letter-spacing: 0.03em;
+    }
+
+    .sitegraph__hub {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .sitegraph__nodes {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
     .sitegraph__caption {
       display: none;
     }
