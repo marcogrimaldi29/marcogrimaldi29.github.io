@@ -52,6 +52,7 @@ const navItems = [...mainNav].sort((a, b) => t(a.labelKey).localeCompare(t(b.lab
 const activePath = unlocalizePath(Astro.url.pathname);
 const umamiId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
 const year = new Date().getFullYear();
+const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
 ---
 
 <!doctype html>
@@ -205,6 +206,15 @@ const year = new Date().getFullYear();
               >
                 <BrandIcon brand="GitHub" size={16} />
                 <span>{t('footer.support.star')}</span>
+              </a>
+              <a
+                class="footer-support__btn footer-support__btn--linkedin"
+                href={linkedinUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <BrandIcon brand="LinkedIn" size={16} />
+                <span>{t('footer.support.connect')}</span>
               </a>
               <a
                 class="footer-support__btn footer-support__btn--coffee"
@@ -675,8 +685,8 @@ const year = new Date().getFullYear();
       /* ── Brand column: a maintainer-style identity card ──────────
          Avatar in a gradient ring beside the name and role, framed by two
          pills ("© year" above, "Built with Astro" below); then the support
-         callout (star the repo / buy me a coffee). The social links live in
-         Connect, so they are not repeated here. */
+         callout (star the repo / connect on LinkedIn / buy me a coffee). The
+         social links live in Connect, so they are not repeated here. */
       .site-footer__col--brand {
         gap: var(--sp-4);
       }
@@ -792,8 +802,13 @@ const year = new Date().getFullYear();
         gap: var(--sp-2);
       }
 
+      /* Buttons grow to fill their row, so however the three wrap (stacked in
+         the narrow desktop column, 2 + 1 on phones, one row on tablets) the
+         rows end flush instead of ragged. */
       .footer-support__btn {
         display: inline-flex;
+        flex: 1 1 auto;
+        justify-content: center;
         align-items: center;
         gap: var(--sp-2);
         min-height: 2.25rem;
@@ -822,6 +837,19 @@ const year = new Date().getFullYear();
       .footer-support__btn--star:hover {
         border-color: var(--brand);
         background: var(--surface-3);
+      }
+
+      /* LinkedIn's blue in both themes, lightening on hover — the same pair as
+         the LinkedIn button in the SupportNote callouts. */
+      .footer-support__btn--linkedin {
+        border-color: #0a66c2;
+        background: #0a66c2;
+        color: #fff;
+      }
+
+      .footer-support__btn--linkedin:hover {
+        border-color: #1275d1;
+        background: #1275d1;
       }
 
       /* Buy Me a Coffee's own brand colours (yellow + near-black), in both
