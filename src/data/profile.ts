@@ -18,8 +18,8 @@ export const profile = {
     linkedin: 'marco-grimaldi29',
     github: 'marcogrimaldi29',
   },
-  // Support links: the footer card (star this site's repo, or buy me a coffee)
-  // and the SupportNote callouts (buy me a coffee).
+  // Support links: the footer card (star this site's repo, connect on LinkedIn,
+  // or buy me a coffee) and the SupportNote callouts (buy me a coffee).
   repo: 'https://github.com/marcogrimaldi29/marcogrimaldi29.github.io',
   support: 'https://buymeacoffee.com/marcogrimaldi29',
   links: [
