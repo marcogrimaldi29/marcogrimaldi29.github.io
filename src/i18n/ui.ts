@@ -72,7 +72,7 @@ export const ui = {
     'footer.explore': 'Explore',
     'footer.support.lead': 'Found this site useful?',
     'footer.support.body':
-      'Star the repo on GitHub or buy me a coffee — it helps keep the project going.',
+      'Star the repo on GitHub, or buy me a coffee — tips help fund the exam fees for new certifications I take and review here.',
     'footer.support.star': 'Star on GitHub',
     'footer.support.coffee': 'Buy me a coffee',
   },
@@ -131,7 +131,7 @@ export const ui = {
     'footer.explore': 'Esplora',
     'footer.support.lead': 'Ti è stato utile questo sito?',
     'footer.support.body':
-      'Lascia una stella al repository su GitHub o offrimi un caffè: aiuta a mandare avanti il progetto.',
+      'Lascia una stella al repository su GitHub o offrimi un caffè: i contributi aiutano a coprire i costi d’esame delle nuove certificazioni che poi recensisco qui.',
     'footer.support.star': 'Stella su GitHub',
     'footer.support.coffee': 'Offrimi un caffè',
   },
@@ -190,7 +190,7 @@ export const ui = {
     'footer.explore': 'Explora',
     'footer.support.lead': '¿Te ha resultado útil este sitio?',
     'footer.support.body':
-      'Dale una estrella al repositorio en GitHub o invítame a un café: ayuda a que el proyecto siga adelante.',
+      'Dale una estrella al repositorio en GitHub o invítame a un café: las aportaciones ayudan a pagar las tasas de examen de nuevas certificaciones que luego reseño aquí.',
     'footer.support.star': 'Estrella en GitHub',
     'footer.support.coffee': 'Invítame a un café',
   },
@@ -250,9 +250,9 @@ export const ui = {
     'footer.explore': 'Entdecken',
     'footer.support.lead': 'War diese Seite hilfreich?',
     'footer.support.body':
-      'Gib dem Repository einen Stern auf GitHub oder spendier mir einen Kaffee – das hilft, das Projekt am Laufen zu halten.',
+      'Gib dem Repository einen Stern auf GitHub oder spendier mir einen Kaffee – damit finanziere ich die Prüfungsgebühren für neue Zertifizierungen, die ich anschließend hier bespreche.',
     'footer.support.star': 'Stern auf GitHub',
-    'footer.support.coffee': 'Spendier mir einen Kaffee',
+    'footer.support.coffee': 'Kaffee spendieren',
   },
 } as const;
 

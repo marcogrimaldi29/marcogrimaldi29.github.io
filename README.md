@@ -90,6 +90,15 @@ searched 🔎 from the header.
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marco-grimaldi29/)
   — Connect, collaborate, or just say hello
 
+## ☕ Support
+
+If the notes or reviews helped you, you can buy me a coffee ☕. Tips go toward the exam fees for
+new certifications, which I then take and review on the site 🏅.
+
+<p>
+  <a href="https://buymeacoffee.com/marcogrimaldi29"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee" /></a>
+</p>
+
 ## ©️ Copyright
 
 © Marco Grimaldi. All rights reserved. The site's content, design and code are published here for
