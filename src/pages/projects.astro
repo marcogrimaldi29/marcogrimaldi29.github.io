@@ -16,14 +16,16 @@ import { projects } from '@data/landings';
   searchable
   brandRail
 >
-  <h2 class="section-heading" id="projects">projects</h2>
+  <h2 class="section-heading" id="projects">
+    projects
+  </h2>
   <div class="card-grid">
-    {projects.map((c) => <LinkCard {...c} />)}
+    {projects.map((c) => (
+      <LinkCard {...c} />
+    ))}
   </div>
 
-  <WorkInProgress
-    body="This hub is just getting started — more cloud, data, and IT projects are on the way. Check back regularly."
-  />
+  <WorkInProgress body="This hub is just getting started — more cloud, data, and IT projects are on the way. Check back regularly." />
 
   <hr class="see-also-rule" />
   <p class="eyebrow">{'// see also'}</p>

@@ -103,13 +103,19 @@ const t = useTranslations(locale);
       role="listbox"
       aria-label={t('nav.search')}
       data-search-results
-    >
-    </ul>
+    ></ul>
 
     <footer class="search-dialog__foot" aria-hidden="true">
-      <span><kbd>↑</kbd><kbd>↓</kbd> {t('search.keyNavigate')}</span>
-      <span><kbd>↵</kbd> {t('search.keyOpen')}</span>
-      <span><kbd>esc</kbd> {t('search.keyClose')}</span>
+      <span>
+        <kbd>↑</kbd>
+        <kbd>↓</kbd> {t('search.keyNavigate')}
+      </span>
+      <span>
+        <kbd>↵</kbd> {t('search.keyOpen')}
+      </span>
+      <span>
+        <kbd>esc</kbd> {t('search.keyClose')}
+      </span>
     </footer>
   </div>
 </dialog>

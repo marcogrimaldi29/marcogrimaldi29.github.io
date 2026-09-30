@@ -28,32 +28,32 @@ const logos = resolveLogos(org, [org, ...meta, ...points].join(' '));
     <h3 class="cvcard__role">{role}</h3>
     <div class="cvcard__meta">
       <span class="cvcard__org">{org}</span>
-      {
-        /* meta is [location, time-period]; the location pill is greened to
-          set it apart from the gray time pill. */
-      }
-      {meta.map((m, i) => <span class:list={['badge', i === 0 && 'cvcard__loc']}>{m}</span>)}
+      {/* meta is [location, time-period]; the location pill is greened to
+          set it apart from the gray time pill. */}
+      {meta.map((m, i) => (
+        <span class:list={['badge', i === 0 && 'cvcard__loc']}>{m}</span>
+      ))}
     </div>
     <div class="cvcard__logos">
-      {
-        logos.length > 0 ? (
-          logos.map((src) => (
-            <img
-              class:list={['cvcard__logo', src.includes('site-mark') && 'cvcard__logo--mark']}
-              src={src}
-              alt=""
-              aria-hidden="true"
-              loading="lazy"
-            />
-          ))
-        ) : (
-          <span class="cvcard__logo cvcard__logo--empty" aria-hidden="true" />
-        )
-      }
+      {logos.length > 0 ? (
+        logos.map((src) => (
+          <img
+            class:list={['cvcard__logo', src.includes('site-mark') && 'cvcard__logo--mark']}
+            src={src}
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+        ))
+      ) : (
+        <span class="cvcard__logo cvcard__logo--empty" aria-hidden="true" />
+      )}
     </div>
   </div>
   <ul>
-    {points.map((p) => <li>{p}</li>)}
+    {points.map((p) => (
+      <li>{p}</li>
+    ))}
   </ul>
 </article>
 

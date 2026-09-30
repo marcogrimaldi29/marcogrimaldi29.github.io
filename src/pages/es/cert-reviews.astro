@@ -31,14 +31,22 @@ const headings = [
 >
   <SupportNote kind="reviews" />
 
-  <h2 class="section-heading" id="microsoft">microsoft</h2>
+  <h2 class="section-heading" id="microsoft">
+    microsoft
+  </h2>
   <div class="card-grid">
-    {certReviewsMicrosoftEs.map((c) => <LinkCard {...c} />)}
+    {certReviewsMicrosoftEs.map((c) => (
+      <LinkCard {...c} />
+    ))}
   </div>
 
-  <h2 class="section-heading" id="google">google</h2>
+  <h2 class="section-heading" id="google">
+    google
+  </h2>
   <div class="card-grid">
-    {certReviewsGoogleEs.map((c) => <LinkCard {...c} />)}
+    {certReviewsGoogleEs.map((c) => (
+      <LinkCard {...c} />
+    ))}
   </div>
 
   <hr class="see-also-rule" />

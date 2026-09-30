@@ -53,50 +53,42 @@ const altLinkAttrs = altIsExternal ? { target: '_blank', rel: 'noopener noreferr
 <article class:list={['rcard', comingSoon && 'rcard--soon']}>
   <div class="rcard__top">
     <span class:list={['rcard__chip', iconSrc && 'rcard__chip--img']} aria-hidden="true">
-      {
-        iconSrc ? (
-          <img class="rcard__logo" src={iconSrc} alt="" loading="lazy" decoding="async" />
-        ) : (
-          icon
-        )
-      }
+      {iconSrc ? (
+        <img class="rcard__logo" src={iconSrc} alt="" loading="lazy" decoding="async" />
+      ) : (
+        icon
+      )}
     </span>
     {tag && <span class={`badge ${badgeClass}`}>{tag}</span>}
   </div>
   <h3 class="rcard__title">{title}</h3>
   <p class="rcard__desc">{description}</p>
-  {
-    meta.length > 0 && (
-      <div class="rcard__meta">
-        {meta.map((m) => (
-          <span class="badge">{m}</span>
-        ))}
-      </div>
-    )
-  }
+  {meta.length > 0 && (
+    <div class="rcard__meta">
+      {meta.map((m) => (
+        <span class="badge">{m}</span>
+      ))}
+    </div>
+  )}
   <div class="rcard__footer">
-    {
-      comingSoon ? (
-        <span class="rcard__cta rcard__cta--soon">{ctaLabel}</span>
-      ) : (
-        <a class="rcard__cta" href={href} {...linkAttrs}>
-          {ctaLabel}
-        </a>
-      )
-    }
-    {
-      altHref && (
-        <a class="rcard__alt" href={altHref} {...altLinkAttrs}>
-          <span class="rcard__alt-spark" aria-hidden="true">
-            🆕
-          </span>
-          {altLabel}
-          <span class="rcard__alt-arrow" aria-hidden="true">
-            {altIsExternal ? '↗' : '→'}
-          </span>
-        </a>
-      )
-    }
+    {comingSoon ? (
+      <span class="rcard__cta rcard__cta--soon">{ctaLabel}</span>
+    ) : (
+      <a class="rcard__cta" href={href} {...linkAttrs}>
+        {ctaLabel}
+      </a>
+    )}
+    {altHref && (
+      <a class="rcard__alt" href={altHref} {...altLinkAttrs}>
+        <span class="rcard__alt-spark" aria-hidden="true">
+          🆕
+        </span>
+        {altLabel}
+        <span class="rcard__alt-arrow" aria-hidden="true">
+          {altIsExternal ? '↗' : '→'}
+        </span>
+      </a>
+    )}
   </div>
 </article>
 

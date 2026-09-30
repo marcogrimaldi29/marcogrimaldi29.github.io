@@ -80,7 +80,9 @@ const featured = [
     <div class="doc__main">
       <section class="hero">
         <p class="eyebrow">// personal hub</p>
-        <h1 class="hero__title">Hey, I’m <span class="gradient-text">Marco Grimaldi</span></h1>
+        <h1 class="hero__title">
+          Hey, I’m <span class="gradient-text">Marco Grimaldi</span>
+        </h1>
         <p class="hero__lead">
           I advise on cloud architecture and design — translating best practices into
           well-architected, scalable solutions. This site is a continuously growing hub where I
@@ -96,11 +98,11 @@ const featured = [
 
       <h2 class="section-heading">explore</h2>
       <div class="grid grid--quicklinks">
-        {
-          [...quickLinks]
-            .sort((a, b) => a.title.localeCompare(b.title))
-            .map((q) => <QuickLink {...q} />)
-        }
+        {[...quickLinks]
+          .sort((a, b) => a.title.localeCompare(b.title))
+          .map((q) => (
+            <QuickLink {...q} />
+          ))}
       </div>
 
       <h2 class="section-heading">featured</h2>
@@ -113,11 +115,11 @@ const featured = [
           openHint="Click the centre again to open"
         />
         <div class="featured-bento__rail">
-          {
-            [...featured]
-              .sort((a, b) => a.title.localeCompare(b.title))
-              .map((f) => <LinkCard {...f} />)
-          }
+          {[...featured]
+            .sort((a, b) => a.title.localeCompare(b.title))
+            .map((f) => (
+              <LinkCard {...f} />
+            ))}
         </div>
       </div>
 

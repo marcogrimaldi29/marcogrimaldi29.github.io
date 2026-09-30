@@ -86,35 +86,33 @@ const commonsLead = commonsLeads[locale] ?? commonsLeads.en;
 ---
 
 <div class="notice notice--info logo-disclaimer">
-  {
-    note && (
-      <p class="logo-disclaimer__text">
-        <strong>ℹ️ {label}:</strong> {note}
-      </p>
-    )
-  }
-  <p class="logo-disclaimer__text"><strong>ℹ️ {label}:</strong> {text}</p>
-  {
-    variant === 'paths' && (
-      <p class="logo-credits">
-        <strong>©️ {creditLabel}:</strong> {commonsLead}{' '}
-        {attributions.map((a, i) => (
-          <>
-            {i > 0 ? ' · ' : ''}
-            <a href={a.sourceUrl} rel="noopener" target="_blank">
-              {a.holder}
-            </a>{' '}
-            (
-            <a href={a.licenseUrl} rel="noopener" target="_blank">
-              {a.license}
-            </a>
-            )
-          </>
-        ))}
-        .
-      </p>
-    )
-  }
+  {note && (
+    <p class="logo-disclaimer__text">
+      <strong>ℹ️ {label}:</strong> {note}
+    </p>
+  )}
+  <p class="logo-disclaimer__text">
+    <strong>ℹ️ {label}:</strong> {text}
+  </p>
+  {variant === 'paths' && (
+    <p class="logo-credits">
+      <strong>©️ {creditLabel}:</strong> {commonsLead}{' '}
+      {attributions.map((a, i) => (
+        <>
+          {i > 0 ? ' · ' : ''}
+          <a href={a.sourceUrl} rel="noopener" target="_blank">
+            {a.holder}
+          </a>{' '}
+          (
+          <a href={a.licenseUrl} rel="noopener" target="_blank">
+            {a.license}
+          </a>
+          )
+        </>
+      ))}
+      .
+    </p>
+  )}
 </div>
 
 <style>

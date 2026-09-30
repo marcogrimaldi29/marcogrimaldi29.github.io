@@ -21,20 +21,16 @@ const sorted = [...items].sort((a, b) => a.localeCompare(b, locale));
 
 <div class="marquee" aria-label={label}>
   <ul class="marquee__track">
-    {
-      sorted.map((s) => (
-        <li class="marquee__pill">
-          <span class="gradient-text">{s}</span>
-        </li>
-      ))
-    }
-    {
-      sorted.map((s) => (
-        <li class="marquee__pill" aria-hidden="true">
-          <span class="gradient-text">{s}</span>
-        </li>
-      ))
-    }
+    {sorted.map((s) => (
+      <li class="marquee__pill">
+        <span class="gradient-text">{s}</span>
+      </li>
+    ))}
+    {sorted.map((s) => (
+      <li class="marquee__pill" aria-hidden="true">
+        <span class="gradient-text">{s}</span>
+      </li>
+    ))}
   </ul>
 </div>
 

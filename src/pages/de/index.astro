@@ -149,11 +149,11 @@ const featured = [
 
       <h2 class="section-heading">entdecken</h2>
       <div class="grid grid--quicklinks">
-        {
-          [...quickLinks]
-            .sort((a, b) => a.title.localeCompare(b.title))
-            .map(({ enTitle, ...q }) => <QuickLink {...q} />)
-        }
+        {[...quickLinks]
+          .sort((a, b) => a.title.localeCompare(b.title))
+          .map(({ enTitle, ...q }) => (
+            <QuickLink {...q} />
+          ))}
       </div>
 
       <h2 class="section-heading">empfohlen</h2>
@@ -166,11 +166,11 @@ const featured = [
           openHint="Mitte erneut klicken zum Öffnen"
         />
         <div class="featured-bento__rail">
-          {
-            [...featured]
-              .sort((a, b) => a.title.localeCompare(b.title))
-              .map((f) => <LinkCard {...f} />)
-          }
+          {[...featured]
+            .sort((a, b) => a.title.localeCompare(b.title))
+            .map((f) => (
+              <LinkCard {...f} />
+            ))}
         </div>
       </div>
 

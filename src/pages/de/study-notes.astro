@@ -29,14 +29,22 @@ const headings = [
 >
   <SupportNote />
 
-  <h2 class="section-heading" id="lernnotizen">lernnotizen</h2>
+  <h2 class="section-heading" id="lernnotizen">
+    lernnotizen
+  </h2>
   <div class="card-grid">
-    {studyNotesDe.map((c) => <LinkCard {...c} />)}
+    {studyNotesDe.map((c) => (
+      <LinkCard {...c} />
+    ))}
   </div>
 
-  <h2 class="section-heading" id="deep-dives">deep dives</h2>
+  <h2 class="section-heading" id="deep-dives">
+    deep dives
+  </h2>
   <div class="card-grid">
-    {deepDivesDe.map((c) => <LinkCard {...c} />)}
+    {deepDivesDe.map((c) => (
+      <LinkCard {...c} />
+    ))}
   </div>
 
   <hr class="see-also-rule" />

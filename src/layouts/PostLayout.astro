@@ -54,26 +54,21 @@ const cols = [hasNav && 'nav', hasToc && 'toc'].filter(Boolean).join('-') || und
         <h1 class="post__title">{title}</h1>
         <div class="post__meta">
           <span class="badge">
-            {t('post.created')}:{' '}
-            <time datetime={date.toISOString()}>{fmt(date)}</time>
+            {t('post.created')}: <time datetime={date.toISOString()}>{fmt(date)}</time>
           </span>
-          {
-            updated && (
-              <span class="badge">
-                {t('post.updated')}: <time datetime={updated.toISOString()}>{fmt(updated)}</time>
-              </span>
-            )
-          }
+          {updated && (
+            <span class="badge">
+              {t('post.updated')}: <time datetime={updated.toISOString()}>{fmt(updated)}</time>
+            </span>
+          )}
         </div>
-        {
-          tags.length > 0 && (
-            <ul class="post__tags" aria-label="Tags">
-              {tags.map((tag) => (
-                <li class="badge">{tag}</li>
-              ))}
-            </ul>
-          )
-        }
+        {tags.length > 0 && (
+          <ul class="post__tags" aria-label="Tags">
+            {tags.map((tag) => (
+              <li class="badge">{tag}</li>
+            ))}
+          </ul>
+        )}
       </header>
 
       <div class="prose">

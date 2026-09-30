@@ -16,9 +16,13 @@ import { projectsIt } from '@data/landings-it';
   searchable
   brandRail
 >
-  <h2 class="section-heading" id="progetti">progetti</h2>
+  <h2 class="section-heading" id="progetti">
+    progetti
+  </h2>
   <div class="card-grid">
-    {projectsIt.map((c) => <LinkCard {...c} />)}
+    {projectsIt.map((c) => (
+      <LinkCard {...c} />
+    ))}
   </div>
 
   <WorkInProgress
