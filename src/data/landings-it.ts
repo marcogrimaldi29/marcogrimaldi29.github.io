@@ -81,6 +81,12 @@ const review = (title: string, description: string, href: string, meta: string[]
 // ── Appunti di studio ────────────────────────────────────────
 export const studyNotesIt: LandingCard[] = [
   note(
+    'GH-600 Appunti',
+    'Agentic AI Developer — appunti su tutti i domini dell’esame GH-600.',
+    'https://marcogrimaldi29.com/gh-600-study-notes/',
+    ['🎖️ Livello Specialty', '📄 6 Competenze'],
+  ),
+  note(
     'SC-500 Appunti',
     'Cloud and AI Security Engineer Associate — appunti su tutti i domini dell’esame SC-500.',
     'https://marcogrimaldi29.com/sc-500-study-notes/',
