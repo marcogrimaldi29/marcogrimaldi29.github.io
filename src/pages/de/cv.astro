@@ -43,88 +43,105 @@ const headings = [
 >
   <UpdatedBadge slot="hero" date={cvUpdated} />
 
-  <h2 class="section-heading" id="berufserfahrung">💼 berufserfahrung</h2>
+  <h2 class="section-heading" id="berufserfahrung">
+    💼 berufserfahrung
+  </h2>
   <LogoDisclaimer />
-  {experienceDe.map((e) => <TimelineCard {...e} variant="work" />)}
+  {experienceDe.map((e) => (
+    <TimelineCard {...e} variant="work" />
+  ))}
 
-  <h2 class="section-heading" id="ausbildung">🎓 ausbildung</h2>
-  {educationDe.map((e) => <TimelineCard {...e} variant="edu" />)}
+  <h2 class="section-heading" id="ausbildung">
+    🎓 ausbildung
+  </h2>
+  {educationDe.map((e) => (
+    <TimelineCard {...e} variant="edu" />
+  ))}
 
-  <h2 class="section-heading" id="karriere-karte">🗺️ Karriere-Karte</h2>
+  <h2 class="section-heading" id="karriere-karte">
+    🗺️ Karriere-Karte
+  </h2>
   <CareerMap experience={experienceDe} education={educationDe} />
 
-  <h2 class="section-heading" id="zertifizierungen">🏅 zertifizierungen</h2>
-  <LogoDisclaimer
-    note="Die Zertifizierungen sind nach Anbieter und Kompetenzbereich gruppiert. Die Links führen zu den offiziellen Verifizierungsseiten."
-  />
+  <h2 class="section-heading" id="zertifizierungen">
+    🏅 zertifizierungen
+  </h2>
+  <LogoDisclaimer note="Die Zertifizierungen sind nach Anbieter und Kompetenzbereich gruppiert. Die Links führen zu den offiziellen Verifizierungsseiten." />
   <Panel icon="🏆" title="Abzeichen" titleAs="h3" count={`${certBadges.length} Abzeichen`}>
     <CertBadges flush />
   </Panel>
-  {
-    certificationsDe.map((g) => (
-      <Panel icon={g.icon} title={g.title} titleAs="h3" count={`${g.items.length} Zert.`}>
-        <ul class="cert-list">
-          {g.items.map((item) => (
-            <li>
-              {item.logo ? (
-                <img
-                  class="cert-list__logo"
-                  src={item.logo}
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                />
-              ) : g.brand ? (
-                <BrandIcon brand={g.brand} size={15} />
-              ) : (
-                <span class="cert-list__bullet" aria-hidden="true">
-                  🏅
-                </span>
-              )}
-              {item.url ? (
-                <a href={item.url} rel="noopener" target="_blank">
-                  {item.name}
-                </a>
-              ) : (
-                item.name
-              )}
-            </li>
-          ))}
-        </ul>
-      </Panel>
-    ))
-  }
+  {certificationsDe.map((g) => (
+    <Panel icon={g.icon} title={g.title} titleAs="h3" count={`${g.items.length} Zert.`}>
+      <ul class="cert-list">
+        {g.items.map((item) => (
+          <li>
+            {item.logo ? (
+              <img
+                class="cert-list__logo"
+                src={item.logo}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+              />
+            ) : g.brand ? (
+              <BrandIcon brand={g.brand} size={15} />
+            ) : (
+              <span class="cert-list__bullet" aria-hidden="true">
+                🏅
+              </span>
+            )}
+            {item.url ? (
+              <a href={item.url} rel="noopener" target="_blank">
+                {item.name}
+              </a>
+            ) : (
+              item.name
+            )}
+          </li>
+        ))}
+      </ul>
+    </Panel>
+  ))}
 
-  <h2 class="section-heading" id="sprachen">🌍 sprachen</h2>
+  <h2 class="section-heading" id="sprachen">
+    🌍 sprachen
+  </h2>
   <p class="notice notice--info">
     <strong>ℹ️ Hinweis:</strong> Die Niveaus orientieren sich an den Deskriptoren des
     <a
       href="https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions"
       rel="noopener"
-      target="_blank">GER</a
-    >.
+      target="_blank"
+    >
+      GER
+    </a>
+    .
   </p>
   <Panel icon="💬" title="Sprachen" titleAs="h3" count={`${languagesDe.length} Sprachen`}>
-    {languagesDe.map((l) => <SkillBar label={l.name} level={l.level} />)}
+    {languagesDe.map((l) => (
+      <SkillBar label={l.name} level={l.level} />
+    ))}
   </Panel>
 
-  <h2 class="section-heading" id="technische-kompetenzen">🔧 technische kompetenzen</h2>
+  <h2 class="section-heading" id="technische-kompetenzen">
+    🔧 technische kompetenzen
+  </h2>
   <p class="notice notice--info">
-    <strong>ℹ️ Hinweis:</strong> Die Niveaus sind selbst eingeschätzt und können sich im Lauf der Zeit
-    ändern.
+    <strong>ℹ️ Hinweis:</strong> Die Niveaus sind selbst eingeschätzt und können sich im Lauf der
+    Zeit ändern.
   </p>
-  {
-    technicalSkillsDe.map((g) => (
-      <Panel icon={g.icon} title={g.title} titleAs="h3" count={`${g.skills.length} Kompetenzen`}>
-        {g.skills.map((s) => (
-          <SkillBar label={s.name} level={s.level} />
-        ))}
-      </Panel>
-    ))
-  }
+  {technicalSkillsDe.map((g) => (
+    <Panel icon={g.icon} title={g.title} titleAs="h3" count={`${g.skills.length} Kompetenzen`}>
+      {g.skills.map((s) => (
+        <SkillBar label={s.name} level={s.level} />
+      ))}
+    </Panel>
+  ))}
 
-  <h2 class="section-heading" id="soft-skills">💡 soft skills</h2>
+  <h2 class="section-heading" id="soft-skills">
+    💡 soft skills
+  </h2>
   <SkillMarquee items={softSkillsDe} />
 
   <hr class="see-also-rule" />

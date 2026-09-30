@@ -28,37 +28,33 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
 const label = t('toc.onThisPage');
 ---
 
-{
-  show && variant === 'rail' && (
-    <nav class="toc doc__rail doc__toc" aria-label={label}>
-      <p class="toc__title">{label}</p>
-      <ul class="toc__list">
-        {items.map((h) => (
-          <li class:list={['toc__item', `toc__item--d${h.depth}`]}>
-            <a href={`#${h.slug}`} data-toc={h.slug}>
-              {h.text}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  )
-}
+{show && variant === 'rail' && (
+  <nav class="toc doc__rail doc__toc" aria-label={label}>
+    <p class="toc__title">{label}</p>
+    <ul class="toc__list">
+      {items.map((h) => (
+        <li class:list={['toc__item', `toc__item--d${h.depth}`]}>
+          <a href={`#${h.slug}`} data-toc={h.slug}>
+            {h.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
 
-{
-  show && variant === 'inline' && (
-    <details class="toc-inline">
-      <summary class="toc-inline__summary">{label}</summary>
-      <ul class="toc-inline__list">
-        {items.map((h) => (
-          <li class:list={['toc-inline__item', `toc-inline__item--d${h.depth}`]}>
-            <a href={`#${h.slug}`}>{h.text}</a>
-          </li>
-        ))}
-      </ul>
-    </details>
-  )
-}
+{show && variant === 'inline' && (
+  <details class="toc-inline">
+    <summary class="toc-inline__summary">{label}</summary>
+    <ul class="toc-inline__list">
+      {items.map((h) => (
+        <li class:list={['toc-inline__item', `toc-inline__item--d${h.depth}`]}>
+          <a href={`#${h.slug}`}>{h.text}</a>
+        </li>
+      ))}
+    </ul>
+  </details>
+)}
 
 <style>
   .toc__title {

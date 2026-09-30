@@ -38,75 +38,52 @@ const items = locales.map((l) => ({
 const panelId = 'lang-menu-panel';
 ---
 
-{
-  variant === 'menu' ? (
-    <div class="lang">
-      <button
-        type="button"
-        class="lang__toggle"
-        data-disclosure
-        aria-controls={panelId}
-        aria-expanded="false"
-        aria-label={`${t('lang.label')}: ${localeNames[current]}`}
+{variant === 'menu' ? (
+  <div class="lang">
+    <button
+      type="button"
+      class="lang__toggle"
+      data-disclosure
+      aria-controls={panelId}
+      aria-expanded="false"
+      aria-label={`${t('lang.label')}: ${localeNames[current]}`}
+    >
+      <svg
+        class="lang__flag"
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
       >
-        <svg
-          class="lang__flag"
-          viewBox="0 0 24 24"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M5 21V4" />
-          <path d="M5 4h12l-2.2 3.5L17 11H5z" />
-        </svg>
-        <span class="lang__code">{current.toUpperCase()}</span>
-        <svg
-          class="lang__chevron"
-          viewBox="0 0 24 24"
-          width="14"
-          height="14"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="m6 9 6 6 6-6" />
-        </svg>
-      </button>
+        <path d="M5 21V4" />
+        <path d="M5 4h12l-2.2 3.5L17 11H5z" />
+      </svg>
+      <span class="lang__code">{current.toUpperCase()}</span>
+      <svg
+        class="lang__chevron"
+        viewBox="0 0 24 24"
+        width="14"
+        height="14"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="m6 9 6 6 6-6" />
+      </svg>
+    </button>
 
-      {/* Not a <nav>: the toggle button already carries the accessible name,
+    {/* Not a <nav>: the toggle button already carries the accessible name,
           and the footer's "Language" column is the named landmark. */}
-      <div id={panelId} class="lang__panel">
-        <ul class="lang__list">
-          {items.map((i) => (
-            <li>
-              <a
-                href={i.href}
-                hreflang={i.code}
-                lang={i.code}
-                aria-current={i.isCurrent ? 'true' : undefined}
-                class:list={['lang__link', i.isCurrent && 'is-active']}
-              >
-                <span class="lang__link-code">{i.code.toUpperCase()}</span>
-                <span class="lang__link-name">{i.name}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  ) : (
-    /* No <nav> here: the footer column that wraps this is already the labelled
-       landmark, and a second one named "Language" would duplicate it. */
-    <div class="lang lang--stack">
-      <ul class="lang__list lang__list--stack">
+    <div id={panelId} class="lang__panel">
+      <ul class="lang__list">
         {items.map((i) => (
           <li>
             <a
@@ -114,7 +91,7 @@ const panelId = 'lang-menu-panel';
               hreflang={i.code}
               lang={i.code}
               aria-current={i.isCurrent ? 'true' : undefined}
-              class:list={['lang__link', 'lang__link--stack', i.isCurrent && 'is-active']}
+              class:list={['lang__link', i.isCurrent && 'is-active']}
             >
               <span class="lang__link-code">{i.code.toUpperCase()}</span>
               <span class="lang__link-name">{i.name}</span>
@@ -123,8 +100,29 @@ const panelId = 'lang-menu-panel';
         ))}
       </ul>
     </div>
-  )
-}
+  </div>
+) : (
+  /* No <nav> here: the footer column that wraps this is already the labelled
+       landmark, and a second one named "Language" would duplicate it. */
+  <div class="lang lang--stack">
+    <ul class="lang__list lang__list--stack">
+      {items.map((i) => (
+        <li>
+          <a
+            href={i.href}
+            hreflang={i.code}
+            lang={i.code}
+            aria-current={i.isCurrent ? 'true' : undefined}
+            class:list={['lang__link', 'lang__link--stack', i.isCurrent && 'is-active']}
+          >
+            <span class="lang__link-code">{i.code.toUpperCase()}</span>
+            <span class="lang__link-name">{i.name}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
 
 <style>
   .lang {

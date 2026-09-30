@@ -38,7 +38,9 @@ const {
     <span class="geomap__brand">GEO-LOCATOR</span>
     <span class="geomap__slash">//</span>
     <span class="geomap__link">SAT-LINK</span>
-    <span class="geomap__coord">{lat} · {lon}</span>
+    <span class="geomap__coord">
+      {lat} · {lon}
+    </span>
   </header>
 
   <div class="geomap__screen">
@@ -82,9 +84,7 @@ const {
 
       <!-- mainland Spain (Iberian Peninsula), full size -->
       <g class="gm-geo">
-        <path
-          d="M221 63 L383 40 L442 43 L590 86 L501 224 L430 301 L330 328 L230 290 L215 224 L239 132 Z"
-        ></path>
+        <path d="M221 63 L383 40 L442 43 L590 86 L501 224 L430 301 L330 328 L230 290 L215 224 L239 132 Z"></path>
       </g>
 
       <!-- ESPAÑA marker (Madrid) -->
@@ -95,8 +95,12 @@ const {
           <line x1="386" y1="151" x2="386" y2="165"></line>
         </g>
         <circle cx="386" cy="158" r="1.8" class="gm-place-dot"></circle>
-        <text x="400" y="155" class="gm-place-label">{country}</text>
-        <text x="400" y="168" class="gm-place-coord">40.42°N · 3.70°W</text>
+        <text x="400" y="155" class="gm-place-label">
+          {country}
+        </text>
+        <text x="400" y="168" class="gm-place-coord">
+          40.42°N · 3.70°W
+        </text>
       </g>
 
       <!-- Canary Islands inset panel (relocated; islands drawn large) -->
@@ -150,8 +154,12 @@ const {
         <!-- inset frame + title -->
         <rect x="14" y="206" width="191" height="136" rx="5" class="gm-inset-frame"></rect>
         <line x1="14" y1="228" x2="205" y2="228" class="gm-inset-rule"></line>
-        <text x="24" y="222" class="gm-inset-title">{region}</text>
-        <text x="117" y="337" class="gm-label gm-label--inset">GRAN CANARIA</text>
+        <text x="24" y="222" class="gm-inset-title">
+          {region}
+        </text>
+        <text x="117" y="337" class="gm-label gm-label--inset">
+          GRAN CANARIA
+        </text>
       </g>
 
       <rect width="640" height="360" fill="url(#gm-vignette)"></rect>
@@ -160,10 +168,18 @@ const {
   </div>
 
   <footer class="geomap__telemetry" aria-hidden="true">
-    <span><b>LAT</b> {lat}</span>
-    <span><b>LON</b> {lon}</span>
-    <span class="geomap__sector"><b>SECTOR</b> {region}</span>
-    <span class="geomap__live"><i></i>LIVE</span>
+    <span>
+      <b>LAT</b> {lat}
+    </span>
+    <span>
+      <b>LON</b> {lon}
+    </span>
+    <span class="geomap__sector">
+      <b>SECTOR</b> {region}
+    </span>
+    <span class="geomap__live">
+      <i></i>LIVE
+    </span>
   </footer>
 
   <figcaption class="geomap__sr">{caption}</figcaption>

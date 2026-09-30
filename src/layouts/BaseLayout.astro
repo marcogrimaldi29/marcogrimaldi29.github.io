@@ -63,11 +63,9 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
 
-    {
-      /* Apply the saved theme before paint so there's no flash of the wrong
+    {/* Apply the saved theme before paint so there's no flash of the wrong
         theme. Dark is the default (the brand's dark-first identity); only an
-        explicit earlier choice in localStorage switches to light. */
-    }
+        explicit earlier choice in localStorage switches to light. */}
     <script is:inline>
       (function () {
         // Marks that scripting is available, before paint. The collapsed mobile
@@ -85,7 +83,6 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
         }
       })();
     </script>
-
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#0d1117" />
 
@@ -105,20 +102,22 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-    {
-      umamiId && (
-        <script is:inline defer src="https://cloud.umami.is/script.js" data-website-id={umamiId} />
-      )
-    }
+    {umamiId && (
+      <script is:inline defer src="https://cloud.umami.is/script.js" data-website-id={umamiId} />
+    )}
   </head>
   <body>
-    <a class="skip-link" href="#main">{t('skip.toContent')}</a>
+    <a class="skip-link" href="#main">
+      {t('skip.toContent')}
+    </a>
 
     <header class="site-header">
       <div class="container site-header__inner">
         <a class="brand" href={localizePath('/', locale)} aria-label={`${profile.name} — home`}>
           <Logo size={30} mark />
-          <span class="brand__text">marcogrimaldi29<span class="brand__dim">.com</span></span>
+          <span class="brand__text">
+            marcogrimaldi29<span class="brand__dim">.com</span>
+          </span>
         </a>
         <div class="site-header__end">
           <div class="nav-menu">
@@ -138,16 +137,14 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
             </button>
 
             <nav id="site-nav" class="site-header__nav" aria-label="Primary">
-              {
-                navItems.map((item) => (
-                  <a
-                    href={localizePath(item.path, locale)}
-                    aria-current={activePath === item.path ? 'page' : undefined}
-                  >
-                    {t(item.labelKey).toLowerCase().replace(/\s+/g, '-')}
-                  </a>
-                ))
-              }
+              {navItems.map((item) => (
+                <a
+                  href={localizePath(item.path, locale)}
+                  aria-current={activePath === item.path ? 'page' : undefined}
+                >
+                  {t(item.labelKey).toLowerCase().replace(/\s+/g, '-')}
+                </a>
+              ))}
             </nav>
           </div>
           <span class="brand-divider brand-divider--menu" aria-hidden="true"></span>
@@ -195,8 +192,8 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
 
           <div class="footer-support">
             <p class="footer-support__text">
-              <span aria-hidden="true">⭐ </span><strong>{t('footer.support.lead')}</strong>{' '}
-              {t('footer.support.body')}
+              <span aria-hidden="true">⭐ </span>
+              <strong>{t('footer.support.lead')}</strong> {t('footer.support.body')}
             </p>
             <div class="footer-support__actions">
               <a
@@ -231,41 +228,43 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
         </div>
 
         <nav class="site-footer__col" aria-labelledby="footer-connect">
-          <h2 class="site-footer__title" id="footer-connect">{t('footer.connect')}</h2>
+          <h2 class="site-footer__title" id="footer-connect">
+            {t('footer.connect')}
+          </h2>
           <ul class="site-footer__links">
-            {
-              profile.links.map((l) => (
-                <li>
-                  <a href={l.url} rel="noopener noreferrer" target="_blank">
-                    <BrandIcon brand={l.label} size={18} />
-                    <span>{l.label}</span>
-                  </a>
-                </li>
-              ))
-            }
+            {profile.links.map((l) => (
+              <li>
+                <a href={l.url} rel="noopener noreferrer" target="_blank">
+                  <BrandIcon brand={l.label} size={18} />
+                  <span>{l.label}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 
         <nav class="site-footer__col" aria-labelledby="footer-explore">
-          <h2 class="site-footer__title" id="footer-explore">{t('footer.explore')}</h2>
+          <h2 class="site-footer__title" id="footer-explore">
+            {t('footer.explore')}
+          </h2>
           <ul class="site-footer__list">
-            {
-              navItems.map((item) => (
-                <li>
-                  <a
-                    href={localizePath(item.path, locale)}
-                    aria-current={activePath === item.path ? 'page' : undefined}
-                  >
-                    {t(item.labelKey)}
-                  </a>
-                </li>
-              ))
-            }
+            {navItems.map((item) => (
+              <li>
+                <a
+                  href={localizePath(item.path, locale)}
+                  aria-current={activePath === item.path ? 'page' : undefined}
+                >
+                  {t(item.labelKey)}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 
         <nav class="site-footer__col" aria-labelledby="footer-language">
-          <h2 class="site-footer__title" id="footer-language">{t('lang.label')}</h2>
+          <h2 class="site-footer__title" id="footer-language">
+            {t('lang.label')}
+          </h2>
           <LanguagePicker current={locale} variant="stack" />
         </nav>
       </div>
@@ -339,7 +338,6 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
         wide.addEventListener('change', (e) => e.matches && closeAll());
       }
     </script>
-
     <style>
       /* Near-opaque so nav labels stay legible over scrolled text; the blur
          only softens what little shows through. Also the size container for

@@ -33,48 +33,46 @@ const isFold = (i: SideNavItem | SideNavFold): i is SideNavFold => 'items' in i;
 ---
 
 <nav class="sidenav doc__rail doc__nav" aria-label={navLabel}>
-  {
-    groups.map((g) => (
-      <div class="sidenav__group">
-        <p class="sidenav__title">{g.title}</p>
-        <ul>
-          {g.items.map((i) =>
-            isFold(i) ? (
-              <li>
-                <details class="sidenav__fold" open={i.items.some((s) => s.href === current)}>
-                  <summary>
-                    <span class="sidenav__chevron" aria-hidden="true">
-                      ▸
-                    </span>
-                    {i.label}
-                    <span class="sidenav__count">{i.items.length}</span>
-                  </summary>
-                  <ul class="sidenav__sub">
-                    {i.items.map((s) => (
-                      <li>
-                        <a
-                          href={s.href}
-                          aria-current={current && s.href === current ? 'page' : undefined}
-                        >
-                          {s.label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              </li>
-            ) : (
-              <li>
-                <a href={i.href} aria-current={current && i.href === current ? 'page' : undefined}>
+  {groups.map((g) => (
+    <div class="sidenav__group">
+      <p class="sidenav__title">{g.title}</p>
+      <ul>
+        {g.items.map((i) =>
+          isFold(i) ? (
+            <li>
+              <details class="sidenav__fold" open={i.items.some((s) => s.href === current)}>
+                <summary>
+                  <span class="sidenav__chevron" aria-hidden="true">
+                    ▸
+                  </span>
                   {i.label}
-                </a>
-              </li>
-            ),
-          )}
-        </ul>
-      </div>
-    ))
-  }
+                  <span class="sidenav__count">{i.items.length}</span>
+                </summary>
+                <ul class="sidenav__sub">
+                  {i.items.map((s) => (
+                    <li>
+                      <a
+                        href={s.href}
+                        aria-current={current && s.href === current ? 'page' : undefined}
+                      >
+                        {s.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
+          ) : (
+            <li>
+              <a href={i.href} aria-current={current && i.href === current ? 'page' : undefined}>
+                {i.label}
+              </a>
+            </li>
+          ),
+        )}
+      </ul>
+    </div>
+  ))}
 </nav>
 
 <style>

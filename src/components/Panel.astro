@@ -16,19 +16,17 @@ const TitleTag = titleAs;
 ---
 
 <section class="panel">
-  {
-    hasHeader && (
-      <div class="panel__header">
-        {icon && (
-          <span class="panel__icon" aria-hidden="true">
-            {icon}
-          </span>
-        )}
-        <TitleTag class="panel__title">{title}</TitleTag>
-        {count !== undefined && <span class="badge badge--cert">{count}</span>}
-      </div>
-    )
-  }
+  {hasHeader && (
+    <div class="panel__header">
+      {icon && (
+        <span class="panel__icon" aria-hidden="true">
+          {icon}
+        </span>
+      )}
+      <TitleTag class="panel__title">{title}</TitleTag>
+      {count !== undefined && <span class="badge badge--cert">{count}</span>}
+    </div>
+  )}
   <div class="panel__body">
     <slot />
   </div>

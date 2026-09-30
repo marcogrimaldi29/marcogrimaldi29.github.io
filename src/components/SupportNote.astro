@@ -112,10 +112,14 @@ const t = l[kind];
 ---
 
 <aside class="support">
-  <span class="support__icon" aria-hidden="true">⭐</span>
+  <span class="support__icon" aria-hidden="true">
+    ⭐
+  </span>
   <div class="support__body">
     <p class="support__heading">{t.heading}</p>
-    <p class="support__text">{t.body} {l.tip}</p>
+    <p class="support__text">
+      {t.body} {l.tip}
+    </p>
     <div class="support__actions">
       <a class="btn support__gh" href={githubUrl} rel="noopener noreferrer" target="_blank">
         <BrandIcon brand="GitHub" size={16} />

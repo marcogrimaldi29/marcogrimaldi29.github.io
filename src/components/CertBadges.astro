@@ -15,38 +15,36 @@ const { flush = false } = Astro.props;
 ---
 
 <ul class:list={['cert-badges', { 'cert-badges--flush': flush }]} aria-label="Certifications">
-  {
-    certBadges.map(({ code, name, url }) => {
-      const img = (
-        <img
-          class="cert-badges__img"
-          src={`/badges/${code}-badge.png`}
-          alt={`${name} certification badge`}
-          width="60"
-          height="60"
-          loading="lazy"
-          decoding="async"
-        />
-      );
-      return (
-        <li class="cert-badges__item">
-          {url ? (
-            <a
-              class="cert-badges__link"
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              title={`Verify ${name}`}
-            >
-              {img}
-            </a>
-          ) : (
-            img
-          )}
-        </li>
-      );
-    })
-  }
+  {certBadges.map(({ code, name, url }) => {
+    const img = (
+      <img
+        class="cert-badges__img"
+        src={`/badges/${code}-badge.png`}
+        alt={`${name} certification badge`}
+        width="60"
+        height="60"
+        loading="lazy"
+        decoding="async"
+      />
+    );
+    return (
+      <li class="cert-badges__item">
+        {url ? (
+          <a
+            class="cert-badges__link"
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={`Verify ${name}`}
+          >
+            {img}
+          </a>
+        ) : (
+          img
+        )}
+      </li>
+    );
+  })}
 </ul>
 
 <style>

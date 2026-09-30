@@ -58,13 +58,11 @@ const cols =
     {hasNav && <SideNav groups={navGroups!} current={Astro.url.pathname} />}
     {hasBrand && <BrandCard />}
     <div class="doc__main" data-pagefind-body={searchable ? '' : undefined}>
-      {
-        heading && (
-          <PageHero title={heading} eyebrow={eyebrow} lead={lead}>
-            <slot name="hero" />
-          </PageHero>
-        )
-      }
+      {heading && (
+        <PageHero title={heading} eyebrow={eyebrow} lead={lead}>
+          <slot name="hero" />
+        </PageHero>
+      )}
       {/* In-page quick view: visible only when the right rail is hidden (narrow). */}
       {hasToc && <TableOfContents headings={headings} variant="inline" />}
       <slot />

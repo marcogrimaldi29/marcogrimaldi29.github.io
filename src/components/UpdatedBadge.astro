@@ -22,8 +22,7 @@ const fmt = date.toLocaleDateString(dateLocale, {
 
 <p class="updated-badge">
   <span class="badge">
-    {t('post.updated')}:{' '}
-    <time datetime={date.toISOString()}>{fmt}</time>
+    {t('post.updated')}: <time datetime={date.toISOString()}>{fmt}</time>
   </span>
 </p>
 

@@ -170,11 +170,9 @@ const views = rootNodes
         <g class="sg-scene">
           <g class="sg-edges">
             <polygon class="sg-ring" points={rootRing}></polygon>
-            {
-              rootNodes.map((p) => (
-                <line class="sg-edge" data-i={p.i} x1={cx} y1={cy} x2={p.x} y2={p.y} />
-              ))
-            }
+            {rootNodes.map((p) => (
+              <line class="sg-edge" data-i={p.i} x1={cx} y1={cy} x2={p.x} y2={p.y} />
+            ))}
           </g>
           <g class="sg-nodes">
             <a href={center.href} class="sg-link sg-link--hub" aria-label={center.label}>
@@ -185,177 +183,173 @@ const views = rootNodes
                   class="sg-node__icon sg-node__icon--hub"
                   x={cx}
                   y={cy + 1}
-                  text-anchor="middle">{center.icon ?? '🏠'}</text
+                  text-anchor="middle"
                 >
+                  {center.icon ?? '🏠'}
+                </text>
                 <text
                   class="sg-node__label sg-node__label--hub"
                   x={cx}
                   y={cy + 58}
-                  text-anchor="middle">{center.label}</text
+                  text-anchor="middle"
                 >
+                  {center.label}
+                </text>
               </g>
             </a>
-            {
-              rootNodes.map((p) => {
-                const expandable = p.children && p.children.length > 0;
-                return (
-                  <a
-                    href={p.href}
-                    class:list={['sg-link', expandable && 'sg-link--branch']}
-                    aria-label={expandable ? `${p.label} — expand` : p.label}
-                    data-expand={expandable ? `cat-${p.i}` : undefined}
+            {rootNodes.map((p) => {
+              const expandable = p.children && p.children.length > 0;
+              return (
+                <a
+                  href={p.href}
+                  class:list={['sg-link', expandable && 'sg-link--branch']}
+                  aria-label={expandable ? `${p.label} — expand` : p.label}
+                  data-expand={expandable ? `cat-${p.i}` : undefined}
+                >
+                  <g
+                    class="sg-node"
+                    data-i={p.i}
+                    data-bx={p.x}
+                    data-by={p.y}
+                    data-phase={p.phase}
+                    data-amp={p.amp}
                   >
-                    <g
-                      class="sg-node"
-                      data-i={p.i}
-                      data-bx={p.x}
-                      data-by={p.y}
-                      data-phase={p.phase}
-                      data-amp={p.amp}
-                    >
-                      <circle class="sg-node__halo" cx={p.x} cy={p.y} r="34" />
-                      <circle class="sg-node__chip" cx={p.x} cy={p.y} r="26" />
-                      <text class="sg-node__icon" x={p.x} y={p.y + 1} text-anchor="middle">
-                        {p.icon}
+                    <circle class="sg-node__halo" cx={p.x} cy={p.y} r="34" />
+                    <circle class="sg-node__chip" cx={p.x} cy={p.y} r="26" />
+                    <text class="sg-node__icon" x={p.x} y={p.y + 1} text-anchor="middle">
+                      {p.icon}
+                    </text>
+                    <text class="sg-node__label" x={p.x} y={p.y + 46} text-anchor="middle">
+                      {p.label}
+                    </text>
+                    {expandable && (
+                      <circle class="sg-node__badge" cx={p.x + 19} cy={p.y - 19} r="8" />
+                    )}
+                    {expandable && (
+                      <text
+                        class="sg-node__badge-txt"
+                        x={p.x + 19}
+                        y={p.y - 18}
+                        text-anchor="middle"
+                      >
+                        {p.children!.length}
                       </text>
-                      <text class="sg-node__label" x={p.x} y={p.y + 46} text-anchor="middle">
-                        {p.label}
-                      </text>
-                      {expandable && (
-                        <circle class="sg-node__badge" cx={p.x + 19} cy={p.y - 19} r="8" />
-                      )}
-                      {expandable && (
-                        <text
-                          class="sg-node__badge-txt"
-                          x={p.x + 19}
-                          y={p.y - 18}
-                          text-anchor="middle"
-                        >
-                          {p.children!.length}
-                        </text>
-                      )}
-                    </g>
-                  </a>
-                );
-              })
-            }
+                    )}
+                  </g>
+                </a>
+              );
+            })}
           </g>
         </g>
       </g>
 
       {/* ── Focused views (one per landing hub) ───────────────── */}
-      {
-        views.map((v) => {
-          return (
-            <g class="sg-view sg-view--off" data-view={v.name}>
-              <g class="sg-scene">
-                <g class="sg-edges">
-                  {v.ringPts && <polygon class="sg-ring" points={v.ringPts} />}
-                  {v.children.map((c) => (
-                    <line class="sg-edge" data-i={c.i} x1={cx} y1={cy} x2={c.x} y2={c.y} />
-                  ))}
-                </g>
-                <g class="sg-nodes">
-                  {/* focused hub → plain link, second click opens the page */}
+      {views.map((v) => {
+        return (
+          <g class="sg-view sg-view--off" data-view={v.name}>
+            <g class="sg-scene">
+              <g class="sg-edges">
+                {v.ringPts && <polygon class="sg-ring" points={v.ringPts} />}
+                {v.children.map((c) => (
+                  <line class="sg-edge" data-i={c.i} x1={cx} y1={cy} x2={c.x} y2={c.y} />
+                ))}
+              </g>
+              <g class="sg-nodes">
+                {/* focused hub → plain link, second click opens the page */}
+                <a
+                  href={v.hub.href}
+                  class="sg-link sg-link--hub"
+                  aria-label={`${v.hub.label} — open`}
+                >
+                  <g class="sg-node sg-node--hub" data-hub data-bx={cx} data-by={cy}>
+                    <circle class="sg-node__halo" cx={cx} cy={cy} r="44" />
+                    <circle class="sg-node__chip sg-node__chip--hub" cx={cx} cy={cy} r="34" />
+                    <text
+                      class="sg-node__icon sg-node__icon--hub"
+                      x={cx}
+                      y={cy + 1}
+                      text-anchor="middle"
+                    >
+                      {v.hub.icon}
+                    </text>
+                    <text
+                      class="sg-node__label sg-node__label--hub"
+                      x={cx}
+                      y={cy + 58}
+                      text-anchor="middle"
+                    >
+                      {v.hub.label}
+                    </text>
+                  </g>
+                </a>
+                {v.children.map((c) => (
                   <a
-                    href={v.hub.href}
-                    class="sg-link sg-link--hub"
-                    aria-label={`${v.hub.label} — open`}
+                    href={c.href}
+                    class="sg-link sg-link--child"
+                    aria-label={c.full}
+                    data-full={c.full}
                   >
-                    <g class="sg-node sg-node--hub" data-hub data-bx={cx} data-by={cy}>
-                      <circle class="sg-node__halo" cx={cx} cy={cy} r="44" />
-                      <circle class="sg-node__chip sg-node__chip--hub" cx={cx} cy={cy} r="34" />
+                    <g
+                      class="sg-node sg-node--child"
+                      data-i={c.i}
+                      data-bx={c.x}
+                      data-by={c.y}
+                      data-phase={c.phase}
+                      data-amp={c.amp}
+                    >
+                      <title>{c.full}</title>
+                      <circle class="sg-node__halo sg-node__halo--child" cx={c.x} cy={c.y} r="26" />
+                      <circle class="sg-node__chip sg-node__chip--child" cx={c.x} cy={c.y} r="19" />
                       <text
-                        class="sg-node__icon sg-node__icon--hub"
-                        x={cx}
-                        y={cy + 1}
+                        class="sg-node__icon sg-node__icon--child"
+                        x={c.x}
+                        y={c.y + 1}
                         text-anchor="middle"
                       >
-                        {v.hub.icon}
+                        {c.icon}
                       </text>
                       <text
-                        class="sg-node__label sg-node__label--hub"
-                        x={cx}
-                        y={cy + 58}
+                        class="sg-node__label sg-node__label--child"
+                        x={c.x}
+                        y={c.y + 34}
                         text-anchor="middle"
                       >
-                        {v.hub.label}
+                        {c.label}
                       </text>
                     </g>
                   </a>
-                  {v.children.map((c) => (
-                    <a
-                      href={c.href}
-                      class="sg-link sg-link--child"
-                      aria-label={c.full}
-                      data-full={c.full}
-                    >
-                      <g
-                        class="sg-node sg-node--child"
-                        data-i={c.i}
-                        data-bx={c.x}
-                        data-by={c.y}
-                        data-phase={c.phase}
-                        data-amp={c.amp}
-                      >
-                        <title>{c.full}</title>
-                        <circle
-                          class="sg-node__halo sg-node__halo--child"
-                          cx={c.x}
-                          cy={c.y}
-                          r="26"
-                        />
-                        <circle
-                          class="sg-node__chip sg-node__chip--child"
-                          cx={c.x}
-                          cy={c.y}
-                          r="19"
-                        />
-                        <text
-                          class="sg-node__icon sg-node__icon--child"
-                          x={c.x}
-                          y={c.y + 1}
-                          text-anchor="middle"
-                        >
-                          {c.icon}
-                        </text>
-                        <text
-                          class="sg-node__label sg-node__label--child"
-                          x={c.x}
-                          y={c.y + 34}
-                          text-anchor="middle"
-                        >
-                          {c.label}
-                        </text>
-                      </g>
-                    </a>
-                  ))}
-                </g>
+                ))}
               </g>
-
-              {/* Back control (top-left) — a real link to home (graceful no-JS
-                  fallback), intercepted by the script to return to the root view. */}
-              <a class="sg-back" href={center.href} data-back="root" aria-label={backLabel}>
-                <rect class="sg-back__chip" x="20" y="18" width="96" height="30" rx="15" />
-                <text class="sg-back__label" x="68" y="33" text-anchor="middle">
-                  <tspan class="sg-back__arrow">←</tspan>
-                  <tspan dx="6">{backLabel}</tspan>
-                </text>
-              </a>
             </g>
-          );
-        })
-      }
+
+            {/* Back control (top-left) — a real link to home (graceful no-JS
+                  fallback), intercepted by the script to return to the root view. */}
+            <a class="sg-back" href={center.href} data-back="root" aria-label={backLabel}>
+              <rect class="sg-back__chip" x="20" y="18" width="96" height="30" rx="15" />
+              <text class="sg-back__label" x="68" y="33" text-anchor="middle">
+                <tspan class="sg-back__arrow">←</tspan>
+                <tspan dx="6">{backLabel}</tspan>
+              </text>
+            </a>
+          </g>
+        );
+      })}
 
       <rect width="800" height="484" fill="url(#sg-vignette)" pointer-events="none"></rect>
     </svg>
   </div>
 
   <footer class="sitegraph__telemetry" aria-hidden="true">
-    <span class="sitegraph__hub"><b>HUB</b> {profile.domain}</span>
-    <span class="sitegraph__nodes"><b>NODES</b> {nodes.length}</span>
+    <span class="sitegraph__hub">
+      <b>HUB</b> {profile.domain}
+    </span>
+    <span class="sitegraph__nodes">
+      <b>NODES</b> {nodes.length}
+    </span>
     <span class="sitegraph__caption">click a node to navigate</span>
-    <span class="sitegraph__live"><i></i>LIVE</span>
+    <span class="sitegraph__live">
+      <i></i>LIVE
+    </span>
   </footer>
 </nav>
 

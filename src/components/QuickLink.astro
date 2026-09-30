@@ -20,7 +20,9 @@ const { title, subtitle, icon = '🔗', brand, href } = Astro.props;
     <strong>{title}</strong>
     {subtitle && <small>{subtitle}</small>}
   </span>
-  <span class="quicklink__arrow" aria-hidden="true">→</span>
+  <span class="quicklink__arrow" aria-hidden="true">
+    →
+  </span>
 </a>
 
 <style>

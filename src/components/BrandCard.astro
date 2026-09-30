@@ -25,16 +25,14 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
   <p class="brandcard__name">{profile.name}</p>
   <p class="brandcard__title">{profile.role}</p>
   <ul class="brandcard__links">
-    {
-      profile.links.map((l) => (
-        <li>
-          <a href={l.url} rel="noopener noreferrer" target="_blank">
-            <BrandIcon brand={l.label} />
-            <span>{l.label}</span>
-          </a>
-        </li>
-      ))
-    }
+    {profile.links.map((l) => (
+      <li>
+        <a href={l.url} rel="noopener noreferrer" target="_blank">
+          <BrandIcon brand={l.label} />
+          <span>{l.label}</span>
+        </a>
+      </li>
+    ))}
   </ul>
 </aside>
 

@@ -25,9 +25,13 @@ const navGroups = [
 >
   <SupportNote kind="resources" />
 
-  <h2 class="section-heading" id="raccolte">raccolte</h2>
+  <h2 class="section-heading" id="raccolte">
+    raccolte
+  </h2>
   <div class="card-grid">
-    {resourceCollectionsIt.map((c) => <LinkCard {...c} />)}
+    {resourceCollectionsIt.map((c) => (
+      <LinkCard {...c} />
+    ))}
   </div>
 
   <hr class="see-also-rule" />

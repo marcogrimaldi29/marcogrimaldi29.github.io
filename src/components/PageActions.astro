@@ -15,31 +15,29 @@ const isHome = unlocalizePath(Astro.url.pathname) === '/';
 ---
 
 <div class="page-actions" data-page-actions>
-  {
-    !isHome && (
-      <a
-        class="page-actions__btn"
-        href={homeHref}
-        aria-label={t('action.home')}
-        title={t('action.home')}
+  {!isHome && (
+    <a
+      class="page-actions__btn"
+      href={homeHref}
+      aria-label={t('action.home')}
+      title={t('action.home')}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        width="20"
+        height="20"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
       >
-        <svg
-          viewBox="0 0 24 24"
-          width="20"
-          height="20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="m3 10.5 9-7.5 9 7.5" />
-          <path d="M5 9.5V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5" />
-        </svg>
-      </a>
-    )
-  }
+        <path d="m3 10.5 9-7.5 9 7.5" />
+        <path d="M5 9.5V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5" />
+      </svg>
+    </a>
+  )}
   {/* Revealed by the script only when the previous page is on this site. */}
   <a
     class="page-actions__btn"

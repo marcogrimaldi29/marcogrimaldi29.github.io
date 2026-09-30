@@ -42,7 +42,9 @@ const channels = [
 >
   <LogoDisclaimer variant="plain" />
   <div class="card-grid channels">
-    {channels.map((c) => <QuickLink {...c} />)}
+    {channels.map((c) => (
+      <QuickLink {...c} />
+    ))}
   </div>
 </PageLayout>
 
