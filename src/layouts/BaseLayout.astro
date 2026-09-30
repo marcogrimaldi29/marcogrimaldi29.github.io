@@ -52,6 +52,7 @@ const navItems = [...mainNav].sort((a, b) => t(a.labelKey).localeCompare(t(b.lab
 const activePath = unlocalizePath(Astro.url.pathname);
 const umamiId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
 const year = new Date().getFullYear();
+const githubUrl = `https://github.com/${profile.social.github}`;
 const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
 ---
 
@@ -199,13 +200,13 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
             </p>
             <div class="footer-support__actions">
               <a
-                class="footer-support__btn footer-support__btn--star"
-                href={profile.repo}
+                class="footer-support__btn footer-support__btn--github"
+                href={githubUrl}
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <BrandIcon brand="GitHub" size={16} />
-                <span>{t('footer.support.star')}</span>
+                <span>{t('footer.support.follow')}</span>
               </a>
               <a
                 class="footer-support__btn footer-support__btn--linkedin"
@@ -685,7 +686,7 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
       /* ── Brand column: a maintainer-style identity card ──────────
          Avatar in a gradient ring beside the name and role, framed by two
          pills ("© year" above, "Built with Astro" below); then the support
-         callout (star the repo / connect on LinkedIn / support with a coffee). The
+         callout (follow on GitHub / connect on LinkedIn / support with a coffee). The
          social links live in Connect, so they are not repeated here. */
       .site-footer__col--brand {
         gap: var(--sp-4);
@@ -828,13 +829,13 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
         transform: translateY(-1px);
       }
 
-      .footer-support__btn--star {
+      .footer-support__btn--github {
         border-color: var(--border-strong);
         background: var(--surface-2);
         color: var(--text);
       }
 
-      .footer-support__btn--star:hover {
+      .footer-support__btn--github:hover {
         border-color: var(--brand);
         background: var(--surface-3);
       }

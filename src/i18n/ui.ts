@@ -72,8 +72,8 @@ export const ui = {
     'footer.explore': 'Explore',
     'footer.support.lead': 'Found this site useful?',
     'footer.support.body':
-      'Starring the repo on GitHub means a lot — or connect with me on LinkedIn and let’s keep the motivation going. And if you’d like to support the work behind the notes and reviews, you can do so with a coffee.',
-    'footer.support.star': 'Star on GitHub',
+      'Following me on GitHub or starring my projects means a lot — or connect with me on LinkedIn and let’s keep the motivation going. And if you’d like to support the work behind the notes and reviews, you can do so with a coffee.',
+    'footer.support.follow': 'Follow on GitHub',
     'footer.support.connect': 'Connect on LinkedIn',
     'footer.support.coffee': 'Support with a coffee',
   },
@@ -132,8 +132,8 @@ export const ui = {
     'footer.explore': 'Esplora',
     'footer.support.lead': 'Ti è stato utile questo sito?',
     'footer.support.body':
-      'Lasciare una stella al repository su GitHub significa molto — oppure connettiti con me su LinkedIn e manteniamo viva la motivazione. E se vuoi sostenere il lavoro dietro appunti e recensioni, puoi farlo con un caffè.',
-    'footer.support.star': 'Stella su GitHub',
+      'Seguirmi su GitHub o lasciare una stella ai miei progetti significa molto — oppure connettiti con me su LinkedIn e manteniamo viva la motivazione. E se vuoi sostenere il lavoro dietro appunti e recensioni, puoi farlo con un caffè.',
+    'footer.support.follow': 'Seguimi su GitHub',
     'footer.support.connect': 'Connettiti su LinkedIn',
     'footer.support.coffee': 'Sostienimi con un caffè',
   },
@@ -192,8 +192,8 @@ export const ui = {
     'footer.explore': 'Explora',
     'footer.support.lead': '¿Te ha resultado útil este sitio?',
     'footer.support.body':
-      'Dar una estrella al repositorio en GitHub significa mucho — o conecta conmigo en LinkedIn y mantengamos viva la motivación. Y si quieres apoyar el trabajo detrás de los apuntes y las reseñas, puedes hacerlo con un café.',
-    'footer.support.star': 'Estrella en GitHub',
+      'Seguirme en GitHub o dar una estrella a mis proyectos significa mucho — o conecta conmigo en LinkedIn y mantengamos viva la motivación. Y si quieres apoyar el trabajo detrás de los apuntes y las reseñas, puedes hacerlo con un café.',
+    'footer.support.follow': 'Sígueme en GitHub',
     'footer.support.connect': 'Conecta en LinkedIn',
     'footer.support.coffee': 'Apóyame con un café',
   },
@@ -253,8 +253,8 @@ export const ui = {
     'footer.explore': 'Entdecken',
     'footer.support.lead': 'War diese Seite hilfreich?',
     'footer.support.body':
-      'Ein Stern für das Repository auf GitHub bedeutet viel – oder vernetze dich mit mir auf LinkedIn, damit die Motivation erhalten bleibt. Und wenn du die Arbeit hinter den Notizen und Reviews unterstützen möchtest, kannst du das mit einem Kaffee tun.',
-    'footer.support.star': 'Stern auf GitHub',
+      'Mir auf GitHub zu folgen oder meinen Projekten einen Stern zu geben, bedeutet viel – oder vernetze dich mit mir auf LinkedIn, damit die Motivation erhalten bleibt. Und wenn du die Arbeit hinter den Notizen und Reviews unterstützen möchtest, kannst du das mit einem Kaffee tun.',
+    'footer.support.follow': 'Auf GitHub folgen',
     'footer.support.connect': 'Auf LinkedIn vernetzen',
     'footer.support.coffee': 'Mit einem Kaffee unterstützen',
   },
