@@ -40,6 +40,7 @@ export const spokes: Spoke[] = [
   { slug: 'ai-103-study-notes', title: 'AI-103 Study Notes', translated: false },
   { slug: 'gh-300-study-notes', title: 'GH-300 Study Notes', translated: false },
   { slug: 'gh-900-study-notes', title: 'GH-900 Study Notes', translated: false },
+  { slug: 'gh-600-study-notes', title: 'GH-600 Study Notes', translated: false },
   { slug: 'ms-102-study-notes', title: 'MS-102 Study Notes', translated: false },
   { slug: 'ms-700-study-notes', title: 'MS-700 Study Notes', translated: false },
   { slug: 'ms-721-study-notes', title: 'MS-721 Study Notes', translated: false },

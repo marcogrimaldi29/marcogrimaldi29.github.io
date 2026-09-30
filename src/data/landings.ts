@@ -186,6 +186,12 @@ export function toStudyNav(
 // ── Study Notes ──────────────────────────────────────────────
 export const studyNotes: LandingCard[] = [
   note(
+    'GH-600 Study Notes',
+    'Agentic AI Developer — exam prep notes covering all GH-600 domains.',
+    'https://marcogrimaldi29.com/gh-600-study-notes/',
+    ['🎖️ Specialty Level', '📄 6 Skills'],
+  ),
+  note(
     'SC-500 Study Notes',
     'Cloud and AI Security Engineer Associate — exam prep notes covering all SC-500 domains.',
     'https://marcogrimaldi29.com/sc-500-study-notes/',
