@@ -30,6 +30,11 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
 const navLabel = label ?? t('nav.section');
 
 const isFold = (i: SideNavItem | SideNavFold): i is SideNavFold => 'items' in i;
+
+// Same rule as LinkCard: absolute (http/https) hrefs are the study-notes &
+// deep-dive "spoke" repos with no way back to the hub, so open them in a new tab.
+const linkAttrs = (href: string) =>
+  /^https?:\/\//i.test(href) ? { target: '_blank', rel: 'noopener noreferrer' } : {};
 ---
 
 <nav class="sidenav doc__rail doc__nav" aria-label={navLabel}>
@@ -54,6 +59,7 @@ const isFold = (i: SideNavItem | SideNavFold): i is SideNavFold => 'items' in i;
                       <a
                         href={s.href}
                         aria-current={current && s.href === current ? 'page' : undefined}
+                        {...linkAttrs(s.href)}
                       >
                         {s.label}
                       </a>
@@ -64,7 +70,11 @@ const isFold = (i: SideNavItem | SideNavFold): i is SideNavFold => 'items' in i;
             </li>
           ) : (
             <li>
-              <a href={i.href} aria-current={current && i.href === current ? 'page' : undefined}>
+              <a
+                href={i.href}
+                aria-current={current && i.href === current ? 'page' : undefined}
+                {...linkAttrs(i.href)}
+              >
                 {i.label}
               </a>
             </li>
