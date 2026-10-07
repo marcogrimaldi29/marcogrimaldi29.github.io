@@ -104,7 +104,7 @@ const altLinkAttrs = altIsExternal ? { target: '_blank', rel: 'noopener noreferr
     background: var(--surface);
     transition:
       border-color var(--transition),
-      transform var(--transition),
+      transform var(--transition-move),
       box-shadow var(--transition);
   }
 
@@ -233,7 +233,7 @@ const altLinkAttrs = altIsExternal ? { target: '_blank', rel: 'noopener noreferr
       border-color var(--transition),
       background var(--transition),
       box-shadow var(--transition),
-      transform var(--transition);
+      transform var(--transition-move);
   }
 
   .rcard__alt:hover,
@@ -251,7 +251,7 @@ const altLinkAttrs = altIsExternal ? { target: '_blank', rel: 'noopener noreferr
 
   .rcard__alt-spark,
   .rcard__alt-arrow {
-    transition: transform var(--transition);
+    transition: transform var(--transition-move);
   }
 
   .rcard__alt:hover .rcard__alt-spark {
