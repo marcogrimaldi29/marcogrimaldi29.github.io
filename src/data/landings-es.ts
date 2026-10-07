@@ -108,7 +108,7 @@ export const studyNotesEs: LandingCard[] = [
     'GH-900 Apuntes',
     'GitHub Foundations — apuntes sobre todos los dominios del examen GH-900.',
     'https://marcogrimaldi29.com/gh-900-study-notes/',
-    ['🎖️ Nivel Specialty', '📄 7 Competencias'],
+    ['🎖️ Nivel Specialty', '📄 7 Competencias', '✅ Aprobado'],
   ),
   note(
     'MS-721 Apuntes',
