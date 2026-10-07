@@ -145,7 +145,7 @@
   background: var(--surface);
   transition:
     border-color var(--transition),
-    transform var(--transition);
+    transform var(--transition-move);
 }
 
 .prose .resource-card:hover {
@@ -340,7 +340,7 @@
   text-decoration: none !important;
   transition:
     border-color var(--transition),
-    transform var(--transition);
+    transform var(--transition-move);
 }
 
 .prose .quicklink-card:hover {

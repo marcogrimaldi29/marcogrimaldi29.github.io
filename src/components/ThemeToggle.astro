@@ -7,8 +7,8 @@
  *
  * The icon IS the brand mark and stays on-palette in both themes: the green→
  * azure "sunset" logo while dark, morphing (cross-fade + scale/rotate) into a
- * full sun while light. The morph is gated off under prefers-reduced-motion via
- * the global --transition reset.
+ * full sun while light. Under prefers-reduced-motion the scale/rotate is dropped
+ * and the morph becomes a plain cross-fade.
  *
  * Initial theme is applied before paint by the inline script in BaseLayout, so
  * the right icon shows with no flash. The label describes the action (the theme
@@ -142,7 +142,7 @@ const t = useTranslations(locale);
     pointer-events: none;
     transition:
       opacity var(--transition),
-      transform var(--transition),
+      transform var(--transition-move),
       border-color var(--transition),
       background var(--transition);
   }
@@ -207,6 +207,17 @@ const t = useTranslations(locale);
       bottom: var(--sp-3);
       width: 2.5rem;
       height: 2.5rem;
+    }
+  }
+
+  /* Reduced motion: fade-only reveal, and a cross-fade without the spin. */
+  @media (prefers-reduced-motion: reduce) {
+    .theme-toggle,
+    .tt-sun,
+    .tt-sunset,
+    :root[data-theme='light'] .tt-sun,
+    :root[data-theme='light'] .tt-sunset {
+      transform: none;
     }
   }
 </style>

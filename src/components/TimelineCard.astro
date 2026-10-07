@@ -67,7 +67,7 @@ const logos = resolveLogos(org, [org, ...meta, ...points].join(' '));
     margin-block: var(--sp-3);
     transition:
       border-color var(--transition),
-      transform var(--transition);
+      transform var(--transition-move);
   }
 
   /* Hover brightens each card's OWN semantic colour (work = azure, education =
@@ -121,7 +121,7 @@ const logos = resolveLogos(org, [org, ...meta, ...points].join(' '));
     opacity: 0.88;
     transition:
       opacity var(--transition),
-      transform var(--transition);
+      transform var(--transition-move);
   }
 
   /* The personal placeholder mark is square, so it fills the tile; pad it down

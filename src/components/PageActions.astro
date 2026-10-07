@@ -152,7 +152,7 @@ const isHome = unlocalizePath(Astro.url.pathname) === '/';
     pointer-events: none;
     transition:
       opacity var(--transition),
-      transform var(--transition);
+      transform var(--transition-move);
   }
 
   .page-actions.is-visible {
@@ -176,7 +176,7 @@ const isHome = unlocalizePath(Astro.url.pathname) === '/';
       color var(--transition),
       border-color var(--transition),
       background var(--transition),
-      transform var(--transition);
+      transform var(--transition-move);
   }
 
   .page-actions__btn:hover {
@@ -204,6 +204,13 @@ const isHome = unlocalizePath(Astro.url.pathname) === '/';
     .page-actions__btn {
       width: 2.5rem;
       height: 2.5rem;
+    }
+  }
+
+  /* Reduced motion: fade-only reveal (matches ThemeToggle). */
+  @media (prefers-reduced-motion: reduce) {
+    .page-actions {
+      transform: none;
     }
   }
 </style>

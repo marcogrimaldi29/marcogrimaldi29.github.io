@@ -38,7 +38,7 @@ const { title, subtitle, icon = '🔗', brand, href } = Astro.props;
     transition:
       border-color var(--transition),
       background var(--transition),
-      transform var(--transition);
+      transform var(--transition-move);
   }
 
   .quicklink:hover {
@@ -82,7 +82,7 @@ const { title, subtitle, icon = '🔗', brand, href } = Astro.props;
     color: var(--text-subtle);
     transition:
       color var(--transition),
-      transform var(--transition);
+      transform var(--transition-move);
   }
 
   .quicklink:hover .quicklink__arrow {

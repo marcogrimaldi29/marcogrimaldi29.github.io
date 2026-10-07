@@ -439,6 +439,13 @@ const t = useTranslations(locale);
     }
   }
 
+  /* Reduced motion: fade in without the unfold slide/scale. */
+  @media (prefers-reduced-motion: reduce) {
+    .search-dialog[open] {
+      animation-name: search-fade;
+    }
+  }
+
   .search-dialog__panel {
     display: flex;
     flex-direction: column;
