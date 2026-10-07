@@ -12,18 +12,22 @@ export interface CvEntry {
   points: string[];
 }
 
+export type CertBrand = 'Microsoft' | 'Google' | 'GitHub';
+
 export interface CertItem {
   name: string;
   url?: string;
   /** Optional institution logo (local path or URL); overrides the group brand/🏅 bullet. */
   logo?: string;
+  /** Optional per-item vendor; overrides the group brand (e.g. a GitHub exam in the Microsoft group). */
+  brand?: CertBrand;
 }
 
 export interface CertCategory {
   icon: string;
   title: string;
   /** Optional vendor — when set, cert items use the brand logo instead of the 🏅 bullet. */
-  brand?: 'Microsoft' | 'Google';
+  brand?: CertBrand;
   items: CertItem[];
 }
 
@@ -198,6 +202,8 @@ const msVerify = (credId: string, locale = 'en-us') =>
  * (`certBadges`). `badge` is the 1-based slot in the badge row (most → least
  * advanced); omit it when there is no /public/badges/<code>-badge.png. To add a
  * cert, add one entry here — it flows to the CV list and (with `badge`) the row.
+ * GitHub exams are credentialed through MS Learn too, so they live here as well,
+ * tagged with `brand: 'GitHub'` to swap the Microsoft logo in the CV list.
  */
 interface MicrosoftCert {
   code: string;
@@ -206,22 +212,32 @@ interface MicrosoftCert {
   /** MS Learn share id → verification URL. Omit when not yet available (badge/list entry renders unlinked). */
   credId?: string;
   badge?: number;
+  /** Non-Microsoft vendor of an exam credentialed via MS Learn — overrides the group logo. */
+  brand?: 'GitHub';
 }
 
 const microsoftCerts: MicrosoftCert[] = [
+  {
+    code: 'GH-900',
+    title: 'GitHub Foundations',
+    year: 2026,
+    credId: 'B792B975A880525B',
+    badge: 14,
+    brand: 'GitHub',
+  },
   {
     code: 'DP-700',
     title: 'Microsoft Certified: Fabric Data Engineer Associate',
     year: 2026,
     credId: 'C920E77F6327FF1F',
-    badge: 3,
+    badge: 4,
   },
   {
     code: 'DP-600',
     title: 'Microsoft Certified: Fabric Analytics Engineer Associate',
     year: 2026,
     credId: '38B17BA0808706AA',
-    badge: 4,
+    badge: 5,
   },
   {
     code: 'AZ-305',
@@ -242,7 +258,7 @@ const microsoftCerts: MicrosoftCert[] = [
     title: 'Microsoft Certified: Azure AI Engineer Associate',
     year: 2024,
     credId: 'ED8D5449484E0E49',
-    badge: 5,
+    badge: 3,
   },
   {
     code: 'AZ-104',
@@ -327,6 +343,7 @@ export const certifications: CertCategory[] = [
     items: microsoftCerts.map((c) => ({
       name: `${c.code} – ${c.title} (${c.year})`,
       ...(c.credId && { url: msVerify(c.credId) }),
+      ...(c.brand && { brand: c.brand }),
     })),
   },
   {
@@ -511,7 +528,7 @@ export const technicalSkills: SkillCategory[] = [
     title: 'Development & Tools',
     skills: [
       { name: 'Bash', level: 'Intermediate' },
-      { name: 'Git & GitHub', level: 'Advanced' },
+      { name: 'Git & GitHub', level: 'Fluent' },
       { name: 'HTML & CSS', level: 'Advanced' },
       { name: 'JavaScript & TypeScript', level: 'Intermediate' },
       { name: 'Wireshark', level: 'Intermediate' },

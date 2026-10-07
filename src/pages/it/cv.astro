@@ -84,8 +84,8 @@ const headings = [
                 loading="lazy"
                 decoding="async"
               />
-            ) : g.brand ? (
-              <BrandIcon brand={g.brand} size={15} />
+            ) : item.brand || g.brand ? (
+              <BrandIcon brand={(item.brand ?? g.brand)!} size={15} />
             ) : (
               <span class="cert-list__bullet" aria-hidden="true">
                 🏅
