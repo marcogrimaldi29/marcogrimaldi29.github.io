@@ -208,7 +208,7 @@ const panelId = 'lang-menu-panel';
   }
 
   .lang__chevron {
-    transition: transform var(--transition);
+    transition: transform var(--transition-move);
   }
 
   .lang__toggle[aria-expanded='true'] .lang__chevron {
@@ -308,7 +308,7 @@ const panelId = 'lang-menu-panel';
          instantly (see the same note on the nav panel in BaseLayout). */
       transition:
         opacity var(--transition),
-        transform var(--transition);
+        transform var(--transition-move);
     }
 
     :root.js .lang .lang__panel[data-open] {

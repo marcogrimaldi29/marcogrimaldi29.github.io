@@ -80,6 +80,10 @@
   --shadow-hover: 0 8px 24px rgb(1 4 9 / 40%);
   --transition: 0.16s ease;
 
+  /* Transform transitions only (lifts, slides, rotations) — split out so
+     reduced motion can stop movement while colour/opacity fades keep working. */
+  --transition-move: var(--transition);
+
   /* Layout */
   --content-max: 60rem;
   --content-wide: 86rem;
@@ -148,18 +152,13 @@
   --shadow-hover: 0 8px 24px rgb(31 35 40 / 12%);
 }
 
-/* Honor reduced-motion globally. */
+/* Honor reduced-motion: no movement, but not no feedback. Colour, border and
+   opacity fades (--transition) keep working; transform transitions
+   (--transition-move) snap; smooth scrolling is only enabled under
+   `no-preference` (global.css); and each component switches off its own
+   ambient spin/sweep/scroll animations in its own reduced-motion block. */
 @media (prefers-reduced-motion: reduce) {
   :root {
-    --transition: 0s;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
+    --transition-move: 0s;
   }
 }

@@ -3,7 +3,8 @@
  * SkillMarquee — soft skills as an infinite, auto-scrolling pill carousel (like
  * a sponsor/testimonial marquee). Labels use the site's green→azure gradient
  * text. The list is rendered twice so the loop is seamless; the second copy is
- * aria-hidden. Pauses on hover; under reduced-motion it simply sits still.
+ * aria-hidden. Pauses on hover; under reduced-motion it stops scrolling and
+ * wraps into a static pill list, so every skill stays visible.
  */
 import { getLocaleFromUrl } from '@i18n/utils';
 
@@ -73,6 +74,24 @@ const sorted = [...items].sort((a, b) => a.localeCompare(b, locale));
   @keyframes marquee-scroll {
     to {
       transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee {
+      -webkit-mask: none;
+      mask: none;
+    }
+
+    .marquee__track {
+      flex-wrap: wrap;
+      row-gap: var(--sp-2);
+      width: auto;
+      animation: none;
+    }
+
+    .marquee__pill[aria-hidden='true'] {
+      display: none;
     }
   }
 </style>

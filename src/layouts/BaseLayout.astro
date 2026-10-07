@@ -474,7 +474,7 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
         border-radius: 1px;
         background: currentcolor;
         transition:
-          transform var(--transition),
+          transform var(--transition-move),
           opacity var(--transition);
       }
 
@@ -555,7 +555,7 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
              carry the animation. */
           transition:
             opacity var(--transition),
-            transform var(--transition);
+            transform var(--transition-move);
         }
 
         :root.js .site-header__nav[data-open] {
@@ -819,7 +819,7 @@ const linkedinUrl = `https://www.linkedin.com/in/${profile.social.linkedin}/`;
           background var(--transition),
           border-color var(--transition),
           box-shadow var(--transition),
-          transform var(--transition);
+          transform var(--transition-move);
       }
 
       .footer-support__btn:hover {
