@@ -213,7 +213,7 @@ export const studyNotes: LandingCard[] = [
     'GH-900 Study Notes',
     'GitHub Foundations — exam prep notes covering all GH-900 domains.',
     'https://marcogrimaldi29.com/gh-900-study-notes/',
-    ['🎖️ Specialty Level', '📄 7 Skills'],
+    ['🎖️ Specialty Level', '📄 7 Skills', '✅ Passed'],
   ),
   note(
     'MS-102 Study Notes',
