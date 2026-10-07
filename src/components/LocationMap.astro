@@ -8,7 +8,8 @@
  * a radar reticle as the focus. Pure SVG/CSS, no third-party embed, themed from
  * design tokens. Only subtle ambient motion (radar sweep, pulse, scanline).
  *
- * Motion honors reduced-motion via the global token rule.
+ * Under prefers-reduced-motion the sweep, pings and scanline stop (a static
+ * radar lock remains); the status LEDs keep their opacity blink.
  *
  * Technical HUD labels (GEO-LOCATOR, LAT, LON…) read as a machine readout and
  * stay language-neutral; the human-facing `region` (inset title) + `caption`
@@ -539,6 +540,18 @@ const {
     }
     50% {
       transform: translateY(360%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    /* keep a static radar lock (reticle + wedge + dot) with no motion */
+    .gm-pulse circle,
+    .gm-sweep {
+      animation: none;
+    }
+
+    .geomap__scan {
+      display: none;
     }
   }
 </style>
