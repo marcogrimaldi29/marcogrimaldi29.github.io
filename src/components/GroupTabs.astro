@@ -1,0 +1,445 @@
+---
+/**
+ * GroupTabs — horizontal group bar under a landing section heading (study
+ * notes, deep dives, cert reviews). Mirrors the left-rail folds: one button per
+ * CardGroup plus "all", and a separate "collapse all". Single-select: picking a
+ * group unfolds it and folds the rest; "all" unfolds every group. Panels fold
+ * with a grid-rows height animation and unfolding cards rise in with a stagger.
+ *
+ * These are filter buttons (aria-pressed), not ARIA tabs — "all" drives several
+ * panels at once. Folded panels go `inert` so their links leave the tab order.
+ * Without scripting the bar is hidden and every group stays open.
+ */
+import LinkCard from '@components/LinkCard.astro';
+import type { CardGroup } from '@data/landings';
+import { getLocaleFromUrl, useTranslations } from '@i18n/utils';
+
+interface Props {
+  /** Id prefix for the panels — unique per page (e.g. "notes", "dives"). */
+  name: string;
+  groups: CardGroup[];
+}
+const { name, groups } = Astro.props;
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+
+const panelId = (id: string) => `${name}-${id}`;
+const allPanels = groups.map((g) => panelId(g.id)).join(' ');
+const total = groups.reduce((n, g) => n + g.cards.length, 0);
+---
+
+<div class="group-tabs" data-group-tabs>
+  <div class="group-tabs__bar" data-pagefind-ignore>
+    <div class="group-tabs__strip" role="group" aria-label={t('group.filter')}>
+      <button
+        class="group-tabs__tab"
+        type="button"
+        data-group="all"
+        aria-pressed="true"
+        aria-controls={allPanels}
+      >
+        {t('group.all')}
+        <span class="group-tabs__count">{total}</span>
+      </button>
+      {groups.map((g) => (
+        <button
+          class="group-tabs__tab"
+          type="button"
+          data-group={g.id}
+          aria-pressed="false"
+          aria-controls={panelId(g.id)}
+        >
+          {g.label}
+          <span class="group-tabs__count">{g.cards.length}</span>
+        </button>
+      ))}
+      <span class="group-tabs__indicator" aria-hidden="true"></span>
+    </div>
+    <button
+      class="group-tabs__collapse"
+      type="button"
+      data-group="none"
+      aria-pressed="false"
+      aria-controls={allPanels}
+      title={t('group.collapseAll')}
+    >
+      <svg viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M4.5 2.5 8 6l3.5-3.5M4.5 13.5 8 10l3.5 3.5"></path>
+      </svg>
+      <span class="group-tabs__collapse-text">{t('group.collapseAll')}</span>
+    </button>
+  </div>
+
+  {groups.map((g) => (
+    <div class="group-tabs__panel" id={panelId(g.id)} data-group={g.id}>
+      <div class="group-tabs__inner">
+        <p class="group-tabs__label" data-pagefind-ignore>
+          {`// ${g.label}`}
+        </p>
+        <div class="card-grid">
+          {g.cards.map((c) => (
+            <LinkCard {...c} />
+          ))}
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  /* ---- bar: underline-nav strip + "collapse all" ---- */
+  .group-tabs__bar {
+    display: flex;
+    align-items: stretch;
+    gap: var(--sp-3);
+
+    /* Base rule drawn as a background so the strip's indicator paints over it. */
+    background: linear-gradient(var(--border), var(--border)) bottom / 100% 1px no-repeat;
+  }
+
+  /* Without scripting the buttons can't do anything — show every group plainly. */
+  :global(:root:not(.js)) .group-tabs__bar {
+    display: none;
+  }
+
+  .group-tabs__strip {
+    position: relative;
+    display: flex;
+    gap: var(--sp-1);
+    flex: 1;
+    min-width: 0;
+    padding-bottom: var(--sp-2);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .group-tabs__strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Edge fades hint that the strip scrolls sideways (set by the script). */
+  .group-tabs__strip[data-fade-end] {
+    mask-image: linear-gradient(to right, #000 calc(100% - 2rem), transparent);
+  }
+
+  .group-tabs__strip[data-fade-start] {
+    mask-image: linear-gradient(to right, transparent, #000 2rem);
+  }
+
+  .group-tabs__strip[data-fade-start][data-fade-end] {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 2rem,
+      #000 calc(100% - 2rem),
+      transparent
+    );
+  }
+
+  .group-tabs__tab,
+  .group-tabs__collapse {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    line-height: 1.4;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      color var(--transition),
+      background var(--transition),
+      border-color var(--transition);
+  }
+
+  .group-tabs__tab:hover,
+  .group-tabs__collapse:hover {
+    color: var(--text);
+    background: var(--surface-2);
+  }
+
+  /* The strip clips overflow, so keep focus rings inside the button. */
+  .group-tabs__tab:focus-visible,
+  .group-tabs__collapse:focus-visible {
+    outline-offset: -2px;
+  }
+
+  .group-tabs__tab[aria-pressed='true'] {
+    color: var(--text);
+  }
+
+  .group-tabs__count {
+    font-size: 0.68rem;
+    color: var(--text-subtle);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0 0.45em;
+    line-height: 1.5;
+    transition:
+      color var(--transition),
+      background var(--transition),
+      border-color var(--transition);
+  }
+
+  .group-tabs__tab[aria-pressed='true'] .group-tabs__count {
+    color: var(--tag-cert-fg);
+    background: var(--tag-cert-bg);
+    border-color: var(--tag-cert-ring);
+  }
+
+  /* Sliding underline under the pressed button — placed by the script, then
+     animated between buttons once `is-ready` lands (no slide-in on load). */
+  .group-tabs__indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: var(--indicator-w, 0);
+    height: 2px;
+    translate: var(--indicator-x, 0) 0;
+    border-radius: 2px;
+    background: var(--brand);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .group-tabs.is-ready .group-tabs__indicator {
+    opacity: 1;
+    transition:
+      translate var(--transition-fold),
+      width var(--transition-fold),
+      opacity var(--transition);
+  }
+
+  .group-tabs.is-collapsed .group-tabs__indicator {
+    opacity: 0;
+  }
+
+  .group-tabs__collapse {
+    align-self: flex-start;
+    color: var(--text-subtle);
+  }
+
+  .group-tabs__collapse[aria-pressed='true'] {
+    color: var(--brand-strong);
+    background: var(--tag-cert-bg);
+    border-color: var(--tag-cert-ring);
+  }
+
+  .group-tabs__collapse svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform var(--transition-move);
+  }
+
+  /* The chevrons squeeze together on hover — a hint of what the button does. */
+  .group-tabs__collapse:hover svg {
+    transform: scaleY(0.75);
+  }
+
+  /* Phones: icon-only collapse button so the strip keeps its width. */
+  @media (width <= 480px) {
+    .group-tabs__collapse-text {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+  }
+
+  /* ---- panels: grid-rows fold/unfold ---- */
+  .group-tabs__panel {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition:
+      grid-template-rows var(--transition-fold),
+      opacity var(--transition-fold);
+  }
+
+  .group-tabs__panel[data-folded] {
+    grid-template-rows: 0fr;
+    opacity: 0;
+  }
+
+  .group-tabs__inner {
+    min-height: 0;
+  }
+
+  /* Clip only while folded or mid-fold, so card hover lifts/shadows aren't cut at rest. */
+  .group-tabs__panel:is([data-folded], .is-animating) > .group-tabs__inner {
+    overflow: hidden;
+  }
+
+  /* All spacing lives inside the panel, so a folded panel leaves no gap. */
+  .group-tabs__label {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    margin: var(--sp-5) 0 var(--sp-3);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    color: var(--text-subtle);
+  }
+
+  .group-tabs__label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-muted);
+  }
+
+  .group-tabs__inner > .card-grid {
+    margin: 0;
+  }
+
+  /* Unfolding cards rise in with a stagger (--i set by the script). */
+  .group-tabs__panel.is-entering .card-grid > :global(*) {
+    animation: group-tabs-rise 0.42s var(--ease-out) backwards;
+    animation-delay: calc(var(--i, 0) * 40ms);
+  }
+
+  @keyframes group-tabs-rise {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+
+  @keyframes group-tabs-fade {
+    from {
+      opacity: 0;
+    }
+  }
+
+  /* Reduced motion: heights and the indicator snap; panels and cards still fade. */
+  @media (prefers-reduced-motion: reduce) {
+    .group-tabs__panel {
+      transition: opacity var(--transition);
+    }
+
+    .group-tabs.is-ready .group-tabs__indicator {
+      transition: opacity var(--transition);
+    }
+
+    .group-tabs__panel.is-entering .card-grid > :global(*) {
+      animation-name: group-tabs-fade;
+      animation-delay: 0s;
+    }
+  }
+</style>
+
+<script>
+  type State = 'all' | 'none' | string;
+
+  // Cap the cascade so large unfolds (e.g. "all" after "collapse all") stay snappy.
+  const MAX_STAGGER = 12;
+
+  document.querySelectorAll<HTMLElement>('[data-group-tabs]').forEach((root) => {
+    const strip = root.querySelector<HTMLElement>('.group-tabs__strip')!;
+    const indicator = root.querySelector<HTMLElement>('.group-tabs__indicator')!;
+    const buttons = Array.from(root.querySelectorAll<HTMLButtonElement>('button[data-group]'));
+    const panels = Array.from(root.querySelectorAll<HTMLElement>('.group-tabs__panel'));
+    const timers = new WeakMap<HTMLElement, number>();
+    let state: State = 'all';
+
+    const pressed = () => strip.querySelector<HTMLElement>('[aria-pressed="true"]');
+
+    const placeIndicator = () => {
+      const active = pressed();
+      root.classList.toggle('is-collapsed', !active);
+      if (!active) return;
+      indicator.style.setProperty('--indicator-x', `${active.offsetLeft}px`);
+      indicator.style.setProperty('--indicator-w', `${active.offsetWidth}px`);
+    };
+
+    const syncFades = () => {
+      const { scrollLeft, clientWidth, scrollWidth } = strip;
+      strip.toggleAttribute('data-fade-start', scrollLeft > 1);
+      strip.toggleAttribute('data-fade-end', scrollLeft + clientWidth < scrollWidth - 1);
+    };
+
+    // Scroll the strip itself (not the page) so the pressed button is in view.
+    const keepInView = (btn: HTMLElement | null) => {
+      if (!btn) return;
+      const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+      const left = btn.offsetLeft;
+      const right = left + btn.offsetWidth;
+      if (left < strip.scrollLeft) strip.scrollTo({ left: left - 32, behavior });
+      else if (right > strip.scrollLeft + strip.clientWidth)
+        strip.scrollTo({ left: right - strip.clientWidth + 32, behavior });
+    };
+
+    const settle = (panel: HTMLElement) => panel.classList.remove('is-animating');
+
+    // Fold or unfold one panel; returns true when it starts unfolding.
+    const setFolded = (panel: HTMLElement, folded: boolean): boolean => {
+      if (panel.hasAttribute('data-folded') === folded) return false;
+      panel.classList.add('is-animating');
+      panel.toggleAttribute('data-folded', folded);
+      panel.inert = folded;
+      window.clearTimeout(timers.get(panel));
+      timers.set(
+        panel,
+        window.setTimeout(() => settle(panel), 600),
+      );
+      return !folded;
+    };
+
+    const apply = (next: State) => {
+      state = next;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.group === next)));
+
+      let i = 0;
+      panels.forEach((panel) => {
+        const folded = next === 'none' || (next !== 'all' && panel.dataset.group !== next);
+        if (!setFolded(panel, folded)) return;
+        // Restart the staggered rise, continuing the count across panels.
+        panel.querySelectorAll<HTMLElement>('.card-grid > *').forEach((card) => {
+          card.style.setProperty('--i', String(Math.min(i++, MAX_STAGGER)));
+        });
+        panel.classList.remove('is-entering');
+        void panel.offsetWidth;
+        panel.classList.add('is-entering');
+      });
+
+      placeIndicator();
+      keepInView(pressed());
+    };
+
+    buttons.forEach((b) =>
+      b.addEventListener('click', () => {
+        const next = b.dataset.group ?? 'all';
+        if (next !== state) apply(next);
+      }),
+    );
+
+    panels.forEach((panel) =>
+      panel.addEventListener('transitionend', (e) => {
+        if (e.target === panel) settle(panel);
+      }),
+    );
+
+    strip.addEventListener('scroll', syncFades, { passive: true });
+    new ResizeObserver(() => {
+      placeIndicator();
+      syncFades();
+    }).observe(strip);
+
+    placeIndicator();
+    syncFades();
+    // Enable the indicator's slide only after its first placement.
+    requestAnimationFrame(() => root.classList.add('is-ready'));
+  });
+</script>

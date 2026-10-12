@@ -1,17 +1,17 @@
 ---
 /** /de/cert-reviews/ — Landing DE (Reviews). */
 import PageLayout from '@layouts/PageLayout.astro';
-import LinkCard from '@components/LinkCard.astro';
+import GroupTabs from '@components/GroupTabs.astro';
 import QuickLink from '@components/QuickLink.astro';
 import SupportNote from '@components/SupportNote.astro';
 import { certReviewsGoogleDe, certReviewsMicrosoftDe } from '@data/landings-de';
+import { groupCards, professionalCertGroups, toGroupNav } from '@data/landings';
 
+const msGroups = groupCards(certReviewsMicrosoftDe, 'de');
+const googleGroups = professionalCertGroups(certReviewsGoogleDe);
 const navGroups = [
-  {
-    title: 'Microsoft',
-    items: certReviewsMicrosoftDe.map((c) => ({ label: c.title, href: c.href })),
-  },
-  { title: 'Google', items: certReviewsGoogleDe.map((c) => ({ label: c.title, href: c.href })) },
+  { title: 'Microsoft', items: toGroupNav(msGroups) },
+  { title: 'Google', items: toGroupNav(googleGroups) },
 ];
 const headings = [
   { depth: 2, slug: 'microsoft', text: 'microsoft' },
@@ -34,20 +34,12 @@ const headings = [
   <h2 class="section-heading" id="microsoft">
     microsoft
   </h2>
-  <div class="card-grid">
-    {certReviewsMicrosoftDe.map((c) => (
-      <LinkCard {...c} />
-    ))}
-  </div>
+  <GroupTabs name="microsoft" groups={msGroups} />
 
   <h2 class="section-heading" id="google">
     google
   </h2>
-  <div class="card-grid">
-    {certReviewsGoogleDe.map((c) => (
-      <LinkCard {...c} />
-    ))}
-  </div>
+  <GroupTabs name="google" groups={googleGroups} />
 
   <hr class="see-also-rule" />
   <p class="eyebrow">{'// siehe auch'}</p>

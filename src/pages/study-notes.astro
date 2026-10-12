@@ -1,14 +1,16 @@
 ---
 /** /study-notes/ — data-driven landing with docs rails (side-nav + TOC). */
 import PageLayout from '@layouts/PageLayout.astro';
-import LinkCard from '@components/LinkCard.astro';
+import GroupTabs from '@components/GroupTabs.astro';
 import QuickLink from '@components/QuickLink.astro';
 import SupportNote from '@components/SupportNote.astro';
-import { studyNotes, deepDives, toStudyNav } from '@data/landings';
+import { studyNotes, deepDives, groupCards, toGroupNav } from '@data/landings';
 
+const noteGroups = groupCards(studyNotes);
+const diveGroups = groupCards(deepDives);
 const navGroups = [
-  { title: 'Study Notes', items: toStudyNav(studyNotes, / Study Notes$/) },
-  { title: 'Deep Dives', items: toStudyNav(deepDives) },
+  { title: 'Study Notes', items: toGroupNav(noteGroups, / Study Notes$/) },
+  { title: 'Deep Dives', items: toGroupNav(diveGroups) },
 ];
 const headings = [
   { depth: 2, slug: 'study-notes', text: 'study notes' },
@@ -31,20 +33,12 @@ const headings = [
   <h2 class="section-heading" id="study-notes">
     study notes
   </h2>
-  <div class="card-grid">
-    {studyNotes.map((c) => (
-      <LinkCard {...c} />
-    ))}
-  </div>
+  <GroupTabs name="notes" groups={noteGroups} />
 
   <h2 class="section-heading" id="deep-dives">
     deep dives
   </h2>
-  <div class="card-grid">
-    {deepDives.map((c) => (
-      <LinkCard {...c} />
-    ))}
-  </div>
+  <GroupTabs name="dives" groups={diveGroups} />
 
   <hr class="see-also-rule" />
   <p class="eyebrow">{'// see also'}</p>

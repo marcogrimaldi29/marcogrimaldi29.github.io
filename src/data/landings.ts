@@ -3,6 +3,8 @@
  * Replaces the broken inline-HTML card grids in the legacy landing Markdown —
  * these now render through the LinkCard component on real .astro pages.
  */
+import { defaultLocale, type Locale } from '@i18n/ui';
+import { useTranslations } from '@i18n/utils';
 
 export interface LandingCard {
   icon: string;
@@ -89,6 +91,9 @@ const review = (title: string, description: string, href: string, meta: string[]
   ctaLabel: 'Read review →',
 });
 
+/** Last path segment of a card href, e.g. '.../waf-cost-opt/' → 'waf-cost-opt'. */
+const slugOf = (href: string) => href.replace(/\/+$/, '').split('/').pop() ?? '';
+
 // ── Graph drill-down children ────────────────────────────────
 // Transforms landing cards into compact nodes for the home SiteGraph: a short,
 // de-duplicated label for the chip (`label`) plus the untouched title for the
@@ -104,7 +109,6 @@ export interface GraphChild {
 
 export function toGraphChildren(cards: LandingCard[]): GraphChild[] {
   const codeRe = /^([A-Za-z]{2,4}-\d{3})/;
-  const slugOf = (href: string) => href.replace(/\/+$/, '').split('/').pop() ?? '';
 
   // Curated, language-neutral labels for deep dives — their titles vary across
   // locales and the topic isn't reliably the first word, so key off the slug.
@@ -143,44 +147,79 @@ export function toGraphChildren(cards: LandingCard[]): GraphChild[] {
   }));
 }
 
-// ── Side-nav series folding ──────────────────────────────────
-// Groups landing-card links into collapsible exam-code series (MS-, DP-, AZ-)
-// so the left rail stays short as notes accumulate; titles without a series
-// code (ITIL, WAF, Engage Center) stay standalone links. v2 editions (altHref)
-// get their own "<code> v2" link inside the same series fold. Everything —
-// entries and each fold's contents — is sorted alphabetically.
-export interface StudyNavItem {
+// ── Card groups (landing tabs + side-nav folds) ──────────────
+// One grouping drives both the landing tab bars (GroupTabs) and the left-rail
+// folds, so the two always mirror each other. Exam codes group into series
+// (AZ-, DP-, GH-, …); titles without a code fall into a named topic group
+// (ITIL, WAF, Engage Center) so every card has a home. Groups and the cards
+// inside them are sorted alphabetically.
+export interface CardGroup {
+  /** Language-neutral id — stable across locales, used for DOM ids. */
+  id: string;
+  label: string;
+  cards: LandingCard[];
+}
+
+const TOPIC_GROUPS = [
+  { id: 'itil', label: 'ITIL', re: /ITIL/i },
+  { id: 'waf', label: 'WAF', re: /\bWAF\b/ },
+  { id: 'engage-center', label: 'Engage Center', re: /engage center/i },
+];
+
+const byTitle = (a: LandingCard, b: LandingCard) => a.title.localeCompare(b.title);
+const byLabel = (a: { label: string }, b: { label: string }) => a.label.localeCompare(b.label);
+
+export function groupCards(cards: LandingCard[], locale: Locale = defaultLocale): CardGroup[] {
+  const t = useTranslations(locale);
+  const groups = new Map<string, CardGroup>();
+  for (const c of cards) {
+    const series = c.title.match(/^([A-Za-z]{2,4})-\d{3}/)?.[1].toUpperCase();
+    const topic = series ? undefined : TOPIC_GROUPS.find((g) => g.re.test(c.title));
+    // Last resort for a future card that matches nothing: a group of its own.
+    const id = series?.toLowerCase() ?? topic?.id ?? slugOf(c.href);
+    const label = series ? t('group.series').replace('{code}', series) : (topic?.label ?? c.title);
+    let group = groups.get(id);
+    if (!group) groups.set(id, (group = { id, label, cards: [] }));
+    group.cards.push(c);
+  }
+  for (const g of groups.values()) g.cards.sort(byTitle);
+  return [...groups.values()].sort(byLabel);
+}
+
+// Google's Professional Certificates carry no exam code — one shared group. The
+// label stays English in every locale, like the cards' "Professional Certificate" badge.
+export const professionalCertGroups = (cards: LandingCard[]): CardGroup[] => [
+  {
+    id: 'professional-certificates',
+    label: 'Professional Certificates',
+    cards: [...cards].sort(byTitle),
+  },
+];
+
+// Side-nav folds from card groups. `stripRe` trims a redundant suffix from the
+// link labels (" Study Notes"); v2 editions (altHref) get their own
+// "<code> v2" link inside the same fold.
+export interface GroupNavLink {
   label: string;
   href: string;
 }
-export type StudyNavEntry = StudyNavItem | { label: string; items: StudyNavItem[] };
 
-const SERIES = ['AZ', 'DP', 'GH', 'MS'] as const;
-
-export function toStudyNav(
-  cards: LandingCard[],
+export function toGroupNav(
+  groups: CardGroup[],
   stripRe?: RegExp,
-  seriesLabel: (series: string) => string = (s) => `${s}-series`,
-): StudyNavEntry[] {
-  const folds = new Map<string, { label: string; items: StudyNavItem[] }>();
-  const standalone: StudyNavItem[] = [];
-  for (const c of cards) {
-    const label = stripRe ? c.title.replace(stripRe, '') : c.title;
-    const code = c.title.match(/^([A-Za-z]{2,4}-\d{3})/)?.[1];
-    const links = [{ label, href: c.href }];
-    if (c.altHref) links.push({ label: `${code ?? label} v2`, href: c.altHref });
-    const series = SERIES.find((s) => code?.startsWith(`${s}-`));
-    if (series) {
-      let fold = folds.get(series);
-      if (!fold) folds.set(series, (fold = { label: seriesLabel(series), items: [] }));
-      fold.items.push(...links);
-    } else {
-      standalone.push(...links);
-    }
-  }
-  const byLabel = (a: { label: string }, b: { label: string }) => a.label.localeCompare(b.label);
-  for (const fold of folds.values()) fold.items.sort(byLabel);
-  return [...folds.values(), ...standalone].sort(byLabel);
+): { label: string; items: GroupNavLink[] }[] {
+  return groups.map((g) => ({
+    label: g.label,
+    items: g.cards
+      .flatMap((c) => {
+        const label = stripRe ? c.title.replace(stripRe, '') : c.title;
+        const code = c.title.match(/^([A-Za-z]{2,4}-\d{3})/)?.[1];
+        const links = [{ label, href: c.href }];
+        if (c.altHref) links.push({ label: `${code ?? label} v2`, href: c.altHref });
+        return links;
+      })
+      .sort(byLabel),
+  }));
 }
 
 // ── Study Notes ──────────────────────────────────────────────

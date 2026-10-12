@@ -1,15 +1,17 @@
 ---
 /** /es/study-notes/ — landing ES (apuntes). Article links point to EN articles. */
 import PageLayout from '@layouts/PageLayout.astro';
-import LinkCard from '@components/LinkCard.astro';
+import GroupTabs from '@components/GroupTabs.astro';
 import QuickLink from '@components/QuickLink.astro';
 import SupportNote from '@components/SupportNote.astro';
 import { studyNotesEs, deepDivesEs } from '@data/landings-es';
-import { toStudyNav } from '@data/landings';
+import { groupCards, toGroupNav } from '@data/landings';
 
+const noteGroups = groupCards(studyNotesEs, 'es');
+const diveGroups = groupCards(deepDivesEs, 'es');
 const navGroups = [
-  { title: 'Apuntes', items: toStudyNav(studyNotesEs, / Apuntes$/, (s) => `Serie ${s}`) },
-  { title: 'Análisis', items: toStudyNav(deepDivesEs, undefined, (s) => `Serie ${s}`) },
+  { title: 'Apuntes', items: toGroupNav(noteGroups, / Apuntes$/) },
+  { title: 'Análisis', items: toGroupNav(diveGroups) },
 ];
 const headings = [
   { depth: 2, slug: 'apuntes', text: 'apuntes' },
@@ -32,20 +34,12 @@ const headings = [
   <h2 class="section-heading" id="apuntes">
     apuntes
   </h2>
-  <div class="card-grid">
-    {studyNotesEs.map((c) => (
-      <LinkCard {...c} />
-    ))}
-  </div>
+  <GroupTabs name="notes" groups={noteGroups} />
 
   <h2 class="section-heading" id="analisis">
     análisis
   </h2>
-  <div class="card-grid">
-    {deepDivesEs.map((c) => (
-      <LinkCard {...c} />
-    ))}
-  </div>
+  <GroupTabs name="dives" groups={diveGroups} />
 
   <hr class="see-also-rule" />
   <p class="eyebrow">{'// ver también'}</p>
