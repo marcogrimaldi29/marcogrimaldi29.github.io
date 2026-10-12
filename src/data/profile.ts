@@ -18,9 +18,6 @@ export const profile = {
     linkedin: 'marco-grimaldi29',
     github: 'marcogrimaldi29',
   },
-  // Coffee link for the footer card (follow on GitHub, connect on LinkedIn, or
-  // support with a coffee) and the SupportNote callouts (support with a coffee).
-  support: '[link-removed]',
   links: [
     { label: 'Duolingo', icon: 'language', url: 'https://www.duolingo.com/profile/MarcoGrimm' },
     { label: 'GitHub', icon: 'github', url: 'https://github.com/marcogrimaldi29' },
