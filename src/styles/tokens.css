@@ -84,6 +84,11 @@
      reduced motion can stop movement while colour/opacity fades keep working. */
   --transition-move: var(--transition);
 
+  /* Layout-scale motion (fold/unfold, sliding indicators) — slower, with a
+     decelerating ease so large moves settle softly instead of stopping dead. */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fold: 0.38s var(--ease-out);
+
   /* Layout */
   --content-max: 60rem;
   --content-wide: 86rem;

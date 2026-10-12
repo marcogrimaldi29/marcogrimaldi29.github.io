@@ -8,7 +8,15 @@
 import { getCollection, render } from 'astro:content';
 import PostLayout from '@layouts/PostLayout.astro';
 import type { SideNavGroup } from '@components/SideNav.astro';
-import { certReviewsGoogle, certReviewsMicrosoft, resourceCollections } from '@data/landings';
+import {
+  certReviewsGoogle,
+  certReviewsMicrosoft,
+  groupCards,
+  professionalCertGroups,
+  resourceCollections,
+  toGroupNav,
+} from '@data/landings';
+import type { Locale } from '@i18n/ui';
 import {
   certReviewsGoogleIt,
   certReviewsMicrosoftIt,
@@ -63,12 +71,13 @@ const CERT_CATEGORIES = new Set([
 const RESOURCE_CATEGORIES = new Set(['Resources', 'Risorse', 'Recursos', 'Ressourcen']);
 
 /** Left-rail section nav matching the article's category + locale. */
-function navForCategory(category: string | undefined, locale: string): SideNavGroup[] | undefined {
-  const sets = landingsByLocale[locale as keyof typeof landingsByLocale] ?? landingsByLocale.en;
+function navForCategory(category: string | undefined, locale: Locale): SideNavGroup[] | undefined {
+  const sets = landingsByLocale[locale] ?? landingsByLocale.en;
   if (category && CERT_CATEGORIES.has(category)) {
+    // Same series folds as the /cert-reviews/ landing (and its tab bars).
     return [
-      { title: 'Microsoft', items: sets.microsoft.map((c) => ({ label: c.title, href: c.href })) },
-      { title: 'Google', items: sets.google.map((c) => ({ label: c.title, href: c.href })) },
+      { title: 'Microsoft', items: toGroupNav(groupCards(sets.microsoft, locale)) },
+      { title: 'Google', items: toGroupNav(professionalCertGroups(sets.google)) },
     ];
   }
   if (category && RESOURCE_CATEGORIES.has(category)) {

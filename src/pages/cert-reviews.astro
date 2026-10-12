@@ -1,17 +1,22 @@
 ---
 /** /cert-reviews/ — data-driven landing with docs rails (side-nav + TOC). */
 import PageLayout from '@layouts/PageLayout.astro';
-import LinkCard from '@components/LinkCard.astro';
+import GroupTabs from '@components/GroupTabs.astro';
 import QuickLink from '@components/QuickLink.astro';
 import SupportNote from '@components/SupportNote.astro';
-import { certReviewsGoogle, certReviewsMicrosoft } from '@data/landings';
+import {
+  certReviewsGoogle,
+  certReviewsMicrosoft,
+  groupCards,
+  professionalCertGroups,
+  toGroupNav,
+} from '@data/landings';
 
+const msGroups = groupCards(certReviewsMicrosoft);
+const googleGroups = professionalCertGroups(certReviewsGoogle);
 const navGroups = [
-  {
-    title: 'Microsoft',
-    items: certReviewsMicrosoft.map((c) => ({ label: c.title, href: c.href })),
-  },
-  { title: 'Google', items: certReviewsGoogle.map((c) => ({ label: c.title, href: c.href })) },
+  { title: 'Microsoft', items: toGroupNav(msGroups) },
+  { title: 'Google', items: toGroupNav(googleGroups) },
 ];
 const headings = [
   { depth: 2, slug: 'microsoft', text: 'microsoft' },
@@ -34,20 +39,12 @@ const headings = [
   <h2 class="section-heading" id="microsoft">
     microsoft
   </h2>
-  <div class="card-grid">
-    {certReviewsMicrosoft.map((c) => (
-      <LinkCard {...c} />
-    ))}
-  </div>
+  <GroupTabs name="microsoft" groups={msGroups} />
 
   <h2 class="section-heading" id="google">
     google
   </h2>
-  <div class="card-grid">
-    {certReviewsGoogle.map((c) => (
-      <LinkCard {...c} />
-    ))}
-  </div>
+  <GroupTabs name="google" groups={googleGroups} />
 
   <hr class="see-also-rule" />
   <p class="eyebrow">{'// see also'}</p>
