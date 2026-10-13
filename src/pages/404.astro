@@ -1,16 +1,97 @@
 ---
-/** Custom 404 — Astro emits this as /404.html (GitHub Pages serves it). */
+/**
+ * Custom 404 — Astro emits this as /404.html, which GitHub Pages serves for
+ * ANY unknown path (English-only; LanguagePicker points to the locale homes).
+ * Links stay root-relative since the page renders at arbitrary depths.
+ */
 import PageLayout from '@layouts/PageLayout.astro';
+import QuickLink from '@components/QuickLink.astro';
+import { exploreLinks } from '@data/navigation';
 ---
 
 <PageLayout
-  title="4️⃣0️⃣4️⃣ Page Not Found"
-  heading="4️⃣0️⃣4️⃣ Page Not Found"
+  title="Page Not Found"
+  heading="🧭 Page Not Found"
+  eyebrow="// error 404 · not found"
+  lead="Sorry — the page you were looking for doesn’t exist or has moved. Try searching the site, or pick up from one of the sections below."
   description="The page you were looking for does not exist on marcogrimaldi29.com."
   noindex
+  brandRail
 >
-  <p>😞 Sorry, but the page you were trying to view does not exist.</p>
-  <p>
-    <a href="/">← Back to the home page</a>
+  {/* Filled from location.pathname by the script below; stays hidden without JS. */}
+  <p class="not-found__path" hidden data-not-found-path>
+    <code></code>
+    <span aria-hidden="true">→</span> 404
   </p>
+
+  <div class="not-found__actions">
+    <a class="btn btn--primary" href="/">
+      ← Back to home
+    </a>
+    {/* Opens the header search dialog (SearchDialog's [data-search-open] hook). */}
+    <a class="btn btn--ghost" href="/search/" data-search-open>
+      🔎 Search the site
+    </a>
+  </div>
+
+  <h2 class="section-heading">explore</h2>
+  <div class="card-grid not-found__links">
+    {[...exploreLinks]
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((q) => (
+        <QuickLink {...q} />
+      ))}
+  </div>
 </PageLayout>
+
+<script>
+  const path = document.querySelector<HTMLElement>('[data-not-found-path]');
+  const code = path?.querySelector('code');
+  if (path && code) {
+    const raw = window.location.pathname;
+    try {
+      code.textContent = decodeURI(raw);
+    } catch {
+      code.textContent = raw; // malformed %-escape — show it as typed
+    }
+    path.hidden = false;
+  }
+</script>
+
+<style>
+  .not-found__path {
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    max-width: 100%;
+    margin: 0 0 var(--sp-4);
+    padding: var(--sp-2) var(--sp-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface-2);
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+  }
+
+  .not-found__path[hidden] {
+    display: none;
+  }
+
+  .not-found__path code {
+    color: var(--text);
+    overflow-wrap: anywhere;
+  }
+
+  .not-found__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+  }
+
+  /* Match the home page's explore grid density. */
+  .not-found__links {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+</style>

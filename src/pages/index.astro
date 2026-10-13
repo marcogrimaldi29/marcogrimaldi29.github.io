@@ -9,6 +9,7 @@ import WorkInProgress from '@components/WorkInProgress.astro';
 import Logo from '@components/Logo.astro';
 import CertBadges from '@components/CertBadges.astro';
 import { profile } from '@data/profile';
+import { exploreLinks } from '@data/navigation';
 import {
   certReviewsGoogle,
   certReviewsMicrosoft,
@@ -21,17 +22,6 @@ import {
 const certCount = certReviewsGoogle.length + certReviewsMicrosoft.length;
 const notesCount = studyNotes.length + deepDives.length;
 
-const quickLinks = [
-  { icon: '🏗️', title: 'About', subtitle: 'Background & this site', href: '/about/' },
-  { icon: '🏅', title: 'Cert Reviews', subtitle: 'Exam experiences', href: '/cert-reviews/' },
-  { icon: '📃', title: 'CV', subtitle: 'Experience & skills', href: '/cv/' },
-  { icon: '🚀', title: 'Projects', subtitle: 'Hands-on labs', href: '/projects/' },
-  { icon: '📘', title: 'Study Notes', subtitle: 'Cert notes', href: '/study-notes/' },
-  { icon: '🧰', title: 'Resources', subtitle: 'Curated collections', href: '/resources/' },
-  { icon: '📲', title: 'Contact', subtitle: 'Let’s get in touch', href: '/contact/' },
-  { icon: '🍪', title: 'Privacy', subtitle: 'GDPR-friendly & cookieless', href: '/privacy/' },
-];
-
 // Graph nodes reuse every explore destination; the three landing hubs carry
 // drill-down children (their articles / resources) for the focused graph view.
 const childrenByTitle: Record<string, ReturnType<typeof toGraphChildren>> = {
@@ -39,7 +29,7 @@ const childrenByTitle: Record<string, ReturnType<typeof toGraphChildren>> = {
   'Study Notes': toGraphChildren([...studyNotes, ...deepDives]),
   Resources: toGraphChildren(resourceCollections),
 };
-const graphNodes = quickLinks.map(({ icon, title, href }) => ({
+const graphNodes = exploreLinks.map(({ icon, title, href }) => ({
   icon: icon ?? '🔗',
   label: title,
   href,
@@ -98,7 +88,7 @@ const featured = [
 
       <h2 class="section-heading">explore</h2>
       <div class="grid grid--quicklinks">
-        {[...quickLinks]
+        {[...exploreLinks]
           .sort((a, b) => a.title.localeCompare(b.title))
           .map((q) => (
             <QuickLink {...q} />
