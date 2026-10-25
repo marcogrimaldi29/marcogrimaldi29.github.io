@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
+import { unified } from '@astrojs/markdown-remark';
 import remarkKramdownIal from './src/plugins/remark-kramdown-ial.mjs';
 import rehypeInternalLinks from './src/plugins/rehype-internal-links.mjs';
 import rehypeExternalLinks from './src/plugins/rehype-external-links.mjs';
@@ -70,11 +71,16 @@ export default defineConfig({
   },
 
   markdown: {
-    // Disabled so kramdown IAL class names (e.g. `{: .notice--info}`) keep their
-    // `--` instead of being turned into a Unicode dash (which broke `.notice--*`).
-    smartypants: false,
-    remarkPlugins: [remarkKramdownIal],
-    rehypePlugins: [rehypeInternalLinks, rehypeExternalLinks],
+    // The remark/rehype pipeline (not the default Sätteri one) so the custom
+    // plugins below run. `@astrojs/mdx` inherits this processor, so `.mdx` gets
+    // the same plugins and options.
+    processor: unified({
+      // Disabled so kramdown IAL class names (e.g. `{: .notice--info}`) keep their
+      // `--` instead of being turned into a Unicode dash (which broke `.notice--*`).
+      smartypants: false,
+      remarkPlugins: [remarkKramdownIal],
+      rehypePlugins: [rehypeInternalLinks, rehypeExternalLinks],
+    }),
   },
 
   integrations: [

@@ -1,4 +1,5 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 import { locales } from '@i18n/ui';
 
@@ -27,7 +28,7 @@ const posts = defineCollection({
     categories: stringList,
     tags: stringList,
     permalink: z.string(),
-    canonical_url: z.string().url().optional(),
+    canonical_url: z.url().optional(),
     locale: localeEnum.default('en'),
     /** Shared key linking the same article across locales. */
     translationKey: z.string().optional(),
