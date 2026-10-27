@@ -102,7 +102,7 @@ export const studyNotesIt: LandingCard[] = [
     'GH-300 Appunti',
     'GitHub Copilot — appunti su tutti i domini dell’esame GH-300.',
     'https://marcogrimaldi29.com/gh-300-study-notes/',
-    ['🎖️ Livello Specialty', '📄 6 Competenze'],
+    ['🎖️ Livello Specialty', '📄 6 Competenze', '✅ Superato'],
   ),
   note(
     'GH-900 Appunti',

@@ -218,11 +218,19 @@ interface MicrosoftCert {
 
 const microsoftCerts: MicrosoftCert[] = [
   {
+    code: 'GH-300',
+    title: 'GitHub Copilot',
+    year: 2026,
+    credId: 'BF224CE9B86C2160',
+    badge: 14,
+    brand: 'GitHub',
+  },
+  {
     code: 'GH-900',
     title: 'GitHub Foundations',
     year: 2026,
     credId: 'B792B975A880525B',
-    badge: 14,
+    badge: 15,
     brand: 'GitHub',
   },
   {
@@ -480,7 +488,7 @@ export const technicalSkills: SkillCategory[] = [
       { name: 'AI & Azure AI Services', level: 'Advanced' },
       { name: 'DevOps & CI/CD (GitHub Actions)', level: 'Intermediate' },
       { name: 'Generative AI & Azure AI Foundry', level: 'Intermediate' },
-      { name: 'Microsoft 365 & GitHub Copilot', level: 'Advanced' },
+      { name: 'Microsoft 365 & GitHub Copilot', level: 'Fluent' },
       { name: 'Microsoft Power Platform', level: 'Intermediate' },
       { name: 'PowerShell', level: 'Intermediate' },
       { name: 'Python', level: 'Intermediate' },
