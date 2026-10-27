@@ -102,7 +102,7 @@ export const studyNotesDe: LandingCard[] = [
     'GH-300 Lernnotizen',
     'GitHub Copilot — Prüfungsnotizen zu allen GH-300-Domänen.',
     'https://marcogrimaldi29.com/gh-300-study-notes/',
-    ['🎖️ Specialty-Niveau', '📄 6 Kompetenzen'],
+    ['🎖️ Specialty-Niveau', '📄 6 Kompetenzen', '✅ Bestanden'],
   ),
   note(
     'GH-900 Lernnotizen',

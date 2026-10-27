@@ -246,7 +246,7 @@ export const studyNotes: LandingCard[] = [
     'GH-300 Study Notes',
     'GitHub Copilot — exam prep notes covering all GH-300 domains.',
     'https://marcogrimaldi29.com/gh-300-study-notes/',
-    ['🎖️ Specialty Level', '📄 6 Skills'],
+    ['🎖️ Specialty Level', '📄 6 Skills', '✅ Passed'],
   ),
   note(
     'GH-900 Study Notes',
