@@ -29,6 +29,7 @@ const focus = (title: string): string => {
   if (/ITIL/i.test(title)) return 'ITIL';
   if (/engage center/i.test(title)) return 'Support';
   if (/\bMS-/i.test(title)) return 'M365';
+  if (/\bDP-800\b/i.test(title)) return 'SQL';
   if (/\bDP-/i.test(title)) return 'Fabric';
   if (/\bGH-/i.test(title)) return 'GitHub';
   if (/\bAI-/i.test(title)) return 'Foundry';
@@ -224,6 +225,12 @@ export function toGroupNav(
 
 // ── Study Notes ──────────────────────────────────────────────
 export const studyNotes: LandingCard[] = [
+  note(
+    'DP-800 Study Notes',
+    'SQL AI Developer Associate — exam prep notes covering all DP-800 domains.',
+    'https://marcogrimaldi29.com/dp-800-study-notes/',
+    ['🛡️ Associate Level', '📄 3 Skills'],
+  ),
   note(
     'GH-600 Study Notes',
     'Agentic AI Developer — exam prep notes covering all GH-600 domains.',

@@ -17,6 +17,7 @@ const focus = (title: string): string => {
   if (/ITIL/i.test(title)) return 'ITIL';
   if (/engage center/i.test(title)) return 'Supporto';
   if (/\bMS-/i.test(title)) return 'M365';
+  if (/\bDP-800\b/i.test(title)) return 'SQL';
   if (/\bDP-/i.test(title)) return 'Fabric';
   if (/\bGH-/i.test(title)) return 'GitHub';
   if (/\bAI-/i.test(title)) return 'Foundry';
@@ -80,6 +81,12 @@ const review = (title: string, description: string, href: string, meta: string[]
 
 // ── Appunti di studio ────────────────────────────────────────
 export const studyNotesIt: LandingCard[] = [
+  note(
+    'DP-800 Appunti',
+    'SQL AI Developer Associate — appunti su tutti i domini dell’esame DP-800.',
+    'https://marcogrimaldi29.com/dp-800-study-notes/',
+    ['🛡️ Livello Associate', '📄 3 Competenze'],
+  ),
   note(
     'GH-600 Appunti',
     'Agentic AI Developer — appunti su tutti i domini dell’esame GH-600.',
