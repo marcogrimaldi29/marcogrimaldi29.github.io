@@ -226,6 +226,12 @@ export function toGroupNav(
 // ── Study Notes ──────────────────────────────────────────────
 export const studyNotes: LandingCard[] = [
   note(
+    'GH-200 Study Notes',
+    'GitHub Actions — exam prep notes covering all GH-200 domains.',
+    'https://marcogrimaldi29.com/gh-200-study-notes/',
+    ['🎖️ Specialty Level', '📄 5 Skills'],
+  ),
+  note(
     'DP-800 Study Notes',
     'SQL AI Developer Associate — exam prep notes covering all DP-800 domains.',
     'https://marcogrimaldi29.com/dp-800-study-notes/',
