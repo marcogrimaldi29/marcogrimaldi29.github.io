@@ -82,6 +82,12 @@ const review = (title: string, description: string, href: string, meta: string[]
 // ── Appunti di studio ────────────────────────────────────────
 export const studyNotesIt: LandingCard[] = [
   note(
+    'GH-200 Appunti',
+    'GitHub Actions — appunti su tutti i domini dell’esame GH-200.',
+    'https://marcogrimaldi29.com/gh-200-study-notes/',
+    ['🎖️ Livello Specialty', '📄 5 Competenze'],
+  ),
+  note(
     'DP-800 Appunti',
     'SQL AI Developer Associate — appunti su tutti i domini dell’esame DP-800.',
     'https://marcogrimaldi29.com/dp-800-study-notes/',
