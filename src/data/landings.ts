@@ -241,7 +241,7 @@ export const studyNotes: LandingCard[] = [
     'GH-600 Study Notes',
     'Agentic AI Developer — exam prep notes covering all GH-600 domains.',
     'https://marcogrimaldi29.com/gh-600-study-notes/',
-    ['🎖️ Specialty Level', '📄 6 Skills'],
+    ['🎖️ Specialty Level', '📄 6 Skills', '✅ Passed'],
   ),
   note(
     'SC-500 Study Notes',
