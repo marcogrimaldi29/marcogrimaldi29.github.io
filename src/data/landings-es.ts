@@ -97,7 +97,7 @@ export const studyNotesEs: LandingCard[] = [
     'GH-600 Apuntes',
     'Agentic AI Developer — apuntes sobre todos los dominios del examen GH-600.',
     'https://marcogrimaldi29.com/gh-600-study-notes/',
-    ['🎖️ Nivel Specialty', '📄 6 Competencias'],
+    ['🎖️ Nivel Specialty', '📄 6 Competencias', '✅ Aprobado'],
   ),
   note(
     'SC-500 Apuntes',

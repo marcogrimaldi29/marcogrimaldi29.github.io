@@ -218,11 +218,19 @@ interface MicrosoftCert {
 
 const microsoftCerts: MicrosoftCert[] = [
   {
+    code: 'GH-600',
+    title: 'GitHub Agentic AI Developer',
+    year: 2026,
+    credId: '4103C539AB348712',
+    badge: 14,
+    brand: 'GitHub',
+  },
+  {
     code: 'GH-300',
     title: 'GitHub Copilot',
     year: 2026,
     credId: 'BF224CE9B86C2160',
-    badge: 14,
+    badge: 15,
     brand: 'GitHub',
   },
   {
@@ -230,7 +238,7 @@ const microsoftCerts: MicrosoftCert[] = [
     title: 'GitHub Foundations',
     year: 2026,
     credId: 'B792B975A880525B',
-    badge: 15,
+    badge: 16,
     brand: 'GitHub',
   },
   {
@@ -485,6 +493,7 @@ export const technicalSkills: SkillCategory[] = [
     icon: '🤖',
     title: 'AI & Automation',
     skills: [
+      { name: 'Agentic AI & MCP', level: 'Advanced' },
       { name: 'AI & Azure AI Services', level: 'Advanced' },
       { name: 'DevOps & CI/CD (GitHub Actions)', level: 'Intermediate' },
       { name: 'Generative AI & Azure AI Foundry', level: 'Intermediate' },
