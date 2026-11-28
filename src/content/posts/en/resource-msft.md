@@ -179,7 +179,7 @@ author_profile: true
 
 - [Microsoft 365 renames](https://m365maps.com/renames.html)
 - [Microsoft Accessibility](https://www.microsoft.com/en-us/accessibility)
-- [Microsoft Enteprise Skills Initiative (ESI)](https://esi.microsoft.com/)
+- [Microsoft Enterprise Skills Initiative (ESI)](https://esi.microsoft.com/)
 - [Microsoft Events](https://www.microsoft.com/en-us/events)
 - [Microsoft Learn](https://learn.microsoft.com/en-us/)
 - [Microsoft Learn · Choose your Microsoft Credential](https://arch-center.azureedge.net/Credentials/choose-your-microsoft-credential.pdf)
