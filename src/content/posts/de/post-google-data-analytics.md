@@ -44,23 +44,23 @@ Das **Google Data Analytics Professional Certificate** ist ein Programm aus neun
 
 Hier eine Zusammenfassung der Kurse des Programms:
 
-* **Kurs 1: Foundations: Data, Data, Everywhere**: Dieser Kurs führt in die grundlegenden Konzepte der Datenanalyse, die Rolle eines Data Analyst und den Einsatz von Werkzeugen wie Tabellenkalkulationen, Abfragesprachen und Datenvisualisierung ein.
+- **Kurs 1: Foundations: Data, Data, Everywhere**: Dieser Kurs führt in die grundlegenden Konzepte der Datenanalyse, die Rolle eines Data Analyst und den Einsatz von Werkzeugen wie Tabellenkalkulationen, Abfragesprachen und Datenvisualisierung ein.
 
-* **Kurs 2: Ask Questions to Make Data-Driven Decisions**: Dieser Kurs konzentriert sich auf strukturiertes Denken und das Anwenden eines Problemlösungs-Fahrplans auf Analyseszenarien. Er vermittelt den Einsatz von Tabellenkalkulationen für grundlegende Dateneingabe und -organisation.
+- **Kurs 2: Ask Questions to Make Data-Driven Decisions**: Dieser Kurs konzentriert sich auf strukturiertes Denken und das Anwenden eines Problemlösungs-Fahrplans auf Analyseszenarien. Er vermittelt den Einsatz von Tabellenkalkulationen für grundlegende Dateneingabe und -organisation.
 
-* **Kurs 3: Prepare Data for Exploration**: In diesem Kurs lernst du Überlegungen zur Datenerhebung, wie man zwischen verzerrten und unverzerrten Daten unterscheidet, und Best Practices zur Datenorganisation und zum Verständnis von Datenbanken.
+- **Kurs 3: Prepare Data for Exploration**: In diesem Kurs lernst du Überlegungen zur Datenerhebung, wie man zwischen verzerrten und unverzerrten Daten unterscheidet, und Best Practices zur Datenorganisation und zum Verständnis von Datenbanken.
 
-* **Kurs 4: Process Data from Dirty to Clean**: Dieser Kurs vermittelt dir, wie man Datenintegrität definiert, Risiken identifiziert und grundlegende SQL-Funktionen und -Abfragen zur Datenbereinigung anwendet.
+- **Kurs 4: Process Data from Dirty to Clean**: Dieser Kurs vermittelt dir, wie man Datenintegrität definiert, Risiken identifiziert und grundlegende SQL-Funktionen und -Abfragen zur Datenbereinigung anwendet.
 
-* **Kurs 5: Analyze Data to Answer Questions**: Dieser Kurs konzentriert sich auf das Organisieren und Formatieren von Daten mithilfe von Sortierungen und Filtern. Er vermittelt auch, wie man Funktionen und Syntax für SQL-Abfragen nutzt, um Daten zu kombinieren und Berechnungen in Tabellenkalkulationen durchzuführen.
+- **Kurs 5: Analyze Data to Answer Questions**: Dieser Kurs konzentriert sich auf das Organisieren und Formatieren von Daten mithilfe von Sortierungen und Filtern. Er vermittelt auch, wie man Funktionen und Syntax für SQL-Abfragen nutzt, um Daten zu kombinieren und Berechnungen in Tabellenkalkulationen durchzuführen.
 
-* **Kurs 6: Share Data Through the Art of Visualization**: Dieser Kurs behandelt den Einsatz von Datenvisualisierungen zur Darstellung von Analyseergebnissen, identifiziert Tableau als zentrales Visualisierungswerkzeug und vermittelt das Erstellen wirkungsvoller Präsentationen.
+- **Kurs 6: Share Data Through the Art of Visualization**: Dieser Kurs behandelt den Einsatz von Datenvisualisierungen zur Darstellung von Analyseergebnissen, identifiziert Tableau als zentrales Visualisierungswerkzeug und vermittelt das Erstellen wirkungsvoller Präsentationen.
 
-* **Kurs 7: Data Analysis with R Programming**: Dieser Kurs bietet eine Einführung in die Programmiersprache R, einschließlich grundlegender Konzepte, Optionen zur Datenvisualisierung und grundlegender Formatierung in R Markdown.
+- **Kurs 7: Data Analysis with R Programming**: Dieser Kurs bietet eine Einführung in die Programmiersprache R, einschließlich grundlegender Konzepte, Optionen zur Datenvisualisierung und grundlegender Formatierung in R Markdown.
 
-* **Kurs 8: Google Data Analytics Capstone: Complete a Case Study**: Der Abschlusskurs konzentriert sich auf das Anwenden des Datenanalyseprozesses auf eine Fallstudie. Er behandelt außerdem den Einsatz von Fallstudien in der Kommunikation mit Recruitern und Arbeitgebern und bietet neue KI-Kompetenzen zur Stärkung der Datenanalysefähigkeiten.
+- **Kurs 8: Google Data Analytics Capstone: Complete a Case Study**: Der Abschlusskurs konzentriert sich auf das Anwenden des Datenanalyseprozesses auf eine Fallstudie. Er behandelt außerdem den Einsatz von Fallstudien in der Kommunikation mit Recruitern und Arbeitgebern und bietet neue KI-Kompetenzen zur Stärkung der Datenanalysefähigkeiten.
 
-* **Kurs 9: Accelerate Your Job Search with AI**: Dieser optionale Kurs ist Teil aller Google Career Certificates und vermittelt, wie man KI-Tools wie Gemini und NotebookLM nutzt, um einen Jobsuchplan zu erstellen, einen Lebenslauf aufzubauen und sich auf Interviews vorzubereiten.
+- **Kurs 9: Accelerate Your Job Search with AI**: Dieser optionale Kurs ist Teil aller Google Career Certificates und vermittelt, wie man KI-Tools wie Gemini und NotebookLM nutzt, um einen Jobsuchplan zu erstellen, einen Lebenslauf aufzubauen und sich auf Interviews vorzubereiten.
 
 ---
 
@@ -68,13 +68,13 @@ Hier eine Zusammenfassung der Kurse des Programms:
 
 Dieses Zertifikat ist sehr praxisnah und konzentriert sich auf Werkzeuge und Technologien, die Datenexperten in der realen Welt nutzen. Du erlangst Sicherheit in:
 
-* **Tabellenkalkulationen**: Datenorganisation und grundlegende Analyse beherrschen.
+- **Tabellenkalkulationen**: Datenorganisation und grundlegende Analyse beherrschen.
 
-* **SQL (Structured Query Language)**: Daten in relationalen Datenbanken abfragen und manipulieren.
+- **SQL (Structured Query Language)**: Daten in relationalen Datenbanken abfragen und manipulieren.
 
-* **R-Programmierung**: eine leistungsstarke Sprache für statistische Berechnungen und Datenvisualisierung.
+- **R-Programmierung**: eine leistungsstarke Sprache für statistische Berechnungen und Datenvisualisierung.
 
-* **Tableau**: ein führendes Datenvisualisierungswerkzeug zum Erstellen interaktiver Dashboards.
+- **Tableau**: ein führendes Datenvisualisierungswerkzeug zum Erstellen interaktiver Dashboards.
 
 Die Fallstudie des Programms bietet eine perfekte Gelegenheit, all diese Kompetenzen auf ein reales Problem anzuwenden und ein Abschlussprojekt zu erstellen, das du auch deinem beruflichen Portfolio hinzufügen kannst.
 

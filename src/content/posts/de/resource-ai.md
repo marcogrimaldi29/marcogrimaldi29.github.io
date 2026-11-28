@@ -41,6 +41,7 @@ seo:
 ---
 
 ### 🤖 KI-Assistenten und -Plattformen
+
 - [Adobe Firefly](https://www.adobe.com/products/firefly.html) - KI-Kunstgenerator.
 - [Arena](https://arena.ai/) - KI-Programmierassistent.
 - [Base44](https://base44.com/) - KI-Programmierassistent.
@@ -87,6 +88,7 @@ seo:
 ---
 
 ### ❇️ KI-bezogene Dokumente und Artikel
+
 - [Andrew Ng: How AI could empower any business](https://www.ted.com/talks/andrew_ng_how_ai_could_empower_any_business)
 - [Artificial intelligence (AI) vs. machine learning (ML)](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
 - [Artificial intelligence (AI) vs. machine learning (ML)](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/artificial-intelligence-vs-machine-learning)
@@ -119,6 +121,7 @@ seo:
 ---
 
 ### 💬 Prompt Engineering
+
 - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/pdf/2201.11903)
 - [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)

@@ -51,9 +51,9 @@ I earned the **PL-900 certification** in October 2022, which marked my second Mi
 
 ### 🦾 Why the PL-900 Is Worth Your Time
 
-* **Beginner-friendly but powerful**: Geared toward professionals who want to create solutions without deep coding knowledge, PL-900 introduces core components like Power Apps, Power Automate, Power Pages, Dataverse, and Copilots. 
-* **Business-focused outcomes**: You’ll see firsthand how low-code platforms enable the rapid delivery of custom applications, automated workflows, external websites, and AI-powered solutions.
-* **A foundation for growth**: Beyond the fundamentals, PL-900 sets the stage for more advanced certifications and can be directly applied to real-world challenges.
+- **Beginner-friendly but powerful**: Geared toward professionals who want to create solutions without deep coding knowledge, PL-900 introduces core components like Power Apps, Power Automate, Power Pages, Dataverse, and Copilots.
+- **Business-focused outcomes**: You’ll see firsthand how low-code platforms enable the rapid delivery of custom applications, automated workflows, external websites, and AI-powered solutions.
+- **A foundation for growth**: Beyond the fundamentals, PL-900 sets the stage for more advanced certifications and can be directly applied to real-world challenges.
 
 ---
 
@@ -97,11 +97,11 @@ The **[skills measured](https://learn.microsoft.com/en-us/credentials/certificat
 
 ### 💡 Tips to Approach the Exam
 
-* **Focus according to weighting**: Roughly 40% of the exam revolves around business value and platform management. That said, Power Apps and Power Automate together can account for another 40–50%, so balance your study time wisely.
-* **Make use of Microsoft Learn**: The [official learning paths](https://learn.microsoft.com/en-us/training/courses/pl-900t00) are free, frequently updated, and map directly to the exam. Don’t skip the linked documentation — it often clarifies edge cases.
-* **Take practice tests seriously**: Microsoft’s [practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) mirror the actual exam format and highlight areas that need reinforcement.
-* **Know the exam mechanics**:  
-  - Expect ~40–60 questions in multiple-choice, drag-and-drop, or true/false formats. 
+- **Focus according to weighting**: Roughly 40% of the exam revolves around business value and platform management. That said, Power Apps and Power Automate together can account for another 40–50%, so balance your study time wisely.
+- **Make use of Microsoft Learn**: The [official learning paths](https://learn.microsoft.com/en-us/training/courses/pl-900t00) are free, frequently updated, and map directly to the exam. Don’t skip the linked documentation — it often clarifies edge cases.
+- **Take practice tests seriously**: Microsoft’s [practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) mirror the actual exam format and highlight areas that need reinforcement.
+- **Know the exam mechanics**:  
+  - Expect ~40–60 questions in multiple-choice, drag-and-drop, or true/false formats.
   - You’ll have [~45 minutes](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience#exam-duration) to complete the test, need a score of [700/1000](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports#scores-needed-to-pass-exams) to pass, and can choose between online proctoring or an in-person Pearson VUE center.  
 
 ---
@@ -110,11 +110,11 @@ The **[skills measured](https://learn.microsoft.com/en-us/credentials/certificat
 
 Since this was my second Microsoft exam, I reused and refined the same study approach that had worked well for the [SC-900](/cert-reviews/microsoft-sc-900/):  
 
-* **Collect and organize study materials** from the start.
-* **Watch [John Savill's Study Cram video](https://www.youtube.com/watch?v=lbPHM-MiEUA)** - it distills the essentials engagingly and practically.
-* **Work through Microsoft's [PL-900 course](https://learn.microsoft.com/en-us/training/courses/pl-900t00)**. It’s structured, free, and always up to date.
-* **Do a second pass with [John Savill's Study Cram session](https://www.youtube.com/watch?v=lbPHM-MiEUA)** after finishing the learning paths. It reinforces key points and strengthens weaker areas. 
-* **Stay confident on exam day**. Trust your preparation, manage your time, and focus on what you know rather than second-guessing.
+- **Collect and organize study materials** from the start.
+- **Watch [John Savill's Study Cram video](https://www.youtube.com/watch?v=lbPHM-MiEUA)** - it distills the essentials engagingly and practically.
+- **Work through Microsoft's [PL-900 course](https://learn.microsoft.com/en-us/training/courses/pl-900t00)**. It’s structured, free, and always up to date.
+- **Do a second pass with [John Savill's Study Cram session](https://www.youtube.com/watch?v=lbPHM-MiEUA)** after finishing the learning paths. It reinforces key points and strengthens weaker areas.
+- **Stay confident on exam day**. Trust your preparation, manage your time, and focus on what you know rather than second-guessing.
 
 ---
 
@@ -139,16 +139,16 @@ If you’re curious about low-code/no-code and want to explore how Microsoft too
 
 ---
 
-### 📖 Related Resources 
+### 📖 Related Resources
 
-* [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
-* [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
-* [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
-* [Introduction to Microsoft Power Platform](https://learn.microsoft.com/en-us/training/courses/pl-900t00)
-* [John Savill's PL-900 Microsoft Power Platform Fundamentals Study Cram](https://www.youtube.com/watch?v=lbPHM-MiEUA)
-* [Microsoft Certified: Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/?practice-assessment-type=certification)
-* [Microsoft Events](https://www.microsoft.com/en-us/events)
-* [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
-* [Study guide for Exam PL-900: Microsoft Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900)
+- [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
+- [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
+- [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
+- [Introduction to Microsoft Power Platform](https://learn.microsoft.com/en-us/training/courses/pl-900t00)
+- [John Savill's PL-900 Microsoft Power Platform Fundamentals Study Cram](https://www.youtube.com/watch?v=lbPHM-MiEUA)
+- [Microsoft Certified: Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/?practice-assessment-type=certification)
+- [Microsoft Events](https://www.microsoft.com/en-us/events)
+- [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
+- [Study guide for Exam PL-900: Microsoft Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900)
 
 ---

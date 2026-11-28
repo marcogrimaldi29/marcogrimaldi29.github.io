@@ -44,17 +44,17 @@ El programa se divide ahora en seis cursos principales — antes eran cinco, per
 
 Los seis cursos son:
 
-* **Technical Support Fundamentals**: Tu introducción al mundo de las TI. Cubrirás los conceptos básicos del **hardware, el software y las redes**, además de las habilidades blandas cruciales como la **resolución de problemas y la atención al cliente**. Es una introducción esencial que garantiza una base sólida.
+- **Technical Support Fundamentals**: Tu introducción al mundo de las TI. Cubrirás los conceptos básicos del **hardware, el software y las redes**, además de las habilidades blandas cruciales como la **resolución de problemas y la atención al cliente**. Es una introducción esencial que garantiza una base sólida.
 
-* **The Bits and Bytes of Computer Networking**: Este curso profundiza en la columna vertebral de la tecnología moderna. Aprenderás sobre **modelos de red, protocolos como TCP/IP** y aplicaciones prácticas para la resolución de problemas de red. Entender cómo viajan los datos es fundamental para resolver problemas en cualquier entorno de TI. Profundiza bastante y también puede ser un buen punto de partida para futuras certificaciones de redes más avanzadas, como la CCNA.
+- **The Bits and Bytes of Computer Networking**: Este curso profundiza en la columna vertebral de la tecnología moderna. Aprenderás sobre **modelos de red, protocolos como TCP/IP** y aplicaciones prácticas para la resolución de problemas de red. Entender cómo viajan los datos es fundamental para resolver problemas en cualquier entorno de TI. Profundiza bastante y también puede ser un buen punto de partida para futuras certificaciones de redes más avanzadas, como la CCNA.
 
-* **Operating Systems and You: Becoming a Power User**: Aquí pasas de ser un usuario básico a alguien que entiende lo que ocurre «bajo el capó». El curso se centra en el funcionamiento interno de sistemas operativos como **Windows** y **Linux**, enseñándote a **gestionar archivos, procesos y permisos de usuario**.
+- **Operating Systems and You: Becoming a Power User**: Aquí pasas de ser un usuario básico a alguien que entiende lo que ocurre «bajo el capó». El curso se centra en el funcionamiento interno de sistemas operativos como **Windows** y **Linux**, enseñándote a **gestionar archivos, procesos y permisos de usuario**.
 
-* **System Administration and IT Infrastructure Services**: Aquí el temario te da una idea de lo que supone gestionar varios equipos y toda una infraestructura de TI. Aprenderás sobre **la gestión de servidores, la infraestructura cloud y servicios esenciales como DNS y DHCP**. Este curso aporta una visión práctica del propio trabajo, preparándote para algo más que una sola máquina.
+- **System Administration and IT Infrastructure Services**: Aquí el temario te da una idea de lo que supone gestionar varios equipos y toda una infraestructura de TI. Aprenderás sobre **la gestión de servidores, la infraestructura cloud y servicios esenciales como DNS y DHCP**. Este curso aporta una visión práctica del propio trabajo, preparándote para algo más que una sola máquina.
 
-* **IT Security: Defense Against the Digital Dark Arts**: En el mundo actual, la seguridad es primordial. Este curso cubre los fundamentos de la **seguridad de TI**, desde comprender amenazas y ataques comunes hasta implementar protocolos de seguridad y mejores prácticas.
+- **IT Security: Defense Against the Digital Dark Arts**: En el mundo actual, la seguridad es primordial. Este curso cubre los fundamentos de la **seguridad de TI**, desde comprender amenazas y ataques comunes hasta implementar protocolos de seguridad y mejores prácticas.
 
-* **Accelerate Your Job Search with AI**: Este curso totalmente nuevo — cuando hice el certificado en 2021 no estaba incluido — te ayuda a **aprovechar el poder de la inteligencia artificial para agilizar tu búsqueda de empleo**. Aprenderás a redactar un currículum y una carta de presentación convincentes, a practicar para las entrevistas y a optimizar tu perfil profesional con herramientas de IA.
+- **Accelerate Your Job Search with AI**: Este curso totalmente nuevo — cuando hice el certificado en 2021 no estaba incluido — te ayuda a **aprovechar el poder de la inteligencia artificial para agilizar tu búsqueda de empleo**. Aprenderás a redactar un currículum y una carta de presentación convincentes, a practicar para las entrevistas y a optimizar tu perfil profesional con herramientas de IA.
 
 ---
 

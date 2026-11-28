@@ -46,19 +46,19 @@ Der Lehrplan führt dich vom grundlegenden Scripting bis hin zum Aufbau skalierb
 
 Google veranschlagt etwa sechs Monate bei 10 Stunden pro Woche, aber wie alle Coursera-Zertifikate verläuft es im eigenen Tempo. Nachfolgend ein Überblick über die Kernkurse:
 
-* **Kurs 1: Crash Course on Python** – Eine Einführung in die Grundlagen: Variablen, Schleifen, Funktionen und wie man Ideen in ausführbaren Code verwandelt.
+- **Kurs 1: Crash Course on Python** – Eine Einführung in die Grundlagen: Variablen, Schleifen, Funktionen und wie man Ideen in ausführbaren Code verwandelt.
 
-* **Kurs 2: Using Python to Interact with the Operating System** – Lerne, Dateiverarbeitung zu automatisieren, Prozesse zu verwalten und reguläre Ausdrücke zum Parsen von Text und Logs zu nutzen.
+- **Kurs 2: Using Python to Interact with the Operating System** – Lerne, Dateiverarbeitung zu automatisieren, Prozesse zu verwalten und reguläre Ausdrücke zum Parsen von Text und Logs zu nutzen.
 
-* **Kurs 3: Introduction to Git and GitHub** – Eine wertvolle Ergänzung: Grundlagen der Versionskontrolle mit Git und GitHub. Diese Kompetenzen nutze ich seitdem direkt für die Pflege dieser persönlichen Website, die auf einem GitHub-Repository läuft.
+- **Kurs 3: Introduction to Git and GitHub** – Eine wertvolle Ergänzung: Grundlagen der Versionskontrolle mit Git und GitHub. Diese Kompetenzen nutze ich seitdem direkt für die Pflege dieser persönlichen Website, die auf einem GitHub-Repository läuft.
 
-* **Kurs 4: Troubleshooting and Debugging Techniques** – Praktische Strategien zur Diagnose und Behebung von Fehlern, sowohl im Code als auch in Systemen.
+- **Kurs 4: Troubleshooting and Debugging Techniques** – Praktische Strategien zur Diagnose und Behebung von Fehlern, sowohl im Code als auch in Systemen.
 
-* **Kurs 5: Configuration Management and the Cloud** – Von lokalen Skripten bis zu skalierbaren Lösungen erkundest du Automatisierung in physischen und Cloud-Umgebungen.
+- **Kurs 5: Configuration Management and the Cloud** – Von lokalen Skripten bis zu skalierbaren Lösungen erkundest du Automatisierung in physischen und Cloud-Umgebungen.
 
-* **Kurs 6: Automating Real-World Tasks with Python** – Ein Abschlussprojekt, in dem du alles zusammenführst, um eine portfolio-reife Automatisierung zu erstellen.
+- **Kurs 6: Automating Real-World Tasks with Python** – Ein Abschlussprojekt, in dem du alles zusammenführst, um eine portfolio-reife Automatisierung zu erstellen.
 
-* **Kurs 7: Accelerate Your Job Search with AI** – Eine gemeinsame Ergänzung aller Google Career Certificates, die sich auf KI-gestützte Tools für Lebensläufe, Jobsuche und Interviewvorbereitung konzentriert.
+- **Kurs 7: Accelerate Your Job Search with AI** – Eine gemeinsame Ergänzung aller Google Career Certificates, die sich auf KI-gestützte Tools für Lebensläufe, Jobsuche und Interviewvorbereitung konzentriert.
 
 ---
 

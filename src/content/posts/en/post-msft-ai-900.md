@@ -49,10 +49,10 @@ It was December 2022 when I obtained my **AI-900** certification which marked th
 
 ### 🧠 Why AI-900 Matters
 
-* **Accessible and beginner-friendly**: Designed for both technical and non-technical professionals, the Azure AI Fundamentals (AI-900) exam introduces essential AI and machine learning concepts without requiring any prior experience in data science.
-* **Builds Microsoft AI fluency**: You’ll explore key Azure AI workloads including computer vision, natural language processing (NLP), generative AI, conversational bots, and no-code AI tools.
-* **Promotes responsible AI awareness**: Learn about vital AI theory topics such as regression, classification, and ethical principles like fairness, transparency, reliability, and responsible AI.
-* **A stepping stone toward advanced certifications**: AI-900 provides a solid foundation for deeper paths such as the AI-102: Azure AI Engineer Associate certification — perfect for anyone aiming to specialize further in AI development on Azure. (I earned this certification in mid-2024 and will cover it in a future article.)
+- **Accessible and beginner-friendly**: Designed for both technical and non-technical professionals, the Azure AI Fundamentals (AI-900) exam introduces essential AI and machine learning concepts without requiring any prior experience in data science.
+- **Builds Microsoft AI fluency**: You’ll explore key Azure AI workloads including computer vision, natural language processing (NLP), generative AI, conversational bots, and no-code AI tools.
+- **Promotes responsible AI awareness**: Learn about vital AI theory topics such as regression, classification, and ethical principles like fairness, transparency, reliability, and responsible AI.
+- **A stepping stone toward advanced certifications**: AI-900 provides a solid foundation for deeper paths such as the AI-102: Azure AI Engineer Associate certification — perfect for anyone aiming to specialize further in AI development on Azure. (I earned this certification in mid-2024 and will cover it in a future article.)
 
 **🔜 Coming soon:** I earned the AI-102 certification in mid-2024 and will cover it in a dedicated review article soon.
 {: .notice}
@@ -93,10 +93,10 @@ The domains are divided into five main knowledge areas, each weighted differentl
 
 ### 💡 Practical Tips for Passing AI-900
 
-* **Leverage official Microsoft Learn paths**: Use Microsoft’s [free learning modules](https://learn.microsoft.com/en-us/training/courses/ai-900t00), which directly follow the exam outline and are updated regularly.
-* **Use practice exams strategically**: Microsoft’s [practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) are closely aligned with the test and highlight areas needing improvement.
-* **Track weak areas**: Practice assessments provide a breakdown of your performance, making it easier to focus revision where it’s most needed.
-* **Familiarize yourself with logistics**:  
+- **Leverage official Microsoft Learn paths**: Use Microsoft’s [free learning modules](https://learn.microsoft.com/en-us/training/courses/ai-900t00), which directly follow the exam outline and are updated regularly.
+- **Use practice exams strategically**: Microsoft’s [practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) are closely aligned with the test and highlight areas needing improvement.
+- **Track weak areas**: Practice assessments provide a breakdown of your performance, making it easier to focus revision where it’s most needed.
+- **Familiarize yourself with logistics**:  
   - ~40–60 questions (multiple-choice, drag-and-drop, true/false)  
   - [~45 minutes](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience#exam-duration) duration.
   - [700/1000](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports#scores-needed-to-pass-exams) required to pass.
@@ -108,10 +108,10 @@ The domains are divided into five main knowledge areas, each weighted differentl
 
 When preparing for this certification — and later Fundamentals exams — I followed a simple but effective strategy:
 
-* **Organize your study materials**: Gather and structure all relevant resources early on so they’re easy to revisit when reviewing key topics.
-* **Watch [John Savill's Study Cram video](https://www.youtube.com/watch?v=bTkUTkXrqOQ)**: Whether before, during, or after completing the learning paths, Savill’s videos are incredibly helpful. He has a knack for simplifying complex Azure concepts and explaining them with clarity and enthusiasm.
-* **Complete Microsoft’s official [AI-900 course](https://learn.microsoft.com/en-us/training/courses/ai-900t00)**: This free Microsoft course is comprehensive, regularly updated, and fully aligned with the current exam objectives.
-* **Stay confident on exam day**: By the time you take the test, you’ll have built a solid foundation through structured preparation. Focus on what you know, manage your time effectively, and keep a calm, clear mindset.
+- **Organize your study materials**: Gather and structure all relevant resources early on so they’re easy to revisit when reviewing key topics.
+- **Watch [John Savill's Study Cram video](https://www.youtube.com/watch?v=bTkUTkXrqOQ)**: Whether before, during, or after completing the learning paths, Savill’s videos are incredibly helpful. He has a knack for simplifying complex Azure concepts and explaining them with clarity and enthusiasm.
+- **Complete Microsoft’s official [AI-900 course](https://learn.microsoft.com/en-us/training/courses/ai-900t00)**: This free Microsoft course is comprehensive, regularly updated, and fully aligned with the current exam objectives.
+- **Stay confident on exam day**: By the time you take the test, you’ll have built a solid foundation through structured preparation. Focus on what you know, manage your time effectively, and keep a calm, clear mindset.
 
 ---
 
@@ -140,16 +140,16 @@ Most importantly, **AI-related skills are in high demand** across industries. Ad
 
 ---
 
-### 📖 Related Resources 
+### 📖 Related Resources
 
-* [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
-* [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
-* [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
-* [Introduction to AI in Azure](https://learn.microsoft.com/en-us/training/courses/ai-900t00)
-* [John Savill's AI-900 Study Cram v2](https://www.youtube.com/watch?v=bTkUTkXrqOQ)
-* [Microsoft Certified: Azure AI Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification)
-* [Microsoft Events](https://www.microsoft.com/en-us/events)
-* [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
-* [Study guide for Exam AI-900: Microsoft Azure AI Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900)
+- [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
+- [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
+- [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
+- [Introduction to AI in Azure](https://learn.microsoft.com/en-us/training/courses/ai-900t00)
+- [John Savill's AI-900 Study Cram v2](https://www.youtube.com/watch?v=bTkUTkXrqOQ)
+- [Microsoft Certified: Azure AI Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification)
+- [Microsoft Events](https://www.microsoft.com/en-us/events)
+- [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
+- [Study guide for Exam AI-900: Microsoft Azure AI Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900)
 
 ---

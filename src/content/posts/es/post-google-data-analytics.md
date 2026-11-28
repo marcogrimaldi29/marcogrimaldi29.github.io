@@ -44,23 +44,23 @@ El **Google Data Analytics Professional Certificate** es un programa de nueve cu
 
 Aquí tienes un resumen de los cursos del programa:
 
-* **Curso 1: Foundations: Data, Data, Everywhere**: Este curso introduce los conceptos fundamentales de la analítica de datos, el papel de un analista de datos y el uso de herramientas como hojas de cálculo, lenguajes de consulta y visualización de datos.
+- **Curso 1: Foundations: Data, Data, Everywhere**: Este curso introduce los conceptos fundamentales de la analítica de datos, el papel de un analista de datos y el uso de herramientas como hojas de cálculo, lenguajes de consulta y visualización de datos.
 
-* **Curso 2: Ask Questions to Make Data-Driven Decisions**: Este curso se centra en el pensamiento estructurado y en aplicar una hoja de ruta de resolución de problemas a escenarios de análisis. Enseña el uso de hojas de cálculo para la entrada y organización básica de datos.
+- **Curso 2: Ask Questions to Make Data-Driven Decisions**: Este curso se centra en el pensamiento estructurado y en aplicar una hoja de ruta de resolución de problemas a escenarios de análisis. Enseña el uso de hojas de cálculo para la entrada y organización básica de datos.
 
-* **Curso 3: Prepare Data for Exploration**: En este curso aprenderás sobre las consideraciones en la recopilación de datos, cómo distinguir entre datos sesgados e imparciales, y las mejores prácticas para organizar datos y entender las bases de datos.
+- **Curso 3: Prepare Data for Exploration**: En este curso aprenderás sobre las consideraciones en la recopilación de datos, cómo distinguir entre datos sesgados e imparciales, y las mejores prácticas para organizar datos y entender las bases de datos.
 
-* **Curso 4: Process Data from Dirty to Clean**: Este curso te enseña a definir la integridad de los datos, identificar riesgos y aplicar funciones y consultas básicas de SQL para limpiar datos.
+- **Curso 4: Process Data from Dirty to Clean**: Este curso te enseña a definir la integridad de los datos, identificar riesgos y aplicar funciones y consultas básicas de SQL para limpiar datos.
 
-* **Curso 5: Analyze Data to Answer Questions**: Este curso se centra en organizar y dar formato a los datos mediante ordenaciones y filtros. También te enseña a usar funciones y sintaxis de consultas SQL para combinar datos y realizar cálculos en hojas de cálculo.
+- **Curso 5: Analyze Data to Answer Questions**: Este curso se centra en organizar y dar formato a los datos mediante ordenaciones y filtros. También te enseña a usar funciones y sintaxis de consultas SQL para combinar datos y realizar cálculos en hojas de cálculo.
 
-* **Curso 6: Share Data Through the Art of Visualization**: Este curso cubre el uso de visualizaciones de datos para presentar los resultados del análisis, identifica Tableau como herramienta clave de visualización y enseña a crear presentaciones eficaces.
+- **Curso 6: Share Data Through the Art of Visualization**: Este curso cubre el uso de visualizaciones de datos para presentar los resultados del análisis, identifica Tableau como herramienta clave de visualización y enseña a crear presentaciones eficaces.
 
-* **Curso 7: Data Analysis with R Programming**: Este curso ofrece una introducción al lenguaje de programación R, incluidos conceptos fundamentales, opciones de visualización de datos y formato básico en R Markdown.
+- **Curso 7: Data Analysis with R Programming**: Este curso ofrece una introducción al lenguaje de programación R, incluidos conceptos fundamentales, opciones de visualización de datos y formato básico en R Markdown.
 
-* **Curso 8: Google Data Analytics Capstone: Complete a Case Study**: El curso final se centra en aplicar el proceso de análisis de datos a un caso práctico. También aborda el uso de casos prácticos para comunicarse con reclutadores y empleadores, y ofrece nuevas competencias de IA para potenciar la analítica de datos.
+- **Curso 8: Google Data Analytics Capstone: Complete a Case Study**: El curso final se centra en aplicar el proceso de análisis de datos a un caso práctico. También aborda el uso de casos prácticos para comunicarse con reclutadores y empleadores, y ofrece nuevas competencias de IA para potenciar la analítica de datos.
 
-* **Curso 9: Accelerate Your Job Search with AI**: Este curso opcional forma parte de todos los Google Career Certificates y enseña a usar herramientas de IA como Gemini y NotebookLM para crear un plan de búsqueda de empleo, elaborar un currículum y prepararte para las entrevistas.
+- **Curso 9: Accelerate Your Job Search with AI**: Este curso opcional forma parte de todos los Google Career Certificates y enseña a usar herramientas de IA como Gemini y NotebookLM para crear un plan de búsqueda de empleo, elaborar un currículum y prepararte para las entrevistas.
 
 ---
 
@@ -68,13 +68,13 @@ Aquí tienes un resumen de los cursos del programa:
 
 Este certificado es muy práctico y se centra en las herramientas y tecnologías que usan los profesionales de datos en el mundo real. Adquirirás soltura en:
 
-* **Hojas de cálculo**: dominar la organización de datos y el análisis fundamental.
+- **Hojas de cálculo**: dominar la organización de datos y el análisis fundamental.
 
-* **SQL (Structured Query Language)**: consultar y manipular datos en bases de datos relacionales.
+- **SQL (Structured Query Language)**: consultar y manipular datos en bases de datos relacionales.
 
-* **Programación en R**: un lenguaje potente para la computación estadística y la visualización de datos.
+- **Programación en R**: un lenguaje potente para la computación estadística y la visualización de datos.
 
-* **Tableau**: una de las principales herramientas de visualización de datos, usada para crear cuadros de mando interactivos.
+- **Tableau**: una de las principales herramientas de visualización de datos, usada para crear cuadros de mando interactivos.
 
 El caso práctico del programa ofrece una oportunidad perfecta para aplicar todas estas competencias a un problema real, creando un proyecto final que también puedes añadir a tu portfolio profesional.
 

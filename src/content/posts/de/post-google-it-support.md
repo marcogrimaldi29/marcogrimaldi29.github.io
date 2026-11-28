@@ -44,17 +44,17 @@ Das Programm ist nun in sechs Kernkurse unterteilt — früher waren es fünf, d
 
 Die sechs Kurse sind:
 
-* **Technical Support Fundamentals**: Deine Einführung in die Welt der IT. Du behandelst die Grundlagen von Computer-**Hardware, Software und Netzwerken** sowie die entscheidenden Soft Skills wie **Troubleshooting und Kundenservice**. Eine essenzielle Einführung, die ein solides Fundament sicherstellt.
+- **Technical Support Fundamentals**: Deine Einführung in die Welt der IT. Du behandelst die Grundlagen von Computer-**Hardware, Software und Netzwerken** sowie die entscheidenden Soft Skills wie **Troubleshooting und Kundenservice**. Eine essenzielle Einführung, die ein solides Fundament sicherstellt.
 
-* **The Bits and Bytes of Computer Networking**: Dieser Kurs taucht in das Rückgrat moderner Technologie ein. Du lernst **Netzwerkmodelle, Protokolle wie TCP/IP** und praktische Anwendungen für die Netzwerk-Fehlerbehebung. Zu verstehen, wie Daten reisen, ist grundlegend, um Probleme in jeder IT-Umgebung zu lösen. Er geht ziemlich tief und kann auch ein guter Ausgangspunkt für künftige, tiefergehende netzwerkbezogene Zertifizierungen wie CCNA sein.
+- **The Bits and Bytes of Computer Networking**: Dieser Kurs taucht in das Rückgrat moderner Technologie ein. Du lernst **Netzwerkmodelle, Protokolle wie TCP/IP** und praktische Anwendungen für die Netzwerk-Fehlerbehebung. Zu verstehen, wie Daten reisen, ist grundlegend, um Probleme in jeder IT-Umgebung zu lösen. Er geht ziemlich tief und kann auch ein guter Ausgangspunkt für künftige, tiefergehende netzwerkbezogene Zertifizierungen wie CCNA sein.
 
-* **Operating Systems and You: Becoming a Power User**: Hier wechselst du vom einfachen Anwender zu jemandem, der versteht, was „unter der Haube“ passiert. Der Kurs konzentriert sich auf das Innenleben von Betriebssystemen wie **Windows** und **Linux** und vermittelt dir das **Verwalten von Dateien, Prozessen und Benutzerberechtigungen**.
+- **Operating Systems and You: Becoming a Power User**: Hier wechselst du vom einfachen Anwender zu jemandem, der versteht, was „unter der Haube“ passiert. Der Kurs konzentriert sich auf das Innenleben von Betriebssystemen wie **Windows** und **Linux** und vermittelt dir das **Verwalten von Dateien, Prozessen und Benutzerberechtigungen**.
 
-* **System Administration and IT Infrastructure Services**: Hier gibt dir der Lehrplan einen Vorgeschmack darauf, wie es ist, mehrere Computer und eine gesamte IT-Infrastruktur zu verwalten. Du lernst das **Verwalten von Servern, Cloud-Infrastruktur und essenziellen Diensten wie DNS und DHCP**. Dieser Kurs bietet praktische Einblicke in die eigentliche Arbeit und bereitet dich auf mehr als nur eine einzelne Maschine vor.
+- **System Administration and IT Infrastructure Services**: Hier gibt dir der Lehrplan einen Vorgeschmack darauf, wie es ist, mehrere Computer und eine gesamte IT-Infrastruktur zu verwalten. Du lernst das **Verwalten von Servern, Cloud-Infrastruktur und essenziellen Diensten wie DNS und DHCP**. Dieser Kurs bietet praktische Einblicke in die eigentliche Arbeit und bereitet dich auf mehr als nur eine einzelne Maschine vor.
 
-* **IT Security: Defense Against the Digital Dark Arts**: In der heutigen Welt ist Sicherheit von größter Bedeutung. Dieser Kurs behandelt die Grundlagen der **IT-Sicherheit**, vom Verständnis gängiger Bedrohungen und Angriffe bis zur Umsetzung von Sicherheitsprotokollen und Best Practices.
+- **IT Security: Defense Against the Digital Dark Arts**: In der heutigen Welt ist Sicherheit von größter Bedeutung. Dieser Kurs behandelt die Grundlagen der **IT-Sicherheit**, vom Verständnis gängiger Bedrohungen und Angriffe bis zur Umsetzung von Sicherheitsprotokollen und Best Practices.
 
-* **Accelerate Your Job Search with AI**: Dieser brandneue Kurs — als ich das Zertifikat 2021 absolvierte, war er noch nicht enthalten — hilft dir, **die Kraft der künstlichen Intelligenz zu nutzen, um deine Jobsuche zu optimieren**. Du lernst, einen überzeugenden Lebenslauf und ein Anschreiben zu verfassen, für Interviews zu üben und dein berufliches Profil mit KI-Tools zu optimieren.
+- **Accelerate Your Job Search with AI**: Dieser brandneue Kurs — als ich das Zertifikat 2021 absolvierte, war er noch nicht enthalten — hilft dir, **die Kraft der künstlichen Intelligenz zu nutzen, um deine Jobsuche zu optimieren**. Du lernst, einen überzeugenden Lebenslauf und ein Anschreiben zu verfassen, für Interviews zu üben und dein berufliches Profil mit KI-Tools zu optimieren.
 
 ---
 

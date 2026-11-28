@@ -46,19 +46,19 @@ El temario te lleva desde el scripting básico hasta la creación de automatizac
 
 Google estima unos seis meses a un ritmo de 10 horas semanales, pero como todos los certificados de Coursera, va a tu propio ritmo. A continuación, un resumen de los cursos principales:
 
-* **Curso 1: Crash Course on Python** – Una introducción a lo esencial: variables, bucles, funciones y cómo convertir ideas en código ejecutable.
+- **Curso 1: Crash Course on Python** – Una introducción a lo esencial: variables, bucles, funciones y cómo convertir ideas en código ejecutable.
 
-* **Curso 2: Using Python to Interact with the Operating System** – Aprende a automatizar el manejo de archivos, gestionar procesos y usar expresiones regulares para analizar texto y registros.
+- **Curso 2: Using Python to Interact with the Operating System** – Aprende a automatizar el manejo de archivos, gestionar procesos y usar expresiones regulares para analizar texto y registros.
 
-* **Curso 3: Introduction to Git and GitHub** – Una incorporación valiosa: los fundamentos del control de versiones con Git y GitHub. Desde entonces he usado estas competencias directamente para mantener este sitio web personal, que se ejecuta en un repositorio de GitHub.
+- **Curso 3: Introduction to Git and GitHub** – Una incorporación valiosa: los fundamentos del control de versiones con Git y GitHub. Desde entonces he usado estas competencias directamente para mantener este sitio web personal, que se ejecuta en un repositorio de GitHub.
 
-* **Curso 4: Troubleshooting and Debugging Techniques** – Estrategias prácticas para diagnosticar y corregir errores, tanto en el código como en los sistemas.
+- **Curso 4: Troubleshooting and Debugging Techniques** – Estrategias prácticas para diagnosticar y corregir errores, tanto en el código como en los sistemas.
 
-* **Curso 5: Configuration Management and the Cloud** – Desde scripts locales hasta soluciones escalables, explorarás la automatización en entornos tanto físicos como cloud.
+- **Curso 5: Configuration Management and the Cloud** – Desde scripts locales hasta soluciones escalables, explorarás la automatización en entornos tanto físicos como cloud.
 
-* **Curso 6: Automating Real-World Tasks with Python** – Un proyecto final donde reúnes todo lo aprendido para crear una automatización lista para tu portfolio.
+- **Curso 6: Automating Real-World Tasks with Python** – Un proyecto final donde reúnes todo lo aprendido para crear una automatización lista para tu portfolio.
 
-* **Curso 7: Accelerate Your Job Search with AI** – Un complemento compartido por todos los Google Career Certificates, centrado en herramientas con IA para currículums, búsqueda de empleo y preparación de entrevistas.
+- **Curso 7: Accelerate Your Job Search with AI** – Un complemento compartido por todos los Google Career Certificates, centrado en herramientas con IA para currículums, búsqueda de empleo y preparación de entrevistas.
 
 ---
 

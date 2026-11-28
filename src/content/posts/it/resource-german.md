@@ -39,6 +39,7 @@ seo:
 ---
 
 ### 🛠️ App e strumenti
+
 - [Anki](https://apps.ankiweb.net/) - Un’app di flashcard utilizzabile per creare mazzi personalizzati di vocaboli tedeschi con la ripetizione dilazionata.
 - [Clozemaster](https://www.clozemaster.com/) - Un’app per l’apprendimento delle lingue che usa esercizi cloze (a completamento) per esercitare il vocabolario tedesco nel contesto.
 - [Duolingo](https://www.duolingo.com/course/de/en/Learn-German) - Una popolare app per l’apprendimento delle lingue con un approccio ludico allo studio del tedesco.
@@ -48,6 +49,7 @@ seo:
 ---
 
 ### 🧑‍🏫 Dizionari e database lessicali
+
 - [Das Deutsche Referenzkorpus (DeReKo)](https://www.ids-mannheim.de/digspra/pb-s1/projekte/korpora/) - Una raccolta di corpora tedeschi per la ricerca e l’analisi linguistica.
 - [Duden Online](https://www.duden.de/) - La versione online dell’autorevole dizionario Duden, con definizioni, regole grammaticali e norme ortografiche del tedesco.
 - [DWDS (Digitales Wörterbuch der deutschen Sprache)](https://www.dwds.de/) - Un dizionario digitale completo della lingua tedesca, con definizioni, esempi d’uso e contesto storico.
@@ -59,6 +61,7 @@ seo:
 ---
 
 ### 🏫 Istituzioni e portali
+
 - [Auswärtiges Amt](https://www.auswaertiges-amt.de/de) - Il Ministero degli Esteri tedesco, con informazioni su politica estera, servizi consolari e relazioni internazionali.
 - [Bundeszentrale für politische Bildung (bpb)](https://www.bpb.de/) - L’Agenzia federale per l’educazione civica in Germania, con risorse su politica, storia e cultura in tedesco.
 - [Deutscher Akademischer Austauschdienst (DAAD)](https://www.daad.de/en/) - Il Servizio tedesco per lo scambio accademico, con informazioni su studio in Germania, borse di studio e opportunità di ricerca.
@@ -81,6 +84,7 @@ seo:
 ---
 
 ### 📚 Piattaforme e risorse di apprendimento
+
 - [Deutsch Wortschatz](https://deutschwortschatz.de/) - Una risorsa per imparare il vocabolario tedesco tramite liste tematiche ed esercizi.
 - [Deutsche Grammatik 2.0](https://deutschegrammatik20.de/) - Una risorsa online completa sulla grammatica tedesca, che copre vari argomenti con spiegazioni ed esercizi.
 - [Deutsche Welle (DW) - Learn German](https://learngerman.dw.com/de/) - Una piattaforma completa con corsi gratuiti di tedesco, video ed esercizi interattivi per tutti i livelli.
@@ -94,6 +98,7 @@ seo:
 ---
 
 ### 📰 Notizie e media
+
 - [ARD Mediathek](https://www.ardmediathek.de/) - La mediateca online della rete pubblica ARD, con un’ampia gamma di programmi TV, documentari e notiziari tedeschi.
 - [Arte](https://www.arte.tv/de/) - Un canale culturale europeo con documentari, film e serie in tedesco.
 - [Austria.info](https://www.austria.info/) - La guida turistica ufficiale dell’Austria, con informazioni su destinazioni, cultura ed eventi in tedesco.
@@ -134,6 +139,7 @@ seo:
 ---
 
 ### 🎙️ Podcast
+
 - [ARD Audiothek](https://www.ardaudiothek.de/) - Una piattaforma con un’ampia gamma di podcast e contenuti audio delle varie emittenti ARD.
 - [Coffee Break German](https://coffeebreaklanguages.com/coffeebreakgerman/) - Una serie di podcast per imparare il tedesco, dai livelli principianti a quelli avanzati.
 - [Deutsch – Interaktiv](https://www.dw.com/en/learn-german/deutsch-interaktiv/s-9572) - Una serie di podcast interattivi di Deutsche Welle per imparare il tedesco con storie e dialoghi coinvolgenti.
@@ -151,6 +157,7 @@ seo:
 ---
 
 ### 🗪 Servizi di traduzione
+
 - [DeepL Translator](https://www.deepl.com/translator) - Uno strumento di traduzione basato sull’IA noto per le traduzioni di alta qualità, tedesco incluso.
 - [dict.cc](https://www.dict.cc/) - Un dizionario bilingue con traduzioni tedesco-inglese, frasi d’esempio e pronunce audio.
 - [Google Translate](https://translate.google.com/?sl=de&tl=en&op=translate) - Un servizio di traduzione molto usato che supporta il tedesco e offre traduzione di testo, voce e immagini.

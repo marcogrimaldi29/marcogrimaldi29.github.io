@@ -38,21 +38,22 @@ author_profile: true
 
 ## 🥨 German Resources
 
-**⚠️ Heads-up:** This collection of resources is not meant to be exhaustive or authoritative. Think of it as a starting point — a hub where useful tools and links are gathered and made freely accessible. If you come across any outdated material or inconsistencies, please let me know through the contact options listed [here](/contact/).
+**⚠️ Heads-up:** This collection of resources is not meant to be exhaustive or authoritative. Think of it as a starting point — a hub where useful tools and links are gathered and made freely accessible. If you come across any outdated material or inconsistencies, please let me know through the options listed on the [contact page](/contact/).
 {: .notice--warning}
 
 **🚨 Disclaimer:** This article is solely based on my personal account and learning experience. The links and resources gathered here have been selected based on my own research and preferences. I do not endorse or guarantee the quality, accuracy, or reliability of any external content mentioned. Use these resources at your own discretion.
 {: .notice--info}
 
-⬛🟥🟨 On this page, you’ll find a curated set of resources about **German language**, along with **German culture** materials. 
+⬛🟥🟨 On this page, you’ll find a curated set of resources about **German language**, along with **German culture** materials.
 
-🔍 Most of these links come from courses I’ve attended, research I’ve done while self-studying, or experience I’ve gained while writing articles, papers, and living in Germany. 
+🔍 Most of these links come from courses I’ve attended, research I’ve done while self-studying, or experience I’ve gained while writing articles, papers, and living in Germany.
 
-💡 This list will continue to evolve as I explore and validate new resources — so consider it an ongoing work. Stay tuned! 
+💡 This list will continue to evolve as I explore and validate new resources — so consider it an ongoing work. Stay tuned!
 
 ---
 
 ### 🛠️ Apps and Tools
+
 - [Anki](https://apps.ankiweb.net/) - A flashcard app that can be used to create custom German vocabulary decks for spaced repetition learning.
 - [Clozemaster](https://www.clozemaster.com/) - A language learning app that uses cloze (fill-in-the-blank) exercises to help learners practice German vocabulary in context.
 - [Duolingo](https://www.duolingo.com/course/de/en/Learn-German) - A popular language learning app offering a gamified approach to learning German.
@@ -62,6 +63,7 @@ author_profile: true
 ---
 
 ### 🧑‍🏫 Dictionaries and Lexical Databases
+
 - [Das Deutsche Referenzkorpus (DeReKo)](https://www.ids-mannheim.de/digspra/pb-s1/projekte/korpora/) - A collection of German corpora for linguistic research and analysis.
 - [Duden Online](https://www.duden.de/) - The online version of the authoritative Duden dictionary, offering definitions, grammar rules, and spelling guidelines for German.
 - [DWDS (Digitales Wörterbuch der deutschen Sprache)](https://www.dwds.de/) - A comprehensive digital dictionary of the German language, providing definitions, usage examples, and historical context.
@@ -73,6 +75,7 @@ author_profile: true
 ---
 
 ### 🏫 Institutions and Portals
+
 - [Auswärtiges Amt](https://www.auswaertiges-amt.de/de) - The Federal Foreign Office of Germany, providing information on foreign policy, consular services, and international relations.
 - [Bundeszentrale für politische Bildung (bpb)](https://www.bpb.de/) - The Federal Agency for Civic Education in Germany, offering resources on politics, history, and culture in German.
 - [Deutscher Akademischer Austauschdienst (DAAD)](https://www.daad.de/en/) - The German Academic Exchange Service, offering information on studying in Germany, scholarships, and research opportunities.
@@ -95,6 +98,7 @@ author_profile: true
 ---
 
 ### 📚 Learning Platforms and Resources
+
 - [Deutsch Wortschatz](https://deutschwortschatz.de/) - A resource for learning German vocabulary through themed word lists and exercises.
 - [Deutsche Grammatik 2.0](https://deutschegrammatik20.de/) - A comprehensive online resource for German grammar, covering various topics with explanations and exercises.
 - [Deutsche Welle (DW) - Learn German](https://learngerman.dw.com/de/) - A comprehensive platform offering free German courses, videos, and interactive exercises for all levels.
@@ -108,6 +112,7 @@ author_profile: true
 ---
 
 ### 📰 News and Media
+
 - [ARD Mediathek](https://www.ardmediathek.de/) - The online media library of the ARD public broadcasting network, offering a wide range of German TV shows, documentaries, and news programs.
 - [Arte](https://www.arte.tv/de/) - A European culture channel offering documentaries, films, and series in German.
 - [Austria.info](https://www.austria.info/) - The official travel guide for Austria, providing information on destinations, culture, and events in German.
@@ -120,7 +125,7 @@ author_profile: true
 - [Die Zeit](https://www.zeit.de/index) - A weekly German newspaper known for its in-depth analysis and coverage of current events.
 - [DigitalPhoto](https://www.digitalphoto.de/) - A German magazine focusing on photography and imaging technology.
 - [Emma](https://www.emma.de/) - A feminist magazine in Germany covering social and political issues.
-- [Focus Online](https://www.focus.de/) - A German news website providing a wide range of news topics. 
+- [Focus Online](https://www.focus.de/) - A German news website providing a wide range of news topics.
 - [Frankfurter Allgemeine Zeitung (FAZ)](https://www.faz.net/) - A major German newspaper providing comprehensive news coverage.
 - [Frankfurter Rundschau](https://www.fr.de/) - A German daily newspaper covering national and international news.
 - [Geo](https://www.geo.de/) - A German magazine covering geography, culture, and science topics.
@@ -148,6 +153,7 @@ author_profile: true
 ---
 
 ### 🎙️ Podcasts
+
 - [ARD Audiothek](https://www.ardaudiothek.de/) - A platform offering a wide range of podcasts and audio content from various ARD broadcasters.
 - [Coffee Break German](https://coffeebreaklanguages.com/coffeebreakgerman/) - A podcast series for learning German, covering various levels from beginner to advanced.
 - [Deutsch – Interaktiv](https://www.dw.com/en/learn-german/deutsch-interaktiv/s-9572) - An interactive podcast series by Deutsche Welle for learning German through engaging stories and dialogues.
@@ -165,6 +171,7 @@ author_profile: true
 ---
 
 ### 🗪 Translation Services
+
 - [DeepL Translator](https://www.deepl.com/translator) - An AI-powered translation tool known for its high-quality translations, including German.
 - [dict.cc](https://www.dict.cc/) - A bilingual dictionary offering translations between German and English, along with example sentences and audio pronunciations.
 - [Google Translate](https://translate.google.com/?sl=de&tl=en&op=translate) - A widely used translation service that supports German and offers text, speech, and image translation.
