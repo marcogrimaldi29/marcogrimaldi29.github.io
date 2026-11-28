@@ -54,9 +54,9 @@ Whether you’re exploring cloud security for the first time or aiming to reinfo
 
 ### 📢 Why SC-900 Matters
 
-* **Accessible yet valuable**: Designed for beginners across IT, business, or academic roles, SC-900 has no prerequisites and introduces essential security and identity fundamentals.
-* **Strategic springboard**: It paves the way for advanced paths like Security Operations Analyst, Identity & Access Administrator, and other specialized roles.
-* **Real-world relevance**: As organizations adopt Zero Trust and cloud-native models, SC-900 builds a strong foundation in both general SCI principles and Microsoft offerings such as Entra ID, Sentinel, Defender, and Purview. 
+- **Accessible yet valuable**: Designed for beginners across IT, business, or academic roles, SC-900 has no prerequisites and introduces essential security and identity fundamentals.
+- **Strategic springboard**: It paves the way for advanced paths like Security Operations Analyst, Identity & Access Administrator, and other specialized roles.
+- **Real-world relevance**: As organizations adopt Zero Trust and cloud-native models, SC-900 builds a strong foundation in both general SCI principles and Microsoft offerings such as Entra ID, Sentinel, Defender, and Purview.
 
 ---
 
@@ -138,11 +138,11 @@ The domains are divided into four main knowledge areas, each weighted differentl
 
 ### 💡 Practical Tips for Passing SC-900
 
-* **Prioritize by weighting**: Spend extra time on security (35–40%) and identity (25–30%), as these carry the most points.
-* **Leverage official Microsoft Learn paths**: Use Microsoft’s [free learning modules](https://learn.microsoft.com/en-us/training/courses/sc-900t00), which directly follow the exam outline and are updated regularly.
-* **Use practice exams strategically**: Microsoft’s [practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) are closely aligned with the test and highlight areas needing improvement.
-* **Track weak areas**: Practice assessments provide a breakdown of your performance, making it easier to focus on revision where it’s most needed.
-* **Familiarize yourself with logistics**:  
+- **Prioritize by weighting**: Spend extra time on security (35–40%) and identity (25–30%), as these carry the most points.
+- **Leverage official Microsoft Learn paths**: Use Microsoft’s [free learning modules](https://learn.microsoft.com/en-us/training/courses/sc-900t00), which directly follow the exam outline and are updated regularly.
+- **Use practice exams strategically**: Microsoft’s [practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) are closely aligned with the test and highlight areas needing improvement.
+- **Track weak areas**: Practice assessments provide a breakdown of your performance, making it easier to focus on revision where it’s most needed.
+- **Familiarize yourself with logistics**:  
   - ~40–60 questions (multiple-choice, drag-and-drop, true/false)  
   - [~45 minutes](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience#exam-duration) duration.
   - [700/1000](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports#scores-needed-to-pass-exams) required to pass.
@@ -154,11 +154,11 @@ The domains are divided into four main knowledge areas, each weighted differentl
 
 For this certification — and later Fundamentals exams I pursued — I generally followed this approach:  
 
-* **Gather and organize all relevant resources** and keep them handy.  
-* **Watch [John Savill's Study Cram video](https://www.youtube.com/watch?v=-FJqb60wPSY)**. Savill has a talent for simplifying complex topics and sharing them passionately with the community for free. In short, he’s the GOAT of Azure — I strongly recommend checking him out.  
-* **Complete Microsoft’s official [SC-900 course](https://learn.microsoft.com/en-us/training/courses/sc-900t00)**. It’s comprehensive, free, and updated consistently.  
-* **Re-watch [John Savill's Study Cram session](https://www.youtube.com/watch?v=-FJqb60wPSY)** after completing the learning paths. A second pass helps consolidate what you’ve studied and reinforces weaker spots.  
-* **Trust your preparation and stay confident on exam day.** By the time you sit for the test, you’ll have built a solid foundation through structured study. Focus on what you know, manage your time wisely, and approach the exam with a clear mindset.
+- **Gather and organize all relevant resources** and keep them handy.  
+- **Watch [John Savill's Study Cram video](https://www.youtube.com/watch?v=-FJqb60wPSY)**. Savill has a talent for simplifying complex topics and sharing them passionately with the community for free. In short, he’s the GOAT of Azure — I strongly recommend checking him out.  
+- **Complete Microsoft’s official [SC-900 course](https://learn.microsoft.com/en-us/training/courses/sc-900t00)**. It’s comprehensive, free, and updated consistently.  
+- **Re-watch [John Savill's Study Cram session](https://www.youtube.com/watch?v=-FJqb60wPSY)** after completing the learning paths. A second pass helps consolidate what you’ve studied and reinforces weaker spots.  
+- **Trust your preparation and stay confident on exam day.** By the time you sit for the test, you’ll have built a solid foundation through structured study. Focus on what you know, manage your time wisely, and approach the exam with a clear mindset.
 
 ---
 
@@ -180,27 +180,27 @@ The SC-900 is a solid first step into security, compliance, and identity. It’s
 
 Since passing this exam back in 2022, I’ve reflected on some key takeaways for success:  
 
-* **Know the tools and their purpose**: Microsoft Fundamentals exams emphasize being able to *describe concepts* and *explain capabilities*. A broad grasp of the ecosystem goes a long way.  
-* **Leverage Microsoft’s naming conventions**: Many solutions are aptly named (e.g., “Azure Firewall,” “Azure DDoS Protection”), making it easier to deduce functionality. Just be mindful of historically frequent rebranding.  
-* **Adapt to your own style**: Everyone’s preparation looks different. Identify where you’re strong and adjust your strategy for weaker areas. For me, compliance solutions (25%) and differentiating the various Defender products (40%) were the toughest. My workaround was to aim for near-perfect accuracy in the other sections while improving my understanding of those weak spots.  
-* **Manage time wisely**: If stress or uncertainty slows you down, flag difficult questions and revisit them later. Often, clarity comes after working through the rest of the exam.  
+- **Know the tools and their purpose**: Microsoft Fundamentals exams emphasize being able to *describe concepts* and *explain capabilities*. A broad grasp of the ecosystem goes a long way.  
+- **Leverage Microsoft’s naming conventions**: Many solutions are aptly named (e.g., “Azure Firewall,” “Azure DDoS Protection”), making it easier to deduce functionality. Just be mindful of historically frequent rebranding.  
+- **Adapt to your own style**: Everyone’s preparation looks different. Identify where you’re strong and adjust your strategy for weaker areas. For me, compliance solutions (25%) and differentiating the various Defender products (40%) were the toughest. My workaround was to aim for near-perfect accuracy in the other sections while improving my understanding of those weak spots.  
+- **Manage time wisely**: If stress or uncertainty slows you down, flag difficult questions and revisit them later. Often, clarity comes after working through the rest of the exam.  
 
 **🚨 Disclaimer:** This article is solely based on my personal account. I have not received any endorsement or compensation from Microsoft or any related party. I aim to share insights that may help others assess whether the SC-900 aligns with their own goals and needs. I also encourage you to look into available discounts, vouchers, or community resources that may help cover the costs of such exams.
 {: .notice--info}
 
 ---
 
-### 📖 Related Resources 
+### 📖 Related Resources
 
-* [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
-* [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
-* [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
-* [Introduction to Microsoft Security, Compliance, and Identity](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
-* [INTUNEDIN · SC-900: Microsoft Security, Compliance, and Identity Fundamentals Exam Resource Guide (November 2025 Update)](https://intunedin.net/2025/12/13/sc-900-microsoft-security-compliance-and-identity-fundamentals-exam-resource-guide-november-2025-update/)
-* [John Savill's SC-900 Microsoft Security, Compliance, and Identity Fundamentals Study Cram V2](https://www.youtube.com/watch?v=-FJqb60wPSY)
-* [Microsoft Certified: Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification)
-* [Microsoft Events](https://www.microsoft.com/en-us/events)
-* [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
-* [Study guide for Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900)
+- [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
+- [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
+- [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
+- [Introduction to Microsoft Security, Compliance, and Identity](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
+- [INTUNEDIN · SC-900: Microsoft Security, Compliance, and Identity Fundamentals Exam Resource Guide (November 2025 Update)](https://intunedin.net/2025/12/13/sc-900-microsoft-security-compliance-and-identity-fundamentals-exam-resource-guide-november-2025-update/)
+- [John Savill's SC-900 Microsoft Security, Compliance, and Identity Fundamentals Study Cram V2](https://www.youtube.com/watch?v=-FJqb60wPSY)
+- [Microsoft Certified: Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification)
+- [Microsoft Events](https://www.microsoft.com/en-us/events)
+- [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
+- [Study guide for Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900)
 
 ---

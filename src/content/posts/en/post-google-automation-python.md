@@ -58,19 +58,19 @@ The curriculum takes you from basic scripting all the way to building automation
 
 Google estimates around six months at 10 hours a week, but like all Coursera certificates, it’s self-paced. Below is an outline of the core courses:  
 
-* **Course 1: Crash Course on Python** – An introduction to the essentials: variables, loops, functions, and turning ideas into executable code.  
+- **Course 1: Crash Course on Python** – An introduction to the essentials: variables, loops, functions, and turning ideas into executable code.  
 
-* **Course 2: Using Python to Interact with the Operating System** – Learn how to automate file handling, manage processes, and use regular expressions to parse text and logs.
+- **Course 2: Using Python to Interact with the Operating System** – Learn how to automate file handling, manage processes, and use regular expressions to parse text and logs.
 
-* **Course 3: Introduction to Git and GitHub** – A valuable addition: version control basics with Git and GitHub. I’ve since used these skills directly in maintaining this personal website, which runs on a GitHub repository.  
+- **Course 3: Introduction to Git and GitHub** – A valuable addition: version control basics with Git and GitHub. I’ve since used these skills directly in maintaining this personal website, which runs on a GitHub repository.  
 
-* **Course 4: Troubleshooting and Debugging Techniques** – Practical strategies for diagnosing and fixing errors, both in code and in systems. 
+- **Course 4: Troubleshooting and Debugging Techniques** – Practical strategies for diagnosing and fixing errors, both in code and in systems.
 
-* **Course 5: Configuration Management and the Cloud** – From local scripts to scaling solutions, you’ll explore automation in both physical and cloud environments.
+- **Course 5: Configuration Management and the Cloud** – From local scripts to scaling solutions, you’ll explore automation in both physical and cloud environments.
 
-* **Course 6: Automating Real-World Tasks with Python** – A capstone project where you bring everything together to create a portfolio-ready automation. 
+- **Course 6: Automating Real-World Tasks with Python** – A capstone project where you bring everything together to create a portfolio-ready automation.
 
-* **Course 7: Accelerate Your Job Search with AI** – A shared add-on across Google Career Certificates, focusing on AI-powered tools for resumes, job search, and interview preparation.  
+- **Course 7: Accelerate Your Job Search with AI** – A shared add-on across Google Career Certificates, focusing on AI-powered tools for resumes, job search, and interview preparation.  
 
 ---
 

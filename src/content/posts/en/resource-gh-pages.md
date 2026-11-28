@@ -39,7 +39,7 @@ author_profile: true
 
 ## 🌐 GitHub Pages, Jekyll, and Markdown
 
-**⚠️ Warning:** This collection of resources is not meant to be exhaustive or authoritative. Think of it as a starting point — a hub where useful tools and links are gathered and made freely accessible. If you come across any outdated material or inconsistencies, please let me know through the contact options listed [here](/contact/).
+**⚠️ Warning:** This collection of resources is not meant to be exhaustive or authoritative. Think of it as a starting point — a hub where useful tools and links are gathered and made freely accessible. If you come across any outdated material or inconsistencies, please let me know through the options listed on the [contact page](/contact/).
 {: .notice--warning}
 
 **ℹ️ Info:** For certification-related resources, check the "📖 Related Resources" section or the inline references within each "🏅 Cert Review" article.
@@ -49,11 +49,12 @@ author_profile: true
 
 🔍 These resources have been tested and used while building, reviewing, and editing this website - among other projects.
 
-💡 I’ll keep updating this page as I discover and test new resources. Stay tuned! 
+💡 I’ll keep updating this page as I discover and test new resources. Stay tuned!
 
 ---
 
-### 🗐 GitHub Pages 
+### 🗐 GitHub Pages
+
 - [About GitHub Pages and Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
 - [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/main/docs/configuration.md#configuration)
 - [Creating a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
@@ -66,6 +67,7 @@ author_profile: true
 ---
 
 ### 🧪 Jekyll
+
 - [Jekyll](https://jekyllrb.com/)
 - [Jekyll · Forum](https://talk.jekyllrb.com/)
 - [Jekyll · Quickstart](https://jekyllrb.com/docs/)
@@ -76,7 +78,8 @@ author_profile: true
 
 ---
 
-### Ⓜ️⬇️ Markdown 
+### Ⓜ️⬇️ Markdown
+
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
 - [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)

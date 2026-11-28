@@ -87,11 +87,11 @@ Le **[competenze valutate](https://learn.microsoft.com/en-us/credentials/certifi
 
 ### 💡 Consigli pratici per superare l’MS-700
 
-* **Dai priorità in base al peso**: presta attenzione al fatto che quasi metà del peso dell’esame — fino al 45% — ruota attorno alla configurazione e gestione di un ambiente Teams. Questo implica interiorizzare concetti di networking, impostazioni di sicurezza, considerazioni sulle licenze e pratiche di governance, tra le altre cose. Altrimenti, potresti trovarti impreparato per una parte significativa del test e dover ricorrere a troppe *ipotesi ragionate* per passare.
-* **Sfrutta i percorsi ufficiali di Microsoft Learn**: usa i [moduli gratuiti](https://learn.microsoft.com/en-us/training/courses/ms-700t00) di Microsoft, che seguono direttamente la traccia dell’esame e sono aggiornati regolarmente.
-* **Usa i test di pratica in modo strategico**: le [valutazioni di pratica](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) di Microsoft sono molto allineate al test ed evidenziano le aree da migliorare.
-* **Tieni traccia delle aree deboli**: le valutazioni di pratica forniscono un’analisi delle tue prestazioni, facilitando il ripasso dove serve di più.
-* **Conosci la meccanica dell’esame**:
+- **Dai priorità in base al peso**: presta attenzione al fatto che quasi metà del peso dell’esame — fino al 45% — ruota attorno alla configurazione e gestione di un ambiente Teams. Questo implica interiorizzare concetti di networking, impostazioni di sicurezza, considerazioni sulle licenze e pratiche di governance, tra le altre cose. Altrimenti, potresti trovarti impreparato per una parte significativa del test e dover ricorrere a troppe *ipotesi ragionate* per passare.
+- **Sfrutta i percorsi ufficiali di Microsoft Learn**: usa i [moduli gratuiti](https://learn.microsoft.com/en-us/training/courses/ms-700t00) di Microsoft, che seguono direttamente la traccia dell’esame e sono aggiornati regolarmente.
+- **Usa i test di pratica in modo strategico**: le [valutazioni di pratica](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) di Microsoft sono molto allineate al test ed evidenziano le aree da migliorare.
+- **Tieni traccia delle aree deboli**: le valutazioni di pratica forniscono un’analisi delle tue prestazioni, facilitando il ripasso dove serve di più.
+- **Conosci la meccanica dell’esame**:
   - aspettati **circa 40–60 domande** in formato a risposta multipla, drag-and-drop o vero/falso, **inclusi scenari di case study**, che mettono alla prova la tua conoscenza **con ~4–6 domande dedicate** — conteggiate nel totale. A differenza degli esami Fundamentals, gli scenari delle certificazioni di livello Associate verificano la tua capacità di applicare le conoscenze in situazioni pratiche, presentando problemi reali che richiedono soluzioni complete. Tieni presente che *non puoi saltare i case study* per tornarci dopo, *né potrai rivedere le domande standard una volta che ti viene presentato un case study*. Questo significa che devi *gestire bene il tempo* e assicurarti di comprendere l’ambiente e i requisiti del caso prima di rispondere alle relative domande. Inoltre, se non incontri alcun case study all’inizio dell’esame, preparati a vederlo comparire più avanti e assicurati di *riservare tempo sufficiente per affrontarlo a fondo*. Tieni anche presente che, sebbene il numero totale di domande possa variare, *la profondità delle domande di livello Associate potrebbe richiedere uno sforzo maggiore rispetto agli esami Fundamentals*.
   - avrai [~100 minuti](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience#exam-duration) per completare il test — molto più degli esami di livello Fundamentals —, ti serve un punteggio di [700/1000](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports#scores-needed-to-pass-exams) per superarlo, e puoi scegliere tra proctoring online o un centro Pearson VUE in presenza.
 
@@ -106,12 +106,12 @@ Una differenza importante rispetto agli esami Fundamentals è la necessità di a
 
 Per questa certificazione Associate ho seguito un approccio coerente con le altre certificazioni Microsoft Fundamentals ottenute in passato, focalizzato su apprendimento strutturato e pratica mirata. Ecco la strategia che ho usato:
 
-* **Raccogli e organizza tutte le risorse rilevanti** e tienile a portata di mano.
-* **Completa il [corso MS-700](https://learn.microsoft.com/en-us/training/courses/ms-700t00) ufficiale di Microsoft**. È completo, gratuito e aggiornato con costanza.
-* **Affronta le [valutazioni di pratica](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) di Microsoft**. Rispecchiano da vicino l’esame reale e aiutano a individuare le aree deboli.
-* **Rivedi le aree deboli** in base ai risultati dei test di pratica. Concentra lo studio sugli argomenti in cui hai ottenuto punteggi più bassi per consolidare la comprensione.
-* **[Il corso Udemy di John Christopher sull’MS-700](https://www.udemy.com/course/microsoft-teams-examlabpractice)**. Questo corso *a pagamento* include simulazioni di laboratorio che offrono esperienza pratica, preziosissima per comprendere le applicazioni reali. Poiché non esistono materiali curati da John Savill specifici per la serie MS-7xx — MS-700 e MS-721 —, questo corso colma efficacemente quella lacuna e personalmente ho trovato lo stile didattico di John Christopher molto chiaro e coinvolgente. Sviluppa i concetti tecnici in modo lineare, mantenendo il focus sugli obiettivi d’esame definiti da Microsoft e sulle competenze valutate il giorno del test.
-* **Fidati della tua preparazione e mantieni la fiducia il giorno dell’esame.** Quando sosterrai il test, avrai costruito una base solida grazie a uno studio strutturato. Concentrati su ciò che sai, gestisci bene il tempo e affronta l’esame con mente lucida.
+- **Raccogli e organizza tutte le risorse rilevanti** e tienile a portata di mano.
+- **Completa il [corso MS-700](https://learn.microsoft.com/en-us/training/courses/ms-700t00) ufficiale di Microsoft**. È completo, gratuito e aggiornato con costanza.
+- **Affronta le [valutazioni di pratica](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) di Microsoft**. Rispecchiano da vicino l’esame reale e aiutano a individuare le aree deboli.
+- **Rivedi le aree deboli** in base ai risultati dei test di pratica. Concentra lo studio sugli argomenti in cui hai ottenuto punteggi più bassi per consolidare la comprensione.
+- **[Il corso Udemy di John Christopher sull’MS-700](https://www.udemy.com/course/microsoft-teams-examlabpractice)**. Questo corso *a pagamento* include simulazioni di laboratorio che offrono esperienza pratica, preziosissima per comprendere le applicazioni reali. Poiché non esistono materiali curati da John Savill specifici per la serie MS-7xx — MS-700 e MS-721 —, questo corso colma efficacemente quella lacuna e personalmente ho trovato lo stile didattico di John Christopher molto chiaro e coinvolgente. Sviluppa i concetti tecnici in modo lineare, mantenendo il focus sugli obiettivi d’esame definiti da Microsoft e sulle competenze valutate il giorno del test.
+- **Fidati della tua preparazione e mantieni la fiducia il giorno dell’esame.** Quando sosterrai il test, avrai costruito una base solida grazie a uno studio strutturato. Concentrati su ciò che sai, gestisci bene il tempo e affronta l’esame con mente lucida.
 
 ---
 
@@ -144,16 +144,16 @@ In sintesi, l’**MS-700** va visto come una **certificazione pratica e orientat
 
 ### 📖 Risorse correlate
 
-* [📘 Appunti di studio MS-700](https://marcogrimaldi29.com/ms-700-study-notes/)
-* [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
-* [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
-* [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
-* [INTUNEDIN · MS-700: Teams Administrator Associate Exam Resource Guide (February 2025 Update)](https://intunedin.net/2025/03/18/ms-700-teams-administrator-associate-exam-resource-guide-february-2025-update/)
-* [Managing Microsoft Teams](https://learn.microsoft.com/en-us/training/courses/ms-700t00)
-* [Microsoft 365 Certified: Teams Administrator Associate](https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/?practice-assessment-type=certification)
-* [Microsoft Events](https://www.microsoft.com/en-us/events)
-* [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
-* [Study guide for Exam MS-700: Managing Microsoft Teams](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700)
-* [💵 Udemy · John Christopher's MS-700 Managing Microsoft Teams Training & Lab Simulations](https://www.udemy.com/course/microsoft-teams-examlabpractice)
+- [📘 Appunti di studio MS-700](https://marcogrimaldi29.com/ms-700-study-notes/)
+- [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
+- [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
+- [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
+- [INTUNEDIN · MS-700: Teams Administrator Associate Exam Resource Guide (February 2025 Update)](https://intunedin.net/2025/03/18/ms-700-teams-administrator-associate-exam-resource-guide-february-2025-update/)
+- [Managing Microsoft Teams](https://learn.microsoft.com/en-us/training/courses/ms-700t00)
+- [Microsoft 365 Certified: Teams Administrator Associate](https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/?practice-assessment-type=certification)
+- [Microsoft Events](https://www.microsoft.com/en-us/events)
+- [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
+- [Study guide for Exam MS-700: Managing Microsoft Teams](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700)
+- [💵 Udemy · John Christopher's MS-700 Managing Microsoft Teams Training & Lab Simulations](https://www.udemy.com/course/microsoft-teams-examlabpractice)
 
 ---

@@ -51,6 +51,7 @@ seo:
 ---
 
 ### 🔷 Azure
+
 - [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
 - [Azure Container Instances documentation](https://learn.microsoft.com/en-us/azure/container-instances/)
 - [Azure Container Registry documentation](https://learn.microsoft.com/en-us/azure/container-registry/)
@@ -67,6 +68,7 @@ seo:
 ---
 
 ### ⚗️ Azure AI Services
+
 - [Azure AI Document Intelligence documentation](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/)
 - [Azure AI Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)
 - [Azure AI Immersive Reader documentation](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/)
@@ -84,6 +86,7 @@ seo:
 ---
 
 ### 🛠️ Sviluppo e strumenti
+
 - [.NET documentation](https://learn.microsoft.com/en-us/dotnet/)
 - [GitHub + Microsoft integration](https://learn.microsoft.com/en-us/github/)
 - [Visual Studio Code documentation](https://code.visualstudio.com/docs)
@@ -92,6 +95,7 @@ seo:
 ---
 
 ### 📬 Exchange Online
+
 - [Exchange admin center in Exchange Online](https://learn.microsoft.com/en-us/exchange/exchange-admin-center)
 - [Exchange Online](https://learn.microsoft.com/en-us/Exchange/exchange-online)
 - [Exchange Online limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)
@@ -102,6 +106,7 @@ seo:
 ---
 
 ### 🌎 Microsoft 365
+
 - [Deployment guide for Microsoft 365 Apps](https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/deployment-guide-microsoft-365-apps)
 - [Microsoft 365 Adoption Center](https://adoption.microsoft.com/)
 - [Microsoft 365 admin center help](https://learn.microsoft.com/en-us/microsoft-365/admin/)
@@ -120,6 +125,7 @@ seo:
 ---
 
 ### ✧₊⁺ Microsoft Copilot
+
 - [Copilots and generative AI in Power Platform](https://learn.microsoft.com/en-us/power-platform/copilot)
 - [Copilot learning hub](https://learn.microsoft.com/en-us/copilot/)
 - [Copilot Studio overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
@@ -133,6 +139,7 @@ seo:
 ---
 
 ### 🔺 Microsoft Entra ID (ex Azure AD)
+
 - [AADInternals](https://aadinternals.com/osint/)
 - [Application and HR provisioning documentation](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/)
 - [Application management documentation](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/)
@@ -158,6 +165,7 @@ seo:
 ---
 
 ### 🌐 Microsoft (generale)
+
 - [Microsoft 365 renames](https://m365maps.com/renames.html)
 - [Microsoft Accessibility](https://www.microsoft.com/en-us/accessibility)
 - [Microsoft Enteprise Skills Initiative (ESI)](https://esi.microsoft.com/)
@@ -177,6 +185,7 @@ seo:
 ---
 
 ### 🎶 Microsoft Intune
+
 - [Get started with your Microsoft Intune deployment](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/get-started-with-intune)
 - [Microsoft Intune documentation](https://learn.microsoft.com/en-us/intune/intune-service/)
 - [Microsoft Intune planning guide](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/intune-planning-guide)
@@ -184,6 +193,7 @@ seo:
 ---
 
 ### 👨‍👨 Microsoft Teams
+
 - [Browse and add workflows in Microsoft Teams](https://support.microsoft.com/en-us/office/browse-and-add-workflows-in-microsoft-teams-4998095c-8b72-4b0e-984c-f2ad39e6ba9a)
 - [Browser logs and tracing for Teams](https://learn.microsoft.com/en-us/microsoftteams/browser-logs-and-tracing-for-teams)
 - [Clear the Teams client cache](https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/teams-administration/clear-teams-cache)
@@ -222,6 +232,7 @@ seo:
 ---
 
 ### ⚙️ Power Platform
+
 - [Collaborate with Power BI in Microsoft Teams, Outlook, and Office](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-collaborate-microsoft-teams)
 - [Microsoft Power Apps documentation](https://learn.microsoft.com/en-us/power-apps/)
 - [Microsoft Power Automate documentation](https://learn.microsoft.com/en-us/power-automate/)
@@ -235,6 +246,7 @@ seo:
 ---
 
 ### 🔐 Security e compliance
+
 - [Microsoft Defender documentation](https://learn.microsoft.com/en-us/microsoft-365/security/defender/)
 - [Microsoft Purview](https://learn.microsoft.com/en-us/purview/)
 - [Microsoft Purview compliance portal](https://learn.microsoft.com/en-us/microsoft-365/compliance/microsoft-365-compliance-portal)
@@ -254,6 +266,7 @@ seo:
 ---
 
 ### 🔁 SharePoint e OneDrive
+
 - [Get started with SharePoint](https://support.microsoft.com/en-us/office/get-started-with-sharepoint-909ec2f0-05c8-4e92-8ad3-3f8b0b6cf261)
 - [Introduction to SharePoint and OneDrive in Microsoft 365 for administrators](https://learn.microsoft.com/en-us/sharepoint/introduction)
 - [Intro to file collaboration in Microsoft 365, powered by SharePoint](https://learn.microsoft.com/en-us/sharepoint/intro-to-file-collaboration)
@@ -266,6 +279,7 @@ seo:
 ---
 
 ### 💻 Windows
+
 - [Make older apps or programs compatible with the latest version of Windows](https://support.microsoft.com/en-us/windows/make-older-apps-or-programs-compatible-with-the-latest-version-of-windows-783d6dd7-b439-bdb0-0490-54eea0f45938)
 - [Overview of Windows Autopilot](https://learn.microsoft.com/en-us/autopilot/overview)
 - [Repair a Windows Image using DISM](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/repair-a-windows-image)

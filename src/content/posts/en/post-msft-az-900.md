@@ -52,9 +52,9 @@ My **AZ-900 certification** was the third milestone in my Microsoft certificatio
 
 ### 🏢 Why AZ-900 Matters
 
-* **A holistic panorama**: AZ-900 gives you a comprehensive grasp of Azure’s structure—from compute, storage, networking, to governance and security. This empowers IT consultants to speak fluently about Azure at both architectural and strategic levels.
-* **Extension of SC-900 knowledge**: Elements such as Azure Active Directory, RBAC, Zero Trust, and Defender for Cloud build directly on your SC-900 foundation, giving you an edge in preparation.
-* **Strategic next step after PL-900**: While PL-900 hones low-code automation and app development skills, AZ-900 shifts focus upward to cloud infrastructure—perfect for broadening your understanding and context.
+- **A holistic panorama**: AZ-900 gives you a comprehensive grasp of Azure’s structure—from compute, storage, networking, to governance and security. This empowers IT consultants to speak fluently about Azure at both architectural and strategic levels.
+- **Extension of SC-900 knowledge**: Elements such as Azure Active Directory, RBAC, Zero Trust, and Defender for Cloud build directly on your SC-900 foundation, giving you an edge in preparation.
+- **Strategic next step after PL-900**: While PL-900 hones low-code automation and app development skills, AZ-900 shifts focus upward to cloud infrastructure—perfect for broadening your understanding and context.
 
 ---
 
@@ -86,11 +86,11 @@ The domains are divided into three main knowledge areas, each weighted different
 
 ### 💡 Tips to Approach the Exam
 
-* **Study focus based on weighting:** Around **70%** of the AZ-900 exam centers on **Azure architecture and management**. The remaining **30%** explores more **general cloud concepts**, so make sure your preparation strikes a good balance between all the relevant areas.
-* **Make use of Microsoft Learn**: The [official learning paths](https://learn.microsoft.com/en-us/training/courses/az-900t00) are free, frequently updated, and map directly to the exam. Don’t skip the linked documentation — it often clarifies edge cases.
-* **Take practice tests seriously**: Microsoft’s [practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) mirror the actual exam format and highlight areas that need reinforcement.
-* **Know the exam mechanics**:  
-  - Expect ~40–60 questions in multiple-choice, drag-and-drop, or true/false formats. 
+- **Study focus based on weighting:** Around **70%** of the AZ-900 exam centers on **Azure architecture and management**. The remaining **30%** explores more **general cloud concepts**, so make sure your preparation strikes a good balance between all the relevant areas.
+- **Make use of Microsoft Learn**: The [official learning paths](https://learn.microsoft.com/en-us/training/courses/az-900t00) are free, frequently updated, and map directly to the exam. Don’t skip the linked documentation — it often clarifies edge cases.
+- **Take practice tests seriously**: Microsoft’s [practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) mirror the actual exam format and highlight areas that need reinforcement.
+- **Know the exam mechanics**:  
+  - Expect ~40–60 questions in multiple-choice, drag-and-drop, or true/false formats.
   - You’ll have [~45 minutes](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience#exam-duration) to complete the test, need a score of [700/1000](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports#scores-needed-to-pass-exams) to pass, and can choose between online proctoring or an in-person Pearson VUE center.  
 
 ---
@@ -99,11 +99,11 @@ The domains are divided into three main knowledge areas, each weighted different
 
 By the time I tackled the AZ-900, it was already my **third Microsoft certification** — after completing both the [SC-900](/cert-reviews/microsoft-sc-900/) and [PL-900](/cert-reviews/microsoft-pl-900/). That meant I already had a workflow that worked, which I simply refined for this exam:
 
-* **Start by gathering and organizing resources.** Having everything in one place saves time and helps you stay focused.  
-* **Watch [John Savill’s Study Cram video](https://www.youtube.com/watch?v=tQp1YkB2Tgs).** It’s concise, practical, and great for quickly connecting theory with real-world examples.  
-* **Go through Microsoft’s official [AZ-900 course](https://learn.microsoft.com/en-us/training/courses/az-900t00).** It’s free, well-structured, and regularly updated — perfect as your main learning path.  
-* **Revisit the Study Cram once you finish the course.** A second watch helps solidify key concepts and highlight any weak areas before the exam.  
-* **On exam day, stay calm and confident.** Trust your preparation, manage your time wisely, and focus on applying what you’ve learned rather than overthinking tricky questions.
+- **Start by gathering and organizing resources.** Having everything in one place saves time and helps you stay focused.  
+- **Watch [John Savill’s Study Cram video](https://www.youtube.com/watch?v=tQp1YkB2Tgs).** It’s concise, practical, and great for quickly connecting theory with real-world examples.  
+- **Go through Microsoft’s official [AZ-900 course](https://learn.microsoft.com/en-us/training/courses/az-900t00).** It’s free, well-structured, and regularly updated — perfect as your main learning path.  
+- **Revisit the Study Cram once you finish the course.** A second watch helps solidify key concepts and highlight any weak areas before the exam.  
+- **On exam day, stay calm and confident.** Trust your preparation, manage your time wisely, and focus on applying what you’ve learned rather than overthinking tricky questions.
 
 ---
 
@@ -130,17 +130,17 @@ In short, **AZ-900 is the perfect starting point** for developing cloud fluency.
 
 ---
 
-### 📖 Related Resources 
+### 📖 Related Resources
 
-* [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
-* [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
-* [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
-* [Introduction to Microsoft Azure](https://learn.microsoft.com/en-us/training/courses/az-900t00)
-* [INTUNEDIN · AZ-900: Microsoft Azure Fundamentals Exam Resource Guide (November 2025 Update)](https://intunedin.net/2025/12/27/az-900-microsoft-azure-fundamentals-exam-resource-guide-november-2025-update/)
-* [John Savill's AZ-900 Azure Fundamentals Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs)
-* [Microsoft Certified: Azure Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification)
-* [Microsoft Events](https://www.microsoft.com/en-us/events)
-* [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
-* [Study guide for Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
+- [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
+- [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
+- [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
+- [Introduction to Microsoft Azure](https://learn.microsoft.com/en-us/training/courses/az-900t00)
+- [INTUNEDIN · AZ-900: Microsoft Azure Fundamentals Exam Resource Guide (November 2025 Update)](https://intunedin.net/2025/12/27/az-900-microsoft-azure-fundamentals-exam-resource-guide-november-2025-update/)
+- [John Savill's AZ-900 Azure Fundamentals Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs)
+- [Microsoft Certified: Azure Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification)
+- [Microsoft Events](https://www.microsoft.com/en-us/events)
+- [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
+- [Study guide for Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
 
 ---

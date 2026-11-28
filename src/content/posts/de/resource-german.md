@@ -39,6 +39,7 @@ seo:
 ---
 
 ### 🛠️ Apps und Werkzeuge
+
 - [Anki](https://apps.ankiweb.net/) - Eine Karteikarten-App, mit der sich eigene deutsche Vokabelstapel für das Lernen mit verteilter Wiederholung erstellen lassen.
 - [Clozemaster](https://www.clozemaster.com/) - Eine Sprachlern-App, die Lückentext-Übungen (Cloze) nutzt, um deutschen Wortschatz im Kontext zu üben.
 - [Duolingo](https://www.duolingo.com/course/de/en/Learn-German) - Eine beliebte Sprachlern-App mit einem spielerischen Ansatz zum Deutschlernen.
@@ -48,6 +49,7 @@ seo:
 ---
 
 ### 🧑‍🏫 Wörterbücher und lexikalische Datenbanken
+
 - [Das Deutsche Referenzkorpus (DeReKo)](https://www.ids-mannheim.de/digspra/pb-s1/projekte/korpora/) - Eine Sammlung deutscher Korpora für linguistische Forschung und Analyse.
 - [Duden Online](https://www.duden.de/) - Die Online-Version des maßgeblichen Duden-Wörterbuchs mit Definitionen, Grammatikregeln und Rechtschreibrichtlinien für das Deutsche.
 - [DWDS (Digitales Wörterbuch der deutschen Sprache)](https://www.dwds.de/) - Ein umfassendes digitales Wörterbuch der deutschen Sprache mit Definitionen, Verwendungsbeispielen und historischem Kontext.
@@ -59,6 +61,7 @@ seo:
 ---
 
 ### 🏫 Institutionen und Portale
+
 - [Auswärtiges Amt](https://www.auswaertiges-amt.de/de) - Das Auswärtige Amt Deutschlands mit Informationen zu Außenpolitik, konsularischen Diensten und internationalen Beziehungen.
 - [Bundeszentrale für politische Bildung (bpb)](https://www.bpb.de/) - Die Bundeszentrale für politische Bildung in Deutschland mit Ressourcen zu Politik, Geschichte und Kultur auf Deutsch.
 - [Deutscher Akademischer Austauschdienst (DAAD)](https://www.daad.de/en/) - Der Deutsche Akademische Austauschdienst mit Informationen zum Studium in Deutschland, zu Stipendien und Forschungsmöglichkeiten.
@@ -81,6 +84,7 @@ seo:
 ---
 
 ### 📚 Lernplattformen und Ressourcen
+
 - [Deutsch Wortschatz](https://deutschwortschatz.de/) - Eine Ressource zum Erlernen deutschen Wortschatzes mit thematischen Wortlisten und Übungen.
 - [Deutsche Grammatik 2.0](https://deutschegrammatik20.de/) - Eine umfassende Online-Ressource zur deutschen Grammatik, die verschiedene Themen mit Erklärungen und Übungen abdeckt.
 - [Deutsche Welle (DW) - Learn German](https://learngerman.dw.com/de/) - Eine umfassende Plattform mit kostenlosen Deutschkursen, Videos und interaktiven Übungen für alle Niveaus.
@@ -94,6 +98,7 @@ seo:
 ---
 
 ### 📰 Nachrichten und Medien
+
 - [ARD Mediathek](https://www.ardmediathek.de/) - Die Online-Mediathek des öffentlich-rechtlichen ARD-Senderverbunds mit einer breiten Palette deutscher TV-Sendungen, Dokumentationen und Nachrichtensendungen.
 - [Arte](https://www.arte.tv/de/) - Ein europäischer Kultursender mit Dokumentationen, Filmen und Serien auf Deutsch.
 - [Austria.info](https://www.austria.info/) - Der offizielle Reiseführer für Österreich mit Informationen zu Reisezielen, Kultur und Veranstaltungen auf Deutsch.
@@ -134,6 +139,7 @@ seo:
 ---
 
 ### 🎙️ Podcasts
+
 - [ARD Audiothek](https://www.ardaudiothek.de/) - Eine Plattform mit einer breiten Palette an Podcasts und Audioinhalten verschiedener ARD-Sender.
 - [Coffee Break German](https://coffeebreaklanguages.com/coffeebreakgerman/) - Eine Podcast-Reihe zum Deutschlernen, die verschiedene Niveaus von Anfänger bis Fortgeschritten abdeckt.
 - [Deutsch – Interaktiv](https://www.dw.com/en/learn-german/deutsch-interaktiv/s-9572) - Eine interaktive Podcast-Reihe der Deutschen Welle zum Deutschlernen mit fesselnden Geschichten und Dialogen.
@@ -151,6 +157,7 @@ seo:
 ---
 
 ### 🗪 Übersetzungsdienste
+
 - [DeepL Translator](https://www.deepl.com/translator) - Ein KI-gestütztes Übersetzungswerkzeug, bekannt für seine hochwertigen Übersetzungen, einschließlich Deutsch.
 - [dict.cc](https://www.dict.cc/) - Ein zweisprachiges Wörterbuch mit Übersetzungen zwischen Deutsch und Englisch, mit Beispielsätzen und Audio-Aussprachen.
 - [Google Translate](https://translate.google.com/?sl=de&tl=en&op=translate) - Ein weit verbreiteter Übersetzungsdienst, der Deutsch unterstützt und Text-, Sprach- und Bildübersetzung bietet.

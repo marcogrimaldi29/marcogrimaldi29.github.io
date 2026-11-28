@@ -42,6 +42,7 @@ seo:
 ---
 
 ### 🗐 GitHub Pages
+
 - [About GitHub Pages and Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
 - [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/main/docs/configuration.md#configuration)
 - [Creating a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
@@ -54,6 +55,7 @@ seo:
 ---
 
 ### 🧪 Jekyll
+
 - [Jekyll](https://jekyllrb.com/)
 - [Jekyll · Forum](https://talk.jekyllrb.com/)
 - [Jekyll · Quickstart](https://jekyllrb.com/docs/)
@@ -65,6 +67,7 @@ seo:
 ---
 
 ### Ⓜ️⬇️ Markdown
+
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
 - [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)

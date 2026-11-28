@@ -43,17 +43,17 @@ Das Programm ist in sechs Kurse gegliedert, von denen jeder auf dem vorherigen a
 
 Die sechs Kurse sind:
 
-* **Foundations of Project Management**: Dieser Kurs führt dich in die **Kernkonzepte und Rollen im Projektmanagement** ein. Du lernst den Projektlebenszyklus von der Initiierung bis zum Abschluss sowie die wichtigsten Verantwortlichkeiten eines Projektmanagers kennen.
+- **Foundations of Project Management**: Dieser Kurs führt dich in die **Kernkonzepte und Rollen im Projektmanagement** ein. Du lernst den Projektlebenszyklus von der Initiierung bis zum Abschluss sowie die wichtigsten Verantwortlichkeiten eines Projektmanagers kennen.
 
-* **Project Initiation: Starting a Successful Project**: Hier lernst du, **wie man Projektziele, Liefergegenstände und Umfang definiert**. Dieser Kurs konzentriert sich auf das Erstellen von Projektaufträgen, das Management von Stakeholdern und das Aufsetzen eines Projekts für den Erfolg von Anfang an.
+- **Project Initiation: Starting a Successful Project**: Hier lernst du, **wie man Projektziele, Liefergegenstände und Umfang definiert**. Dieser Kurs konzentriert sich auf das Erstellen von Projektaufträgen, das Management von Stakeholdern und das Aufsetzen eines Projekts für den Erfolg von Anfang an.
 
-* **Project Planning: Putting It All Together**: In diesem Kurs geht es um die **Erstellung eines detaillierten Plans**. Du behandelst essenzielle Themen wie das Erstellen von Projektstrukturplänen, das Schätzen von Zeitplänen, das Verwalten von Budgets und das Identifizieren potenzieller Risiken.
+- **Project Planning: Putting It All Together**: In diesem Kurs geht es um die **Erstellung eines detaillierten Plans**. Du behandelst essenzielle Themen wie das Erstellen von Projektstrukturplänen, das Schätzen von Zeitplänen, das Verwalten von Budgets und das Identifizieren potenzieller Risiken.
 
-* **Project Execution: Running the Show**: Hier lernst du, das **Tagesgeschäft eines Projekts zu steuern**. Du konzentrierst dich auf effektive Kommunikation, das Lösen von Konflikten und den Einsatz von Werkzeugen zur Fortschrittsüberwachung.
+- **Project Execution: Running the Show**: Hier lernst du, das **Tagesgeschäft eines Projekts zu steuern**. Du konzentrierst dich auf effektive Kommunikation, das Lösen von Konflikten und den Einsatz von Werkzeugen zur Fortschrittsüberwachung.
 
-* **Agile Project Management**: Der Kurs taucht in Agile ein, eine beliebte und flexible Projektmanagement-Methode. Du lernst die Prinzipien hinter **Scrum** und **Kanban** und wie du sie anwendest, um Projekte in schnelllebigen Umgebungen effektiver zu steuern.
+- **Agile Project Management**: Der Kurs taucht in Agile ein, eine beliebte und flexible Projektmanagement-Methode. Du lernst die Prinzipien hinter **Scrum** und **Kanban** und wie du sie anwendest, um Projekte in schnelllebigen Umgebungen effektiver zu steuern.
 
-* **Capstone: Applying Project Management in the Real World**: Das ist der Höhepunkt all dessen, was du gelernt hast. Das Abschlussprojekt verlangt von dir, **alle Konzepte und Kompetenzen auf ein reales Szenario anzuwenden**. Du durchläufst den gesamten Projektlebenszyklus, von der Definition des Projekts bis zum Erstellen eines detaillierten Plans und eines Abschlussberichts.
+- **Capstone: Applying Project Management in the Real World**: Das ist der Höhepunkt all dessen, was du gelernt hast. Das Abschlussprojekt verlangt von dir, **alle Konzepte und Kompetenzen auf ein reales Szenario anzuwenden**. Du durchläufst den gesamten Projektlebenszyklus, von der Definition des Projekts bis zum Erstellen eines detaillierten Plans und eines Abschlussberichts.
 
 ---
 
@@ -61,9 +61,9 @@ Die sechs Kurse sind:
 
 Einer der wertvollsten Teile dieses Zertifikats und das, was es auszeichnet, ist der Fokus auf **peer-bewertete Aufgaben** und das **Abschlussprojekt (Capstone)**. Anders als bei anderen Prüfungsformen, etwa Multiple-Choice-Prüfungen, verlangen diese Aufgaben, das Gelernte praktisch anzuwenden.
 
-* **Peer-bewertete Aufgaben**: Im Lauf der Kurse reichst du Projekte und Pläne ein, die von deinen Mitlernenden bewertet werden. Dieser Prozess liefert nicht nur wertvolles Feedback, sondern ermöglicht es dir auch, verschiedene Ansätze zu sehen und von deinen Peers zu lernen. Das **bereicherte das Lernen und die praktische Erfahrung**, indem es mir ein Gefühl dafür gab, wie Zusammenarbeit und Feedback in einem professionellen Umfeld aussehen, in dem das Erreichen eines gemeinsamen Ziels eine Teamleistung ist.
+- **Peer-bewertete Aufgaben**: Im Lauf der Kurse reichst du Projekte und Pläne ein, die von deinen Mitlernenden bewertet werden. Dieser Prozess liefert nicht nur wertvolles Feedback, sondern ermöglicht es dir auch, verschiedene Ansätze zu sehen und von deinen Peers zu lernen. Das **bereicherte das Lernen und die praktische Erfahrung**, indem es mir ein Gefühl dafür gab, wie Zusammenarbeit und Feedback in einem professionellen Umfeld aussehen, in dem das Erreichen eines gemeinsamen Ziels eine Teamleistung ist.
 
-* **Das Abschlussprojekt**: Das ist der letzte und bedeutendste Teil des Zertifikats. Du übernimmst ein umfassendes Projekt von Anfang bis Ende. Für mich war diese Erfahrung entscheidend. Es ging nicht nur darum, eine Prüfung zu bestehen; es ging darum, meine Fähigkeit zu beweisen, **ein Projekt in seiner Gesamtheit zu steuern**. Es bestätigte meine Kompetenzen wirklich und gab mir die Zuversicht, in eine Projektmanagement-Rolle einzusteigen.
+- **Das Abschlussprojekt**: Das ist der letzte und bedeutendste Teil des Zertifikats. Du übernimmst ein umfassendes Projekt von Anfang bis Ende. Für mich war diese Erfahrung entscheidend. Es ging nicht nur darum, eine Prüfung zu bestehen; es ging darum, meine Fähigkeit zu beweisen, **ein Projekt in seiner Gesamtheit zu steuern**. Es bestätigte meine Kompetenzen wirklich und gab mir die Zuversicht, in eine Projektmanagement-Rolle einzusteigen.
 
 ---
 

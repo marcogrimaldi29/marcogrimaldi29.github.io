@@ -37,7 +37,7 @@ author_profile: true
 
 ## ✨ AI and Prompt Engineering
 
-**⚠️ Note:** This is not a definitive or all-encompassing collection. Think of it more as a living hub — a place where I gather links, tools, and references that I’ve personally found useful and want to share openly. If you spot anything outdated or inconsistent, feel free to reach out through the contact options listed [here](/contact/).
+**⚠️ Note:** This is not a definitive or all-encompassing collection. Think of it more as a living hub — a place where I gather links, tools, and references that I’ve personally found useful and want to share openly. If you spot anything outdated or inconsistent, feel free to reach out through the options listed on the [contact page](/contact/).
 {: .notice--warning}
 
 **ℹ️ Heads-up:** For certification-related materials, take a look at the “📖 Related Resources” section or the inline references included in my “🏅 Cert Review” articles.
@@ -47,11 +47,12 @@ author_profile: true
 
 🔍 Most of these links come from courses I’ve studied, tools I’ve tested, or research I’ve done while writing articles.
 
-💡 This list will continue to evolve as I explore and validate new resources — so consider it a work in progress. Stay tuned! 
+💡 This list will continue to evolve as I explore and validate new resources — so consider it a work in progress. Stay tuned!
 
 ---
 
 ### 🤖 AI assistants & platforms
+
 - [Adobe Firefly](https://www.adobe.com/products/firefly.html) - AI art generator.
 - [Arena](https://arena.ai/) - AI coding assistant.
 - [Base44](https://base44.com/) - AI coding assistant.
@@ -98,6 +99,7 @@ author_profile: true
 ---
 
 ### ❇️ AI-related docs & articles
+
 - [Andrew Ng: How AI could empower any business](https://www.ted.com/talks/andrew_ng_how_ai_could_empower_any_business)
 - [Artificial intelligence (AI) vs. machine learning (ML)](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
 - [Artificial intelligence (AI) vs. machine learning (ML)](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/artificial-intelligence-vs-machine-learning)
@@ -130,6 +132,7 @@ author_profile: true
 ---
 
 ### 💬 Prompt Engineering
+
 - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/pdf/2201.11903)
 - [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)

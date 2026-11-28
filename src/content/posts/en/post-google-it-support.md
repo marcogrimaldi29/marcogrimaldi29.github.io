@@ -30,12 +30,12 @@ related: true
 author_profile: true
 ---
 
-## 🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way 
+## 🚀 My Journey into IT: How the Google IT Support Professional Certificate Paved the Way
 
 **❗ Just a heads-up:** This review reflects my personal experience only.
 {: .notice--info}
 
-### ℹ️ Intro 
+### ℹ️ Intro
 
 Hello everyone! If you're anything like I was a few years ago — a professional considering a major career change, or just someone curious about the world of IT — then this post is for you. Back in 2021, my career path took a significant turn from language teaching into the dynamic world of IT. It was a leap of faith, even though I had prior IT training from high school and from my university days. This experience made me confident in the courses included in this certificate, but it is not required for a great learning experience.
 
@@ -51,21 +51,21 @@ The program is now divided into six core courses - it was five earlier, but now 
 
 The six courses are:
 
-* **Technical Support Fundamentals**: This is your introduction to the world of IT. You'll cover the basics of computer **hardware, software, networking**, and the crucial soft skills like **troubleshooting and customer service**. It's an essential primer that ensures you have a solid foundation.
+- **Technical Support Fundamentals**: This is your introduction to the world of IT. You'll cover the basics of computer **hardware, software, networking**, and the crucial soft skills like **troubleshooting and customer service**. It's an essential primer that ensures you have a solid foundation.
 
-* **The Bits and Bytes of Computer Networking**: This course delves into the backbone of modern technology. You'll learn about **network models, protocols like TCP/IP**, and practical applications for network troubleshooting. Understanding how data travels is fundamental to solving problems in any IT environment. It goes pretty deep and might also be a good starting point for future and more in-depth network-related certifications, such as CCNA.
+- **The Bits and Bytes of Computer Networking**: This course delves into the backbone of modern technology. You'll learn about **network models, protocols like TCP/IP**, and practical applications for network troubleshooting. Understanding how data travels is fundamental to solving problems in any IT environment. It goes pretty deep and might also be a good starting point for future and more in-depth network-related certifications, such as CCNA.
 
-* **Operating Systems and You: Becoming a Power User**: This is where you transition from a basic user to someone who understands what's happening "under the hood." The course focuses on the inner workings of operating systems like **Windows** and **Linux**, teaching you about **managing files, processes, and user permissions**.
+- **Operating Systems and You: Becoming a Power User**: This is where you transition from a basic user to someone who understands what's happening "under the hood." The course focuses on the inner workings of operating systems like **Windows** and **Linux**, teaching you about **managing files, processes, and user permissions**.
 
-* **System Administration and IT Infrastructure Services**: This is where the curriculum gives you a taste of what it's like to manage multiple computers and an entire IT infrastructure. You'll learn about **managing servers, cloud infrastructure, and essential services like DNS and DHCP**. This course provides practical insights into the job itself, preparing you for more than just a single machine.
+- **System Administration and IT Infrastructure Services**: This is where the curriculum gives you a taste of what it's like to manage multiple computers and an entire IT infrastructure. You'll learn about **managing servers, cloud infrastructure, and essential services like DNS and DHCP**. This course provides practical insights into the job itself, preparing you for more than just a single machine.
 
-* **IT Security: Defense Against the Digital Dark Arts**: In today's world, security is paramount. This course covers the fundamentals of **IT security**, from understanding common threats and attacks to implementing security protocols and best practices.
+- **IT Security: Defense Against the Digital Dark Arts**: In today's world, security is paramount. This course covers the fundamentals of **IT security**, from understanding common threats and attacks to implementing security protocols and best practices.
 
-* **Accelerate Your Job Search with AI**: This brand-new course - when I took the certificate back in 2021, this was not included - helps you **leverage the power of artificial intelligence to streamline your job search**. You'll learn how to craft a compelling resume and cover letter, practice for interviews, and optimize your professional profile using AI tools.
+- **Accelerate Your Job Search with AI**: This brand-new course - when I took the certificate back in 2021, this was not included - helps you **leverage the power of artificial intelligence to streamline your job search**. You'll learn how to craft a compelling resume and cover letter, practice for interviews, and optimize your professional profile using AI tools.
 
 ---
 
-### 💡 More Than Just Multiple Choice: The Power of Hands-On Learning 
+### 💡 More Than Just Multiple Choice: The Power of Hands-On Learning
 
 One of the things that sets this certificate apart is the variety of its assessments. The program doesn't just rely on multiple-choice questions to test your knowledge. It’s a mix of **multiple-choice questions**, **practical sandboxes**, and **interactive labs** that solidify your learning experience. The amount of significant learning they imply is huge. Instead of just reading about a concept, you're actively engaging with the material. You'll be using tools and performing tasks in a virtual environment that directly simulates real-world IT scenarios.
 
@@ -85,9 +85,9 @@ When you audit, you won't be able to submit graded assignments, take quizzes, or
 
 Nonetheless, it may be worth investing time in exploring whether your country and/or its local institutions have a partnership in place or scholarship opportunities that allow you to enroll free of charge.
 
-Especially for those of you who are based in Spain, the Spanish institution [Experiencia Fundae](https://experienciafundae.es/) offers grants to enroll not only to the Google IT Professional Certificate, but also in other Google Professional Certificates for free. To apply for a scholarship, [click here](https://experienciafundae.es/beca-google).
+Especially for those of you who are based in Spain, the Spanish institution [Experiencia Fundae](https://experienciafundae.es/) offers grants to enroll not only to the Google IT Professional Certificate, but also in other Google Professional Certificates for free. To apply for a scholarship, visit the [Fundae Google scholarship page](https://experienciafundae.es/beca-google).
 
-To summarize, these can be seen as the main takeaways from this course: 
+To summarize, these can be seen as the main takeaways from this course:
 
 - **Hands-on learning**: A strong focus on practical application that leads to meaningful learning.
 

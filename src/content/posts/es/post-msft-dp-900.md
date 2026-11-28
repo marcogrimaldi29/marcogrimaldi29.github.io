@@ -73,10 +73,10 @@ Las **[competencias evaluadas](https://learn.microsoft.com/en-us/credentials/cer
 
 ### 💡 Consejos prácticos para aprobar el DP-900
 
-* **Aprovecha los itinerarios oficiales de Microsoft Learn**: usa los [módulos de aprendizaje gratuitos](https://learn.microsoft.com/en-us/training/courses/dp-900t00) de Microsoft, que siguen directamente la traza del examen y se actualizan con regularidad.
-* **Usa los exámenes de práctica de forma estratégica**: las [evaluaciones de práctica](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) de Microsoft están muy alineadas con el test y resaltan las áreas que necesitan mejorar.
-* **Lleva un seguimiento de las áreas débiles**: las evaluaciones de práctica ofrecen un desglose de tu rendimiento, lo que facilita centrar el repaso donde más se necesita.
-* **Conoce la mecánica del examen**:
+- **Aprovecha los itinerarios oficiales de Microsoft Learn**: usa los [módulos de aprendizaje gratuitos](https://learn.microsoft.com/en-us/training/courses/dp-900t00) de Microsoft, que siguen directamente la traza del examen y se actualizan con regularidad.
+- **Usa los exámenes de práctica de forma estratégica**: las [evaluaciones de práctica](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) de Microsoft están muy alineadas con el test y resaltan las áreas que necesitan mejorar.
+- **Lleva un seguimiento de las áreas débiles**: las evaluaciones de práctica ofrecen un desglose de tu rendimiento, lo que facilita centrar el repaso donde más se necesita.
+- **Conoce la mecánica del examen**:
   - espera ~40–60 preguntas en formato de opción múltiple, arrastrar y soltar o verdadero/falso.
   - dispondrás de [~45 minutos](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience#exam-duration) para completar el test, necesitas una puntuación de [700/1000](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports#scores-needed-to-pass-exams) para aprobar, y puedes elegir entre supervisión en línea o un centro Pearson VUE presencial.
 
@@ -86,11 +86,11 @@ Las **[competencias evaluadas](https://learn.microsoft.com/en-us/credentials/cer
 
 Para esta certificación — y otras Fundamentals que obtuve — generalmente me ceñí a este enfoque:
 
-* **Reúne y organiza todos los recursos relevantes** y tenlos a mano. Siéntete libre de descubrir contenido nuevo por tu cuenta, pero si te sientes abrumado, céntrate en lo que sabes y confía en tu instinto, esa intuición tuya suele acertar — y los recursos de abajo deberían bastar de sobra para aprobar el examen.
-* **Mira el [vídeo Study Cram de John Savill](https://www.youtube.com/watch?v=0gtpasITVnk)**. Lo de siempre con cualquier examen relacionado con Azure: los vídeos de John Savill son una forma fantástica de destilar lo esencial de manera amena y práctica.
-* **Completa el [curso oficial DP-900](https://learn.microsoft.com/en-us/training/courses/dp-900t00) de Microsoft**. Es completo, gratuito y se actualiza con constancia.
-* **Vuelve a ver el [Study Cram de John Savill](https://www.youtube.com/watch?v=0gtpasITVnk)** tras completar los itinerarios de aprendizaje. Puede ayudarte a reforzar los puntos clave y apuntalar cualquier área débil.
-* **Ten confianza y da lo mejor de ti el día del examen**. Cuando te sientes a hacer el test, habrás construido una base sólida tras recorrer estos materiales.
+- **Reúne y organiza todos los recursos relevantes** y tenlos a mano. Siéntete libre de descubrir contenido nuevo por tu cuenta, pero si te sientes abrumado, céntrate en lo que sabes y confía en tu instinto, esa intuición tuya suele acertar — y los recursos de abajo deberían bastar de sobra para aprobar el examen.
+- **Mira el [vídeo Study Cram de John Savill](https://www.youtube.com/watch?v=0gtpasITVnk)**. Lo de siempre con cualquier examen relacionado con Azure: los vídeos de John Savill son una forma fantástica de destilar lo esencial de manera amena y práctica.
+- **Completa el [curso oficial DP-900](https://learn.microsoft.com/en-us/training/courses/dp-900t00) de Microsoft**. Es completo, gratuito y se actualiza con constancia.
+- **Vuelve a ver el [Study Cram de John Savill](https://www.youtube.com/watch?v=0gtpasITVnk)** tras completar los itinerarios de aprendizaje. Puede ayudarte a reforzar los puntos clave y apuntalar cualquier área débil.
+- **Ten confianza y da lo mejor de ti el día del examen**. Cuando te sientes a hacer el test, habrás construido una base sólida tras recorrer estos materiales.
 
 ---
 
@@ -113,14 +113,14 @@ La certificación DP-900 me dio una base sólida en los servicios y conceptos de
 
 ### 📖 Recursos relacionados
 
-* [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
-* [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
-* [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
-* [Introduction to Microsoft Azure Data](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
-* [John Savill's DP-900 Data Fundamentals Study Cram v2](https://www.youtube.com/watch?v=0gtpasITVnk)
-* [Microsoft Certified: Azure Data Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/?practice-assessment-type=certification)
-* [Microsoft Events](https://www.microsoft.com/en-us/events)
-* [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
-* [Study guide for Exam DP-900: Microsoft Azure Data Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900)
+- [Credentials FAQ & Help](https://learn.microsoft.com/en-us/credentials/support/cred-overview)
+- [Exam duration and exam experience](https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience)
+- [Exam scoring and score reports](https://learn.microsoft.com/en-us/credentials/certifications/exam-scoring-reports)
+- [Introduction to Microsoft Azure Data](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
+- [John Savill's DP-900 Data Fundamentals Study Cram v2](https://www.youtube.com/watch?v=0gtpasITVnk)
+- [Microsoft Certified: Azure Data Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/?practice-assessment-type=certification)
+- [Microsoft Events](https://www.microsoft.com/en-us/events)
+- [Practice Assessments for Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
+- [Study guide for Exam DP-900: Microsoft Azure Data Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900)
 
 ---

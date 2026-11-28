@@ -43,17 +43,17 @@ El programa se estructura en seis cursos, cada uno apoyándose en el anterior pa
 
 Los seis cursos son:
 
-* **Foundations of Project Management**: Este curso te introduce en los **conceptos y roles fundamentales de la gestión de proyectos**. Aprenderás sobre el ciclo de vida del proyecto, desde el inicio hasta el cierre, y las responsabilidades clave de un gestor de proyectos.
+- **Foundations of Project Management**: Este curso te introduce en los **conceptos y roles fundamentales de la gestión de proyectos**. Aprenderás sobre el ciclo de vida del proyecto, desde el inicio hasta el cierre, y las responsabilidades clave de un gestor de proyectos.
 
-* **Project Initiation: Starting a Successful Project**: Aquí aprenderás **cómo definir objetivos, entregables y alcance del proyecto**. Este curso se centra en crear actas de constitución, gestionar a las partes interesadas y preparar un proyecto para el éxito desde el principio.
+- **Project Initiation: Starting a Successful Project**: Aquí aprenderás **cómo definir objetivos, entregables y alcance del proyecto**. Este curso se centra en crear actas de constitución, gestionar a las partes interesadas y preparar un proyecto para el éxito desde el principio.
 
-* **Project Planning: Putting It All Together**: Este curso trata de **crear un plan detallado**. Cubrirás temas esenciales como construir estructuras de desglose del trabajo, estimar plazos, gestionar presupuestos e identificar posibles riesgos.
+- **Project Planning: Putting It All Together**: Este curso trata de **crear un plan detallado**. Cubrirás temas esenciales como construir estructuras de desglose del trabajo, estimar plazos, gestionar presupuestos e identificar posibles riesgos.
 
-* **Project Execution: Running the Show**: Aquí aprendes a gestionar las **operaciones diarias de un proyecto**. Te centrarás en la comunicación eficaz, la resolución de conflictos y el uso de herramientas para supervisar el progreso.
+- **Project Execution: Running the Show**: Aquí aprendes a gestionar las **operaciones diarias de un proyecto**. Te centrarás en la comunicación eficaz, la resolución de conflictos y el uso de herramientas para supervisar el progreso.
 
-* **Agile Project Management**: El curso profundiza en Agile, una metodología de gestión de proyectos popular y flexible. Aprenderás los principios de **Scrum** y **Kanban** y cómo aplicarlos para gestionar proyectos de forma más eficaz en entornos dinámicos.
+- **Agile Project Management**: El curso profundiza en Agile, una metodología de gestión de proyectos popular y flexible. Aprenderás los principios de **Scrum** y **Kanban** y cómo aplicarlos para gestionar proyectos de forma más eficaz en entornos dinámicos.
 
-* **Capstone: Applying Project Management in the Real World**: Es la culminación de todo lo aprendido. El proyecto final requiere que **apliques todos los conceptos y competencias a un escenario real**. Recorrerás todo el ciclo de vida del proyecto, desde definirlo hasta crear un plan detallado y un informe final.
+- **Capstone: Applying Project Management in the Real World**: Es la culminación de todo lo aprendido. El proyecto final requiere que **apliques todos los conceptos y competencias a un escenario real**. Recorrerás todo el ciclo de vida del proyecto, desde definirlo hasta crear un plan detallado y un informe final.
 
 ---
 
@@ -61,9 +61,9 @@ Los seis cursos son:
 
 Una de las partes más valiosas de este certificado, y lo que lo distingue, es el énfasis en las **tareas con revisión por pares** y el **proyecto final (Capstone)**. A diferencia de otras modalidades de examen, como los exámenes tipo test, estas tareas exigen que apliques de forma práctica lo aprendido.
 
-* **Tareas con revisión por pares**: A lo largo de los cursos, entregarás proyectos y planes que serán revisados por tus compañeros de aprendizaje. Este proceso no solo aporta una retroalimentación valiosa, sino que también te permite ver diferentes enfoques y aprender de tus pares. Esto **enriqueció el aprendizaje y la experiencia práctica** al darme una idea de cómo son la colaboración y la retroalimentación en un entorno profesional, donde lograr un objetivo común es un esfuerzo de equipo.
+- **Tareas con revisión por pares**: A lo largo de los cursos, entregarás proyectos y planes que serán revisados por tus compañeros de aprendizaje. Este proceso no solo aporta una retroalimentación valiosa, sino que también te permite ver diferentes enfoques y aprender de tus pares. Esto **enriqueció el aprendizaje y la experiencia práctica** al darme una idea de cómo son la colaboración y la retroalimentación en un entorno profesional, donde lograr un objetivo común es un esfuerzo de equipo.
 
-* **El proyecto final**: Es la parte final y más significativa del certificado. Asumes un proyecto integral de principio a fin. Para mí, esta experiencia fue decisiva. No se trataba solo de aprobar un examen; se trataba de demostrar mi capacidad para **gestionar un proyecto en su totalidad**. Validó realmente mis competencias y me dio la confianza para dar el paso hacia un puesto de gestión de proyectos.
+- **El proyecto final**: Es la parte final y más significativa del certificado. Asumes un proyecto integral de principio a fin. Para mí, esta experiencia fue decisiva. No se trataba solo de aprobar un examen; se trataba de demostrar mi capacidad para **gestionar un proyecto en su totalidad**. Validó realmente mis competencias y me dio la confianza para dar el paso hacia un puesto de gestión de proyectos.
 
 ---
 
