@@ -1,28 +1,54 @@
 {
   "version": "0.2",
-  "language": "en",
+  "language": "en,en-GB",
+  "import": [
+    "@cspell/dict-de-de/cspell-ext.json",
+    "@cspell/dict-es-es/cspell-ext.json",
+    "@cspell/dict-it-it/cspell-ext.json"
+  ],
   "ignorePaths": ["node_modules", "dist", ".astro", "public/pagefind", "package-lock.json"],
-  "words": [
-    "Grimaldi",
-    "Italiano",
-    "Español",
-    "Deutsch",
-    "marcogrimaldi",
-    "Concentrix",
-    "vite",
-    "Astro",
-    "astro",
-    "Jekyll",
-    "kramdown",
-    "Pagefind",
-    "Umami",
-    "hreflang",
-    "frontmatter",
-    "Duolingo",
-    "ITIL",
-    "Entra",
-    "Purview",
-    "noopener",
-    "noreferrer"
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": "./cspell-words.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": ["project-words"],
+  "patterns": [
+    {
+      "name": "italian-elision",
+      "description": "Elided Italian articles/prepositions (l’, dall’, sull’, un’ …) glued to the next word",
+      "pattern": "/(?<![A-Za-zÀ-ÿ])(?:[dDnNsS]?[aA]ll|[dDnN]ell|[sS]ull|[cC]oll|[lLdDcCsSmMtTvV]|[uU]n|[qQ]uest|[qQ]uell|[tT]utt)[’'](?=[A-Za-zÀ-ÿ*])/g"
+    }
+  ],
+  "overrides": [
+    {
+      "filename": ["src/content/posts/de/**", "src/pages/de/**", "src/data/*-de.ts"],
+      "language": "en,en-GB,de"
+    },
+    {
+      "filename": ["src/content/posts/es/**", "src/pages/es/**", "src/data/*-es.ts"],
+      "language": "en,en-GB,es"
+    },
+    {
+      "filename": ["src/content/posts/it/**", "src/pages/it/**", "src/data/*-it.ts"],
+      "language": "en,en-GB,it",
+      "ignoreRegExpList": ["italian-elision"]
+    },
+    {
+      "filename": [
+        "src/i18n/**",
+        "src/components/**",
+        "src/layouts/**",
+        "src/data/cv.ts",
+        "src/data/cv-map.ts",
+        "src/data/orgLogos.ts",
+        "src/pages/*slug*.astro",
+        "src/content/posts/*/resource-german.md"
+      ],
+      "language": "en,en-GB,de,es,it",
+      "ignoreRegExpList": ["italian-elision"]
+    }
   ]
 }

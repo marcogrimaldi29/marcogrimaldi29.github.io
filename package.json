@@ -33,6 +33,9 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
+    "@cspell/dict-de-de": "^4.1.4",
+    "@cspell/dict-es-es": "^3.0.9",
+    "@cspell/dict-it-it": "^3.1.7",
     "@typescript-eslint/parser": "^8.74.0",
     "cspell": "^10.5.2",
     "eslint": "^10.15.0",
